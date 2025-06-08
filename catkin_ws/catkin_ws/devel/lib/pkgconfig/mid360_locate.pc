@@ -1,8 +1,0 @@
-prefix=/home/ubuntu/unitree/catkin_ws/catkin_ws/devel
-
-Name: mid360_locate
-Description: Description of mid360_locate
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

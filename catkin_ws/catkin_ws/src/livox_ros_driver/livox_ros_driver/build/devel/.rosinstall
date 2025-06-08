@@ -1,2 +1,0 @@
-- setup-file:
-    local-name: /home/embody/ros_ws/src/G1-ROS-Navigation/catkin_ws/src/livox_ros_driver/livox_ros_driver/build/devel/setup.sh
