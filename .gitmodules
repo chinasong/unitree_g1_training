@@ -10,3 +10,6 @@
 [submodule "catkin_ws/catkin_ws/src/FAST_LIO"]
 	path = catkin_ws/catkin_ws/src/FAST_LIO
 	url = https://github.com/hku-mars/FAST_LIO
+[submodule "catkin_ws/catkin_ws/src/livox_ros_driver"]
+	path = catkin_ws/catkin_ws/src/livox_ros_driver
+	url = https://github.com/Livox-SDK/livox_ros_driver
