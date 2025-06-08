@@ -1,0 +1,14 @@
+<launch>
+    <!-- 启动一个 ROS 节点 -->
+    <node name="locate_node" pkg="mid360_locate" type="locate_node" output="screen">
+        <!-- 设置节点参数 -->
+        <param name="map_file_path" value="$(find fast_lio)/PCD/scans.pcd"/>  
+        <param name="points_type" value="0"/>
+        <param name="map_roll" value="0"/>  
+        <param name="map_pitch" value="0.0"/> 
+        <param name="map_yaw" value="0.0"/>
+    </node>
+
+    <!-- 启动 RViz-->
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find mid360_locate)/rviz/display_localization_results.rviz" output="screen"/> 
+</launch>
