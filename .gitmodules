@@ -16,3 +16,6 @@
 [submodule "catkin_ws/catkin_ws/src/Livox-SDK"]
 	path = catkin_ws/catkin_ws/src/Livox-SDK
 	url = https://github.com/Livox-SDK/Livox-SDK
+[submodule "catkin_ws/catkin_ws/src/realsense-ros"]
+	path = catkin_ws/catkin_ws/src/realsense-ros
+	url = https://github.com/IntelRealSense/realsense-ros
