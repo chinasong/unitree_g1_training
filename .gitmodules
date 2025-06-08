@@ -7,3 +7,6 @@
 [submodule "catkin_ws/catkin_ws/src/fast_gicp"]
 	path = catkin_ws/catkin_ws/src/fast_gicp
 	url = https://github.com/koide3/fast_gicp
+[submodule "catkin_ws/catkin_ws/src/FAST_LIO"]
+	path = catkin_ws/catkin_ws/src/FAST_LIO
+	url = https://github.com/hku-mars/FAST_LIO
