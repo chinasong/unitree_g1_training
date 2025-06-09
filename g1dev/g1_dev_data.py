@@ -238,8 +238,8 @@ class Custom:
                 traj_groups.append((
                     self.traj_waist, {
                         G1JointIndex.WaistYaw: "WAIST_YAW_q",
-                        # G1JointIndex.WaistRoll: "WAIST_ROLL_q",
-                        # G1JointIndex.WaistPitch: "WAIST_PITCH_q"
+                        G1JointIndex.WaistRoll: "WAIST_ROLL_q",
+                        G1JointIndex.WaistPitch: "WAIST_PITCH_q"
                     }
                 ))
 
@@ -293,8 +293,10 @@ class Custom:
             # 遍历每组部位轨迹，逐个执行
             for idx, joint_map in traj_groups:
                 for idx1, col in joint_map.items():
-                    q_prev = row_prev[col]
+                    if col not in row_prev or col not in row_next:
+                        continue  # 缺失该关节的轨迹数据，跳过
 
+                    q_prev = row_prev[col]
                     q_next = row_next[col]
 
                     self.low_cmd.motor_cmd[idx1].q = self.lerp(q_prev, q_next, ratio)
