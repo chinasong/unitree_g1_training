@@ -171,10 +171,10 @@ class Custom:
         # 初始化指令
         for i in range(G1_NUM_MOTOR):
             self.low_cmd.motor_cmd[i].mode = 1
+            self.low_cmd.motor_cmd[i].kp = Kp[i]
+            self.low_cmd.motor_cmd[i].kd = Kd[i]
             self.low_cmd.motor_cmd[i].tau = 0
             self.low_cmd.motor_cmd[i].dq = 0
-            # self.low_cmd.motor_cmd[i].kp = Kp[i]
-            # self.low_cmd.motor_cmd[i].kd = Kd[i]
 
         # 模式设置
         self.low_cmd.mode_pr = Mode.PR
