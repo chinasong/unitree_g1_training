@@ -146,9 +146,11 @@ class Custom:
                 self.low_cmd.motor_cmd[i].kd = Kd[i]
 
 
-        elif self.time_ < self.duration_ * 5:
 
-            # [Stage 4]: Playback PR gait from CSV data with smooth interpolation
+
+        elif self.time_ < self.duration_ + (self.traj_data["time"].iloc[-1] - self.traj_data["time"].iloc[0]):
+
+            # 初始化轨迹
 
             if not hasattr(self, "traj_data"):
                 import pandas as pd
@@ -159,23 +161,23 @@ class Custom:
 
                 self.traj_end_time = self.traj_data["time"].iloc[-1]
 
-            current_abs_time = self.traj_start_time + (self.time_ - self.duration_ * 2)
+            current_abs_time = self.traj_start_time + (self.time_ - self.duration_)
 
             df = self.traj_data
 
-            # 如果超出轨迹范围
-
-            if current_abs_time >= self.traj_end_time:
+            if current_abs_time > self.traj_end_time:
                 current_abs_time = self.traj_end_time
 
-            # 找到前后两帧
+            # 插值准备
 
             future = df[df["time"] >= current_abs_time]
 
             past = df[df["time"] <= current_abs_time]
 
             if len(future) == 0 or len(past) == 0:
-                return  # 安全保护
+                print("[WARN] No valid data for interpolation")
+
+                return
 
             row_next = future.iloc[0]
 
@@ -187,11 +189,10 @@ class Custom:
 
             ratio = (current_abs_time - t1) / (t2 - t1) if t2 > t1 else 0.0
 
-            def lerp(val1, val2, r):
+            def lerp(a, b, r):
+                return (1 - r) * a + r * b
 
-                return (1 - r) * val1 + r * val2
-
-            # 设置控制参数
+            # 控制指令填充
 
             self.low_cmd.mode_pr = Mode.PR
 
@@ -207,8 +208,6 @@ class Custom:
                 self.low_cmd.motor_cmd[i].kp = 80.0 if i in [G1JointIndex.LeftKnee, G1JointIndex.RightKnee] else Kp[i]
 
                 self.low_cmd.motor_cmd[i].kd = 2.0 if i in [G1JointIndex.LeftKnee, G1JointIndex.RightKnee] else Kd[i]
-
-            # 设置每个腿部关节的插值目标角度
 
             mapping = {
 
@@ -231,7 +230,9 @@ class Custom:
 
                 q_next = row_next[col]
 
-                self.low_cmd.motor_cmd[idx].q = lerp(q_prev, q_next, ratio)
+                q_interp = lerp(q_prev, q_next, ratio)
+
+                self.low_cmd.motor_cmd[idx].q = q_interp
 
         self.low_cmd.crc = self.crc.Crc(self.low_cmd)
         self.lowcmd_publisher_.Write(self.low_cmd)
