@@ -153,7 +153,7 @@ class Custom:
 
                 import pandas as pd
 
-                self.traj_data = pd.read_csv("g1_joint_framewise_20250609_140051.csv")
+                self.traj_data = pd.read_csv("../recorddata/g1_joint_framewise_20250609_140051.csv")
 
                 self.traj_index = 0
 
