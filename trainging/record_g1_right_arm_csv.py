@@ -1,57 +1,48 @@
-import csv
-import time
 import mujoco
 import mujoco.viewer
 import numpy as np
+import pandas as pd
+import time
+from mujoco import MjModel, MjData
+from datetime import datetime
 
-# 加载 G1 模型（确保路径正确）
-model = mujoco.MjModel.from_xml_path("../externals/unitree_rl_gym/resources/robots/g1_description/g1_23dof.xml")
-
+# 加载模型
+model = mujoco.MjModel.from_xml_path("g1_23dof.xml")
 data = mujoco.MjData(model)
 
-# 打开 GUI 以手动拖动关节
-viewer = mujoco.viewer.launch_passive(model, data)
+# 右臂关节映射（仿真名 -> CSV列名）
+right_arm_joint_mapping = {
+    "right_shoulder_pitch_joint": "R_SHOULDER_PITCH_q",
+    "right_shoulder_roll_joint": "R_SHOULDER_ROLL_q",
+    "right_shoulder_yaw_joint": "R_SHOULDER_YAW_q",
+    "right_elbow_joint": "R_ELBOW_q",
+    "right_wrist_roll_joint": "R_WRIST_ROLL_q"
+}
 
-# 要记录的右臂关节（与真实机器人命名一致）
-joint_names = [
-    "R_SHOULDER_PITCH_q",
-    "R_SHOULDER_ROLL_q",
-    "R_SHOULDER_YAW_q",
-    "R_ELBOW_q",
-    "R_WRIST_ROLL_q",
-    "R_WRIST_PITCH_q",
-    "R_WRIST_YAW_q"
-]
+# 获取对应 joint 的 qposadr 索引
+joint_indices = {csv_name: model.joint(name).qposadr[0] for name, csv_name in right_arm_joint_mapping.items()}
 
-# 计算这些关节在 qpos 中的索引
-joint_indices = [model.joint(name).qposadr[0] for name in joint_names]
+# 存储数据
+record = []
+start_time = time.time()
 
-# CSV 文件保存路径
-save_path = "g1_right_arm_manual_record.csv"
+# 启动可视化窗口
+with mujoco.viewer.launch_passive(model, data) as viewer:
+    print("🎥 开始录制右臂轨迹，关闭窗口即可保存 CSV 文件。")
+    while viewer.is_running():
+        mujoco.mj_step(model, data)
 
-# 写入 CSV 文件头
-with open(save_path, "w", newline="") as f:
-    writer = csv.writer(f)
-    header = ["time"] + joint_names
-    writer.writerow(header)
+        t = time.time() - start_time
+        row = {"time": t}
+        for csv_name, idx in joint_indices.items():
+            row[csv_name] = data.qpos[idx]
 
-    t = 0.0
-    dt = 0.01  # 每 10ms 记录一次（对应控制频率 100Hz）
+        record.append(row)
 
-    print("开始录制动作，请在 GUI 中拖动右臂关节...")
+# 保存为 CSV
+df = pd.DataFrame(record)
+ts = datetime.now().strftime("%Y%m%d_%H%M%S")
+filename = f"g1_right_arm_{ts}.csv"
+df.to_csv(filename, index=False)
 
-    try:
-        for _ in range(2000):  # 约 20 秒
-            mujoco.mj_step(model, data)
-
-            # 读取当前时间和各关节角度
-            row = [t] + [data.qpos[i] for i in joint_indices]
-            writer.writerow(row)
-
-            t += dt
-            time.sleep(dt)
-
-    except KeyboardInterrupt:
-        print("录制中断，已保存到 CSV。")
-
-viewer.close()
+print(f"✅ 保存成功: {filename}")
