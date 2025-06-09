@@ -1,5 +1,6 @@
 import time
 import sys
+import pandas as pd
 
 from unitree_sdk2py.core.channel import ChannelPublisher, ChannelFactoryInitialize
 from unitree_sdk2py.core.channel import ChannelSubscriber, ChannelFactoryInitialize
@@ -88,6 +89,12 @@ class Custom:
         self.update_mode_machine_ = False
         self.crc = CRC()
 
+        # Trajectory preload
+        self.traj_data = pd.read_csv("../recorddata/g1_joint_framewise_20250609_140051.csv")
+        self.traj_start_time = self.traj_data["time"].iloc[0]
+        self.traj_end_time = self.traj_data["time"].iloc[-1]
+
+
     def Init(self):
         self.msc = MotionSwitcherClient()
         self.msc.SetTimeout(5.0)
@@ -145,54 +152,31 @@ class Custom:
                 self.low_cmd.motor_cmd[i].kp = Kp[i]
                 self.low_cmd.motor_cmd[i].kd = Kd[i]
 
-
-
-
-        elif self.time_ < self.duration_ + (self.traj_data["time"].iloc[-1] - self.traj_data["time"].iloc[0]):
-
-            # 初始化轨迹
-
-            if not hasattr(self, "traj_data"):
-                import pandas as pd
-
-                self.traj_data = pd.read_csv("../recorddata/g1_joint_framewise_20250609_140051.csv")
-
-                self.traj_start_time = self.traj_data["time"].iloc[0]
-
-                self.traj_end_time = self.traj_data["time"].iloc[-1]
+        elif self.time_ < self.duration_ + (self.traj_end_time - self.traj_start_time):
 
             current_abs_time = self.traj_start_time + (self.time_ - self.duration_)
 
             df = self.traj_data
 
-            if current_abs_time > self.traj_end_time:
-                current_abs_time = self.traj_end_time
+            # 安全处理
 
-            # 插值准备
+            if current_abs_time >= self.traj_end_time:
+                current_abs_time = self.traj_end_time
 
             future = df[df["time"] >= current_abs_time]
 
             past = df[df["time"] <= current_abs_time]
 
             if len(future) == 0 or len(past) == 0:
-                print("[WARN] No valid data for interpolation")
-
                 return
 
             row_next = future.iloc[0]
 
             row_prev = past.iloc[-1]
 
-            t1 = row_prev["time"]
-
-            t2 = row_next["time"]
+            t1, t2 = row_prev["time"], row_next["time"]
 
             ratio = (current_abs_time - t1) / (t2 - t1) if t2 > t1 else 0.0
-
-            def lerp(a, b, r):
-                return (1 - r) * a + r * b
-
-            # 控制指令填充
 
             self.low_cmd.mode_pr = Mode.PR
 
@@ -230,9 +214,7 @@ class Custom:
 
                 q_next = row_next[col]
 
-                q_interp = lerp(q_prev, q_next, ratio)
-
-                self.low_cmd.motor_cmd[idx].q = q_interp
+                self.low_cmd.motor_cmd[idx].q = self.lerp(q_prev, q_next, ratio)
 
         self.low_cmd.crc = self.crc.Crc(self.low_cmd)
         self.lowcmd_publisher_.Write(self.low_cmd)
