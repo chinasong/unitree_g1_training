@@ -160,7 +160,8 @@ class Custom:
 
             hip_amp = 0.8  # 髋前摆
 
-            knee_amp = 1.2  # 膝大弯曲
+            # 合理设置膝关节最大弯曲值，推荐范围：
+            knee_amp = np.pi * 1.4 / 3.14  # ≈ 1.4 rad，接近最大值
 
             ankle_push = 0.3  # 脚踝蹬地角度
 
@@ -210,18 +211,19 @@ class Custom:
 
             for i in range(G1_NUM_MOTOR):
                 self.low_cmd.motor_cmd[i].mode = 1
-
                 self.low_cmd.motor_cmd[i].tau = 0
-
                 self.low_cmd.motor_cmd[i].dq = 0
 
-                self.low_cmd.motor_cmd[i].kp = Kp[i]
-
-                self.low_cmd.motor_cmd[i].kd = Kd[i]
+                if i == G1JointIndex.LeftKnee or i == G1JointIndex.RightKnee:
+                    self.low_cmd.motor_cmd[i].kp = 80.0  # 比默认更强
+                    self.low_cmd.motor_cmd[i].kd = 2.0
+                else:
+                    self.low_cmd.motor_cmd[i].kp = Kp[i]
+                    self.low_cmd.motor_cmd[i].kd = Kd[i]
 
             self.low_cmd.motor_cmd[G1JointIndex.LeftHipPitch].q = L_HipPitch
 
-            self.low_cmd.motor_cmd[G1JointIndex.LeftKnee].q = -L_Knee  # 弯曲为负
+            self.low_cmd.motor_cmd[G1JointIndex.LeftKnee].q = L_Knee  # 弯曲为负
 
             self.low_cmd.motor_cmd[G1JointIndex.LeftAnklePitch].q = L_Ankle
 
