@@ -160,16 +160,7 @@ class Custom:
 
         # Zero posture阶段
         if self.time_ < self.duration_:
-            ratio = np.clip(self.time_ / self.duration_, 0.0, 1.0)
-            for i in range(G1_NUM_MOTOR):
-                self.low_cmd.mode_pr = Mode.PR
-                self.low_cmd.mode_machine = self.mode_machine_
-                self.low_cmd.motor_cmd[i].mode = 1
-                self.low_cmd.motor_cmd[i].tau = 0.
-                self.low_cmd.motor_cmd[i].q = (1.0 - ratio) * self.low_state.motor_state[i].q
-                self.low_cmd.motor_cmd[i].dq = 0
-                # self.low_cmd.motor_cmd[i].kp = Kp[i]
-                # self.low_cmd.motor_cmd[i].kd = Kd[i]
+            return
         elif self.time_ < self.duration_ + (self.traj_end_time - self.traj_start_time):
             current_abs_time = self.traj_start_time + (self.time_ - self.duration_)
 
@@ -206,9 +197,9 @@ class Custom:
 
                 self.low_cmd.motor_cmd[i].dq = 0
 
-                # self.low_cmd.motor_cmd[i].kp = 80.0 if i in [G1JointIndex.LeftKnee, G1JointIndex.RightKnee] else Kp[i]
+                self.low_cmd.motor_cmd[i].kp = 80.0 if i in [G1JointIndex.LeftKnee, G1JointIndex.RightKnee] else Kp[i]
 
-                # self.low_cmd.motor_cmd[i].kd = 2.0 if i in [G1JointIndex.LeftKnee, G1JointIndex.RightKnee] else Kd[i]
+                self.low_cmd.motor_cmd[i].kd = 2.0 if i in [G1JointIndex.LeftKnee, G1JointIndex.RightKnee] else Kd[i]
 
             # 定义各部分轨迹映射
             traj_groups = []
