@@ -143,33 +143,52 @@ class Custom:
                 self.low_cmd.motor_cmd[i].kp = Kp[i] 
                 self.low_cmd.motor_cmd[i].kd = Kd[i]
 
+
         elif self.time_ < self.duration_ * 5:
 
-            # [Stage 4]: Run - alternate legs in a periodic running gait
+            # [Stage 4]: Better Running - alternate legs, lift and bend
 
             t = self.time_ - self.duration_ * 2
 
-            period = 1.0  # 一步 1 秒
+            period = 1.0  # 跑步周期 1s（每条腿抬腿0.5s）
 
-            amp_hip = np.pi * 20 / 180  # 髋关节振幅
+            # 动作参数
 
-            amp_knee = np.pi * 35 / 180  # 膝关节振幅
+            hip_amp = np.pi * 20 / 180  # 髋关节最大抬起角度
 
-            phase_L = 0.0
+            knee_amp = np.pi * 35 / 180  # 膝盖最大弯曲角度
 
-            phase_R = np.pi  # 反相位，交替运动
+            # 当前周期的归一化时间 [0, 1)
 
-            # 左腿目标
+            phase = (t % period) / period
 
-            L_HipPitch_des = amp_hip * np.sin(2 * np.pi * t / period + phase_L)
+            # 左腿抬起 [0, 0.5)，右腿抬起 [0.5, 1)
 
-            L_Knee_des = -amp_knee * max(0.0, np.sin(2 * np.pi * t / period + phase_L))  # 只在抬腿时弯曲
+            if phase < 0.5:
 
-            # 右腿目标
+                # 左腿抬起
 
-            R_HipPitch_des = amp_hip * np.sin(2 * np.pi * t / period + phase_R)
+                L_HipPitch = hip_amp * np.sin(np.pi * phase * 2)  # 半周期内先升后落
 
-            R_Knee_des = -amp_knee * max(0.0, np.sin(2 * np.pi * t / period + phase_R))
+                L_Knee = -knee_amp * np.sin(np.pi * phase * 2)
+
+                R_HipPitch = 0.0
+
+                R_Knee = 0.0
+
+            else:
+
+                # 右腿抬起
+
+                phase_r = phase - 0.5
+
+                R_HipPitch = hip_amp * np.sin(np.pi * phase_r * 2)
+
+                R_Knee = -knee_amp * np.sin(np.pi * phase_r * 2)
+
+                L_HipPitch = 0.0
+
+                L_Knee = 0.0
 
             self.low_cmd.mode_pr = Mode.PR
 
@@ -188,13 +207,13 @@ class Custom:
 
             # 应用目标角度
 
-            self.low_cmd.motor_cmd[G1JointIndex.LeftHipPitch].q = L_HipPitch_des
+            self.low_cmd.motor_cmd[G1JointIndex.LeftHipPitch].q = L_HipPitch
 
-            self.low_cmd.motor_cmd[G1JointIndex.LeftKnee].q = L_Knee_des
+            self.low_cmd.motor_cmd[G1JointIndex.LeftKnee].q = L_Knee
 
-            self.low_cmd.motor_cmd[G1JointIndex.RightHipPitch].q = R_HipPitch_des
+            self.low_cmd.motor_cmd[G1JointIndex.RightHipPitch].q = R_HipPitch
 
-            self.low_cmd.motor_cmd[G1JointIndex.RightKnee].q = R_Knee_des
+            self.low_cmd.motor_cmd[G1JointIndex.RightKnee].q = R_Knee
     
 
         self.low_cmd.crc = self.crc.Crc(self.low_cmd)
