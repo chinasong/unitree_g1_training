@@ -91,7 +91,7 @@ class Custom:
 
         # Trajectory preload
         self.traj_left_arm = None
-        self.traj_right_arm = pd.read_csv("../recorddata/g1_right_arm_20250609_145913")
+        self.traj_right_arm = pd.read_csv("../recorddata/g1_right_arm_20250609_145913.csv")
         self.traj_waist = None
         self.traj_left_leg = None
         self.traj_right_leg = None
