@@ -58,11 +58,10 @@ class ArmDevGUI(QWidget):
         self._add_group(0, 2, "Waist", WAIST, "waist")
         self._add_group(1, 2, "Full Body", FULL_BODY, "full_body")
 
-        # 添加全身记录按钮
-        full_btn = QPushButton("Start Full Body")
-        full_btn.setCheckable(True)
-        full_btn.clicked.connect(partial(self.toggle_record, "full_body", full_btn))
-        self.layout.addWidget(full_btn, 2, 1)
+        # 自动补齐所有名称
+        for i in range(29):
+            if i not in self.name_map:
+                self.name_map[i] = f"joint_{i}"
 
         self.timer = QTimer()
         self.timer.timeout.connect(self.refresh)
@@ -111,14 +110,9 @@ class ArmDevGUI(QWidget):
         for key, flag in self.recording_flags.items():
             if flag:
                 row = [now]
-                if key == "full_body":
-                    for i in range(29):
-                        m = self.state.motor_state[i]
-                        row += [m.q, m.dq, m.tau_est]
-                else:
-                    for idx in self.get_joint_map(key):
-                        m = self.state.motor_state[idx]
-                        row += [m.q, m.dq, m.tau_est]
+                for idx in self.get_joint_map(key):
+                    m = self.state.motor_state[idx]
+                    row += [m.q, m.dq, m.tau_est]
                 self.record_data[key].append(row)
 
     def toggle_record(self, key, button: QPushButton):
@@ -138,24 +132,19 @@ class ArmDevGUI(QWidget):
             "waist": WAIST,
             "left_leg": LEFT_LEG,
             "right_leg": RIGHT_LEG,
+            "full_body": FULL_BODY,
         }[key]
 
     def save_csv(self, key):
         now = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
         filename = f"g1_{key}_{now}.csv"
-
-        if key == "full_body":
-            header = ["time"] + [
-                f"{self.name_map.get(i, f'joint_{i}')}_{suf}" for i in range(29) for suf in ("q", "dq", "tau")
-            ]
-        else:
-            joint_map = self.get_joint_map(key)
-            header = ["time"] + [
-                f"{self.name_map[idx]}_{suf}" for idx in joint_map for suf in ("q", "dq", "tau")
-            ]
+        joint_map = self.get_joint_map(key)
 
         with open(filename, "w", newline="") as f:
             writer = csv.writer(f)
+            header = ["time"] + [
+                f"{self.name_map[idx]}_{suf}" for idx in joint_map for suf in ("q", "dq", "tau")
+            ]
             writer.writerow(header)
             writer.writerows(self.record_data[key])
 
