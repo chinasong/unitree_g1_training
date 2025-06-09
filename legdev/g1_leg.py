@@ -145,65 +145,64 @@ class Custom:
 
 
 
+
         elif self.time_ < self.duration_ * 5:
 
-            # [Stage 4]: Running motion - fast alternating leg swing
+            # [Stage 4]: Realistic running gait
 
             t = self.time_ - self.duration_ * 2
 
-            period = 0.4  # 更快的跑步周期（400ms一次完整交换）
-
-            # 跑步关键幅度
-
-            hip_amp = np.pi * 30 / 180  # 髋关节更高抬起
-
-            knee_amp = np.pi * 60 / 180  # 膝盖大幅弯曲
-
-            # 当前周期归一化时间 [0, 1)
+            period = 0.5  # 每0.5s完成一次交换
 
             phase = (t % period) / period
 
-            # 是否处于“飞行相”阶段（两腿同时离地）大概在每周期的中间位置
+            # 参数设置
 
-            flight_phase = (0.45 < phase < 0.55)
+            hip_amp = 0.8  # 髋前摆
 
-            # 准备控制变量
+            knee_amp = 1.2  # 膝大弯曲
 
-            L_HipPitch = 0.0
+            ankle_push = 0.3  # 脚踝蹬地角度
 
-            L_Knee = 0.0
+            ankle_fold = -0.3  # 抬腿脚踝上翘
 
-            R_HipPitch = 0.0
-
-            R_Knee = 0.0
+            support_knee = 0.3  # 支撑腿轻微屈膝缓冲
 
             if phase < 0.5:
 
-                # 左腿前摆抬起
+                # 左腿抬起（飞行），右腿支撑
 
                 L_HipPitch = hip_amp * np.sin(np.pi * phase * 2)
 
-                L_Knee = -knee_amp * np.sin(np.pi * phase * 2)
+                L_Knee = knee_amp * np.sin(np.pi * phase * 2)
 
-                R_HipPitch = -hip_amp * 0.2  # 右腿保持微微后摆支撑
+                L_Ankle = ankle_fold
 
-                R_Knee = 0.0
+                R_HipPitch = -0.1
+
+                R_Knee = support_knee
+
+                R_Ankle = ankle_push
 
             else:
 
-                # 右腿前摆抬起
+                # 右腿抬起，左腿支撑
 
                 phase_r = phase - 0.5
 
                 R_HipPitch = hip_amp * np.sin(np.pi * phase_r * 2)
 
-                R_Knee = -knee_amp * np.sin(np.pi * phase_r * 2)
+                R_Knee = knee_amp * np.sin(np.pi * phase_r * 2)
 
-                L_HipPitch = -hip_amp * 0.2
+                R_Ankle = ankle_fold
 
-                L_Knee = 0.0
+                L_HipPitch = -0.1
 
-            # 设置低层控制指令
+                L_Knee = support_knee
+
+                L_Ankle = ankle_push
+
+            # 设置控制指令
 
             self.low_cmd.mode_pr = Mode.PR
 
@@ -220,15 +219,17 @@ class Custom:
 
                 self.low_cmd.motor_cmd[i].kd = Kd[i]
 
-            # 应用腿部目标角度
-
             self.low_cmd.motor_cmd[G1JointIndex.LeftHipPitch].q = L_HipPitch
 
-            self.low_cmd.motor_cmd[G1JointIndex.LeftKnee].q = L_Knee
+            self.low_cmd.motor_cmd[G1JointIndex.LeftKnee].q = -L_Knee  # 弯曲为负
+
+            self.low_cmd.motor_cmd[G1JointIndex.LeftAnklePitch].q = L_Ankle
 
             self.low_cmd.motor_cmd[G1JointIndex.RightHipPitch].q = R_HipPitch
 
-            self.low_cmd.motor_cmd[G1JointIndex.RightKnee].q = R_Knee
+            self.low_cmd.motor_cmd[G1JointIndex.RightKnee].q = -R_Knee
+
+            self.low_cmd.motor_cmd[G1JointIndex.RightAnklePitch].q = R_Ankle
     
 
         self.low_cmd.crc = self.crc.Crc(self.low_cmd)
