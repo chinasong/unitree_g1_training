@@ -190,7 +190,7 @@ class Custom:
                 G1JointIndex.LeftWristRoll: "L_WRIST_ROLL_q",
                 G1JointIndex.LeftWristPitch: "L_WRIST_PITCH_q",
                 G1JointIndex.LeftWristYaw: "L_WRIST_YAW_q"
-            })
+            }, self.traj_start_time, self.traj_start_time + self.traj_left_arm["time"].iloc[-1])
 
         if self.traj_right_arm is not None:
             self.apply_timed_traj(self.traj_right_arm, {
@@ -201,12 +201,12 @@ class Custom:
                 G1JointIndex.RightWristRoll: "R_WRIST_ROLL_q",
                 G1JointIndex.RightWristPitch: "R_WRIST_PITCH_q",
                 G1JointIndex.RightWristYaw: "R_WRIST_YAW_q"
-            })
+            }, self.traj_start_time, self.traj_start_time + self.traj_right_arm["time"].iloc[-1])
 
         if self.traj_waist is not None:
             self.apply_timed_traj(self.traj_waist, {
                 G1JointIndex.WaistYaw: "WAIST_YAW_q"
-            })
+            }, self.traj_start_time, self.traj_start_time + self.traj_waist["time"].iloc[-1])
 
         if self.traj_left_leg is not None:
             self.apply_timed_traj(self.traj_left_leg, {
@@ -216,7 +216,7 @@ class Custom:
                 G1JointIndex.LeftKnee: "L_LEG_KNEE_q",
                 G1JointIndex.LeftAnklePitch: "L_LEG_ANKLE_PITCH_q",
                 G1JointIndex.LeftAnkleRoll: "L_LEG_ANKLE_ROLL_q"
-            })
+            }, self.traj_start_time, self.traj_start_time + self.traj_left_leg["time"].iloc[-1])
 
         if self.traj_right_leg is not None:
             self.apply_timed_traj(self.traj_right_leg, {
@@ -226,7 +226,7 @@ class Custom:
                 G1JointIndex.RightKnee: "R_LEG_KNEE_q",
                 G1JointIndex.RightAnklePitch: "R_LEG_ANKLE_PITCH_q",
                 G1JointIndex.RightAnkleRoll: "R_LEG_ANKLE_ROLL_q"
-            })
+            }, self.traj_start_time, self.traj_start_time + self.traj_right_leg["time"].iloc[-1])
 
         self.low_cmd.crc = self.crc.Crc(self.low_cmd)
         self.lowcmd_publisher_.Write(self.low_cmd)
