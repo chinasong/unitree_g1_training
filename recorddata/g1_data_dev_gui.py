@@ -13,11 +13,13 @@ from unitree_sdk2py.core.channel import ChannelSubscriber, ChannelFactoryInitial
 from unitree_sdk2py.idl.unitree_hg.msg.dds_ import LowState_
 from functools import partial
 
+# 各部分关节映射
 LEFT_ARM = {15: "L_SHOULDER_PITCH", 16: "L_SHOULDER_ROLL", 17: "L_SHOULDER_YAW", 18: "L_ELBOW", 19: "L_WRIST_ROLL", 20: "L_WRIST_PITCH", 21: "L_WRIST_YAW"}
 RIGHT_ARM = {22: "R_SHOULDER_PITCH", 23: "R_SHOULDER_ROLL", 24: "R_SHOULDER_YAW", 25: "R_ELBOW", 26: "R_WRIST_ROLL", 27: "R_WRIST_PITCH", 28: "R_WRIST_YAW"}
 WAIST = {12: "WAIST_YAW"}
 LEFT_LEG = {0: "L_LEG_HIP_PITCH", 1: "L_LEG_HIP_ROLL", 2: "L_LEG_HIP_YAW", 3: "L_LEG_KNEE", 4: "L_LEG_ANKLE_PITCH", 5: "L_LEG_ANKLE_ROLL"}
 RIGHT_LEG = {6: "R_LEG_HIP_PITCH", 7: "R_LEG_HIP_ROLL", 8: "R_LEG_HIP_YAW", 9: "R_LEG_KNEE", 10: "R_LEG_ANKLE_PITCH", 11: "R_LEG_ANKLE_ROLL"}
+FULL_BODY = {i: f"joint_{i}" for i in range(29)}
 
 class ArmDevGUI(QWidget):
     def __init__(self):
@@ -36,6 +38,7 @@ class ArmDevGUI(QWidget):
             "waist": False,
             "left_leg": False,
             "right_leg": False,
+            "full_body": False,  # ✅ 新增
         }
         self.record_data = {
             "left_arm": [],
@@ -43,6 +46,7 @@ class ArmDevGUI(QWidget):
             "waist": [],
             "left_leg": [],
             "right_leg": [],
+            "full_body": [],     # ✅ 新增
         }
 
         self.subscriber = ChannelSubscriber("rt/lowstate", LowState_)
@@ -51,12 +55,13 @@ class ArmDevGUI(QWidget):
         self.layout = QGridLayout()
         self.setLayout(self.layout)
 
+        # 添加每部分按钮和显示
         self._add_group(0, 0, "Left Arm", LEFT_ARM, "left_arm")
         self._add_group(1, 0, "Right Arm", RIGHT_ARM, "right_arm")
         self._add_group(0, 1, "Left Leg", LEFT_LEG, "left_leg")
         self._add_group(1, 1, "Right Leg", RIGHT_LEG, "right_leg")
         self._add_group(0, 2, "Waist", WAIST, "waist")
-        self._add_group(1, 2, "Full Body", FULL_BODY, "full_body")
+        self._add_group(1, 2, "Full Body", FULL_BODY, "full_body")  # ✅ 新增按钮
 
         # 自动补齐所有名称
         for i in range(29):
@@ -66,7 +71,6 @@ class ArmDevGUI(QWidget):
         self.timer = QTimer()
         self.timer.timeout.connect(self.refresh)
         self.timer.start(100)
-
 
     def _add_group(self, row, col, title, joint_map, name_key):
         group = QVBoxLayout()
