@@ -238,8 +238,8 @@ class Custom:
                 traj_groups.append((
                     self.traj_waist, {
                         G1JointIndex.WaistYaw: "WAIST_YAW_q",
-                        G1JointIndex.WaistRoll: "WAIST_ROLL_q",
-                        G1JointIndex.WaistPitch: "WAIST_PITCH_q"
+                        # G1JointIndex.WaistRoll: "WAIST_ROLL_q",
+                        # G1JointIndex.WaistPitch: "WAIST_PITCH_q"
                     }
                 ))
 
