@@ -95,7 +95,7 @@ class Custom:
         self.traj_waist = None
         self.traj_left_leg = None
         self.traj_right_leg = None
-        self.traj_full_body = pd.read_csv("../recorddata/g1_full_body_20250609_172029.csv")
+        self.traj_full_body = pd.read_csv("../recorddata/g1_full_body_20250609_172811.csv")
 
 
         self.traj_data = None
