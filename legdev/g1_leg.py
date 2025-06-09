@@ -144,41 +144,54 @@ class Custom:
                 self.low_cmd.motor_cmd[i].kd = Kd[i]
 
 
+
         elif self.time_ < self.duration_ * 5:
 
-            # [Stage 4]: Better Running - alternate legs, lift and bend
+            # [Stage 4]: Running motion - fast alternating leg swing
 
             t = self.time_ - self.duration_ * 2
 
-            period = 1.0  # 跑步周期 1s（每条腿抬腿0.5s）
+            period = 0.4  # 更快的跑步周期（400ms一次完整交换）
 
-            # 动作参数
+            # 跑步关键幅度
 
-            hip_amp = np.pi * 20 / 180  # 髋关节最大抬起角度
+            hip_amp = np.pi * 30 / 180  # 髋关节更高抬起
 
-            knee_amp = np.pi * 35 / 180  # 膝盖最大弯曲角度
+            knee_amp = np.pi * 60 / 180  # 膝盖大幅弯曲
 
-            # 当前周期的归一化时间 [0, 1)
+            # 当前周期归一化时间 [0, 1)
 
             phase = (t % period) / period
 
-            # 左腿抬起 [0, 0.5)，右腿抬起 [0.5, 1)
+            # 是否处于“飞行相”阶段（两腿同时离地）大概在每周期的中间位置
+
+            flight_phase = (0.45 < phase < 0.55)
+
+            # 准备控制变量
+
+            L_HipPitch = 0.0
+
+            L_Knee = 0.0
+
+            R_HipPitch = 0.0
+
+            R_Knee = 0.0
 
             if phase < 0.5:
 
-                # 左腿抬起
+                # 左腿前摆抬起
 
-                L_HipPitch = hip_amp * np.sin(np.pi * phase * 2)  # 半周期内先升后落
+                L_HipPitch = hip_amp * np.sin(np.pi * phase * 2)
 
                 L_Knee = -knee_amp * np.sin(np.pi * phase * 2)
 
-                R_HipPitch = 0.0
+                R_HipPitch = -hip_amp * 0.2  # 右腿保持微微后摆支撑
 
                 R_Knee = 0.0
 
             else:
 
-                # 右腿抬起
+                # 右腿前摆抬起
 
                 phase_r = phase - 0.5
 
@@ -186,9 +199,11 @@ class Custom:
 
                 R_Knee = -knee_amp * np.sin(np.pi * phase_r * 2)
 
-                L_HipPitch = 0.0
+                L_HipPitch = -hip_amp * 0.2
 
                 L_Knee = 0.0
+
+            # 设置低层控制指令
 
             self.low_cmd.mode_pr = Mode.PR
 
@@ -205,7 +220,7 @@ class Custom:
 
                 self.low_cmd.motor_cmd[i].kd = Kd[i]
 
-            # 应用目标角度
+            # 应用腿部目标角度
 
             self.low_cmd.motor_cmd[G1JointIndex.LeftHipPitch].q = L_HipPitch
 
