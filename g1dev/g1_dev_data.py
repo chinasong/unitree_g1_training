@@ -173,67 +173,61 @@ class Custom:
     def LowCmdWrite(self):
         self.time_ += self.control_dt_
 
-        if self.time_ < self.duration_:
-            # 初始化姿态阶段
-            for i in range(G1_NUM_MOTOR):
-                ratio = np.clip(self.time_ / self.duration_, 0.0, 1.0)
-                self.low_cmd.mode_pr = Mode.PR
-                self.low_cmd.mode_machine = self.mode_machine_
-                self.low_cmd.motor_cmd[i].mode = 1
-                self.low_cmd.motor_cmd[i].tau = 0.
-                self.low_cmd.motor_cmd[i].q = (1.0 - ratio) * self.low_state.motor_state[i].q
-                self.low_cmd.motor_cmd[i].dq = 0.
-                self.low_cmd.motor_cmd[i].kp = Kp[i]
-                self.low_cmd.motor_cmd[i].kd = Kd[i]
+        # 初始化指令
+        for i in range(G1_NUM_MOTOR):
+            self.low_cmd.motor_cmd[i].mode = 1
+            self.low_cmd.motor_cmd[i].tau = 0
+            self.low_cmd.motor_cmd[i].dq = 0
+            # self.low_cmd.motor_cmd[i].kp = Kp[i]
+            # self.low_cmd.motor_cmd[i].kd = Kd[i]
 
-        else:
-            # 分别处理每个部位
-            if self.traj_left_arm is not None:
-                self.apply_traj(self.traj_left_arm, {
-                    G1JointIndex.LeftShoulderPitch: "L_SHOULDER_PITCH_q",
-                    G1JointIndex.LeftShoulderRoll: "L_SHOULDER_ROLL_q",
-                    G1JointIndex.LeftShoulderYaw: "L_SHOULDER_YAW_q",
-                    G1JointIndex.LeftElbow: "L_ELBOW_q",
-                    G1JointIndex.LeftWristRoll: "L_WRIST_ROLL_q",
-                    G1JointIndex.LeftWristPitch: "L_WRIST_PITCH_q",
-                    G1JointIndex.LeftWristYaw: "L_WRIST_YAW_q"
-                })
+        # 分别处理每个部位
+        if self.traj_left_arm is not None:
+            self.apply_traj(self.traj_left_arm, {
+                G1JointIndex.LeftShoulderPitch: "L_SHOULDER_PITCH_q",
+                G1JointIndex.LeftShoulderRoll: "L_SHOULDER_ROLL_q",
+                G1JointIndex.LeftShoulderYaw: "L_SHOULDER_YAW_q",
+                G1JointIndex.LeftElbow: "L_ELBOW_q",
+                G1JointIndex.LeftWristRoll: "L_WRIST_ROLL_q",
+                G1JointIndex.LeftWristPitch: "L_WRIST_PITCH_q",
+                G1JointIndex.LeftWristYaw: "L_WRIST_YAW_q"
+            })
 
-            if self.traj_right_arm is not None:
-                self.apply_traj(self.traj_right_arm, {
-                    G1JointIndex.RightShoulderPitch: "R_SHOULDER_PITCH_q",
-                    G1JointIndex.RightShoulderRoll: "R_SHOULDER_ROLL_q",
-                    G1JointIndex.RightShoulderYaw: "R_SHOULDER_YAW_q",
-                    G1JointIndex.RightElbow: "R_ELBOW_q",
-                    G1JointIndex.RightWristRoll: "R_WRIST_ROLL_q",
-                    G1JointIndex.RightWristPitch: "R_WRIST_PITCH_q",
-                    G1JointIndex.RightWristYaw: "R_WRIST_YAW_q"
-                })
+        if self.traj_right_arm is not None:
+            self.apply_traj(self.traj_right_arm, {
+                G1JointIndex.RightShoulderPitch: "R_SHOULDER_PITCH_q",
+                G1JointIndex.RightShoulderRoll: "R_SHOULDER_ROLL_q",
+                G1JointIndex.RightShoulderYaw: "R_SHOULDER_YAW_q",
+                G1JointIndex.RightElbow: "R_ELBOW_q",
+                G1JointIndex.RightWristRoll: "R_WRIST_ROLL_q",
+                G1JointIndex.RightWristPitch: "R_WRIST_PITCH_q",
+                G1JointIndex.RightWristYaw: "R_WRIST_YAW_q"
+            })
 
-            if self.traj_waist is not None:
-                self.apply_traj(self.traj_waist, {
-                    G1JointIndex.WaistYaw: "WAIST_YAW_q"
-                })
+        if self.traj_waist is not None:
+            self.apply_traj(self.traj_waist, {
+                G1JointIndex.WaistYaw: "WAIST_YAW_q"
+            })
 
-            if self.traj_left_leg is not None:
-                self.apply_traj(self.traj_left_leg, {
-                    G1JointIndex.LeftHipPitch: "L_LEG_HIP_PITCH_q",
-                    G1JointIndex.LeftHipRoll: "L_LEG_HIP_ROLL_q",
-                    G1JointIndex.LeftHipYaw: "L_LEG_HIP_YAW_q",
-                    G1JointIndex.LeftKnee: "L_LEG_KNEE_q",
-                    G1JointIndex.LeftAnklePitch: "L_LEG_ANKLE_PITCH_q",
-                    G1JointIndex.LeftAnkleRoll: "L_LEG_ANKLE_ROLL_q"
-                })
+        if self.traj_left_leg is not None:
+            self.apply_traj(self.traj_left_leg, {
+                G1JointIndex.LeftHipPitch: "L_LEG_HIP_PITCH_q",
+                G1JointIndex.LeftHipRoll: "L_LEG_HIP_ROLL_q",
+                G1JointIndex.LeftHipYaw: "L_LEG_HIP_YAW_q",
+                G1JointIndex.LeftKnee: "L_LEG_KNEE_q",
+                G1JointIndex.LeftAnklePitch: "L_LEG_ANKLE_PITCH_q",
+                G1JointIndex.LeftAnkleRoll: "L_LEG_ANKLE_ROLL_q"
+            })
 
-            if self.traj_right_leg is not None:
-                self.apply_traj(self.traj_right_leg, {
-                    G1JointIndex.RightHipPitch: "R_LEG_HIP_PITCH_q",
-                    G1JointIndex.RightHipRoll: "R_LEG_HIP_ROLL_q",
-                    G1JointIndex.RightHipYaw: "R_LEG_HIP_YAW_q",
-                    G1JointIndex.RightKnee: "R_LEG_KNEE_q",
-                    G1JointIndex.RightAnklePitch: "R_LEG_ANKLE_PITCH_q",
-                    G1JointIndex.RightAnkleRoll: "R_LEG_ANKLE_ROLL_q"
-                })
+        if self.traj_right_leg is not None:
+            self.apply_traj(self.traj_right_leg, {
+                G1JointIndex.RightHipPitch: "R_LEG_HIP_PITCH_q",
+                G1JointIndex.RightHipRoll: "R_LEG_HIP_ROLL_q",
+                G1JointIndex.RightHipYaw: "R_LEG_HIP_YAW_q",
+                G1JointIndex.RightKnee: "R_LEG_KNEE_q",
+                G1JointIndex.RightAnklePitch: "R_LEG_ANKLE_PITCH_q",
+                G1JointIndex.RightAnkleRoll: "R_LEG_ANKLE_ROLL_q"
+            })
 
         self.low_cmd.crc = self.crc.Crc(self.low_cmd)
         self.lowcmd_publisher_.Write(self.low_cmd)
