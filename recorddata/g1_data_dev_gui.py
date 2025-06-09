@@ -56,6 +56,7 @@ class ArmDevGUI(QWidget):
         self._add_group(0, 1, "Left Leg", LEFT_LEG, "left_leg")
         self._add_group(1, 1, "Right Leg", RIGHT_LEG, "right_leg")
         self._add_group(0, 2, "Waist", WAIST, "waist")
+        self._add_group(1, 2, "Full Body", FULL_BODY, "full_body")
 
         # 添加全身记录按钮
         full_btn = QPushButton("Start Full Body")
