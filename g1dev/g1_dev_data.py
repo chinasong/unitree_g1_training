@@ -16,20 +16,21 @@ import numpy as np
 G1_NUM_MOTOR = 29
 
 Kp = [
-    60, 60, 60, 100, 40, 40,      # legs
-    60, 60, 60, 100, 40, 40,      # legs
-    60, 40, 40,                   # waist
-    40, 40, 40, 40,  40, 40, 40,  # arms
-    40, 40, 40, 40,  40, 40, 40   # arms
+    60, 60, 60, 100, 40, 40,  # legs
+    60, 60, 60, 100, 40, 40,  # legs
+    60, 40, 40,  # waist
+    40, 40, 40, 40, 40, 40, 40,  # arms
+    40, 40, 40, 40, 40, 40, 40  # arms
 ]
 
 Kd = [
-    1, 1, 1, 2, 1, 1,     # legs
-    1, 1, 1, 2, 1, 1,     # legs
-    1, 1, 1,              # waist
+    1, 1, 1, 2, 1, 1,  # legs
+    1, 1, 1, 2, 1, 1,  # legs
+    1, 1, 1,  # waist
     1, 1, 1, 1, 1, 1, 1,  # arms
-    1, 1, 1, 1, 1, 1, 1   # arms 
+    1, 1, 1, 1, 1, 1, 1  # arms
 ]
+
 
 class G1JointIndex:
     LeftHipPitch = 0
@@ -49,40 +50,41 @@ class G1JointIndex:
     RightAnkleRoll = 11
     RightAnkleA = 11
     WaistYaw = 12
-    WaistRoll = 13        # NOTE: INVALID for g1 23dof/29dof with waist locked
-    WaistA = 13           # NOTE: INVALID for g1 23dof/29dof with waist locked
-    WaistPitch = 14       # NOTE: INVALID for g1 23dof/29dof with waist locked
-    WaistB = 14           # NOTE: INVALID for g1 23dof/29dof with waist locked
+    WaistRoll = 13  # NOTE: INVALID for g1 23dof/29dof with waist locked
+    WaistA = 13  # NOTE: INVALID for g1 23dof/29dof with waist locked
+    WaistPitch = 14  # NOTE: INVALID for g1 23dof/29dof with waist locked
+    WaistB = 14  # NOTE: INVALID for g1 23dof/29dof with waist locked
     LeftShoulderPitch = 15
     LeftShoulderRoll = 16
     LeftShoulderYaw = 17
     LeftElbow = 18
     LeftWristRoll = 19
-    LeftWristPitch = 20   # NOTE: INVALID for g1 23dof
-    LeftWristYaw = 21     # NOTE: INVALID for g1 23dof
+    LeftWristPitch = 20  # NOTE: INVALID for g1 23dof
+    LeftWristYaw = 21  # NOTE: INVALID for g1 23dof
     RightShoulderPitch = 22
     RightShoulderRoll = 23
     RightShoulderYaw = 24
     RightElbow = 25
     RightWristRoll = 26
     RightWristPitch = 27  # NOTE: INVALID for g1 23dof
-    RightWristYaw = 28    # NOTE: INVALID for g1 23dof
+    RightWristYaw = 28  # NOTE: INVALID for g1 23dof
 
 
 class Mode:
     PR = 0  # Series Control for Pitch/Roll Joints
     AB = 1  # Parallel Control for A/B Joints
 
+
 class Custom:
     def __init__(self):
         self.time_ = 0.0
         self.control_dt_ = 0.002  # [2ms]
-        self.duration_ = 3.0    # [3 s]
+        self.duration_ = 3.0  # [3 s]
         self.counter_ = 0
         self.mode_pr_ = Mode.PR
         self.mode_machine_ = 0
-        self.low_cmd = unitree_hg_msg_dds__LowCmd_()  
-        self.low_state = None 
+        self.low_cmd = unitree_hg_msg_dds__LowCmd_()
+        self.low_state = None
         self.update_mode_machine_ = False
         self.crc = CRC()
 
@@ -101,7 +103,7 @@ class Custom:
         self.lowcmd_publisher_ = ChannelPublisher("rt/lowcmd", LowCmd_)
         self.lowcmd_publisher_.Init()
 
-        # create subscriber # 
+        # create subscriber #
         self.lowstate_subscriber = ChannelSubscriber("rt/lowstate", LowState_)
         self.lowstate_subscriber.Init(self.LowStateHandler, 10)
 
@@ -121,87 +123,75 @@ class Custom:
         if self.update_mode_machine_ == False:
             self.mode_machine_ = self.low_state.mode_machine
             self.update_mode_machine_ = True
-        
-        self.counter_ +=1
-        if (self.counter_ % 500 == 0) :
+
+        self.counter_ += 1
+        if (self.counter_ % 500 == 0):
             self.counter_ = 0
             print(self.low_state.imu_state.rpy)
 
     def LowCmdWrite(self):
         self.time_ += self.control_dt_
 
-        if self.time_ < self.duration_ :
+        if self.time_ < self.duration_:
             # [Stage 1]: set robot to zero posture
             for i in range(G1_NUM_MOTOR):
                 ratio = np.clip(self.time_ / self.duration_, 0.0, 1.0)
                 self.low_cmd.mode_pr = Mode.PR
                 self.low_cmd.mode_machine = self.mode_machine_
-                self.low_cmd.motor_cmd[i].mode =  1 # 1:Enable, 0:Disable
-                self.low_cmd.motor_cmd[i].tau = 0. 
-                self.low_cmd.motor_cmd[i].q = (1.0 - ratio) * self.low_state.motor_state[i].q 
-                self.low_cmd.motor_cmd[i].dq = 0. 
-                self.low_cmd.motor_cmd[i].kp = Kp[i] 
+                self.low_cmd.motor_cmd[i].mode = 1  # 1:Enable, 0:Disable
+                self.low_cmd.motor_cmd[i].tau = 0.
+                self.low_cmd.motor_cmd[i].q = (1.0 - ratio) * self.low_state.motor_state[i].q
+                self.low_cmd.motor_cmd[i].dq = 0.
+                self.low_cmd.motor_cmd[i].kp = Kp[i]
                 self.low_cmd.motor_cmd[i].kd = Kd[i]
+
 
         elif self.time_ < self.duration_ * 5:
 
-            # [Stage 4]: Alternating Slow Jogging Gait with Natural Phasing
+            # [Stage 4]: Playback PR gait from CSV data with smooth interpolation
 
-            t = self.time_ - self.duration_ * 2
+            if not hasattr(self, "traj_data"):
+                import pandas as pd
 
-            period = 2.4  # 每条腿完整跑步周期（秒）
+                self.traj_data = pd.read_csv("../recorddata/g1_joint_framewise_20250609_140051.csv")
 
-            phase_l = (t % period) / period  # 左腿相位
+                self.traj_start_time = self.traj_data["time"].iloc[0]
 
-            phase_r = ((t + period / 2) % period) / period  # 右腿相位 = 左腿滞后半周期
+                self.traj_end_time = self.traj_data["time"].iloc[-1]
 
-            def gait_phase(phase):
+            current_abs_time = self.traj_start_time + (self.time_ - self.duration_ * 2)
 
-                # phase ∈ [0, 1]
+            df = self.traj_data
 
-                # 0~0.3: 蹬地
+            # 如果超出轨迹范围
 
-                # 0.3~0.6: 抬腿
+            if current_abs_time >= self.traj_end_time:
+                current_abs_time = self.traj_end_time
 
-                # 0.6~1.0: 落地支撑
+            # 找到前后两帧
 
-                if phase < 0.3:  # 蹬地
+            future = df[df["time"] >= current_abs_time]
 
-                    hip = -0.1
+            past = df[df["time"] <= current_abs_time]
 
-                    knee = 0.2
+            if len(future) == 0 or len(past) == 0:
+                return  # 安全保护
 
-                    ankle = 0.25
+            row_next = future.iloc[0]
 
-                elif phase < 0.6:  # 抬腿
+            row_prev = past.iloc[-1]
 
-                    p = (phase - 0.3) / 0.3
+            t1 = row_prev["time"]
 
-                    hip = np.deg2rad(20) * np.sin(np.pi * p)
+            t2 = row_next["time"]
 
-                    knee = np.deg2rad(35) * np.sin(np.pi * p)
+            ratio = (current_abs_time - t1) / (t2 - t1) if t2 > t1 else 0.0
 
-                    ankle = -0.25
+            def lerp(val1, val2, r):
 
-                else:  # 落地支撑缓冲
+                return (1 - r) * val1 + r * val2
 
-                    p = (phase - 0.6) / 0.4
-
-                    hip = 0.0
-
-                    knee = 0.2 * (1 - np.cos(np.pi * p)) / 2
-
-                    ankle = 0.2
-
-                return hip, knee, ankle
-
-            # 获取左右腿期望关节角度
-
-            L_HipPitch, L_Knee, L_Ankle = gait_phase(phase_l)
-
-            R_HipPitch, R_Knee, R_Ankle = gait_phase(phase_r)
-
-            # 设置控制指令
+            # 设置控制参数
 
             self.low_cmd.mode_pr = Mode.PR
 
@@ -218,28 +208,41 @@ class Custom:
 
                 self.low_cmd.motor_cmd[i].kd = 2.0 if i in [G1JointIndex.LeftKnee, G1JointIndex.RightKnee] else Kd[i]
 
-            self.low_cmd.motor_cmd[G1JointIndex.LeftHipPitch].q = L_HipPitch
+            # 设置每个腿部关节的插值目标角度
 
-            self.low_cmd.motor_cmd[G1JointIndex.LeftKnee].q = -L_Knee
+            mapping = {
 
-            self.low_cmd.motor_cmd[G1JointIndex.LeftAnklePitch].q = L_Ankle
+                G1JointIndex.LeftHipPitch: "L_LEG_HIP_PITCH_q",
 
-            self.low_cmd.motor_cmd[G1JointIndex.RightHipPitch].q = R_HipPitch
+                G1JointIndex.LeftKnee: "L_LEG_KNEE_q",
 
-            self.low_cmd.motor_cmd[G1JointIndex.RightKnee].q = -R_Knee
+                G1JointIndex.LeftAnklePitch: "L_LEG_ANKLE_PITCH_q",
 
-            self.low_cmd.motor_cmd[G1JointIndex.RightAnklePitch].q = R_Ankle
-    
+                G1JointIndex.RightHipPitch: "R_LEG_HIP_PITCH_q",
+
+                G1JointIndex.RightKnee: "R_LEG_KNEE_q",
+
+                G1JointIndex.RightAnklePitch: "R_LEG_ANKLE_PITCH_q",
+
+            }
+
+            for idx, col in mapping.items():
+                q_prev = row_prev[col]
+
+                q_next = row_next[col]
+
+                self.low_cmd.motor_cmd[idx].q = lerp(q_prev, q_next, ratio)
 
         self.low_cmd.crc = self.crc.Crc(self.low_cmd)
         self.lowcmd_publisher_.Write(self.low_cmd)
+
 
 if __name__ == '__main__':
 
     print("WARNING: Please ensure there are no obstacles around the robot while running this example.")
     input("Press Enter to continue...")
 
-    if len(sys.argv)>1:
+    if len(sys.argv) > 1:
         ChannelFactoryInitialize(0, sys.argv[1])
     else:
         ChannelFactoryInitialize(0)
@@ -248,5 +251,5 @@ if __name__ == '__main__':
     custom.Init()
     custom.Start()
 
-    while True:        
+    while True:
         time.sleep(1)
