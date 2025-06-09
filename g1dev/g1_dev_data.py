@@ -142,33 +142,28 @@ class Custom:
     def lerp(self, val1, val2, r):
         return (1 - r) * val1 + r * val2
 
-    def apply_traj(self, df, mapping):
-        # 当前回放时间（确保与 CSV 的 time 对齐）
-        t = time.time() - self.traj_start_time
-        t = max(t, df["time"].min())
-        t = min(t, df["time"].max())
+    def apply_timed_traj(self, df, mapping, traj_start, traj_end):
+        current_abs_time = traj_start + (self.time_ - self.duration_)
 
-        past = df[df["time"] <= t]
-        future = df[df["time"] >= t]
+        if current_abs_time >= traj_end:
+            current_abs_time = traj_end
 
-        if past.empty or future.empty:
+        future = df[df["time"] >= current_abs_time]
+        past = df[df["time"] <= current_abs_time]
+
+        if len(future) == 0 or len(past) == 0:
             return
 
-        r1, r2 = past.iloc[-1], future.iloc[0]
-        t1, t2 = r1["time"], r2["time"]
-        ratio = (t - t1) / (t2 - t1) if t2 > t1 else 0
+        row_next = future.iloc[0]
+        row_prev = past.iloc[-1]
+
+        t1, t2 = row_prev["time"], row_next["time"]
+        ratio = (current_abs_time - t1) / (t2 - t1) if t2 > t1 else 0.0
 
         for idx, col in mapping.items():
-            if col not in r1 or col not in r2:
-                continue  # 跳过缺失列
-
-            q = self.lerp(r1[col], r2[col], ratio)
-            self.low_cmd.motor_cmd[idx].mode = 1
-            self.low_cmd.motor_cmd[idx].q = q
-            self.low_cmd.motor_cmd[idx].dq = 0
-            self.low_cmd.motor_cmd[idx].tau = 0
-            self.low_cmd.motor_cmd[idx].kp = Kp[idx]
-            self.low_cmd.motor_cmd[idx].kd = Kd[idx]
+            q_prev = row_prev[col]
+            q_next = row_next[col]
+            self.low_cmd.motor_cmd[idx].q = self.lerp(q_prev, q_next, ratio)
 
     def LowCmdWrite(self):
         self.time_ += self.control_dt_
@@ -181,9 +176,13 @@ class Custom:
             # self.low_cmd.motor_cmd[i].kp = Kp[i]
             # self.low_cmd.motor_cmd[i].kd = Kd[i]
 
+        # 模式设置
+        self.low_cmd.mode_pr = Mode.PR
+        self.low_cmd.mode_machine = self.mode_machine_
+
         # 分别处理每个部位
         if self.traj_left_arm is not None:
-            self.apply_traj(self.traj_left_arm, {
+            self.apply_timed_traj(self.traj_left_arm, {
                 G1JointIndex.LeftShoulderPitch: "L_SHOULDER_PITCH_q",
                 G1JointIndex.LeftShoulderRoll: "L_SHOULDER_ROLL_q",
                 G1JointIndex.LeftShoulderYaw: "L_SHOULDER_YAW_q",
@@ -194,7 +193,7 @@ class Custom:
             })
 
         if self.traj_right_arm is not None:
-            self.apply_traj(self.traj_right_arm, {
+            self.apply_timed_traj(self.traj_right_arm, {
                 G1JointIndex.RightShoulderPitch: "R_SHOULDER_PITCH_q",
                 G1JointIndex.RightShoulderRoll: "R_SHOULDER_ROLL_q",
                 G1JointIndex.RightShoulderYaw: "R_SHOULDER_YAW_q",
@@ -205,12 +204,12 @@ class Custom:
             })
 
         if self.traj_waist is not None:
-            self.apply_traj(self.traj_waist, {
+            self.apply_timed_traj(self.traj_waist, {
                 G1JointIndex.WaistYaw: "WAIST_YAW_q"
             })
 
         if self.traj_left_leg is not None:
-            self.apply_traj(self.traj_left_leg, {
+            self.apply_timed_traj(self.traj_left_leg, {
                 G1JointIndex.LeftHipPitch: "L_LEG_HIP_PITCH_q",
                 G1JointIndex.LeftHipRoll: "L_LEG_HIP_ROLL_q",
                 G1JointIndex.LeftHipYaw: "L_LEG_HIP_YAW_q",
@@ -220,7 +219,7 @@ class Custom:
             })
 
         if self.traj_right_leg is not None:
-            self.apply_traj(self.traj_right_leg, {
+            self.apply_timed_traj(self.traj_right_leg, {
                 G1JointIndex.RightHipPitch: "R_LEG_HIP_PITCH_q",
                 G1JointIndex.RightHipRoll: "R_LEG_HIP_ROLL_q",
                 G1JointIndex.RightHipYaw: "R_LEG_HIP_YAW_q",
