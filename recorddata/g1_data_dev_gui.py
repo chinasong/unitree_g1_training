@@ -77,7 +77,7 @@ class ArmDevGUI(QWidget):
 
         btn = QPushButton(f"Start {title}")
         btn.setCheckable(True)
-        btn.clicked.connect(lambda checked, key=name_key, btn=btn: self.toggle_record(key, btn))
+        btn.clicked.connect(lambda checked, key=name_key, b=btn: self.toggle_record(key, b))
         group.addWidget(btn)
 
         self.layout.addLayout(group, row, col)
