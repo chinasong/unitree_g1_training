@@ -91,10 +91,10 @@ class Custom:
 
         # Trajectory preload
         self.traj_left_arm = None
-        self.traj_right_arm = pd.read_csv("../recorddata/g1_right_leg_20250609_165535.csv")
+        self.traj_right_arm = None
         self.traj_waist = None
         self.traj_left_leg = None
-        self.traj_right_leg = None
+        self.traj_right_leg = pd.read_csv("../recorddata/g1_right_leg_20250609_165535.csv")
 
         self.traj_data = None
         if self.traj_left_arm is not None:
