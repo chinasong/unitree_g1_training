@@ -267,10 +267,11 @@ class Custom:
                 ))
 
             # 遍历每组部位轨迹，逐个执行
-            for idx, col in traj_groups:
-                q_prev = row_prev[col]
+            for idx, joint_map in traj_groups:
+                for idx, col in joint_map.items():
+                    q_prev = row_prev[col]
 
-                q_next = row_next[col]
+                    q_next = row_next[col]
 
                 self.low_cmd.motor_cmd[idx].q = self.lerp(q_prev, q_next, ratio)
 
