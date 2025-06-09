@@ -168,8 +168,8 @@ class Custom:
                 self.low_cmd.motor_cmd[i].tau = 0.
                 self.low_cmd.motor_cmd[i].q = (1.0 - ratio) * self.low_state.motor_state[i].q
                 self.low_cmd.motor_cmd[i].dq = 0.
-                self.low_cmd.motor_cmd[i].kp = Kp[i]
-                self.low_cmd.motor_cmd[i].kd = Kd[i]
+                # self.low_cmd.motor_cmd[i].kp = Kp[i]
+                # self.low_cmd.motor_cmd[i].kd = Kd[i]
         elif self.time_ < self.duration_ + (self.traj_end_time - self.traj_start_time):
             current_abs_time = self.traj_start_time + (self.time_ - self.duration_)
 
@@ -268,12 +268,12 @@ class Custom:
 
             # 遍历每组部位轨迹，逐个执行
             for idx, joint_map in traj_groups:
-                for idx, col in joint_map.items():
+                for idx1, col in joint_map.items():
                     q_prev = row_prev[col]
 
                     q_next = row_next[col]
 
-                    self.low_cmd.motor_cmd[idx].q = self.lerp(q_prev, q_next, ratio)
+                    self.low_cmd.motor_cmd[idx1].q = self.lerp(q_prev, q_next, ratio)
 
         # 发送控制命令
         self.low_cmd.crc = self.crc.Crc(self.low_cmd)
