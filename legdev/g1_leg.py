@@ -145,67 +145,66 @@ class Custom:
 
 
 
+
         elif self.time_ < self.duration_ * 5:
 
-            # [Stage 4]: Realistic slow jogging gait
+            # [Stage 4]: Alternating Slow Jogging Gait with Natural Phasing
 
             t = self.time_ - self.duration_ * 2
 
-            period = 3.0  # 慢跑周期拉长，3秒完整一轮（左右腿各1.5s）
+            period = 2.4  # 每条腿完整跑步周期（秒）
 
-            phase = (t % period) / period
+            phase_l = (t % period) / period  # 左腿相位
 
-            # 抬腿振幅参数（适中）
+            phase_r = ((t + period / 2) % period) / period  # 右腿相位 = 左腿滞后半周期
 
-            hip_amp = np.deg2rad(20)  # 髋关节抬腿角度
+            def gait_phase(phase):
 
-            knee_amp = np.deg2rad(35)  # 膝关节弯曲角度
+                # phase ∈ [0, 1]
 
-            ankle_push = 0.25  # 脚踝蹬地
+                # 0~0.3: 蹬地
 
-            ankle_fold = -0.25  # 抬腿脚踝折起
+                # 0.3~0.6: 抬腿
 
-            support_knee = 0.2  # 支撑腿缓冲微屈
+                # 0.6~1.0: 落地支撑
 
-            swing_smooth = lambda x: 0.5 * (1 - np.cos(2 * np.pi * x))  # 平滑抬腿余弦
+                if phase < 0.3:  # 蹬地
 
-            if phase < 0.5:
+                    hip = -0.1
 
-                # 左腿飞行，右腿支撑
+                    knee = 0.2
 
-                ph = phase / 0.5
+                    ankle = 0.25
 
-                L_HipPitch = hip_amp * swing_smooth(ph)
+                elif phase < 0.6:  # 抬腿
 
-                L_Knee = knee_amp * swing_smooth(ph)
+                    p = (phase - 0.3) / 0.3
 
-                L_Ankle = ankle_fold
+                    hip = np.deg2rad(20) * np.sin(np.pi * p)
 
-                R_HipPitch = -0.1
+                    knee = np.deg2rad(35) * np.sin(np.pi * p)
 
-                R_Knee = support_knee
+                    ankle = -0.25
 
-                R_Ankle = ankle_push
+                else:  # 落地支撑缓冲
 
-            else:
+                    p = (phase - 0.6) / 0.4
 
-                # 右腿飞行，左腿支撑
+                    hip = 0.0
 
-                ph = (phase - 0.5) / 0.5
+                    knee = 0.2 * (1 - np.cos(np.pi * p)) / 2
 
-                R_HipPitch = hip_amp * swing_smooth(ph)
+                    ankle = 0.2
 
-                R_Knee = knee_amp * swing_smooth(ph)
+                return hip, knee, ankle
 
-                R_Ankle = ankle_fold
+            # 获取左右腿期望关节角度
 
-                L_HipPitch = -0.1
+            L_HipPitch, L_Knee, L_Ankle = gait_phase(phase_l)
 
-                L_Knee = support_knee
+            R_HipPitch, R_Knee, R_Ankle = gait_phase(phase_r)
 
-                L_Ankle = ankle_push
-
-            # 设置控制参数
+            # 设置控制指令
 
             self.low_cmd.mode_pr = Mode.PR
 
@@ -222,11 +221,9 @@ class Custom:
 
                 self.low_cmd.motor_cmd[i].kd = 2.0 if i in [G1JointIndex.LeftKnee, G1JointIndex.RightKnee] else Kd[i]
 
-            # 指令赋值
-
             self.low_cmd.motor_cmd[G1JointIndex.LeftHipPitch].q = L_HipPitch
 
-            self.low_cmd.motor_cmd[G1JointIndex.LeftKnee].q = -L_Knee  # G1 左膝弯曲为负
+            self.low_cmd.motor_cmd[G1JointIndex.LeftKnee].q = -L_Knee
 
             self.low_cmd.motor_cmd[G1JointIndex.LeftAnklePitch].q = L_Ankle
 
