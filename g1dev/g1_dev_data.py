@@ -94,7 +94,9 @@ class Custom:
         self.traj_right_arm = None
         self.traj_waist = None
         self.traj_left_leg = None
-        self.traj_right_leg = pd.read_csv("../recorddata/g1_right_leg_20250609_165535.csv")
+        self.traj_right_leg = None
+        self.traj_full_body = pd.read_csv("../recorddata/g1_full_body_20250609_172029.csv")
+
 
         self.traj_data = None
         if self.traj_left_arm is not None:
@@ -107,6 +109,8 @@ class Custom:
             self.traj_data = self.traj_left_leg
         elif self.traj_right_leg is not None:
             self.traj_data = self.traj_right_leg
+        elif self.traj_full_body is not None:
+            self.traj_data = self.traj_full_body
 
         self.traj_start_time = self.traj_data["time"].iloc[0]
         self.traj_end_time = self.traj_data["time"].iloc[-1]
@@ -251,6 +255,35 @@ class Custom:
             if self.traj_right_leg is not None:
                 traj_groups.append((
                     self.traj_right_leg, {
+                        G1JointIndex.RightHipPitch: "R_LEG_HIP_PITCH_q",
+                        G1JointIndex.RightKnee: "R_LEG_KNEE_q",
+                        G1JointIndex.RightAnklePitch: "R_LEG_ANKLE_PITCH_q"
+                    }
+                ))
+
+            if self.traj_full_body is not None:
+                traj_groups.append((
+                    self.traj_full_body, {
+                        G1JointIndex.LeftShoulderPitch: "L_SHOULDER_PITCH_q",
+                        G1JointIndex.LeftShoulderRoll: "L_SHOULDER_ROLL_q",
+                        G1JointIndex.LeftShoulderYaw: "L_SHOULDER_YAW_q",
+                        G1JointIndex.LeftElbow: "L_ELBOW_q",
+                        G1JointIndex.LeftWristRoll: "L_WRIST_ROLL_q",
+                        G1JointIndex.LeftWristPitch: "L_WRIST_PITCH_q",
+                        G1JointIndex.LeftWristYaw: "L_WRIST_YAW_q",
+                        G1JointIndex.RightShoulderPitch: "R_SHOULDER_PITCH_q",
+                        G1JointIndex.RightShoulderRoll: "R_SHOULDER_ROLL_q",
+                        G1JointIndex.RightShoulderYaw: "R_SHOULDER_YAW_q",
+                        G1JointIndex.RightElbow: "R_ELBOW_q",
+                        G1JointIndex.RightWristRoll: "R_WRIST_ROLL_q",
+                        G1JointIndex.RightWristPitch: "R_WRIST_PITCH_q",
+                        G1JointIndex.RightWristYaw: "R_WRIST_YAW_q",
+                        G1JointIndex.WaistYaw: "WAIST_YAW_q",
+                        G1JointIndex.WaistRoll: "WAIST_ROLL_q",
+                        G1JointIndex.WaistPitch: "WAIST_PITCH_q",
+                        G1JointIndex.LeftHipPitch: "L_LEG_HIP_PITCH_q",
+                        G1JointIndex.LeftKnee: "L_LEG_KNEE_q",
+                        G1JointIndex.LeftAnklePitch: "L_LEG_ANKLE_PITCH_q",
                         G1JointIndex.RightHipPitch: "R_LEG_HIP_PITCH_q",
                         G1JointIndex.RightKnee: "R_LEG_KNEE_q",
                         G1JointIndex.RightAnklePitch: "R_LEG_ANKLE_PITCH_q"
