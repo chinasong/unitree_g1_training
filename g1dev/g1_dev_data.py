@@ -273,7 +273,7 @@ class Custom:
 
                     q_next = row_next[col]
 
-                self.low_cmd.motor_cmd[idx].q = self.lerp(q_prev, q_next, ratio)
+                    self.low_cmd.motor_cmd[idx].q = self.lerp(q_prev, q_next, ratio)
 
         # 发送控制命令
         self.low_cmd.crc = self.crc.Crc(self.low_cmd)
