@@ -160,6 +160,35 @@ class Custom:
             self.low_cmd.motor_cmd[G1JointIndex.RightAnklePitch].q = R_P_des
             self.low_cmd.motor_cmd[G1JointIndex.RightAnkleRoll].q = R_R_des
 
+        elif self.time_ < self.duration_ * 3:
+            # [Stage 4]: raise left leg (hip & knee) while right leg stays extended
+
+            t = self.time_ - self.duration_ * 2
+            period = 2.0  # 2s 抬腿周期
+            amp_hip = np.pi * 15 / 180  # 抬腿髋关节振幅
+            amp_knee = np.pi * 30 / 180  # 弯腿膝关节振幅
+
+            L_HipPitch_des = amp_hip * np.sin(np.pi * t / period)
+            L_Knee_des = amp_knee * np.sin(np.pi * t / period)
+
+            self.low_cmd.mode_pr = Mode.PR
+            self.low_cmd.mode_machine = self.mode_machine_
+
+            for i in range(G1_NUM_MOTOR):
+                self.low_cmd.motor_cmd[i].mode = 1
+                self.low_cmd.motor_cmd[i].tau = 0
+                self.low_cmd.motor_cmd[i].dq = 0
+                self.low_cmd.motor_cmd[i].kp = Kp[i]
+                self.low_cmd.motor_cmd[i].kd = Kd[i]
+
+            # 左腿动作（抬起）
+            self.low_cmd.motor_cmd[G1JointIndex.LeftHipPitch].q = L_HipPitch_des
+            self.low_cmd.motor_cmd[G1JointIndex.LeftKnee].q = -L_Knee_des  # 弯曲方向负
+
+            # 右腿保持伸直支撑
+            self.low_cmd.motor_cmd[G1JointIndex.RightHipPitch].q = 0.0
+            self.low_cmd.motor_cmd[G1JointIndex.RightKnee].q = 0.0
+
         else :
             # [Stage 3]: swing ankle using AB mode
             max_A = np.pi * 30.0 / 180.0
