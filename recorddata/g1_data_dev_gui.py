@@ -178,7 +178,7 @@ class ArmDevGUI(QWidget):
         with open(filename, "w", newline="") as f:
             writer = csv.writer(f)
             header = ["time"] + [
-                f"joint_{idx}_{suf}" for idx in range(29) for suf in ("q", "dq", "tau")
+                f"{self.name_map.get(idx, f'joint_{idx}')}_{suf}" for idx in range(29) for suf in ("q", "dq", "tau")
             ]
             writer.writerow(header)
             writer.writerows(self.record_data["full_body"])
