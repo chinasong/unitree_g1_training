@@ -96,7 +96,20 @@ class Custom:
         self.traj_left_leg = None
         self.traj_right_leg = None
 
-        self.traj_start_time = time.time()
+        self.traj_data = None
+        if self.traj_left_arm is not None:
+            self.traj_data = self.traj_left_arm
+        elif self.traj_right_arm is not None:
+            self.traj_data = self.traj_right_arm
+        elif self.traj_waist is not None:
+            self.traj_data = self.traj_waist
+        elif self.traj_left_leg is not None:
+            self.traj_data = self.traj_left_leg
+        elif self.traj_right_leg is not None:
+            self.traj_data = self.traj_right_leg
+
+        self.traj_start_time = self.traj_data["time"].iloc[0]
+        self.traj_end_time = self.traj_data["time"].iloc[-1]
 
     def Init(self):
         self.msc = MotionSwitcherClient()
@@ -157,20 +170,45 @@ class Custom:
                 self.low_cmd.motor_cmd[i].dq = 0.
                 self.low_cmd.motor_cmd[i].kp = Kp[i]
                 self.low_cmd.motor_cmd[i].kd = Kd[i]
+        elif self.time_ < self.duration_ + (self.traj_end_time - self.traj_start_time):
+            current_abs_time = self.traj_start_time + (self.time_ - self.duration_)
 
-        else:
+            df = self.traj_data
+
+            # 安全处理
+
+            if current_abs_time >= self.traj_end_time:
+                current_abs_time = self.traj_end_time
+
+            future = df[df["time"] >= current_abs_time]
+
+            past = df[df["time"] <= current_abs_time]
+
+            if len(future) == 0 or len(past) == 0:
+                return
+
+            row_next = future.iloc[0]
+
+            row_prev = past.iloc[-1]
+
+            t1, t2 = row_prev["time"], row_next["time"]
+
+            ratio = (current_abs_time - t1) / (t2 - t1) if t2 > t1 else 0.0
+
             self.low_cmd.mode_pr = Mode.PR
+
             self.low_cmd.mode_machine = self.mode_machine_
 
             for i in range(G1_NUM_MOTOR):
                 self.low_cmd.motor_cmd[i].mode = 1
-                self.low_cmd.motor_cmd[i].tau = 0
-                self.low_cmd.motor_cmd[i].dq = 0
-                self.low_cmd.motor_cmd[i].kp = 80.0 if i in [G1JointIndex.LeftKnee, G1JointIndex.RightKnee] else Kp[i]
-                self.low_cmd.motor_cmd[i].kd = 2.0 if i in [G1JointIndex.LeftKnee, G1JointIndex.RightKnee] else Kd[i]
 
-            # 当前绝对时间
-            current_abs_time = self.traj_start_time + (self.time_ - self.duration_)
+                self.low_cmd.motor_cmd[i].tau = 0
+
+                self.low_cmd.motor_cmd[i].dq = 0
+
+                self.low_cmd.motor_cmd[i].kp = 80.0 if i in [G1JointIndex.LeftKnee, G1JointIndex.RightKnee] else Kp[i]
+
+                self.low_cmd.motor_cmd[i].kd = 2.0 if i in [G1JointIndex.LeftKnee, G1JointIndex.RightKnee] else Kd[i]
 
             # 定义各部分轨迹映射
             traj_groups = []
@@ -229,26 +267,12 @@ class Custom:
                 ))
 
             # 遍历每组部位轨迹，逐个执行
-            for df, mapping in traj_groups:
-                if df is None:
-                    continue
-                if current_abs_time > df["time"].max():
-                    continue
+            for idx, col in mapping.items():
+                q_prev = row_prev[col]
 
-                # 找到当前帧前后两行
-                past = df[df["time"] <= current_abs_time]
-                future = df[df["time"] >= current_abs_time]
-                if past.empty or future.empty:
-                    continue
-                row_prev = past.iloc[-1]
-                row_next = future.iloc[0]
-                t1, t2 = row_prev["time"], row_next["time"]
-                ratio = (current_abs_time - t1) / (t2 - t1) if t2 > t1 else 0.0
+                q_next = row_next[col]
 
-                # 插值更新该部位的各个关节
-                for idx, col in mapping.items():
-                    q = self.lerp(row_prev[col], row_next[col], ratio)
-                    self.low_cmd.motor_cmd[idx].q = q
+                self.low_cmd.motor_cmd[idx].q = self.lerp(q_prev, q_next, ratio)
 
         # 发送控制命令
         self.low_cmd.crc = self.crc.Crc(self.low_cmd)
