@@ -5,7 +5,8 @@ import mujoco.viewer
 import numpy as np
 
 # 加载 G1 模型（确保路径正确）
-model = mujoco.MjModel.from_xml_path("../externals/unitree_rl_gym/resources/g1_description/g1_23dof.xml")
+model = mujoco.MjModel.from_xml_path("../externals/unitree_rl_gym/resources/robots/g1_description/g1_23dof.xml")
+
 data = mujoco.MjData(model)
 
 # 打开 GUI 以手动拖动关节
