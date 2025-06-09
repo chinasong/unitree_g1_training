@@ -7,7 +7,7 @@ from mujoco import MjModel, MjData
 from datetime import datetime
 
 # 加载模型
-model = mujoco.MjModel.from_xml_path("g1_23dof.xml")
+model = mujoco.MjModel.from_xml_path("../externals/unitree_rl_gym/resources/robots/g1_description/g1_23dof.xml")
 data = mujoco.MjData(model)
 
 # 右臂关节映射（仿真名 -> CSV列名）
