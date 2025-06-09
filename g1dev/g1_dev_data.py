@@ -90,7 +90,7 @@ class Custom:
         self.crc = CRC()
 
         # Trajectory preload
-        self.traj_data = pd.read_csv("../recorddata/g1_joint_framewise_20250609_140051.csv")
+        self.traj_data = pd.read_csv("../recorddata/g1_right_arm_20250609_145913.csv")
         self.traj_start_time = self.traj_data["time"].iloc[0]
         self.traj_end_time = self.traj_data["time"].iloc[-1]
 
@@ -143,25 +143,13 @@ class Custom:
         self.time_ += self.control_dt_
 
         if self.time_ < self.duration_:
-            # [Stage 1]: set robot to zero posture
-            for i in range(G1_NUM_MOTOR):
-                ratio = np.clip(self.time_ / self.duration_, 0.0, 1.0)
-                self.low_cmd.mode_pr = Mode.PR
-                self.low_cmd.mode_machine = self.mode_machine_
-                self.low_cmd.motor_cmd[i].mode = 1  # 1:Enable, 0:Disable
-                self.low_cmd.motor_cmd[i].tau = 0.
-                self.low_cmd.motor_cmd[i].q = (1.0 - ratio) * self.low_state.motor_state[i].q
-                self.low_cmd.motor_cmd[i].dq = 0.
-                self.low_cmd.motor_cmd[i].kp = Kp[i]
-                self.low_cmd.motor_cmd[i].kd = Kd[i]
+            return  # 前期等待
 
-        elif self.time_ < self.duration_ + (self.traj_end_time - self.traj_start_time):
+        if self.time_ < self.duration_ + (self.traj_end_time - self.traj_start_time):
 
             current_abs_time = self.traj_start_time + (self.time_ - self.duration_)
 
             df = self.traj_data
-
-            # 安全处理
 
             if current_abs_time >= self.traj_end_time:
                 current_abs_time = self.traj_end_time
@@ -196,23 +184,77 @@ class Custom:
 
                 self.low_cmd.motor_cmd[i].kd = 2.0 if i in [G1JointIndex.LeftKnee, G1JointIndex.RightKnee] else Kd[i]
 
-            mapping = {
+            # ======== 多关节映射（全身回放）========
+
+            col_mapping = {
+
+                # 左腿
 
                 G1JointIndex.LeftHipPitch: "L_LEG_HIP_PITCH_q",
+
+                G1JointIndex.LeftHipRoll: "L_LEG_HIP_ROLL_q",
+
+                G1JointIndex.LeftHipYaw: "L_LEG_HIP_YAW_q",
 
                 G1JointIndex.LeftKnee: "L_LEG_KNEE_q",
 
                 G1JointIndex.LeftAnklePitch: "L_LEG_ANKLE_PITCH_q",
 
+                G1JointIndex.LeftAnkleRoll: "L_LEG_ANKLE_ROLL_q",
+
+                # 右腿
+
                 G1JointIndex.RightHipPitch: "R_LEG_HIP_PITCH_q",
+
+                G1JointIndex.RightHipRoll: "R_LEG_HIP_ROLL_q",
+
+                G1JointIndex.RightHipYaw: "R_LEG_HIP_YAW_q",
 
                 G1JointIndex.RightKnee: "R_LEG_KNEE_q",
 
                 G1JointIndex.RightAnklePitch: "R_LEG_ANKLE_PITCH_q",
 
+                G1JointIndex.RightAnkleRoll: "R_LEG_ANKLE_ROLL_q",
+
+                # 腰部
+
+                G1JointIndex.WaistYaw: "WAIST_YAW_q",
+
+                # 左手
+
+                G1JointIndex.LeftShoulderPitch: "L_SHOULDER_PITCH_q",
+
+                G1JointIndex.LeftShoulderRoll: "L_SHOULDER_ROLL_q",
+
+                G1JointIndex.LeftShoulderYaw: "L_SHOULDER_YAW_q",
+
+                G1JointIndex.LeftElbow: "L_ELBOW_q",
+
+                G1JointIndex.LeftWristRoll: "L_WRIST_ROLL_q",
+
+                G1JointIndex.LeftWristPitch: "L_WRIST_PITCH_q",
+
+                G1JointIndex.LeftWristYaw: "L_WRIST_YAW_q",
+
+                # 右手
+
+                G1JointIndex.RightShoulderPitch: "R_SHOULDER_PITCH_q",
+
+                G1JointIndex.RightShoulderRoll: "R_SHOULDER_ROLL_q",
+
+                G1JointIndex.RightShoulderYaw: "R_SHOULDER_YAW_q",
+
+                G1JointIndex.RightElbow: "R_ELBOW_q",
+
+                G1JointIndex.RightWristRoll: "R_WRIST_ROLL_q",
+
+                G1JointIndex.RightWristPitch: "R_WRIST_PITCH_q",
+
+                G1JointIndex.RightWristYaw: "R_WRIST_YAW_q",
+
             }
 
-            for idx, col in mapping.items():
+            for idx, col in col_mapping.items():
                 q_prev = row_prev[col]
 
                 q_next = row_next[col]
