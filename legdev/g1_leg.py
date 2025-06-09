@@ -144,67 +144,41 @@ class Custom:
                 self.low_cmd.motor_cmd[i].kd = Kd[i]
 
 
-
-
         elif self.time_ < self.duration_ * 5:
 
-            # [Stage 4]: Alternating Slow Jogging Gait with Natural Phasing
+            # [Stage 4]: Execute real joint trajectory from CSV (legs only)
 
-            t = self.time_ - self.duration_ * 2
+            if not hasattr(self, "traj_data"):
+                # 加载 CSV 数据（仅一次）
 
-            period = 2.4  # 每条腿完整跑步周期（秒）
+                import pandas as pd
 
-            phase_l = (t % period) / period  # 左腿相位
+                self.traj_data = pd.read_csv("g1_joint_framewise_20250609_140051.csv")
 
-            phase_r = ((t + period / 2) % period) / period  # 右腿相位 = 左腿滞后半周期
+                self.traj_index = 0
 
-            def gait_phase(phase):
+                self.traj_interval = self.control_dt_  # 假设每帧间隔为 control_dt_
 
-                # phase ∈ [0, 1]
+            if self.traj_index >= len(self.traj_data):
+                print("Trajectory finished.")
 
-                # 0~0.3: 蹬地
+                return
 
-                # 0.3~0.6: 抬腿
+            row = self.traj_data.iloc[self.traj_index]
 
-                # 0.6~1.0: 落地支撑
+            # 设置腿部关节角度
 
-                if phase < 0.3:  # 蹬地
+            L_HipPitch = row.get("L_LEG_HIP_PITCH_q", 0.0)
 
-                    hip = -0.1
+            L_Knee = row.get("L_LEG_KNEE_q", 0.0)
 
-                    knee = 0.2
+            L_Ankle = row.get("L_LEG_ANKLE_PITCH_q", 0.0)
 
-                    ankle = 0.25
+            R_HipPitch = row.get("R_LEG_HIP_PITCH_q", 0.0)
 
-                elif phase < 0.6:  # 抬腿
+            R_Knee = row.get("R_LEG_KNEE_q", 0.0)
 
-                    p = (phase - 0.3) / 0.3
-
-                    hip = np.deg2rad(20) * np.sin(np.pi * p)
-
-                    knee = np.deg2rad(35) * np.sin(np.pi * p)
-
-                    ankle = -0.25
-
-                else:  # 落地支撑缓冲
-
-                    p = (phase - 0.6) / 0.4
-
-                    hip = 0.0
-
-                    knee = 0.2 * (1 - np.cos(np.pi * p)) / 2
-
-                    ankle = 0.2
-
-                return hip, knee, ankle
-
-            # 获取左右腿期望关节角度
-
-            L_HipPitch, L_Knee, L_Ankle = gait_phase(phase_l)
-
-            R_HipPitch, R_Knee, R_Ankle = gait_phase(phase_r)
-
-            # 设置控制指令
+            R_Ankle = row.get("R_LEG_ANKLE_PITCH_q", 0.0)
 
             self.low_cmd.mode_pr = Mode.PR
 
@@ -217,9 +191,9 @@ class Custom:
 
                 self.low_cmd.motor_cmd[i].dq = 0
 
-                self.low_cmd.motor_cmd[i].kp = 80.0 if i in [G1JointIndex.LeftKnee, G1JointIndex.RightKnee] else Kp[i]
+                self.low_cmd.motor_cmd[i].kp = 60.0
 
-                self.low_cmd.motor_cmd[i].kd = 2.0 if i in [G1JointIndex.LeftKnee, G1JointIndex.RightKnee] else Kd[i]
+                self.low_cmd.motor_cmd[i].kd = 2.0
 
             self.low_cmd.motor_cmd[G1JointIndex.LeftHipPitch].q = L_HipPitch
 
@@ -232,6 +206,8 @@ class Custom:
             self.low_cmd.motor_cmd[G1JointIndex.RightKnee].q = -R_Knee
 
             self.low_cmd.motor_cmd[G1JointIndex.RightAnklePitch].q = R_Ankle
+
+            self.traj_index += 1
     
 
         self.low_cmd.crc = self.crc.Crc(self.low_cmd)
