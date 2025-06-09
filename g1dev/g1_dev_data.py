@@ -90,10 +90,13 @@ class Custom:
         self.crc = CRC()
 
         # Trajectory preload
-        self.traj_data = pd.read_csv("../recorddata/g1_right_arm_20250609_145913.csv")
-        self.traj_start_time = self.traj_data["time"].iloc[0]
-        self.traj_end_time = self.traj_data["time"].iloc[-1]
+        self.traj_left_arm = None
+        self.traj_right_arm = pd.read_csv("../recorddata/g1_right_arm_20250609_145913")
+        self.traj_waist = None
+        self.traj_left_leg = None
+        self.traj_right_leg = None
 
+        self.traj_start_time = time.time()
 
     def Init(self):
         self.msc = MotionSwitcherClient()
@@ -139,127 +142,98 @@ class Custom:
     def lerp(self, val1, val2, r):
         return (1 - r) * val1 + r * val2
 
+    def apply_traj(self, df, mapping):
+        # 当前回放时间（确保与 CSV 的 time 对齐）
+        t = time.time() - self.traj_start_time
+        t = max(t, df["time"].min())
+        t = min(t, df["time"].max())
+
+        past = df[df["time"] <= t]
+        future = df[df["time"] >= t]
+
+        if past.empty or future.empty:
+            return
+
+        r1, r2 = past.iloc[-1], future.iloc[0]
+        t1, t2 = r1["time"], r2["time"]
+        ratio = (t - t1) / (t2 - t1) if t2 > t1 else 0
+
+        for idx, col in mapping.items():
+            if col not in r1 or col not in r2:
+                continue  # 跳过缺失列
+
+            q = self.lerp(r1[col], r2[col], ratio)
+            self.low_cmd.motor_cmd[idx].mode = 1
+            self.low_cmd.motor_cmd[idx].q = q
+            self.low_cmd.motor_cmd[idx].dq = 0
+            self.low_cmd.motor_cmd[idx].tau = 0
+            self.low_cmd.motor_cmd[idx].kp = Kp[idx]
+            self.low_cmd.motor_cmd[idx].kd = Kd[idx]
+
     def LowCmdWrite(self):
         self.time_ += self.control_dt_
 
         if self.time_ < self.duration_:
-            return  # 前期等待
-
-        if self.time_ < self.duration_ + (self.traj_end_time - self.traj_start_time):
-
-            current_abs_time = self.traj_start_time + (self.time_ - self.duration_)
-
-            df = self.traj_data
-
-            if current_abs_time >= self.traj_end_time:
-                current_abs_time = self.traj_end_time
-
-            future = df[df["time"] >= current_abs_time]
-
-            past = df[df["time"] <= current_abs_time]
-
-            if len(future) == 0 or len(past) == 0:
-                return
-
-            row_next = future.iloc[0]
-
-            row_prev = past.iloc[-1]
-
-            t1, t2 = row_prev["time"], row_next["time"]
-
-            ratio = (current_abs_time - t1) / (t2 - t1) if t2 > t1 else 0.0
-
-            self.low_cmd.mode_pr = Mode.PR
-
-            self.low_cmd.mode_machine = self.mode_machine_
-
+            # 初始化姿态阶段
             for i in range(G1_NUM_MOTOR):
+                ratio = np.clip(self.time_ / self.duration_, 0.0, 1.0)
+                self.low_cmd.mode_pr = Mode.PR
+                self.low_cmd.mode_machine = self.mode_machine_
                 self.low_cmd.motor_cmd[i].mode = 1
+                self.low_cmd.motor_cmd[i].tau = 0.
+                self.low_cmd.motor_cmd[i].q = (1.0 - ratio) * self.low_state.motor_state[i].q
+                self.low_cmd.motor_cmd[i].dq = 0.
+                self.low_cmd.motor_cmd[i].kp = Kp[i]
+                self.low_cmd.motor_cmd[i].kd = Kd[i]
 
-                self.low_cmd.motor_cmd[i].tau = 0
+        else:
+            # 分别处理每个部位
+            if self.traj_left_arm is not None:
+                self.apply_traj(self.traj_left_arm, {
+                    G1JointIndex.LeftShoulderPitch: "L_SHOULDER_PITCH_q",
+                    G1JointIndex.LeftShoulderRoll: "L_SHOULDER_ROLL_q",
+                    G1JointIndex.LeftShoulderYaw: "L_SHOULDER_YAW_q",
+                    G1JointIndex.LeftElbow: "L_ELBOW_q",
+                    G1JointIndex.LeftWristRoll: "L_WRIST_ROLL_q",
+                    G1JointIndex.LeftWristPitch: "L_WRIST_PITCH_q",
+                    G1JointIndex.LeftWristYaw: "L_WRIST_YAW_q"
+                })
 
-                self.low_cmd.motor_cmd[i].dq = 0
+            if self.traj_right_arm is not None:
+                self.apply_traj(self.traj_right_arm, {
+                    G1JointIndex.RightShoulderPitch: "R_SHOULDER_PITCH_q",
+                    G1JointIndex.RightShoulderRoll: "R_SHOULDER_ROLL_q",
+                    G1JointIndex.RightShoulderYaw: "R_SHOULDER_YAW_q",
+                    G1JointIndex.RightElbow: "R_ELBOW_q",
+                    G1JointIndex.RightWristRoll: "R_WRIST_ROLL_q",
+                    G1JointIndex.RightWristPitch: "R_WRIST_PITCH_q",
+                    G1JointIndex.RightWristYaw: "R_WRIST_YAW_q"
+                })
 
-                self.low_cmd.motor_cmd[i].kp = 80.0 if i in [G1JointIndex.LeftKnee, G1JointIndex.RightKnee] else Kp[i]
+            if self.traj_waist is not None:
+                self.apply_traj(self.traj_waist, {
+                    G1JointIndex.WaistYaw: "WAIST_YAW_q"
+                })
 
-                self.low_cmd.motor_cmd[i].kd = 2.0 if i in [G1JointIndex.LeftKnee, G1JointIndex.RightKnee] else Kd[i]
+            if self.traj_left_leg is not None:
+                self.apply_traj(self.traj_left_leg, {
+                    G1JointIndex.LeftHipPitch: "L_LEG_HIP_PITCH_q",
+                    G1JointIndex.LeftHipRoll: "L_LEG_HIP_ROLL_q",
+                    G1JointIndex.LeftHipYaw: "L_LEG_HIP_YAW_q",
+                    G1JointIndex.LeftKnee: "L_LEG_KNEE_q",
+                    G1JointIndex.LeftAnklePitch: "L_LEG_ANKLE_PITCH_q",
+                    G1JointIndex.LeftAnkleRoll: "L_LEG_ANKLE_ROLL_q"
+                })
 
-            # ======== 多关节映射（全身回放）========
-
-            col_mapping = {
-
-                # 左腿
-
-                G1JointIndex.LeftHipPitch: "L_LEG_HIP_PITCH_q",
-
-                G1JointIndex.LeftHipRoll: "L_LEG_HIP_ROLL_q",
-
-                G1JointIndex.LeftHipYaw: "L_LEG_HIP_YAW_q",
-
-                G1JointIndex.LeftKnee: "L_LEG_KNEE_q",
-
-                G1JointIndex.LeftAnklePitch: "L_LEG_ANKLE_PITCH_q",
-
-                G1JointIndex.LeftAnkleRoll: "L_LEG_ANKLE_ROLL_q",
-
-                # 右腿
-
-                G1JointIndex.RightHipPitch: "R_LEG_HIP_PITCH_q",
-
-                G1JointIndex.RightHipRoll: "R_LEG_HIP_ROLL_q",
-
-                G1JointIndex.RightHipYaw: "R_LEG_HIP_YAW_q",
-
-                G1JointIndex.RightKnee: "R_LEG_KNEE_q",
-
-                G1JointIndex.RightAnklePitch: "R_LEG_ANKLE_PITCH_q",
-
-                G1JointIndex.RightAnkleRoll: "R_LEG_ANKLE_ROLL_q",
-
-                # 腰部
-
-                G1JointIndex.WaistYaw: "WAIST_YAW_q",
-
-                # 左手
-
-                G1JointIndex.LeftShoulderPitch: "L_SHOULDER_PITCH_q",
-
-                G1JointIndex.LeftShoulderRoll: "L_SHOULDER_ROLL_q",
-
-                G1JointIndex.LeftShoulderYaw: "L_SHOULDER_YAW_q",
-
-                G1JointIndex.LeftElbow: "L_ELBOW_q",
-
-                G1JointIndex.LeftWristRoll: "L_WRIST_ROLL_q",
-
-                G1JointIndex.LeftWristPitch: "L_WRIST_PITCH_q",
-
-                G1JointIndex.LeftWristYaw: "L_WRIST_YAW_q",
-
-                # 右手
-
-                G1JointIndex.RightShoulderPitch: "R_SHOULDER_PITCH_q",
-
-                G1JointIndex.RightShoulderRoll: "R_SHOULDER_ROLL_q",
-
-                G1JointIndex.RightShoulderYaw: "R_SHOULDER_YAW_q",
-
-                G1JointIndex.RightElbow: "R_ELBOW_q",
-
-                G1JointIndex.RightWristRoll: "R_WRIST_ROLL_q",
-
-                G1JointIndex.RightWristPitch: "R_WRIST_PITCH_q",
-
-                G1JointIndex.RightWristYaw: "R_WRIST_YAW_q",
-
-            }
-
-            for idx, col in col_mapping.items():
-                q_prev = row_prev[col]
-
-                q_next = row_next[col]
-
-                self.low_cmd.motor_cmd[idx].q = self.lerp(q_prev, q_next, ratio)
+            if self.traj_right_leg is not None:
+                self.apply_traj(self.traj_right_leg, {
+                    G1JointIndex.RightHipPitch: "R_LEG_HIP_PITCH_q",
+                    G1JointIndex.RightHipRoll: "R_LEG_HIP_ROLL_q",
+                    G1JointIndex.RightHipYaw: "R_LEG_HIP_YAW_q",
+                    G1JointIndex.RightKnee: "R_LEG_KNEE_q",
+                    G1JointIndex.RightAnklePitch: "R_LEG_ANKLE_PITCH_q",
+                    G1JointIndex.RightAnkleRoll: "R_LEG_ANKLE_ROLL_q"
+                })
 
         self.low_cmd.crc = self.crc.Crc(self.low_cmd)
         self.lowcmd_publisher_.Write(self.low_cmd)
