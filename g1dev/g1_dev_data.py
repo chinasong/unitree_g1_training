@@ -267,7 +267,7 @@ class Custom:
                 ))
 
             # 遍历每组部位轨迹，逐个执行
-            for idx, col in traj_groups.items():
+            for idx, col in traj_groups:
                 q_prev = row_prev[col]
 
                 q_next = row_next[col]
