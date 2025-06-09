@@ -144,24 +144,21 @@ class Custom:
                 self.low_cmd.motor_cmd[i].kd = Kd[i]
 
 
-
-
         elif self.time_ < self.duration_ * 5:
 
             # [Stage 4]: Realistic running gait
 
             t = self.time_ - self.duration_ * 2
 
-            period = 0.5  # 每0.5s完成一次交换
+            period = 2.5  # 每0.5s完成一次交换
 
             phase = (t % period) / period
 
             # 参数设置
 
-            hip_amp = 0.8  # 髋前摆
-
-            # 合理设置膝关节最大弯曲值，推荐范围：
-            knee_amp = np.pi * 1.4 / 3.14  # ≈ 1.4 rad，接近最大值
+            # 抬腿幅度
+            hip_amp = np.pi * 25 / 180
+            knee_amp = np.pi * 40 / 180
 
             ankle_push = 0.3  # 脚踝蹬地角度
 
@@ -173,9 +170,8 @@ class Custom:
 
                 # 左腿抬起（飞行），右腿支撑
 
-                L_HipPitch = hip_amp * np.sin(np.pi * phase * 2)
-
-                L_Knee = knee_amp * np.sin(np.pi * phase * 2)
+                L_HipPitch = hip_amp * np.sin(2 * np.pi * phase)
+                L_Knee = knee_amp * (np.sin(2 * np.pi * phase) ** 2)  # 更平滑
 
                 L_Ankle = ankle_fold
 
