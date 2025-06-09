@@ -143,74 +143,58 @@ class Custom:
                 self.low_cmd.motor_cmd[i].kp = Kp[i] 
                 self.low_cmd.motor_cmd[i].kd = Kd[i]
 
-        elif self.time_ < self.duration_ * 2 :
-            # [Stage 2]: swing ankle using PR mode
-            max_P = np.pi * 30.0 / 180.0
-            max_R = np.pi * 10.0 / 180.0
-            t = self.time_ - self.duration_
-            L_P_des = max_P * np.sin(2.0 * np.pi * t)
-            L_R_des = max_R * np.sin(2.0 * np.pi * t)
-            R_P_des = max_P * np.sin(2.0 * np.pi * t)
-            R_R_des = -max_R * np.sin(2.0 * np.pi * t)
+        elif self.time_ < self.duration_ * 5:
 
-            self.low_cmd.mode_pr = Mode.PR
-            self.low_cmd.mode_machine = self.mode_machine_
-            self.low_cmd.motor_cmd[G1JointIndex.LeftAnklePitch].q = L_P_des
-            self.low_cmd.motor_cmd[G1JointIndex.LeftAnkleRoll].q = L_R_des
-            self.low_cmd.motor_cmd[G1JointIndex.RightAnklePitch].q = R_P_des
-            self.low_cmd.motor_cmd[G1JointIndex.RightAnkleRoll].q = R_R_des
-
-        elif self.time_ < self.duration_ * 3:
-            # [Stage 4]: raise left leg (hip & knee) while right leg stays extended
+            # [Stage 4]: Run - alternate legs in a periodic running gait
 
             t = self.time_ - self.duration_ * 2
-            period = 2.0  # 2s 抬腿周期
-            amp_hip = np.pi * 15 / 180  # 抬腿髋关节振幅
-            amp_knee = np.pi * 30 / 180  # 弯腿膝关节振幅
 
-            L_HipPitch_des = amp_hip * np.sin(np.pi * t / period)
-            L_Knee_des = amp_knee * np.sin(np.pi * t / period)
+            period = 1.0  # 一步 1 秒
+
+            amp_hip = np.pi * 20 / 180  # 髋关节振幅
+
+            amp_knee = np.pi * 35 / 180  # 膝关节振幅
+
+            phase_L = 0.0
+
+            phase_R = np.pi  # 反相位，交替运动
+
+            # 左腿目标
+
+            L_HipPitch_des = amp_hip * np.sin(2 * np.pi * t / period + phase_L)
+
+            L_Knee_des = -amp_knee * max(0.0, np.sin(2 * np.pi * t / period + phase_L))  # 只在抬腿时弯曲
+
+            # 右腿目标
+
+            R_HipPitch_des = amp_hip * np.sin(2 * np.pi * t / period + phase_R)
+
+            R_Knee_des = -amp_knee * max(0.0, np.sin(2 * np.pi * t / period + phase_R))
 
             self.low_cmd.mode_pr = Mode.PR
+
             self.low_cmd.mode_machine = self.mode_machine_
 
             for i in range(G1_NUM_MOTOR):
                 self.low_cmd.motor_cmd[i].mode = 1
+
                 self.low_cmd.motor_cmd[i].tau = 0
+
                 self.low_cmd.motor_cmd[i].dq = 0
+
                 self.low_cmd.motor_cmd[i].kp = Kp[i]
+
                 self.low_cmd.motor_cmd[i].kd = Kd[i]
 
-            # 左腿动作（抬起）
+            # 应用目标角度
+
             self.low_cmd.motor_cmd[G1JointIndex.LeftHipPitch].q = L_HipPitch_des
-            self.low_cmd.motor_cmd[G1JointIndex.LeftKnee].q = -L_Knee_des  # 弯曲方向负
 
-            # 右腿保持伸直支撑
-            self.low_cmd.motor_cmd[G1JointIndex.RightHipPitch].q = 0.0
-            self.low_cmd.motor_cmd[G1JointIndex.RightKnee].q = 0.0
+            self.low_cmd.motor_cmd[G1JointIndex.LeftKnee].q = L_Knee_des
 
-        else :
-            # [Stage 3]: swing ankle using AB mode
-            max_A = np.pi * 30.0 / 180.0
-            max_B = np.pi * 10.0 / 180.0
-            t = self.time_ - self.duration_ * 2
-            L_A_des = max_A * np.sin(2.0 * np.pi * t)
-            L_B_des = max_B * np.sin(2.0 * np.pi * t + np.pi)
-            R_A_des = -max_A * np.sin(2.0 * np.pi * t)
-            R_B_des = -max_B * np.sin(2.0 * np.pi * t + np.pi)
+            self.low_cmd.motor_cmd[G1JointIndex.RightHipPitch].q = R_HipPitch_des
 
-            self.low_cmd.mode_pr = Mode.AB
-            self.low_cmd.mode_machine = self.mode_machine_
-            self.low_cmd.motor_cmd[G1JointIndex.LeftAnkleA].q = L_A_des
-            self.low_cmd.motor_cmd[G1JointIndex.LeftAnkleB].q = L_B_des
-            self.low_cmd.motor_cmd[G1JointIndex.RightAnkleA].q = R_A_des
-            self.low_cmd.motor_cmd[G1JointIndex.RightAnkleB].q = R_B_des
-            
-            max_WristYaw = np.pi * 30.0 / 180.0
-            L_WristYaw_des = max_WristYaw * np.sin(2.0 * np.pi * t)
-            R_WristYaw_des = max_WristYaw * np.sin(2.0 * np.pi * t)
-            self.low_cmd.motor_cmd[G1JointIndex.LeftWristRoll].q = L_WristYaw_des
-            self.low_cmd.motor_cmd[G1JointIndex.RightWristRoll].q = R_WristYaw_des
+            self.low_cmd.motor_cmd[G1JointIndex.RightKnee].q = R_Knee_des
     
 
         self.low_cmd.crc = self.crc.Crc(self.low_cmd)
