@@ -146,64 +146,22 @@ class Custom:
 
 
 
-        elif self.time_ < self.duration_ * 5:
 
-            # [Stage 4]: Realistic running gait
+        elif self.time_ < self.duration_ * 3:
+
+            # [Stage 4]: raise left leg (hip & knee) while right leg stays extended
 
             t = self.time_ - self.duration_ * 2
 
-            period = 0.5  # 每0.5s完成一次交换
+            period = 2.0  # 2s 抬腿周期
 
-            phase = (t % period) / period
+            amp_hip = np.pi * 15 / 180  # 抬腿髋关节振幅
 
-            # 参数设置
+            amp_knee = np.pi * 30 / 180  # 弯腿膝关节振幅
 
-            hip_amp = 0.8  # 髋前摆
+            L_HipPitch_des = amp_hip * np.sin(np.pi * t / period)
 
-            # 合理设置膝关节最大弯曲值，推荐范围：
-            knee_amp = np.pi * 1.4 / 3.14  # ≈ 1.4 rad，接近最大值
-
-            ankle_push = 0.3  # 脚踝蹬地角度
-
-            ankle_fold = -0.3  # 抬腿脚踝上翘
-
-            support_knee = 0.3  # 支撑腿轻微屈膝缓冲
-
-            if phase < 0.5:
-
-                # 左腿抬起（飞行），右腿支撑
-
-                L_HipPitch = hip_amp * np.sin(np.pi * phase * 2)
-
-                L_Knee = knee_amp * np.sin(np.pi * phase * 2)
-
-                L_Ankle = ankle_fold
-
-                R_HipPitch = -0.1
-
-                R_Knee = support_knee
-
-                R_Ankle = ankle_push
-
-            else:
-
-                # 右腿抬起，左腿支撑
-
-                phase_r = phase - 0.5
-
-                R_HipPitch = hip_amp * np.sin(np.pi * phase_r * 2)
-
-                R_Knee = knee_amp * np.sin(np.pi * phase_r * 2)
-
-                R_Ankle = ankle_fold
-
-                L_HipPitch = -0.1
-
-                L_Knee = support_knee
-
-                L_Ankle = ankle_push
-
-            # 设置控制指令
+            L_Knee_des = amp_knee * np.sin(np.pi * t / period)
 
             self.low_cmd.mode_pr = Mode.PR
 
@@ -211,27 +169,26 @@ class Custom:
 
             for i in range(G1_NUM_MOTOR):
                 self.low_cmd.motor_cmd[i].mode = 1
+
                 self.low_cmd.motor_cmd[i].tau = 0
+
                 self.low_cmd.motor_cmd[i].dq = 0
 
-                if i == G1JointIndex.LeftKnee or i == G1JointIndex.RightKnee:
-                    self.low_cmd.motor_cmd[i].kp = 80.0  # 比默认更强
-                    self.low_cmd.motor_cmd[i].kd = 2.0
-                else:
-                    self.low_cmd.motor_cmd[i].kp = Kp[i]
-                    self.low_cmd.motor_cmd[i].kd = Kd[i]
+                self.low_cmd.motor_cmd[i].kp = Kp[i]
 
-            self.low_cmd.motor_cmd[G1JointIndex.LeftHipPitch].q = L_HipPitch
+                self.low_cmd.motor_cmd[i].kd = Kd[i]
 
-            self.low_cmd.motor_cmd[G1JointIndex.LeftKnee].q = L_Knee  # 弯曲为负
+            # 左腿动作（抬起）
 
-            self.low_cmd.motor_cmd[G1JointIndex.LeftAnklePitch].q = L_Ankle
+            self.low_cmd.motor_cmd[G1JointIndex.LeftHipPitch].q = L_HipPitch_des
 
-            self.low_cmd.motor_cmd[G1JointIndex.RightHipPitch].q = R_HipPitch
+            self.low_cmd.motor_cmd[G1JointIndex.LeftKnee].q = -L_Knee_des  # 弯曲方向负
 
-            self.low_cmd.motor_cmd[G1JointIndex.RightKnee].q = -R_Knee
+            # 右腿保持伸直支撑
 
-            self.low_cmd.motor_cmd[G1JointIndex.RightAnklePitch].q = R_Ankle
+            self.low_cmd.motor_cmd[G1JointIndex.RightHipPitch].q = 0.0
+
+            self.low_cmd.motor_cmd[G1JointIndex.RightKnee].q = 0.0
     
 
         self.low_cmd.crc = self.crc.Crc(self.low_cmd)
