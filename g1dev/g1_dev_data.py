@@ -142,92 +142,115 @@ class Custom:
     def lerp(self, val1, val2, r):
         return (1 - r) * val1 + r * val2
 
-    def apply_timed_traj(self, df, mapping, traj_start, traj_end):
-        current_abs_time = traj_start + (self.time_ - self.duration_)
-
-        if current_abs_time >= traj_end:
-            current_abs_time = traj_end
-
-        future = df[df["time"] >= current_abs_time]
-        past = df[df["time"] <= current_abs_time]
-
-        if len(future) == 0 or len(past) == 0:
-            return
-
-        row_next = future.iloc[0]
-        row_prev = past.iloc[-1]
-
-        t1, t2 = row_prev["time"], row_next["time"]
-        ratio = (current_abs_time - t1) / (t2 - t1) if t2 > t1 else 0.0
-
-        for idx, col in mapping.items():
-            q_prev = row_prev[col]
-            q_next = row_next[col]
-            self.low_cmd.motor_cmd[idx].q = self.lerp(q_prev, q_next, ratio)
-
     def LowCmdWrite(self):
         self.time_ += self.control_dt_
 
-        # 初始化指令
-        for i in range(G1_NUM_MOTOR):
-            self.low_cmd.motor_cmd[i].mode = 1
-            self.low_cmd.motor_cmd[i].kp = Kp[i]
-            self.low_cmd.motor_cmd[i].kd = Kd[i]
-            self.low_cmd.motor_cmd[i].tau = 0
-            self.low_cmd.motor_cmd[i].dq = 0
+        # Zero posture阶段
+        if self.time_ < self.duration_:
+            ratio = np.clip(self.time_ / self.duration_, 0.0, 1.0)
+            for i in range(G1_NUM_MOTOR):
+                self.low_cmd.mode_pr = Mode.PR
+                self.low_cmd.mode_machine = self.mode_machine_
+                self.low_cmd.motor_cmd[i].mode = 1
+                self.low_cmd.motor_cmd[i].tau = 0.
+                self.low_cmd.motor_cmd[i].q = (1.0 - ratio) * self.low_state.motor_state[i].q
+                self.low_cmd.motor_cmd[i].dq = 0.
+                self.low_cmd.motor_cmd[i].kp = Kp[i]
+                self.low_cmd.motor_cmd[i].kd = Kd[i]
 
-        # 模式设置
-        self.low_cmd.mode_pr = Mode.PR
-        self.low_cmd.mode_machine = self.mode_machine_
+        else:
+            self.low_cmd.mode_pr = Mode.PR
+            self.low_cmd.mode_machine = self.mode_machine_
 
-        # 分别处理每个部位
-        if self.traj_left_arm is not None:
-            self.apply_timed_traj(self.traj_left_arm, {
-                G1JointIndex.LeftShoulderPitch: "L_SHOULDER_PITCH_q",
-                G1JointIndex.LeftShoulderRoll: "L_SHOULDER_ROLL_q",
-                G1JointIndex.LeftShoulderYaw: "L_SHOULDER_YAW_q",
-                G1JointIndex.LeftElbow: "L_ELBOW_q",
-                G1JointIndex.LeftWristRoll: "L_WRIST_ROLL_q",
-                G1JointIndex.LeftWristPitch: "L_WRIST_PITCH_q",
-                G1JointIndex.LeftWristYaw: "L_WRIST_YAW_q"
-            }, self.traj_start_time, self.traj_start_time + self.traj_left_arm["time"].iloc[-1])
+            for i in range(G1_NUM_MOTOR):
+                self.low_cmd.motor_cmd[i].mode = 1
+                self.low_cmd.motor_cmd[i].tau = 0
+                self.low_cmd.motor_cmd[i].dq = 0
+                self.low_cmd.motor_cmd[i].kp = 80.0 if i in [G1JointIndex.LeftKnee, G1JointIndex.RightKnee] else Kp[i]
+                self.low_cmd.motor_cmd[i].kd = 2.0 if i in [G1JointIndex.LeftKnee, G1JointIndex.RightKnee] else Kd[i]
 
-        if self.traj_right_arm is not None:
-            self.apply_timed_traj(self.traj_right_arm, {
-                G1JointIndex.RightShoulderPitch: "R_SHOULDER_PITCH_q",
-                G1JointIndex.RightShoulderRoll: "R_SHOULDER_ROLL_q",
-                G1JointIndex.RightShoulderYaw: "R_SHOULDER_YAW_q",
-                G1JointIndex.RightElbow: "R_ELBOW_q",
-                G1JointIndex.RightWristRoll: "R_WRIST_ROLL_q",
-                G1JointIndex.RightWristPitch: "R_WRIST_PITCH_q",
-                G1JointIndex.RightWristYaw: "R_WRIST_YAW_q"
-            }, self.traj_start_time, self.traj_start_time + self.traj_right_arm["time"].iloc[-1])
+            # 当前绝对时间
+            current_abs_time = self.traj_start_time + (self.time_ - self.duration_)
 
-        if self.traj_waist is not None:
-            self.apply_timed_traj(self.traj_waist, {
-                G1JointIndex.WaistYaw: "WAIST_YAW_q"
-            }, self.traj_start_time, self.traj_start_time + self.traj_waist["time"].iloc[-1])
+            # 定义各部分轨迹映射
+            traj_groups = []
 
-        if self.traj_left_leg is not None:
-            self.apply_timed_traj(self.traj_left_leg, {
-                G1JointIndex.LeftHipPitch: "L_LEG_HIP_PITCH_q",
-                G1JointIndex.LeftHipRoll: "L_LEG_HIP_ROLL_q",
-                G1JointIndex.LeftHipYaw: "L_LEG_HIP_YAW_q",
-                G1JointIndex.LeftKnee: "L_LEG_KNEE_q",
-                G1JointIndex.LeftAnklePitch: "L_LEG_ANKLE_PITCH_q",
-                G1JointIndex.LeftAnkleRoll: "L_LEG_ANKLE_ROLL_q"
-            }, self.traj_start_time, self.traj_start_time + self.traj_left_leg["time"].iloc[-1])
+            if self.traj_left_arm is not None:
+                traj_groups.append((
+                    self.traj_left_arm, {
+                        G1JointIndex.LeftShoulderPitch: "L_SHOULDER_PITCH_q",
+                        G1JointIndex.LeftShoulderRoll: "L_SHOULDER_ROLL_q",
+                        G1JointIndex.LeftShoulderYaw: "L_SHOULDER_YAW_q",
+                        G1JointIndex.LeftElbow: "L_ELBOW_q",
+                        G1JointIndex.LeftWristRoll: "L_WRIST_ROLL_q",
+                        G1JointIndex.LeftWristPitch: "L_WRIST_PITCH_q",
+                        G1JointIndex.LeftWristYaw: "L_WRIST_YAW_q"
+                    }
+                ))
 
-        if self.traj_right_leg is not None:
-            self.apply_timed_traj(self.traj_right_leg, {
-                G1JointIndex.RightHipPitch: "R_LEG_HIP_PITCH_q",
-                G1JointIndex.RightHipRoll: "R_LEG_HIP_ROLL_q",
-                G1JointIndex.RightHipYaw: "R_LEG_HIP_YAW_q",
-                G1JointIndex.RightKnee: "R_LEG_KNEE_q",
-                G1JointIndex.RightAnklePitch: "R_LEG_ANKLE_PITCH_q",
-                G1JointIndex.RightAnkleRoll: "R_LEG_ANKLE_ROLL_q"
-            }, self.traj_start_time, self.traj_start_time + self.traj_right_leg["time"].iloc[-1])
+            if self.traj_right_arm is not None:
+                traj_groups.append((
+                    self.traj_right_arm, {
+                        G1JointIndex.RightShoulderPitch: "R_SHOULDER_PITCH_q",
+                        G1JointIndex.RightShoulderRoll: "R_SHOULDER_ROLL_q",
+                        G1JointIndex.RightShoulderYaw: "R_SHOULDER_YAW_q",
+                        G1JointIndex.RightElbow: "R_ELBOW_q",
+                        G1JointIndex.RightWristRoll: "R_WRIST_ROLL_q",
+                        G1JointIndex.RightWristPitch: "R_WRIST_PITCH_q",
+                        G1JointIndex.RightWristYaw: "R_WRIST_YAW_q"
+                    }
+                ))
 
+            if self.traj_waist is not None:
+                traj_groups.append((
+                    self.traj_waist, {
+                        G1JointIndex.WaistYaw: "WAIST_YAW_q",
+                        G1JointIndex.WaistRoll: "WAIST_ROLL_q",
+                        G1JointIndex.WaistPitch: "WAIST_PITCH_q"
+                    }
+                ))
+
+            if self.traj_left_leg is not None:
+                traj_groups.append((
+                    self.traj_left_leg, {
+                        G1JointIndex.LeftHipPitch: "L_LEG_HIP_PITCH_q",
+                        G1JointIndex.LeftKnee: "L_LEG_KNEE_q",
+                        G1JointIndex.LeftAnklePitch: "L_LEG_ANKLE_PITCH_q"
+                    }
+                ))
+
+            if self.traj_right_leg is not None:
+                traj_groups.append((
+                    self.traj_right_leg, {
+                        G1JointIndex.RightHipPitch: "R_LEG_HIP_PITCH_q",
+                        G1JointIndex.RightKnee: "R_LEG_KNEE_q",
+                        G1JointIndex.RightAnklePitch: "R_LEG_ANKLE_PITCH_q"
+                    }
+                ))
+
+            # 遍历每组部位轨迹，逐个执行
+            for df, mapping in traj_groups:
+                if df is None:
+                    continue
+                if current_abs_time > df["time"].max():
+                    continue
+
+                # 找到当前帧前后两行
+                past = df[df["time"] <= current_abs_time]
+                future = df[df["time"] >= current_abs_time]
+                if past.empty or future.empty:
+                    continue
+                row_prev = past.iloc[-1]
+                row_next = future.iloc[0]
+                t1, t2 = row_prev["time"], row_next["time"]
+                ratio = (current_abs_time - t1) / (t2 - t1) if t2 > t1 else 0.0
+
+                # 插值更新该部位的各个关节
+                for idx, col in mapping.items():
+                    q = self.lerp(row_prev[col], row_next[col], ratio)
+                    self.low_cmd.motor_cmd[idx].q = q
+
+        # 发送控制命令
         self.low_cmd.crc = self.crc.Crc(self.low_cmd)
         self.lowcmd_publisher_.Write(self.low_cmd)
 
