@@ -144,41 +144,66 @@ class Custom:
                 self.low_cmd.motor_cmd[i].kd = Kd[i]
 
 
+
         elif self.time_ < self.duration_ * 5:
 
-            # [Stage 4]: Execute real joint trajectory from CSV (legs only)
+            # [Stage 4]: Smooth trajectory playback over 5 seconds
 
-            if not hasattr(self, "traj_data"):
-                # 加载 CSV 数据（仅一次）
-
+            if not hasattr(self, "traj_loaded"):
                 import pandas as pd
 
-                self.traj_data = pd.read_csv("../recorddata/g1_joint_framewise_20250609_140051.csv")
+                self.traj_df = pd.read_csv("../recorddata/g1_joint_framewise_20250609_140051.csv")
 
-                self.traj_index = 0
+                self.traj_time_array = np.linspace(0, 5.0, len(self.traj_df))  # 均匀分布5秒
 
-                self.traj_interval = self.control_dt_  # 假设每帧间隔为 control_dt_
+                self.traj_loaded = True
 
-            if self.traj_index >= len(self.traj_data):
-                print("Trajectory finished.")
+            # 当前时间点
 
-                return
+            t = self.time_ - self.duration_ * 2
 
-            row = self.traj_data.iloc[self.traj_index]
+            # 超出轨迹时，保持最后一帧
 
-            # 设置腿部关节角度
+            if t >= 5.0:
 
-            L_HipPitch = row.get("L_LEG_HIP_PITCH_q", 0.0)
+                row = self.traj_df.iloc[-1]
 
-            L_Knee = row.get("L_LEG_KNEE_q", 0.0)
+            else:
 
-            L_Ankle = row.get("L_LEG_ANKLE_PITCH_q", 0.0)
+                # 找到两个相邻时间点做线性插值
 
-            R_HipPitch = row.get("R_LEG_HIP_PITCH_q", 0.0)
+                idx_next = np.searchsorted(self.traj_time_array, t)
 
-            R_Knee = row.get("R_LEG_KNEE_q", 0.0)
+                idx_prev = max(0, idx_next - 1)
 
-            R_Ankle = row.get("R_LEG_ANKLE_PITCH_q", 0.0)
+                if idx_next >= len(self.traj_df):
+
+                    row = self.traj_df.iloc[-1]
+
+                else:
+
+                    alpha = (t - self.traj_time_array[idx_prev]) / (
+                                self.traj_time_array[idx_next] - self.traj_time_array[idx_prev] + 1e-8)
+
+                    row_prev = self.traj_df.iloc[idx_prev]
+
+                    row_next = self.traj_df.iloc[idx_next]
+
+                    row = row_prev * (1 - alpha) + row_next * alpha
+
+            # 读取并设置腿部角度
+
+            L_HipPitch = row["L_LEG_HIP_PITCH_q"]
+
+            L_Knee = row["L_LEG_KNEE_q"]
+
+            L_Ankle = row["L_LEG_ANKLE_PITCH_q"]
+
+            R_HipPitch = row["R_LEG_HIP_PITCH_q"]
+
+            R_Knee = row["R_LEG_KNEE_q"]
+
+            R_Ankle = row["R_LEG_ANKLE_PITCH_q"]
 
             self.low_cmd.mode_pr = Mode.PR
 
@@ -206,8 +231,6 @@ class Custom:
             self.low_cmd.motor_cmd[G1JointIndex.RightKnee].q = -R_Knee
 
             self.low_cmd.motor_cmd[G1JointIndex.RightAnklePitch].q = R_Ankle
-
-            self.traj_index += 1
     
 
         self.low_cmd.crc = self.crc.Crc(self.low_cmd)
