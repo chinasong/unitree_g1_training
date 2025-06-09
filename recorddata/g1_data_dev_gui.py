@@ -11,6 +11,7 @@ from PySide6.QtCore import QTimer, Qt
 
 from unitree_sdk2py.core.channel import ChannelSubscriber, ChannelFactoryInitialize
 from unitree_sdk2py.idl.unitree_hg.msg.dds_ import LowState_
+from functools import partial
 
 LEFT_ARM = {15: "L_SHOULDER_PITCH", 16: "L_SHOULDER_ROLL", 17: "L_SHOULDER_YAW", 18: "L_ELBOW", 19: "L_WRIST_ROLL", 20: "L_WRIST_PITCH", 21: "L_WRIST_YAW"}
 RIGHT_ARM = {22: "R_SHOULDER_PITCH", 23: "R_SHOULDER_ROLL", 24: "R_SHOULDER_YAW", 25: "R_ELBOW", 26: "R_WRIST_ROLL", 27: "R_WRIST_PITCH", 28: "R_WRIST_YAW"}
@@ -77,7 +78,7 @@ class ArmDevGUI(QWidget):
 
         btn = QPushButton(f"Start {title}")
         btn.setCheckable(True)
-        btn.clicked.connect(lambda checked, key=name_key, b=btn: self.toggle_record(key, b))
+        btn.clicked.connect(partial(self.toggle_record, name_key, btn))
         group.addWidget(btn)
 
         self.layout.addLayout(group, row, col)
