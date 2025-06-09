@@ -136,6 +136,9 @@ class Custom:
             self.counter_ = 0
             print(self.low_state.imu_state.rpy)
 
+    def lerp(self, val1, val2, r):
+        return (1 - r) * val1 + r * val2
+
     def LowCmdWrite(self):
         self.time_ += self.control_dt_
 
