@@ -1,0 +1,31 @@
+# Core dependencies
+numpy>=1.20.0
+scipy>=1.7.0
+matplotlib>=3.4.0
+pandas>=1.3.0
+
+# Robot control and simulation
+gym>=0.21.0
+mujoco>=2.2.0
+mujoco-py>=2.1.0
+
+# Point cloud processing
+open3d>=0.15.0
+pcl>=0.0.0  # Note: PCL Python bindings might need to be installed via system package manager
+
+# GUI and visualization
+PyQt5>=5.15.0
+pyqtgraph>=0.12.0
+
+# Data processing
+h5py>=3.6.0
+pyyaml>=6.0
+
+# Development tools
+pytest>=7.0.0
+black>=22.0.0
+flake8>=4.0.0
+
+# Optional dependencies
+torch>=1.10.0  # For deep learning components
+tensorboard>=2.8.0  # For training visualization 
