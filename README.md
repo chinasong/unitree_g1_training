@@ -4,6 +4,12 @@ This project is designed for training and development with the Unitree G1 robot 
 
 ## Project Structure
 
+- `src/`: Source code directory
+  - `fast_gicp/`: Fast point cloud registration algorithms (git submodule)
+    - FastGICP: multi-threaded GICP algorithm (~40FPS)
+    - FastVGICP: multi-threaded and voxelized GICP algorithm (~70FPS)
+    - FastVGICPCuda: CUDA-accelerated voxelized GICP algorithm (~120FPS)
+
 - `armdev/`: Contains development tools and scripts for arm control and data processing
   - `armdev_data.py`: Data processing utilities
   - `armdev_gui.py`: GUI interface for arm control
@@ -33,6 +39,12 @@ The project relies on several external dependencies:
 - Unitree RL Gym
 - ROS (Robot Operating System)
 - MuJoCo (for simulation)
+- PCL (Point Cloud Library)
+- Eigen
+- OpenMP
+- CUDA (optional, for GPU acceleration)
+- Sophus
+- nvbio
 
 ## Getting Started
 
@@ -50,6 +62,14 @@ pip install -e .
 # Install Unitree RL Gym
 cd ../unitree_rl_gym
 pip install -e .
+
+# Build fast_gicp (optional, for point cloud processing)
+cd src/fast_gicp
+mkdir build && cd build
+cmake .. -DCMAKE_BUILD_TYPE=Release
+# For CUDA support:
+# cmake .. -DCMAKE_BUILD_TYPE=Release -DBUILD_VGICP_CUDA=ON
+make -j8
 ```
 
 3. Build the ROS workspace:
@@ -77,6 +97,12 @@ To run MuJoCo simulation:
 ```bash
 python armdev/g1_csv_to_mujoco.py
 ```
+
+### Point Cloud Processing
+The project includes fast_gicp for efficient point cloud registration:
+- FastGICP: Multi-threaded GICP implementation
+- FastVGICP: Voxelized GICP for improved performance
+- FastVGICPCuda: GPU-accelerated version (requires CUDA)
 
 ## Contributing
 
