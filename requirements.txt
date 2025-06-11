@@ -10,7 +10,7 @@ mujoco>=2.2.0
 mujoco-py>=2.1.0
 
 # Point cloud processing
-open3d>=0.15.0
+#open3d>=0.15.0
 pcl>=0.0.0  # Note: PCL Python bindings might need to be installed via system package manager
 
 # GUI and visualization
