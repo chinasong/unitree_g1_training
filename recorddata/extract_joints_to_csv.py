@@ -21,37 +21,54 @@ JOINT_MAPPING = {
     25: "R_ELBOW", 26: "R_WRIST_ROLL", 27: "R_WRIST_PITCH", 28: "R_WRIST_YAW"
 }
 
-# 生成最终CSV列名（每个关节q, dq, tau）
+# 构建列名
 columns = ['time']
 for idx in range(29):  # 0-28
     name = JOINT_MAPPING.get(idx, f"joint_{idx}")
     columns.extend([f"{name}_q", f"{name}_dq", f"{name}_tau"])
 
-# 收集数据
 rows = []
 
-# 遍历 npz 文件
 npz_files = sorted([f for f in os.listdir(input_folder) if f.endswith(".npz")])
+print(f"Total npz files found: {len(npz_files)}")
+
 for i, file in enumerate(tqdm(npz_files)):
-    data = np.load(os.path.join(input_folder, file))
-    pose = data['body_pose'].reshape(-1) # 23 * 3
-    root_orient = data['global_orient'].reshape(-1)  # 3
-    full_pose = np.concatenate([root_orient, pose])  # 24 * 3
+    path = os.path.join(input_folder, file)
+    print(f"\nProcessing {path} ...")
 
-    frame_row = [i * 0.033]  # 假设帧率30fps，每帧约0.033秒
+    try:
+        data = np.load(path)
+        print("Keys in npz:", list(data.keys()))
 
-    for joint_id in range(29):
-        if joint_id < len(full_pose) // 3:
-            q = full_pose[joint_id * 3]
-        else:
-            q = 0.0  # 如果ROMP没有提供该关节，填0
-        dq = 0.0
-        tau = 0.0
-        frame_row.extend([q, dq, tau])
+        # 尝试提取pose数据
+        body_pose = data['body_pose']
+        root_orient = data['global_orient']
 
-    rows.append(frame_row)
+        print("body_pose shape:", body_pose.shape)
+        print("global_orient shape:", root_orient.shape)
 
-# 保存为CSV
+        pose = body_pose.reshape(-1)
+        root_orient = root_orient.reshape(-1)
+        full_pose = np.concatenate([root_orient, pose])  # 24*3 = 72
+
+        frame_row = [i * 0.033]
+
+        for joint_id in range(29):
+            if joint_id * 3 + 2 < len(full_pose):
+                q = full_pose[joint_id * 3]
+            else:
+                q = 0.0
+            dq = 0.0
+            tau = 0.0
+            frame_row.extend([q, dq, tau])
+
+        rows.append(frame_row)
+
+    except Exception as e:
+        print(f"Failed to process {file}: {e}")
+        continue
+
+# 保存CSV
 df = pd.DataFrame(rows, columns=columns)
 df.to_csv(output_csv_path, index=False)
-print(f"CSV saved to {output_csv_path}")
+print(f"\nCSV saved to {output_csv_path}")
