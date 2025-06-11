@@ -23,7 +23,7 @@ JOINT_MAPPING = {
 
 # 构建列名
 columns = ['time']
-for idx in range(29):  # 0-28
+for idx in range(29):
     name = JOINT_MAPPING.get(idx, f"joint_{idx}")
     columns.extend([f"{name}_q", f"{name}_dq", f"{name}_tau"])
 
@@ -37,21 +37,24 @@ for i, file in enumerate(tqdm(npz_files)):
     print(f"\nProcessing {path} ...")
 
     try:
-        data = np.load(path)
+        data = np.load(path, allow_pickle=True)
         print("Keys in npz:", list(data.keys()))
+        results = data['results'].item()
 
-        # 尝试提取pose数据
-        body_pose = data['body_pose']
-        root_orient = data['global_orient']
+        # 打印可用字段
+        print("Available keys in results:", list(results.keys()))
+
+        body_pose = results['body_pose']
+        global_orient = results['global_orient']
 
         print("body_pose shape:", body_pose.shape)
-        print("global_orient shape:", root_orient.shape)
+        print("global_orient shape:", global_orient.shape)
 
         pose = body_pose.reshape(-1)
-        root_orient = root_orient.reshape(-1)
+        root_orient = global_orient.reshape(-1)
         full_pose = np.concatenate([root_orient, pose])  # 24*3 = 72
 
-        frame_row = [i * 0.033]
+        frame_row = [i * 0.033]  # 30fps时间戳
 
         for joint_id in range(29):
             if joint_id * 3 + 2 < len(full_pose):
@@ -71,4 +74,4 @@ for i, file in enumerate(tqdm(npz_files)):
 # 保存CSV
 df = pd.DataFrame(rows, columns=columns)
 df.to_csv(output_csv_path, index=False)
-print(f"\nCSV saved to {output_csv_path}")
+print(f"\n✅ CSV saved to {output_csv_path}")
