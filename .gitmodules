@@ -19,3 +19,6 @@
 [submodule "catkin_ws/catkin_ws/src/realsense-ros"]
 	path = catkin_ws/catkin_ws/src/realsense-ros
 	url = https://github.com/IntelRealSense/realsense-ros
+[submodule "externals/ROMP"]
+	path = externals/ROMP
+	url = https://github.com/Arthur151/ROMP.git
