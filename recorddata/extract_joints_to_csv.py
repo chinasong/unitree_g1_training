@@ -34,8 +34,8 @@ rows = []
 npz_files = sorted([f for f in os.listdir(input_folder) if f.endswith(".npz")])
 for i, file in enumerate(tqdm(npz_files)):
     data = np.load(os.path.join(input_folder, file))
-    pose = data['params']['body_pose'].reshape(-1)  # 23 * 3
-    root_orient = data['params']['global_orient'].reshape(-1)  # 3
+    pose = data['body_pose'].reshape(-1) # 23 * 3
+    root_orient = data['global_orient'].reshape(-1)  # 3
     full_pose = np.concatenate([root_orient, pose])  # 24 * 3
 
     frame_row = [i * 0.033]  # 假设帧率30fps，每帧约0.033秒
