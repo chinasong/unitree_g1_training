@@ -19,12 +19,3 @@
 [submodule "catkin_ws/catkin_ws/src/realsense-ros"]
 	path = catkin_ws/catkin_ws/src/realsense-ros
 	url = https://github.com/IntelRealSense/realsense-ros
-[submodule "vibe"]
-	path = vibe
-	url = https://github.com/mkocabas/VIBE.git
-[submodule "externals/vibe"]
-	path = externals/vibe
-	url = https://github.com/mkocabas/VIBE.git
-[submodule "externals/yolov3"]
-	path = externals/yolov3
-	url = https://github.com/eriklindernoren/PyTorch-YOLOv3.git
