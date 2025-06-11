@@ -25,3 +25,6 @@
 [submodule "externals/vibe"]
 	path = externals/vibe
 	url = https://github.com/mkocabas/VIBE.git
+[submodule "externals/yolov3"]
+	path = externals/yolov3
+	url = https://github.com/eriklindernoren/PyTorch-YOLOv3.git
