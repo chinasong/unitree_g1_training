@@ -20,16 +20,23 @@ files = sorted([f for f in os.listdir(input_folder) if f.endswith(".npz")])
 if not files:
     raise ValueError("目录中找不到 .npz 文件")
 
-# 动态确定画布尺寸（基于最大xy坐标）
+# 初始化最大宽高
 max_x, max_y = 0, 0
+
 for file in files:
     data = np.load(os.path.join(input_folder, file), allow_pickle=True)
     joints = data.get('pj2d_org', data.get('pj2d', None))
-    if joints is not None:
+    if joints is not None and joints.size > 0:
         x_coords = joints[:, 0]
         y_coords = joints[:, 1]
-        max_x = max(max_x, np.nanmax(x_coords))
-        max_y = max(max_y, np.nanmax(y_coords))
+        if not np.isnan(x_coords).all() and not np.isnan(y_coords).all():
+            max_x = max(max_x, np.nanmax(x_coords))
+            max_y = max(max_y, np.nanmax(y_coords))
+
+# 如果完全失败（数据全空），则给一个默认尺寸
+if max_x == 0 or max_y == 0:
+    print("⚠️ 没有有效的关键点数据，使用默认画布大小 640x480")
+    max_x, max_y = 640, 480
 
 frame_w = int(max_x * scale)
 frame_h = int(max_y * scale)
@@ -43,6 +50,10 @@ for idx, file in enumerate(tqdm(files)):
     joints = data.get('pj2d_org', data.get('pj2d', None))
 
     frame = np.zeros((frame_h, frame_w, 3), dtype=np.uint8)
+
+    if frame.size == 0:
+        print(f"⚠️ 跳过空画布 {file}")
+        continue
 
     if joints is not None:
         for j in joints:
