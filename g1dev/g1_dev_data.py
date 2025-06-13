@@ -79,7 +79,7 @@ class Mode:
 class Custom:
     def __init__(self):
         self.time_ = 0.0
-        self.control_dt_ = 0.002  # [2ms]
+        self.control_dt_ = 0.02  # [2ms]
         self.duration_ = 3.0  # [3 s]
         self.counter_ = 0
         self.mode_pr_ = Mode.PR
