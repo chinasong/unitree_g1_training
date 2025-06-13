@@ -10,7 +10,7 @@ def to_scalar(v):
 
 # ------------------ 配置 ------------------
 input_folder = "../externals/ROMP/output"  # 修改为你的 .npz 文件目录
-output_video = "romp_visualized_output.avi"
+output_video = "/home/ubuntu/unitree_g1_training/externals/ROMP/romp_visualized_output.avi"
 fps = 25
 scale = 1.5  # 用于放大坐标以适配视频画布
 point_radius = 4
