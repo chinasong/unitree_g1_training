@@ -58,20 +58,29 @@ pose_array = np.array(pose_list)
 original_times = np.arange(len(pose_array)) / FRAME_RATE
 interp_times = np.linspace(0, original_times[-1], len(pose_array) * INTERP_RATIO)
 
-# 插值
+# 插值每个关节
 interp_q = []
-# 滑动平均函数
+for j in range(pose_array.shape[1]):
+    try:
+        interp_func = interp1d(original_times, pose_array[:, j], kind='cubic', fill_value="extrapolate")
+        interp_q.append(interp_func(interp_times))
+    except Exception as e:
+        print(f"⚠️ 插值失败: 关节 {j} — {e}")
+        interp_q.append(np.zeros_like(interp_times))  # fallback
+
+# 转换为 NumPy 数组并转置为 (N_interp, 29)
+interp_q = np.array(interp_q).T
+
+# 平滑处理
 def smooth_signal(data, window_size=7):
     return np.convolve(data, np.ones(window_size) / window_size, mode='same')
 
-for j in range(pose_array.shape[1]):
+for j in range(interp_q.shape[1]):
     interp_q[:, j] = smooth_signal(interp_q[:, j], window_size=7)
 
-# 重新计算速度
+# 计算速度
 dq_array = np.gradient(interp_q, 1.0 / OUTPUT_RATE, axis=0)
 
-# 速度估算（差分除以 dt）
-dq_array = np.gradient(interp_q, 1.0 / OUTPUT_RATE, axis=0)
 tau_array = np.zeros_like(dq_array)
 
 # 写入 CSV
