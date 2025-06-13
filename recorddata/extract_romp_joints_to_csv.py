@@ -5,7 +5,7 @@ from tqdm import tqdm
 from scipy.interpolate import interp1d
 
 ROMP_OUTPUT_DIR = "../externals/ROMP/output"  # 修改为你的ROMP输出路径
-OUTPUT_CSV = "romp_output_g1_interpolated.csv"
+OUTPUT_CSV = "romp_output_g1.csv"
 FRAME_RATE = 30  # 原始视频帧率
 INTERP_RATIO = 6  # 插值倍数，插值后为 180fps
 OUTPUT_RATE = FRAME_RATE * INTERP_RATIO
