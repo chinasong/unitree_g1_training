@@ -6,6 +6,12 @@ from tqdm import tqdm
 ROMP_OUTPUT_DIR = "../externals/ROMP/output"
 npz_files = sorted(f for f in os.listdir(ROMP_OUTPUT_DIR) if f.endswith(".npz"))
 
+
+def to_scalar(v):
+    if isinstance(v, np.ndarray):
+        return float(v.item()) if v.size == 1 else float(v[0])
+    return float(v)
+
 for fname in tqdm(npz_files):
     path = os.path.join(ROMP_OUTPUT_DIR, fname)
     data = np.load(path, allow_pickle=True)["results"].item()
@@ -28,12 +34,11 @@ for fname in tqdm(npz_files):
 
         for joint in joints_2d:
             try:
-                x, y = int(joint[0]), int(joint[1])
+                x, y = int(to_scalar(joint[0])), int(to_scalar(joint[1]))
                 if 0 <= x < 1280 and 0 <= y < 720:
                     cv2.circle(img, (x, y), 5, (0, 255, 0), -1)
             except Exception as e:
                 print(f"Failed to draw joint: {e}")
-                continue
 
     cv2.putText(img, fname, (20, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (255, 255, 255), 2)
     cv2.imshow("ROMP 2D Pose Preview", img)
