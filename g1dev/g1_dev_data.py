@@ -166,7 +166,11 @@ class Custom:
         if self.time_ < self.duration_:
             return
         elif self.time_ < self.duration_ + (self.traj_end_time - self.traj_start_time):
-            current_abs_time = self.traj_start_time + (self.time_ - self.duration_)
+            # current_abs_time = self.traj_start_time + (self.time_ - self.duration_)
+
+            slow_factor = 0.25  # 慢 2 倍（可改为 0.25 表示慢 4 倍）
+            current_abs_time = self.traj_start_time + (self.time_ - self.duration_) * slow_factor
+
 
             df = self.traj_data
 
