@@ -1,73 +1,30 @@
 import pandas as pd
-import numpy as np
 import matplotlib.pyplot as plt
-import imageio
-import os
-from tqdm import tqdm
+import matplotlib.animation as animation
+import numpy as np
 
-# 路径设定
-CSV_PATH = "romp_output_g1.csv"
-GIF_PATH = "g1_motion.gif"
-FRAME_DIR = "gif_frames"
-os.makedirs(FRAME_DIR, exist_ok=True)
+csv_path = "romp_output_g1.csv"  # 替换为你的文件路径
+df = pd.read_csv(csv_path)
 
-# 骨架连线（近似 G1 结构）
-JOINT_CONNECTIONS = [
-    ("L_SHOULDER_PITCH", "L_ELBOW"),
-    ("L_ELBOW", "L_WRIST_ROLL"),
-    ("R_SHOULDER_PITCH", "R_ELBOW"),
-    ("R_ELBOW", "R_WRIST_ROLL"),
-    ("L_LEG_HIP_PITCH", "L_LEG_KNEE"),
-    ("L_LEG_KNEE", "L_LEG_ANKLE_PITCH"),
-    ("R_LEG_HIP_PITCH", "R_LEG_KNEE"),
-    ("R_LEG_KNEE", "R_LEG_ANKLE_PITCH"),
-    ("WAIST_YAW", "L_SHOULDER_PITCH"),
-    ("WAIST_YAW", "R_SHOULDER_PITCH"),
-    ("WAIST_YAW", "L_LEG_HIP_PITCH"),
-    ("WAIST_YAW", "R_LEG_HIP_PITCH")
-]
+# 提取关节名称
+joint_names = [col[:-2] for col in df.columns if col.endswith("_q")]
+joint_names = sorted(set(joint_names))
+time = df["time"].values
+joint_angles = np.array([df[f"{j}_q"].values for j in joint_names])
 
-# 读取角度数据
-df = pd.read_csv(CSV_PATH)
-angle_columns = [col for col in df.columns if col.endswith("_q")]
-angles = df[angle_columns].values
-joint_names = [col.replace("_q", "") for col in angle_columns]
-joint_name_to_index = {name: i for i, name in enumerate(joint_names)}
+# 创建动画
+fig, ax = plt.subplots(figsize=(12, 6))
+bars = ax.bar(joint_names, joint_angles[:, 0])
+ax.set_ylim(-2.5, 2.5)
+ax.set_ylabel("Joint Angle (rad)")
+ax.set_title("G1 Robot Joint Angles Over Time")
+plt.xticks(rotation=90)
 
-# 简化2D可视化位置
-def compute_joint_positions(joint_angles):
-    coords = []
-    for i, angle in enumerate(joint_angles):
-        x = i % 10 + np.cos(angle)
-        y = i // 10 + np.sin(angle)
-        coords.append((x, y))
-    return np.array(coords)
+def update(frame):
+    for bar, height in zip(bars, joint_angles[:, frame]):
+        bar.set_height(height)
+    ax.set_title(f"G1 Robot Joint Angles (Time: {time[frame]:.2f}s)")
+    return bars
 
-# 生成帧图
-image_paths = []
-for i, q in tqdm(enumerate(angles), total=len(angles)):
-    coords = compute_joint_positions(q)
-    fig, ax = plt.subplots(figsize=(6, 6))
-    ax.set_xlim(-5, 15)
-    ax.set_ylim(-2, 10)
-    ax.axis('off')
-
-    for j1, j2 in JOINT_CONNECTIONS:
-        if j1 in joint_name_to_index and j2 in joint_name_to_index:
-            i1, i2 = joint_name_to_index[j1], joint_name_to_index[j2]
-            x1, y1 = coords[i1]
-            x2, y2 = coords[i2]
-            ax.plot([x1, x2], [y1, y2], 'k-', lw=2)
-
-    xs, ys = coords[:, 0], coords[:, 1]
-    ax.scatter(xs, ys, c='blue', s=20)
-
-    frame_path = os.path.join(FRAME_DIR, f"frame_{i:04d}.png")
-    plt.savefig(frame_path)
-    plt.close(fig)
-    image_paths.append(frame_path)
-
-# 合成为GIF
-frames = [imageio.imread(p) for p in image_paths]
-imageio.mimsave(GIF_PATH, frames, fps=20)
-print(f"✅ GIF 动画保存为: {GIF_PATH}")
+ani = animation.FuncAnimation(fig, update, frames=len(time), interval=50, blit=False)
+ani.save("g1_joint_angles_animation.gif", writer="pillow", fps=20)
