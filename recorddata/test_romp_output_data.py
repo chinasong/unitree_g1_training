@@ -3,8 +3,7 @@ import numpy as np
 import cv2
 from tqdm import tqdm
 
-ROMP_OUTPUT_DIR = "../externals/ROMP/output"  # 改成你的npz目录
-
+ROMP_OUTPUT_DIR = "../externals/ROMP/output"  # 修改为你实际的目录
 npz_files = sorted(f for f in os.listdir(ROMP_OUTPUT_DIR) if f.endswith(".npz"))
 
 for fname in tqdm(npz_files):
@@ -17,9 +16,9 @@ for fname in tqdm(npz_files):
     if joints is not None:
         for joint in joints:
             try:
-                # 有些joint是array([x]), 需要先转换为标量
-                x = int(np.asarray(joint[0]).item())
-                y = int(np.asarray(joint[1]).item())
+                # 使用 np.squeeze 去掉维度，再转换为标量
+                x = int(np.squeeze(joint[0]))
+                y = int(np.squeeze(joint[1]))
                 if 0 <= x < 1280 and 0 <= y < 720:
                     cv2.circle(img, (x, y), 4, (0, 255, 0), -1)
             except Exception as e:
