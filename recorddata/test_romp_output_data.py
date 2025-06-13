@@ -16,9 +16,15 @@ for fname in tqdm(npz_files):
 
     if joints is not None:
         for joint in joints:
-            x, y = int(joint[0]), int(joint[1])
-            if 0 <= x < 1280 and 0 <= y < 720:
-                cv2.circle(img, (x, y), 5, (0, 255, 0), -1)
+            try:
+                # 有些joint是array([x]), 需要先转换为标量
+                x = int(np.asarray(joint[0]).item())
+                y = int(np.asarray(joint[1]).item())
+                if 0 <= x < 1280 and 0 <= y < 720:
+                    cv2.circle(img, (x, y), 4, (0, 255, 0), -1)
+            except Exception as e:
+                print(f"Failed to draw joint: {e}")
+                continue
 
     cv2.imshow("ROMP pose", img)
     if cv2.waitKey(30) & 0xFF == ord('q'):
