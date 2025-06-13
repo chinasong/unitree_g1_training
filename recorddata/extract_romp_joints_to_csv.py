@@ -88,7 +88,7 @@ df.to_csv(OUTPUT_CSV, index=False)
 print(f"✅ CSV 文件生成完成: {OUTPUT_CSV}，共 {len(df)} 行")
 
 # 可视化关键关节
-for joint in ["L_ELBOW", "R_ELBOW", "L_SHOULDER_PITCH", "R_SHOULDER_PITCH"]:
+for joint in ["L_ELBOW", "R_ELBOW", "L_SHOULDER_PITCH", "R_SHOULDER_PITCH","R_LEG"]:
     if f"{joint}_q" in df.columns:
         plt.figure(figsize=(10, 3))
         plt.plot(df["time"], df[f"{joint}_q"], label=f"{joint} 角度")
