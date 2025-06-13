@@ -1,48 +1,45 @@
 import os
-import numpy as np
 import cv2
+import numpy as np
 from tqdm import tqdm
-
-ROMP_OUTPUT_DIR = "../externals/ROMP/output"
-npz_files = sorted(f for f in os.listdir(ROMP_OUTPUT_DIR) if f.endswith(".npz"))
-
 
 def to_scalar(v):
     if isinstance(v, np.ndarray):
         return float(v.item()) if v.size == 1 else float(v[0])
     return float(v)
 
-for fname in tqdm(npz_files):
-    path = os.path.join(ROMP_OUTPUT_DIR, fname)
-    data = np.load(path, allow_pickle=True)["results"].item()
+input_folder = "../externals/ROMP/output"   # 你的 .npz 文件所在目录
+output_video_path = "output.avi"
+frame_size = (1280, 720)  # 如果分辨率不对可改
+fps = 30
 
-    # 尝试读取 projected 2D joints
-    joints_2d = data.get("pj2d_org")  # shape: (N, 2) or (N, 3)
+# 视频写入器
+fourcc = cv2.VideoWriter_fourcc(*'XVID')
+video_writer = cv2.VideoWriter(output_video_path, fourcc, fps, frame_size)
+
+files = sorted([f for f in os.listdir(input_folder) if f.endswith(".npz")])
+print(f"Total frames: {len(files)}")
+
+for file in tqdm(files):
+    path = os.path.join(input_folder, file)
+    data = np.load(path, allow_pickle=True)
+
+    # 创建空图像用于绘制
     img = np.zeros((720, 1280, 3), dtype=np.uint8)
 
-    if joints_2d is not None:
-        if joints_2d.shape[1] == 3:
-            joints_2d = joints_2d[:, :2]  # 丢弃 z
-
-        # 调试坐标范围
-        print(f"{fname} | min: {joints_2d.min()}, max: {joints_2d.max()}")
-
-        # 如果值非常小（0.0~1.0），说明需要放大到像素坐标
-        if joints_2d.max() < 10:
-            joints_2d[:, 0] *= 1280  # x
-            joints_2d[:, 1] *= 720   # y
-
+    if 'pj2d_org' in data:
+        joints_2d = data['pj2d_org']
         for joint in joints_2d:
             try:
                 x, y = int(to_scalar(joint[0])), int(to_scalar(joint[1]))
-                if 0 <= x < 1280 and 0 <= y < 720:
+                if 0 <= x < frame_size[0] and 0 <= y < frame_size[1]:
                     cv2.circle(img, (x, y), 5, (0, 255, 0), -1)
             except Exception as e:
-                print(f"Failed to draw joint: {e}")
+                print(f"{file} Failed to draw joint: {e}")
+    else:
+        print(f"{file} missing pj2d_org")
 
-    cv2.putText(img, fname, (20, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (255, 255, 255), 2)
-    cv2.imshow("ROMP 2D Pose Preview", img)
-    if cv2.waitKey(30) & 0xFF == ord('q'):
-        break
+    video_writer.write(img)
 
-cv2.destroyAllWindows()
+video_writer.release()
+print("✅ 视频生成完成：", output_video_path)
