@@ -281,12 +281,12 @@ class Custom:
                         G1JointIndex.WaistYaw: "WAIST_YAW_q",
                         G1JointIndex.WaistRoll: "WAIST_ROLL_q",
                         G1JointIndex.WaistPitch: "WAIST_PITCH_q",
-                        # G1JointIndex.LeftHipPitch: "L_LEG_HIP_PITCH_q",
-                        # G1JointIndex.LeftKnee: "L_LEG_KNEE_q",
-                        # G1JointIndex.LeftAnklePitch: "L_LEG_ANKLE_PITCH_q",
-                        # G1JointIndex.RightHipPitch: "R_LEG_HIP_PITCH_q",
-                        # G1JointIndex.RightKnee: "R_LEG_KNEE_q",
-                        # G1JointIndex.RightAnklePitch: "R_LEG_ANKLE_PITCH_q"
+                        G1JointIndex.LeftHipPitch: "L_LEG_HIP_PITCH_q",
+                        G1JointIndex.LeftKnee: "L_LEG_KNEE_q",
+                        G1JointIndex.LeftAnklePitch: "L_LEG_ANKLE_PITCH_q",
+                        G1JointIndex.RightHipPitch: "R_LEG_HIP_PITCH_q",
+                        G1JointIndex.RightKnee: "R_LEG_KNEE_q",
+                        G1JointIndex.RightAnklePitch: "R_LEG_ANKLE_PITCH_q"
                     }
                 ))
 
