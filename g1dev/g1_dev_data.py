@@ -79,7 +79,7 @@ class Mode:
 class Custom:
     def __init__(self):
         self.time_ = 0.0
-        self.control_dt_ = 0.02  # [2ms]
+        self.control_dt_ = 0.002  # [2ms]
         self.duration_ = 3.0  # [3 s]
         self.counter_ = 0
         self.mode_pr_ = Mode.PR
@@ -166,11 +166,7 @@ class Custom:
         if self.time_ < self.duration_:
             return
         elif self.time_ < self.duration_ + (self.traj_end_time - self.traj_start_time):
-            # current_abs_time = self.traj_start_time + (self.time_ - self.duration_)
-
-            slow_factor = 0.25  # 慢 2 倍（可改为 0.25 表示慢 4 倍）
-            current_abs_time = self.traj_start_time + (self.time_ - self.duration_) * slow_factor
-
+            current_abs_time = self.traj_start_time + (self.time_ - self.duration_)
 
             df = self.traj_data
 
