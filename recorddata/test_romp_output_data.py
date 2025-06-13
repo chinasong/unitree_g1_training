@@ -3,7 +3,7 @@ import numpy as np
 import cv2
 from tqdm import tqdm
 
-ROMP_OUTPUT_DIR = "../externals/ROMP/output"  # 修改为你实际的目录
+ROMP_OUTPUT_DIR = "../externals/ROMP/output"  # 根据你的路径修改
 npz_files = sorted(f for f in os.listdir(ROMP_OUTPUT_DIR) if f.endswith(".npz"))
 
 for fname in tqdm(npz_files):
@@ -16,15 +16,17 @@ for fname in tqdm(npz_files):
     if joints is not None:
         for joint in joints:
             try:
-                # 使用 np.squeeze 去掉维度，再转换为标量
-                x = int(np.squeeze(joint[0]))
-                y = int(np.squeeze(joint[1]))
-                if 0 <= x < 1280 and 0 <= y < 720:
-                    cv2.circle(img, (x, y), 4, (0, 255, 0), -1)
+                joint = np.array(joint).flatten()
+                if len(joint) >= 2:
+                    x = int(joint[0])
+                    y = int(joint[1])
+                    if 0 <= x < 1280 and 0 <= y < 720:
+                        cv2.circle(img, (x, y), 4, (0, 255, 0), -1)
             except Exception as e:
                 print(f"Failed to draw joint: {e}")
                 continue
 
+    cv2.putText(img, fname, (20, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (255, 255, 255), 2)
     cv2.imshow("ROMP pose", img)
     if cv2.waitKey(30) & 0xFF == ord('q'):
         break
