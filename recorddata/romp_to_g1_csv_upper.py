@@ -4,7 +4,7 @@ import pandas as pd
 from tqdm import tqdm
 from scipy.interpolate import interp1d
 
-ROMP_OUTPUT_DIR = "externals/ROMP/output"  # 替换为你的 ROMP 输出路径
+ROMP_OUTPUT_DIR = "/home/ubuntu/unitree_g1_training/externals/ROMP/output"  # 替换为你的 ROMP 输出路径
 OUTPUT_CSV = "romp_output_g1_upperbody.csv"
 FRAME_RATE = 30
 INTERP_RATIO = 6
