@@ -10,19 +10,18 @@ FRAME_RATE = 30
 INTERP_RATIO = 6
 OUTPUT_RATE = FRAME_RATE * INTERP_RATIO
 
-# G1 上半身 16 个关节名称（13~28）
-UPPER_JOINTS = [
+# 只保留上半身关节索引（从 G1_JOINT_LIST 中选择）
+UPPER_BODY_JOINTS = [
     "WAIST_YAW",
-    "joint_13", "joint_14",  # 占位，可改名
     "L_SHOULDER_PITCH", "L_SHOULDER_ROLL", "L_SHOULDER_YAW",
     "L_ELBOW", "L_WRIST_ROLL", "L_WRIST_PITCH", "L_WRIST_YAW",
     "R_SHOULDER_PITCH", "R_SHOULDER_ROLL", "R_SHOULDER_YAW",
     "R_ELBOW", "R_WRIST_ROLL", "R_WRIST_PITCH", "R_WRIST_YAW"
 ]
 
-# 构建 CSV 表头
+# 构建 CSV 表头（1 时间列 + 每个关节的 q, dq, tau）
 columns = ["time"]
-for joint in UPPER_JOINTS:
+for joint in UPPER_BODY_JOINTS:
     columns += [f"{joint}_q", f"{joint}_dq", f"{joint}_tau"]
 
 # 加载 ROMP pose 数据
