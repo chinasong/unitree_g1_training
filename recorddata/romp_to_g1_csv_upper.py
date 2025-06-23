@@ -69,7 +69,7 @@ tau_array = np.zeros_like(dq_array)
 rows = []
 for i, t in enumerate(interp_times):
     row = [t] + [v for triplet in zip(interp_q[i], dq_array[i], tau_array[i]) for v in triplet]
-    rows.append(row) 
+    rows.append(row)
 
 df = pd.DataFrame(rows, columns=columns)
 df.to_csv(OUTPUT_CSV, index=False)
