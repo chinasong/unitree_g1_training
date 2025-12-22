@@ -8,6 +8,7 @@ import sys
 import time
 import argparse
 import json
+import os
 from http.server import HTTPServer, BaseHTTPRequestHandler
 from urllib.parse import parse_qs, urlparse
 import threading
@@ -20,14 +21,36 @@ from unitree_sdk2py.g1.audio.g1_audio_client import AudioClient
 class G1TTSService:
     """G1机器人TTS服务类"""
     
-    def __init__(self, network_interface):
+    def __init__(self, network_interface, g1_ip=None):
         """
         初始化TTS服务
         
         Args:
             network_interface: 连接到G1的网络接口名称，例如 'eth0' 或 'enp3s0'
+            g1_ip: G1机器人的IP地址（可选，用于单播模式）
         """
         print(f"🤖 初始化G1机器人连接...")
+        
+        # 如果提供了G1的IP，配置DDS使用单播模式
+        if g1_ip:
+            print(f"📡 使用单播模式连接G1: {g1_ip}")
+            # 配置DDS单播模式
+            cyclonedds_uri = f'''<CycloneDDS>
+  <Domain>
+    <General>
+      <NetworkInterfaceAddress>{network_interface}</NetworkInterfaceAddress>
+      <AllowMulticast>false</AllowMulticast>
+    </General>
+    <Discovery>
+      <Peers>
+        <Peer address="{g1_ip}"/>
+      </Peers>
+      <ParticipantIndex>auto</ParticipantIndex>
+    </Discovery>
+  </Domain>
+</CycloneDDS>'''
+            os.environ['CYCLONEDDS_URI'] = cyclonedds_uri
+        
         ChannelFactoryInitialize(0, network_interface)
         
         self.audio_client = AudioClient()
@@ -510,7 +533,9 @@ def main():
     )
     
     parser.add_argument('--iface', required=True, 
-                       help='网络接口名称（例如: eth0, enp3s0）')
+                       help='网络接口名称（例如: eth0, enp3s0, en0）')
+    parser.add_argument('--g1-ip', type=str,
+                       help='G1机器人的IP地址（用于手机热点等需要单播模式的场景）')
     parser.add_argument('--server', action='store_true',
                        help='启动HTTP服务器模式')
     parser.add_argument('--interactive', action='store_true',
@@ -527,7 +552,8 @@ def main():
     args = parser.parse_args()
     
     # 初始化TTS服务
-    tts_service = G1TTSService(args.iface)
+    g1_ip = getattr(args, 'g1_ip', None)
+    tts_service = G1TTSService(args.iface, g1_ip=g1_ip)
     
     # 设置音量（如果指定）
     if args.volume is not None:
