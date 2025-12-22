@@ -72,3 +72,6 @@ Thumbs.db
 *.bak
 *.swp
 
+# External dependencies (should be installed separately)
+externals/
+
