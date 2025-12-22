@@ -26,9 +26,36 @@ from ultralytics import YOLO
 script_dir = os.path.dirname(os.path.abspath(__file__))
 project_root = os.path.dirname(script_dir)
 sdk_path = os.path.join(project_root, 'externals', 'unitree_sdk2_python')
-sys.path.append(sdk_path)
-from unitree_sdk2py.core.channel import ChannelFactoryInitialize
-from unitree_sdk2py.g1.audio.g1_audio_client import AudioClient
+
+# 尝试从本地externals文件夹导入SDK
+if os.path.exists(sdk_path):
+    sys.path.append(sdk_path)
+    try:
+        from unitree_sdk2py.core.channel import ChannelFactoryInitialize
+        from unitree_sdk2py.g1.audio.g1_audio_client import AudioClient
+    except ImportError as e:
+        print(f"⚠️ 无法从本地路径导入SDK: {e}")
+        print("   尝试从已安装的包导入...")
+        try:
+            from unitree_sdk2py.core.channel import ChannelFactoryInitialize
+            from unitree_sdk2py.g1.audio.g1_audio_client import AudioClient
+        except ImportError:
+            print("❌ 无法导入unitree_sdk2py，请确保:")
+            print("   1. externals/unitree_sdk2_python 文件夹存在，或")
+            print("   2. 已通过pip安装: pip install unitree_sdk2_python")
+            sys.exit(1)
+else:
+    # externals文件夹不存在，尝试从已安装的包导入
+    print("⚠️ 未找到本地externals/unitree_sdk2_python文件夹")
+    print("   尝试从已安装的包导入...")
+    try:
+        from unitree_sdk2py.core.channel import ChannelFactoryInitialize
+        from unitree_sdk2py.g1.audio.g1_audio_client import AudioClient
+    except ImportError:
+        print("❌ 无法导入unitree_sdk2py，请执行以下操作之一:")
+        print("   1. 初始化git submodule: git submodule update --init --recursive")
+        print("   2. 或通过pip安装: cd externals/unitree_sdk2_python && pip install -e .")
+        sys.exit(1)
 
 # 尝试导入语音识别和LLM相关库
 try:
@@ -70,12 +97,18 @@ PERSON_DISAPPEAR_TIMEOUT = 3.0  # 人消失多久后重置状态（秒）
 
 # 加载YOLO模型
 print("📦 正在加载YOLO模型...")
-yolo_model = YOLO("yolo11n.pt")
+yolo_model_path = os.path.join(script_dir, "yolo11n.pt")
+if os.path.exists(yolo_model_path):
+    yolo_model = YOLO(yolo_model_path)
+else:
+    print("⚠️ 未找到本地yolo11n.pt，YOLO将自动下载模型")
+    yolo_model = YOLO("yolo11n.pt")  # YOLO会自动下载
 
 # 加载标签映射
 label_map = {}
+label_map_path = os.path.join(script_dir, "en_to_zh.js")
 try:
-    with open("en_to_zh.js", "r", encoding="utf-8") as f:
+    with open(label_map_path, "r", encoding="utf-8") as f:
         label_map = json.load(f)
 except FileNotFoundError:
     print("⚠️ 未找到en_to_zh.js，将使用英文标签")
