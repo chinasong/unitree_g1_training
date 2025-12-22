@@ -28,4 +28,13 @@ flake8>=4.0.0
 
 # Optional dependencies
 torch>=1.10.0  # For deep learning components
-tensorboard>=2.8.0  # For training visualization 
+tensorboard>=2.8.0  # For training visualization
+
+# G1 Humorous Chat System dependencies
+opencv-python>=4.5.0  # For image processing
+ultralytics>=8.0.0  # For YOLO object detection
+rospy>=1.14.0  # For ROS communication
+cv-bridge>=1.16.0  # For ROS image conversion
+speechrecognition>=3.10.0  # For speech recognition (optional)
+openai>=1.0.0  # For AI-powered responses (optional)
+pyaudio>=0.2.11  # For microphone access (optional, may need system packages)
