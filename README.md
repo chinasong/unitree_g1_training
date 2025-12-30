@@ -2,35 +2,50 @@
 
 This project is designed for training and development with the Unitree G1 robot platform. It includes various tools and utilities for robot control, simulation, and data processing.
 
+## 🚀 Quick Start
+
+### TTS Service (Text-to-Speech)
+The easiest way to control G1 robot's speech:
+
+```bash
+# Start TTS service
+python3 g1_tts_service.py --iface wlan0 --server
+
+# Access web interface
+# Open http://192.168.1.28:8080 in browser
+
+# Or use Python client
+python3 g1_tts_client_example.py
+```
+
+See [G1_TTS_SERVICE_README.md](G1_TTS_SERVICE_README.md) for detailed documentation.
+
 ## Project Structure
 
-- `src/`: Source code directory
-  - `fast_gicp/`: Fast point cloud registration algorithms (git submodule)
-    - FastGICP: multi-threaded GICP algorithm (~40FPS)
-    - FastVGICP: multi-threaded and voxelized GICP algorithm (~70FPS)
-    - FastVGICPCuda: CUDA-accelerated voxelized GICP algorithm (~120FPS)
+- **Core Services**:
+  - `g1_tts_service.py`: TTS service with HTTP API and web interface
+  - `g1_tts_client_example.py`: Python client example
+  - `g1_tts_simple_test.py`: Simple test script
+  - `g1_start_tts_service.sh`: Quick start script
 
-- `armdev/`: Contains development tools and scripts for arm control and data processing
-  - `armdev_data.py`: Data processing utilities
-  - `armdev_gui.py`: GUI interface for arm control
-  - `g1_csv_to_lowcmd_player_with_legs.py`: CSV to low-level command converter
-  - `g1_csv_to_mujoco.py`: CSV to MuJoCo simulation converter
-  - `g1_23dof.xml`: MuJoCo model definition file
-  - Various test and utility scripts
+- **Development Tools**:
+  - `armdev/`: Arm control and data processing tools
+  - `cameradev/`: Camera and vision development
+  - `recorddata/`: Data recording and processing
+  - `videodev/`: Video processing tools
+  - `g1dev/`: G1 device utilities
+  - `legdev/`: Leg control development
 
-- `externals/`: External dependencies
-  - `unitree_sdk2_python`: Unitree SDK for Python
-  - `unitree_rl_gym`: Unitree reinforcement learning environment
+- **Utilities**:
+  - `g1_remote_exec.sh`: Remote command execution tool
+  - `quick_start_tts.sh`: Quick TTS service launcher
 
-- `catkin_ws/`: ROS workspace for robot control
-
-- `doc/`: Documentation files
-
-- `videodev/`: Video development tools
-
-- `cameradev/`: Camera development tools
-
-- `vibes/`: Additional utilities and tools
+- **Documentation**:
+  - `G1_TTS_SERVICE_README.md`: Complete TTS service documentation
+  - `G1_STANDING_LONG_JUMP_README.md`: Standing long jump feature
+  - `G1_JOINT_RANGE_LIMITS.md`: Joint range limits
+  - `G1_MOTOR_INFO.md`: Motor information
+  - `doc/`: Additional documentation
 
 ## Dependencies
 
@@ -80,29 +95,46 @@ catkin_make
 
 ## Usage
 
-### Arm Control
-To use the arm control GUI:
+### TTS Service (Recommended)
+The easiest way to interact with G1 robot:
+
 ```bash
-python armdev/armdev_gui.py
+# Start HTTP server
+python3 g1_tts_service.py --iface wlan0 --server
+
+# Interactive mode
+python3 g1_tts_service.py --iface wlan0 --interactive
+
+# Say one sentence
+python3 g1_tts_service.py --iface wlan0 --speak "Hello G1"
 ```
 
-### Data Processing
-To convert CSV data to low-level commands:
+### Arm Control
 ```bash
+python armdev/armdev_data.py
 python armdev/g1_csv_to_lowcmd_player_with_legs.py
 ```
 
-### Simulation
-To run MuJoCo simulation:
+### Data Processing
 ```bash
+# Convert CSV to MuJoCo
 python armdev/g1_csv_to_mujoco.py
+
+# Process recorded data
+python recorddata/smooth_g1_csv.py
 ```
 
-### Point Cloud Processing
-The project includes fast_gicp for efficient point cloud registration:
-- FastGICP: Multi-threaded GICP implementation
-- FastVGICP: Voxelized GICP for improved performance
-- FastVGICPCuda: GPU-accelerated version (requires CUDA)
+### Camera Development
+```bash
+cd cameradev
+python g1_humorous_chat.py
+```
+
+### Remote Execution
+```bash
+# Execute commands on G1 robot
+./g1_remote_exec.sh "hostname"
+```
 
 ## Contributing
 
