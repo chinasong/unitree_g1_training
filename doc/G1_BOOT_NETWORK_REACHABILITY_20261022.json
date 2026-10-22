@@ -1,0 +1,175 @@
+{
+  "checked_at": "2026-10-22T02:44:17.803015+00:00",
+  "network_changed": false,
+  "discovery": [
+    {
+      "command": [
+        "/sbin/ping6",
+        "-I",
+        "en0",
+        "-c",
+        "2",
+        "ff02::1"
+      ],
+      "returncode": 0,
+      "stdout": "PING6(56=40+8+8 bytes) fe80::fd:e145:a2ac:5b16%en0 --> ff02::1\n16 bytes from fe80::fd:e145:a2ac:5b16%en0, icmp_seq=0 hlim=64 time=0.116 ms\n16 bytes from fe80::10af:7002:3d44:1fdb%en0, icmp_seq=0 hlim=64 time=11.238 ms\n16 bytes from fe80::1c97:5a0f:e5cc:4d4f%en0, icmp_seq=0 hlim=64 time=11.340 ms\n16 bytes from fe80::1045:dcd:aef4:8d6c%en0, icmp_seq=0 hlim=64 time=87.616 ms\n16 bytes from fe80::10c9:b4ef:5eaa:4222%en0, icmp_seq=0 hlim=64 time=89.943 ms\n16 bytes from fe80::fd:e145:a2ac:5b16%en0, icmp_seq=1 hlim=64 time=0.367 ms\n\n--- ff02::1 ping6 statistics ---\n2 packets transmitted, 2 packets received, +4 duplicates, 0.0% packet loss\nround-trip min/avg/max/std-dev = 0.116/33.437/89.943/39.398 ms\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/usr/bin/dns-sd",
+        "-B",
+        "_ssh._tcp",
+        "local."
+      ],
+      "timeout": true,
+      "stdout": "Browsing for _ssh._tcp.local.\nDATE: ---Thu 22 Oct 2026---\n10:40:09.684  ...STARTING...\nTimestamp     A/R    Flags  if Domain               Service Type         Instance Name\n10:40:09.939  Add        3   1 local.               _ssh._tcp.           doge的MacBook Pro\n10:40:09.939  Add        2  15 local.               _ssh._tcp.           doge的MacBook Pro\n"
+    },
+    {
+      "command": [
+        "/usr/bin/dns-sd",
+        "-B",
+        "_workstation._tcp",
+        "local."
+      ],
+      "timeout": true,
+      "stdout": ""
+    },
+    {
+      "command": [
+        "/usr/bin/dns-sd",
+        "-G",
+        "v4v6",
+        "ubuntu.local."
+      ],
+      "timeout": true,
+      "stdout": ""
+    }
+  ],
+  "ndp": {
+    "command": [
+      "/usr/sbin/ndp",
+      "-an"
+    ],
+    "returncode": 0,
+    "stdout": "Neighbor                                Linklayer Address  Netif Expire    St Flgs Prbs\n2409:8a00:1854:b650:418:1fcd:edd7:c611  2:0:0:0:0:0          en0 permanent R      \n2409:8a00:1854:b650:c8e9:3d72:b507:ecdb 2:0:0:0:0:0          en0 permanent R      \n2409:8a00:1854:b650:d135:3dc4:dc01:dd3f 2:0:0:0:0:0          en0 permanent R      \nfe80::1%lo0                             (incomplete)         lo0 permanent R      \nfe80::fd:e145:a2ac:5b16%en0             2:0:0:0:0:0          en0 permanent R      \nfe80::f039:a8ff:febf:66a5%awdl0         2:0:0:0:0:0        awdl0 permanent R      \nfe80::f039:a8ff:febf:66a5%llw0          2:0:0:0:0:0         llw0 permanent R      \nfe80::5bb8:2cb:fe3b:efcd%utun0          (incomplete)       utun0 permanent R      \nfe80::e40c:e13c:df34:bf0c%utun1         (incomplete)       utun1 permanent R      \nfe80::2e59:dacc:6eef:2f10%utun2         (incomplete)       utun2 permanent R      \nfe80::ce81:b1c:bd2c:69e%utun3           (incomplete)       utun3 permanent R      \nfe80::e696:1dca:c9c2:24f9%utun5         (incomplete)       utun5 permanent R      \nfe80::a539:c06f:aa32:4c0d%utun6         (incomplete)       utun6 permanent R      \n",
+    "stderr": "",
+    "assessment": "Limited child-process view; superseded by direct_system_ndp."
+  },
+  "ipv6_ssh_probes": [
+    {
+      "address": "2409:8a00:1854:b650:418:1fcd:edd7:c611",
+      "banner": "SSH-2.0-OpenSSH_10.3\r\n",
+      "assessment": "Mac local address, excluded as an Orin candidate. SSH banner does not belong to robot."
+    },
+    {
+      "address": "2409:8a00:1854:b650:c8e9:3d72:b507:ecdb",
+      "banner": "SSH-2.0-OpenSSH_10.3\r\n",
+      "assessment": "Mac local address, excluded as an Orin candidate. SSH banner does not belong to robot."
+    },
+    {
+      "address": "2409:8a00:1854:b650:d135:3dc4:dc01:dd3f",
+      "banner": "SSH-2.0-OpenSSH_10.3\r\n",
+      "assessment": "Mac local address, excluded as an Orin candidate. SSH banner does not belong to robot."
+    },
+    {
+      "address": "fe80::7a22:88ff:feaf:97a5",
+      "error": "timed out",
+      "assessment": "Derived EUI-64 guess from historical MAC; actual Orin IPv6 not known."
+    },
+    {
+      "address": "fe80::fd:e145:a2ac:5b16",
+      "banner": "SSH-2.0-OpenSSH_10.3\r\n",
+      "assessment": "Mac local address, excluded as an Orin candidate. SSH banner does not belong to robot."
+    }
+  ],
+  "active_arp": {
+    "command": [
+      "/usr/sbin/arp",
+      "-an"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "assessment": "Limited child-process view; superseded by direct_system_arp."
+  },
+  "collection_visibility_warning": "Earlier ARP/NDP collected through Python subprocess differed from direct system commands: neighbor entries were missing and MACs replaced by 2:0:0:0:0:0. Cause unknown. Empty child-process output does not prove no neighbors.",
+  "direct_system_ndp": {
+    "command": "/usr/sbin/ndp -an",
+    "stdout": "Neighbor                                Linklayer Address  Netif Expire    St Flgs Prbs\n2409:8a00:1854:b650:418:1fcd:edd7:c611  76:de:a6:b3:2f:ca    en0 permanent R      \n2409:8a00:1854:b650:1075:95e:d53:cb42   5c:13:cc:36:e3:8a    en0 14h24m31s S      \n2409:8a00:1854:b650:95bc:c0ec:2123:7636 1e:5e:ae:f7:37:a9    en0 10h28m52s S      \n2409:8a00:1854:b650:a175:534f:ea1:261e  (incomplete)         en0 expired   N      \n2409:8a00:1854:b650:c8e9:3d72:b507:ecdb 76:de:a6:b3:2f:ca    en0 permanent R      \n2409:8a00:1854:b650:c9ef:d18b:dc7f:6af0 5c:13:cc:36:e3:8a    en0 14h25m29s S      \n2409:8a00:1854:b650:d135:3dc4:dc01:dd3f 76:de:a6:b3:2f:ca    en0 permanent R      \n2409:8a00:1854:b650:f573:a02c:2213:bdb7 1e:5e:ae:f7:37:a9    en0 14h25m23s S      \nfe80::1%lo0                             (incomplete)         lo0 permanent R      \nfe80::1%en0                             e4:90:2a:99:90:35    en0 23h59m14s S  R   \nfe80::fd:e145:a2ac:5b16%en0             76:de:a6:b3:2f:ca    en0 permanent R      \nfe80::1045:dcd:aef4:8d6c%en0            5a:d0:94:f7:8c:b3    en0 23h57m23s S      \nfe80::1057:2bd5:1e04:af18%en0           56:35:9a:81:e4:1     en0 23h55m30s S      \nfe80::10af:7002:3d44:1fdb%en0           1e:5e:ae:f7:37:a9    en0 11s       R      \nfe80::10c9:b4ef:5eaa:4222%en0           5c:13:cc:36:e3:8a    en0 7s        R      \nfe80::1c97:5a0f:e5cc:4d4f%en0           70:ea:5a:3e:a4:fb    en0 23h57m44s S      \nfe80::e690:2aff:fe99:9035%en0           e4:90:2a:99:90:35    en0 23h43m34s S  R   \nfe80::f039:a8ff:febf:66a5%awdl0         f2:39:a8:bf:66:a5  awdl0 permanent R      \nfe80::f039:a8ff:febf:66a5%llw0          f2:39:a8:bf:66:a5   llw0 permanent R      \nfe80::5bb8:2cb:fe3b:efcd%utun0          (incomplete)       utun0 permanent R      \nfe80::e40c:e13c:df34:bf0c%utun1         (incomplete)       utun1 permanent R      \nfe80::2e59:dacc:6eef:2f10%utun2         (incomplete)       utun2 permanent R      \nfe80::ce81:b1c:bd2c:69e%utun3           (incomplete)       utun3 permanent R      \nfe80::e696:1dca:c9c2:24f9%utun5         (incomplete)       utun5 permanent R      \nfe80::a539:c06f:aa32:4c0d%utun6         (incomplete)       utun6 permanent R      \n"
+  },
+  "direct_system_arp": {
+    "command": "/usr/sbin/arp -an",
+    "stdout": "? (<LAN_GATEWAY>) at e4:90:2a:99:90:35 on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at e4:dc:cc:4f:47:ce on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at 56:35:9a:81:e4:1 on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at 78:2e:3:84:6e:8 on en0 ifscope [ethernet]\n? (<LAN_HOST>) at 14:c0:50:3c:f2:82 on en0 ifscope [ethernet]\n? (<ORIN_IP>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at 5c:13:cc:36:e3:8a on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at 66:76:15:f9:c3:3d on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at 5a:d0:94:f7:8c:b3 on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at 70:ea:5a:3e:a4:fb on en0 ifscope [ethernet]\n? (<MAC_IP>) at 76:de:a6:b3:2f:ca on en0 ifscope permanent [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at 1e:5e:ae:f7:37:a9 on en0 ifscope [ethernet]\n? (<LAN_HOST>) at 70:48:f7:e6:dd:a on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<APP_REPORTED_IP>) at 94:ba:6:f6:f2:fc on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_HOST>) at (incomplete) on en0 ifscope [ethernet]\n? (<LAN_BROADCAST>) at ff:ff:ff:ff:ff:ff on en0 ifscope [ethernet]\n? (224.0.0.251) at 1:0:5e:0:0:fb on en0 ifscope permanent [ethernet]\n"
+  },
+  "actual_neighbor_ipv6_ssh_probes": [
+    {
+      "address": "2409:8a00:1854:b650:1075:95e:d53:cb42",
+      "mac": "5c:13:cc:36:e3:8a",
+      "authenticated": false,
+      "error": "[Errno 61] Connection refused"
+    },
+    {
+      "address": "2409:8a00:1854:b650:95bc:c0ec:2123:7636",
+      "mac": "1e:5e:ae:f7:37:a9",
+      "authenticated": false,
+      "error": "timed out"
+    },
+    {
+      "address": "2409:8a00:1854:b650:c9ef:d18b:dc7f:6af0",
+      "mac": "5c:13:cc:36:e3:8a",
+      "authenticated": false,
+      "error": "[Errno 61] Connection refused"
+    },
+    {
+      "address": "2409:8a00:1854:b650:f573:a02c:2213:bdb7",
+      "mac": "1e:5e:ae:f7:37:a9",
+      "authenticated": false,
+      "error": "[Errno 61] Connection refused"
+    },
+    {
+      "address": "fe80::1%en0",
+      "mac": "e4:90:2a:99:90:35",
+      "authenticated": false,
+      "error": "timed out"
+    },
+    {
+      "address": "fe80::1045:dcd:aef4:8d6c%en0",
+      "mac": "5a:d0:94:f7:8c:b3",
+      "authenticated": false,
+      "error": "[Errno 61] Connection refused"
+    },
+    {
+      "address": "fe80::1057:2bd5:1e04:af18%en0",
+      "mac": "56:35:9a:81:e4:1",
+      "authenticated": false,
+      "error": "timed out"
+    },
+    {
+      "address": "fe80::10af:7002:3d44:1fdb%en0",
+      "mac": "1e:5e:ae:f7:37:a9",
+      "authenticated": false,
+      "error": "[Errno 61] Connection refused"
+    },
+    {
+      "address": "fe80::10c9:b4ef:5eaa:4222%en0",
+      "mac": "5c:13:cc:36:e3:8a",
+      "authenticated": false,
+      "error": "[Errno 61] Connection refused"
+    },
+    {
+      "address": "fe80::1c97:5a0f:e5cc:4d4f%en0",
+      "mac": "70:ea:5a:3e:a4:fb",
+      "authenticated": false,
+      "error": "[Errno 61] Connection refused"
+    },
+    {
+      "address": "fe80::e690:2aff:fe99:9035%en0",
+      "mac": "e4:90:2a:99:90:35",
+      "authenticated": false,
+      "error": "timed out"
+    }
+  ],
+  "historical_orin_mac_seen_in_direct_neighbors": false,
+  "physical_reboot_recovery_verified": false
+}

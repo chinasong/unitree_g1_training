@@ -28,6 +28,12 @@ sys.path.insert(0, '/home/unitree/.local/lib/python3.8/site-packages')
 sys.path.insert(0, '/opt/ros/foxy/lib/python3.8/site-packages')
 sys.path.insert(0, '/home/unitree/unitree_sdk2_python')
 
+# 优先使用本项目锁定的官方 SDK，保留机器人原有安装路径作为后备。
+project_sdk_path = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                                'externals', 'unitree_sdk2_python')
+if os.path.isdir(project_sdk_path):
+    sys.path.insert(0, project_sdk_path)
+
 # 导入SDK
 try:
     from unitree_sdk2py.core.channel import ChannelFactoryInitialize

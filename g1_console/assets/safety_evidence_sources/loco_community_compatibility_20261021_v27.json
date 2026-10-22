@@ -1,0 +1,24 @@
+{
+  "current": false,
+  "checked_at_utc": "2026-10-21T12:40:00+00:00",
+  "authority": "第三方作者在宇树官方仓库的报告，不是宇树确认，不是本机实测。",
+  "motion_writes": 0,
+  "device_applicable": null,
+  "execution_allowed": false,
+  "reports": [
+    {
+      "url": "https://github.com/unitreerobotics/unitree_sdk2_python/issues/170",
+      "edition": "G1 EDU+ 29 DOF",
+      "reported_software": "1.5.3",
+      "api_version": "1.0.0.0",
+      "summary": "作者报告 API 版本匹配，但 FSM/速度成功应答未产生预期变化；不能据此证明本机存在同样问题。"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/pull/312",
+      "status": "open_unmerged_at_review",
+      "head_commit_short": "1123c07",
+      "summary": "作者提议改变启动 FSM 序列；独立审阅提出自动启动运动、错误处理和验证缺口。没有采纳、运行或开放其新增 FSM。"
+    }
+  ],
+  "conclusion": "协议匹配、服务名 ai 和 RPC 成功均不足以核定起身或控制切换；29 DOF 社区路线不能套用本机 23 DOF。"
+}

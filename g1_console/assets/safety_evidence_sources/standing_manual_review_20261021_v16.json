@@ -1,0 +1,102 @@
+{
+  "checked_at_utc": "2026-10-21T06:30:15.647511+00:00",
+  "current": false,
+  "variant_scope": "G1 用户手册明确介绍 23 自由度与 EDU；手册不能证明本机固件支持全部入口",
+  "references": [
+    {
+      "manual_url": "https://marketing.unitree.com/article/zh/G1/User_Manual.html",
+      "image_index": 3,
+      "printed_page": 3,
+      "image_sha256": "fc28bd79446b46755eb3b3834eea13d8c3ef50d27d4553a380bac508014adc63",
+      "image_url": "https://doc-cdn.unitree.com/static/2026/8/12/bc80517ca0a048ab8d8b353f0a372989_2481x3509.png"
+    },
+    {
+      "manual_url": "https://marketing.unitree.com/article/zh/G1/User_Manual.html",
+      "image_index": 4,
+      "printed_page": 4,
+      "image_sha256": "eb8a0196b657dd6da10ad13d3886a492b8d6b89d8235adb64bba04f29cef1b6e",
+      "image_url": "https://doc-cdn.unitree.com/static/2026/8/12/e90e5025e3fb490ab9cf3c4310817524_2482x3509.png"
+    },
+    {
+      "manual_url": "https://marketing.unitree.com/article/zh/G1/User_Manual.html",
+      "image_index": 13,
+      "printed_page": 13,
+      "image_sha256": "92bed02b56cc5dbabb8338f840f7b47a66423284f84102e16c69511f33b4368e",
+      "image_url": "https://doc-cdn.unitree.com/static/2026/8/12/6ccdfccc026141099acf5a433c3bbdd4_2481x3508.png"
+    },
+    {
+      "manual_url": "https://marketing.unitree.com/article/zh/G1/User_Manual.html",
+      "image_index": 14,
+      "printed_page": 14,
+      "image_sha256": "59283125f4211dd21652d84f757bd4ee87347012478d1c5d46b4c03f3d6d187e",
+      "image_url": "https://doc-cdn.unitree.com/static/2026/8/12/03f023cb185a4a1e9fdddb6b6c6feb94_2481x3508.png"
+    },
+    {
+      "manual_url": "https://marketing.unitree.com/article/zh/G1/User_Manual.html",
+      "image_index": 15,
+      "printed_page": 15,
+      "image_sha256": "e57e5d4fb6f7cfcfc3e34172951a2de921c680184d21ba6ba12bf547fccd66b9",
+      "image_url": "https://doc-cdn.unitree.com/static/2026/8/12/8350adc9fd814724baa744e07e0c5a55_2482x3508.png"
+    },
+    {
+      "manual_url": "https://marketing.unitree.com/article/zh/G1/User_Manual.html",
+      "image_index": 16,
+      "printed_page": 16,
+      "image_sha256": "42f9fc72e948ecf0d99f756408e7c248309f059a3e6c178ea3f3e9582b1e0fea",
+      "image_url": "https://doc-cdn.unitree.com/static/2026/8/12/f2af507cd814437181ef1d7f412b3508_2482x3508.png"
+    },
+    {
+      "manual_url": "https://marketing.unitree.com/article/zh/G1/Remote_Control.html",
+      "image_index": 6,
+      "printed_page": 7,
+      "image_sha256": "a5822a51d91e26d832ee9e63532954a016d856e4f0b6b3f02a6da27318f83f31",
+      "image_url": "https://doc-cdn.unitree.com/static/2025/6/6/1f1fb8fa1ea64392b1796650ed38676c_2481x3508.png"
+    },
+    {
+      "manual_url": "https://marketing.unitree.com/article/zh/G1/Remote_Control.html",
+      "image_index": 7,
+      "printed_page": 8,
+      "image_sha256": "cd870ef05ded556d32d58c15f4070e905461ee431ae564a417c7f782ffa212cd",
+      "image_url": "https://doc-cdn.unitree.com/static/2025/6/9/fa012e6093544df4b63abf47d7011192_2481x3508.png"
+    },
+    {
+      "manual_url": "https://marketing.unitree.com/article/zh/G1/Remote_Control.html",
+      "image_index": 8,
+      "printed_page": 9,
+      "image_sha256": "2a0854a2ec807e6d1328b71855cb4fe2e7877b9add8c225f01601cc50d7aad9b",
+      "image_url": "https://doc-cdn.unitree.com/static/2025/6/6/9e104a6c5f044bb7aec2978e71d07334_2481x3508.png"
+    },
+    {
+      "manual_url": "https://marketing.unitree.com/article/zh/G1/Remote_Control.html",
+      "image_index": 9,
+      "printed_page": 10,
+      "image_sha256": "ec6aa66275218e4e42ac1f29247419b3db3f38e3e7e10657caafb09d77077722",
+      "image_url": "https://doc-cdn.unitree.com/static/2025/6/6/e714f617d67f49f58da3f3e049fb7744_2481x3508.png"
+    }
+  ],
+  "remote_manual_revision": {
+    "version": "1.3",
+    "date": "2025-06-06"
+  },
+  "control_meanings": [
+    {
+      "name": "零力矩 / 阻尼",
+      "meaning": "均非主动平衡；阻尼增加运动阻力，不能据此判定姿态保持或站稳。",
+      "device_verified": false
+    },
+    {
+      "name": "预备 / 下蹲 / 落座",
+      "meaning": "手册描述位置姿态转换且无平衡控制；文档名义时间为 5 秒，不是本机已核定起身时长或可调速度。",
+      "documented_nominal_duration_s": 5,
+      "device_duration_s": null,
+      "device_verified": false
+    },
+    {
+      "name": "运动中的站立",
+      "meaning": "官方运动控制可在扰动时迈步维持平衡，仍需周围净空；与锁定姿态不同。",
+      "device_verified": false
+    }
+  ],
+  "start_path_review": "23 自由度用户手册包含辅助预备及保护架悬挂流程；未给出任意坐地姿势直接缓慢起身的已验证契约。坐地不能直接等同蹲姿或躺卧。",
+  "protection_review": "官方包含专用悬挂保护流程与夹伤防范；人员托举不能自动认定为已验证的防跌落保护。当前只研究，不要求现场改变支撑或按键。"
+}

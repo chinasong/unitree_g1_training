@@ -1,0 +1,43 @@
+{
+  "current": false,
+  "source": "user_direct_report",
+  "recorded_at_utc": "2026-10-21T06:55:32.631047+00:00",
+  "observed_at_utc": null,
+  "boot_context": "b33a7dc5-2617-44cd-b353-041bab1c204f",
+  "timestamp_basis": "记录时间为入档时间；用户未提供精确观察时间，不能视为传感器采样时间",
+  "reports": [
+    "现在不是人员托住，现在是靠在一个柜子"
+  ],
+  "reported_pose": "seated_on_floor",
+  "reported_left_sole_contact": true,
+  "reported_right_sole_contact": true,
+  "reported_external_support": "cabinet",
+  "reported_digital_pose_matches": true,
+  "reported_independent_standing": false,
+  "left_load_n": null,
+  "right_load_n": null,
+  "scope": "最近人工支撑记录已更正为靠柜；坐地、双脚贴地、数字关节形态相符沿用更正前的人工核对，并非本次重新逐项确认。未测得左右脚、身体与地面及柜体的载荷，未证实独立平衡。姿势变化或重启后须重新核对。",
+  "reported_person_support": false,
+  "cabinet_load_n": null,
+  "summary": "坐地 / 双脚贴地 / 靠柜支撑",
+  "support_description": "用户最新更正：靠在柜子上，当前没有人员托住。柜体接触位置、固定情况与承重未知。",
+  "supersedes": {
+    "path": "g1_console/assets/safety_evidence_sources/human_posture_20261021_v16.json",
+    "sha256": "51496501c3c1f36bdaa86143f89b173fd15256d5b8f37cceb1c7000c05e9119d",
+    "field": "reported_external_support",
+    "previous": "person",
+    "replacement": "cabinet",
+    "reason": "user_correction"
+  },
+  "claim_provenance": {
+    "external_support": {
+      "recorded_at_utc": "2026-10-21T06:55:32.631047+00:00",
+      "source": "user_latest_correction"
+    },
+    "pose_feet_and_digital_view": {
+      "recorded_at_utc": "2026-10-21T06:30:15.647511+00:00",
+      "source": "g1_console/assets/safety_evidence_sources/human_posture_20261021_v16.json",
+      "reconfirmed_in_latest_message": false
+    }
+  }
+}

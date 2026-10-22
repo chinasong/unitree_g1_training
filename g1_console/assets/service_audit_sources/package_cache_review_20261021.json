@@ -1,0 +1,92 @@
+{
+  "current": false,
+  "checked_at_utc": "2026-10-21T03:54:37.818672+00:00",
+  "read_only": true,
+  "motor_configuration_values_obtained": 0,
+  "payload_decoded": false,
+  "motor_configuration_present": null,
+  "command_writes": 0,
+  "rpc_calls": 0,
+  "vendor_program_executions": 0,
+  "configuration_calls": 0,
+  "calibration_calls": 0,
+  "conclusion": "新增发现目录版本为 1.0.0.6 的补丁包；仍为未解析 UTPK。备份工具与此前文件哈希相同，未找到匹配的 Mixer/Gen 实现或 FMX 格式说明",
+  "files_scanned": 51,
+  "binaries_scanned": 5,
+  "roots": [
+    "/unitree/ota",
+    "/unitree/robot/pkg",
+    "/unitree/var/data",
+    "/opt/ota_package",
+    "/var/cache/apt/archives"
+  ],
+  "master_identity": [
+    {
+      "path": "/unitree/module/master_service/master_service",
+      "bytes": 9083232,
+      "sha256": "380e34de9c2def2692c0bf1b73e969d3167c8270f2ed5f974bb01abd4e96f24e",
+      "unchanged_during_read": true
+    },
+    {
+      "path": "/unitree/module/master_service/master_service.json",
+      "bytes": 468,
+      "sha256": "31eae39936576504c40be767bd93cd34b7489154eca989e5e5c2781b05e3d977",
+      "unchanged_during_read": true
+    }
+  ],
+  "packages": [
+    {
+      "path": "/unitree/ota/update/1.5.3/package_1.5.3.8_G1_Edu+_upk/module/unitree_patch_pc4/1.0.0.6/file/unitree_patch_pc4_1.0.0.6.upk",
+      "bytes": 21731956,
+      "sha256": "f9028b6539963d88076b470e5348005dabfd3589cd0e1616ef4fe91be60bf16e",
+      "format": "UTPK opaque",
+      "payload_decoded": false,
+      "implementation_match_confirmed": false,
+      "version_meaning": "目录版本与已安装补丁清单 1.0.0.6 一致；未证明包内内容匹配 master_service"
+    },
+    {
+      "path": "/unitree/ota/update/module/unitree_patch_pc4/1.0.0.2/g1plus@unitree_patch_pc4_1.0.0.2.upk",
+      "bytes": 21509748,
+      "sha256": "fd20c663d203e526ad13eaff5c2fec780961e69a05d5911e9afafd3544dbc8fe",
+      "format": "UTPK opaque",
+      "payload_decoded": false,
+      "implementation_match_confirmed": false,
+      "version_meaning": "路径/包版本不等于电机固件或标定版本"
+    },
+    {
+      "path": "/unitree/ota/update/module/video_hub_pc4/1.0.1.1/video_hub_pc4_1.0.1.1.upk",
+      "bytes": 75892,
+      "sha256": "ac276e9f575aa2a3b4070ca5a1a2e8103e835cac42e01abf4275fe28d86e61e1",
+      "format": "UTPK opaque",
+      "payload_decoded": false,
+      "implementation_match_confirmed": false,
+      "version_meaning": "路径/包版本不等于电机固件或标定版本"
+    },
+    {
+      "path": "/unitree/var/data/chrony/chrony_3.5-6ubuntu6.2_arm64.deb",
+      "bytes": 212496,
+      "sha256": "5558692a69cfa19ebcfbeb9e266ff401585c10385d0d7bfa61c2a16cb7101c09",
+      "format": "Debian archive",
+      "payload_decoded": false,
+      "implementation_match_confirmed": false,
+      "version_meaning": "路径/包版本不等于电机固件或标定版本"
+    }
+  ],
+  "limitations": [
+    "仅核查所列目录，深度 16、最多 3000 文件、单文件 128 MiB；不覆盖整机所有存储",
+    "APT lock 和 partial 无读取权限；未提权。未发现宇树命名的 dpkg 包记录不能证明未安装宇树软件",
+    "标准 Debian 包是 chrony 时钟同步组件，只列目录；NVIDIA 引导/内核载荷不是已确认的 G1 电机配置",
+    "符号未命中不排除裁剪、加密或运行时加载；UTPK 与 FMX 不能仅凭头部认定算法相同"
+  ],
+  "required_material": "与当前 master_service 哈希绑定的厂商 FMX 格式/可审计导出器，或明确只读且匹配本固件的电机配置与标定读取协议",
+  "errors": [
+    {
+      "path": "/var/cache/apt/archives/lock",
+      "error": "PermissionError"
+    },
+    {
+      "path": "/var/cache/apt/archives/partial",
+      "error": "PermissionError"
+    }
+  ]
+}

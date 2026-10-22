@@ -1,0 +1,271 @@
+{
+  "schema_version": 1,
+  "current": false,
+  "offline_only": true,
+  "command_writes": 0,
+  "rpc_calls": 0,
+  "configuration_calls": 0,
+  "calibration_calls": 0,
+  "motor_configuration_values_obtained": 0,
+  "files": [
+    {
+      "name": "master_service.json",
+      "bytes": 468,
+      "sha256": "31eae39936576504c40be767bd93cd34b7489154eca989e5e5c2781b05e3d977"
+    },
+    {
+      "name": "config.bin",
+      "bytes": 14640,
+      "sha256": "fd69673a007839f4a33ba1507fe043f6dbcc373bae703ecaa58eea54e61e9e6f"
+    },
+    {
+      "name": "master_service",
+      "bytes": 9083232,
+      "sha256": "380e34de9c2def2692c0bf1b73e969d3167c8270f2ed5f974bb01abd4e96f24e"
+    },
+    {
+      "name": "MegaFlowRuntimeDaemon",
+      "bytes": 21448952,
+      "sha256": "3670595470afb44f037e083200ca33bc8905dfe06a2650399875c3c6fa501473"
+    }
+  ],
+  "megaflow": {
+    "status": "decoded_inventory_only",
+    "format": "AES-256-CBC → 完整 JSON（本文件为 PKCS#7 填充）",
+    "loader": "decrypt_and_parse_config_with_all_macs",
+    "loader_address": "0x4632c0",
+    "aes_wrapper_address": "0x45c6d0",
+    "call_chain": [
+      "get_all_mac_addresses",
+      "read_file_into_vector",
+      "uppercase MAC + embedded key material",
+      "aes_decrypt",
+      "cJSON_Parse"
+    ],
+    "aes_key_setup_call": "0x45c74c",
+    "aes_cbc_decrypt_call": "0x45c768",
+    "json_parse_call": "0x4635ac",
+    "matching_interface": "eth0",
+    "plaintext_bytes": 14628,
+    "plaintext_sha256": "f58a6a0d5751879ca6d6c3d2c08b2d25f9d888af1ec7e52e85f5ad4a52c32aec",
+    "root_sections": [
+      "baseInfo",
+      "items",
+      "platform",
+      "uuid"
+    ],
+    "schema_without_values": {
+      "baseInfo": {
+        "devDistro": "str",
+        "devId": "str",
+        "devMachine": "str",
+        "distroId": "str"
+      },
+      "items": {
+        "bins": [
+          {
+            "filePath": "str",
+            "name": "str",
+            "version": "str"
+          }
+        ],
+        "deps": [
+          {
+            "filePath": "str",
+            "name": "str",
+            "version": "str"
+          }
+        ],
+        "libs": [
+          {
+            "filePath": "str",
+            "name": "str",
+            "version": "str"
+          }
+        ],
+        "plugins": [
+          {
+            "annel": "str",
+            "brief": "str",
+            "filePath": "str",
+            "name": "str",
+            "secret": "str",
+            "uid": "str",
+            "version": "str"
+          }
+        ],
+        "weights": []
+      },
+      "platform": {
+        "cosBucket": "str",
+        "cosServerIp": "str",
+        "cosServerPort": "str",
+        "mainUrl": "str",
+        "mqttServerIp": "str",
+        "mqttServerPassword": "str",
+        "mqttServerPort": "int",
+        "mqttServerUserName": "str"
+      },
+      "uuid": "str"
+    },
+    "category_counts": {
+      "bins": 5,
+      "deps": 85,
+      "libs": 24,
+      "plugins": 2,
+      "weights": 0
+    },
+    "declared_plugins": [
+      {
+        "name": "G1 EDU通用动作控制插件",
+        "version": "1.0.16.20251127",
+        "filename": "g1edu_motion.zip",
+        "installed_verified": false,
+        "loaded_verified": false,
+        "execution_allowed": false
+      },
+      {
+        "name": "G1 EDU全身舞蹈插件",
+        "version": "1.0.3.20251128",
+        "filename": "g1edu_dance.zip",
+        "installed_verified": false,
+        "loaded_verified": false,
+        "execution_allowed": false
+      }
+    ],
+    "declared_binaries": [
+      {
+        "name": "FlexFlowInvoker",
+        "version": "1.0.3.20251114"
+      },
+      {
+        "name": "MegaFlowRuntimeCli",
+        "version": "1.0.3.20251114"
+      },
+      {
+        "name": "MegaFlowRuntimeDaemon",
+        "version": "1.0.2.20250916"
+      },
+      {
+        "name": "res.tar.xz",
+        "version": "1.0.1.20250818"
+      },
+      {
+        "name": "MegaFlowRuntimeSpawner",
+        "version": "1.0.0.20250916"
+      }
+    ],
+    "motor_field_name_matches": 0,
+    "content_classification": "组件、插件及平台连接配置；不是逐电机参数表",
+    "authority": "本机配置声明；不证明插件安装、加载、当前可用或动作安全",
+    "private_sections_omitted": true
+  },
+  "master": {
+    "status": "container_identified_payload_unknown",
+    "format": "FMX v1 容器标记；内部字段未核定",
+    "magic_hex": "464d5801",
+    "payload_decoded": false,
+    "motor_configuration_present": null,
+    "load_file_stub": "0x4beb80",
+    "load_stub": "0x1eaa08",
+    "parse_stub": "0x4dd490",
+    "expansion_helper": "0x1e61e8",
+    "expanded_target": "0xa3ee2c",
+    "target_section": "SHT_NOBITS / .bss",
+    "conclusion": "加载入口跳向文件中没有指令字节的运行时区域；符号名不能证明内部算法或电机字段",
+    "unconfirmed": [
+      "头部长度/种子语义",
+      "完整加解码流程",
+      "内部字段及单位",
+      "与运动主机标定的对应关系"
+    ]
+  },
+  "limitations": [
+    "分析对象来自 Orin；未取得运动主机当前控制器配置或工厂标定",
+    "MegaFlow 全字段结构已检查，未见逐电机参数；不外推到其他文件或嵌套插件包",
+    "FMX 仅确认容器标记和受保护的加载入口；未启动、转储或修改官方进程",
+    "静态文件与日志属于历史证据，不能证明实时加载状态或动作可用性",
+    "私有地址、密钥材料、原始明文和平台凭据不进入基础模型、前端或发布包"
+  ],
+  "received_at_utc": "2026-10-21T02:50:14.809239+00:00",
+  "analyzed_at_utc": "2026-10-21T02:51:12.817698+00:00",
+  "provenance": {
+    "host": "Orin",
+    "boot_id": "7a6791dc-f512-4b45-aca3-44fbde855e25",
+    "files_reverified": [
+      {
+        "path": "/unitree/module/master_service/master_service.json",
+        "bytes": 468,
+        "sha256": "31eae39936576504c40be767bd93cd34b7489154eca989e5e5c2781b05e3d977"
+      },
+      {
+        "path": "/home/unitree/megaflow_sdk/ws/bin/config.bin",
+        "bytes": 14640,
+        "sha256": "fd69673a007839f4a33ba1507fe043f6dbcc373bae703ecaa58eea54e61e9e6f"
+      },
+      {
+        "path": "/unitree/module/master_service/master_service",
+        "bytes": 9083232,
+        "sha256": "380e34de9c2def2692c0bf1b73e969d3167c8270f2ed5f974bb01abd4e96f24e"
+      },
+      {
+        "path": "/home/unitree/megaflow_sdk/ws/bin/MegaFlowRuntimeDaemon",
+        "bytes": 21448952,
+        "sha256": "3670595470afb44f037e083200ca33bc8905dfe06a2650399875c3c6fa501473"
+      }
+    ],
+    "official_processes_unchanged": [
+      {
+        "pid": 1296,
+        "argv": [
+          "/unitree/module/master_service/master_service"
+        ],
+        "start_ticks": 2242
+      },
+      {
+        "pid": 1298,
+        "argv": [
+          "/unitree/ota/pipe/ota_pipe_service"
+        ],
+        "start_ticks": 2242
+      },
+      {
+        "pid": 2557,
+        "argv": [
+          "/unitree/module/video_hub_pc4/videohub_pc4"
+        ],
+        "start_ticks": 2791
+      },
+      {
+        "pid": 2676,
+        "argv": [
+          "/home/unitree/megaflow_sdk/ws//bin/MegaFlowRuntimeDaemon",
+          "-c",
+          "/home/unitree/megaflow_sdk/ws//bin/config.bin",
+          "-w",
+          "/home/unitree/megaflow_sdk/ws/",
+          "-d",
+          "127.0.0.1:8899",
+          "-i",
+          "-e",
+          "/home/unitree/megaflow_sdk/ws//dep/",
+          "-l",
+          "0"
+        ],
+        "start_ticks": 3210
+      }
+    ],
+    "clock_authority": "Mac 接收与分析时间；未采用 Orin 文件 mtime 作为当前日期",
+    "historical_log_source": "g1_console/assets/service_audit_sources/services_20261021.json",
+    "log_interpretation": "master_service 的解析成功与 MegaFlow 的 -c 路径用于定位文件；历史日志不证明其属于电机配置",
+    "public_sdk_check": {
+      "repository": "https://github.com/unitreerobotics/unitree_sdk2",
+      "commit": "d1abf001220d3e5f59e00a0c4aaa595e00089a4a",
+      "path": "lib/aarch64/libunitree_sdk2.a",
+      "git_blob_sha1": "217393a24be1b25423938608b040b469cad89463",
+      "sha256": "a084cc0087b6dc1b6361f874aabed8bd525f0574b3b2228f91b4b512e1bf035e",
+      "mixer_or_blowfish_symbols_found": false,
+      "meaning": "此固定版本的静态库未找到上述符号；不外推为厂商从未公开"
+    }
+  }
+}

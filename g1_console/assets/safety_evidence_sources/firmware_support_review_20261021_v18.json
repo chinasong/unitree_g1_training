@@ -1,0 +1,86 @@
+{
+  "current": false,
+  "checked_at_utc": "2026-10-21T07:07:54.155712+00:00",
+  "completed_at_utc": "2026-10-21T07:08:22.314287+00:00",
+  "boot_id": "b33a7dc5-2617-44cd-b353-041bab1c204f",
+  "command_writes": 0,
+  "rpc_calls": 0,
+  "lease_requests": 0,
+  "motor_configuration_values_obtained": 0,
+  "installed_orin_modules": [
+    {
+      "name": "master_service_pc4",
+      "version": "1.0.0.2",
+      "source_path": "/unitree/robot/pkg/module/master_service_pc4/module.json",
+      "meaning": "Orin/PC4 安装包元数据；未证明运动主机固件版本或运行二进制与此 commit 相符"
+    },
+    {
+      "name": "video_hub_pc4",
+      "version": "1.0.1.1",
+      "source_path": "/unitree/robot/pkg/module/video_hub_pc4/module.json",
+      "meaning": "Orin/PC4 安装包元数据；未证明运动主机固件版本或运行二进制与此 commit 相符"
+    },
+    {
+      "name": "unitree_patch_pc4",
+      "version": "1.0.0.6",
+      "source_path": "/unitree/robot/pkg/module/unitree_patch_pc4/module.json",
+      "meaning": "Orin/PC4 安装包元数据；未证明运动主机固件版本或运行二进制与此 commit 相符"
+    }
+  ],
+  "device_motion_firmware": null,
+  "lowstate_version": {
+    "topic": "rt/lf/lowstate",
+    "samples": 187,
+    "raw": [
+      0,
+      0
+    ],
+    "decoded_version": null,
+    "meaning": "匹配 HG 消息类型的原始 uint32[2]，没有匹配本机的有效版本解码证据；不填为 0.0 或出厂版本"
+  },
+  "mainboard": {
+    "topic": "rt/lf/mainboardstate",
+    "samples": 187,
+    "fields": [
+      "fan_state",
+      "temperature",
+      "value",
+      "state"
+    ],
+    "meaning": "固定官方 MainBoardState IDL 只有 fan_state/temperature/value/state，没有版本成员；原始状态位也不当作健康或承重结果"
+  },
+  "foot_force": {
+    "topic": "rt/odommodestate",
+    "type": "unitree_go::msg::dds_::SportModeState_",
+    "samples": 187,
+    "raw": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "g1_left_right_mapping": null,
+    "left_load_n": null,
+    "right_load_n": null,
+    "cabinet_load_n": null,
+    "meaning": "GO 四路足力字段没有核实为 G1 左右脚映射与有效测量；四个零值不表示双脚没有承重。body_height 的地面参考和精度未核定，不作为身体离地高度"
+  },
+  "support_reason": "当前报告包含坐地、双脚贴地及靠柜，多处接触共同支撑；关节力矩与静止状态不足以唯一分配各接触载荷。缺少可信载荷传感或经验证的接触估计器。",
+  "remaining_evidence": [
+    "运动主机的准确固件/OTA 版本及匹配的 23 DOF 官方起身契约",
+    "柜体接触点、固定条件，以及左右脚和坐地处的有效载荷",
+    "匹配本机的姿态保持/主动平衡进入、退出、完成与恢复条件",
+    "起身时长/速度是否可配置及站稳判定阈值和持续时间"
+  ],
+  "scope": "有界只读历史核对；未证明不存在其他接口，不把模型/示例/全零原始字段写成实机参数。",
+  "ota_history": {
+    "log_timestamp_literal": "2026-10-20 22:15:05–06",
+    "log_timezone": null,
+    "package_directory_label": "1.5.3.8_G1_Edu+",
+    "parent_directory_label": "1.5.3",
+    "module": "unitree_patch_pc4",
+    "module_version": "1.0.0.6",
+    "device_motion_firmware": null,
+    "meaning": "历史 OTA 日志与缓存文件路径标签；不是当前运动主机已安装版本，不能据 Edu+ 包名更改用户确认的 EDU 配置。未运行更新器或安装包。"
+  }
+}

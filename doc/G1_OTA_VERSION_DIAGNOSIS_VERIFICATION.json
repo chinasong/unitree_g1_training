@@ -1,0 +1,150 @@
+{
+  "checked_at_utc": "2026-10-21T11:24:31.208492+00:00",
+  "timezone": "Asia/Shanghai",
+  "scope": "Read-only 104 diagnosis and firmware/manual applicability research; no motion or mode changes",
+  "full_remote_equivalence": false,
+  "tests": {
+    "python": 168,
+    "node_deadman": 5,
+    "frontend_build": "passed",
+    "frontend_warning": "existing BodyView chunk over 500 kB; no build failure",
+    "python_warning": "existing Starlette/httpx deprecation",
+    "workspace_diff_check": {
+      "status": "failed",
+      "detail": "README.md:185 existing trailing whitespace; line not changed in this task"
+    }
+  },
+  "query_result": {
+    "historical_timeout_value": 3,
+    "correct_timeout_us": 3000000,
+    "before_exit": 104,
+    "after_exit": 0,
+    "scope": "Orin PC4 only",
+    "motion_firmware": null
+  },
+  "deployment": {
+    "release": "244a445da833",
+    "manifest_file_count": 473,
+    "all_sha256_match": true,
+    "remote_verified_at_utc": "2026-10-21T11:22:54.227644+00:00",
+    "run_id": "596932e121ff",
+    "console_pid": 4794,
+    "loopback_only": true,
+    "console_env": {
+      "G1_READ_ONLY": "0",
+      "G1_MANUAL_REMOTE": "1",
+      "G1_HOST": "127.0.0.1",
+      "G1_PORT": "8765",
+      "G1_CAMERA_BACKEND": "unitree"
+    },
+    "official_processes_unchanged": [
+      {
+        "pid": 1366,
+        "start_ticks": 2168
+      },
+      {
+        "pid": 1438,
+        "start_ticks": 2202
+      },
+      {
+        "pid": 2349,
+        "start_ticks": 2480
+      },
+      {
+        "pid": 2760,
+        "start_ticks": 3139
+      }
+    ],
+    "boot_id": "8d9a0e09-97e1-45fa-81d3-18822a3c760a",
+    "current_run_events_at_remote_verification": {
+      "camera_connected": 1,
+      "connected": 1,
+      "state_observed": 1
+    },
+    "control_owner": null,
+    "manual_armed": false,
+    "historical_malformed_event_lines": 1
+  },
+  "api_smoke": {
+    "body_matches_local": true,
+    "foundation_version": 20,
+    "foundation_id": "e6c82b67a46d2899ea5baede1d0412efd8cfd73de5811cb6d1af96d027ea5d15",
+    "actual_config_unknowns": 253,
+    "device_motion_firmware": null,
+    "selected_manual_branch": null,
+    "mode_entries": 8,
+    "all_modes_execution_locked": true,
+    "connected": true,
+    "telemetry_age_ms": 33,
+    "joint_count": 23,
+    "fsm": 0,
+    "fsm_age_ms": 90,
+    "camera": {
+      "backend": "unitree",
+      "status": "live",
+      "error": null,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 595,
+        "total_successes": 595,
+        "total_timeouts": 0
+      },
+      "source": "unitree-videohub-dabb67f22a5f",
+      "sequence": 594,
+      "age_ms": 283,
+      "request_started_at": 1792581870.9055874,
+      "received_at": 1792581870.9375224,
+      "width": 960,
+      "height": 540,
+      "source_width": 1920,
+      "source_height": 1080,
+      "request_ms": 32,
+      "timestamp_basis": "request_started_at",
+      "sensor_timestamp": null
+    },
+    "manual_armed": false,
+    "control_owner": null
+  },
+  "browser": {
+    "url": "http://127.0.0.1:18765/",
+    "page": "software remote",
+    "version_diagnosis_visible": true,
+    "official_23dof_branches_visible": true,
+    "manual_control_locked": true,
+    "camera_read_window": {
+      "window_s": 60,
+      "successes": 300,
+      "attempts": 300,
+      "timeouts": 0
+    },
+    "screenshots": [
+      {
+        "path": "doc/screenshots/g1-ota-version-diagnosis-20261021.png",
+        "sha256": "2211465edc42de3de0d1713e3ca58314155b65294395383d091b17ca32345105"
+      },
+      {
+        "path": "doc/screenshots/g1-23dof-manual-branches-20261021.png",
+        "sha256": "10ea7d6065a5c16de3e3152fe28f0a301fd5edf2321f1f9410185eec57d997e9"
+      }
+    ]
+  },
+  "boundaries": {
+    "motion_commands_sent": 0,
+    "mode_switches_sent": 0,
+    "ota_mutations": 0,
+    "official_services_restarted": 0,
+    "quantumult_x_changes": 0
+  },
+  "limitations": [
+    "Motion firmware remains unknown; GetPkgVersion API 1006 returned 3203.",
+    "Leaning-cabinet floor-seated applicability, foot/cabinet load and independently stable standing remain unverified.",
+    "Eight reviewed motion modes remain locked; 253 actual motor configuration values remain null.",
+    "Event inspection and process continuity are not an independent all-bus traffic capture.",
+    "Robot actions, rise speed/completion, hardware emergency stop and lost-link response were not tested."
+  ]
+}

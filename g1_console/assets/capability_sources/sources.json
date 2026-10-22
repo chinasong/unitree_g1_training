@@ -1,0 +1,86 @@
+{
+  "cpp_loco_client": {
+    "path": "g1_console/assets/capability_sources/g1_loco_client.hpp",
+    "repository_path": "include/unitree/robot/g1/loco/g1_loco_client.hpp",
+    "commit": "d1abf001220d3e5f59e00a0c4aaa595e00089a4a",
+    "sha256": "d9aabe78918312c2ec60c5df94653e81319eb6730cc1479372a09849d99cd361",
+    "url": "https://github.com/unitreerobotics/unitree_sdk2/blob/d1abf001220d3e5f59e00a0c4aaa595e00089a4a/include/unitree/robot/g1/loco/g1_loco_client.hpp"
+  },
+  "cpp_loco_api": {
+    "path": "g1_console/assets/capability_sources/g1_loco_api.hpp",
+    "repository_path": "include/unitree/robot/g1/loco/g1_loco_api.hpp",
+    "commit": "d1abf001220d3e5f59e00a0c4aaa595e00089a4a",
+    "sha256": "db7f771fad9ab8d40b3f3bf3651df28ee9cde1a937ae21dcdae2f4165f37e0ce",
+    "url": "https://github.com/unitreerobotics/unitree_sdk2/blob/d1abf001220d3e5f59e00a0c4aaa595e00089a4a/include/unitree/robot/g1/loco/g1_loco_api.hpp"
+  },
+  "cpp_loco_error": {
+    "path": "g1_console/assets/capability_sources/g1_loco_error.hpp",
+    "repository_path": "include/unitree/robot/g1/loco/g1_loco_error.hpp",
+    "commit": "d1abf001220d3e5f59e00a0c4aaa595e00089a4a",
+    "sha256": "8b33d73f9857d1581c11b362d2705f031020a084db12b00cadfaac0255f46579",
+    "url": "https://github.com/unitreerobotics/unitree_sdk2/blob/d1abf001220d3e5f59e00a0c4aaa595e00089a4a/include/unitree/robot/g1/loco/g1_loco_error.hpp"
+  },
+  "cpp_arm_client": {
+    "path": "g1_console/assets/capability_sources/g1_arm_action_client.hpp",
+    "repository_path": "include/unitree/robot/g1/arm/g1_arm_action_client.hpp",
+    "commit": "d1abf001220d3e5f59e00a0c4aaa595e00089a4a",
+    "sha256": "10110c2bb33e10c3b8b811978dc769808eec399095add4197c9d43837fbb6e33",
+    "url": "https://github.com/unitreerobotics/unitree_sdk2/blob/d1abf001220d3e5f59e00a0c4aaa595e00089a4a/include/unitree/robot/g1/arm/g1_arm_action_client.hpp"
+  },
+  "cpp_arm_api": {
+    "path": "g1_console/assets/capability_sources/g1_arm_action_api.hpp",
+    "repository_path": "include/unitree/robot/g1/arm/g1_arm_action_api.hpp",
+    "commit": "d1abf001220d3e5f59e00a0c4aaa595e00089a4a",
+    "sha256": "d7610da8a620a7ce640edfe7cdbba803763321c0cfe0b362b7f2016545205d26",
+    "url": "https://github.com/unitreerobotics/unitree_sdk2/blob/d1abf001220d3e5f59e00a0c4aaa595e00089a4a/include/unitree/robot/g1/arm/g1_arm_action_api.hpp"
+  },
+  "cpp_arm_error": {
+    "path": "g1_console/assets/capability_sources/g1_arm_action_error.hpp",
+    "repository_path": "include/unitree/robot/g1/arm/g1_arm_action_error.hpp",
+    "commit": "d1abf001220d3e5f59e00a0c4aaa595e00089a4a",
+    "sha256": "71da4d4932e15c168f82f123902d52ce0074a7f2dcf7ae43cb3e34ee2a5a40f8",
+    "url": "https://github.com/unitreerobotics/unitree_sdk2/blob/d1abf001220d3e5f59e00a0c4aaa595e00089a4a/include/unitree/robot/g1/arm/g1_arm_action_error.hpp"
+  },
+  "cpp_audio_client": {
+    "path": "g1_console/assets/capability_sources/g1_audio_client.hpp",
+    "repository_path": "include/unitree/robot/g1/audio/g1_audio_client.hpp",
+    "commit": "d1abf001220d3e5f59e00a0c4aaa595e00089a4a",
+    "sha256": "01108471362e15c3dec01db77023da520b3450725fd72a52b934cec39492fd0c",
+    "url": "https://github.com/unitreerobotics/unitree_sdk2/blob/d1abf001220d3e5f59e00a0c4aaa595e00089a4a/include/unitree/robot/g1/audio/g1_audio_client.hpp"
+  },
+  "cpp_audio_api": {
+    "path": "g1_console/assets/capability_sources/g1_audio_api.hpp",
+    "repository_path": "include/unitree/robot/g1/audio/g1_audio_api.hpp",
+    "commit": "d1abf001220d3e5f59e00a0c4aaa595e00089a4a",
+    "sha256": "40d83bda7cf52a0bbffb8dc53f73c42efce9c91d23435eb4c55ab0fa14ffcae9",
+    "url": "https://github.com/unitreerobotics/unitree_sdk2/blob/d1abf001220d3e5f59e00a0c4aaa595e00089a4a/include/unitree/robot/g1/audio/g1_audio_api.hpp"
+  },
+  "cpp_audio_error": {
+    "path": "g1_console/assets/capability_sources/g1_audio_error.hpp",
+    "repository_path": "include/unitree/robot/g1/audio/g1_audio_error.hpp",
+    "commit": "d1abf001220d3e5f59e00a0c4aaa595e00089a4a",
+    "sha256": "edb776ce3e8928be0c8e238afef0e326cc98da1a98f87134e0bdf122bc10fc84",
+    "url": "https://github.com/unitreerobotics/unitree_sdk2/blob/d1abf001220d3e5f59e00a0c4aaa595e00089a4a/include/unitree/robot/g1/audio/g1_audio_error.hpp"
+  },
+  "cpp_agv_client": {
+    "path": "g1_console/assets/capability_sources/g1_agv_client.hpp",
+    "repository_path": "include/unitree/robot/g1/agv/g1_agv_client.hpp",
+    "commit": "d1abf001220d3e5f59e00a0c4aaa595e00089a4a",
+    "sha256": "fe3c41847c2fcf5ecd042faf7ca0a04793f84f107ce2e4a945f953baf0a600c8",
+    "url": "https://github.com/unitreerobotics/unitree_sdk2/blob/d1abf001220d3e5f59e00a0c4aaa595e00089a4a/include/unitree/robot/g1/agv/g1_agv_client.hpp"
+  },
+  "cpp_agv_api": {
+    "path": "g1_console/assets/capability_sources/g1_agv_api.hpp",
+    "repository_path": "include/unitree/robot/g1/agv/g1_agv_api.hpp",
+    "commit": "d1abf001220d3e5f59e00a0c4aaa595e00089a4a",
+    "sha256": "185d5063a282a4223331bb8471e89bb0e6dbc2259a43d54995be6cf5de150de0",
+    "url": "https://github.com/unitreerobotics/unitree_sdk2/blob/d1abf001220d3e5f59e00a0c4aaa595e00089a4a/include/unitree/robot/g1/agv/g1_agv_api.hpp"
+  },
+  "cpp_agv_error": {
+    "path": "g1_console/assets/capability_sources/g1_agv_error.hpp",
+    "repository_path": "include/unitree/robot/g1/agv/g1_agv_error.hpp",
+    "commit": "d1abf001220d3e5f59e00a0c4aaa595e00089a4a",
+    "sha256": "3ab35d248d3efe846413c3c223bade2595a2e098e62f33c25a27d7e28f16a520",
+    "url": "https://github.com/unitreerobotics/unitree_sdk2/blob/d1abf001220d3e5f59e00a0c4aaa595e00089a4a/include/unitree/robot/g1/agv/g1_agv_error.hpp"
+  }
+}

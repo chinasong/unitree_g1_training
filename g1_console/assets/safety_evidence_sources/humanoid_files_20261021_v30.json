@@ -1,0 +1,44 @@
+{
+  "current": false,
+  "checked_at_utc": "2026-10-21T14:07:50.779585+00:00",
+  "roots": [
+    "/unitree/etc",
+    "/unitree/module",
+    "/unitree/robot/pkg",
+    "/unitree/ota",
+    "/unitree/var/log",
+    "/unitree/var/data",
+    "/etc/systemd/system"
+  ],
+  "boot_id": "8d9a0e09-97e1-45fa-81d3-18822a3c760a",
+  "limits": {
+    "files": 4000,
+    "total_bytes": 33554432,
+    "text_file_bytes": 2097152,
+    "log_tail_bytes": 524288,
+    "max_depth": 8
+  },
+  "files_seen": 202,
+  "bytes_read": 1096978,
+  "text_files_read": 41,
+  "candidates": [],
+  "skipped": [
+    {
+      "path": "/unitree/ota/backup/module/unitree_patch_pc4/1.0.0.6/module/unitree_patch_pc4/file/etc",
+      "reason": "depth bound"
+    },
+    {
+      "path": "/unitree/ota/backup/module/unitree_patch_pc4/1.0.0.6/module/unitree_patch_pc4/file/unitree",
+      "reason": "depth bound"
+    }
+  ],
+  "errors": [],
+  "rpc_calls": 0,
+  "command_writes": 0,
+  "lease_requests": 0,
+  "vendor_program_executions": 0,
+  "device_motion_firmware": null,
+  "exact_7301_predicate": null,
+  "completed_at_utc": "2026-10-21T14:07:50.865442+00:00",
+  "limitation": "Bounded Orin text/config and log-tail search, not inspection of .161 files. Opaque files, earlier log bytes, remote files and unlisted roots are not decoded or excluded. Numeric candidates and token occurrences are not installed firmware or server predicate evidence."
+}

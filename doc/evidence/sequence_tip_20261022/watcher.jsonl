@@ -1,0 +1,157 @@
+{"kind": "change", "seq_status": null, "steps": [], "message": null, "owner": false, "armed": false, "fsm": 1, "sport": 1, "rpy": [0.149, -0.299, -0.049], "max_dq": 0.031, "max_temp": 43, "age_ms": 12, "t": 0.14}
+{"kind": "body", "fsm": 1, "sport": 1, "rpy": [0.149, -0.299, -0.049], "max_dq": 0.027, "max_temp": 43, "age_ms": 8, "t": 0.44}
+{"kind": "body", "fsm": 1, "sport": 1, "rpy": [0.149, -0.299, -0.049], "max_dq": 0.021, "max_temp": 43, "age_ms": 88, "t": 2.51}
+{"kind": "change", "seq_status": null, "steps": [], "message": null, "owner": false, "armed": false, "fsm": 1, "sport": null, "rpy": [0.149, -0.3, -0.049], "max_dq": 0.034, "max_temp": 43, "age_ms": 4, "t": 4.05}
+{"kind": "body", "fsm": 1, "sport": null, "rpy": [0.149, -0.3, -0.049], "max_dq": 0.031, "max_temp": 43, "age_ms": 20, "t": 4.86}
+{"kind": "change", "seq_status": null, "steps": [], "message": null, "owner": false, "armed": false, "fsm": 1, "sport": 1, "rpy": [0.149, -0.299, -0.049], "max_dq": 0.02, "max_temp": 43, "age_ms": 72, "t": 5.77}
+{"kind": "body", "fsm": 1, "sport": 1, "rpy": [0.149, -0.3, -0.05], "max_dq": 0.023, "max_temp": 43, "age_ms": 65, "t": 7.05}
+{"kind": "change", "seq_status": null, "steps": [], "message": null, "owner": false, "armed": false, "fsm": 1, "sport": null, "rpy": [0.149, -0.3, -0.05], "max_dq": 0.031, "max_temp": 43, "age_ms": 68, "t": 7.53}
+{"kind": "change", "seq_status": null, "steps": [], "message": null, "owner": false, "armed": false, "fsm": 1, "sport": 1, "rpy": [0.149, -0.299, -0.049], "max_dq": 0.017, "max_temp": 43, "age_ms": 76, "t": 8.47}
+{"kind": "body", "fsm": 1, "sport": 1, "rpy": [0.149, -0.298, -0.049], "max_dq": 0.031, "max_temp": 43, "age_ms": 28, "t": 9.28}
+{"kind": "body", "fsm": 1, "sport": 1, "rpy": [0.149, -0.299, -0.049], "max_dq": 0.026, "max_temp": 43, "age_ms": 45, "t": 11.44}
+{"kind": "change", "seq_status": null, "steps": [], "message": null, "owner": false, "armed": false, "fsm": 1, "sport": null, "rpy": [0.149, -0.299, -0.049], "max_dq": 0.026, "max_temp": 43, "age_ms": 29, "t": 12.12}
+{"kind": "change", "seq_status": null, "steps": [], "message": null, "owner": false, "armed": false, "fsm": 1, "sport": 1, "rpy": [0.149, -0.3, -0.049], "max_dq": 0.017, "max_temp": 43, "age_ms": 15, "t": 12.53}
+{"kind": "body", "fsm": 1, "sport": 1, "rpy": [0.149, -0.3, -0.05], "max_dq": 0.036, "max_temp": 43, "age_ms": 14, "t": 13.82}
+{"kind": "body", "fsm": 1, "sport": 1, "rpy": [0.149, -0.298, -0.05], "max_dq": 0.014, "max_temp": 43, "age_ms": 5, "t": 16.01}
+{"kind": "body", "fsm": 1, "sport": 1, "rpy": [0.149, -0.298, -0.05], "max_dq": 0.029, "max_temp": 43, "age_ms": 11, "t": 18.49}
+{"kind": "change", "seq_status": null, "steps": [], "message": null, "owner": false, "armed": false, "fsm": 1, "sport": null, "rpy": [0.149, -0.298, -0.049], "max_dq": 0.017, "max_temp": 43, "age_ms": 113, "t": 19.83}
+{"kind": "body", "fsm": 1, "sport": null, "rpy": [0.149, -0.299, -0.05], "max_dq": 0.024, "max_temp": 43, "age_ms": 14, "t": 20.59}
+{"kind": "change", "seq_status": null, "steps": [], "message": null, "owner": false, "armed": false, "fsm": 1, "sport": 1, "rpy": [0.149, -0.299, -0.05], "max_dq": 0.022, "max_temp": 43, "age_ms": 36, "t": 21.78}
+{"kind": "body", "fsm": 1, "sport": 1, "rpy": [0.149, -0.299, -0.049], "max_dq": 0.026, "max_temp": 43, "age_ms": 28, "t": 22.8}
+{"kind": "body", "fsm": 1, "sport": 1, "rpy": [0.149, -0.298, -0.05], "max_dq": 0.024, "max_temp": 43, "age_ms": 19, "t": 24.92}
+{"kind": "body", "fsm": 1, "sport": 1, "rpy": [0.149, -0.298, -0.049], "max_dq": 0.017, "max_temp": 43, "age_ms": 10, "t": 27.26}
+{"kind": "body", "fsm": 1, "sport": 1, "rpy": [0.149, -0.3, -0.05], "max_dq": 0.021, "max_temp": 43, "age_ms": 11, "t": 29.51}
+{"kind": "body", "fsm": 1, "sport": 1, "rpy": [0.149, -0.299, -0.05], "max_dq": 0.019, "max_temp": 43, "age_ms": 70, "t": 31.6}
+{"kind": "body", "fsm": 1, "sport": 1, "rpy": [0.149, -0.299, -0.05], "max_dq": 0.021, "max_temp": 43, "age_ms": 86, "t": 33.69}
+{"kind": "change", "seq_status": null, "steps": [], "message": null, "owner": false, "armed": false, "fsm": 1, "sport": null, "rpy": [0.149, -0.299, -0.05], "max_dq": 0.022, "max_temp": 43, "age_ms": 8, "t": 34.03}
+{"kind": "body", "fsm": 1, "sport": null, "rpy": [0.149, -0.299, -0.05], "max_dq": 0.027, "max_temp": 43, "age_ms": 27, "t": 35.79}
+{"kind": "body", "fsm": 1, "sport": null, "rpy": [0.149, -0.299, -0.05], "max_dq": 0.027, "max_temp": 43, "age_ms": 8, "t": 37.82}
+{"kind": "change", "seq_status": null, "steps": [], "message": null, "owner": false, "armed": false, "fsm": 1, "sport": 1, "rpy": [0.15, -0.299, -0.05], "max_dq": 0.041, "max_temp": 43, "age_ms": 4, "t": 38.51}
+{"kind": "change", "seq_status": "running", "steps": ["锁定站立:active", "人工扶直:pending", "进入行走:pending"], "message": "", "owner": true, "armed": false, "fsm": 1, "sport": null, "rpy": [0.149, -0.299, -0.05], "max_dq": 0.026, "max_temp": 43, "age_ms": 28, "t": 40.23}
+{"kind": "change", "seq_status": "running", "steps": ["锁定站立:active", "人工扶直:pending", "进入行走:pending"], "message": "", "owner": true, "armed": false, "fsm": 1, "sport": 1, "rpy": [0.149, -0.299, -0.05], "max_dq": 0.05, "max_temp": 43, "age_ms": 294, "t": 40.67}
+{"kind": "body", "fsm": 1, "sport": 1, "rpy": [0.149, -0.299, -0.05], "max_dq": 0.05, "max_temp": 43, "age_ms": 627, "t": 41.03}
+{"kind": "change", "seq_status": "running", "steps": ["锁定站立:active", "人工扶直:pending", "进入行走:pending"], "message": "", "owner": true, "armed": false, "fsm": 4, "sport": 4, "rpy": [0.149, -0.304, -0.061], "max_dq": 0.449, "max_temp": 43, "age_ms": 8, "t": 41.37}
+{"kind": "body", "fsm": 4, "sport": 4, "rpy": [0.158, -0.585, -0.09], "max_dq": 2.077, "max_temp": 53, "age_ms": 23, "t": 43.13}
+{"kind": "body", "fsm": 4, "sport": 4, "rpy": [0.935, -0.655, 0.198], "max_dq": 1.125, "max_temp": 65, "age_ms": 17, "t": 45.23}
+{"kind": "body", "fsm": 4, "sport": 4, "rpy": [1.455, -1.218, 0.338], "max_dq": 0.627, "max_temp": 66, "age_ms": 61, "t": 47.41}
+{"kind": "change", "seq_status": "waiting_operator", "steps": ["锁定站立:done", "人工扶直:active", "进入行走:pending"], "message": "锁定站立后请人工扶直机器人，扶稳后点“已扶直，进入行走”", "owner": true, "armed": false, "fsm": 4, "sport": 4, "rpy": [1.22, -1.419, 0.574], "max_dq": 0.026, "max_temp": 64, "age_ms": 38, "t": 48.91}
+{"kind": "body", "fsm": 4, "sport": 4, "rpy": [1.191, -1.428, 0.602], "max_dq": 0.043, "max_temp": 63, "age_ms": 4, "t": 49.62}
+{"kind": "body", "fsm": 4, "sport": 4, "rpy": [1.117, -1.449, 0.677], "max_dq": 0.039, "max_temp": 61, "age_ms": 11, "t": 51.77}
+{"kind": "body", "fsm": 4, "sport": 4, "rpy": [1.103, -1.45, 0.69], "max_dq": 0.053, "max_temp": 58, "age_ms": 40, "t": 53.93}
+{"kind": "body", "fsm": 4, "sport": 4, "rpy": [1.08, -1.455, 0.712], "max_dq": 0.051, "max_temp": 56, "age_ms": 8, "t": 56.24}
+{"kind": "body", "fsm": 4, "sport": 4, "rpy": [1.024, -1.464, 0.769], "max_dq": 0.062, "max_temp": 54, "age_ms": 39, "t": 58.72}
+{"kind": "change", "seq_status": "waiting_operator", "steps": ["锁定站立:done", "人工扶直:active", "进入行走:pending"], "message": "锁定站立后请人工扶直机器人，扶稳后点“已扶直，进入行走”", "owner": true, "armed": false, "fsm": 4, "sport": null, "rpy": [1.014, -1.466, 0.779], "max_dq": 0.041, "max_temp": 53, "age_ms": 53, "t": 61.24}
+{"kind": "body", "fsm": 4, "sport": null, "rpy": [1.008, -1.466, 0.786], "max_dq": 0.022, "max_temp": 53, "age_ms": 31, "t": 61.64}
+{"kind": "body", "fsm": 4, "sport": null, "rpy": [0.248, -1.514, 1.543], "max_dq": 0.129, "max_temp": 52, "age_ms": 5, "t": 63.84}
+{"kind": "change", "seq_status": "waiting_operator", "steps": ["锁定站立:done", "人工扶直:active", "进入行走:pending"], "message": "锁定站立后请人工扶直机器人，扶稳后点“已扶直，进入行走”", "owner": true, "armed": false, "fsm": 4, "sport": 4, "rpy": [-0.1, -1.515, 1.895], "max_dq": 0.029, "max_temp": 51, "age_ms": 45, "t": 64.62}
+{"kind": "body", "fsm": 4, "sport": 4, "rpy": [-0.104, -1.515, 1.899], "max_dq": 0.035, "max_temp": 51, "age_ms": 47, "t": 65.86}
+{"kind": "change", "seq_status": "waiting_operator", "steps": ["锁定站立:done", "人工扶直:active", "进入行走:pending"], "message": "锁定站立后请人工扶直机器人，扶稳后点“已扶直，进入行走”", "owner": true, "armed": false, "fsm": 4, "sport": null, "rpy": [-0.107, -1.515, 1.902], "max_dq": 0.027, "max_temp": 50, "age_ms": 91, "t": 66.95}
+{"kind": "change", "seq_status": "waiting_operator", "steps": ["锁定站立:done", "人工扶直:active", "进入行走:pending"], "message": "锁定站立后请人工扶直机器人，扶稳后点“已扶直，进入行走”", "owner": true, "armed": false, "fsm": 4, "sport": 4, "rpy": [-0.109, -1.515, 1.903], "max_dq": 0.031, "max_temp": 50, "age_ms": 103, "t": 67.46}
+{"kind": "body", "fsm": 4, "sport": 4, "rpy": [-0.107, -1.514, 1.901], "max_dq": 0.027, "max_temp": 50, "age_ms": 56, "t": 68.14}
+{"kind": "change", "seq_status": "waiting_operator", "steps": ["锁定站立:done", "人工扶直:active", "进入行走:pending"], "message": "锁定站立后请人工扶直机器人，扶稳后点“已扶直，进入行走”", "owner": true, "armed": false, "fsm": 4, "sport": null, "rpy": [-0.108, -1.514, 1.902], "max_dq": 0.027, "max_temp": 49, "age_ms": 7, "t": 69.45}
+{"kind": "body", "fsm": 4, "sport": null, "rpy": [-0.118, -1.514, 1.912], "max_dq": 0.051, "max_temp": 49, "age_ms": 8, "t": 70.39}
+{"kind": "body", "fsm": 4, "sport": null, "rpy": [-0.142, -1.515, 1.935], "max_dq": 0.023, "max_temp": 48, "age_ms": 34, "t": 72.59}
+{"kind": "change", "seq_status": "waiting_operator", "steps": ["锁定站立:done", "人工扶直:active", "进入行走:pending"], "message": "锁定站立后请人工扶直机器人，扶稳后点“已扶直，进入行走”", "owner": true, "armed": false, "fsm": 4, "sport": 4, "rpy": [-0.136, -1.515, 1.93], "max_dq": 0.022, "max_temp": 47, "age_ms": 13, "t": 74.69}
+{"kind": "body", "fsm": 4, "sport": 4, "rpy": [-0.137, -1.515, 1.932], "max_dq": 0.022, "max_temp": 47, "age_ms": 54, "t": 75.13}
+{"kind": "change", "seq_status": "waiting_operator", "steps": ["锁定站立:done", "人工扶直:active", "进入行走:pending"], "message": "锁定站立后请人工扶直机器人，扶稳后点“已扶直，进入行走”", "owner": true, "armed": false, "fsm": 4, "sport": null, "rpy": [-0.141, -1.516, 1.935], "max_dq": 0.039, "max_temp": 47, "age_ms": 47, "t": 76.44}
+{"kind": "body", "fsm": 4, "sport": null, "rpy": [-0.152, -1.488, 1.975], "max_dq": 0.086, "max_temp": 46, "age_ms": 53, "t": 77.22}
+{"kind": "change", "seq_status": "waiting_operator", "steps": ["锁定站立:done", "人工扶直:active", "进入行走:pending"], "message": "锁定站立后请人工扶直机器人，扶稳后点“已扶直，进入行走”", "owner": true, "armed": false, "fsm": 4, "sport": 4, "rpy": [-0.188, -1.488, 2.045], "max_dq": 0.07, "max_temp": 46, "age_ms": 19, "t": 77.59}
+{"kind": "body", "fsm": 4, "sport": 4, "rpy": [-0.183, -1.518, 2.138], "max_dq": 0.029, "max_temp": 46, "age_ms": 29, "t": 79.36}
+{"kind": "body", "fsm": 4, "sport": 4, "rpy": [-0.177, -1.519, 2.131], "max_dq": 0.028, "max_temp": 46, "age_ms": 39, "t": 81.58}
+{"kind": "body", "fsm": 4, "sport": 4, "rpy": [-0.167, -1.519, 2.12], "max_dq": 0.024, "max_temp": 45, "age_ms": 46, "t": 83.88}
+{"kind": "body", "fsm": 4, "sport": 4, "rpy": [-0.203, -1.518, 2.157], "max_dq": 0.022, "max_temp": 45, "age_ms": 59, "t": 86.16}
+{"kind": "change", "seq_status": "waiting_operator", "steps": ["锁定站立:done", "人工扶直:active", "进入行走:pending"], "message": "锁定站立后请人工扶直机器人，扶稳后点“已扶直，进入行走”", "owner": true, "armed": false, "fsm": 4, "sport": null, "rpy": [-0.224, -1.517, 2.178], "max_dq": 0.017, "max_temp": 45, "age_ms": 59, "t": 88.49}
+{"kind": "body", "fsm": 4, "sport": null, "rpy": [-0.218, -1.516, 2.172], "max_dq": 0.028, "max_temp": 44, "age_ms": 8, "t": 88.82}
+{"kind": "change", "seq_status": "waiting_operator", "steps": ["锁定站立:done", "人工扶直:active", "进入行走:pending"], "message": "锁定站立后请人工扶直机器人，扶稳后点“已扶直，进入行走”", "owner": true, "armed": false, "fsm": 4, "sport": 4, "rpy": [-0.213, -1.516, 2.167], "max_dq": 0.039, "max_temp": 44, "age_ms": 10, "t": 90.2}
+{"kind": "body", "fsm": 4, "sport": 4, "rpy": [-0.206, -1.517, 2.16], "max_dq": 0.022, "max_temp": 44, "age_ms": 5, "t": 90.9}
+{"kind": "change", "seq_status": "waiting_operator", "steps": ["锁定站立:done", "人工扶直:active", "进入行走:pending"], "message": "锁定站立后请人工扶直机器人，扶稳后点“已扶直，进入行走”", "owner": true, "armed": false, "fsm": 4, "sport": null, "rpy": [-0.218, -1.518, 2.172], "max_dq": 0.036, "max_temp": 44, "age_ms": 117, "t": 92.48}
+{"kind": "body", "fsm": 4, "sport": null, "rpy": [-0.219, -1.517, 2.173], "max_dq": 0.029, "max_temp": 44, "age_ms": 16, "t": 93.29}
+{"kind": "body", "fsm": 4, "sport": null, "rpy": [-0.201, -1.518, 2.155], "max_dq": 0.025, "max_temp": 44, "age_ms": 83, "t": 95.65}
+{"kind": "change", "seq_status": "waiting_operator", "steps": ["锁定站立:done", "人工扶直:active", "进入行走:pending"], "message": "锁定站立后请人工扶直机器人，扶稳后点“已扶直，进入行走”", "owner": true, "armed": false, "fsm": 4, "sport": 4, "rpy": [-0.205, -1.518, 2.159], "max_dq": 0.031, "max_temp": 44, "age_ms": 41, "t": 96.09}
+{"kind": "body", "fsm": 4, "sport": 4, "rpy": [-0.211, -1.518, 2.165], "max_dq": 0.021, "max_temp": 44, "age_ms": 13, "t": 97.91}
+{"kind": "body", "fsm": 4, "sport": 4, "rpy": [-0.205, -1.517, 2.159], "max_dq": 0.021, "max_temp": 44, "age_ms": 5, "t": 100.12}
+{"kind": "body", "fsm": 4, "sport": 4, "rpy": [-0.197, -1.518, 2.15], "max_dq": 0.024, "max_temp": 44, "age_ms": 13, "t": 102.42}
+{"kind": "change", "seq_status": "waiting_operator", "steps": ["锁定站立:done", "人工扶直:active", "进入行走:pending"], "message": "锁定站立后请人工扶直机器人，扶稳后点“已扶直，进入行走”", "owner": true, "armed": false, "fsm": 4, "sport": null, "rpy": [-0.199, -1.518, 2.152], "max_dq": 0.025, "max_temp": 44, "age_ms": 64, "t": 102.9}
+{"kind": "body", "fsm": 4, "sport": null, "rpy": [-0.206, -1.517, 2.159], "max_dq": 0.043, "max_temp": 44, "age_ms": 194, "t": 105.0}
+{"kind": "change", "seq_status": "waiting_operator", "steps": ["锁定站立:done", "人工扶直:active", "进入行走:pending"], "message": "锁定站立后请人工扶直机器人，扶稳后点“已扶直，进入行走”", "owner": true, "armed": false, "fsm": 4, "sport": 4, "rpy": [-0.207, -1.517, 2.159], "max_dq": 0.02, "max_temp": 44, "age_ms": 33, "t": 105.69}
+{"kind": "body", "fsm": 4, "sport": 4, "rpy": [-0.216, -1.517, 2.168], "max_dq": 0.025, "max_temp": 44, "age_ms": 30, "t": 107.23}
+{"kind": "change", "seq_status": "aborted", "steps": ["锁定站立:done", "人工扶直:aborted", "进入行走:pending"], "message": "等待人工扶直超时；保持锁定站立，请用实体遥控器接管；未自动回退其他模式，请用实体遥控器接管", "owner": true, "armed": false, "fsm": 4, "sport": 4, "rpy": [-0.261, -1.517, 2.214], "max_dq": 0.19, "max_temp": 44, "age_ms": 7, "t": 108.75}
+{"kind": "change", "seq_status": "aborted", "steps": ["锁定站立:done", "人工扶直:aborted", "进入行走:pending"], "message": "等待人工扶直超时；保持锁定站立，请用实体遥控器接管；未自动回退其他模式，请用实体遥控器接管", "owner": true, "armed": false, "fsm": 4, "sport": null, "rpy": [-0.245, -1.517, 2.195], "max_dq": 0.031, "max_temp": 44, "age_ms": 9, "t": 109.46}
+{"kind": "change", "seq_status": "aborted", "steps": ["锁定站立:done", "人工扶直:aborted", "进入行走:pending"], "message": "等待人工扶直超时；保持锁定站立，请用实体遥控器接管；未自动回退其他模式，请用实体遥控器接管", "owner": true, "armed": false, "fsm": 4, "sport": 4, "rpy": [-0.244, -1.517, 2.195], "max_dq": 0.028, "max_temp": 44, "age_ms": 8, "t": 109.9}
+{"kind": "body", "fsm": 4, "sport": 4, "rpy": [-0.245, -1.516, 2.196], "max_dq": 0.047, "max_temp": 44, "age_ms": 39, "t": 110.27}
+{"kind": "body", "fsm": 4, "sport": 4, "rpy": [-0.247, -1.516, 2.198], "max_dq": 0.017, "max_temp": 44, "age_ms": 11, "t": 112.4}
+{"kind": "change", "seq_status": "aborted", "steps": ["锁定站立:done", "人工扶直:aborted", "进入行走:pending"], "message": "等待人工扶直超时；保持锁定站立，请用实体遥控器接管；未自动回退其他模式，请用实体遥控器接管", "owner": true, "armed": false, "fsm": 4, "sport": null, "rpy": [-0.245, -1.517, 2.196], "max_dq": 0.024, "max_temp": 44, "age_ms": 7, "t": 112.79}
+{"kind": "body", "fsm": 4, "sport": null, "rpy": [-0.24, -1.517, 2.19], "max_dq": 0.039, "max_temp": 44, "age_ms": 31, "t": 114.67}
+{"kind": "body", "fsm": 4, "sport": null, "rpy": [-0.237, -1.517, 2.189], "max_dq": 0.031, "max_temp": 44, "age_ms": 35, "t": 116.84}
+{"kind": "change", "seq_status": "aborted", "steps": ["锁定站立:done", "人工扶直:aborted", "进入行走:pending"], "message": "等待人工扶直超时；保持锁定站立，请用实体遥控器接管；未自动回退其他模式，请用实体遥控器接管", "owner": true, "armed": false, "fsm": 4, "sport": 4, "rpy": [-0.236, -1.517, 2.187], "max_dq": 0.024, "max_temp": 44, "age_ms": 77, "t": 117.35}
+{"kind": "body", "fsm": 4, "sport": 4, "rpy": [-0.235, -1.517, 2.186], "max_dq": 0.021, "max_temp": 44, "age_ms": 54, "t": 119.07}
+{"kind": "body", "fsm": 4, "sport": 4, "rpy": [-0.223, -1.517, 2.174], "max_dq": 0.044, "max_temp": 44, "age_ms": 15, "t": 121.15}
+{"kind": "body", "fsm": 4, "sport": 4, "rpy": [-0.224, -1.519, 2.175], "max_dq": 0.032, "max_temp": 44, "age_ms": 58, "t": 123.39}
+{"kind": "body", "fsm": 4, "sport": 4, "rpy": [-0.229, -1.52, 2.18], "max_dq": 0.018, "max_temp": 44, "age_ms": 13, "t": 125.45}
+{"kind": "change", "seq_status": "aborted", "steps": ["锁定站立:done", "人工扶直:aborted", "进入行走:pending"], "message": "等待人工扶直超时；保持锁定站立，请用实体遥控器接管；未自动回退其他模式，请用实体遥控器接管", "owner": true, "armed": false, "fsm": 4, "sport": null, "rpy": [-0.221, -1.52, 2.172], "max_dq": 0.051, "max_temp": 44, "age_ms": 58, "t": 127.23}
+{"kind": "change", "seq_status": "aborted", "steps": ["锁定站立:done", "人工扶直:aborted", "进入行走:pending"], "message": "等待人工扶直超时；保持锁定站立，请用实体遥控器接管；未自动回退其他模式，请用实体遥控器接管", "owner": true, "armed": false, "fsm": 4, "sport": 4, "rpy": [-0.224, -1.52, 2.175], "max_dq": 0.024, "max_temp": 44, "age_ms": 34, "t": 127.54}
+{"kind": "body", "fsm": 4, "sport": 4, "rpy": [-0.225, -1.52, 2.175], "max_dq": 0.027, "max_temp": 44, "age_ms": 71, "t": 127.94}
+{"kind": "body", "fsm": 4, "sport": 4, "rpy": [-0.225, -1.519, 2.175], "max_dq": 0.038, "max_temp": 44, "age_ms": 49, "t": 130.07}
+{"kind": "body", "fsm": 4, "sport": 4, "rpy": [-0.216, -1.518, 2.167], "max_dq": 0.024, "max_temp": 44, "age_ms": 6, "t": 132.44}
+{"kind": "body", "fsm": 4, "sport": 4, "rpy": [-0.231, -1.518, 2.182], "max_dq": 0.024, "max_temp": 44, "age_ms": 4, "t": 134.79}
+{"kind": "body", "fsm": 4, "sport": 4, "rpy": [-0.223, -1.517, 2.175], "max_dq": 0.026, "max_temp": 44, "age_ms": 90, "t": 137.24}
+{"kind": "change", "seq_status": "aborted", "steps": ["锁定站立:done", "人工扶直:aborted", "进入行走:pending"], "message": "等待人工扶直超时；保持锁定站立，请用实体遥控器接管；未自动回退其他模式，请用实体遥控器接管", "owner": true, "armed": false, "fsm": 4, "sport": null, "rpy": [-0.221, -1.517, 2.172], "max_dq": 0.041, "max_temp": 44, "age_ms": 12, "t": 137.72}
+{"kind": "body", "fsm": 4, "sport": null, "rpy": [-0.246, -1.518, 2.198], "max_dq": 0.039, "max_temp": 44, "age_ms": 9, "t": 139.43}
+{"kind": "change", "seq_status": "aborted", "steps": ["锁定站立:done", "人工扶直:aborted", "进入行走:pending"], "message": "等待人工扶直超时；保持锁定站立，请用实体遥控器接管；未自动回退其他模式，请用实体遥控器接管", "owner": true, "armed": false, "fsm": 4, "sport": 4, "rpy": [-0.248, -1.518, 2.201], "max_dq": 0.033, "max_temp": 44, "age_ms": 36, "t": 140.81}
+{"kind": "body", "fsm": 4, "sport": 4, "rpy": [-0.25, -1.518, 2.203], "max_dq": 0.016, "max_temp": 44, "age_ms": 71, "t": 141.7}
+{"kind": "change", "seq_status": "aborted", "steps": ["锁定站立:done", "人工扶直:aborted", "进入行走:pending"], "message": "等待人工扶直超时；保持锁定站立，请用实体遥控器接管；未自动回退其他模式，请用实体遥控器接管", "owner": true, "armed": false, "fsm": 4, "sport": null, "rpy": [-0.248, -1.518, 2.201], "max_dq": 0.019, "max_temp": 44, "age_ms": 19, "t": 142.22}
+{"kind": "body", "fsm": 4, "sport": null, "rpy": [-0.242, -1.517, 2.196], "max_dq": 0.027, "max_temp": 44, "age_ms": 138, "t": 143.92}
+{"kind": "change", "seq_status": "aborted", "steps": ["锁定站立:done", "人工扶直:aborted", "进入行走:pending"], "message": "等待人工扶直超时；保持锁定站立，请用实体遥控器接管；未自动回退其他模式，请用实体遥控器接管", "owner": true, "armed": false, "fsm": 4, "sport": 4, "rpy": [-0.256, -1.518, 2.209], "max_dq": 0.022, "max_temp": 44, "age_ms": 60, "t": 145.24}
+{"kind": "body", "fsm": 4, "sport": 4, "rpy": [-0.252, -1.518, 2.205], "max_dq": 0.015, "max_temp": 44, "age_ms": 17, "t": 146.15}
+{"kind": "change", "seq_status": "aborted", "steps": ["锁定站立:done", "人工扶直:aborted", "进入行走:pending"], "message": "等待人工扶直超时；保持锁定站立，请用实体遥控器接管；未自动回退其他模式，请用实体遥控器接管", "owner": true, "armed": false, "fsm": 4, "sport": null, "rpy": [-0.249, -1.518, 2.201], "max_dq": 0.034, "max_temp": 44, "age_ms": 6, "t": 147.15}
+{"kind": "body", "fsm": 4, "sport": null, "rpy": [-0.241, -1.518, 2.194], "max_dq": 0.027, "max_temp": 44, "age_ms": 94, "t": 148.52}
+{"kind": "change", "seq_status": "aborted", "steps": ["锁定站立:done", "人工扶直:aborted", "进入行走:pending"], "message": "等待人工扶直超时；保持锁定站立，请用实体遥控器接管；未自动回退其他模式，请用实体遥控器接管", "owner": true, "armed": false, "fsm": 4, "sport": 4, "rpy": [-0.235, -1.518, 2.189], "max_dq": 0.024, "max_temp": 44, "age_ms": 23, "t": 150.47}
+{"kind": "body", "fsm": 4, "sport": 4, "rpy": [-0.232, -1.518, 2.186], "max_dq": 0.025, "max_temp": 44, "age_ms": 103, "t": 150.88}
+{"kind": "body", "fsm": 4, "sport": 4, "rpy": [-0.229, -1.517, 2.183], "max_dq": 0.019, "max_temp": 44, "age_ms": 39, "t": 152.99}
+{"kind": "change", "seq_status": "aborted", "steps": ["锁定站立:done", "人工扶直:aborted", "进入行走:pending"], "message": "等待人工扶直超时；保持锁定站立，请用实体遥控器接管；未自动回退其他模式，请用实体遥控器接管", "owner": true, "armed": false, "fsm": 4, "sport": null, "rpy": [-0.232, -1.518, 2.185], "max_dq": 0.021, "max_temp": 44, "age_ms": 92, "t": 153.82}
+{"kind": "change", "seq_status": "aborted", "steps": ["锁定站立:done", "人工扶直:aborted", "进入行走:pending"], "message": "等待人工扶直超时；保持锁定站立，请用实体遥控器接管；未自动回退其他模式，请用实体遥控器接管", "owner": true, "armed": false, "fsm": 4, "sport": 4, "rpy": [-0.236, -1.518, 2.19], "max_dq": 0.038, "max_temp": 44, "age_ms": 38, "t": 154.43}
+{"kind": "body", "fsm": 4, "sport": 4, "rpy": [-0.221, -1.519, 2.174], "max_dq": 0.024, "max_temp": 44, "age_ms": 6, "t": 155.17}
+{"kind": "body", "fsm": 4, "sport": 4, "rpy": [-0.158, -1.52, 2.11], "max_dq": 0.026, "max_temp": 44, "age_ms": 32, "t": 157.34}
+{"kind": "body", "fsm": 4, "sport": 4, "rpy": [-0.194, -1.52, 2.146], "max_dq": 0.053, "max_temp": 43, "age_ms": 71, "t": 159.43}
+{"kind": "body", "fsm": 4, "sport": 4, "rpy": [-0.192, -1.52, 2.144], "max_dq": 0.027, "max_temp": 43, "age_ms": 21, "t": 161.79}
+{"kind": "change", "seq_status": "aborted", "steps": ["锁定站立:done", "人工扶直:aborted", "进入行走:pending"], "message": "等待人工扶直超时；保持锁定站立，请用实体遥控器接管；未自动回退其他模式，请用实体遥控器接管", "owner": true, "armed": false, "fsm": 4, "sport": null, "rpy": [-0.189, -1.519, 2.142], "max_dq": 0.028, "max_temp": 44, "age_ms": 49, "t": 163.83}
+{"kind": "body", "fsm": 4, "sport": null, "rpy": [-0.191, -1.519, 2.143], "max_dq": 0.036, "max_temp": 43, "age_ms": 104, "t": 164.33}
+{"kind": "body", "fsm": 4, "sport": null, "rpy": [-0.205, -1.519, 2.158], "max_dq": 0.021, "max_temp": 44, "age_ms": 54, "t": 166.44}
+{"kind": "change", "seq_status": "aborted", "steps": ["锁定站立:done", "人工扶直:aborted", "进入行走:pending"], "message": "等待人工扶直超时；保持锁定站立，请用实体遥控器接管；未自动回退其他模式，请用实体遥控器接管", "owner": true, "armed": false, "fsm": 4, "sport": 4, "rpy": [-0.198, -1.518, 2.15], "max_dq": 0.023, "max_temp": 44, "age_ms": 68, "t": 168.56}
+{"kind": "body", "fsm": 4, "sport": 4, "rpy": [-0.19, -1.517, 2.142], "max_dq": 0.027, "max_temp": 44, "age_ms": 13, "t": 168.96}
+{"kind": "body", "fsm": 4, "sport": 4, "rpy": [-0.201, -1.517, 2.153], "max_dq": 0.031, "max_temp": 43, "age_ms": 60, "t": 171.27}
+{"kind": "body", "fsm": 4, "sport": 4, "rpy": [-0.188, -1.518, 2.14], "max_dq": 0.018, "max_temp": 43, "age_ms": 5, "t": 173.3}
+{"kind": "body", "fsm": 4, "sport": 4, "rpy": [-0.184, -1.518, 2.136], "max_dq": 0.022, "max_temp": 43, "age_ms": 45, "t": 175.39}
+{"kind": "body", "fsm": 4, "sport": 4, "rpy": [-0.197, -1.518, 2.148], "max_dq": 0.035, "max_temp": 44, "age_ms": 3, "t": 177.45}
+{"kind": "body", "fsm": 4, "sport": 4, "rpy": [-0.185, -1.518, 2.137], "max_dq": 0.028, "max_temp": 44, "age_ms": 94, "t": 179.46}
+{"kind": "body", "fsm": 4, "sport": 4, "rpy": [-0.196, -1.518, 2.148], "max_dq": 0.013, "max_temp": 43, "age_ms": 74, "t": 181.46}
+{"kind": "body", "fsm": 4, "sport": 4, "rpy": [-0.19, -1.518, 2.142], "max_dq": 0.023, "max_temp": 43, "age_ms": 77, "t": 183.68}
+{"kind": "body", "fsm": 4, "sport": 4, "rpy": [-0.181, -1.517, 2.132], "max_dq": 0.027, "max_temp": 43, "age_ms": 40, "t": 186.09}
+{"kind": "change", "seq_status": "aborted", "steps": ["锁定站立:done", "人工扶直:aborted", "进入行走:pending"], "message": "等待人工扶直超时；保持锁定站立，请用实体遥控器接管；未自动回退其他模式，请用实体遥控器接管", "owner": true, "armed": false, "fsm": 4, "sport": null, "rpy": [-0.183, -1.517, 2.134], "max_dq": 0.043, "max_temp": 43, "age_ms": 3, "t": 186.56}
+{"kind": "change", "seq_status": "aborted", "steps": ["锁定站立:done", "人工扶直:aborted", "进入行走:pending"], "message": "等待人工扶直超时；保持锁定站立，请用实体遥控器接管；未自动回退其他模式，请用实体遥控器接管", "owner": true, "armed": false, "fsm": 4, "sport": 4, "rpy": [-0.183, -1.517, 2.134], "max_dq": 0.025, "max_temp": 43, "age_ms": 90, "t": 187.04}
+{"kind": "body", "fsm": 4, "sport": 4, "rpy": [-0.194, -1.518, 2.145], "max_dq": 0.029, "max_temp": 43, "age_ms": 59, "t": 188.42}
+{"kind": "change", "seq_status": "aborted", "steps": ["锁定站立:done", "人工扶直:aborted", "进入行走:pending"], "message": "等待人工扶直超时；保持锁定站立，请用实体遥控器接管；未自动回退其他模式，请用实体遥控器接管", "owner": true, "armed": false, "fsm": 4, "sport": null, "rpy": [-0.185, -1.518, 2.136], "max_dq": 0.014, "max_temp": 44, "age_ms": 40, "t": 190.26}
+{"kind": "body", "fsm": 4, "sport": null, "rpy": [-0.182, -1.518, 2.134], "max_dq": 0.021, "max_temp": 44, "age_ms": 9, "t": 190.59}
+{"kind": "change", "seq_status": "aborted", "steps": ["锁定站立:done", "人工扶直:aborted", "进入行走:pending"], "message": "等待人工扶直超时；保持锁定站立，请用实体遥控器接管；未自动回退其他模式，请用实体遥控器接管", "owner": true, "armed": false, "fsm": 4, "sport": 4, "rpy": [-0.184, -1.518, 2.135], "max_dq": 0.022, "max_temp": 44, "age_ms": 60, "t": 191.3}
+{"kind": "body", "fsm": 4, "sport": 4, "rpy": [-0.199, -1.518, 2.151], "max_dq": 0.074, "max_temp": 44, "age_ms": 4, "t": 192.68}
+{"kind": "body", "fsm": 4, "sport": 4, "rpy": [-0.186, -1.518, 2.138], "max_dq": 0.069, "max_temp": 44, "age_ms": 4, "t": 194.78}
+{"kind": "change", "seq_status": "aborted", "steps": ["锁定站立:done", "人工扶直:aborted", "进入行走:pending"], "message": "等待人工扶直超时；保持锁定站立，请用实体遥控器接管；未自动回退其他模式，请用实体遥控器接管", "owner": true, "armed": false, "fsm": 4, "sport": null, "rpy": [-0.183, -1.518, 2.135], "max_dq": 0.023, "max_temp": 44, "age_ms": 14, "t": 195.65}
+{"kind": "body", "fsm": 4, "sport": null, "rpy": [-0.184, -1.518, 2.136], "max_dq": 0.017, "max_temp": 44, "age_ms": 78, "t": 197.27}
+{"kind": "body", "fsm": 4, "sport": null, "rpy": [-0.19, -1.518, 2.141], "max_dq": 0.032, "max_temp": 44, "age_ms": 69, "t": 199.29}
+{"kind": "body", "fsm": 4, "sport": null, "rpy": [-0.186, -1.517, 2.137], "max_dq": 0.058, "max_temp": 44, "age_ms": 83, "t": 201.47}
+{"kind": "change", "seq_status": "aborted", "steps": ["锁定站立:done", "人工扶直:aborted", "进入行走:pending"], "message": "等待人工扶直超时；保持锁定站立，请用实体遥控器接管；未自动回退其他模式，请用实体遥控器接管", "owner": true, "armed": false, "fsm": 4, "sport": 4, "rpy": [-0.193, -1.517, 2.143], "max_dq": 0.024, "max_temp": 44, "age_ms": 9, "t": 202.33}
+{"kind": "body", "fsm": 4, "sport": 4, "rpy": [-0.196, -1.518, 2.147], "max_dq": 0.026, "max_temp": 44, "age_ms": 33, "t": 203.57}
+{"kind": "change", "seq_status": "aborted", "steps": ["锁定站立:done", "人工扶直:aborted", "进入行走:pending"], "message": "等待人工扶直超时；保持锁定站立，请用实体遥控器接管；未自动回退其他模式，请用实体遥控器接管", "owner": true, "armed": false, "fsm": 4, "sport": null, "rpy": [-0.193, -1.518, 2.144], "max_dq": 0.037, "max_temp": 44, "age_ms": 8, "t": 204.37}
+{"kind": "change", "seq_status": "aborted", "steps": ["锁定站立:done", "人工扶直:aborted", "进入行走:pending"], "message": "等待人工扶直超时；保持锁定站立，请用实体遥控器接管；未自动回退其他模式，请用实体遥控器接管", "owner": true, "armed": false, "fsm": 4, "sport": 4, "rpy": [-0.191, -1.517, 2.142], "max_dq": 0.034, "max_temp": 44, "age_ms": 25, "t": 205.05}
+{"kind": "body", "fsm": 4, "sport": 4, "rpy": [-0.192, -1.517, 2.143], "max_dq": 0.036, "max_temp": 44, "age_ms": 108, "t": 205.91}
+{"kind": "body", "fsm": 4, "sport": 4, "rpy": [-0.197, -1.518, 2.148], "max_dq": 0.022, "max_temp": 44, "age_ms": 11, "t": 207.95}
+{"kind": "change", "seq_status": "aborted", "steps": ["锁定站立:done", "人工扶直:aborted", "进入行走:pending"], "message": "等待人工扶直超时；保持锁定站立，请用实体遥控器接管；未自动回退其他模式，请用实体遥控器接管", "owner": true, "armed": false, "fsm": 4, "sport": null, "rpy": [-0.189, -1.518, 2.14], "max_dq": 0.038, "max_temp": 44, "age_ms": 74, "t": 209.51}
+{"kind": "change", "seq_status": "aborted", "steps": ["锁定站立:done", "人工扶直:aborted", "进入行走:pending"], "message": "等待人工扶直超时；保持锁定站立，请用实体遥控器接管；未自动回退其他模式，请用实体遥控器接管", "owner": true, "armed": false, "fsm": 4, "sport": 4, "rpy": [-0.187, -1.518, 2.137], "max_dq": 0.06, "max_temp": 44, "age_ms": 59, "t": 210.22}
+{"kind": "body", "fsm": 4, "sport": 4, "rpy": [-0.183, -1.518, 2.133], "max_dq": 0.019, "max_temp": 44, "age_ms": 52, "t": 210.55}
+{"kind": "body", "fsm": 4, "sport": 4, "rpy": [-0.182, -1.518, 2.132], "max_dq": 0.023, "max_temp": 44, "age_ms": 32, "t": 212.75}
+{"kind": "change", "seq_status": "running", "steps": ["落座:active"], "message": "", "owner": true, "armed": false, "fsm": 4, "sport": 4, "rpy": [-0.183, -1.518, 2.133], "max_dq": 0.045, "max_temp": 44, "age_ms": 337, "t": 213.53}
+{"kind": "change", "seq_status": "running", "steps": ["落座:active"], "message": "", "owner": true, "armed": false, "fsm": 3, "sport": null, "rpy": [-0.167, -1.516, 2.118], "max_dq": 0.024, "max_temp": 44, "age_ms": 69, "t": 214.06}
+{"kind": "change", "seq_status": "running", "steps": ["落座:active"], "message": "", "owner": true, "armed": false, "fsm": 3, "sport": 3, "rpy": [-0.156, -1.514, 2.107], "max_dq": 0.311, "max_temp": 44, "age_ms": 58, "t": 215.13}
+{"kind": "body", "fsm": 3, "sport": 3, "rpy": [-0.064, -1.468, 2.016], "max_dq": 0.326, "max_temp": 44, "age_ms": 13, "t": 215.62}
+{"kind": "change", "seq_status": "done", "steps": ["落座:done"], "message": "已到达路线终点姿态", "owner": true, "armed": false, "fsm": 3, "sport": 3, "rpy": [-0.035, -1.4, 1.986], "max_dq": 0.51, "max_temp": 44, "age_ms": 18, "t": 216.15}
+{"kind": "finished_stop_sequence", "t": 216.15}

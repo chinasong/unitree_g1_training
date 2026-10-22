@@ -1,0 +1,635 @@
+{
+  "verified_at_utc": "2026-10-21T07:23:43.755887+00:00",
+  "schema_version": 1,
+  "foundation_version": 18,
+  "latest_user_report": "现在不是人员托住，现在是靠在一个柜子",
+  "current_external_support_human_report": "cabinet",
+  "person_support_reported": false,
+  "claim_scope": "Cabinet correction is human historical evidence. Seated posture, feet touching floor and digital pose match retain their earlier report; no live support/load confirmation.",
+  "robot_motion_executed": false,
+  "quantumult_changed": false,
+  "official_services_restarted_by_console_deployment": false,
+  "unknowns": {
+    "motion_host_firmware": null,
+    "left_foot_load_n": null,
+    "right_foot_load_n": null,
+    "seat_load_n": null,
+    "cabinet_load_n": null,
+    "independent_standing": null,
+    "active_capability_id": null,
+    "selected_transition": null,
+    "slow_standing_speed": null,
+    "slow_standing_duration_s": null,
+    "actual_motor_config_fields": 253
+  },
+  "applicability_review": {
+    "current": false,
+    "checked_at_utc": "2026-10-21T07:14:02.238249+00:00",
+    "boot_id": "b33a7dc5-2617-44cd-b353-041bab1c204f",
+    "command_writes": 0,
+    "lease_requests": 0,
+    "motor_configuration_values_obtained": 0,
+    "conclusion": "未确认任何官方起身入口适用于当前靠柜坐地；姿态保持和主动平衡的本机交接条件尚未核定。尚无可执行的缓慢起身路线。",
+    "contacts": [
+      {
+        "id": "left_foot",
+        "name": "左脚",
+        "contact_verified": null,
+        "load_n": null,
+        "evidence": "先前人工报告脚底贴地；本轮相机看不到脚底",
+        "needed": "匹配本机的有效左足载荷传感或经过验证的估计器；确认单位、映射、标定、质量与时效"
+      },
+      {
+        "id": "right_foot",
+        "name": "右脚",
+        "contact_verified": null,
+        "load_n": null,
+        "evidence": "先前人工报告脚底贴地；本轮相机看不到脚底",
+        "needed": "匹配本机的有效右足载荷传感或经过验证的估计器；确认单位、映射、标定、质量与时效"
+      },
+      {
+        "id": "seat",
+        "name": "身体坐地处",
+        "contact_verified": null,
+        "load_n": null,
+        "evidence": "先前人工报告坐在地上；当前接触位置和受力分布未测量",
+        "needed": "全身接触几何及接触载荷证据，区分足底与身体坐地的支撑份额"
+      },
+      {
+        "id": "cabinet",
+        "name": "柜体",
+        "contact_verified": null,
+        "load_n": null,
+        "evidence": "最近人工更正为靠柜；接触点、柜体是否固定及摩擦未知",
+        "needed": "外部可核验的接触点和柜体条件，以及有效载荷测量或经验证的全身接触估计"
+      }
+    ],
+    "capabilities": [
+      {
+        "name": "阻尼",
+        "documented_entry": "Damp / FSM 1",
+        "documented_start": "文档定义的阻尼状态",
+        "applicable_to_current_pose": null,
+        "missing": "速度阻力不等于位置锁定或主动平衡；不能作为靠柜坐地起身方案",
+        "execution_allowed": false
+      },
+      {
+        "name": "预备 / 姿态保持",
+        "documented_entry": "官方手册辅助预备流程",
+        "documented_start": "需满足手册规定的辅助条件和指定起始姿态",
+        "applicable_to_current_pose": null,
+        "missing": "未核实当前靠柜坐地是否是允许起点；位置保持并不证明平衡控制在运行",
+        "execution_allowed": false
+      },
+      {
+        "name": "蹲姿起身",
+        "documented_entry": "Python Squat2StandUp / FSM 706",
+        "documented_start": "官方允许的蹲姿",
+        "applicable_to_current_pose": null,
+        "missing": "当前人工报告为坐地，不能直接当蹲姿；与 StandUp2Squat 共用 706，不可重复试发判断",
+        "execution_allowed": false
+      },
+      {
+        "name": "卧姿起身",
+        "documented_entry": "Python Lie2StandUp / FSM 702",
+        "documented_start": "官方允许的卧姿",
+        "applicable_to_current_pose": null,
+        "missing": "没有证据把当前靠柜坐地视作适用卧姿",
+        "execution_allowed": false
+      },
+      {
+        "name": "站起包装",
+        "documented_entry": "固定版本 C++ StandUp / FSM 4",
+        "documented_start": "此包装没有给出完整起始姿势契约",
+        "applicable_to_current_pose": null,
+        "missing": "与 Python 入口不同；本机固件兼容性和完整进入/失败恢复条件未知",
+        "execution_allowed": false
+      },
+      {
+        "name": "主动平衡站立",
+        "documented_entry": "C++ BalanceStand / SetBalanceMode(0)",
+        "documented_start": "需先满足匹配固件的控制归属与站立/运动前提",
+        "applicable_to_current_pose": null,
+        "missing": "BalanceMode getter 返回 7301；该包装不定义任意坐姿起身轨迹，也不证明平衡已接管",
+        "execution_allowed": false
+      }
+    ],
+    "conditional_plan": [
+      {
+        "name": "固定姿势与接触证据",
+        "status": "partial",
+        "detail": "保留靠柜更正及早先坐地、双脚贴地的人工报告。同步核对全身和四处接触；当前机载视野不足，不能自行认定起点一直未变。",
+        "completion_evidence": "带时间的全身/接触核对，与同一窗口关节和 IMU 对应"
+      },
+      {
+        "name": "核定多处承重与现场保护",
+        "status": "unknown",
+        "detail": "分别取得左右脚、坐地处及柜体的有效承重证据，核对柜体固定、接触、地面与全身净空。当前不改变支撑；柜体不当作已核定防跌落保护。",
+        "completion_evidence": "有效单位、映射、标定、质量和时效明确的载荷/接触数据及适用现场保护"
+      },
+      {
+        "name": "匹配固件和官方起点",
+        "status": "unknown",
+        "detail": "以当前运动主机版本及官方 23 DOF 契约核定允许起始姿态。若只支持指定蹲姿、卧姿或辅助预备，靠柜坐地保持不适用性未知，不自行拼接转换。",
+        "completion_evidence": "本机版本与官方进入、完成、中断和失败恢复条件对应"
+      },
+      {
+        "name": "确认慢速转换能力",
+        "status": "unknown",
+        "detail": "查明官方是否提供针对该转换的速度或时长设置。现有起身包装没有此参数；不拿 SetVelocity.duration、手臂权重、sleep 或示例增益代替。若无接口，缓慢自主起身方案保持未具备。",
+        "completion_evidence": "匹配该固件和转换的官方可调参数及语义；目前为空"
+      },
+      {
+        "name": "核定姿态保持到主动平衡的交接",
+        "status": "unknown",
+        "detail": "确认控制归属、模式反馈、有效 BalanceMode、转换完成与失败反馈。预备位置保持不等于主动平衡，Start/BalanceStand 不是从任意坐姿起身的替代入口。",
+        "completion_evidence": "匹配官方契约的控制归属和有效阶段回读，不能由 FSM 一项替代"
+      },
+      {
+        "name": "独立站稳验收条件",
+        "status": "unknown",
+        "detail": "需脚底载荷、柜体及坐地支撑关系、全身姿态、重心/动量和平衡裕量共同成立，并满足核定速度阈值和持续时间。当前阈值与时长均未知，不能宣布站稳。",
+        "completion_evidence": "经核定的站稳判据、阈值和观察持续时间；支撑变化需另行验证"
+      }
+    ],
+    "ota_history": {
+      "log_timestamp_literal": "2026-10-20 22:15:05–06",
+      "log_timezone": null,
+      "package_directory_label": "1.5.3.8_G1_Edu+",
+      "parent_directory_label": "1.5.3",
+      "module": "unitree_patch_pc4",
+      "module_version": "1.0.0.6",
+      "device_motion_firmware": null,
+      "meaning": "历史 OTA 日志与缓存文件路径标签；不是当前运动主机已安装版本，不能据 Edu+ 包名更改用户确认的 EDU 配置。未运行更新器或安装包。"
+    },
+    "passive_status": {
+      "sample_window_s": 15,
+      "discovery_window_s": 5,
+      "topics": [
+        {
+          "topic": "rt/multiplestate",
+          "samples": 0
+        },
+        {
+          "topic": "rt/selftest",
+          "samples": 0
+        },
+        {
+          "topic": "rt/servicestate",
+          "samples": 0
+        },
+        {
+          "topic": "rt/servicestateactivate",
+          "samples": 0
+        },
+        {
+          "topic": "rt/arm/action/state",
+          "samples": 0
+        },
+        {
+          "topic": "rt/arm_service_outbound",
+          "samples": 0
+        }
+      ],
+      "active_capability": null,
+      "meaning": "六个匹配类型通道在有限窗口均无样本；无消息不证明未执行能力、无故障或接口不存在。"
+    },
+    "load_reason": "左右脚、坐地处和柜体构成多处接触；即使近似静止，力/力矩平衡也不足以在未知接触点、摩擦、质心与传感有效性的情况下唯一分配载荷。tau_est 不是独立足底测力；不能用模型质量或四路全零反推。",
+    "slow_control": {
+      "speed_parameter": null,
+      "duration_s": null,
+      "trajectory": null,
+      "verified_stability_thresholds": null,
+      "stable_duration_s": null,
+      "meaning": "已核对起身包装未暴露起身速度或时长；SetVelocity.duration 是速度命令持续时间，xr_teleoperate 的渐增 weight 是手臂命令混合，均不能证实全身起身可减速。"
+    },
+    "next_readonly_evidence": [
+      "通过官方 App 的版本页面或匹配官方接口确认运动主机当前固件；Orin 包元数据和缓存不能代替",
+      "取得同步全身外部观察与接触点资料；仅机载前视 RGB 无法覆盖脚底及靠柜处",
+      "取得匹配 G1 的足底/外部接触载荷定义与有效读数，或经过验证的全身接触估计器",
+      "由对应固件的官方说明确认当前起点、慢速参数、交接与失败恢复契约"
+    ],
+    "official_references": [
+      {
+        "url": "https://github.com/unitreerobotics/xr_teleoperate/wiki/Motion",
+        "checked_at_utc": "2026-10-21T07:14:02.238249+00:00",
+        "scope": "锁定站立与下肢运动控制区别；手臂命令权重不是全身起身速度；文档按键存在更新，不据此认定本机可用"
+      },
+      {
+        "url": "https://github.com/unitreerobotics/unitree_sdk2/blob/d1abf001220d3e5f59e00a0c4aaa595e00089a4a/include/unitree/robot/g1/loco/g1_loco_client.hpp",
+        "scope": "固定官方 C++ 包装源码，不作为本机起始条件契约"
+      }
+    ]
+  },
+  "local_validation": {
+    "pytest_passed": 87,
+    "pytest_command": ".venv/bin/python -m pytest tests/test_g1_foundation.py tests/test_g1_state_safety.py tests/test_g1_console.py tests/test_g1_mode_readback.py tests/test_g1_service_capabilities.py tests/test_g1_safety_evidence.py -q",
+    "pytest_warning": "Existing Starlette/httpx deprecation warning",
+    "frontend_build_passed": true,
+    "frontend_command": "npm run build (console/web)",
+    "frontend_warning": "Existing Three.js chunk above 500 kB"
+  },
+  "release_verification": {
+    "at_utc": "2026-10-21T07:20:42.925486+00:00",
+    "release": "7aa979766f1d",
+    "manifest_file_count": 468,
+    "all_sha256_match": true,
+    "console_pid": 11409,
+    "console_env": {
+      "G1_READ_ONLY": "1",
+      "G1_HOST": "127.0.0.1",
+      "G1_PORT": "8765",
+      "G1_CAMERA_BACKEND": "unitree"
+    },
+    "loopback_only": true,
+    "children": [
+      {
+        "pid": 11451,
+        "argv": [
+          "/home/unitree/workspace/g1-body-console/.venv/bin/python",
+          "-c",
+          "from multiprocessing.resource_tracker import main;main(20)"
+        ],
+        "cwd": "/home/unitree/workspace/g1-body-console/releases/7aa979766f1d"
+      },
+      {
+        "pid": 11452,
+        "argv": [
+          "/home/unitree/workspace/g1-body-console/.venv/bin/python",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=21, pipe_handle=23)",
+          "--multiprocessing-fork"
+        ],
+        "cwd": "/home/unitree/workspace/g1-body-console/releases/7aa979766f1d"
+      },
+      {
+        "pid": 11455,
+        "argv": [
+          "/home/unitree/workspace/g1-body-console/.venv/bin/python",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=21, pipe_handle=26)",
+          "--multiprocessing-fork"
+        ],
+        "cwd": "/home/unitree/workspace/g1-body-console/releases/7aa979766f1d"
+      }
+    ],
+    "foundation_version": 18,
+    "foundation_id": "d73f93dde11db5a70e598f31b161c73675f4d92836260527546f38e671c5350d",
+    "actual_unknown_count": 253,
+    "boot_id": "b33a7dc5-2617-44cd-b353-041bab1c204f",
+    "official_processes_unchanged": [
+      {
+        "pid": 1170,
+        "argv": [
+          "/unitree/ota/pipe/ota_pipe_service"
+        ],
+        "start_ticks": 2054
+      },
+      {
+        "pid": 1174,
+        "argv": [
+          "/unitree/module/master_service/master_service"
+        ],
+        "start_ticks": 2055
+      },
+      {
+        "pid": 2749,
+        "argv": [
+          "/home/unitree/megaflow_sdk/ws//bin/MegaFlowRuntimeDaemon",
+          "-c",
+          "/home/unitree/megaflow_sdk/ws//bin/config.bin",
+          "-w",
+          "/home/unitree/megaflow_sdk/ws/",
+          "-d",
+          "127.0.0.1:8899",
+          "-i",
+          "-e",
+          "/home/unitree/megaflow_sdk/ws//dep/",
+          "-l",
+          "0"
+        ],
+        "start_ticks": 3024
+      },
+      {
+        "pid": 10836,
+        "argv": [
+          "/unitree/module/video_hub_pc4/videohub_pc4"
+        ],
+        "start_ticks": 437881
+      }
+    ]
+  },
+  "process_baseline_change": {
+    "initial_attempt_aborted": true,
+    "reason": "Old official video PID 2074 missing; release extracted and hashed but console not switched during failed attempt.",
+    "verified_baseline": {
+      "current": false,
+      "checked_at_utc": "2026-10-21T07:19:46.893580+00:00",
+      "boot_id": "b33a7dc5-2617-44cd-b353-041bab1c204f",
+      "processes": [
+        {
+          "pid": 1170,
+          "argv": [
+            "/unitree/ota/pipe/ota_pipe_service"
+          ],
+          "start_ticks": 2054
+        },
+        {
+          "pid": 1174,
+          "argv": [
+            "/unitree/module/master_service/master_service"
+          ],
+          "start_ticks": 2055
+        },
+        {
+          "pid": 2749,
+          "argv": [
+            "/home/unitree/megaflow_sdk/ws//bin/MegaFlowRuntimeDaemon",
+            "-c",
+            "/home/unitree/megaflow_sdk/ws//bin/config.bin",
+            "-w",
+            "/home/unitree/megaflow_sdk/ws/",
+            "-d",
+            "127.0.0.1:8899",
+            "-i",
+            "-e",
+            "/home/unitree/megaflow_sdk/ws//dep/",
+            "-l",
+            "0"
+          ],
+          "start_ticks": 3024
+        },
+        {
+          "pid": 10836,
+          "argv": [
+            "/unitree/module/video_hub_pc4/videohub_pc4"
+          ],
+          "start_ticks": 437881
+        }
+      ],
+      "expected_paths": [
+        "/unitree/ota/pipe/ota_pipe_service",
+        "/unitree/module/master_service/master_service",
+        "/unitree/module/video_hub_pc4/videohub_pc4",
+        "/home/unitree/megaflow_sdk/ws//bin/MegaFlowRuntimeDaemon"
+      ],
+      "missing_paths": [],
+      "active_release": "6c940dd20def",
+      "console_pid": "9194",
+      "command_writes": 0,
+      "rpc_calls": 0
+    },
+    "old_video_pid": 2074,
+    "new_video_pid": 10836,
+    "change_cause": null,
+    "meaning": "Robot boot unchanged. Three other official processes unchanged. Video changed before actual console update; four verified current process identities unchanged across actual update."
+  },
+  "read_only_soak": {
+    "started_at_utc": "2026-10-21T07:20:47.909515+00:00",
+    "completed_at_utc": "2026-10-21T07:21:18.000132+00:00",
+    "duration_s": 30.091,
+    "sample_count": 31,
+    "jpeg_count": 4,
+    "unique_jpeg_count": 4,
+    "max_telemetry_age_ms": 61,
+    "mode_rpc_deltas": {
+      "fsm_id": {
+        "attempts": 59,
+        "successes": 59,
+        "timeouts": 0,
+        "errors": 0
+      },
+      "fsm_mode": {
+        "attempts": 10,
+        "successes": 10,
+        "timeouts": 0,
+        "errors": 0
+      },
+      "motion_mode": {
+        "attempts": 10,
+        "successes": 10,
+        "timeouts": 0,
+        "errors": 0
+      }
+    },
+    "foundation_id": "d73f93dde11db5a70e598f31b161c73675f4d92836260527546f38e671c5350d",
+    "foundation_version": 18,
+    "read_only": true,
+    "command_writes": 0,
+    "lease_requests": 0,
+    "actual_unknown_count": 253
+  },
+  "journal_verification": {
+    "checked_at_utc": "2026-10-21T07:22:21.481388+00:00",
+    "run_id": "a5779b9d3c5d",
+    "journal": {
+      "bytes": 486425,
+      "sha256": "dba77f6df694638b934b49c4150070728ce6e08136f79ffcb39fec111241e3d3",
+      "ends_with_newline": true,
+      "invalid_lines": [
+        {
+          "line": 223,
+          "bytes": 1851,
+          "error_type": "UnicodeDecodeError",
+          "contains_current_run": false,
+          "sha256": "673a1e8da7ac3e72007abbed5053cb0fec33dfcb995a4361985c49fbdae29922"
+        }
+      ]
+    },
+    "current_run_event_counts": {
+      "connected": 1,
+      "camera_connected": 1,
+      "state_observed": 4
+    },
+    "read_only": true,
+    "control_owner": null,
+    "navigation_status": "idle",
+    "insight_enabled": false,
+    "human_confirmation_is_historical": true,
+    "action_writes_recorded": 0,
+    "lease_requests_recorded": 0,
+    "evidence_limit": "Application journal and current state; not an independent network capture"
+  },
+  "browser_verification": {
+    "url": "http://127.0.0.1:18765/",
+    "headline": "靠柜坐地 · 官方能力适用性与四处承重",
+    "telemetry": "23/23 joints live; FSM 0; official RGB live; readonly locked",
+    "four_contact_loads_displayed_unknown": true,
+    "all_six_entry_applicabilities_displayed_unconfirmed": true,
+    "six_stage_completion_evidence_displayed": true,
+    "screenshot": "doc/screenshots/g1-cabinet-applicability-v18.png"
+  },
+  "evidence_limit": "Finite readonly sampling and application journal are not independent network capture. OTA history, raw GO zeros, API versions, human contact reports and quiet topics are not installed motion firmware, validated load, activity or safety proof.",
+  "source_fingerprints": [
+    {
+      "path": ".g1-deploy/research/cabinet-applicability-20261021/cached-manifest.json",
+      "bytes": 285,
+      "sha256": "6e61ab12f23fbd847b15e08219b35dfd7f88ec3889f47fed639461545801014d"
+    },
+    {
+      "path": ".g1-deploy/research/cabinet-applicability-20261021/deployment-v18.log",
+      "bytes": 1520,
+      "sha256": "3485df0801491c0d04325195de3caffbca8d3d5ee2f3e5dab74227a583af4666"
+    },
+    {
+      "path": ".g1-deploy/research/cabinet-applicability-20261021/deployment.log",
+      "bytes": 34,
+      "sha256": "f574457f1b6b6f0e74c222610f063103dbbfa8f72cf14552135338667436f700"
+    },
+    {
+      "path": ".g1-deploy/research/cabinet-applicability-20261021/frame-00.jpg",
+      "bytes": 33194,
+      "sha256": "8a1e6b9508fdcfa556123054d06a48b312057d3d1b1ab659d7c694f220025310"
+    },
+    {
+      "path": ".g1-deploy/research/cabinet-applicability-20261021/frame-10.jpg",
+      "bytes": 33174,
+      "sha256": "f8aafa0a7d937a8a3b97fd2d43cd248be5b31be837ec3685e3e50e66bdee9a86"
+    },
+    {
+      "path": ".g1-deploy/research/cabinet-applicability-20261021/frame-20.jpg",
+      "bytes": 33229,
+      "sha256": "fbf3210912c7481952d40ce791c8f83040a12238295cd78de3a1a558bb4b6bc8"
+    },
+    {
+      "path": ".g1-deploy/research/cabinet-applicability-20261021/orin-inventory.json",
+      "bytes": 4060,
+      "sha256": "585256664c642a4c4692f061f2d42f8e9fd38f8d991af279b23187a4d1527012"
+    },
+    {
+      "path": ".g1-deploy/research/cabinet-applicability-20261021/ota-version-context.json",
+      "bytes": 5884,
+      "sha256": "ea12595847fa4e2da88148795999062bbc1862c2f4f7a39eb757938142a16d93"
+    },
+    {
+      "path": ".g1-deploy/research/cabinet-applicability-20261021/paired-observation.json",
+      "bytes": 1192178,
+      "sha256": "58f1c3d35188067bd06ec64bb851ff27e590d7ed8215f4f216efc1180f728107"
+    },
+    {
+      "path": ".g1-deploy/research/cabinet-applicability-20261021/passive-status.json",
+      "bytes": 1618,
+      "sha256": "a014b2c878cb40c4e33df4b2ad1920ad062dd17aae9d018355ee0f8eafc28b8d"
+    },
+    {
+      "path": ".g1-deploy/research/cabinet-applicability-20261021/passive.json",
+      "bytes": 18141,
+      "sha256": "a0a613e0d3fc232665a11ac15df5e480ee787e4f48db465674f81a32434947be"
+    },
+    {
+      "path": ".g1-deploy/research/cabinet-applicability-20261021/postdeploy-00.jpg",
+      "bytes": 35658,
+      "sha256": "32c81b58c7eba1ac296c78a90a2fc57e5cad1e5ee6de66caa3d377de48b28286"
+    },
+    {
+      "path": ".g1-deploy/research/cabinet-applicability-20261021/postdeploy-10.jpg",
+      "bytes": 35711,
+      "sha256": "e82c7a211ce378647f1015ee65307a0bbbbf82510d531247fcffe9b04c9e5b50"
+    },
+    {
+      "path": ".g1-deploy/research/cabinet-applicability-20261021/postdeploy-20.jpg",
+      "bytes": 35716,
+      "sha256": "704d6703458157ee650fa1cf618a10a847a44d936896829b50444842dd8b53c5"
+    },
+    {
+      "path": ".g1-deploy/research/cabinet-applicability-20261021/postdeploy-30.jpg",
+      "bytes": 35682,
+      "sha256": "1a8adc0e45cd40dc06f65df0072d0238d943cf3b44c3695dba747b621bee71d1"
+    },
+    {
+      "path": ".g1-deploy/research/cabinet-applicability-20261021/postdeploy-journal.json",
+      "bytes": 793,
+      "sha256": "2dbcd2fd7ff4875d1bae3995b0da30745fe0418569f39595112155584b7d8e44"
+    },
+    {
+      "path": ".g1-deploy/research/cabinet-applicability-20261021/postdeploy-release.json",
+      "bytes": 1874,
+      "sha256": "0530d61793664c14493ace59aeb60062e87651af46eb56f30273e6ce5ddc8d4b"
+    },
+    {
+      "path": ".g1-deploy/research/cabinet-applicability-20261021/postdeploy-soak.json",
+      "bytes": 363493,
+      "sha256": "513b89e09c20a5112c3fc11999ba5b76ab8cc2a4ab9875eb5a076ba3b711811f"
+    },
+    {
+      "path": ".g1-deploy/research/cabinet-applicability-20261021/process-recheck.json",
+      "bytes": 1338,
+      "sha256": "ed9d5b535a53a9295231e782eb672c98dbe5be8ab598ff1f15430f1d5df4f3fe"
+    },
+    {
+      "path": ".g1-deploy/research/cabinet-applicability-20261021/standing-reads.json",
+      "bytes": 4350,
+      "sha256": "4479c71f38fb0c43bdaea0eee43cfc71b80d194b5bf471f51b032cd61b288fc2"
+    },
+    {
+      "path": ".g1-deploy/research/cabinet-applicability-20261021/version-locations.json",
+      "bytes": 15711,
+      "sha256": "5e16cd41781ff361bdb6af2c5dc95d8e7c6600b89292155aa971de8dbc5f40a2"
+    },
+    {
+      "path": ".g1-deploy/research/cabinet-applicability-20261021/version-logs.json",
+      "bytes": 2866,
+      "sha256": "df43a82624a60356ff525b0d786b4103b13527f000968d533ee18afb829097a5"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/cabinet_cached-manifest_20261021_v18.json",
+      "bytes": 285,
+      "sha256": "6e61ab12f23fbd847b15e08219b35dfd7f88ec3889f47fed639461545801014d"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/cabinet_orin-inventory_20261021_v18.json",
+      "bytes": 4060,
+      "sha256": "585256664c642a4c4692f061f2d42f8e9fd38f8d991af279b23187a4d1527012"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/cabinet_ota-version-context_20261021_v18.json",
+      "bytes": 5884,
+      "sha256": "ea12595847fa4e2da88148795999062bbc1862c2f4f7a39eb757938142a16d93"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/cabinet_passive-status_20261021_v18.json",
+      "bytes": 1618,
+      "sha256": "a014b2c878cb40c4e33df4b2ad1920ad062dd17aae9d018355ee0f8eafc28b8d"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/cabinet_passive_20261021_v18.json",
+      "bytes": 18141,
+      "sha256": "a0a613e0d3fc232665a11ac15df5e480ee787e4f48db465674f81a32434947be"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/firmware_support_review_20261021_v18.json",
+      "bytes": 3533,
+      "sha256": "7cf81626b036fbed2d64b1692cd2b39e8f1ea71269de80543b6fde3b7ee6c9a9"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/standing_applicability_20261021_v18.json",
+      "bytes": 9426,
+      "sha256": "97e7164089b46da7fa18ca29e27a9c202cd92da740fc324f0c58eb0ad1e803f1"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/standing_observation_20261021_v18.json",
+      "bytes": 6653,
+      "sha256": "b0aa8e301445261b0275bb85bdc2f28eb95762780ff937c3a4126c85b75f8167"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/standing_reads_20261021_v18.json",
+      "bytes": 4350,
+      "sha256": "4479c71f38fb0c43bdaea0eee43cfc71b80d194b5bf471f51b032cd61b288fc2"
+    },
+    {
+      "path": "g1_console/assets/g1_standing_support_audit.json",
+      "bytes": 6622,
+      "sha256": "dbc1981dbdba1c86ec4aaaf470c6a3fca0405f2044c7b69939ed208e8efb71e0"
+    },
+    {
+      "path": "g1_console/assets/g1_motor_knowledge.json",
+      "bytes": 404460,
+      "sha256": "3f34c7df76ef864c1e0f8cd89a77a49dfc549b8bf63540a7077c5fd9b73c2995"
+    },
+    {
+      "path": "doc/screenshots/g1-cabinet-applicability-v18.png",
+      "bytes": 63602,
+      "sha256": "9c14133d9fe43b725875c138468ea3c7b5b7f247bcdac2e0c5d6aeaca7f5f0b8"
+    }
+  ]
+}

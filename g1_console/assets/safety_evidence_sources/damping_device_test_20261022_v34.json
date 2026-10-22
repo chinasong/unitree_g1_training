@@ -1,0 +1,266 @@
+{
+  "current": false,
+  "sent_at_utc": "2026-10-22T05:26:06.280767+00:00",
+  "motion_writes": 1,
+  "request_id": "bfabc9b4-50e3-483c-ba97-f6c78f7151cb",
+  "mapping": {
+    "method": "SetFsmId",
+    "api_id": 7101,
+    "parameter": {
+      "data": 1
+    }
+  },
+  "sdk_code": 3104,
+  "acknowledgement": "接收超时；不重发，原始凭据保持 outcome_unknown",
+  "observed_attempt": {
+    "at": 1792646766.2807672,
+    "run_id": "f2e3f22f1215",
+    "status": "outcome_unknown",
+    "target_fsm": 1,
+    "source_fsm": 0,
+    "sdk_code": 3104
+  },
+  "run_id": "f2e3f22f1215",
+  "boot_id": "aed898cb-acfd-44a2-8e9c-50f1f00269aa",
+  "summary": "一次 SetFsmId(1) 后，GetFsmId 与 HG sport 状态均从 FSM 0 变为 1；7301 未阻断本次阻尼状态切换。",
+  "dual_readback": {
+    "received_at_utc": "2026-10-22T05:26:07.033691+00:00",
+    "fsm_id": {
+      "source": "sport / 7001",
+      "type": "official JSON response",
+      "current": true,
+      "age_ms": 420,
+      "ttl_ms": 1500,
+      "raw": {
+        "data": 1
+      },
+      "code": 0,
+      "received_at": 1792646766.620478,
+      "received_monotonic": 8140.653033534,
+      "samples": 360,
+      "request_ms": 1.51,
+      "diagnostics": {
+        "total": {
+          "attempts": 360,
+          "successes": 360,
+          "timeouts": 0,
+          "errors": 0
+        },
+        "window_s": 60,
+        "attempts": 118,
+        "successes": 118,
+        "timeouts": 0,
+        "errors": 0
+      },
+      "transport": "official_getters_isolated_polled",
+      "physical_publisher_verified": false,
+      "hardware_health_verified": false,
+      "timestamp_basis": "worker_local_receive_time",
+      "sensor_timestamp": null
+    },
+    "sport": {
+      "source": "rt/lf/sportmodestate",
+      "type": "unitree_hg::msg::dds_::SportModeState_",
+      "current": true,
+      "age_ms": 156,
+      "ttl_ms": 1500,
+      "received_at": 1792646766.8855257,
+      "samples": 967,
+      "raw": {
+        "fsm_id": 1,
+        "fsm_mode": 0,
+        "task_id": 4,
+        "task_time": 0.0
+      },
+      "code": 0,
+      "physical_publisher_verified": false,
+      "hardware_health_verified": false,
+      "timestamp_basis": "local_receive_time",
+      "sensor_timestamp": null
+    }
+  },
+  "transitions": [
+    {
+      "received_at_utc": "2026-10-22T05:25:51.206038+00:00",
+      "fsm_id": 0
+    },
+    {
+      "received_at_utc": "2026-10-22T05:26:07.033691+00:00",
+      "fsm_id": 1
+    }
+  ],
+  "queries_before": [
+    {
+      "at": 1792646745.945618,
+      "operation": "get_fsm",
+      "result": {
+        "status": "accepted",
+        "data": 0,
+        "event_id": "03e4a8f13e5945659456f9415854fa28",
+        "message": "已读取官方返回值"
+      }
+    },
+    {
+      "at": 1792646746.013591,
+      "operation": "get_fsm_mode",
+      "result": {
+        "status": "accepted",
+        "data": 0,
+        "event_id": "c4b8e993acd74ed0a30c07937b64d741",
+        "message": "已读取官方返回值"
+      }
+    },
+    {
+      "at": 1792646746.128051,
+      "operation": "get_balance",
+      "result": {
+        "error": {
+          "code": "SDK_REJECTED",
+          "message": "官方服务返回 7301：LocoState 不可用；模式/高度/相位保持未知，忽略返回中的占位零值。不会自动切换模式",
+          "sdk_code": 7301
+        },
+        "request_id": "c257e4e0b8c94f0bbfd3ea1feb7d7609"
+      }
+    },
+    {
+      "at": 1792646746.238934,
+      "operation": "get_stand_height",
+      "result": {
+        "error": {
+          "code": "SDK_REJECTED",
+          "message": "官方服务返回 7301：LocoState 不可用；模式/高度/相位保持未知，忽略返回中的占位零值。不会自动切换模式",
+          "sdk_code": 7301
+        },
+        "request_id": "772f77e4475d44c58070de7b71506594"
+      }
+    }
+  ],
+  "queries_after": [
+    {
+      "at": 1792646771.819227,
+      "operation": "get_fsm",
+      "result": {
+        "status": "accepted",
+        "data": 1,
+        "event_id": "9f7e254b8e3a40d193e4306cf4f683da",
+        "message": "已读取官方返回值"
+      }
+    },
+    {
+      "at": 1792646772.0439181,
+      "operation": "get_fsm_mode",
+      "result": {
+        "status": "accepted",
+        "data": 0,
+        "event_id": "7fee23dc364340389462425aa4df8daf",
+        "message": "已读取官方返回值"
+      }
+    },
+    {
+      "at": 1792646772.177869,
+      "operation": "get_balance",
+      "result": {
+        "error": {
+          "code": "SDK_REJECTED",
+          "message": "官方服务返回 7301：LocoState 不可用；模式/高度/相位保持未知，忽略返回中的占位零值。不会自动切换模式",
+          "sdk_code": 7301
+        },
+        "request_id": "0bf2720ccd4744439789908591b4df42"
+      }
+    },
+    {
+      "at": 1792646772.322561,
+      "operation": "get_stand_height",
+      "result": {
+        "error": {
+          "code": "SDK_REJECTED",
+          "message": "官方服务返回 7301：LocoState 不可用；模式/高度/相位保持未知，忽略返回中的占位零值。不会自动切换模式",
+          "sdk_code": 7301
+        },
+        "request_id": "bd76644ad5404c4ea25d12797e3609f8"
+      }
+    }
+  ],
+  "trace": {
+    "samples": 792,
+    "http_errors": 0,
+    "duration_s": 89.96784210205078,
+    "start_utc": "2026-10-22T05:25:51.206038+00:00",
+    "end_utc": "2026-10-22T05:27:21.173880+00:00",
+    "max_abs_dq_rad_s": 1.2854759693145752,
+    "max_abs_q_delta_rad": 0.4084463119506836,
+    "max_motion_joint": "左肘关节",
+    "peaks": {
+      "dq": {
+        "value": 1.2854759693145752,
+        "received_at_utc": "2026-10-22T05:27:01.374355+00:00",
+        "joint_index": 18,
+        "joint_label": "左肘关节"
+      },
+      "q_delta": {
+        "value": 0.4084463119506836,
+        "received_at_utc": "2026-10-22T05:27:01.578652+00:00",
+        "joint_index": 18,
+        "joint_label": "左肘关节"
+      }
+    },
+    "raw_sha256": "b5af074259c4ebc04d3f50a51a1d967cb5c24fb4dc064f150c6b5fc941d437f9",
+    "compressed_path": "doc/evidence/damping_test_20261022/trace.jsonl.gz"
+  },
+  "support_verified": false,
+  "motion_authority_verified": false,
+  "device_motion_firmware": null,
+  "exact_7301_predicate": null,
+  "execution_allowed": false,
+  "files": [
+    {
+      "path": "doc/evidence/damping_test_20261022/after_camera.jpg",
+      "sha256": "77d8c9aeff1c8c4c5d2ac84737553ced8092258fe00a0871d652be32d99e73e7",
+      "bytes": 40795
+    },
+    {
+      "path": "doc/evidence/damping_test_20261022/after_camera.json",
+      "sha256": "f72a83b83021d8c85a2ef5c4e94c3739bc57d3a9f862761c31297f5cd419d503",
+      "bytes": 828
+    },
+    {
+      "path": "doc/evidence/damping_test_20261022/after_queries.json",
+      "sha256": "7c8ae63906874219d52f596f9b9e2aecc1c1c65cf00be47b920f302045804fdd",
+      "bytes": 1261
+    },
+    {
+      "path": "doc/evidence/damping_test_20261022/before_camera.jpg",
+      "sha256": "fd767bf6eed94af16fb19c5679d328d53699d0e42cc6626df8513d2c824bb56d",
+      "bytes": 40584
+    },
+    {
+      "path": "doc/evidence/damping_test_20261022/before_camera.json",
+      "sha256": "529427c8ad8f6e21aad32728d0efac1e9d16be64ff9c2eed49068db99ebff212",
+      "bytes": 826
+    },
+    {
+      "path": "doc/evidence/damping_test_20261022/before_queries.json",
+      "sha256": "b1199ac48609ac6df3fdd2fc5c41d6c6abc016c9051794b03deacee21cc33956",
+      "bytes": 1260
+    },
+    {
+      "path": "doc/evidence/damping_test_20261022/observed_attempt.json",
+      "sha256": "7c432eba2ba464063b9330019d7dbb94078fa6a6cbf2d09bc4b390bf06a2a3b4",
+      "bytes": 148
+    },
+    {
+      "path": "doc/evidence/damping_test_20261022/trace.jsonl.gz",
+      "sha256": "20809acd5901ffe46c57187b05e54be70f175831e507d930c506c48fdcc4b0d7",
+      "bytes": 649938
+    }
+  ],
+  "limits": [
+    "这是一次历史模式测试，不是起身、姿态保持或独立平衡验证。",
+    "关节最大变化出现在左肘；原因未核定，不能将整个窗口描述为无运动。",
+    "相机看不到脚底与背部接触面；双脚承重和外部支撑未知。",
+    "GetFsmMode=0 是另一字段，不与 FSM ID=1 直接比较。",
+    "SDK 3104 不等于未执行；禁止据此自动重试。",
+    "GetBalanceMode / GetStandHeight 在前后均为 7301，未使用占位值。",
+    "电机 Kp/Kd、实机标定和版本仍未取得，实际参数与防摔边界不补默认值。"
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "current": false,
+  "checked_at_utc": "2026-10-21T07:09:23.954165+00:00",
+  "completed_at_utc": "2026-10-21T07:09:44.073131+00:00",
+  "boot_id": "b33a7dc5-2617-44cd-b353-041bab1c204f",
+  "observations": {
+    "rt/multiplestate": {
+      "samples": 0,
+      "expected_type": "std_msgs::msg::dds_::String_",
+      "advertised_types": [
+        "std_msgs::msg::dds_::String_"
+      ]
+    },
+    "rt/selftest": {
+      "samples": 0,
+      "expected_type": "std_msgs::msg::dds_::String_",
+      "advertised_types": [
+        "std_msgs::msg::dds_::String_"
+      ]
+    },
+    "rt/servicestate": {
+      "samples": 0,
+      "expected_type": "std_msgs::msg::dds_::String_",
+      "advertised_types": [
+        "std_msgs::msg::dds_::String_"
+      ]
+    },
+    "rt/servicestateactivate": {
+      "samples": 0,
+      "expected_type": "std_msgs::msg::dds_::String_",
+      "advertised_types": [
+        "std_msgs::msg::dds_::String_"
+      ]
+    },
+    "rt/arm/action/state": {
+      "samples": 0,
+      "expected_type": "std_msgs::msg::dds_::String_",
+      "advertised_types": [
+        "std_msgs::msg::dds_::String_"
+      ]
+    },
+    "rt/arm_service_outbound": {
+      "samples": 0,
+      "expected_type": "std_msgs::msg::dds_::String_",
+      "advertised_types": [
+        "std_msgs::msg::dds_::String_"
+      ]
+    }
+  },
+  "rpc_calls": 0,
+  "command_writes": 0,
+  "lease_requests": 0,
+  "limitations": [
+    "bounded silence does not prove absence or inactivity",
+    "field names and raw values do not establish units, hardware source, or firmware semantics",
+    "receipt time is not sensor acquisition time"
+  ]
+}

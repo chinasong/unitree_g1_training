@@ -1,0 +1,168 @@
+{
+  "current": false,
+  "checked_at_utc": "2026-10-21T05:02:02.514041+00:00",
+  "command_writes": 0,
+  "execution_allowed": false,
+  "motor_configuration_values_obtained": 0,
+  "boot_id": "7a6791dc-f512-4b45-aca3-44fbde855e25",
+  "dds_discovery_counts": {
+    "publications": 138,
+    "subscriptions": 167
+  },
+  "discovery_seconds": 10,
+  "receive_window_seconds": 20,
+  "counts_meaning": "轮询 reader 的有效消息数量；存在抽取与队列丢弃，不是发布频率",
+  "read_only_interfaces": [
+    {
+      "topic": "rt/secondary_imu",
+      "type": "unitree_hg::msg::dds_::IMUState_",
+      "matching_type": true,
+      "samples": 384,
+      "last_received_at": 1792558834.9607427,
+      "live_console_subscription": true,
+      "physical_publisher_verified": false
+    },
+    {
+      "topic": "rt/state_estimator/odom_pelvis",
+      "type": "nav_msgs::msg::dds_::Odometry_",
+      "matching_type": true,
+      "samples": 384,
+      "last_received_at": 1792558834.9599125,
+      "live_console_subscription": true,
+      "physical_publisher_verified": false
+    },
+    {
+      "topic": "rt/state_estimator/odom_torso",
+      "type": "nav_msgs::msg::dds_::Odometry_",
+      "matching_type": true,
+      "samples": 384,
+      "last_received_at": 1792558834.9601796,
+      "live_console_subscription": true,
+      "physical_publisher_verified": false
+    },
+    {
+      "topic": "rt/state_estimator/fusion_odom",
+      "type": "nav_msgs::msg::dds_::Odometry_",
+      "matching_type": true,
+      "samples": 0,
+      "last_received_at": null,
+      "live_console_subscription": false,
+      "physical_publisher_verified": false
+    },
+    {
+      "topic": "rt/state_estimator/fusion_odom_torso",
+      "type": "nav_msgs::msg::dds_::Odometry_",
+      "matching_type": true,
+      "samples": 0,
+      "last_received_at": null,
+      "live_console_subscription": false,
+      "physical_publisher_verified": false
+    },
+    {
+      "topic": "rt/odommodestate",
+      "type": "unitree_go::msg::dds_::SportModeState_",
+      "matching_type": true,
+      "samples": 383,
+      "last_received_at": 1792558834.9604864,
+      "live_console_subscription": false,
+      "physical_publisher_verified": false
+    },
+    {
+      "topic": "rt/arm/action/state",
+      "type": "std_msgs::msg::dds_::String_",
+      "matching_type": true,
+      "samples": 0,
+      "last_received_at": null,
+      "live_console_subscription": true,
+      "physical_publisher_verified": false
+    },
+    {
+      "topic": "rt/selftest",
+      "type": "std_msgs::msg::dds_::String_",
+      "matching_type": true,
+      "samples": 0,
+      "last_received_at": null,
+      "live_console_subscription": true,
+      "physical_publisher_verified": false
+    }
+  ],
+  "official_getters": [
+    {
+      "method": "GetFsmId",
+      "api_id": 7001,
+      "code": 0,
+      "payload": {
+        "data": 0
+      },
+      "received_at": 1792558744.3000731
+    },
+    {
+      "method": "GetFsmMode",
+      "api_id": 7002,
+      "code": 0,
+      "payload": {
+        "data": 0
+      },
+      "received_at": 1792558744.300826
+    },
+    {
+      "method": "GetBalanceMode",
+      "api_id": 7003,
+      "code": 7301,
+      "payload": null,
+      "received_at": 1792558744.3014674,
+      "error_symbol": "UT_ROBOT_LOCO_ERR_LOCOSTATE_NOT_AVAILABLE"
+    },
+    {
+      "method": "GetSwingHeight",
+      "api_id": 7004,
+      "code": 7301,
+      "payload": null,
+      "received_at": 1792558744.302081,
+      "error_symbol": "UT_ROBOT_LOCO_ERR_LOCOSTATE_NOT_AVAILABLE"
+    },
+    {
+      "method": "GetStandHeight",
+      "api_id": 7005,
+      "code": 7301,
+      "payload": null,
+      "received_at": 1792558744.3027868,
+      "error_symbol": "UT_ROBOT_LOCO_ERR_LOCOSTATE_NOT_AVAILABLE"
+    },
+    {
+      "method": "CheckMode",
+      "api_id": 1001,
+      "service": "motion_switcher",
+      "code": 0,
+      "payload": {
+        "form": "0",
+        "name": "ai"
+      },
+      "received_at": 1792558745.0158062
+    }
+  ],
+  "foot_contact": null,
+  "left_load_n": null,
+  "right_load_n": null,
+  "ground_height_reference": null,
+  "whole_body_pose": "unknown",
+  "active_capability_id": null,
+  "activity_verified": false,
+  "limitations": [
+    "当前 HG LowState 和 SportModeState 定义没有足底接触/载荷字段",
+    "rt/odommodestate 实机声明 GO 类型，匹配类型后只读获取；四路 foot_force=[0,0,0,0] 的 G1 语义和有效性未核定，不映射为左右脚，不把零解释为无承重",
+    "骨盆/躯干里程计 header.frame_id=odom；原点与现场地面的关系未知，位置 z 不作为离地高度；全零协方差不证明估计无误差",
+    "躯干 IMU 与主 IMU 仅分别保存回报朝向，未校准安装外参，不融合为世界姿势",
+    "GetBalanceMode/GetSwingHeight/GetStandHeight 回码 7301（官方 LocoState not available）保持未知；未为读取而切换控制模式",
+    "GetPhase 已弃用；GetMimicMotion 复用动作 API 且有模式前提，本次不调用",
+    "没有收到 arm/action/state 或 selftest 不证明空闲、正常或无故障",
+    "未发现匹配公开协议的 G1 足底负载查询；发现范围不等于硬件不存在或协议绝对不存在"
+  ],
+  "official_error_definitions": {
+    "7301": {
+      "symbol": "UT_ROBOT_LOCO_ERR_LOCOSTATE_NOT_AVAILABLE",
+      "message": "LocoState not available.",
+      "meaning": "运动状态数据不可用；不推断原因，不补默认高度或平衡模式"
+    }
+  }
+}

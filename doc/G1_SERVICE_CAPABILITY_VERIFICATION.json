@@ -1,0 +1,170 @@
+{
+  "verified_at_utc": "2026-10-21T02:40:46.694068+00:00",
+  "release": "631a239a5e01",
+  "manifest_files": 401,
+  "foundation_id": "4e44ca55c9d241323397b838f58f23018e9b5e530306def27a2555fa0d6cca8f",
+  "schema_version": 6,
+  "read_only": true,
+  "connected": true,
+  "mode": "robot",
+  "run_id": "4086e542ed5c",
+  "joints": 23,
+  "telemetry_age_ms": 8,
+  "owner": null,
+  "navigation": "idle",
+  "command_accepted": 0,
+  "camera": {
+    "backend": "unitree",
+    "status": "retrying",
+    "error": "SDK_3102",
+    "source": null,
+    "sequence": -1,
+    "age_ms": null
+  },
+  "insight": {
+    "enabled": false,
+    "worker_online": true,
+    "model": "gpt-5.6-sol",
+    "error": null,
+    "status": "paused",
+    "report": null,
+    "report_age_s": null,
+    "current": false,
+    "completed": 0,
+    "report_ttl_s": 120
+  },
+  "new_motor_configuration_values": 0,
+  "actual_config_unknowns": 253,
+  "service_audit": {
+    "processes": 4,
+    "files": 41,
+    "inventory": 90,
+    "current": false,
+    "new_motor_configuration_values": 0
+  },
+  "capability_catalog": {
+    "methods_and_overloads": 76,
+    "source_files": 20,
+    "python_methods": 32,
+    "cpp_methods": 44,
+    "agv_methods_hardware_unconfirmed": 2,
+    "unwrapped_constants": 8,
+    "execution_allowed": false
+  },
+  "historical_getter_results": [
+    {
+      "method": "GetFsmId",
+      "api_id": 7001,
+      "code": 0
+    },
+    {
+      "method": "GetFsmMode",
+      "api_id": 7002,
+      "code": 0
+    },
+    {
+      "method": "GetBalanceMode",
+      "api_id": 7003,
+      "code": 7301
+    },
+    {
+      "method": "GetSwingHeight",
+      "api_id": 7004,
+      "code": 7301
+    },
+    {
+      "method": "GetStandHeight",
+      "api_id": 7005,
+      "code": 7301
+    },
+    {
+      "method": "GetActionList",
+      "api_id": 7107,
+      "code": 0
+    },
+    {
+      "method": "GetVolume",
+      "api_id": 1005,
+      "code": 0
+    }
+  ],
+  "runtime": {
+    "release": "631a239a5e01",
+    "manifest_files": 401,
+    "console_pid": 10531,
+    "console_cwd": "/home/unitree/workspace/g1-body-console/releases/631a239a5e01",
+    "console_cmdline": "/home/unitree/workspace/g1-body-console/.venv/bin/python -m g1_console --read-only",
+    "boot_id": "7a6791dc-f512-4b45-aca3-44fbde855e25",
+    "official_processes_unchanged": [
+      {
+        "pid": 1296,
+        "start_ticks": 2242,
+        "argv": [
+          "/unitree/module/master_service/master_service"
+        ]
+      },
+      {
+        "pid": 1298,
+        "start_ticks": 2242,
+        "argv": [
+          "/unitree/ota/pipe/ota_pipe_service"
+        ]
+      },
+      {
+        "pid": 2557,
+        "start_ticks": 2791,
+        "argv": [
+          "/unitree/module/video_hub_pc4/videohub_pc4"
+        ]
+      },
+      {
+        "pid": 2676,
+        "start_ticks": 3210,
+        "argv": [
+          "/home/unitree/megaflow_sdk/ws//bin/MegaFlowRuntimeDaemon",
+          "-c",
+          "/home/unitree/megaflow_sdk/ws//bin/config.bin",
+          "-w",
+          "/home/unitree/megaflow_sdk/ws/",
+          "-d",
+          "127.0.0.1:8899",
+          "-i",
+          "-e",
+          "/home/unitree/megaflow_sdk/ws//dep/",
+          "-l",
+          "0"
+        ]
+      }
+    ],
+    "current_run_command_accepted": 0
+  },
+  "observer_pid": 34853,
+  "checks": {
+    "pytest": "78 passed; existing Starlette/httpx warning",
+    "frontend": "npm run build passed; existing 3D chunk warning",
+    "remote_manifest": "401 files SHA256 reverified after launch",
+    "pip": "no broken requirements",
+    "remote_foundation_equals_local": true,
+    "network_configuration_changes": false,
+    "quantumult_x_touched": false,
+    "browser": "Mac live console verified: v6 service audit, 76 methods/overloads, 7 historical reads, SetVelocity search returns 2 definitions; C++ parameters/defaults/unknown ranges, readable source block, no execution entry."
+  },
+  "notes": [
+    "Official process PID, argv and start_ticks unchanged since audit; same boot ID.",
+    "Service logs and getter values are historical evidence, not permanent live state.",
+    "No motor values were inferred from opaque files, SDK defaults, project limits or example gains.",
+    "No lease requests, state writes, LowCmd, calibration, sudo, official service restarts or private RPC guessing.",
+    "Only project console and paused Mac observer restarted."
+  ],
+  "screenshots": [
+    "screenshots/g1-service-audit-20261021.jpg",
+    "screenshots/g1-capability-overview-20261021.jpg",
+    "screenshots/g1-capability-parameters-20261021.jpg"
+  ],
+  "screenshot_sha256": {
+    "screenshots/g1-service-audit-20261021.jpg": "238040644c7cd6962b63fa3e705c2210929da6dd7959f0177327fffaa942ff06",
+    "screenshots/g1-capability-overview-20261021.jpg": "7851e8262c398bf481a8f0c4a198a09ed750cc8f0f96a28aa8cfa8b9ba3f7751",
+    "screenshots/g1-capability-parameters-20261021.jpg": "854a46de9ce63a0ce7b1ed2b6bbb38d5bbb1d4120be7245fe2cc1c3e0ef29feb"
+  },
+  "browser_verified_at_utc": "2026-10-21T02:41:55.189602+00:00"
+}

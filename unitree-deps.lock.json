@@ -1,0 +1,16 @@
+{
+  "checked_on": "2026-10-20",
+  "timezone": "Asia/Shanghai",
+  "dependencies": {
+    "unitree_sdk2_python": {
+      "url": "https://github.com/unitreerobotics/unitree_sdk2_python.git",
+      "branch": "master",
+      "commit": "814556d15970dd2ecf1c9984e845ca02ab07e206"
+    },
+    "unitree_rl_gym": {
+      "url": "https://github.com/unitreerobotics/unitree_rl_gym.git",
+      "branch": "main",
+      "commit": "276801e46c5d433564f24658bac64f254b7d2d4b"
+    }
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "schema_version": 1,
+  "current": false,
+  "execution_allowed": false,
+  "boot_id": "aed898cb-acfd-44a2-8e9c-50f1f00269aa",
+  "release": "57ec2fb35096",
+  "run_id": "3ea9bcdeed01",
+  "topic": "rt/servicestate",
+  "received_at_utc": "2026-10-22T04:25:35.964949+00:00",
+  "timestamp_basis": "local_receive_time",
+  "frames": 1,
+  "raw_frame_sha256": "c31dde1408172e046585859481d0ff67c2a874bacbb461f2c7ebbd813245b4c6",
+  "raw_frame_retained": false,
+  "extraction": "strict JSON explicit name/version object fields; original JSON field path retained",
+  "rows": [
+    {
+      "name": "ai_sport",
+      "version": "8.7.5.212",
+      "path": "$[0]",
+      "binding": "object_fields"
+    },
+    {
+      "name": "bashrunner",
+      "version": "1.1.1.2",
+      "path": "$[4]",
+      "binding": "object_fields"
+    },
+    {
+      "name": "basic_service",
+      "version": "3.0.0.18",
+      "path": "$[5]",
+      "binding": "object_fields"
+    },
+    {
+      "name": "battery_guard",
+      "version": "1.0.0.9",
+      "path": "$[6]",
+      "binding": "object_fields"
+    },
+    {
+      "name": "chat_go",
+      "version": "1.9.5.26",
+      "path": "$[7]",
+      "binding": "object_fields"
+    },
+    {
+      "name": "emergency_stop",
+      "version": "1.0.0.4",
+      "path": "$[10]",
+      "binding": "object_fields"
+    },
+    {
+      "name": "g1_arm_example",
+      "version": "2.0.2.5",
+      "path": "$[11]",
+      "binding": "object_fields"
+    },
+    {
+      "name": "lidar_driver",
+      "version": "1.0.0.12",
+      "path": "$[12]",
+      "binding": "object_fields"
+    },
+    {
+      "name": "log_system",
+      "version": "2.0.0.11",
+      "path": "$[13]",
+      "binding": "object_fields"
+    },
+    {
+      "name": "motion_switcher",
+      "version": "1.0.0.1",
+      "path": "$[14]",
+      "binding": "object_fields"
+    },
+    {
+      "name": "net_switcher",
+      "version": "1.0.2.1",
+      "path": "$[15]",
+      "binding": "object_fields"
+    },
+    {
+      "name": "robot_state",
+      "version": "3.0.0.8",
+      "path": "$[18]",
+      "binding": "object_fields"
+    },
+    {
+      "name": "robot_type_service",
+      "version": "1.0.2.4",
+      "path": "$[19]",
+      "binding": "object_fields"
+    },
+    {
+      "name": "state_estimator",
+      "version": "2.0.0.25",
+      "path": "$[20]",
+      "binding": "object_fields"
+    },
+    {
+      "name": "unistore",
+      "version": "1.0.1.20",
+      "path": "$[21]",
+      "binding": "object_fields"
+    },
+    {
+      "name": "unitree_slam",
+      "version": "1.0.2.9",
+      "path": "$[22]",
+      "binding": "object_fields"
+    },
+    {
+      "name": "video_hub_pc4",
+      "version": "1.0.1.1",
+      "path": "$[23]",
+      "binding": "object_fields"
+    },
+    {
+      "name": "vui_service",
+      "version": "2.1.0.47",
+      "path": "$[24]",
+      "binding": "object_fields"
+    },
+    {
+      "name": "webrtc_bridge",
+      "version": "1.1.2.2",
+      "path": "$[25]",
+      "binding": "object_fields"
+    }
+  ],
+  "physical_publisher_verified": false,
+  "running_build_verified": false,
+  "device_motion_firmware": null,
+  "exact_7301_predicate": null,
+  "motion_writes": 0,
+  "lease_requests": 0,
+  "manual_branch_candidate": "23_gt_8_6",
+  "manual_branch_selected": null,
+  "conclusion": "本次实际收到的服务公告明确绑定 ai_sport=8.7.5.212。它大于8.6.0.0，可作为23自由度新版手册候选；未核验公告与正在应答的 humanoid 可执行文件、当前运行构建及标定的对应关系，不能填作已核定运动固件或解锁动作。",
+  "limitations": [
+    "接收时间不是安装时间，也不是传感器时间。",
+    "先前120秒窗口为0帧，本条来自其后的控制台持续监听，不改写先前采样结果。",
+    "控制台未保存该帧的 publication_handle；先前发现的 robot_state_service 发布者不能自动归属于该帧。",
+    "原始载荷不落盘，只存严格提取的名称、版本、路径及载荷SHA256；不能从此证据重建完整载荷。"
+  ]
+}

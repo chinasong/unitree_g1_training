@@ -1,0 +1,146 @@
+{
+  "checked_at_utc": "2026-10-21T06:53:32.813060+00:00",
+  "boot_id": "b33a7dc5-2617-44cd-b353-041bab1c204f",
+  "command_writes": 0,
+  "rpc_calls": 0,
+  "lease_requests": 0,
+  "vendor_program_executions": 0,
+  "metadata": [
+    {
+      "path": "/unitree/robot/pkg/version/version.json",
+      "exists": true,
+      "bytes": 160,
+      "sha256": "b5d64c6e23e1a701172010a90ee8b17c83107c6560e9abb459db246b5f85842c",
+      "version_declarations": {
+        "Module": {
+          "master_service_pc4": "1.0.0.2",
+          "unitree_patch_pc4": "1.0.0.6",
+          "video_hub_pc4": "1.0.1.1"
+        },
+        "Package": ""
+      }
+    },
+    {
+      "path": "/unitree/robot/pkg/module/master_service_pc4/module.json",
+      "exists": true,
+      "bytes": 2194,
+      "sha256": "ecfa15fd170078b6bf89cc02f2becf4672b8c6f3566607bdfbe2717424857771",
+      "version_declarations": {
+        "Name": "master_service_pc4",
+        "Version": "1.0.0.2",
+        "Commit": "dc964a3354534a80881d92daaf18d421fafc7916",
+        "Time": "2025-02-28 10:35:54",
+        "Type": "NORMAL"
+      }
+    },
+    {
+      "path": "/unitree/robot/pkg/module/video_hub_pc4/module.json",
+      "exists": true,
+      "bytes": 1913,
+      "sha256": "e59171ecf2b3a3ce4101cc934fbe7ee775583874a2938cdbd38b32e304f35844",
+      "version_declarations": {
+        "Name": "video_hub_pc4",
+        "Version": "1.0.1.1",
+        "Commit": "99fbcc2c6ffe93754701d45074493e216929f18f",
+        "Time": "2025-03-28 10:52:48",
+        "Type": "NORMAL"
+      }
+    },
+    {
+      "path": "/unitree/robot/pkg/module/unitree_patch_pc4/module.json",
+      "exists": true,
+      "bytes": 2880,
+      "sha256": "df22b0309ebae1b78380473a297eca6d21fd1311d725a1a1c529e7d5df0572a0",
+      "version_declarations": {
+        "Name": "unitree_patch_pc4",
+        "Version": "1.0.0.6",
+        "Commit": "81529bedcf0a4ada51747bca72b246a4f533e774",
+        "Time": "2026-04-04 22:43:53",
+        "Type": "VIRTUAL"
+      }
+    }
+  ],
+  "runtime_files": [
+    {
+      "path": "/unitree/module/master_service/master_service",
+      "exists": true,
+      "bytes": 9083232,
+      "sha256": "380e34de9c2def2692c0bf1b73e969d3167c8270f2ed5f974bb01abd4e96f24e"
+    },
+    {
+      "path": "/unitree/module/master_service/master_service.json",
+      "exists": true,
+      "bytes": 468,
+      "sha256": "31eae39936576504c40be767bd93cd34b7489154eca989e5e5c2781b05e3d977"
+    },
+    {
+      "path": "/unitree/ota/pipe/ota_pipe_service",
+      "exists": true,
+      "bytes": 9213664,
+      "sha256": "fcca57b1f2c67af0123235cbbdd17f8f5a444a64d105a928b683cd5074be60e7"
+    }
+  ],
+  "official_processes": [
+    {
+      "pid": 1170,
+      "start_ticks": 2054,
+      "argv": [
+        "/unitree/ota/pipe/ota_pipe_service"
+      ]
+    },
+    {
+      "pid": 1174,
+      "start_ticks": 2055,
+      "argv": [
+        "/unitree/module/master_service/master_service"
+      ]
+    },
+    {
+      "pid": 2074,
+      "start_ticks": 2356,
+      "argv": [
+        "/unitree/module/video_hub_pc4/videohub_pc4"
+      ]
+    },
+    {
+      "pid": 2749,
+      "start_ticks": 3024,
+      "argv": [
+        "/home/unitree/megaflow_sdk/ws//bin/MegaFlowRuntimeDaemon",
+        "-c",
+        "/home/unitree/megaflow_sdk/ws//bin/config.bin",
+        "-w",
+        "/home/unitree/megaflow_sdk/ws/",
+        "-d",
+        "127.0.0.1:8899",
+        "-i",
+        "-e",
+        "/home/unitree/megaflow_sdk/ws//dep/",
+        "-l",
+        "0"
+      ]
+    }
+  ],
+  "version_log_candidates": [
+    {
+      "path": "/unitree/robot/pkg/version/version.json",
+      "bytes": 160,
+      "sha256": "b5d64c6e23e1a701172010a90ee8b17c83107c6560e9abb459db246b5f85842c",
+      "version_lines": []
+    },
+    {
+      "path": "/unitree/ota/pipe/version",
+      "bytes": 8,
+      "sha256": "991f147b5d33ae8777d5fb7c53b251aa3d66145cbc6e4a57bd210e3185b8f9a2",
+      "version_lines": []
+    }
+  ],
+  "errors": [],
+  "scan": {
+    "max_depth": 5,
+    "max_files": 1600,
+    "max_text_bytes": 1048576,
+    "files_seen": 18
+  },
+  "completed_at_utc": "2026-10-21T06:53:32.868196+00:00"
+}

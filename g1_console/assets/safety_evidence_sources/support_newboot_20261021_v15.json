@@ -1,0 +1,159 @@
+{
+  "current": false,
+  "completed_at_utc": "2026-10-21T06:12:45.419462+00:00",
+  "boot_id": "b33a7dc5-2617-44cd-b353-041bab1c204f",
+  "duration_s": 20.37,
+  "discovery_seconds": 10,
+  "sample_seconds": 10,
+  "total_publications": 136,
+  "relevant_publications": [
+    {
+      "topic": "rt/lf/lowstate",
+      "type": "unitree_hg::msg::dds_::LowState_"
+    },
+    {
+      "topic": "rt/lf/sportmodestate",
+      "type": "unitree_hg::msg::dds_::SportModeState_"
+    },
+    {
+      "topic": "rt/lowstate",
+      "type": "unitree_hg::msg::dds_::LowState_"
+    },
+    {
+      "topic": "rt/lowstate",
+      "type": "unitree_hg::msg::dds_::LowState_"
+    },
+    {
+      "topic": "rt/lowstate",
+      "type": "unitree_hg::msg::dds_::LowState_"
+    },
+    {
+      "topic": "rt/odommodestate",
+      "type": "unitree_go::msg::dds_::SportModeState_"
+    },
+    {
+      "topic": "rt/sportmodestate",
+      "type": "unitree_hg::msg::dds_::SportModeState_"
+    },
+    {
+      "topic": "rt/state_estimator/fusion_odom",
+      "type": "nav_msgs::msg::dds_::Odometry_"
+    },
+    {
+      "topic": "rt/state_estimator/fusion_odom_torso",
+      "type": "nav_msgs::msg::dds_::Odometry_"
+    },
+    {
+      "topic": "rt/state_estimator/odom_pelvis",
+      "type": "nav_msgs::msg::dds_::Odometry_"
+    },
+    {
+      "topic": "rt/state_estimator/odom_torso",
+      "type": "nav_msgs::msg::dds_::Odometry_"
+    }
+  ],
+  "observations": {
+    "rt/odommodestate": {
+      "type": "unitree_go::msg::dds_::SportModeState_",
+      "advertised": [
+        {
+          "topic": "rt/odommodestate",
+          "type": "unitree_go::msg::dds_::SportModeState_"
+        }
+      ],
+      "samples": 197,
+      "last": {
+        "foot_force": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "foot_position_body": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "foot_speed_body": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "body_height": 0.23399893939495087
+      },
+      "physical_source_verified": false,
+      "received_at": 1792563165.1569116
+    },
+    "rt/lf/sportmodestate": {
+      "type": "unitree_hg::msg::dds_::SportModeState_",
+      "advertised": [
+        {
+          "topic": "rt/lf/sportmodestate",
+          "type": "unitree_hg::msg::dds_::SportModeState_"
+        }
+      ],
+      "samples": 150,
+      "last": {
+        "fsm_id": 0,
+        "fsm_mode": 0,
+        "task_id": 4,
+        "task_time": 0.0
+      },
+      "physical_source_verified": false,
+      "received_at": 1792563165.1569808
+    }
+  },
+  "getters": [
+    {
+      "api_id": 7003,
+      "method": "GetBalanceMode",
+      "parameter": "",
+      "code": 7301,
+      "raw": null,
+      "received_at": 1792563165.4167519
+    },
+    {
+      "api_id": 7004,
+      "method": "GetSwingHeight",
+      "parameter": "",
+      "code": 7301,
+      "raw": null,
+      "received_at": 1792563165.417407
+    },
+    {
+      "api_id": 7005,
+      "method": "GetStandHeight",
+      "parameter": "",
+      "code": 7301,
+      "raw": null,
+      "received_at": 1792563165.4181986
+    }
+  ],
+  "rpc_calls": 3,
+  "command_writes": 0,
+  "lease_requests": 0,
+  "motor_configuration_values_obtained": 0,
+  "limitations": [
+    "bounded discovery does not prove a sensor/interface is absent",
+    "GO four-foot arrays are not verified G1 left/right contact or load",
+    "getter errors are not numeric defaults and do not authorize changing state"
+  ]
+}

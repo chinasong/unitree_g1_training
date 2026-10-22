@@ -1,0 +1,277 @@
+{
+  "checked_at_asia_shanghai": "2026-10-22T11:33:18.419270+08:00",
+  "status": "fault_layer_confirmed_specific_trigger_unknown_no_system_change",
+  "target": {
+    "host": "<ORIN_IP>",
+    "platform": "NVIDIA Orin NX",
+    "wlan_mac": "78:22:88:af:97:a5",
+    "ssh_host_key": "<ORIN_HOST_FINGERPRINT>",
+    "app_board_host_is_not_orin": "<APP_REPORTED_IP>"
+  },
+  "driver": {
+    "module": "8852bu",
+    "version": "v1.19.3-45-g7583a804a.20230505",
+    "kernel": "5.10.104-tegra",
+    "srcversion": "009E6B402FB55C9985B0A64",
+    "module_path": "/lib/modules/5.10.104-tegra/updates/dkms/8852bu.ko",
+    "module_sha256": "4a5c04932df776166e9af87bf0528c1b858a74f134824a2566b0a6946f918f47",
+    "dkms_module_hash_matches": true,
+    "source_root": "/usr/src/rtl8852bu-1.19.3",
+    "source_version_matches": true,
+    "reproducible_build_verified": false,
+    "usb_id": "0bda:a85b",
+    "usb_speed_mbps": 480,
+    "runtime_fw_ofld_cap": 1
+  },
+  "source_evidence": [
+    {
+      "path": "/usr/src/rtl8852bu-1.19.3/phl/hal_g6/phy/bb/halbb_fwofld.c",
+      "lines": [
+        147,
+        166
+      ],
+      "sha256": "805888458312352bde4e97a20389c959919af246be8aa1bdb0ec463524ae5fb2"
+    },
+    {
+      "path": "/usr/src/rtl8852bu-1.19.3/phl/hal_g6/hal_api_mac.c",
+      "lines": [
+        10709,
+        10727
+      ],
+      "sha256": "ba4a3594f84797bbb9eff829079162015275dcb308844ee1ec1802e715525658"
+    },
+    {
+      "path": "/usr/src/rtl8852bu-1.19.3/phl/hal_g6/hal_def.h",
+      "lines": [
+        72,
+        89
+      ],
+      "sha256": "c85326d22ce9dd9b135ba6bcc00dbd0fadd114412fcbb9c890888f91108a4769"
+    },
+    {
+      "path": "/usr/src/rtl8852bu-1.19.3/phl/hal_g6/mac/mac_ax/fwofld.c",
+      "lines": [
+        1910,
+        1952
+      ],
+      "sha256": "f109407d6a2539acfce9979ab1f72c27ffe6015c82247280676a2ba062fe7f64"
+    },
+    {
+      "path": "/usr/src/rtl8852bu-1.19.3/phl/hal_g6/phy/bb/halbb_pwr_ctrl.c",
+      "lines": [
+        200,
+        251
+      ],
+      "sha256": "e63e8fa16448d0e192a123dc48fb676671496bca7df695dfa21f39e2c8019358"
+    }
+  ],
+  "error_interpretation": {
+    "io_offload_fail_1": "RTW_HAL_STATUS_FAILURE generic wrapper result; underlying MAC error not preserved in this message; not Linux errno EIO",
+    "power_control": "TX power control register operation (RTL8852B 0xd20c BIT29); does not establish Wi-Fi powersave or LPS as cause",
+    "possible_mac_failure_branches": [
+      "unaligned command offset",
+      "firmware state not INIT_RDY",
+      "command offload state not IDLE",
+      "incompatible/full command handling",
+      "command allocation or encoding",
+      "command send or completion failure"
+    ],
+    "branch_observed_on_robot": null,
+    "original_mac_status": null,
+    "debug_makefile_value": "CONFIG_RTW_DEBUG=n",
+    "exact_compile_commands_available": false
+  },
+  "log_scope": {
+    "path": "/var/log/kern.log",
+    "read_tail_bytes": 33554432,
+    "nul_bytes_removed": true,
+    "boot_delimiter": "Booting Linux on physical CPU",
+    "scope": "previous complete marked boot and current marked boot in readable tail",
+    "patterns": {
+      "bb_offload": "\\[BB\\].*IO offload fail",
+      "rf_all_warning": "\\[WARNING\\]\\[RF\\]",
+      "rf_wrf": "halrf_wrf return fail",
+      "power_control": "Error Enable Power Control",
+      "h2c_all": "Error H2C CLASS=",
+      "usb_fault": "usb.*(disconnect|reset .*USB|device descriptor.*error|over-current)"
+    },
+    "specific_patterns": {
+      "mac_api_original_status": "rtw_hal_mac_add_cmd_ofld\\(\\): fault",
+      "mac_offload_busy": "mac_add_cmd_ofld: IO offload is busy"
+    },
+    "count_unit": "matching lines; categories overlap; RF includes all RF warnings; H2C includes BB and RF",
+    "count_revision": "recount with explicit complete segment patterns supersedes earlier narrower category totals; not new current-boot failures"
+  },
+  "counts": {
+    "previous": {
+      "line_count": 191376,
+      "matches": {
+        "bb_offload": {
+          "count": 148445,
+          "first_kernel_monotonic_seconds": 179.250483
+        },
+        "rf_all_warning": {
+          "count": 38787,
+          "first_kernel_monotonic_seconds": 1692.045962
+        },
+        "rf_wrf": {
+          "count": 8480,
+          "first_kernel_monotonic_seconds": 1692.045962
+        },
+        "power_control": {
+          "count": 1243,
+          "first_kernel_monotonic_seconds": 475.060759
+        },
+        "h2c_all": {
+          "count": 1189,
+          "first_kernel_monotonic_seconds": 333.566486
+        },
+        "usb_fault": {
+          "count": 0,
+          "first_kernel_monotonic_seconds": null
+        }
+      },
+      "original_mac_status_log_matches": 0,
+      "offload_busy_log_matches": 0
+    },
+    "current": {
+      "line_count": 1320,
+      "matches": {
+        "bb_offload": {
+          "count": 0,
+          "first_kernel_monotonic_seconds": null
+        },
+        "rf_all_warning": {
+          "count": 0,
+          "first_kernel_monotonic_seconds": null
+        },
+        "rf_wrf": {
+          "count": 0,
+          "first_kernel_monotonic_seconds": null
+        },
+        "power_control": {
+          "count": 0,
+          "first_kernel_monotonic_seconds": null
+        },
+        "h2c_all": {
+          "count": 0,
+          "first_kernel_monotonic_seconds": null
+        },
+        "usb_fault": {
+          "count": 0,
+          "first_kernel_monotonic_seconds": null
+        }
+      },
+      "original_mac_status_log_matches": 0,
+      "offload_busy_log_matches": 0
+    }
+  },
+  "timeline_asia_shanghai": [
+    {
+      "time": "2026-10-22T10:10:57+08:00",
+      "event": "previous boot automatic Wi-Fi activation / DHCP .28"
+    },
+    {
+      "time": "2026-10-22T10:13:25+08:00",
+      "monotonic_seconds": 179.250483,
+      "event": "first BB offload failure"
+    },
+    {
+      "time": "2026-10-22T10:15:59+08:00",
+      "monotonic_seconds": 333.566486,
+      "event": "first H2C CLASS=1 ID=0 failure"
+    },
+    {
+      "time": "2026-10-22T10:18:20+08:00",
+      "monotonic_seconds": 475.060759,
+      "event": "first TX power-control failure"
+    },
+    {
+      "time": "2026-10-22T10:38:37+08:00",
+      "event": "locally generated disconnect reason=1; RF register failures start"
+    },
+    {
+      "time": "2026-10-22T10:38:53+08:00",
+      "event": "supplicant-timeout; subsequent 8 association rejects status=1 across 2 APs on 5180MHz"
+    },
+    {
+      "time": "2026-10-22T10:40:10+08:00",
+      "event": "failed no-secrets; saved credentials had been reported present; not proof of password loss"
+    }
+  ],
+  "current_health": {
+    "boot_id": "aed898cb-acfd-44a2-8e9c-50f1f00269aa",
+    "uptime_seconds": 1372.45,
+    "ssh": {
+      "rc": 0,
+      "stdout": "active",
+      "stderr": ""
+    },
+    "powersave": {
+      "rc": 0,
+      "stdout": "Power save: on",
+      "stderr": ""
+    },
+    "profile": {
+      "rc": 0,
+      "stdout": "default",
+      "stderr": ""
+    },
+    "address": {
+      "rc": 0,
+      "stdout": "wlan0            UP             <ORIN_IP>/24",
+      "stderr": ""
+    }
+  },
+  "official_sources": [
+    {
+      "url": "https://serviceconsole.unitree.com/index.html#/help/031312",
+      "title": "G1 pc2的WiFi网卡不见了怎么办？",
+      "page_updated": "2026-04-03 14:40:05",
+      "verified_at_date": "2026-10-22",
+      "access": "rendered browser page",
+      "scope": "missing NIC / USB / driver checks; does not prove this runtime failure is fixed by reinstall"
+    },
+    {
+      "url": "https://github.com/morrownr/rtl8852bu-20250826",
+      "title": "Driver linked by current Unitree troubleshooting page",
+      "version_observed": "v1.19.21-86",
+      "installed_or_loaded": false
+    }
+  ],
+  "unknowns": [
+    "exact first MAC failure branch and original status",
+    "AP-side association rejection reason",
+    "causal role of powersave, firmware, AP interoperability, power or hardware",
+    "long-term stability and two consecutive reboot acceptance"
+  ],
+  "boundaries": {
+    "system_configuration_changed": false,
+    "sudo_used": false,
+    "driver_updated": false,
+    "wifi_reconnected": false,
+    "official_services_restarted": false,
+    "robot_actions_sent": false,
+    "quantumult_x_touched": false,
+    "powersave_experiment": "user declined; not authorized or executed"
+  },
+  "evidence_files_private": [
+    {
+      "path": ".g1-deploy/research/reboot-network-20261022/driver-detail.private.json",
+      "sha256": "70fb14703e206f6ab8249e2d7a3a8946fe00d1d7061214d360a15390001feff2"
+    },
+    {
+      "path": ".g1-deploy/research/reboot-network-20261022/driver-final-source.private.json",
+      "sha256": "9ecb6667653c77f37112428e5c5b723ee9ffd0e67e0d845b99a3ddae07f88895"
+    },
+    {
+      "path": ".g1-deploy/research/reboot-network-20261022/exact-log-counts.private.json",
+      "sha256": "0695d4ba072c3b1db530c62e800b290343fff6d5e2eab80684581fa1ff096fd3"
+    },
+    {
+      "path": ".g1-deploy/research/reboot-network-20261022/final-source-health.private.json",
+      "sha256": "a586f189e7e80caf3ef5e42ae73db93a7384eedbc0e488bf84e6d6b02996317d"
+    }
+  ],
+  "report": "G1_WIFI_DRIVER_READONLY_DIAGNOSIS_20261022.md"
+}

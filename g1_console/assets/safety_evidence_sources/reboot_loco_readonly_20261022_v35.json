@@ -1,0 +1,1090 @@
+{
+  "current": false,
+  "checked_at_utc": "2026-10-22T06:51:18.617012+00:00",
+  "completed_at_utc": "2026-10-22T06:51:31.986737+00:00",
+  "release": "283d76e5ace6",
+  "boot_id": "8ca5b3b6-2040-4dc9-a45c-2112f529fdf1",
+  "before": {
+    "fsm": 0,
+    "control_owner": null,
+    "armed": false
+  },
+  "after": {
+    "fsm": 0,
+    "control_owner": null,
+    "armed": false
+  },
+  "official_processes_before": [
+    {
+      "pid": 1413,
+      "start_ticks": 2031,
+      "exe": "/unitree/module/master_service/master_service"
+    },
+    {
+      "pid": 1415,
+      "start_ticks": 2031,
+      "exe": "/unitree/ota/pipe/ota_pipe_service"
+    },
+    {
+      "pid": 2641,
+      "start_ticks": 2723,
+      "exe": "/unitree/module/video_hub_pc4/videohub_pc4"
+    },
+    {
+      "pid": 2777,
+      "start_ticks": 2994,
+      "exe": "/home/unitree/megaflow_sdk/ws//bin/MegaFlowRuntimeDaemon"
+    }
+  ],
+  "official_processes_after": [
+    {
+      "pid": 1413,
+      "start_ticks": 2031,
+      "exe": "/unitree/module/master_service/master_service"
+    },
+    {
+      "pid": 1415,
+      "start_ticks": 2031,
+      "exe": "/unitree/ota/pipe/ota_pipe_service"
+    },
+    {
+      "pid": 2641,
+      "start_ticks": 2723,
+      "exe": "/unitree/module/video_hub_pc4/videohub_pc4"
+    },
+    {
+      "pid": 2777,
+      "start_ticks": 2994,
+      "exe": "/home/unitree/megaflow_sdk/ws//bin/MegaFlowRuntimeDaemon"
+    }
+  ],
+  "official_processes_unchanged": true,
+  "reads": [
+    {
+      "trial": 0,
+      "service": "sport",
+      "api_id": 1,
+      "request_id": 1214685728688,
+      "code": 0,
+      "raw": "1.0.0.0",
+      "elapsed_ms": 1.15
+    },
+    {
+      "trial": 0,
+      "service": "motion_switcher",
+      "api_id": 1,
+      "request_id": 1214738576121,
+      "code": 0,
+      "raw": "1.0.0.1",
+      "elapsed_ms": 1.43
+    },
+    {
+      "trial": 0,
+      "service": "robot_state",
+      "api_id": 1,
+      "request_id": 1214780924969,
+      "code": 0,
+      "raw": "1.0.0.2",
+      "elapsed_ms": 1.19
+    },
+    {
+      "trial": 0,
+      "service": "sport",
+      "api_id": 7001,
+      "request_id": 1214824452771,
+      "code": 0,
+      "raw": "{\"data\":0}",
+      "elapsed_ms": 1.69
+    },
+    {
+      "trial": 0,
+      "service": "sport",
+      "api_id": 7002,
+      "request_id": 1214871123598,
+      "code": 0,
+      "raw": "{\"data\":0}",
+      "elapsed_ms": 1.41
+    },
+    {
+      "trial": 0,
+      "service": "sport",
+      "api_id": 7003,
+      "request_id": 1214912787686,
+      "code": 7301,
+      "raw": null,
+      "elapsed_ms": 6.38
+    },
+    {
+      "trial": 0,
+      "service": "sport",
+      "api_id": 7004,
+      "request_id": 1214972189530,
+      "code": 7301,
+      "raw": null,
+      "elapsed_ms": 1.03
+    },
+    {
+      "trial": 0,
+      "service": "sport",
+      "api_id": 7005,
+      "request_id": 1215015476875,
+      "code": 7301,
+      "raw": null,
+      "elapsed_ms": 0.91
+    },
+    {
+      "trial": 0,
+      "service": "sport",
+      "api_id": 7006,
+      "request_id": 1215056642001,
+      "code": 7301,
+      "raw": null,
+      "elapsed_ms": 0.85
+    },
+    {
+      "trial": 0,
+      "service": "motion_switcher",
+      "api_id": 1001,
+      "request_id": 1215109527675,
+      "code": 0,
+      "raw": "{\"form\":\"0\",\"name\":\"ai\"}",
+      "elapsed_ms": 12.13
+    },
+    {
+      "trial": 0,
+      "service": "robot_state",
+      "api_id": 1006,
+      "request_id": 1215171568814,
+      "code": 3203,
+      "raw": null,
+      "elapsed_ms": 0.81
+    },
+    {
+      "trial": 1,
+      "service": "sport",
+      "api_id": 1,
+      "request_id": 1215219612042,
+      "code": 0,
+      "raw": "1.0.0.0",
+      "elapsed_ms": 0.77
+    },
+    {
+      "trial": 1,
+      "service": "motion_switcher",
+      "api_id": 1,
+      "request_id": 1215266407834,
+      "code": 0,
+      "raw": "1.0.0.1",
+      "elapsed_ms": 1.2
+    },
+    {
+      "trial": 1,
+      "service": "robot_state",
+      "api_id": 1,
+      "request_id": 1215313734812,
+      "code": 0,
+      "raw": "1.0.0.2",
+      "elapsed_ms": 5.46
+    },
+    {
+      "trial": 1,
+      "service": "sport",
+      "api_id": 7001,
+      "request_id": 1215371694077,
+      "code": 0,
+      "raw": "{\"data\":0}",
+      "elapsed_ms": 1.19
+    },
+    {
+      "trial": 1,
+      "service": "sport",
+      "api_id": 7002,
+      "request_id": 1215413847910,
+      "code": 0,
+      "raw": "{\"data\":0}",
+      "elapsed_ms": 1.03
+    },
+    {
+      "trial": 1,
+      "service": "sport",
+      "api_id": 7003,
+      "request_id": 1215461681563,
+      "code": 7301,
+      "raw": null,
+      "elapsed_ms": 1.41
+    },
+    {
+      "trial": 1,
+      "service": "sport",
+      "api_id": 7004,
+      "request_id": 1215508572046,
+      "code": 7301,
+      "raw": null,
+      "elapsed_ms": 1.02
+    },
+    {
+      "trial": 1,
+      "service": "sport",
+      "api_id": 7005,
+      "request_id": 1215552689533,
+      "code": 7301,
+      "raw": null,
+      "elapsed_ms": 1.89
+    },
+    {
+      "trial": 1,
+      "service": "sport",
+      "api_id": 7006,
+      "request_id": 1215600507121,
+      "code": 7301,
+      "raw": null,
+      "elapsed_ms": 1.63
+    },
+    {
+      "trial": 1,
+      "service": "motion_switcher",
+      "api_id": 1001,
+      "request_id": 1215650884577,
+      "code": 0,
+      "raw": "{\"form\":\"0\",\"name\":\"ai\"}",
+      "elapsed_ms": 13.95
+    },
+    {
+      "trial": 1,
+      "service": "robot_state",
+      "api_id": 1006,
+      "request_id": 1215710120943,
+      "code": 3203,
+      "raw": null,
+      "elapsed_ms": 1.41
+    },
+    {
+      "trial": 2,
+      "service": "sport",
+      "api_id": 1,
+      "request_id": 1215757526741,
+      "code": 0,
+      "raw": "1.0.0.0",
+      "elapsed_ms": 0.86
+    },
+    {
+      "trial": 2,
+      "service": "motion_switcher",
+      "api_id": 1,
+      "request_id": 1215798056292,
+      "code": 0,
+      "raw": "1.0.0.1",
+      "elapsed_ms": 0.95
+    },
+    {
+      "trial": 2,
+      "service": "robot_state",
+      "api_id": 1,
+      "request_id": 1215837811639,
+      "code": 0,
+      "raw": "1.0.0.2",
+      "elapsed_ms": 0.8
+    },
+    {
+      "trial": 2,
+      "service": "sport",
+      "api_id": 7001,
+      "request_id": 1215880019457,
+      "code": 0,
+      "raw": "{\"data\":0}",
+      "elapsed_ms": 0.91
+    },
+    {
+      "trial": 2,
+      "service": "sport",
+      "api_id": 7002,
+      "request_id": 1215915263122,
+      "code": 0,
+      "raw": "{\"data\":0}",
+      "elapsed_ms": 3.69
+    },
+    {
+      "trial": 2,
+      "service": "sport",
+      "api_id": 7003,
+      "request_id": 1215962733178,
+      "code": 7301,
+      "raw": null,
+      "elapsed_ms": 0.82
+    },
+    {
+      "trial": 2,
+      "service": "sport",
+      "api_id": 7004,
+      "request_id": 1216004126856,
+      "code": 7301,
+      "raw": null,
+      "elapsed_ms": 1.1
+    },
+    {
+      "trial": 2,
+      "service": "sport",
+      "api_id": 7005,
+      "request_id": 1216046130956,
+      "code": 7301,
+      "raw": null,
+      "elapsed_ms": 1.06
+    },
+    {
+      "trial": 2,
+      "service": "sport",
+      "api_id": 7006,
+      "request_id": 1216087189325,
+      "code": 7301,
+      "raw": null,
+      "elapsed_ms": 0.91
+    },
+    {
+      "trial": 2,
+      "service": "motion_switcher",
+      "api_id": 1001,
+      "request_id": 1216127590647,
+      "code": 0,
+      "raw": "{\"form\":\"0\",\"name\":\"ai\"}",
+      "elapsed_ms": 33.97
+    },
+    {
+      "trial": 2,
+      "service": "robot_state",
+      "api_id": 1006,
+      "request_id": 1216202853829,
+      "code": 3203,
+      "raw": null,
+      "elapsed_ms": 0.82
+    }
+  ],
+  "publications": [
+    {
+      "topic": "rt/api/action_store/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "01108224-ecb1-0921-4955-b206000001c1"
+    },
+    {
+      "topic": "rt/api/action_store/response",
+      "type": "unitree_api::msg::dds_::Response_",
+      "participant_key": "0110e284-e833-c930-992a-31d8000001c1"
+    },
+    {
+      "topic": "rt/api/arm/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "0110a10b-d8b7-491d-03c2-eac6000001c1"
+    },
+    {
+      "topic": "rt/api/arm/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "01108224-ecb1-0921-4955-b206000001c1"
+    },
+    {
+      "topic": "rt/api/arm/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "0110c38c-f9e7-d049-a5c5-386d000001c1"
+    },
+    {
+      "topic": "rt/api/arm/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "01102b16-c639-dea3-a860-abb0000001c1"
+    },
+    {
+      "topic": "rt/api/arm/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "0110d78c-b33f-b558-8de8-f8b4000001c1"
+    },
+    {
+      "topic": "rt/api/arm/response",
+      "type": "unitree_api::msg::dds_::Response_",
+      "participant_key": "011063e3-7bbe-ee67-015b-55ef000001c1"
+    },
+    {
+      "topic": "rt/api/audiohub/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "01108224-ecb1-0921-4955-b206000001c1"
+    },
+    {
+      "topic": "rt/api/audiohub/response",
+      "type": "unitree_api::msg::dds_::Response_",
+      "participant_key": "01109df7-6cfe-89fa-2fc4-45c6000001c1"
+    },
+    {
+      "topic": "rt/api/bashrunner/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "01108224-ecb1-0921-4955-b206000001c1"
+    },
+    {
+      "topic": "rt/api/bashrunner/response",
+      "type": "unitree_api::msg::dds_::Response_",
+      "participant_key": "0110bb29-0b95-c0c9-3336-c712000001c1"
+    },
+    {
+      "topic": "rt/api/basic_clearoip/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "0110c38c-f9e7-d049-a5c5-386d000001c1"
+    },
+    {
+      "topic": "rt/api/basic_clearoip/response",
+      "type": "unitree_api::msg::dds_::Response_",
+      "participant_key": "01109a8e-de18-210b-11d1-ce25000001c1"
+    },
+    {
+      "topic": "rt/api/basic_clearoip_lease/response",
+      "type": "unitree_api::msg::dds_::Response_",
+      "participant_key": "01109a8e-de18-210b-11d1-ce25000001c1"
+    },
+    {
+      "topic": "rt/api/basic_demarcate/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "01108224-ecb1-0921-4955-b206000001c1"
+    },
+    {
+      "topic": "rt/api/basic_demarcate/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "0110b0b0-2838-c57e-f726-5d0d000001c1"
+    },
+    {
+      "topic": "rt/api/basic_demarcate/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "0110601d-0cd9-612d-0eda-6e02000001c1"
+    },
+    {
+      "topic": "rt/api/basic_demarcate/response",
+      "type": "unitree_api::msg::dds_::Response_",
+      "participant_key": "01109a8e-de18-210b-11d1-ce25000001c1"
+    },
+    {
+      "topic": "rt/api/basic_demarcate_lease/response",
+      "type": "unitree_api::msg::dds_::Response_",
+      "participant_key": "01109a8e-de18-210b-11d1-ce25000001c1"
+    },
+    {
+      "topic": "rt/api/basic_softlimit/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "0110c38c-f9e7-d049-a5c5-386d000001c1"
+    },
+    {
+      "topic": "rt/api/basic_softlimit/response",
+      "type": "unitree_api::msg::dds_::Response_",
+      "participant_key": "01109a8e-de18-210b-11d1-ce25000001c1"
+    },
+    {
+      "topic": "rt/api/basic_softlimit_lease/response",
+      "type": "unitree_api::msg::dds_::Response_",
+      "participant_key": "01109a8e-de18-210b-11d1-ce25000001c1"
+    },
+    {
+      "topic": "rt/api/basic_taumax/response",
+      "type": "unitree_api::msg::dds_::Response_",
+      "participant_key": "01109a8e-de18-210b-11d1-ce25000001c1"
+    },
+    {
+      "topic": "rt/api/basic_taumax_lease/response",
+      "type": "unitree_api::msg::dds_::Response_",
+      "participant_key": "01109a8e-de18-210b-11d1-ce25000001c1"
+    },
+    {
+      "topic": "rt/api/config/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "01108224-ecb1-0921-4955-b206000001c1"
+    },
+    {
+      "topic": "rt/api/config/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "01109a8e-de18-210b-11d1-ce25000001c1"
+    },
+    {
+      "topic": "rt/api/config/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "01109a8e-de18-210b-11d1-ce25000001c1"
+    },
+    {
+      "topic": "rt/api/config/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "01109a8e-de18-210b-11d1-ce25000001c1"
+    },
+    {
+      "topic": "rt/api/config/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "01109a8e-de18-210b-11d1-ce25000001c1"
+    },
+    {
+      "topic": "rt/api/config/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "0110601d-0cd9-612d-0eda-6e02000001c1"
+    },
+    {
+      "topic": "rt/api/config/response",
+      "type": "unitree_api::msg::dds_::Response_",
+      "participant_key": "0110b098-d162-a0bc-d069-00ca000001c1"
+    },
+    {
+      "topic": "rt/api/dex3_msg_controller/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "01108224-ecb1-0921-4955-b206000001c1"
+    },
+    {
+      "topic": "rt/api/dex3_msg_controller/response",
+      "type": "unitree_api::msg::dds_::Response_",
+      "participant_key": "01104a14-5565-d80a-d638-c755000001c1"
+    },
+    {
+      "topic": "rt/api/dex3_msg_controller/response",
+      "type": "unitree_api::msg::dds_::Response_",
+      "participant_key": "01109048-44f4-93c4-a19c-dc8c000001c1"
+    },
+    {
+      "topic": "rt/api/gesture/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "01102b16-c639-dea3-a860-abb0000001c1"
+    },
+    {
+      "topic": "rt/api/gpt/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "01108224-ecb1-0921-4955-b206000001c1"
+    },
+    {
+      "topic": "rt/api/gpt/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "0110601d-0cd9-612d-0eda-6e02000001c1"
+    },
+    {
+      "topic": "rt/api/gpt/response",
+      "type": "unitree_api::msg::dds_::Response_",
+      "participant_key": "01102b16-c639-dea3-a860-abb0000001c1"
+    },
+    {
+      "topic": "rt/api/motion_switcher/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "0110a10b-d8b7-491d-03c2-eac6000001c1"
+    },
+    {
+      "topic": "rt/api/motion_switcher/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "01108224-ecb1-0921-4955-b206000001c1"
+    },
+    {
+      "topic": "rt/api/motion_switcher/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "01106fc8-59aa-1143-dddb-9d55000001c1"
+    },
+    {
+      "topic": "rt/api/motion_switcher/response",
+      "type": "unitree_api::msg::dds_::Response_",
+      "participant_key": "0110899a-5706-95e1-582a-038b000001c1"
+    },
+    {
+      "topic": "rt/api/rm_con/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "01108224-ecb1-0921-4955-b206000001c1"
+    },
+    {
+      "topic": "rt/api/robot_state/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "0110a10b-d8b7-491d-03c2-eac6000001c1"
+    },
+    {
+      "topic": "rt/api/robot_state/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "01108224-ecb1-0921-4955-b206000001c1"
+    },
+    {
+      "topic": "rt/api/robot_state/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "0110601d-0cd9-612d-0eda-6e02000001c1"
+    },
+    {
+      "topic": "rt/api/robot_state/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "01106fc8-59aa-1143-dddb-9d55000001c1"
+    },
+    {
+      "topic": "rt/api/robot_state/response",
+      "type": "unitree_api::msg::dds_::Response_",
+      "participant_key": "0110b098-d162-a0bc-d069-00ca000001c1"
+    },
+    {
+      "topic": "rt/api/robot_type_service/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "01108224-ecb1-0921-4955-b206000001c1"
+    },
+    {
+      "topic": "rt/api/robot_type_service/response",
+      "type": "unitree_api::msg::dds_::Response_",
+      "participant_key": "0110d668-39fe-c233-42f7-d572000001c1"
+    },
+    {
+      "topic": "rt/api/slam_operate/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "01108224-ecb1-0921-4955-b206000001c1"
+    },
+    {
+      "topic": "rt/api/slam_operate/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "01102b16-c639-dea3-a860-abb0000001c1"
+    },
+    {
+      "topic": "rt/api/sport/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "0110a10b-d8b7-491d-03c2-eac6000001c1"
+    },
+    {
+      "topic": "rt/api/sport/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "011058d9-377a-7ded-1ed0-c25a000001c1"
+    },
+    {
+      "topic": "rt/api/sport/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "01108224-ecb1-0921-4955-b206000001c1"
+    },
+    {
+      "topic": "rt/api/sport/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "011063e3-7bbe-ee67-015b-55ef000001c1"
+    },
+    {
+      "topic": "rt/api/sport/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "0110c38c-f9e7-d049-a5c5-386d000001c1"
+    },
+    {
+      "topic": "rt/api/sport/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "0110b0b0-2838-c57e-f726-5d0d000001c1"
+    },
+    {
+      "topic": "rt/api/sport/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "0110601d-0cd9-612d-0eda-6e02000001c1"
+    },
+    {
+      "topic": "rt/api/sport/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "01102b16-c639-dea3-a860-abb0000001c1"
+    },
+    {
+      "topic": "rt/api/sport/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "01106fc8-59aa-1143-dddb-9d55000001c1"
+    },
+    {
+      "topic": "rt/api/sport/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "011057a3-c692-59a6-a312-a113000001c1"
+    },
+    {
+      "topic": "rt/api/sport/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "0110ab2e-cc81-4427-819a-0f08000001c1"
+    },
+    {
+      "topic": "rt/api/sport/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "0110d78c-b33f-b558-8de8-f8b4000001c1"
+    },
+    {
+      "topic": "rt/api/sport/response",
+      "type": "unitree_api::msg::dds_::Response_",
+      "participant_key": "011058d9-377a-7ded-1ed0-c25a000001c1"
+    },
+    {
+      "topic": "rt/api/sport/response",
+      "type": "unitree_api::msg::dds_::Response_",
+      "participant_key": "0110c38c-f9e7-d049-a5c5-386d000001c1"
+    },
+    {
+      "topic": "rt/api/sport/response",
+      "type": "unitree_api::msg::dds_::Response_",
+      "participant_key": "0110ab2e-cc81-4427-819a-0f08000001c1"
+    },
+    {
+      "topic": "rt/api/videohub/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "0110d775-f00d-214a-7f95-9354000001c1"
+    },
+    {
+      "topic": "rt/api/videohub/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "01108224-ecb1-0921-4955-b206000001c1"
+    },
+    {
+      "topic": "rt/api/videohub/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "01102b16-c639-dea3-a860-abb0000001c1"
+    },
+    {
+      "topic": "rt/api/videohub/response",
+      "type": "unitree_api::msg::dds_::Response_",
+      "participant_key": "0110bbb4-2a37-9d1d-8de5-2b46000001c1"
+    },
+    {
+      "topic": "rt/api/vla/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "01102b16-c639-dea3-a860-abb0000001c1"
+    },
+    {
+      "topic": "rt/api/voice/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "0110bbe9-20f8-5325-3dfa-5900000001c1"
+    },
+    {
+      "topic": "rt/api/voice/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "0110a10b-d8b7-491d-03c2-eac6000001c1"
+    },
+    {
+      "topic": "rt/api/voice/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "01108224-ecb1-0921-4955-b206000001c1"
+    },
+    {
+      "topic": "rt/api/voice/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "01109df7-6cfe-89fa-2fc4-45c6000001c1"
+    },
+    {
+      "topic": "rt/api/voice/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "0110c38c-f9e7-d049-a5c5-386d000001c1"
+    },
+    {
+      "topic": "rt/api/voice/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "01102b16-c639-dea3-a860-abb0000001c1"
+    },
+    {
+      "topic": "rt/api/voice/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "0110d78c-b33f-b558-8de8-f8b4000001c1"
+    },
+    {
+      "topic": "rt/api/voice/response",
+      "type": "unitree_api::msg::dds_::Response_",
+      "participant_key": "0110601d-0cd9-612d-0eda-6e02000001c1"
+    },
+    {
+      "topic": "rt/api/vui/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "01102b16-c639-dea3-a860-abb0000001c1"
+    },
+    {
+      "topic": "rt/api/vui/response",
+      "type": "unitree_api::msg::dds_::Response_",
+      "participant_key": "0110601d-0cd9-612d-0eda-6e02000001c1"
+    },
+    {
+      "topic": "rt/api/waist_pitch_demarcate/request",
+      "type": "unitree_api::msg::dds_::Request_",
+      "participant_key": "01108224-ecb1-0921-4955-b206000001c1"
+    },
+    {
+      "topic": "rt/arm/action/state",
+      "type": "std_msgs::msg::dds_::String_",
+      "participant_key": "011063e3-7bbe-ee67-015b-55ef000001c1"
+    },
+    {
+      "topic": "rt/arm/action/state",
+      "type": "std_msgs::msg::dds_::String_",
+      "participant_key": "0110c38c-a39f-f613-7872-b7ab000001c1"
+    },
+    {
+      "topic": "rt/arm_sdk",
+      "type": "unitree_hg::msg::dds_::LowCmd_",
+      "participant_key": "0110bbe9-20f8-5325-3dfa-5900000001c1"
+    },
+    {
+      "topic": "rt/arm_sdk",
+      "type": "unitree_hg::msg::dds_::LowCmd_",
+      "participant_key": "011063e3-7bbe-ee67-015b-55ef000001c1"
+    },
+    {
+      "topic": "rt/arm_sdk",
+      "type": "unitree_hg::msg::dds_::LowCmd_",
+      "participant_key": "01102b16-c639-dea3-a860-abb0000001c1"
+    },
+    {
+      "topic": "rt/arm_service_inbound",
+      "type": "std_msgs::msg::dds_::String_",
+      "participant_key": "01108224-ecb1-0921-4955-b206000001c1"
+    },
+    {
+      "topic": "rt/arm_service_outbound",
+      "type": "std_msgs::msg::dds_::String_",
+      "participant_key": "011063e3-7bbe-ee67-015b-55ef000001c1"
+    },
+    {
+      "topic": "rt/audio_msg",
+      "type": "std_msgs::msg::dds_::String_",
+      "participant_key": "0110601d-0cd9-612d-0eda-6e02000001c1"
+    },
+    {
+      "topic": "rt/audio_msg/filter",
+      "type": "std_msgs::msg::dds_::String_",
+      "participant_key": "01109df7-6cfe-89fa-2fc4-45c6000001c1"
+    },
+    {
+      "topic": "rt/config_change_status",
+      "type": "unitree_go::msg::dds_::ConfigChangeStatus_",
+      "participant_key": "0110b098-d162-a0bc-d069-00ca000001c1"
+    },
+    {
+      "topic": "rt/dex3/left/state",
+      "type": "unitree_hg::msg::dds_::HandState_",
+      "participant_key": "01109048-44f4-93c4-a19c-dc8c000001c1"
+    },
+    {
+      "topic": "rt/dex3/right/state",
+      "type": "unitree_hg::msg::dds_::HandState_",
+      "participant_key": "01104a14-5565-d80a-d638-c755000001c1"
+    },
+    {
+      "topic": "rt/event/action_store",
+      "type": "std_msgs::msg::dds_::String_",
+      "participant_key": "011058d9-377a-7ded-1ed0-c25a000001c1"
+    },
+    {
+      "topic": "rt/event/action_store",
+      "type": "std_msgs::msg::dds_::String_",
+      "participant_key": "0110e284-e833-c930-992a-31d8000001c1"
+    },
+    {
+      "topic": "rt/event/action_store",
+      "type": "std_msgs::msg::dds_::String_",
+      "participant_key": "0110ab2e-cc81-4427-819a-0f08000001c1"
+    },
+    {
+      "topic": "rt/frontvideostream",
+      "type": "unitree_go::msg::dds_::Go2FrontVideoData_",
+      "participant_key": "0110bbb4-2a37-9d1d-8de5-2b46000001c1"
+    },
+    {
+      "topic": "rt/gpt_cmd",
+      "type": "std_msgs::msg::dds_::String_",
+      "participant_key": "01102b16-c639-dea3-a860-abb0000001c1"
+    },
+    {
+      "topic": "rt/gpt_msg",
+      "type": "std_msgs::msg::dds_::String_",
+      "participant_key": "01102b16-c639-dea3-a860-abb0000001c1"
+    },
+    {
+      "topic": "rt/gpt_state",
+      "type": "std_msgs::msg::dds_::String_",
+      "participant_key": "01102b16-c639-dea3-a860-abb0000001c1"
+    },
+    {
+      "topic": "rt/gptflowfeedback",
+      "type": "std_msgs::msg::dds_::String_",
+      "participant_key": "01102b16-c639-dea3-a860-abb0000001c1"
+    },
+    {
+      "topic": "rt/lf/battery_alarm",
+      "type": "std_msgs::msg::dds_::String_",
+      "participant_key": "011057a3-c692-59a6-a312-a113000001c1"
+    },
+    {
+      "topic": "rt/lf/bmsstate",
+      "type": "unitree_hg::msg::dds_::BmsState_",
+      "participant_key": "01109a8e-de18-210b-11d1-ce25000001c1"
+    },
+    {
+      "topic": "rt/lf/dex3/left/state",
+      "type": "unitree_hg::msg::dds_::HandState_",
+      "participant_key": "01109048-44f4-93c4-a19c-dc8c000001c1"
+    },
+    {
+      "topic": "rt/lf/dex3/right/state",
+      "type": "unitree_hg::msg::dds_::HandState_",
+      "participant_key": "01104a14-5565-d80a-d638-c755000001c1"
+    },
+    {
+      "topic": "rt/lf/emergency_stop",
+      "type": "unitree_go::msg::dds_::Error_",
+      "participant_key": "0110b0b0-2838-c57e-f726-5d0d000001c1"
+    },
+    {
+      "topic": "rt/lf/lowstate",
+      "type": "unitree_hg::msg::dds_::LowState_",
+      "participant_key": "01109a8e-de18-210b-11d1-ce25000001c1"
+    },
+    {
+      "topic": "rt/lf/mainboardstate",
+      "type": "unitree_hg::msg::dds_::MainBoardState_",
+      "participant_key": "01109a8e-de18-210b-11d1-ce25000001c1"
+    },
+    {
+      "topic": "rt/lf/secondary_imu",
+      "type": "unitree_hg::msg::dds_::IMUState_",
+      "participant_key": "01109a8e-de18-210b-11d1-ce25000001c1"
+    },
+    {
+      "topic": "rt/lf/sportmodestate",
+      "type": "unitree_hg::msg::dds_::SportModeState_",
+      "participant_key": "0110c38c-a39f-f613-7872-b7ab000001c1"
+    },
+    {
+      "topic": "rt/log_system_inbound",
+      "type": "std_msgs::msg::dds_::String_",
+      "participant_key": "01108224-ecb1-0921-4955-b206000001c1"
+    },
+    {
+      "topic": "rt/log_system_outbound",
+      "type": "std_msgs::msg::dds_::String_",
+      "participant_key": "0110c058-40eb-1f7f-a54b-f75a000001c1"
+    },
+    {
+      "topic": "rt/lowcmd",
+      "type": "unitree_hg::msg::dds_::LowCmd_",
+      "participant_key": "0110c38c-a39f-f613-7872-b7ab000001c1"
+    },
+    {
+      "topic": "rt/lowcmd",
+      "type": "unitree_hg::msg::dds_::LowCmd_",
+      "participant_key": "0110b0b0-2838-c57e-f726-5d0d000001c1"
+    },
+    {
+      "topic": "rt/lowstate",
+      "type": "unitree_hg::msg::dds_::LowState_",
+      "participant_key": "011058d9-377a-7ded-1ed0-c25a000001c1"
+    },
+    {
+      "topic": "rt/lowstate",
+      "type": "unitree_hg::msg::dds_::LowState_",
+      "participant_key": "01109a8e-de18-210b-11d1-ce25000001c1"
+    },
+    {
+      "topic": "rt/lowstate",
+      "type": "unitree_hg::msg::dds_::LowState_",
+      "participant_key": "0110ab2e-cc81-4427-819a-0f08000001c1"
+    },
+    {
+      "topic": "rt/multiplestate",
+      "type": "std_msgs::msg::dds_::String_",
+      "participant_key": "0110b098-d162-a0bc-d069-00ca000001c1"
+    },
+    {
+      "topic": "rt/odommodestate",
+      "type": "unitree_go::msg::dds_::SportModeState_",
+      "participant_key": "011053cc-ae29-4735-9ba7-1ead000001c1"
+    },
+    {
+      "topic": "rt/public_network_status",
+      "type": "std_msgs::msg::dds_::String_",
+      "participant_key": "0110b339-0261-2a47-b2a3-6d50000001c1"
+    },
+    {
+      "topic": "rt/rtc/state",
+      "type": "std_msgs::msg::dds_::String_",
+      "participant_key": "01108224-ecb1-0921-4955-b206000001c1"
+    },
+    {
+      "topic": "rt/rtc_status",
+      "type": "std_msgs::msg::dds_::String_",
+      "participant_key": "01108224-ecb1-0921-4955-b206000001c1"
+    },
+    {
+      "topic": "rt/secondary_imu",
+      "type": "unitree_hg::msg::dds_::IMUState_",
+      "participant_key": "01109a8e-de18-210b-11d1-ce25000001c1"
+    },
+    {
+      "topic": "rt/selftest",
+      "type": "std_msgs::msg::dds_::String_",
+      "participant_key": "0110bb29-0b95-c0c9-3336-c712000001c1"
+    },
+    {
+      "topic": "rt/servicestate",
+      "type": "std_msgs::msg::dds_::String_",
+      "participant_key": "0110b098-d162-a0bc-d069-00ca000001c1"
+    },
+    {
+      "topic": "rt/servicestateactivate",
+      "type": "std_msgs::msg::dds_::String_",
+      "participant_key": "01108224-ecb1-0921-4955-b206000001c1"
+    },
+    {
+      "topic": "rt/sportmodestate",
+      "type": "unitree_hg::msg::dds_::SportModeState_",
+      "participant_key": "0110c38c-a39f-f613-7872-b7ab000001c1"
+    },
+    {
+      "topic": "rt/state_estimator/fusion_odom",
+      "type": "nav_msgs::msg::dds_::Odometry_",
+      "participant_key": "011053cc-ae29-4735-9ba7-1ead000001c1"
+    },
+    {
+      "topic": "rt/state_estimator/fusion_odom_torso",
+      "type": "nav_msgs::msg::dds_::Odometry_",
+      "participant_key": "011053cc-ae29-4735-9ba7-1ead000001c1"
+    },
+    {
+      "topic": "rt/state_estimator/odom_pelvis",
+      "type": "nav_msgs::msg::dds_::Odometry_",
+      "participant_key": "011053cc-ae29-4735-9ba7-1ead000001c1"
+    },
+    {
+      "topic": "rt/state_estimator/odom_torso",
+      "type": "nav_msgs::msg::dds_::Odometry_",
+      "participant_key": "011053cc-ae29-4735-9ba7-1ead000001c1"
+    },
+    {
+      "topic": "rt/user_lowcmd",
+      "type": "unitree_hg::msg::dds_::LowCmd_",
+      "participant_key": "011058d9-377a-7ded-1ed0-c25a000001c1"
+    },
+    {
+      "topic": "rt/user_lowcmd",
+      "type": "unitree_hg::msg::dds_::LowCmd_",
+      "participant_key": "0110ab2e-cc81-4427-819a-0f08000001c1"
+    },
+    {
+      "topic": "rt/videohub/inner",
+      "type": "std_msgs::msg::dds_::String_",
+      "participant_key": "01108224-ecb1-0921-4955-b206000001c1"
+    },
+    {
+      "topic": "rt/webrtcreq",
+      "type": "std_msgs::msg::dds_::String_",
+      "participant_key": "0110b098-d162-a0bc-d069-00ca000001c1"
+    },
+    {
+      "topic": "rt/webrtcres",
+      "type": "std_msgs::msg::dds_::String_",
+      "participant_key": "01108224-ecb1-0921-4955-b206000001c1"
+    },
+    {
+      "topic": "rt/wirelesscontroller",
+      "type": "unitree_go::msg::dds_::WirelessController_",
+      "participant_key": "01108224-ecb1-0921-4955-b206000001c1"
+    },
+    {
+      "topic": "rt/wirelesscontroller",
+      "type": "unitree_go::msg::dds_::WirelessController_",
+      "participant_key": "0110601d-0cd9-612d-0eda-6e02000001c1"
+    },
+    {
+      "topic": "rt/xfk_webrtcreq",
+      "type": "std_msgs::msg::dds_::String_",
+      "participant_key": "011042bf-5f9e-0d83-0bc3-912e000001c1"
+    },
+    {
+      "topic": "rt/xfk_webrtcres",
+      "type": "std_msgs::msg::dds_::String_",
+      "participant_key": "01108224-ecb1-0921-4955-b206000001c1"
+    }
+  ],
+  "device_motion_firmware": null,
+  "command_writes": 0,
+  "lease_requests": 0,
+  "limits": [
+    "API version is a protocol identifier, not motion firmware.",
+    "Bounded DDS discovery does not prove an internal LocoState absent.",
+    "Participant GUIDs do not establish the physical host or firmware.",
+    "No mode was changed to test whether 7301 would disappear."
+  ],
+  "execution_allowed": false,
+  "exact_7301_predicate": null,
+  "motion_authority_verified": false
+}

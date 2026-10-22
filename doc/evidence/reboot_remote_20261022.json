@@ -1,0 +1,271 @@
+{
+  "schema": 1,
+  "kind": "timestamped_device_verification",
+  "current": false,
+  "timezone": "Asia/Shanghai",
+  "deployment": {
+    "release": "eea233656e28",
+    "files": 494,
+    "restored": {
+      "started": true,
+      "release": "eea233656e28",
+      "pid": 3493
+    },
+    "boot_id": "fc0c327a-b381-400a-b20d-6307f4f43e2e",
+    "receipt_sha256": "bc14c8abee96581486e38cd1c4c16a52b5a464aa39de58afad62c0eae38bbd60",
+    "receipt_preserved": true,
+    "official_processes_unchanged": true,
+    "owner": null,
+    "armed": false,
+    "motion_writes": 0,
+    "run_id": "8170644b5d65"
+  },
+  "final_observed_at": "2026-10-22T15:52:39.054308+08:00",
+  "body_window": {
+    "started_at": "2026-10-22T15:49:04.289234+08:00",
+    "ended_at": "2026-10-22T15:49:15.202344+08:00",
+    "samples": 32,
+    "seconds": 10.913110256195068,
+    "joint_count": 23,
+    "fsm": 0,
+    "knees_deg": {
+      "3": 160.70702920760976,
+      "9": 158.5405205236384
+    },
+    "imu_rpy_deg": [
+      8.051925597420441,
+      -1.7933521842817075,
+      -7.4081666077684
+    ],
+    "mode_machine": 4,
+    "bad_packets": 0,
+    "max_abs_dq_rad_s": 0.04456822946667671,
+    "max_joint_span_deg": 0.005491472092690252,
+    "joint_temperature_min_max": [
+      29,
+      42
+    ],
+    "feet_contact": {
+      "left": null,
+      "right": null
+    },
+    "feet_load_n": {
+      "left": null,
+      "right": null
+    },
+    "external_support": null,
+    "whole_body_world_pose": null,
+    "independent_standing_verified": false,
+    "task_id_interpretation": null,
+    "support_from_vision_verified": false
+  },
+  "camera": {
+    "backend": "unitree",
+    "status": "live",
+    "error": null,
+    "diagnostics": {
+      "transport": "official_api_1001_isolated_polled",
+      "window_s": 60,
+      "attempts": 300,
+      "successes": 300,
+      "timeouts": 0,
+      "errors": 0,
+      "total_attempts": 1070,
+      "total_successes": 1070,
+      "total_timeouts": 0
+    },
+    "source": "unitree-videohub-031f697ae6ae",
+    "sequence": 1070,
+    "age_ms": 163,
+    "request_started_at": 1792655558.891334,
+    "received_at": 1792655558.913626,
+    "width": 960,
+    "height": 540,
+    "source_width": 1920,
+    "source_height": 1080,
+    "request_ms": 22,
+    "timestamp_basis": "request_started_at",
+    "sensor_timestamp": null
+  },
+  "historical_official_audit": {
+    "boot_id": "8ca5b3b6-2040-4dc9-a45c-2112f529fdf1",
+    "started_at_utc": "2026-10-22T06:51:18.617012+00:00",
+    "ended_at_utc": "2026-10-22T06:51:31.986737+00:00",
+    "reads": 33,
+    "code_counts": {
+      "0": 18,
+      "7301": 12,
+      "3203": 3
+    },
+    "command_writes": 0,
+    "lease_requests": 0,
+    "official_processes_unchanged": true,
+    "loco_state_internal_predicate": null,
+    "device_motion_firmware": null
+  },
+  "current_boot_gui_queries": [
+    {
+      "capability": "get_versions",
+      "at": 1792655500.3579032,
+      "status": "read_unavailable",
+      "message": "官方服务返回 3203：不支持此 API；未取得有效值",
+      "sdk_code": 3203
+    },
+    {
+      "capability": "get_balance",
+      "at": 1792655490.5452285,
+      "status": "read_unavailable",
+      "message": "官方服务返回 7301：LocoState 不可用；模式/高度/相位保持未知，忽略返回中的占位零值。不会自动切换模式",
+      "sdk_code": 7301
+    }
+  ],
+  "service_advertisement": {
+    "received_at": "2026-10-22T15:51:40.111722+08:00",
+    "ai_sport": [
+      "8.7.5.212"
+    ],
+    "physical_publisher_verified": false,
+    "running_build_verified": false,
+    "device_motion_firmware": null
+  },
+  "gui_preflights": [
+    {
+      "capability": "balance",
+      "label": "平衡模式",
+      "at": 1792655467.2786052,
+      "run_id": "8170644b5d65",
+      "dispatched": false,
+      "params_valid": true,
+      "request": {
+        "service": "sport",
+        "method": "SetBalanceMode",
+        "api_id": 7102,
+        "parameter": {
+          "data": 0
+        },
+        "sdk_commit": "814556d15970dd2ecf1c9984e845ca02ab07e206"
+      },
+      "telemetry_tick": 599784,
+      "current_fsm": 0,
+      "execution_gate": {
+        "allowed": false,
+        "code": "DAMPING_TEST_ONLY",
+        "message": "仅开放一次 FSM 0→1 官方阻尼测试；其余写入全部锁定"
+      },
+      "firmware_acceptance": "unknown",
+      "physical_result": "not_tested",
+      "conditions": [
+        "SDK 请求映射已核对，不代表本机固件接受该写接口",
+        "历史人工报告坐地靠柜不代表当前姿势；足底与外部支撑承重仍未知",
+        "起身、姿态保持和平衡切换的本机姿势前提与运动固件版本仍待确认"
+      ]
+    },
+    {
+      "capability": "prepare",
+      "label": "站立预备 / 姿态保持",
+      "at": 1792655431.4571042,
+      "run_id": "8170644b5d65",
+      "dispatched": false,
+      "params_valid": true,
+      "request": {
+        "service": "sport",
+        "method": "SetFsmId",
+        "api_id": 7101,
+        "parameter": {
+          "data": 4
+        },
+        "sdk_commit": "814556d15970dd2ecf1c9984e845ca02ab07e206"
+      },
+      "telemetry_tick": 563851,
+      "current_fsm": 0,
+      "execution_gate": {
+        "allowed": false,
+        "code": "DAMPING_TEST_ONLY",
+        "message": "仅开放一次 FSM 0→1 官方阻尼测试；其余写入全部锁定"
+      },
+      "firmware_acceptance": "unknown",
+      "physical_result": "not_tested",
+      "conditions": [
+        "SDK 请求映射已核对，不代表本机固件接受该写接口",
+        "历史人工报告坐地靠柜不代表当前姿势；足底与外部支撑承重仍未知",
+        "起身、姿态保持和平衡切换的本机姿势前提与运动固件版本仍待确认"
+      ]
+    },
+    {
+      "capability": "squat_to_stand",
+      "label": "蹲姿起立",
+      "at": 1792655407.2883615,
+      "run_id": "8170644b5d65",
+      "dispatched": false,
+      "params_valid": true,
+      "request": {
+        "service": "sport",
+        "method": "SetFsmId",
+        "api_id": 7101,
+        "parameter": {
+          "data": 706
+        },
+        "sdk_commit": "814556d15970dd2ecf1c9984e845ca02ab07e206"
+      },
+      "telemetry_tick": 539845,
+      "current_fsm": 0,
+      "execution_gate": {
+        "allowed": false,
+        "code": "DAMPING_TEST_ONLY",
+        "message": "仅开放一次 FSM 0→1 官方阻尼测试；其余写入全部锁定"
+      },
+      "firmware_acceptance": "unknown",
+      "physical_result": "not_tested",
+      "conditions": [
+        "SDK 请求映射已核对，不代表本机固件接受该写接口",
+        "历史人工报告坐地靠柜不代表当前姿势；足底与外部支撑承重仍未知",
+        "起身、姿态保持和平衡切换的本机姿势前提与运动固件版本仍待确认"
+      ]
+    }
+  ],
+  "final_control": {
+    "owner": null,
+    "armed": false,
+    "robot_authority_verified": false,
+    "new_motion_writes": 0
+  },
+  "local_validation": {
+    "targeted_tests_passed": 97,
+    "typescript_build": "passed",
+    "vite_build": "passed"
+  },
+  "untested": [
+    "stand_up",
+    "pose_hold",
+    "balance_transition",
+    "independent_standing",
+    "multi_reboot_reliability"
+  ],
+  "quantumult_x_modified": false,
+  "source_files": [
+    {
+      "path": ".g1-deploy/research/reconnect-20261022-v35/final-deploy-result.json",
+      "sha256": "33d0bbed24810802b9ae5b94f48e0a24518e95082ddb050ebc541e73c0c41e6b"
+    },
+    {
+      "path": ".g1-deploy/research/reconnect-20261022-v35/gui-final-state-private.json",
+      "sha256": "f1e294199a90c3a778477f5419e4b32289f940c2608f65554ba97a15f0d3ed6b"
+    },
+    {
+      "path": ".g1-deploy/research/reconnect-20261022-v35/current-boot-final-private.json",
+      "sha256": "d15b28b3df7935258e517a8f2a021c1fd9e8ec26044561557c80375ecf101209"
+    },
+    {
+      "path": ".g1-deploy/research/reconnect-20261022-v35/loco-audit.json",
+      "sha256": "5e4a4b6805f4bf03748ae926d9b3bfd3b3ee832f04eb465557f031144fa9f56f"
+    },
+    {
+      "path": ".g1-deploy/research/reconnect-20261022-v35/current-boot-camera-2.jpg",
+      "sha256": "6a063c13ae6b2839c1e1d83e33a1c7c1f15615b60723dee6b54c62d144923149"
+    }
+  ],
+  "screenshot": {
+    "path": "doc/screenshots/g1-reboot-remote-20261022.png",
+    "sha256": "ecff9c580360c2a3b9f7cd304025e394726f867df06c70420e56ad190b9f3ed5"
+  }
+}

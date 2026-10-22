@@ -1,0 +1,138 @@
+{
+  "verified_at_utc": "2026-10-21T02:04:17.935692+00:00",
+  "release": "62e85764bb01",
+  "manifest_files": 383,
+  "foundation_id": "7aa83e6dc70cfb7a0aa7bfd60deb57e49f8cc86d9e64c84ad3a2ff501fc23efb",
+  "schema_version": 4,
+  "read_only": true,
+  "connected": true,
+  "mode": "robot",
+  "run_id": "669e97092080",
+  "joints": 23,
+  "telemetry_age_ms": 14,
+  "mode_machine": 4,
+  "mode_pr": 0,
+  "owner": null,
+  "navigation": "idle",
+  "command_accepted": 0,
+  "camera": {
+    "backend": "unitree",
+    "status": "retrying",
+    "error": "SDK_3102",
+    "source": null,
+    "sequence": -1,
+    "age_ms": null
+  },
+  "insight": {
+    "enabled": false,
+    "worker_online": false,
+    "model": "gpt-5.6-sol",
+    "error": null,
+    "status": "paused",
+    "report": null,
+    "report_age_s": null,
+    "current": false,
+    "completed": 0,
+    "report_ttl_s": 120
+  },
+  "interface_audit_current": false,
+  "metadata_query_completed_at": "2026-10-21T01:58:03.427674+00:00",
+  "metadata_rpc_calls": 8,
+  "service_api_versions": [
+    {
+      "service": "config",
+      "api_id": 1,
+      "code": 0,
+      "api_version": "1.0.0.1",
+      "physical_host_verified": false,
+      "meaning": "Service API version only; not motor firmware, configuration or calibration"
+    },
+    {
+      "service": "basic_demarcate",
+      "api_id": 1,
+      "code": 0,
+      "api_version": "1.0.0.1",
+      "physical_host_verified": false,
+      "meaning": "Service API version only; not motor firmware, configuration or calibration"
+    },
+    {
+      "service": "basic_softlimit",
+      "api_id": 1,
+      "code": 0,
+      "api_version": "1.0.0.1",
+      "physical_host_verified": false,
+      "meaning": "Service API version only; not motor firmware, configuration or calibration"
+    },
+    {
+      "service": "basic_taumax",
+      "api_id": 1,
+      "code": 0,
+      "api_version": "1.0.0.1",
+      "physical_host_verified": false,
+      "meaning": "Service API version only; not motor firmware, configuration or calibration"
+    },
+    {
+      "service": "robot_type_service",
+      "api_id": 1,
+      "code": 0,
+      "api_version": "1.0.0",
+      "physical_host_verified": false,
+      "meaning": "Service API version only; not motor firmware, configuration or calibration"
+    },
+    {
+      "service": "robot_state",
+      "api_id": 1,
+      "code": 0,
+      "api_version": "1.0.0.2",
+      "physical_host_verified": false,
+      "meaning": "Service API version only; not motor firmware, configuration or calibration"
+    }
+  ],
+  "software_services": 28,
+  "package_version_code": 3203,
+  "motor_configuration_read_supported": null,
+  "calibration_read_supported": null,
+  "new_motor_configuration_values": 0,
+  "actual_config_unknowns": 253,
+  "checks": {
+    "pytest": "66 passed; existing Starlette/httpx warning",
+    "frontend": "npm run build passed; existing large 3D chunk warning",
+    "remote_manifest": "383 files SHA256 verified",
+    "pip": "no broken requirements",
+    "remote_foundation_equals_local": true,
+    "network_configuration_changes": false,
+    "quantumult_x_touched": false,
+    "browser": "Live Mac console: read-only, G1 online, 23 joints, v4 panel with 6 versions / 28 services / 0 new parameters"
+  },
+  "notes": [
+    "No SSH to motion PC1; Orin SSH was used as a bridge for fixed metadata reads.",
+    "No configuration/calibration calls, robot control lease, motor or mode writes.",
+    "Service API versions are not motor firmware and do not validate Go2/B2 config compatibility.",
+    "Unknown device parameters remain null.",
+    "Local subscription reconnect was initially blocked by automatic review; read-only lifecycle and SDK lease=False evidence was checked, and the retry was approved."
+  ],
+  "screenshot": "screenshots/g1-interface-parameter-audit.png",
+  "runtime_rechecked_at_utc": "2026-10-21T02:06:06.996336+00:00",
+  "runtime": {
+    "release": "62e85764bb01",
+    "console_pid": 6140,
+    "console_cwd": "/home/unitree/workspace/g1-body-console/releases/62e85764bb01",
+    "console_argv": [
+      "/home/unitree/workspace/g1-body-console/.venv/bin/python",
+      "-m",
+      "g1_console",
+      "--read-only"
+    ],
+    "official_video_pids": [
+      2557
+    ],
+    "official_video_unchanged": true,
+    "boot_id": "7a6791dc-f512-4b45-aca3-44fbde855e25",
+    "boot_id_unchanged": true,
+    "mac_observer_pid": 32848,
+    "mac_observer_model": "gpt-5.6-sol",
+    "mac_observer_worker_online": true,
+    "observation_enabled": false,
+    "observation_status": "paused"
+  }
+}

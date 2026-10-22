@@ -1,0 +1,214 @@
+{
+  "current": false,
+  "checked_at_utc": "2026-10-21T02:30:14.765942+00:00",
+  "boot_id": "7a6791dc-f512-4b45-aca3-44fbde855e25",
+  "command_writes": 0,
+  "lease_requests": 0,
+  "configuration_calls": 0,
+  "calibration_calls": 0,
+  "motor_configuration_values_obtained": 0,
+  "readings": [
+    {
+      "service": "sport",
+      "method": "GetFsmId",
+      "api_id": 7001,
+      "parameter": "",
+      "code": 0,
+      "payload": {
+        "data": 0
+      },
+      "received_at_utc": "2026-10-21T02:30:15.505716+00:00",
+      "meaning": "历史服务返回；不是逐电机配置或稳定性证明"
+    },
+    {
+      "service": "sport",
+      "method": "GetFsmMode",
+      "api_id": 7002,
+      "parameter": "",
+      "code": 0,
+      "payload": {
+        "data": 0
+      },
+      "received_at_utc": "2026-10-21T02:30:15.506424+00:00",
+      "meaning": "历史服务返回；不是逐电机配置或稳定性证明"
+    },
+    {
+      "service": "sport",
+      "method": "GetBalanceMode",
+      "api_id": 7003,
+      "parameter": "",
+      "code": 7301,
+      "payload": null,
+      "received_at_utc": "2026-10-21T02:30:15.507021+00:00",
+      "meaning": "历史服务返回；不是逐电机配置或稳定性证明"
+    },
+    {
+      "service": "sport",
+      "method": "GetSwingHeight",
+      "api_id": 7004,
+      "parameter": "",
+      "code": 7301,
+      "payload": null,
+      "received_at_utc": "2026-10-21T02:30:15.507918+00:00",
+      "meaning": "历史服务返回；不是逐电机配置或稳定性证明"
+    },
+    {
+      "service": "sport",
+      "method": "GetStandHeight",
+      "api_id": 7005,
+      "parameter": "",
+      "code": 7301,
+      "payload": null,
+      "received_at_utc": "2026-10-21T02:30:15.508800+00:00",
+      "meaning": "历史服务返回；不是逐电机配置或稳定性证明"
+    },
+    {
+      "service": "arm",
+      "method": "GetActionList",
+      "api_id": 7107,
+      "parameter": "",
+      "code": 0,
+      "payload": [
+        [
+          {
+            "id": 99,
+            "name": "release_arm"
+          },
+          {
+            "fsm": [
+              500,
+              501
+            ],
+            "id": 1,
+            "name": "turn_back_wave"
+          },
+          {
+            "id": 11,
+            "name": "blow_kiss_with_both_hands"
+          },
+          {
+            "id": 12,
+            "name": "blow_kiss_with_left_hand"
+          },
+          {
+            "id": 13,
+            "name": "blow_kiss_with_right_hand"
+          },
+          {
+            "id": 15,
+            "name": "both_hands_up"
+          },
+          {
+            "id": 17,
+            "name": "clamp"
+          },
+          {
+            "id": 18,
+            "name": "high_five"
+          },
+          {
+            "id": 19,
+            "name": "hug"
+          },
+          {
+            "id": 22,
+            "name": "refuse"
+          },
+          {
+            "id": 23,
+            "name": "right_hand_up"
+          },
+          {
+            "id": 24,
+            "name": "ultraman_ray"
+          },
+          {
+            "id": 25,
+            "name": "wave_under_head"
+          },
+          {
+            "id": 26,
+            "name": "wave_above_head"
+          },
+          {
+            "id": 27,
+            "name": "shake_hand"
+          },
+          {
+            "id": 31,
+            "mode_machine": [
+              4
+            ],
+            "name": "extend_right_arm_forward"
+          },
+          {
+            "id": 32,
+            "mode_machine": [
+              4
+            ],
+            "name": "right_hand_on_mouth"
+          },
+          {
+            "id": 33,
+            "name": "right_hand_on_heart"
+          },
+          {
+            "id": 34,
+            "name": "both_hands_up_deviate_right"
+          },
+          {
+            "id": 35,
+            "mode_machine": [
+              4
+            ],
+            "name": "emphasize"
+          }
+        ],
+        [
+          {
+            "name": "Waist_Drum_Dance",
+            "time": 9.5
+          },
+          {
+            "name": "Scratch_head",
+            "time": 8.1
+          },
+          {
+            "name": "Spin_discs",
+            "time": 6.9
+          },
+          {
+            "name": "Throw_money",
+            "time": 8.1
+          }
+        ]
+      ],
+      "received_at_utc": "2026-10-21T02:30:16.216656+00:00",
+      "meaning": "历史服务返回；不是逐电机配置或稳定性证明"
+    },
+    {
+      "service": "voice",
+      "method": "GetVolume",
+      "api_id": 1005,
+      "parameter": "",
+      "code": 0,
+      "payload": {
+        "volume": 41
+      },
+      "received_at_utc": "2026-10-21T02:30:16.920026+00:00",
+      "meaning": "历史服务返回；不是逐电机配置或稳定性证明"
+    }
+  ],
+  "unqueried": [
+    {
+      "method": "GetMimicMotion",
+      "reason": "官方要求稳定状态，未核实；不调用复用 7100 的 FSM 入口"
+    },
+    {
+      "method": "GetPhase",
+      "reason": "官方已标记 deprecated；本轮不查询"
+    }
+  ],
+  "rpc_calls": 7,
+  "completed_at_utc": "2026-10-21T02:30:16.920062+00:00"
+}

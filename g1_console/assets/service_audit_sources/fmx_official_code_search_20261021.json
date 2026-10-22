@@ -1,0 +1,38 @@
+{
+  "received_at_utc": "2026-10-21T03:16:13.874810+00:00",
+  "endpoint": "https://api.github.com/search/code",
+  "per_page": 100,
+  "queries": [
+    {
+      "query": "org:unitreerobotics Mixer",
+      "total_count": 0,
+      "incomplete_results": false,
+      "items": []
+    },
+    {
+      "query": "org:unitreerobotics FMX",
+      "total_count": 0,
+      "incomplete_results": false,
+      "items": []
+    },
+    {
+      "query": "org:unitreerobotics master_service",
+      "total_count": 0,
+      "incomplete_results": false,
+      "items": []
+    },
+    {
+      "query": "org:unitreerobotics UTPK",
+      "total_count": 1,
+      "incomplete_results": false,
+      "items": [
+        {
+          "path": "stm32/firmware/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h",
+          "url": "https://github.com/unitreerobotics/digital_servo/blob/75c1ed63579dc7bb759e2990bd4b804c11b57daf/stm32/firmware/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h",
+          "repository": "unitreerobotics/digital_servo"
+        }
+      ]
+    }
+  ],
+  "limitation": "GitHub indexed default-branch code search only; no match does not prove absence across history, private source, binaries or unindexed material."
+}

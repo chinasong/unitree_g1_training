@@ -1,0 +1,2641 @@
+{
+  "started_at_utc": "2026-10-21T12:00:14.837494+00:00",
+  "completed_at_utc": "2026-10-21T12:00:23.219442+00:00",
+  "boot_id": "8d9a0e09-97e1-45fa-81d3-18822a3c760a",
+  "release": "7e95a6e5a046",
+  "physical_writes_sent": 0,
+  "control_acquired": false,
+  "manual_armed": false,
+  "read_request_count": 48,
+  "rows": [
+    {
+      "round": 0,
+      "path": "isolated_polled",
+      "api": 7003,
+      "parameter": "",
+      "id": 3273368860435,
+      "code": 7301,
+      "data": "{\"data\":0}",
+      "elapsed_ms": 1.17
+    },
+    {
+      "round": 0,
+      "path": "isolated_polled",
+      "api": 7003,
+      "parameter": "{}",
+      "id": 3273370591413,
+      "code": 7301,
+      "data": "{\"data\":0}",
+      "elapsed_ms": 0.77
+    },
+    {
+      "round": 0,
+      "path": "console_sdk",
+      "api": 7003,
+      "http_status": 504,
+      "response": {
+        "error": {
+          "code": "SDK_TIMEOUT",
+          "message": "官方接口 3104 超时；是否执行未知，未自动重发。请先核对实时状态"
+        },
+        "request_id": "ff349b69fc624ea0b27bce830c94ae5d"
+      },
+      "elapsed_ms": 768.22
+    },
+    {
+      "round": 0,
+      "path": "isolated_polled",
+      "api": 7004,
+      "parameter": "",
+      "id": 3274140350936,
+      "code": 7301,
+      "data": "{\"data\":0.0}",
+      "elapsed_ms": 1.74
+    },
+    {
+      "round": 0,
+      "path": "isolated_polled",
+      "api": 7004,
+      "parameter": "{}",
+      "id": 3274142212192,
+      "code": 7301,
+      "data": "{\"data\":0.0}",
+      "elapsed_ms": 0.59
+    },
+    {
+      "round": 0,
+      "path": "console_sdk",
+      "api": 7004,
+      "http_status": 504,
+      "response": {
+        "error": {
+          "code": "SDK_TIMEOUT",
+          "message": "官方接口 3104 超时；是否执行未知，未自动重发。请先核对实时状态"
+        },
+        "request_id": "55608be3cd5c4ed4b908a3ae0de947b4"
+      },
+      "elapsed_ms": 743.95
+    },
+    {
+      "round": 0,
+      "path": "isolated_polled",
+      "api": 7005,
+      "parameter": "",
+      "id": 3274887445517,
+      "code": 7301,
+      "data": "{\"data\":0.0}",
+      "elapsed_ms": 0.8
+    },
+    {
+      "round": 0,
+      "path": "isolated_polled",
+      "api": 7005,
+      "parameter": "{}",
+      "id": 3274888397874,
+      "code": 7301,
+      "data": "{\"data\":0.0}",
+      "elapsed_ms": 0.77
+    },
+    {
+      "round": 0,
+      "path": "console_sdk",
+      "api": 7005,
+      "http_status": 504,
+      "response": {
+        "error": {
+          "code": "SDK_TIMEOUT",
+          "message": "官方接口 3104 超时；是否执行未知，未自动重发。请先核对实时状态"
+        },
+        "request_id": "ec74c4fb50f34a6c8279654c0f8adf65"
+      },
+      "elapsed_ms": 737.86
+    },
+    {
+      "round": 0,
+      "path": "isolated_polled",
+      "api": 7006,
+      "parameter": "",
+      "id": 3275628060263,
+      "code": 7301,
+      "data": "{\"data\":[]}",
+      "elapsed_ms": 1.0
+    },
+    {
+      "round": 0,
+      "path": "isolated_polled",
+      "api": 7006,
+      "parameter": "{}",
+      "id": 3275629175154,
+      "code": 7301,
+      "data": "{\"data\":[]}",
+      "elapsed_ms": 0.7
+    },
+    {
+      "round": 0,
+      "path": "console_sdk",
+      "api": 7006,
+      "http_status": 504,
+      "response": {
+        "error": {
+          "code": "SDK_TIMEOUT",
+          "message": "官方接口 3104 超时；是否执行未知，未自动重发。请先核对实时状态"
+        },
+        "request_id": "262fa188de5e4a649151039c0b047848"
+      },
+      "elapsed_ms": 764.85
+    },
+    {
+      "round": 1,
+      "path": "isolated_polled",
+      "api": 7003,
+      "parameter": "",
+      "id": 3276395433997,
+      "code": 7301,
+      "data": "{\"data\":0}",
+      "elapsed_ms": 0.85
+    },
+    {
+      "round": 1,
+      "path": "isolated_polled",
+      "api": 7003,
+      "parameter": "{}",
+      "id": 3276396382290,
+      "code": 7301,
+      "data": "{\"data\":0}",
+      "elapsed_ms": 0.59
+    },
+    {
+      "round": 1,
+      "path": "console_sdk",
+      "api": 7003,
+      "http_status": 504,
+      "response": {
+        "error": {
+          "code": "SDK_TIMEOUT",
+          "message": "官方接口 3104 超时；是否执行未知，未自动重发。请先核对实时状态"
+        },
+        "request_id": "b16a634f665b41bd93d20925b366d90c"
+      },
+      "elapsed_ms": 729.23
+    },
+    {
+      "round": 1,
+      "path": "isolated_polled",
+      "api": 7004,
+      "parameter": "",
+      "id": 3277126836900,
+      "code": 7301,
+      "data": "{\"data\":0.0}",
+      "elapsed_ms": 0.85
+    },
+    {
+      "round": 1,
+      "path": "isolated_polled",
+      "api": 7004,
+      "parameter": "{}",
+      "id": 3277127786024,
+      "code": 7301,
+      "data": "{\"data\":0.0}",
+      "elapsed_ms": 0.75
+    },
+    {
+      "round": 1,
+      "path": "console_sdk",
+      "api": 7004,
+      "http_status": 504,
+      "response": {
+        "error": {
+          "code": "SDK_TIMEOUT",
+          "message": "官方接口 3104 超时；是否执行未知，未自动重发。请先核对实时状态"
+        },
+        "request_id": "90f0aa9225d14779840be2618973c32a"
+      },
+      "elapsed_ms": 749.83
+    },
+    {
+      "round": 1,
+      "path": "isolated_polled",
+      "api": 7005,
+      "parameter": "",
+      "id": 3277878990423,
+      "code": 7301,
+      "data": "{\"data\":0.0}",
+      "elapsed_ms": 0.89
+    },
+    {
+      "round": 1,
+      "path": "isolated_polled",
+      "api": 7005,
+      "parameter": "{}",
+      "id": 3277879979806,
+      "code": 7301,
+      "data": "{\"data\":0.0}",
+      "elapsed_ms": 0.68
+    },
+    {
+      "round": 1,
+      "path": "console_sdk",
+      "api": 7005,
+      "http_status": 502,
+      "response": {
+        "error": {
+          "code": "SDK_REJECTED",
+          "message": "官方服务返回 7301；不代表机器人已完成操作"
+        },
+        "request_id": "689762cf2b4d46309b66238be0c1d952"
+      },
+      "elapsed_ms": 146.14
+    },
+    {
+      "round": 1,
+      "path": "isolated_polled",
+      "api": 7006,
+      "parameter": "",
+      "id": 3278027300336,
+      "code": 7301,
+      "data": "{\"data\":[]}",
+      "elapsed_ms": 0.78
+    },
+    {
+      "round": 1,
+      "path": "isolated_polled",
+      "api": 7006,
+      "parameter": "{}",
+      "id": 3278028181458,
+      "code": 7301,
+      "data": "{\"data\":[]}",
+      "elapsed_ms": 0.79
+    },
+    {
+      "round": 1,
+      "path": "console_sdk",
+      "api": 7006,
+      "http_status": 502,
+      "response": {
+        "error": {
+          "code": "SDK_REJECTED",
+          "message": "官方服务返回 7301；不代表机器人已完成操作"
+        },
+        "request_id": "27774486b7fe410690c364a05b93c36b"
+      },
+      "elapsed_ms": 160.18
+    },
+    {
+      "round": 2,
+      "path": "isolated_polled",
+      "api": 7003,
+      "parameter": "",
+      "id": 3278189713736,
+      "code": 7301,
+      "data": "{\"data\":0}",
+      "elapsed_ms": 0.97
+    },
+    {
+      "round": 2,
+      "path": "isolated_polled",
+      "api": 7003,
+      "parameter": "{}",
+      "id": 3278191017147,
+      "code": 7301,
+      "data": "{\"data\":0}",
+      "elapsed_ms": 0.81
+    },
+    {
+      "round": 2,
+      "path": "console_sdk",
+      "api": 7003,
+      "http_status": 504,
+      "response": {
+        "error": {
+          "code": "SDK_TIMEOUT",
+          "message": "官方接口 3104 超时；是否执行未知，未自动重发。请先核对实时状态"
+        },
+        "request_id": "1105910398d34905bfa588a69c202aa2"
+      },
+      "elapsed_ms": 732.87
+    },
+    {
+      "round": 2,
+      "path": "isolated_polled",
+      "api": 7004,
+      "parameter": "",
+      "id": 3278925775375,
+      "code": 7301,
+      "data": "{\"data\":0.0}",
+      "elapsed_ms": 0.91
+    },
+    {
+      "round": 2,
+      "path": "isolated_polled",
+      "api": 7004,
+      "parameter": "{}",
+      "id": 3278926874042,
+      "code": 7301,
+      "data": "{\"data\":0.0}",
+      "elapsed_ms": 1.03
+    },
+    {
+      "round": 2,
+      "path": "console_sdk",
+      "api": 7004,
+      "http_status": 502,
+      "response": {
+        "error": {
+          "code": "SDK_REJECTED",
+          "message": "官方服务返回 7301；不代表机器人已完成操作"
+        },
+        "request_id": "0179c8521d754c07941d9437b7903cd3"
+      },
+      "elapsed_ms": 148.41
+    },
+    {
+      "round": 2,
+      "path": "isolated_polled",
+      "api": 7005,
+      "parameter": "",
+      "id": 3279077222721,
+      "code": 7301,
+      "data": "{\"data\":0.0}",
+      "elapsed_ms": 0.98
+    },
+    {
+      "round": 2,
+      "path": "isolated_polled",
+      "api": 7005,
+      "parameter": "{}",
+      "id": 3279078405422,
+      "code": 7301,
+      "data": "{\"data\":0.0}",
+      "elapsed_ms": 0.86
+    },
+    {
+      "round": 2,
+      "path": "console_sdk",
+      "api": 7005,
+      "http_status": 502,
+      "response": {
+        "error": {
+          "code": "SDK_REJECTED",
+          "message": "官方服务返回 7301；不代表机器人已完成操作"
+        },
+        "request_id": "d6092e72346e40659d7e8623aeb60988"
+      },
+      "elapsed_ms": 117.36
+    },
+    {
+      "round": 2,
+      "path": "isolated_polled",
+      "api": 7006,
+      "parameter": "",
+      "id": 3279197331802,
+      "code": 7301,
+      "data": "{\"data\":[]}",
+      "elapsed_ms": 0.78
+    },
+    {
+      "round": 2,
+      "path": "isolated_polled",
+      "api": 7006,
+      "parameter": "{}",
+      "id": 3279198229180,
+      "code": 7301,
+      "data": "{\"data\":[]}",
+      "elapsed_ms": 0.99
+    },
+    {
+      "round": 2,
+      "path": "console_sdk",
+      "api": 7006,
+      "http_status": 502,
+      "response": {
+        "error": {
+          "code": "SDK_REJECTED",
+          "message": "官方服务返回 7301；不代表机器人已完成操作"
+        },
+        "request_id": "a2aa386b047f4b32830599f0987cf8d5"
+      },
+      "elapsed_ms": 99.37
+    },
+    {
+      "round": 3,
+      "path": "isolated_polled",
+      "api": 7003,
+      "parameter": "",
+      "id": 3279299384250,
+      "code": 7301,
+      "data": "{\"data\":0}",
+      "elapsed_ms": 1.31
+    },
+    {
+      "round": 3,
+      "path": "isolated_polled",
+      "api": 7003,
+      "parameter": "{}",
+      "id": 3279300793744,
+      "code": 7301,
+      "data": "{\"data\":0}",
+      "elapsed_ms": 0.94
+    },
+    {
+      "round": 3,
+      "path": "console_sdk",
+      "api": 7003,
+      "http_status": 502,
+      "response": {
+        "error": {
+          "code": "SDK_REJECTED",
+          "message": "官方服务返回 7301；不代表机器人已完成操作"
+        },
+        "request_id": "16068d652d8742f5bd4fffc8a148a47a"
+      },
+      "elapsed_ms": 149.68
+    },
+    {
+      "round": 3,
+      "path": "isolated_polled",
+      "api": 7004,
+      "parameter": "",
+      "id": 3279452135742,
+      "code": 7301,
+      "data": "{\"data\":0.0}",
+      "elapsed_ms": 1.04
+    },
+    {
+      "round": 3,
+      "path": "isolated_polled",
+      "api": 7004,
+      "parameter": "{}",
+      "id": 3279453467665,
+      "code": 7301,
+      "data": "{\"data\":0.0}",
+      "elapsed_ms": 0.94
+    },
+    {
+      "round": 3,
+      "path": "console_sdk",
+      "api": 7004,
+      "http_status": 504,
+      "response": {
+        "error": {
+          "code": "SDK_TIMEOUT",
+          "message": "官方接口 3104 超时；是否执行未知，未自动重发。请先核对实时状态"
+        },
+        "request_id": "7c4a0fced7d542588734e53c4927daed"
+      },
+      "elapsed_ms": 734.46
+    },
+    {
+      "round": 3,
+      "path": "isolated_polled",
+      "api": 7005,
+      "parameter": "",
+      "id": 3280190039244,
+      "code": 7301,
+      "data": "{\"data\":0.0}",
+      "elapsed_ms": 1.55
+    },
+    {
+      "round": 3,
+      "path": "isolated_polled",
+      "api": 7005,
+      "parameter": "{}",
+      "id": 3280191759566,
+      "code": 7301,
+      "data": "{\"data\":0.0}",
+      "elapsed_ms": 1.17
+    },
+    {
+      "round": 3,
+      "path": "console_sdk",
+      "api": 7005,
+      "http_status": 504,
+      "response": {
+        "error": {
+          "code": "SDK_TIMEOUT",
+          "message": "官方接口 3104 超时；是否执行未知，未自动重发。请先核对实时状态"
+        },
+        "request_id": "3bb687c20fbb47d5a0f80ac1fb1e42df"
+      },
+      "elapsed_ms": 748.9
+    },
+    {
+      "round": 3,
+      "path": "isolated_polled",
+      "api": 7006,
+      "parameter": "",
+      "id": 3280942869337,
+      "code": 7301,
+      "data": "{\"data\":[]}",
+      "elapsed_ms": 5.44
+    },
+    {
+      "round": 3,
+      "path": "isolated_polled",
+      "api": 7006,
+      "parameter": "{}",
+      "id": 3280948557365,
+      "code": 7301,
+      "data": "{\"data\":[]}",
+      "elapsed_ms": 1.51
+    },
+    {
+      "round": 3,
+      "path": "console_sdk",
+      "api": 7006,
+      "http_status": 504,
+      "response": {
+        "error": {
+          "code": "SDK_TIMEOUT",
+          "message": "官方接口 3104 超时；是否执行未知，未自动重发。请先核对实时状态"
+        },
+        "request_id": "dabba1f0777f4d5d9d9dd1b9ba0bbf78"
+      },
+      "elapsed_ms": 749.12
+    }
+  ],
+  "passive": [
+    {
+      "direction": "request",
+      "id": 1792584012963,
+      "api": 7001,
+      "observed_at": 1792584014.8390856,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "request",
+      "id": 3271540682377,
+      "api": 7001,
+      "observed_at": 1792584014.8390903,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "request",
+      "id": 1792584013481,
+      "api": 7001,
+      "observed_at": 1792584014.839092,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "request",
+      "id": 3272060782924,
+      "api": 7001,
+      "observed_at": 1792584014.839093,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "request",
+      "id": 3272102910667,
+      "api": 7002,
+      "observed_at": 1792584014.8390942,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "request",
+      "id": 1792584013999,
+      "api": 7001,
+      "observed_at": 1792584014.8390956,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "request",
+      "id": 3272567371876,
+      "api": 7001,
+      "observed_at": 1792584014.8390982,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "request",
+      "id": 1792584014518,
+      "api": 7001,
+      "observed_at": 1792584014.839102,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "request",
+      "id": 3273072800623,
+      "api": 7001,
+      "observed_at": 1792584014.839104,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "request",
+      "id": 3273368860435,
+      "api": 7003,
+      "observed_at": 1792584014.8391051,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "response",
+      "id": 1792584012963,
+      "api": 7001,
+      "observed_at": 1792584014.8392847,
+      "code": 0,
+      "data": "{\"data\":0}"
+    },
+    {
+      "direction": "response",
+      "id": 3271540682377,
+      "api": 7001,
+      "observed_at": 1792584014.8392885,
+      "code": 0,
+      "data": "{\"data\":0}"
+    },
+    {
+      "direction": "response",
+      "id": 1792584013481,
+      "api": 7001,
+      "observed_at": 1792584014.83929,
+      "code": 0,
+      "data": "{\"data\":0}"
+    },
+    {
+      "direction": "response",
+      "id": 3272060782924,
+      "api": 7001,
+      "observed_at": 1792584014.839291,
+      "code": 0,
+      "data": "{\"data\":0}"
+    },
+    {
+      "direction": "response",
+      "id": 3272102910667,
+      "api": 7002,
+      "observed_at": 1792584014.839292,
+      "code": 0,
+      "data": "{\"data\":0}"
+    },
+    {
+      "direction": "response",
+      "id": 1792584013999,
+      "api": 7001,
+      "observed_at": 1792584014.8392932,
+      "code": 0,
+      "data": "{\"data\":0}"
+    },
+    {
+      "direction": "response",
+      "id": 3272567371876,
+      "api": 7001,
+      "observed_at": 1792584014.8392942,
+      "code": 0,
+      "data": "{\"data\":0}"
+    },
+    {
+      "direction": "response",
+      "id": 1792584014518,
+      "api": 7001,
+      "observed_at": 1792584014.8392951,
+      "code": 0,
+      "data": "{\"data\":0}"
+    },
+    {
+      "direction": "response",
+      "id": 3273072800623,
+      "api": 7001,
+      "observed_at": 1792584014.8392963,
+      "code": 0,
+      "data": "{\"data\":0}"
+    },
+    {
+      "direction": "response",
+      "id": 3273368860435,
+      "api": 7003,
+      "observed_at": 1792584014.839297,
+      "code": 7301,
+      "data": "{\"data\":0}"
+    },
+    {
+      "direction": "request",
+      "id": 3273370591413,
+      "api": 7003,
+      "observed_at": 1792584014.8401318,
+      "parameter": "{}",
+      "lease": 0
+    },
+    {
+      "direction": "response",
+      "id": 3273370591413,
+      "api": 7003,
+      "observed_at": 1792584014.8401606,
+      "code": 7301,
+      "data": "{\"data\":0}"
+    },
+    {
+      "direction": "request",
+      "id": 3273387283580,
+      "api": 7003,
+      "observed_at": 1792584015.6088986,
+      "parameter": "{}",
+      "lease": 0
+    },
+    {
+      "direction": "request",
+      "id": 1792584015045,
+      "api": 7001,
+      "observed_at": 1792584015.608904,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "request",
+      "id": 3273578720333,
+      "api": 7001,
+      "observed_at": 1792584015.6089053,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "request",
+      "id": 3274083282871,
+      "api": 7001,
+      "observed_at": 1792584015.6089067,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "request",
+      "id": 1792584015564,
+      "api": 7001,
+      "observed_at": 1792584015.6089075,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "response",
+      "id": 3273387283580,
+      "api": 7003,
+      "observed_at": 1792584015.6090326,
+      "code": 7301,
+      "data": "{\"data\":0}"
+    },
+    {
+      "direction": "response",
+      "id": 1792584015045,
+      "api": 7001,
+      "observed_at": 1792584015.6090372,
+      "code": 0,
+      "data": "{\"data\":0}"
+    },
+    {
+      "direction": "response",
+      "id": 3273578720333,
+      "api": 7001,
+      "observed_at": 1792584015.6090527,
+      "code": 0,
+      "data": "{\"data\":0}"
+    },
+    {
+      "direction": "response",
+      "id": 3274083282871,
+      "api": 7001,
+      "observed_at": 1792584015.6090539,
+      "code": 0,
+      "data": "{\"data\":0}"
+    },
+    {
+      "direction": "response",
+      "id": 1792584015564,
+      "api": 7001,
+      "observed_at": 1792584015.6090553,
+      "code": 0,
+      "data": "{\"data\":0}"
+    },
+    {
+      "direction": "request",
+      "id": 3274140350936,
+      "api": 7004,
+      "observed_at": 1792584015.6108844,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "response",
+      "id": 3274140350936,
+      "api": 7004,
+      "observed_at": 1792584015.6109197,
+      "code": 7301,
+      "data": "{\"data\":0.0}"
+    },
+    {
+      "direction": "request",
+      "id": 3274142212192,
+      "api": 7004,
+      "observed_at": 1792584015.6115773,
+      "parameter": "{}",
+      "lease": 0
+    },
+    {
+      "direction": "response",
+      "id": 3274142212192,
+      "api": 7004,
+      "observed_at": 1792584015.6116068,
+      "code": 7301,
+      "data": "{\"data\":0.0}"
+    },
+    {
+      "direction": "request",
+      "id": 3274164995570,
+      "api": 7004,
+      "observed_at": 1792584016.3560193,
+      "parameter": "{}",
+      "lease": 0
+    },
+    {
+      "direction": "request",
+      "id": 3274587718812,
+      "api": 7001,
+      "observed_at": 1792584016.3560247,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "request",
+      "id": 1792584016084,
+      "api": 7001,
+      "observed_at": 1792584016.3560264,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "response",
+      "id": 3274164995570,
+      "api": 7004,
+      "observed_at": 1792584016.3561425,
+      "code": 7301,
+      "data": "{\"data\":0.0}"
+    },
+    {
+      "direction": "response",
+      "id": 3274587718812,
+      "api": 7001,
+      "observed_at": 1792584016.3561466,
+      "code": 0,
+      "data": "{\"data\":0}"
+    },
+    {
+      "direction": "response",
+      "id": 1792584016084,
+      "api": 7001,
+      "observed_at": 1792584016.3561492,
+      "code": 0,
+      "data": "{\"data\":0}"
+    },
+    {
+      "direction": "request",
+      "id": 3274887445517,
+      "api": 7005,
+      "observed_at": 1792584016.3570411,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "response",
+      "id": 3274887445517,
+      "api": 7005,
+      "observed_at": 1792584016.3570821,
+      "code": 7301,
+      "data": "{\"data\":0.0}"
+    },
+    {
+      "direction": "request",
+      "id": 3274888397874,
+      "api": 7005,
+      "observed_at": 1792584016.3579383,
+      "parameter": "{}",
+      "lease": 0
+    },
+    {
+      "direction": "response",
+      "id": 3274888397874,
+      "api": 7005,
+      "observed_at": 1792584016.3579664,
+      "code": 7301,
+      "data": "{\"data\":0.0}"
+    },
+    {
+      "direction": "request",
+      "id": 3274905839573,
+      "api": 7005,
+      "observed_at": 1792584017.0965679,
+      "parameter": "{}",
+      "lease": 0
+    },
+    {
+      "direction": "request",
+      "id": 3275102479824,
+      "api": 7001,
+      "observed_at": 1792584017.0965745,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "request",
+      "id": 3275124000049,
+      "api": 7002,
+      "observed_at": 1792584017.0965765,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "request",
+      "id": 1792584016604,
+      "api": 7001,
+      "observed_at": 1792584017.096578,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "request",
+      "id": 3275608703866,
+      "api": 7001,
+      "observed_at": 1792584017.096579,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "response",
+      "id": 3274905839573,
+      "api": 7005,
+      "observed_at": 1792584017.0967526,
+      "code": 7301,
+      "data": "{\"data\":0.0}"
+    },
+    {
+      "direction": "response",
+      "id": 3275102479824,
+      "api": 7001,
+      "observed_at": 1792584017.0967577,
+      "code": 0,
+      "data": "{\"data\":0}"
+    },
+    {
+      "direction": "response",
+      "id": 3275124000049,
+      "api": 7002,
+      "observed_at": 1792584017.0967603,
+      "code": 0,
+      "data": "{\"data\":0}"
+    },
+    {
+      "direction": "response",
+      "id": 1792584016604,
+      "api": 7001,
+      "observed_at": 1792584017.0967617,
+      "code": 0,
+      "data": "{\"data\":0}"
+    },
+    {
+      "direction": "response",
+      "id": 3275608703866,
+      "api": 7001,
+      "observed_at": 1792584017.0967634,
+      "code": 0,
+      "data": "{\"data\":0}"
+    },
+    {
+      "direction": "request",
+      "id": 3275628060263,
+      "api": 7006,
+      "observed_at": 1792584017.0978482,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "response",
+      "id": 3275628060263,
+      "api": 7006,
+      "observed_at": 1792584017.0978837,
+      "code": 7301,
+      "data": "{\"data\":[]}"
+    },
+    {
+      "direction": "request",
+      "id": 3275629175154,
+      "api": 7006,
+      "observed_at": 1792584017.0986578,
+      "parameter": "{}",
+      "lease": 0
+    },
+    {
+      "direction": "response",
+      "id": 3275629175154,
+      "api": 7006,
+      "observed_at": 1792584017.0986903,
+      "code": 7301,
+      "data": "{\"data\":[]}"
+    },
+    {
+      "direction": "request",
+      "id": 3275643388088,
+      "api": 7006,
+      "observed_at": 1792584017.864017,
+      "parameter": "{}",
+      "lease": 0
+    },
+    {
+      "direction": "request",
+      "id": 1792584017129,
+      "api": 7001,
+      "observed_at": 1792584017.864023,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "request",
+      "id": 3276113396041,
+      "api": 7001,
+      "observed_at": 1792584017.8640244,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "request",
+      "id": 1792584017648,
+      "api": 7001,
+      "observed_at": 1792584017.864025,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "response",
+      "id": 3275643388088,
+      "api": 7006,
+      "observed_at": 1792584017.864131,
+      "code": 7301,
+      "data": "{\"data\":[]}"
+    },
+    {
+      "direction": "response",
+      "id": 1792584017129,
+      "api": 7001,
+      "observed_at": 1792584017.8641367,
+      "code": 0,
+      "data": "{\"data\":0}"
+    },
+    {
+      "direction": "response",
+      "id": 3276113396041,
+      "api": 7001,
+      "observed_at": 1792584017.864138,
+      "code": 0,
+      "data": "{\"data\":0}"
+    },
+    {
+      "direction": "response",
+      "id": 1792584017648,
+      "api": 7001,
+      "observed_at": 1792584017.864139,
+      "code": 0,
+      "data": "{\"data\":0}"
+    },
+    {
+      "direction": "request",
+      "id": 3276395433997,
+      "api": 7003,
+      "observed_at": 1792584017.8650615,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "response",
+      "id": 3276395433997,
+      "api": 7003,
+      "observed_at": 1792584017.8650923,
+      "code": 7301,
+      "data": "{\"data\":0}"
+    },
+    {
+      "direction": "request",
+      "id": 3276396382290,
+      "api": 7003,
+      "observed_at": 1792584017.8657331,
+      "parameter": "{}",
+      "lease": 0
+    },
+    {
+      "direction": "response",
+      "id": 3276396382290,
+      "api": 7003,
+      "observed_at": 1792584017.86576,
+      "code": 7301,
+      "data": "{\"data\":0}"
+    },
+    {
+      "direction": "request",
+      "id": 3276411447673,
+      "api": 7003,
+      "observed_at": 1792584018.5954206,
+      "parameter": "{}",
+      "lease": 0
+    },
+    {
+      "direction": "request",
+      "id": 3276617624773,
+      "api": 7001,
+      "observed_at": 1792584018.5954256,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "request",
+      "id": 1792584018167,
+      "api": 7001,
+      "observed_at": 1792584018.595427,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "request",
+      "id": 3277122351831,
+      "api": 7001,
+      "observed_at": 1792584018.5954287,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "response",
+      "id": 3276411447673,
+      "api": 7003,
+      "observed_at": 1792584018.595535,
+      "code": 7301,
+      "data": "{\"data\":0}"
+    },
+    {
+      "direction": "response",
+      "id": 3276617624773,
+      "api": 7001,
+      "observed_at": 1792584018.5955398,
+      "code": 0,
+      "data": "{\"data\":0}"
+    },
+    {
+      "direction": "response",
+      "id": 1792584018167,
+      "api": 7001,
+      "observed_at": 1792584018.5955412,
+      "code": 0,
+      "data": "{\"data\":0}"
+    },
+    {
+      "direction": "response",
+      "id": 3277122351831,
+      "api": 7001,
+      "observed_at": 1792584018.5955422,
+      "code": 0,
+      "data": "{\"data\":0}"
+    },
+    {
+      "direction": "request",
+      "id": 3277126836900,
+      "api": 7004,
+      "observed_at": 1792584018.5964642,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "response",
+      "id": 3277126836900,
+      "api": 7004,
+      "observed_at": 1792584018.5964963,
+      "code": 7301,
+      "data": "{\"data\":0.0}"
+    },
+    {
+      "direction": "request",
+      "id": 3277127786024,
+      "api": 7004,
+      "observed_at": 1792584018.5973086,
+      "parameter": "{}",
+      "lease": 0
+    },
+    {
+      "direction": "response",
+      "id": 3277127786024,
+      "api": 7004,
+      "observed_at": 1792584018.5973375,
+      "code": 7301,
+      "data": "{\"data\":0.0}"
+    },
+    {
+      "direction": "request",
+      "id": 3277143577257,
+      "api": 7004,
+      "observed_at": 1792584019.3475833,
+      "parameter": "{}",
+      "lease": 0
+    },
+    {
+      "direction": "request",
+      "id": 1792584018687,
+      "api": 7001,
+      "observed_at": 1792584019.3475897,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "request",
+      "id": 3277629426685,
+      "api": 7001,
+      "observed_at": 1792584019.3475912,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "request",
+      "id": 1792584019212,
+      "api": 7001,
+      "observed_at": 1792584019.347592,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "response",
+      "id": 3277143577257,
+      "api": 7004,
+      "observed_at": 1792584019.3476875,
+      "code": 7301,
+      "data": "{\"data\":0.0}"
+    },
+    {
+      "direction": "response",
+      "id": 1792584018687,
+      "api": 7001,
+      "observed_at": 1792584019.3476913,
+      "code": 0,
+      "data": "{\"data\":0}"
+    },
+    {
+      "direction": "response",
+      "id": 3277629426685,
+      "api": 7001,
+      "observed_at": 1792584019.3476923,
+      "code": 0,
+      "data": "{\"data\":0}"
+    },
+    {
+      "direction": "response",
+      "id": 1792584019212,
+      "api": 7001,
+      "observed_at": 1792584019.3476932,
+      "code": 0,
+      "data": "{\"data\":0}"
+    },
+    {
+      "direction": "request",
+      "id": 3277878990423,
+      "api": 7005,
+      "observed_at": 1792584019.348658,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "response",
+      "id": 3277878990423,
+      "api": 7005,
+      "observed_at": 1792584019.348689,
+      "code": 7301,
+      "data": "{\"data\":0.0}"
+    },
+    {
+      "direction": "request",
+      "id": 3277879979806,
+      "api": 7005,
+      "observed_at": 1792584019.3494346,
+      "parameter": "{}",
+      "lease": 0
+    },
+    {
+      "direction": "response",
+      "id": 3277879979806,
+      "api": 7005,
+      "observed_at": 1792584019.3494632,
+      "code": 7301,
+      "data": "{\"data\":0.0}"
+    },
+    {
+      "direction": "request",
+      "id": 3277911424538,
+      "api": 7005,
+      "observed_at": 1792584019.4959462,
+      "parameter": "{}",
+      "lease": 0
+    },
+    {
+      "direction": "response",
+      "id": 3277911424538,
+      "api": 7005,
+      "observed_at": 1792584019.496005,
+      "code": 7301,
+      "data": "{\"data\":0.0}"
+    },
+    {
+      "direction": "request",
+      "id": 3278027300336,
+      "api": 7006,
+      "observed_at": 1792584019.4968605,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "response",
+      "id": 3278027300336,
+      "api": 7006,
+      "observed_at": 1792584019.4968905,
+      "code": 7301,
+      "data": "{\"data\":[]}"
+    },
+    {
+      "direction": "request",
+      "id": 3278028181458,
+      "api": 7006,
+      "observed_at": 1792584019.4977448,
+      "parameter": "{}",
+      "lease": 0
+    },
+    {
+      "direction": "response",
+      "id": 3278028181458,
+      "api": 7006,
+      "observed_at": 1792584019.4977741,
+      "code": 7301,
+      "data": "{\"data\":[]}"
+    },
+    {
+      "direction": "request",
+      "id": 3278043608197,
+      "api": 7006,
+      "observed_at": 1792584019.658329,
+      "parameter": "{}",
+      "lease": 0
+    },
+    {
+      "direction": "request",
+      "id": 3278128924640,
+      "api": 7002,
+      "observed_at": 1792584019.6583328,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "request",
+      "id": 3278151165337,
+      "api": 7001,
+      "observed_at": 1792584019.6583345,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "response",
+      "id": 3278043608197,
+      "api": 7006,
+      "observed_at": 1792584019.6584158,
+      "code": 7301,
+      "data": "{\"data\":[]}"
+    },
+    {
+      "direction": "response",
+      "id": 3278128924640,
+      "api": 7002,
+      "observed_at": 1792584019.6584194,
+      "code": 0,
+      "data": "{\"data\":0}"
+    },
+    {
+      "direction": "response",
+      "id": 3278151165337,
+      "api": 7001,
+      "observed_at": 1792584019.6584208,
+      "code": 0,
+      "data": "{\"data\":0}"
+    },
+    {
+      "direction": "request",
+      "id": 3278189713736,
+      "api": 7003,
+      "observed_at": 1792584019.6596482,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "response",
+      "id": 3278189713736,
+      "api": 7003,
+      "observed_at": 1792584019.65972,
+      "code": 7301,
+      "data": "{\"data\":0}"
+    },
+    {
+      "direction": "request",
+      "id": 3278191017147,
+      "api": 7003,
+      "observed_at": 1792584019.660643,
+      "parameter": "{}",
+      "lease": 0
+    },
+    {
+      "direction": "response",
+      "id": 3278191017147,
+      "api": 7003,
+      "observed_at": 1792584019.6606925,
+      "code": 7301,
+      "data": "{\"data\":0}"
+    },
+    {
+      "direction": "request",
+      "id": 3278207168138,
+      "api": 7003,
+      "observed_at": 1792584020.3942084,
+      "parameter": "{}",
+      "lease": 0
+    },
+    {
+      "direction": "request",
+      "id": 1792584019734,
+      "api": 7001,
+      "observed_at": 1792584020.3942173,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "request",
+      "id": 3278656754055,
+      "api": 7001,
+      "observed_at": 1792584020.3942208,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "request",
+      "id": 1792584020253,
+      "api": 7001,
+      "observed_at": 1792584020.3942232,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "response",
+      "id": 3278207168138,
+      "api": 7003,
+      "observed_at": 1792584020.3944623,
+      "code": 7301,
+      "data": "{\"data\":0}"
+    },
+    {
+      "direction": "response",
+      "id": 1792584019734,
+      "api": 7001,
+      "observed_at": 1792584020.394469,
+      "code": 0,
+      "data": "{\"data\":0}"
+    },
+    {
+      "direction": "response",
+      "id": 3278656754055,
+      "api": 7001,
+      "observed_at": 1792584020.394473,
+      "code": 0,
+      "data": "{\"data\":0}"
+    },
+    {
+      "direction": "response",
+      "id": 1792584020253,
+      "api": 7001,
+      "observed_at": 1792584020.3944755,
+      "code": 0,
+      "data": "{\"data\":0}"
+    },
+    {
+      "direction": "request",
+      "id": 3278925775375,
+      "api": 7004,
+      "observed_at": 1792584020.3955152,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "response",
+      "id": 3278925775375,
+      "api": 7004,
+      "observed_at": 1792584020.395579,
+      "code": 7301,
+      "data": "{\"data\":0.0}"
+    },
+    {
+      "direction": "request",
+      "id": 3278926874042,
+      "api": 7004,
+      "observed_at": 1792584020.3967667,
+      "parameter": "{}",
+      "lease": 0
+    },
+    {
+      "direction": "response",
+      "id": 3278926874042,
+      "api": 7004,
+      "observed_at": 1792584020.3968942,
+      "code": 7301,
+      "data": "{\"data\":0.0}"
+    },
+    {
+      "direction": "request",
+      "id": 3278971026369,
+      "api": 7004,
+      "observed_at": 1792584020.5458162,
+      "parameter": "{}",
+      "lease": 0
+    },
+    {
+      "direction": "response",
+      "id": 3278971026369,
+      "api": 7004,
+      "observed_at": 1792584020.5459213,
+      "code": 7301,
+      "data": "{\"data\":0.0}"
+    },
+    {
+      "direction": "request",
+      "id": 3279077222721,
+      "api": 7005,
+      "observed_at": 1792584020.5470424,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "response",
+      "id": 3279077222721,
+      "api": 7005,
+      "observed_at": 1792584020.54711,
+      "code": 7301,
+      "data": "{\"data\":0.0}"
+    },
+    {
+      "direction": "request",
+      "id": 3279078405422,
+      "api": 7005,
+      "observed_at": 1792584020.548098,
+      "parameter": "{}",
+      "lease": 0
+    },
+    {
+      "direction": "response",
+      "id": 3279078405422,
+      "api": 7005,
+      "observed_at": 1792584020.5481668,
+      "code": 7301,
+      "data": "{\"data\":0.0}"
+    },
+    {
+      "direction": "request",
+      "id": 3279090179669,
+      "api": 7005,
+      "observed_at": 1792584020.6659572,
+      "parameter": "{}",
+      "lease": 0
+    },
+    {
+      "direction": "request",
+      "id": 3279161911619,
+      "api": 7001,
+      "observed_at": 1792584020.6659622,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "response",
+      "id": 3279090179669,
+      "api": 7005,
+      "observed_at": 1792584020.6660352,
+      "code": 7301,
+      "data": "{\"data\":0.0}"
+    },
+    {
+      "direction": "response",
+      "id": 3279161911619,
+      "api": 7001,
+      "observed_at": 1792584020.666039,
+      "code": 0,
+      "data": "{\"data\":0}"
+    },
+    {
+      "direction": "request",
+      "id": 3279197331802,
+      "api": 7006,
+      "observed_at": 1792584020.6669073,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "response",
+      "id": 3279197331802,
+      "api": 7006,
+      "observed_at": 1792584020.6669378,
+      "code": 7301,
+      "data": "{\"data\":[]}"
+    },
+    {
+      "direction": "request",
+      "id": 3279198229180,
+      "api": 7006,
+      "observed_at": 1792584020.668058,
+      "parameter": "{}",
+      "lease": 0
+    },
+    {
+      "direction": "response",
+      "id": 3279198229180,
+      "api": 7006,
+      "observed_at": 1792584020.6681275,
+      "code": 7301,
+      "data": "{\"data\":[]}"
+    },
+    {
+      "direction": "request",
+      "id": 3279223209664,
+      "api": 7006,
+      "observed_at": 1792584020.7679775,
+      "parameter": "{}",
+      "lease": 0
+    },
+    {
+      "direction": "response",
+      "id": 3279223209664,
+      "api": 7006,
+      "observed_at": 1792584020.768082,
+      "code": 7301,
+      "data": "{\"data\":[]}"
+    },
+    {
+      "direction": "request",
+      "id": 3279299384250,
+      "api": 7003,
+      "observed_at": 1792584020.7694745,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "response",
+      "id": 3279299384250,
+      "api": 7003,
+      "observed_at": 1792584020.769504,
+      "code": 7301,
+      "data": "{\"data\":0}"
+    },
+    {
+      "direction": "request",
+      "id": 3279300793744,
+      "api": 7003,
+      "observed_at": 1792584020.7704976,
+      "parameter": "{}",
+      "lease": 0
+    },
+    {
+      "direction": "response",
+      "id": 3279300793744,
+      "api": 7003,
+      "observed_at": 1792584020.7705233,
+      "code": 7301,
+      "data": "{\"data\":0}"
+    },
+    {
+      "direction": "request",
+      "id": 1792584020774,
+      "api": 7001,
+      "observed_at": 1792584020.9206586,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "request",
+      "id": 3279320944185,
+      "api": 7003,
+      "observed_at": 1792584020.9206674,
+      "parameter": "{}",
+      "lease": 0
+    },
+    {
+      "direction": "response",
+      "id": 1792584020774,
+      "api": 7001,
+      "observed_at": 1792584020.920828,
+      "code": 0,
+      "data": "{\"data\":0}"
+    },
+    {
+      "direction": "response",
+      "id": 3279320944185,
+      "api": 7003,
+      "observed_at": 1792584020.9208362,
+      "code": 7301,
+      "data": "{\"data\":0}"
+    },
+    {
+      "direction": "request",
+      "id": 3279452135742,
+      "api": 7004,
+      "observed_at": 1792584020.9220953,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "response",
+      "id": 3279452135742,
+      "api": 7004,
+      "observed_at": 1792584020.9221716,
+      "code": 7301,
+      "data": "{\"data\":0.0}"
+    },
+    {
+      "direction": "request",
+      "id": 3279453467665,
+      "api": 7004,
+      "observed_at": 1792584020.9232514,
+      "parameter": "{}",
+      "lease": 0
+    },
+    {
+      "direction": "response",
+      "id": 3279453467665,
+      "api": 7004,
+      "observed_at": 1792584020.9233246,
+      "code": 7301,
+      "data": "{\"data\":0.0}"
+    },
+    {
+      "direction": "request",
+      "id": 3279465765579,
+      "api": 7004,
+      "observed_at": 1792584021.6584847,
+      "parameter": "{}",
+      "lease": 0
+    },
+    {
+      "direction": "request",
+      "id": 3279667316169,
+      "api": 7001,
+      "observed_at": 1792584021.6584926,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "request",
+      "id": 1792584021296,
+      "api": 7001,
+      "observed_at": 1792584021.658496,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "request",
+      "id": 3280172500103,
+      "api": 7001,
+      "observed_at": 1792584021.6584988,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "response",
+      "id": 3279465765579,
+      "api": 7004,
+      "observed_at": 1792584021.6587298,
+      "code": 7301,
+      "data": "{\"data\":0.0}"
+    },
+    {
+      "direction": "response",
+      "id": 3279667316169,
+      "api": 7001,
+      "observed_at": 1792584021.658736,
+      "code": 0,
+      "data": "{\"data\":0}"
+    },
+    {
+      "direction": "response",
+      "id": 1792584021296,
+      "api": 7001,
+      "observed_at": 1792584021.6587384,
+      "code": 0,
+      "data": "{\"data\":0}"
+    },
+    {
+      "direction": "response",
+      "id": 3280172500103,
+      "api": 7001,
+      "observed_at": 1792584021.6587405,
+      "code": 0,
+      "data": "{\"data\":0}"
+    },
+    {
+      "direction": "request",
+      "id": 3280190039244,
+      "api": 7005,
+      "observed_at": 1792584021.660411,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "response",
+      "id": 3280190039244,
+      "api": 7005,
+      "observed_at": 1792584021.660466,
+      "code": 7301,
+      "data": "{\"data\":0.0}"
+    },
+    {
+      "direction": "request",
+      "id": 3280191759566,
+      "api": 7005,
+      "observed_at": 1792584021.6617532,
+      "parameter": "{}",
+      "lease": 0
+    },
+    {
+      "direction": "response",
+      "id": 3280191759566,
+      "api": 7005,
+      "observed_at": 1792584021.661808,
+      "code": 7301,
+      "data": "{\"data\":0.0}"
+    },
+    {
+      "direction": "request",
+      "id": 3280211108728,
+      "api": 7005,
+      "observed_at": 1792584022.4113286,
+      "parameter": "{}",
+      "lease": 0
+    },
+    {
+      "direction": "request",
+      "id": 1792584021815,
+      "api": 7001,
+      "observed_at": 1792584022.4113374,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "request",
+      "id": 3280678401888,
+      "api": 7001,
+      "observed_at": 1792584022.411341,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "request",
+      "id": 1792584022335,
+      "api": 7001,
+      "observed_at": 1792584022.411343,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "response",
+      "id": 3280211108728,
+      "api": 7005,
+      "observed_at": 1792584022.4115562,
+      "code": 7301,
+      "data": "{\"data\":0.0}"
+    },
+    {
+      "direction": "response",
+      "id": 1792584021815,
+      "api": 7001,
+      "observed_at": 1792584022.4115632,
+      "code": 0,
+      "data": "{\"data\":0}"
+    },
+    {
+      "direction": "response",
+      "id": 3280678401888,
+      "api": 7001,
+      "observed_at": 1792584022.4115665,
+      "code": 0,
+      "data": "{\"data\":0}"
+    },
+    {
+      "direction": "response",
+      "id": 1792584022335,
+      "api": 7001,
+      "observed_at": 1792584022.4115694,
+      "code": 0,
+      "data": "{\"data\":0}"
+    },
+    {
+      "direction": "request",
+      "id": 3280942869337,
+      "api": 7006,
+      "observed_at": 1792584022.4171855,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "response",
+      "id": 3280942869337,
+      "api": 7006,
+      "observed_at": 1792584022.4172573,
+      "code": 7301,
+      "data": "{\"data\":[]}"
+    },
+    {
+      "direction": "request",
+      "id": 3280948557365,
+      "api": 7006,
+      "observed_at": 1792584022.4189458,
+      "parameter": "{}",
+      "lease": 0
+    },
+    {
+      "direction": "response",
+      "id": 3280948557365,
+      "api": 7006,
+      "observed_at": 1792584022.419023,
+      "code": 7301,
+      "data": "{\"data\":[]}"
+    },
+    {
+      "direction": "request",
+      "id": 3280983230894,
+      "api": 7006,
+      "observed_at": 1792584023.1689186,
+      "parameter": "{}",
+      "lease": 0
+    },
+    {
+      "direction": "request",
+      "id": 3281141973145,
+      "api": 7002,
+      "observed_at": 1792584023.1689274,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "request",
+      "id": 3281187657083,
+      "api": 7001,
+      "observed_at": 1792584023.168931,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "request",
+      "id": 1792584022862,
+      "api": 7001,
+      "observed_at": 1792584023.1689336,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "request",
+      "id": 3281692803575,
+      "api": 7001,
+      "observed_at": 1792584023.1689363,
+      "parameter": "",
+      "lease": 0
+    },
+    {
+      "direction": "response",
+      "id": 3280983230894,
+      "api": 7006,
+      "observed_at": 1792584023.1691797,
+      "code": 7301,
+      "data": "{\"data\":[]}"
+    },
+    {
+      "direction": "response",
+      "id": 3281141973145,
+      "api": 7002,
+      "observed_at": 1792584023.1691866,
+      "code": 0,
+      "data": "{\"data\":0}"
+    },
+    {
+      "direction": "response",
+      "id": 3281187657083,
+      "api": 7001,
+      "observed_at": 1792584023.1691897,
+      "code": 0,
+      "data": "{\"data\":0}"
+    },
+    {
+      "direction": "response",
+      "id": 1792584022862,
+      "api": 7001,
+      "observed_at": 1792584023.169192,
+      "code": 0,
+      "data": "{\"data\":0}"
+    },
+    {
+      "direction": "response",
+      "id": 3281692803575,
+      "api": 7001,
+      "observed_at": 1792584023.1691945,
+      "code": 0,
+      "data": "{\"data\":0}"
+    }
+  ],
+  "mode_feedback": {
+    "sport": {
+      "source": "rt/lf/sportmodestate",
+      "type": "unitree_hg::msg::dds_::SportModeState_",
+      "current": true,
+      "age_ms": 49,
+      "ttl_ms": 1500,
+      "received_at": 1792584023.113751,
+      "samples": 3420,
+      "raw": {
+        "fsm_id": 0,
+        "fsm_mode": 0,
+        "task_id": 4,
+        "task_time": 0.0
+      },
+      "code": 0,
+      "physical_publisher_verified": false,
+      "hardware_health_verified": false,
+      "timestamp_basis": "local_receive_time",
+      "sensor_timestamp": null
+    },
+    "bms": {
+      "source": "rt/lf/bmsstate",
+      "type": "unitree_hg::msg::dds_::BmsState_",
+      "current": true,
+      "age_ms": 5,
+      "ttl_ms": 1500,
+      "received_at": 1792584023.1580896,
+      "samples": 4747,
+      "raw": {
+        "version_high": 1,
+        "version_low": 3,
+        "fn": 5,
+        "cell_vol": [
+          4030,
+          4030,
+          4030,
+          4032,
+          4030,
+          4033,
+          4031,
+          4032,
+          4032,
+          4030,
+          4031,
+          4028,
+          4028,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "bmsvoltage": [
+          52426,
+          52431,
+          0
+        ],
+        "current": -1620,
+        "soc": 81,
+        "soh": 92,
+        "temperature": [
+          35,
+          35,
+          33,
+          37,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "cycle": 11,
+        "manufacturer_date": 22939,
+        "bmsstate": [
+          8,
+          8,
+          262144,
+          7,
+          0
+        ],
+        "reserve": [
+          0,
+          0,
+          0
+        ]
+      },
+      "code": 0,
+      "physical_publisher_verified": false,
+      "hardware_health_verified": false,
+      "timestamp_basis": "local_receive_time",
+      "sensor_timestamp": null
+    },
+    "mainboard": {
+      "source": "rt/lf/mainboardstate",
+      "type": "unitree_hg::msg::dds_::MainBoardState_",
+      "current": true,
+      "age_ms": 4,
+      "ttl_ms": 1500,
+      "received_at": 1792584023.1592727,
+      "samples": 4663,
+      "raw": {
+        "fan_state": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "temperature": [
+          48,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "value": [
+          52.13794708251953,
+          52.331336975097656,
+          1.3000000715255737,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "state": [
+          32,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "code": 0,
+      "physical_publisher_verified": false,
+      "hardware_health_verified": false,
+      "timestamp_basis": "local_receive_time",
+      "sensor_timestamp": null
+    },
+    "arm_state": {
+      "source": "rt/arm/action/state",
+      "type": "std_msgs::msg::dds_::String_",
+      "current": false,
+      "age_ms": null,
+      "ttl_ms": 1500,
+      "received_at": null,
+      "samples": 0,
+      "raw": null,
+      "code": null,
+      "physical_publisher_verified": false,
+      "hardware_health_verified": false,
+      "timestamp_basis": "local_receive_time",
+      "sensor_timestamp": null
+    },
+    "selftest": {
+      "source": "rt/selftest",
+      "type": "std_msgs::msg::dds_::String_",
+      "current": false,
+      "age_ms": null,
+      "ttl_ms": 1500,
+      "received_at": null,
+      "samples": 0,
+      "raw": null,
+      "code": null,
+      "physical_publisher_verified": false,
+      "hardware_health_verified": false,
+      "timestamp_basis": "local_receive_time",
+      "sensor_timestamp": null
+    },
+    "secondary_imu": {
+      "source": "rt/secondary_imu",
+      "type": "unitree_hg::msg::dds_::IMUState_",
+      "current": true,
+      "age_ms": 1,
+      "ttl_ms": 1500,
+      "received_at": 1792584023.1623955,
+      "samples": 336213,
+      "raw": {
+        "quaternion": [
+          0.9976984858512878,
+          0.03909697011113167,
+          -0.0553516261279583,
+          -0.002334481803700328
+        ],
+        "gyroscope": [
+          -0.008522114716470242,
+          -0.0010652643395587802,
+          -0.0053263213485479355
+        ],
+        "accelerometer": [
+          1.4212579727172852,
+          0.5503671169281006,
+          9.69382381439209
+        ],
+        "rpy": [
+          0.07883426547050476,
+          -0.11049060523509979,
+          -0.009041637182235718
+        ],
+        "temperature": 79
+      },
+      "code": 0,
+      "physical_publisher_verified": false,
+      "hardware_health_verified": false,
+      "timestamp_basis": "local_receive_time",
+      "sensor_timestamp": null
+    },
+    "pelvis_odom": {
+      "source": "rt/state_estimator/odom_pelvis",
+      "type": "nav_msgs::msg::dds_::Odometry_",
+      "current": true,
+      "age_ms": 42,
+      "ttl_ms": 1500,
+      "received_at": 1792584023.1215856,
+      "samples": 13696,
+      "raw": {
+        "header": {
+          "stamp": {
+            "sec": 1792584022,
+            "nanosec": 815799236
+          },
+          "frame_id": "odom"
+        },
+        "child_frame_id": "pelvis",
+        "pose": {
+          "pose": {
+            "position": {
+              "x": -0.08987092971801758,
+              "y": -0.43206900358200073,
+              "z": 0.11818397045135498
+            },
+            "orientation": {
+              "x": -0.06874369829893112,
+              "y": 0.026830896735191345,
+              "z": 0.013413501903414726,
+              "w": -0.9971832633018494
+            }
+          },
+          "covariance": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "twist": {
+          "twist": {
+            "linear": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "angular": {
+              "x": 0.010652642697095871,
+              "y": 0.0074568502604961395,
+              "z": -0.0
+            }
+          },
+          "covariance": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "code": 0,
+      "physical_publisher_verified": false,
+      "hardware_health_verified": false,
+      "timestamp_basis": "local_receive_time",
+      "sensor_timestamp": null
+    },
+    "torso_odom": {
+      "source": "rt/state_estimator/odom_torso",
+      "type": "nav_msgs::msg::dds_::Odometry_",
+      "current": true,
+      "age_ms": 39,
+      "ttl_ms": 1500,
+      "received_at": 1792584023.124417,
+      "samples": 13399,
+      "raw": {
+        "header": {
+          "stamp": {
+            "sec": 1792584022,
+            "nanosec": 815799236
+          },
+          "frame_id": "odom"
+        },
+        "child_frame_id": "torso",
+        "pose": {
+          "pose": {
+            "position": {
+              "x": -0.09606602787971497,
+              "y": -0.4417112171649933,
+              "z": 0.171102374792099
+            },
+            "orientation": {
+              "x": -0.05658808350563049,
+              "y": 0.04736435413360596,
+              "z": -0.3054894506931305,
+              "w": -0.9493317008018494
+            }
+          },
+          "covariance": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "twist": {
+          "twist": {
+            "linear": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "angular": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          },
+          "covariance": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "code": 0,
+      "physical_publisher_verified": false,
+      "hardware_health_verified": false,
+      "timestamp_basis": "local_receive_time",
+      "sensor_timestamp": null
+    },
+    "motion_mode": {
+      "source": "motion_switcher / 1001",
+      "type": "official JSON response",
+      "current": true,
+      "age_ms": 814,
+      "ttl_ms": 6000,
+      "raw": {
+        "form": "0",
+        "name": "ai"
+      },
+      "code": 0,
+      "received_at": 1792584022.348314,
+      "received_monotonic": 3280.879597329,
+      "samples": 179,
+      "request_ms": 18.01,
+      "diagnostics": {
+        "total": {
+          "attempts": 179,
+          "successes": 179,
+          "timeouts": 0,
+          "errors": 0
+        },
+        "window_s": 60,
+        "attempts": 20,
+        "successes": 20,
+        "timeouts": 0,
+        "errors": 0
+      },
+      "transport": "official_getters_isolated_polled",
+      "physical_publisher_verified": false,
+      "hardware_health_verified": false,
+      "timestamp_basis": "worker_local_receive_time",
+      "sensor_timestamp": null
+    },
+    "fsm_mode": {
+      "source": "sport / 7002",
+      "type": "official JSON response",
+      "current": true,
+      "age_ms": 547,
+      "ttl_ms": 6000,
+      "raw": {
+        "data": 0
+      },
+      "code": 0,
+      "received_at": 1792584022.615878,
+      "received_monotonic": 3281.147161985,
+      "samples": 180,
+      "request_ms": 5.21,
+      "diagnostics": {
+        "total": {
+          "attempts": 180,
+          "successes": 180,
+          "timeouts": 0,
+          "errors": 0
+        },
+        "window_s": 60,
+        "attempts": 20,
+        "successes": 20,
+        "timeouts": 0,
+        "errors": 0
+      },
+      "transport": "official_getters_isolated_polled",
+      "physical_publisher_verified": false,
+      "hardware_health_verified": false,
+      "timestamp_basis": "worker_local_receive_time",
+      "sensor_timestamp": null
+    },
+    "fsm_id": {
+      "source": "sport / 7001",
+      "type": "official JSON response",
+      "current": true,
+      "age_ms": 505,
+      "ttl_ms": 1500,
+      "raw": {
+        "data": 0
+      },
+      "code": 0,
+      "received_at": 1792584022.6578875,
+      "received_monotonic": 3281.189171221,
+      "samples": 1064,
+      "request_ms": 1.54,
+      "diagnostics": {
+        "total": {
+          "attempts": 1064,
+          "successes": 1064,
+          "timeouts": 0,
+          "errors": 0
+        },
+        "window_s": 60,
+        "attempts": 119,
+        "successes": 119,
+        "timeouts": 0,
+        "errors": 0
+      },
+      "transport": "official_getters_isolated_polled",
+      "physical_publisher_verified": false,
+      "hardware_health_verified": false,
+      "timestamp_basis": "worker_local_receive_time",
+      "sensor_timestamp": null
+    }
+  },
+  "fsm": 0,
+  "limitation": "Passive polling times are not wire latency. No mode switch attempted; 7301 does not reveal the required physical entry conditions."
+}

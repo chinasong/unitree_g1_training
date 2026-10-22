@@ -1,0 +1,2363 @@
+{
+  "checked_at_utc": "2026-10-21T02:15:02.231182+00:00",
+  "source": "GitHub public REST API; anonymous read-only GET",
+  "repositories": [
+    {
+      "full_name": "unitreerobotics/unitree_actuator_sdk",
+      "html_url": "https://github.com/unitreerobotics/unitree_actuator_sdk",
+      "has_issues": true,
+      "has_discussions": false
+    },
+    {
+      "full_name": "unitreerobotics/unitree_mujoco",
+      "html_url": "https://github.com/unitreerobotics/unitree_mujoco",
+      "has_issues": true,
+      "has_discussions": false
+    },
+    {
+      "full_name": "unitreerobotics/unitree_rl_gym",
+      "html_url": "https://github.com/unitreerobotics/unitree_rl_gym",
+      "has_issues": true,
+      "has_discussions": false
+    },
+    {
+      "full_name": "unitreerobotics/unitree_ros",
+      "html_url": "https://github.com/unitreerobotics/unitree_ros",
+      "has_issues": true,
+      "has_discussions": false
+    },
+    {
+      "full_name": "unitreerobotics/unitree_ros2",
+      "html_url": "https://github.com/unitreerobotics/unitree_ros2",
+      "has_issues": false,
+      "has_discussions": false
+    },
+    {
+      "full_name": "unitreerobotics/unitree_sdk2",
+      "html_url": "https://github.com/unitreerobotics/unitree_sdk2",
+      "has_issues": false,
+      "has_discussions": false
+    },
+    {
+      "full_name": "unitreerobotics/unitree_sdk2_python",
+      "html_url": "https://github.com/unitreerobotics/unitree_sdk2_python",
+      "has_issues": true,
+      "has_discussions": false
+    },
+    {
+      "full_name": "unitreerobotics/xr_teleoperate",
+      "html_url": "https://github.com/unitreerobotics/xr_teleoperate",
+      "has_issues": true,
+      "has_discussions": false
+    }
+  ],
+  "queries": [
+    {
+      "query": "org:unitreerobotics is:issue G1 calibration",
+      "url": "https://github.com/search?q=org%3Aunitreerobotics+is%3Aissue+G1+calibration&type=issues",
+      "total_count": 4,
+      "pages": [
+        {
+          "page": 1,
+          "retrieved": 4,
+          "response_sha256": "c0205408a7d2daf1e5d21a8418c02ca80a4aafd4ed8dc9bda7d02c0fb263d6e5"
+        }
+      ],
+      "all_pages_retrieved": true
+    },
+    {
+      "query": "org:unitreerobotics is:issue G1 offset",
+      "url": "https://github.com/search?q=org%3Aunitreerobotics+is%3Aissue+G1+offset&type=issues",
+      "total_count": 16,
+      "pages": [
+        {
+          "page": 1,
+          "retrieved": 16,
+          "response_sha256": "f6a3cc985e827e279a427ffca8020d6e2921e04f3cb5ee7600e1a99a237b56e3"
+        }
+      ],
+      "all_pages_retrieved": true
+    },
+    {
+      "query": "org:unitreerobotics is:issue G1 config",
+      "url": "https://github.com/search?q=org%3Aunitreerobotics+is%3Aissue+G1+config&type=issues",
+      "total_count": 141,
+      "pages": [
+        {
+          "page": 1,
+          "retrieved": 100,
+          "response_sha256": "a1ade8db0073b8d27f8001aec455fb435295abeed5859370e75f4cf35eb33591"
+        },
+        {
+          "page": 2,
+          "retrieved": 41,
+          "response_sha256": "44720b97b2e9d001b1c1a175fcbdf55f4dc7eb6b63eb3596619ba83f0894ddd8"
+        }
+      ],
+      "all_pages_retrieved": true
+    },
+    {
+      "query": "org:unitreerobotics is:issue G1 parameters",
+      "url": "https://github.com/search?q=org%3Aunitreerobotics+is%3Aissue+G1+parameters&type=issues",
+      "total_count": 34,
+      "pages": [
+        {
+          "page": 1,
+          "retrieved": 34,
+          "response_sha256": "4f8e4af8a80adb5d3ef688b078c0b3d2771c0a1c25f67bbb87194af609afedbf"
+        }
+      ],
+      "all_pages_retrieved": true
+    },
+    {
+      "query": "org:unitreerobotics is:issue G1 firmware",
+      "url": "https://github.com/search?q=org%3Aunitreerobotics+is%3Aissue+G1+firmware&type=issues",
+      "total_count": 15,
+      "pages": [
+        {
+          "page": 1,
+          "retrieved": 15,
+          "response_sha256": "4c09e7e5dcec9a97dbaaa5400e941e80b9cd6fff13baaa745d16faa52bc411ae"
+        }
+      ],
+      "all_pages_retrieved": true
+    },
+    {
+      "query": "org:unitreerobotics is:issue 标定",
+      "url": "https://github.com/search?q=org%3Aunitreerobotics+is%3Aissue+%E6%A0%87%E5%AE%9A&type=issues",
+      "total_count": 23,
+      "pages": [
+        {
+          "page": 1,
+          "retrieved": 23,
+          "response_sha256": "f411cce0c80d69afb6d1eef42764e4a01a6411d8fe0dd1da08020e11b9d1277b"
+        }
+      ],
+      "all_pages_retrieved": true
+    },
+    {
+      "query": "org:unitreerobotics is:issue 零位",
+      "url": "https://github.com/search?q=org%3Aunitreerobotics+is%3Aissue+%E9%9B%B6%E4%BD%8D&type=issues",
+      "total_count": 8,
+      "pages": [
+        {
+          "page": 1,
+          "retrieved": 8,
+          "response_sha256": "7d629182dd169e09fbbcd55127fa7fdd4a712f6284f4693c3397bd8d5dd2d237"
+        }
+      ],
+      "all_pages_retrieved": true
+    },
+    {
+      "query": "org:unitreerobotics is:issue G1 \"current limit\"",
+      "url": "https://github.com/search?q=org%3Aunitreerobotics+is%3Aissue+G1+%22current+limit%22&type=issues",
+      "total_count": 3,
+      "pages": [
+        {
+          "page": 1,
+          "retrieved": 3,
+          "response_sha256": "21dd0792415f8fd3fc59b4ae53d50c5992b2768f8cd89c93bdc78350562c6858"
+        }
+      ],
+      "all_pages_retrieved": true
+    },
+    {
+      "query": "org:unitreerobotics is:issue G1 calibrate",
+      "url": "https://github.com/search?q=org%3Aunitreerobotics+is%3Aissue+G1+calibrate&type=issues",
+      "total_count": 3,
+      "pages": [
+        {
+          "page": 1,
+          "retrieved": 3,
+          "response_sha256": "8adf21cb28b6fe30716ace100daa7fd63d18da77ab3fbe079eb96e6dd458ded7"
+        }
+      ],
+      "all_pages_retrieved": true
+    },
+    {
+      "query": "org:unitreerobotics is:issue G1 encoder",
+      "url": "https://github.com/search?q=org%3Aunitreerobotics+is%3Aissue+G1+encoder&type=issues",
+      "total_count": 11,
+      "pages": [
+        {
+          "page": 1,
+          "retrieved": 11,
+          "response_sha256": "dcda2cd69283541b7a38952fccd3e032f04e860aec99980439b9c4203dee268a"
+        }
+      ],
+      "all_pages_retrieved": true
+    },
+    {
+      "query": "org:unitreerobotics is:issue ConfigClient",
+      "url": "https://github.com/search?q=org%3Aunitreerobotics+is%3Aissue+ConfigClient&type=issues",
+      "total_count": 0,
+      "pages": [
+        {
+          "page": 1,
+          "retrieved": 0,
+          "response_sha256": "145a6ef46a0f11fd1b04234b3ddcc7c274e51e026d4456b3b4400a3bb98d27d1"
+        }
+      ],
+      "all_pages_retrieved": true
+    },
+    {
+      "query": "org:unitreerobotics is:issue G1 motorstate",
+      "url": "https://github.com/search?q=org%3Aunitreerobotics+is%3Aissue+G1+motorstate&type=issues",
+      "total_count": 3,
+      "pages": [
+        {
+          "page": 1,
+          "retrieved": 3,
+          "response_sha256": "2ea9be5164c36ba7301e4809c9c9682cfc4e134316f3de3541d34feb79355bfa"
+        }
+      ],
+      "all_pages_retrieved": true
+    },
+    {
+      "query": "org:unitreerobotics is:issue basic_demarcate",
+      "url": "https://github.com/search?q=org%3Aunitreerobotics+is%3Aissue+basic_demarcate&type=issues",
+      "total_count": 0,
+      "pages": [
+        {
+          "page": 1,
+          "retrieved": 0,
+          "response_sha256": "145a6ef46a0f11fd1b04234b3ddcc7c274e51e026d4456b3b4400a3bb98d27d1"
+        }
+      ],
+      "all_pages_retrieved": true
+    },
+    {
+      "query": "org:unitreerobotics is:issue G1 \"zero offset\"",
+      "url": "https://github.com/search?q=org%3Aunitreerobotics+is%3Aissue+G1+%22zero+offset%22&type=issues",
+      "total_count": 0,
+      "pages": [
+        {
+          "page": 1,
+          "retrieved": 0,
+          "response_sha256": "145a6ef46a0f11fd1b04234b3ddcc7c274e51e026d4456b3b4400a3bb98d27d1"
+        }
+      ],
+      "all_pages_retrieved": true
+    }
+  ],
+  "issues": [
+    {
+      "url": "https://github.com/unitreerobotics/Qmini/issues/10",
+      "title": "交作业 顺便出二手qmini为复刻bdx攒电机",
+      "state": "open",
+      "updated_at": "2026-05-20T07:47:32Z",
+      "author_association": "NONE",
+      "body_sha256": "a5b842132564cd3ed17ff29cfbeab01d5dfcc1185b337ddfd614987186e93970"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/dex1_1_service/issues/4",
+      "title": "Dex1-1 errors on G1-D",
+      "state": "closed",
+      "updated_at": "2026-09-21T07:00:06Z",
+      "author_association": "NONE",
+      "body_sha256": "bf879dc787ff0708cf4eaf2a645fbb08d5cee002461fd895357cd1e8d4ff152c"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/teleimager/issues/6",
+      "title": "python -m teleimager.image_server --rs   ERROR",
+      "state": "closed",
+      "updated_at": "2026-04-24T06:33:02Z",
+      "author_association": "NONE",
+      "body_sha256": "0ef35b537c168ed1d387e7decf30fa4b98148c42e5f851885f8f129929657dba"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unifolm-vla/issues/14",
+      "title": "g1_stack_block_vla_train_error",
+      "state": "closed",
+      "updated_at": "2026-03-30T06:07:30Z",
+      "author_association": "NONE",
+      "body_sha256": "a2999b3fc42ad7661358daf09b5b83a67f5a4dbed2605aaa37423523e1d30e98"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unifolm-vla/issues/15",
+      "title": "想确认一下 UnifoLM-VLA-Base 官方微调时 action 的定义，主要是姿态",
+      "state": "open",
+      "updated_at": "2026-04-01T07:52:55Z",
+      "author_association": "NONE",
+      "body_sha256": "d7177e203f3d36a43877762031f86fd79ddaa25642285e63ff37a90d5cf1e0cc"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unifolm-vla/issues/18",
+      "title": "Clarification needed: 23D G1 stack-block action semantics and Isaac Lab joint-space mapping",
+      "state": "open",
+      "updated_at": "2026-07-04T14:01:08Z",
+      "author_association": "NONE",
+      "body_sha256": "924aef76656fe903d835aeb0625b534b2e17b7142ddd6dc573707ecd293baa5e"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unifolm-wla/issues/16",
+      "title": "Which EE offset and base link are used for `ee_pose_gripper_base`?",
+      "state": "closed",
+      "updated_at": "2026-10-09T08:31:11Z",
+      "author_association": "NONE",
+      "body_sha256": "82b5992f1607006c08420fad69bf6e19bab0109a3fd4bb0707d9e9f7ab4c2e89"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unifolm-wla/issues/5",
+      "title": "Implemented docs/robot_action_state_processing_en.md as runnable code: 15/15 offline checks on real G1 data, plus 7 questions where the released material stops determining the answer",
+      "state": "closed",
+      "updated_at": "2026-09-30T06:45:48Z",
+      "author_association": "NONE",
+      "body_sha256": "3b40192f2e245f066c7441cdd48bc72c9885a756ef6057bccf8d1829a283b40d"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unifolm-world-model-action/issues/17",
+      "title": "关于推理过程的疑问",
+      "state": "closed",
+      "updated_at": "2025-09-23T07:31:42Z",
+      "author_association": "NONE",
+      "body_sha256": "a52f8f6e8fd740e6ad3166626488bbb7914f55673b3d471ef5b012124d6e330e"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unifolm-world-model-action/issues/33",
+      "title": "加载配置时遇到损坏错误",
+      "state": "closed",
+      "updated_at": "2026-01-08T12:24:41Z",
+      "author_association": "NONE",
+      "body_sha256": "5b8ab29729c923a69a4c13af101fba04749f30cdac83df8b38460fe8709a235b"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unifolm-world-model-action/issues/38",
+      "title": "分布式训练时线程死锁",
+      "state": "open",
+      "updated_at": "2026-01-08T12:33:58Z",
+      "author_association": "NONE",
+      "body_sha256": "c1d15ff0909ba174d5f93536bddbd4ddd510a2b8e9b6b4a0f2f13aaeac72d2b5"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unifolm-world-model-action/issues/44",
+      "title": "FileNotFoundError: datasets in LeRobot v3 format are incompatible with WMAData loader",
+      "state": "closed",
+      "updated_at": "2026-04-06T02:04:33Z",
+      "author_association": "NONE",
+      "body_sha256": "8f9c31fccb1d894c0b0b1aedeb8666a4b84f28a74bc4b2af86eab7bc0ed5f0a7"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unifolm-world-model-action/issues/46",
+      "title": "G1 + Brainco Revo2 five-finger hands: setup guide and fixes",
+      "state": "open",
+      "updated_at": "2026-04-06T09:31:19Z",
+      "author_association": "NONE",
+      "body_sha256": "85ae066f05737a38b25781fbf2e659ac2e8a8e55f673791ad181b1eb113bced1"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unifolm-world-model-action/issues/7",
+      "title": "执行推理过程时出错",
+      "state": "closed",
+      "updated_at": "2025-09-18T13:32:31Z",
+      "author_association": "NONE",
+      "body_sha256": "1dfd5c54deb164b50bf37b0a0aabdafabba24ce67270a0bbcc8aaa079e6bb135"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_actuator_sdk/issues/11",
+      "title": "如何置零位？使用过程中发现并不是绝对值编码，每次开机的零位都不一样",
+      "state": "closed",
+      "updated_at": "2024-04-16T04:39:02Z",
+      "author_association": "NONE",
+      "body_sha256": "c6643b8572faaf87b380d42c95fc6914c3d6bc56d100cc27c7c8bffeff87a9e6"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_actuator_sdk/issues/23",
+      "title": "关于发送接收接口使用",
+      "state": "open",
+      "updated_at": "2025-03-17T06:48:25Z",
+      "author_association": "NONE",
+      "body_sha256": "000d8d5f6ea6b25152793a82759e98b7b2788d6b24ceeab32afd4050b75390d3"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_actuator_sdk/issues/26",
+      "title": "go电机怎么设置零位呢？",
+      "state": "open",
+      "updated_at": "2025-11-10T06:57:54Z",
+      "author_association": "NONE",
+      "body_sha256": "f8c32654faba1021dd3f80f7b843cfbd5577f516c30a7e188a73a9f92b7d4afd"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_guide/issues/107",
+      "title": "gazebo 仿真导航，为什么四足机器人总是原地旋转?",
+      "state": "open",
+      "updated_at": "2025-02-23T15:23:42Z",
+      "author_association": "NONE",
+      "body_sha256": "d37a003214262084b8dcf16023a45cb50168cd81a05653e5761a71248e1a09be"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_guide/issues/16",
+      "title": "关于FSM.cpp中的问题",
+      "state": "closed",
+      "updated_at": "2023-03-21T12:12:45Z",
+      "author_association": "NONE",
+      "body_sha256": "6b71e1854a40aa7589ca364788559ce18c060b5844a9f1ba7544508a8e2dcdeb"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_guide/issues/2",
+      "title": "勘误贴",
+      "state": "open",
+      "updated_at": "2025-07-03T06:50:08Z",
+      "author_association": "NONE",
+      "body_sha256": "e3ada9a655015f495f5929317d5cbff6b67e3067f08b7db99ca488a1d31d460a"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_guide/issues/37",
+      "title": "在ROS中仿真导航",
+      "state": "open",
+      "updated_at": "2025-05-07T07:54:19Z",
+      "author_association": "NONE",
+      "body_sha256": "6b3c444f28d7ce399431fcdaa8d9e51b63da8405b4af0bd4053b36cfe1f84342"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_guide/issues/73",
+      "title": "能再发下交流群群号吗？亲~~",
+      "state": "closed",
+      "updated_at": "2024-09-07T03:36:06Z",
+      "author_association": "NONE",
+      "body_sha256": "86cb2c88a44ca7d45e8e6a454b673f47bcbaa41452b65079f9a87d225e98a556"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_guide/issues/85",
+      "title": "运行roslaunch unitree_move_base rvizMoveBase.launch 后出现问题",
+      "state": "open",
+      "updated_at": "2026-03-05T03:04:00Z",
+      "author_association": "NONE",
+      "body_sha256": "0f317d3aa71a198e369646f2e69c10656366017c6d5d1bc0b1d5a6357e3da9ad"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_lerobot/issues/10",
+      "title": "Many bugs",
+      "state": "closed",
+      "updated_at": "2025-04-08T06:59:47Z",
+      "author_association": "NONE",
+      "body_sha256": "9f136ed6a2999bbe8f201699ccefc71dda5969cc488d508cd17373ed9e674631"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_lerobot/issues/104",
+      "title": "[RDA Audit] Data Quality Report for G1_WBT_Brainco_Pickup_Pillow — Joint Limit Violations & Action Discontinuities Found",
+      "state": "open",
+      "updated_at": "2026-09-15T11:57:14Z",
+      "author_association": "NONE",
+      "body_sha256": "9db81c0707c92d730876af4de16e7f7ad89b8a2afdf8d317b796b4242b8918c4"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_lerobot/issues/105",
+      "title": "[Question] Support for Unitree H2 EDU (data conversion, training and real-robot eval)",
+      "state": "open",
+      "updated_at": "2026-10-05T09:04:41Z",
+      "author_association": "NONE",
+      "body_sha256": "bd2bdaf7fbf8240ac72488270d330b09029493f83f2dd274e5fde273c393be66"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_lerobot/issues/13",
+      "title": "Robot Configuration Add",
+      "state": "closed",
+      "updated_at": "2025-03-31T07:51:30Z",
+      "author_association": "NONE",
+      "body_sha256": "af8a5077ed2ef949558904c1befc7c204222df3fc92e6ea02cca57cf64f8fd3f"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_lerobot/issues/20",
+      "title": "Real World Testing is Not Working",
+      "state": "closed",
+      "updated_at": "2026-05-08T11:30:05Z",
+      "author_association": "NONE",
+      "body_sha256": "f4f02f1965187c86016124afe85e0dd90aff81ef1632a5b2360e6cc22461d2fd"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_lerobot/issues/26",
+      "title": "请问如何适配因时灵巧手呢？",
+      "state": "closed",
+      "updated_at": "2025-08-18T02:52:33Z",
+      "author_association": "NONE",
+      "body_sha256": "bebeb45c87cbd57a3ac3decaf4a6b143a7c7fe4137e1ba99bf4dd4de1004f4db"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_lerobot/issues/29",
+      "title": "关于转换后的视频数据，为何与官方提供的不一样？",
+      "state": "closed",
+      "updated_at": "2025-08-22T07:46:52Z",
+      "author_association": "NONE",
+      "body_sha256": "6884ef9f4d2416ef136de202ec0a753e21975510670f32e764f902183da01e91"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_lerobot/issues/36",
+      "title": "训练时候偶然会有报错，发现转换的视频帧有问题，请问是BUG吗？",
+      "state": "closed",
+      "updated_at": "2025-09-03T07:23:08Z",
+      "author_association": "NONE",
+      "body_sha256": "02b6e1f9a646d9028fde9544171f3b7c2853b1be3614e8ea3a4e8b3075e00e4c"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_lerobot/issues/37",
+      "title": "Real world testing issues",
+      "state": "closed",
+      "updated_at": "2025-09-23T08:31:43Z",
+      "author_association": "NONE",
+      "body_sha256": "368464d150b7e2bfc00568707d932706af23cabb3bf8672fad7ccf1cf4806e61"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_lerobot/issues/41",
+      "title": "ValueError: One or several timestamps unexpectedly violate the tolerance inside episode range. This might be due to synchronization issues during data collection.",
+      "state": "closed",
+      "updated_at": "2025-11-19T03:57:16Z",
+      "author_association": "NONE",
+      "body_sha256": "62185bc28fc94504451194ef03fb2dccad3a0b742fb5296712ea4a6332e31d27"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_lerobot/issues/42",
+      "title": "FileNotFoundError: [Errno 2] No such file or directory: '/psm_6ebb7674'",
+      "state": "open",
+      "updated_at": "2026-02-13T05:24:15Z",
+      "author_association": "NONE",
+      "body_sha256": "75dae6caf63dee75f036bb916d45a9a935786c84c95f0083d3cb400f67f1c6a5"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_lerobot/issues/43",
+      "title": "Possible Bug in unitree_IL_lerobot/unitree_lerobot/utils/constants.py",
+      "state": "closed",
+      "updated_at": "2025-12-30T02:24:01Z",
+      "author_association": "NONE",
+      "body_sha256": "168a5c4541832bf9324e1ad93e0ee4454e8d99c839d1d6bf9fdcbe9c2af120bb"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_lerobot/issues/44",
+      "title": "Isaac Sim 使用问题",
+      "state": "closed",
+      "updated_at": "2026-02-09T03:55:24Z",
+      "author_association": "NONE",
+      "body_sha256": "2f8c841c7ba284e40a769d221a044ca8a7da407822636596e0d7068273b2c01c"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_lerobot/issues/62",
+      "title": "error running eval_g1_sim.py",
+      "state": "closed",
+      "updated_at": "2025-12-31T03:09:35Z",
+      "author_association": "NONE",
+      "body_sha256": "43c097336142f8363750e2acf78c5ea7cbb66f0f39060ad72c6e1dd2c34d1c9a"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_lerobot/issues/63",
+      "title": "how to use eval_g1_dataset.py",
+      "state": "closed",
+      "updated_at": "2026-02-23T04:57:02Z",
+      "author_association": "NONE",
+      "body_sha256": "3def6c308388ee2a978478a5d3d0cf00f9355e72b9039b79de05d9d23dd11638"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_lerobot/issues/68",
+      "title": "[G1_29_ArmController] Waiting to subscribe dds...          robot_arm.py:112",
+      "state": "open",
+      "updated_at": "2026-04-23T03:39:44Z",
+      "author_association": "NONE",
+      "body_sha256": "3a458ba44da90815aa8c74810b489b64c86676bc99e9bc473f865819d92cc13e"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_lerobot/issues/70",
+      "title": "error run eval_g1_sim",
+      "state": "open",
+      "updated_at": "2026-03-02T01:43:05Z",
+      "author_association": "NONE",
+      "body_sha256": "7842bc97d7fa1a40ca76e292d7eb524925e1fe5d82d5af30baf95470ccaf14da"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_lerobot/issues/75",
+      "title": "使用你们最新的WBT数据集训练pi0.5出现报错",
+      "state": "open",
+      "updated_at": "2026-04-16T15:24:41Z",
+      "author_association": "NONE",
+      "body_sha256": "0599fc3c8630ac325d0b536af4bdb1f5423006a9320c9bc1ff0747478511b1d5"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_lerobot/issues/76",
+      "title": "Inference fails with \"Waiting to subscribe dds...\" on G1 Edu (No Hand model) using eval_g1.py",
+      "state": "closed",
+      "updated_at": "2026-05-08T07:39:25Z",
+      "author_association": "NONE",
+      "body_sha256": "f0869d05510606086ed1162c18980320eb6a98c7d5ef96d13394b8d29a78583e"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_lerobot/issues/89",
+      "title": "在Isaacsim仿真环境中做模型推理失败，请帮帮我！！！",
+      "state": "open",
+      "updated_at": "2026-07-01T09:40:20Z",
+      "author_association": "NONE",
+      "body_sha256": "867e0a09fe1e0ee16148c3a14cf6a4095e186501e22a3bb16ae8dcb32defcca2"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_lerobot/issues/90",
+      "title": "main/unitree_lerobot/eval_robot/replay_robot.py  code logic error！！！！！",
+      "state": "open",
+      "updated_at": "2026-08-31T20:39:20Z",
+      "author_association": "NONE",
+      "body_sha256": "d79c7d56d96799b53272ea0d98e58bdb63b279bb0d92743829e0ff25e64e017c"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_lerobot/issues/96",
+      "title": "**为宇树机器人集成「紫鸾」自主意识核心——基于晶脉哲学的感知与自愈系统**",
+      "state": "open",
+      "updated_at": "2026-06-12T11:14:57Z",
+      "author_association": "NONE",
+      "body_sha256": "e216c27c0cec0764f865c7d05f1602dbf37860240e8611a43199136303a35b9e"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_lerobot/issues/97",
+      "title": "[Idea] Enhancing Imitation Learning with Persistent Memory — a complementary layer for unitree_lerobot-[想法] 为模仿学习增加持久记忆层 —— 一个与 unitree_lerobot 互补的开源模块",
+      "state": "open",
+      "updated_at": "2026-06-18T15:51:32Z",
+      "author_association": "NONE",
+      "body_sha256": "de3c78d3c7db444c2c022b198b93bcecaa73b00b047f02b916b9a72c809b1fab"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_mujoco/issues/104",
+      "title": "Deploying Policy and Controlling Unitree G1 29dof with Keyboard",
+      "state": "closed",
+      "updated_at": "2026-04-28T03:19:43Z",
+      "author_association": "NONE",
+      "body_sha256": "58a762e422bae2ccaa11cf30adea4d0b438818e53774c639baa2658e59ef7af9"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_mujoco/issues/109",
+      "title": "No data on topic /lowstate",
+      "state": "open",
+      "updated_at": "2026-02-12T11:29:38Z",
+      "author_association": "NONE",
+      "body_sha256": "8554179cfaaad752da70349b7641ec91e19e15fdb8780a068b4e2d910e9435ff"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_mujoco/issues/117",
+      "title": "Balance controller for G1 without elastic band support",
+      "state": "open",
+      "updated_at": "2026-05-05T12:44:23Z",
+      "author_association": "NONE",
+      "body_sha256": "a01991586deb1a72db622b38558dfcaa3fe1777243f2e2e632567f9d61c51a8c"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_mujoco/issues/125",
+      "title": "elastic_band: stiffness and damping are hard-coded, making it hard to use for heavier robots",
+      "state": "open",
+      "updated_at": "2026-06-10T16:45:23Z",
+      "author_association": "NONE",
+      "body_sha256": "4b90517debb7485dfba9c8a38af3f03710b6302ac57a42083a0cd4040e19e8e6"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_mujoco/issues/47",
+      "title": "Joystick does not move Go2",
+      "state": "closed",
+      "updated_at": "2025-09-28T07:24:03Z",
+      "author_association": "NONE",
+      "body_sha256": "3dd29dc7084065abc1d436bb8a63989fc22e97cbc4565161291199e6e4e83d22"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_mujoco/issues/52",
+      "title": "[RecurrentThread] target func raise exception: name=IndexError, args=('list index out of range',)",
+      "state": "open",
+      "updated_at": "2026-02-03T09:56:03Z",
+      "author_association": "NONE",
+      "body_sha256": "776f31db03cabd4f9e8d5864233fbde76cfe59d00d2e59a78f6d64cd97d706f7"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_mujoco/issues/57",
+      "title": "G1 falls over",
+      "state": "closed",
+      "updated_at": "2026-06-08T08:25:54Z",
+      "author_association": "NONE",
+      "body_sha256": "1dc65d775db22336b27dff8591dfeb32c29a6246a4c7f808083ba3ab9a088e92"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_mujoco/issues/90",
+      "title": "人形机器人仿真的控制怎么做",
+      "state": "closed",
+      "updated_at": "2025-09-26T06:45:41Z",
+      "author_association": "NONE",
+      "body_sha256": "017bcfbd2934dce64c890a802900ff1bb59e9ec76277a61bf368f1a71a34179f"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_rl_gym/issues/13",
+      "title": "How to deploy rl in go2 real robot?",
+      "state": "closed",
+      "updated_at": "2025-11-04T17:21:50Z",
+      "author_association": "NONE",
+      "body_sha256": "9d4c35168c6345d7275ccd61d4e9c85cd84e607efeb13c112fd87c7d6b1ed53a"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_rl_gym/issues/26",
+      "title": "Real world performance is bad",
+      "state": "open",
+      "updated_at": "2026-08-09T09:35:10Z",
+      "author_association": "NONE",
+      "body_sha256": "23a7044fe9f24c4bf6777573100dfbb6d51e113c78bbe212152fe02a7b69bcd1"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_rl_gym/issues/49",
+      "title": "Any suggestion on Whole Body RL?",
+      "state": "closed",
+      "updated_at": "2025-05-14T03:58:49Z",
+      "author_association": "NONE",
+      "body_sha256": "3de5c367945ebcdec83ebf4aa31e3bb48116ffe1e68ada0d3bd2afa94e609859"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_rl_gym/issues/54",
+      "title": "train g1 in 23dof and 29dof version",
+      "state": "open",
+      "updated_at": "2025-11-07T11:02:24Z",
+      "author_association": "NONE",
+      "body_sha256": "8b3c3636211e59eeb47e7c51c3f23b9756b6d3733e8a912f9ea99fd4f9053b3b"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_rl_gym/issues/94",
+      "title": "G1 23-DOF joint order (dof_names) for Isaac Gym training config",
+      "state": "open",
+      "updated_at": "2026-08-03T07:10:36Z",
+      "author_association": "NONE",
+      "body_sha256": "34d0366a89a44fbdb52f2dede13c91f659eab59cb3d11a0238e021e3470819e2"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_rl_gym/issues/95",
+      "title": "G1 23-DOF policy: obs format, scaling values, action scale and command range",
+      "state": "open",
+      "updated_at": "2026-04-19T10:08:48Z",
+      "author_association": "NONE",
+      "body_sha256": "aa8551e934c2ca23fda1832d06560d0574f1e9f07c7ecc1fd0361955026da455"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_rl_lab/issues/108",
+      "title": "go2 sim2sim run error",
+      "state": "open",
+      "updated_at": "2026-09-22T01:50:43Z",
+      "author_association": "NONE",
+      "body_sha256": "a198c51641f21c3e932e1b35c01250c440108c5b6c21b5b78baa4a4494fcebe0"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_rl_lab/issues/116",
+      "title": "Training fails when replacing the hand with Inspire Hand in Unitree-G1-29dof-Velocity",
+      "state": "open",
+      "updated_at": "2026-03-13T20:58:14Z",
+      "author_association": "NONE",
+      "body_sha256": "488b5833d1403b394e1cb4f621c41f5571d498859c05d0d7ae2765063e41c884"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_rl_lab/issues/13",
+      "title": "Action values occasionally explode in G1 locomotion training",
+      "state": "closed",
+      "updated_at": "2025-07-21T23:10:51Z",
+      "author_association": "NONE",
+      "body_sha256": "2d069768446134dbb7964b95bb0ba5c45f77523411bc5eb3c4564c8733a7e19f"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_rl_lab/issues/145",
+      "title": "unitree_rl_lab velocity policy scored 0/0 % in an external G1 benchmark - probably my Isaac-to-MuJoCo mapping",
+      "state": "open",
+      "updated_at": "2026-10-11T04:30:25Z",
+      "author_association": "NONE",
+      "body_sha256": "894b97e795a3fc61d4e0640f37c77558bead678516aabe0bca6e6625537d262b"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_rl_lab/issues/149",
+      "title": "Add a LICENSE file (README shows Apache-2.0)",
+      "state": "open",
+      "updated_at": "2026-10-09T11:24:09Z",
+      "author_association": "NONE",
+      "body_sha256": "2f237241ca6a8316e71e1e9342613fd9a8208f05ce2793f03d981e993342297f"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_rl_lab/issues/17",
+      "title": "Velocity command in G1 Sim-to-Sim",
+      "state": "closed",
+      "updated_at": "2025-08-07T04:15:36Z",
+      "author_association": "NONE",
+      "body_sha256": "d107b6c1a94f047d7f81ce909a33f4f12b1f44e49be7faf108d5f9a49c2bfd74"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_rl_lab/issues/27",
+      "title": "Sim2Sim for G1 23-DOF",
+      "state": "open",
+      "updated_at": "2026-03-26T08:17:51Z",
+      "author_association": "NONE",
+      "body_sha256": "0c90ce2e7bd834df23f3f2af32024dd922c29a4f4105334e76888e8a7a210dfe"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_rl_lab/issues/31",
+      "title": "deploy sim2sim result not really working",
+      "state": "closed",
+      "updated_at": "2025-10-17T12:33:38Z",
+      "author_association": "NONE",
+      "body_sha256": "24ea263706bf467fbb3ca8736bb1518e6bd7d3155498467442fc7614a38e770d"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_rl_lab/issues/33",
+      "title": "Bug Report (Sim2Sim): `./g1_ctrl --network lo` cannot find policy",
+      "state": "closed",
+      "updated_at": "2025-08-20T06:02:15Z",
+      "author_association": "NONE",
+      "body_sha256": "4f2994982224d3231769ff9af3613f677f45e4329fa4b937c0f1ac2d9ba1a28f"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_rl_lab/issues/4",
+      "title": "No contact sensors added to the prim: '/World/envs/env_0/Robot'.",
+      "state": "closed",
+      "updated_at": "2025-07-11T07:26:46Z",
+      "author_association": "NONE",
+      "body_sha256": "a63901da9b2aebee117f5d8199b34a8b8979a410e9293a8b2e9503044fe3adbf"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_rl_lab/issues/42",
+      "title": "What control limits should I apply on G1?",
+      "state": "closed",
+      "updated_at": "2025-10-17T12:24:57Z",
+      "author_association": "NONE",
+      "body_sha256": "c91960caca18038b37f45ff9be1ac39d2c0ae29b1ab26e1447f9c02f7646c154"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_rl_lab/issues/6",
+      "title": "Unitree G1 sim2real problem",
+      "state": "closed",
+      "updated_at": "2025-07-22T03:41:18Z",
+      "author_association": "NONE",
+      "body_sha256": "3a6ad32282f22f55cbb734184dc2cebe7a2cd4d09ef1c8cbfe9e69732964c0ec"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_rl_lab/issues/7",
+      "title": "RuntimeError: normal expects all elements of std >= 0.0",
+      "state": "closed",
+      "updated_at": "2026-04-25T19:39:00Z",
+      "author_association": "NONE",
+      "body_sha256": "babad9914854e4b824c415535cc221de2bd558d3224a1f9296fd11aea4079b3f"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_rl_lab/issues/76",
+      "title": "Spelling issue in ReadMe 'use_joystick'",
+      "state": "closed",
+      "updated_at": "2025-10-31T09:21:23Z",
+      "author_association": "NONE",
+      "body_sha256": "50734a612d196a66a9f864878be0d21946dc686c06f9634bb8bc04a87e95b733"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_rl_lab/issues/8",
+      "title": "Unitree Go2 sim2sim problem",
+      "state": "closed",
+      "updated_at": "2025-07-12T02:34:13Z",
+      "author_association": "NONE",
+      "body_sha256": "a20aaa1a976be56f6a0fe36d3a8f381235b66767185618e76b5d862b7d902cc8"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_rl_lab/issues/81",
+      "title": "sim2sim时xbox手柄无法遥控",
+      "state": "closed",
+      "updated_at": "2026-03-12T09:35:15Z",
+      "author_association": "NONE",
+      "body_sha256": "a9327ac146a2ea2702fbf1637e10001aa8b0df6a483dbff8330b0fb00c373f78"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_rl_lab/issues/82",
+      "title": "met g1_29dof sim2sim problem",
+      "state": "open",
+      "updated_at": "2026-01-15T23:05:52Z",
+      "author_association": "NONE",
+      "body_sha256": "2b1f4b9eeb27dd7bebce82e01370987019c109d4436bc46a556c4e7de8d8a8ee"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_rl_lab/issues/88",
+      "title": "RayCasterCfg problem",
+      "state": "closed",
+      "updated_at": "2025-12-16T09:29:39Z",
+      "author_association": "NONE",
+      "body_sha256": "4d9c978fcfbd101adb9242241a66b46ee93991c47e48643a1e0abc452f50ef85"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_rl_mjlab/issues/17",
+      "title": "stochastic 参数已经被删除",
+      "state": "open",
+      "updated_at": "2026-03-25T02:25:27Z",
+      "author_association": "NONE",
+      "body_sha256": "811aca03cf13c58f17cc7a9782f828b7f39a4e069b47150898ea89c8408b1c0a"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_rl_mjlab/issues/23",
+      "title": "建议更改 README 中关于动作模仿任务的训练说明，并补充部署相关内容。",
+      "state": "closed",
+      "updated_at": "2026-03-25T07:35:47Z",
+      "author_association": "NONE",
+      "body_sha256": "6311c07c8cc58d1795e4ed7e8bc9818d3d4f7b4c629961b06f473d9e4919b1b4"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_rl_mjlab/issues/25",
+      "title": "不知deploy.yaml文件怎么配置，以及sim2real机器人剧烈抽搐或断电的问题（救救我TAT）",
+      "state": "open",
+      "updated_at": "2026-04-20T06:41:25Z",
+      "author_association": "NONE",
+      "body_sha256": "d9659d18533eacc0723e6899a4151edfc19dc6c9110d6c4a5645d9044afcb2d3"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_rl_mjlab/issues/32",
+      "title": "Should g1_23dof deploy.yaml be generated from training, and is velocity waist scale intentional?",
+      "state": "open",
+      "updated_at": "2026-04-14T02:24:00Z",
+      "author_association": "NONE",
+      "body_sha256": "58844411a781b083a9faea1b2102cee2e6d47264bb799cfae0a5cb97a3fe8ec9"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_rl_mjlab/issues/34",
+      "title": "`Unitree-G1-Rough` continuously reports `opt.ccd_iterations needs to be increased` (train/play) even with very large `ccd-iterations`; has this task been validated?",
+      "state": "closed",
+      "updated_at": "2026-04-14T07:44:11Z",
+      "author_association": "NONE",
+      "body_sha256": "860efdd7ccc660c6f3a61ad98a5d4f01695895889c87a022d05380010dc79bf5"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_rl_mjlab/issues/36",
+      "title": "lafan1",
+      "state": "open",
+      "updated_at": "2026-05-01T14:46:49Z",
+      "author_association": "NONE",
+      "body_sha256": "884cc0fb22642e8d5bcde81a8a3648384868e65e0824054264160ee8c452b6e0"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_rl_mjlab/issues/40",
+      "title": "部署后切换策略没有推手杆jg1会自己向前走",
+      "state": "open",
+      "updated_at": "2026-09-20T20:34:37Z",
+      "author_association": "NONE",
+      "body_sha256": "893ee07232deac46a333a94bb4780b61e9f8cd4c2035b2c0e58757776c3341f2"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_rl_mjlab/issues/47",
+      "title": "Errors with the latest mujoco and warp-lang",
+      "state": "open",
+      "updated_at": "2026-07-14T16:49:01Z",
+      "author_association": "NONE",
+      "body_sha256": "122b0f4ce433e200e99f659ddab61beec14b584aee3197d76741532aa78c9617"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_rl_mjlab/issues/57",
+      "title": "Joint gains bypass joint_ids_map in State_RLBase, mis-routing kp/kd on the shipped a2 config",
+      "state": "open",
+      "updated_at": "2026-08-02T14:32:56Z",
+      "author_association": "NONE",
+      "body_sha256": "86885e5efe980d1e1e236fb608ca3cb64bbe9ae13aa5c96ed85f6d9db6011419"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_ros/issues/138",
+      "title": "怎样求出机械臂末端在基座下的位姿？",
+      "state": "open",
+      "updated_at": "2025-09-16T01:59:04Z",
+      "author_association": "NONE",
+      "body_sha256": "1f5ef8ebc59f2e0e47a871e983b9bd85e5d30470a0ae043163120ef89a937e2c"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_ros/issues/157",
+      "title": "[Go2W] Clarification on mass and inertia differences between official URDF and MJCF",
+      "state": "open",
+      "updated_at": "2026-10-15T05:31:29Z",
+      "author_association": "NONE",
+      "body_sha256": "80beeb57feb7fef2a936d0b1fcbf0334d5d84bc9181febf568e450f0ef66683e"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_sdk2_python/issues/106",
+      "title": "How to get camera images from G1",
+      "state": "open",
+      "updated_at": "2026-10-07T15:50:06Z",
+      "author_association": "NONE",
+      "body_sha256": "eaddf858576e01c6388d6812efc68d8056fcab66f35c74a9c04d8ef05754ec42"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_sdk2_python/issues/110",
+      "title": "[ClientStub] send request error. id: 1644415111766",
+      "state": "open",
+      "updated_at": "2026-04-17T09:24:11Z",
+      "author_association": "NONE",
+      "body_sha256": "17c7b45e15ae427b3dee63d5aeb3ce5dc611d705964f30c5131271d75adcab88"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_sdk2_python/issues/129",
+      "title": "Unitree G1 Motor Overheat when using Inspire FTP Dexterous Hand",
+      "state": "open",
+      "updated_at": "2026-09-20T00:02:48Z",
+      "author_association": "NONE",
+      "body_sha256": "fd9d75c6f70e90d12e2318e0060b586197e9cc910161ffbefa0ceb678ef8a002"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_sdk2_python/issues/143",
+      "title": "Is there any way to get Microphone's audio input in G1's PC2?",
+      "state": "open",
+      "updated_at": "2026-08-03T15:02:17Z",
+      "author_association": "NONE",
+      "body_sha256": "985599ae897d8a602b513574d0bd893237570f64a6b21fd45a71f439abd46a0b"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_sdk2_python/issues/146",
+      "title": "I wanna control G1 arms while walking using gamepad. But It can't be.",
+      "state": "open",
+      "updated_at": "2026-08-26T21:52:27Z",
+      "author_association": "NONE",
+      "body_sha256": "2650ec4740d3ab49bc4c0413f5e796307b3e5297729a027cfc28d329d2b73c87"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_sdk2_python/issues/170",
+      "title": "G1 EDU+ (sw 1.5.3): SDK high-level locomotion accepted but not executed; `sport_lease` unreachable",
+      "state": "open",
+      "updated_at": "2026-10-02T14:56:19Z",
+      "author_association": "NONE",
+      "body_sha256": "985bf091a465b8893f0e0ade36a9e214f23ab9b5913641b31c55aaef2ed74e7f"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_sdk2_python/issues/173",
+      "title": "G1 Motion Mode + rt/arm_sdk: Unable to maintain a stable arm pose while walking",
+      "state": "closed",
+      "updated_at": "2026-08-21T14:57:01Z",
+      "author_association": "NONE",
+      "body_sha256": "938e48b3e6f61d7b700f9e6d09f349c5ac8e8898494a4ac9efa0b0b3ed7f7122"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_sdk2_python/issues/174",
+      "title": "cannot use StandDown for go2w",
+      "state": "open",
+      "updated_at": "2026-08-26T18:54:33Z",
+      "author_association": "NONE",
+      "body_sha256": "7a393e9f0d9014d5eaf2cc6f4ce706ab264da9b6d33a0dd44a0f88e429325cf4"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_sdk2_python/issues/175",
+      "title": "Move() ignored for several seconds (up to 10s+) after StandUp() with no readiness signal in SportModeState",
+      "state": "open",
+      "updated_at": "2026-08-26T21:26:26Z",
+      "author_association": "NONE",
+      "body_sha256": "77b3bf967a3d7966f0b36e6d0c59639292d59af7a6aefa71a18f01970733d46f"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_sdk2_python/issues/182",
+      "title": "R1_A5: `mode_pr` outside `{0,1}` triggers a hard, unrecoverable FSM 811→816 lockout — locomotion and arm_sdk override appear mutually exclusive",
+      "state": "open",
+      "updated_at": "2026-09-23T15:54:04Z",
+      "author_association": "NONE",
+      "body_sha256": "e7aa4c0897f66d164c103c1b4b45b085bb2c62e5a31a5782fc6de179daebb8c2"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_sdk2_python/issues/28",
+      "title": "Unable to Get Low-Level State of G1 Robot with unitree_sdk2_python",
+      "state": "closed",
+      "updated_at": "2025-12-16T09:03:22Z",
+      "author_association": "NONE",
+      "body_sha256": "d42bb9778775c95e688cd2d45002ed5f97d35f17a91ecd5b57354304edb07cf9"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_sdk2_python/issues/42",
+      "title": "Unable to Trigger \"WaveHand\" and \"ShakeHand\" in Python, C++, and ROS2 for Unitree G1",
+      "state": "closed",
+      "updated_at": "2025-04-14T00:35:58Z",
+      "author_association": "NONE",
+      "body_sha256": "3fad5c79378791cb340ce7f5f203abbd9f8abc83e8c664b03fe38e4ed579c654"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_sdk2_python/issues/43",
+      "title": "Instructions to control G1 movement via SDK - do not enter *debug* mode",
+      "state": "open",
+      "updated_at": "2025-06-03T02:17:42Z",
+      "author_association": "NONE",
+      "body_sha256": "12e755d49c91938c5f556d1386ac7bae0c07d8c82f232590033f698f3daf91c4"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_sdk2_python/issues/60",
+      "title": "tts not working in english",
+      "state": "open",
+      "updated_at": "2026-01-20T22:40:56Z",
+      "author_association": "NONE",
+      "body_sha256": "2824c4a737d169540002785a2fb59e715f74a446960d00cc043a61e5e7826952"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_sdk2_python/issues/72",
+      "title": "Stability compensation when robot is lifting heavy objects",
+      "state": "open",
+      "updated_at": "2025-05-22T16:15:39Z",
+      "author_association": "NONE",
+      "body_sha256": "84b8b7721e4fc47551073b064c84f5e499ef934a793759cae28cc619a01bdcf6"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_sdk2_python/issues/78",
+      "title": "[ClientStub] send request error. id: 27795413176590 after updating to 1.4.0",
+      "state": "closed",
+      "updated_at": "2025-12-16T09:02:02Z",
+      "author_association": "NONE",
+      "body_sha256": "374310a62573555ab506eb325154fc2abae7ab7f3e9152867012417ece686ceb"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_sim_isaaclab/issues/108",
+      "title": "Challenges to be faced in sim2real deployment",
+      "state": "open",
+      "updated_at": "2026-03-16T02:13:03Z",
+      "author_association": "NONE",
+      "body_sha256": "e7072cbbdbf88fba44e0a00e0c6e5e736bdd06cc0b2c4be86ea7683524d722c4"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_sim_isaaclab/issues/110",
+      "title": "按照https://github.com/unitreerobotics/unitree_lerobot运行eval_g1_sim.py时Waiting to subscribe dds... robot_arm.py:112",
+      "state": "open",
+      "updated_at": "2026-03-19T01:15:30Z",
+      "author_association": "NONE",
+      "body_sha256": "8a80f5b2c04adf82fb63b74c59bbf5f18a0c83405ad914c4560748719abc2711"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_sim_isaaclab/issues/111",
+      "title": "您好请问Isaac Sim5.1.0一直无响应，需要退出是什么原因呀，且没有加载出模型，一片黑",
+      "state": "closed",
+      "updated_at": "2026-03-23T06:59:55Z",
+      "author_association": "NONE",
+      "body_sha256": "69c40a61f3d394b8ded64ac86133ffef7c755936e1fb0cbf550dd0af09764349"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_sim_isaaclab/issues/113",
+      "title": "How to load a custom G1 robot (with sensors) in existing scenarios?",
+      "state": "open",
+      "updated_at": "2026-03-30T02:35:34Z",
+      "author_association": "NONE",
+      "body_sha256": "e1d66ab836928b0464fe734867d7cff740da9495f69836cab706e47243a8a61f"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_sim_isaaclab/issues/114",
+      "title": "如何使用宇树开源的数据集",
+      "state": "open",
+      "updated_at": "2026-07-04T07:53:24Z",
+      "author_association": "NONE",
+      "body_sha256": "4061f55a27c0c6d996e0b0d5df2f505cc569d525e6f6806bcd22ff324e3b6d6c"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_sim_isaaclab/issues/118",
+      "title": "键盘输入指令，仿真画面中的机器人不动",
+      "state": "closed",
+      "updated_at": "2026-05-07T11:31:56Z",
+      "author_association": "NONE",
+      "body_sha256": "b504282ded1325e4b3717a8927a191130345d98274a04e3e96e85e43c8c136d2"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_sim_isaaclab/issues/12",
+      "title": "how to make camera_base_link",
+      "state": "closed",
+      "updated_at": "2025-07-24T08:48:04Z",
+      "author_association": "NONE",
+      "body_sha256": "43abb53d04c1ee6ff7e06421015782e1a636d3d3fd3a2455909b395cd63caede"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_sim_isaaclab/issues/132",
+      "title": "[Bug] G1 Dex1 Sim dataset / sim stack: wrong task prompts, gripper friction lock, wrist-cam train–eval mismatch",
+      "state": "open",
+      "updated_at": "2026-07-31T06:59:00Z",
+      "author_association": "NONE",
+      "body_sha256": "d22e4a0a9c957146bebe1dcd185747e37f494668da8490a125ec736d963b45aa"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_sim_isaaclab/issues/14",
+      "title": "[Bug] Fail when run `Isaac-PickPlace-RedBlock-*` related task",
+      "state": "closed",
+      "updated_at": "2025-12-08T12:21:43Z",
+      "author_association": "NONE",
+      "body_sha256": "2241d220502386bdaa7dfb607dff46c675ebce2f6756234600827e9f3a6a22e5"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_sim_isaaclab/issues/15",
+      "title": "What are the setting of cameras?",
+      "state": "closed",
+      "updated_at": "2025-08-04T07:41:40Z",
+      "author_association": "NONE",
+      "body_sha256": "31d106d89e78b509f4f2dffa9064dca634c1d9427b8cc73c9ab1361d0d99efc5"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_sim_isaaclab/issues/16",
+      "title": "issue with 5080 gpu regarding the resolution",
+      "state": "closed",
+      "updated_at": "2025-08-14T01:14:08Z",
+      "author_association": "NONE",
+      "body_sha256": "bed4ff1da223b764211faa2a81317c3e16fb81842aa9fb4c1023a9711445ece6"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_sim_isaaclab/issues/17",
+      "title": "stiffness and damping value do not apply.",
+      "state": "closed",
+      "updated_at": "2025-08-05T08:35:42Z",
+      "author_association": "NONE",
+      "body_sha256": "379150057c5f17644fb1d36347b5189ef2ec6bdc2857960fa201cd25e4146651"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_sim_isaaclab/issues/25",
+      "title": "[carb.graphics-vulkan.plugin] VkResult: ERROR_OUT_OF_HOST_MEMORY",
+      "state": "closed",
+      "updated_at": "2025-08-21T06:07:37Z",
+      "author_association": "NONE",
+      "body_sha256": "d48d2f705801264bc1dd91b93b5b956a8f328e176ad27afc6a9876924ffbbd63"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_sim_isaaclab/issues/27",
+      "title": "我运行机器人没动。。。我想问下是不是需要同时运行sim_main.py  和 send_command...keyboard.py ，然后再keyboard.py 里面键盘输入WS等",
+      "state": "closed",
+      "updated_at": "2025-08-29T08:50:52Z",
+      "author_association": "NONE",
+      "body_sha256": "1102682219cbae8e8eb01119fad575a7d4bf3cc8f5f36777e8f3bcefe721e708"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_sim_isaaclab/issues/30",
+      "title": "3070上可以运行吗",
+      "state": "closed",
+      "updated_at": "2025-08-25T03:16:47Z",
+      "author_association": "NONE",
+      "body_sha256": "c8f3be702f599ed3b46b57c2b6435153d4adaeb5b7b07f78602411ae9ef88a0d"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_sim_isaaclab/issues/43",
+      "title": "Isaac Sim 渲染延迟",
+      "state": "closed",
+      "updated_at": "2025-09-09T09:40:18Z",
+      "author_association": "NONE",
+      "body_sha256": "a0c725b647f009f591c4fd99dca43a48b5c9485dc8395a72541e129435daa0b4"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_sim_isaaclab/issues/45",
+      "title": "VkCreateFence failed with ERROR_OUT_OF_HOST_MEMORY",
+      "state": "closed",
+      "updated_at": "2025-09-17T02:03:52Z",
+      "author_association": "NONE",
+      "body_sha256": "ea0d01f70fb822d7258b5f94b1b44e8b2480040f910bafb1ba91e95dc8651bd9"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_sim_isaaclab/issues/5",
+      "title": "VkCreateFence failed with ERROR_OUT_OF_HOST_MEMORY",
+      "state": "closed",
+      "updated_at": "2025-09-15T06:12:48Z",
+      "author_association": "NONE",
+      "body_sha256": "0366a90e93dbc031cd650a4de2fb794591bdf861494f1f56100555e31544a1df"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_sim_isaaclab/issues/54",
+      "title": "Base installation crashes on IsaacLab 4.5 Ubuntu 22.04",
+      "state": "closed",
+      "updated_at": "2025-11-07T00:32:21Z",
+      "author_association": "NONE",
+      "body_sha256": "581b9d3cbac8675ce3c0c21aac7049168d7537ec8dcace79af36643843c90262"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_sim_isaaclab/issues/60",
+      "title": "activate rendering之后卡死无响应",
+      "state": "closed",
+      "updated_at": "2026-02-24T08:47:04Z",
+      "author_association": "NONE",
+      "body_sha256": "b04b9e7ffb2e4d73c0476ab2cc5691f80663df6d1793d348353d163f46982360"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_sim_isaaclab/issues/63",
+      "title": "可以进入环境，但是点击窗口后会报错立即退出。",
+      "state": "closed",
+      "updated_at": "2026-02-24T07:37:30Z",
+      "author_association": "NONE",
+      "body_sha256": "1128822d8be991a8469eb7481ec3665bf8c8c372327e0cfce85597c7f126ead0"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_sim_isaaclab/issues/66",
+      "title": "[Question] Unit Mismatch in CameraBaseCfg? Default horizontal_aperture (20.0 cm) seems physically incorrect.",
+      "state": "closed",
+      "updated_at": "2025-11-07T06:13:29Z",
+      "author_association": "NONE",
+      "body_sha256": "df571724050b97b97593ce4d8ffebe74d5eb3a13d7405e7bdcd226230731fd6e"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_sim_isaaclab/issues/87",
+      "title": "Programs are running but we cant see anything.",
+      "state": "closed",
+      "updated_at": "2026-02-24T08:50:01Z",
+      "author_association": "NONE",
+      "body_sha256": "a8a7a3466b24a108984c6ea79ab66a5b3441bf124bb00946858da6b488df2d75"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_sim_isaaclab/issues/88",
+      "title": "IsaacSim4.5 run unitree_sim_isaaclab/sim_main.py",
+      "state": "closed",
+      "updated_at": "2026-01-15T01:52:48Z",
+      "author_association": "NONE",
+      "body_sha256": "112abfe98ecbede9a85d2cb49eefc0a3136473631bee560bd92e35a871c814fd"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/11",
+      "title": "Problem whe trying to run teleop_hand_and_arm.py",
+      "state": "closed",
+      "updated_at": "2024-12-05T02:10:55Z",
+      "author_association": "NONE",
+      "body_sha256": "7483de00b5618971fc2c4a2a329c1b36b1592de0ce771c1ca7ecf681abcf29bd"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/111",
+      "title": "如何在仿真遥操作中不使用腕部相机？",
+      "state": "closed",
+      "updated_at": "2025-08-01T05:05:20Z",
+      "author_association": "NONE",
+      "body_sha256": "e8a5d34305dc97fad7e7d6ee3cfbb6b158f47225a9b56eac71722b98ae159d3a"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/112",
+      "title": "Only grids in VR view",
+      "state": "closed",
+      "updated_at": "2025-10-28T02:04:17Z",
+      "author_association": "NONE",
+      "body_sha256": "f7bb9514ad454759e962c3c9b68c5563ae1161ae0bc18ff481a273844304f460"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/120",
+      "title": "Jerky Arm Motion When Teleoperating with Meta Quest 3",
+      "state": "closed",
+      "updated_at": "2025-10-28T02:03:26Z",
+      "author_association": "NONE",
+      "body_sha256": "28e85b35b310fba081e0b06c81c93e6b1a840a1a4695736c07e823cd5f39c6b8"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/128",
+      "title": "仿真环境下Cyclone DDS问题",
+      "state": "closed",
+      "updated_at": "2025-08-26T03:41:50Z",
+      "author_association": "NONE",
+      "body_sha256": "34d852b1a12912343259e2f95ee713978dd51ec2bcde8f91faade22cb69e7c51"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/133",
+      "title": "Direct Wireless Connection",
+      "state": "closed",
+      "updated_at": "2025-10-28T02:03:01Z",
+      "author_association": "NONE",
+      "body_sha256": "ab8d9cd6b3b5064da9f7764510fe296fb9079002099d22d0400743c2809e388c"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/142",
+      "title": "Quest3只能看到一个白屏",
+      "state": "closed",
+      "updated_at": "2025-10-18T16:12:17Z",
+      "author_association": "NONE",
+      "body_sha256": "d49841bbaa54096612ed57fd39ad20ebf16f2f6e15410869d69f7bd270620e8c"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/147",
+      "title": "Resetting G1 to Default Position after Saving an Episode",
+      "state": "closed",
+      "updated_at": "2025-10-28T02:04:35Z",
+      "author_association": "NONE",
+      "body_sha256": "28a11d8c16d002171488dea9aefde7fe004cbb45178bac92dea100d4d8cd018d"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/151",
+      "title": "image_server.py error",
+      "state": "closed",
+      "updated_at": "2025-11-06T03:46:52Z",
+      "author_association": "NONE",
+      "body_sha256": "36cf9e49d82a0798e06b5a83040c4b6f3709c8fdb97ade763b445d1054d9531e"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/161",
+      "title": "motion with meta quest",
+      "state": "closed",
+      "updated_at": "2025-11-18T09:42:56Z",
+      "author_association": "NONE",
+      "body_sha256": "becb58f0ecdae5c9448e5252ca72c61ebcda02a9df5e772e240d5101b976f25c"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/168",
+      "title": "Crash after pressing 'r' in teleop_hand_and_arm.py (sim mode, G1 arm) AVP",
+      "state": "closed",
+      "updated_at": "2025-11-12T08:40:41Z",
+      "author_association": "NONE",
+      "body_sha256": "fe5b7d671dde56793d2d9b62e88b1df9c20f766c4b0663a1382eba50345b6a87"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/170",
+      "title": "websocket error and still image from G1 on P4 Ultra and G1 robot",
+      "state": "closed",
+      "updated_at": "2025-12-03T08:21:28Z",
+      "author_association": "NONE",
+      "body_sha256": "c5e5543028e2f7aa67483dced1f1adf32859925532655f66bc05374189e4bed9"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/171",
+      "title": "The VR web shows black scene with only hand coordianates",
+      "state": "closed",
+      "updated_at": "2025-11-09T15:01:05Z",
+      "author_association": "NONE",
+      "body_sha256": "17858671d1b6ccf0c9b110f5f2ddffe6e053c6d393d53280afe3cde5cb30cf94"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/172",
+      "title": "When connecting to the real robot, Vuer only shows the first frame it can grab",
+      "state": "closed",
+      "updated_at": "2026-01-07T19:45:43Z",
+      "author_association": "NONE",
+      "body_sha256": "3952f6447c61ed66867ed4e397e89a569714ed9d8ee777046a22af16a971241b"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/178",
+      "title": "Failed to install pyzmq (zmq) due to outdated NumPy on Unitree Robot",
+      "state": "closed",
+      "updated_at": "2025-11-17T02:06:42Z",
+      "author_association": "NONE",
+      "body_sha256": "011b0d6855e2a650e447b92ba1cbda8d3074291d656aa447d32fbfe0a75e6776"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/186",
+      "title": "wesocket is missing",
+      "state": "closed",
+      "updated_at": "2025-12-22T02:36:09Z",
+      "author_association": "CONTRIBUTOR",
+      "body_sha256": "0fb43b34bf882c0df3a866784379b65db9acb950de34e2fc29290c5f2a71b350"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/187",
+      "title": "I encountered an error when starting the control program",
+      "state": "closed",
+      "updated_at": "2025-12-15T12:45:01Z",
+      "author_association": "NONE",
+      "body_sha256": "cfcbdb5b038f179f23d10c4cd38fd2dae79a732f547c35bb940abb446695f0f7"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/19",
+      "title": "Unable to decompress data in image_client.py",
+      "state": "closed",
+      "updated_at": "2024-12-24T11:37:03Z",
+      "author_association": "NONE",
+      "body_sha256": "84e5528772687ed6f54ee1a1370d5669e721d4087431ac0a76b87f70383072a8"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/194",
+      "title": "Program will terminate automatically",
+      "state": "closed",
+      "updated_at": "2026-06-16T16:38:31Z",
+      "author_association": "NONE",
+      "body_sha256": "fa09e016f5c377f8bd738f3bb4cb406f234211ef85c7063b108a4dc2688ea5c7"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/201",
+      "title": "请问，teleop/televuer/src/televuer/tv_wrapper.py代码里的各种常量矩阵，都是什么意思",
+      "state": "closed",
+      "updated_at": "2026-01-27T11:47:54Z",
+      "author_association": "NONE",
+      "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/202",
+      "title": "Apple Vision Pro shows black screen",
+      "state": "closed",
+      "updated_at": "2025-12-22T02:41:54Z",
+      "author_association": "NONE",
+      "body_sha256": "4b5f11ad92c1718373690e651f9fc0b4e18728498ae52977bf7d62e43f71af75"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/204",
+      "title": "Vuer encountered an error: [Errno 2] No such file or directory",
+      "state": "closed",
+      "updated_at": "2025-12-12T03:58:34Z",
+      "author_association": "NONE",
+      "body_sha256": "9fe1ee41da518505f85d3c2d07236ecbdaa9c373441def53e453437d3e1c5599"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/212",
+      "title": "The PICO4ultra can only control the robotic arm using a joystick; it cannot achieve synchronized movement between the robotic arm and a human arm.",
+      "state": "closed",
+      "updated_at": "2025-12-20T05:42:04Z",
+      "author_association": "NONE",
+      "body_sha256": "84b4b91bb8af33f6a14d8a0ef4c470750b8b221038aa91062257cbefea2461c1"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/214",
+      "title": "Programs are running but we cant see anything.",
+      "state": "closed",
+      "updated_at": "2026-01-27T11:42:48Z",
+      "author_association": "NONE",
+      "body_sha256": "787b74809a07b4dce7044d663723d298d2ccbb2b90e959a2bc024cdb81db42b9"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/215",
+      "title": "遥操作迁移到其它机器人",
+      "state": "closed",
+      "updated_at": "2026-01-27T11:38:43Z",
+      "author_association": "NONE",
+      "body_sha256": "146d18c96eb3ab8edae0ca3576c60d5c9dc32a78ea712d1061d684c23bf40040"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/216",
+      "title": "仿真部署 执行sim_main.py 会卡在env_reset()的地方",
+      "state": "closed",
+      "updated_at": "2026-01-27T11:43:06Z",
+      "author_association": "NONE",
+      "body_sha256": "c1d4b675d8991006ea89c4211fdaacc08ece562b69c9bed752acf036ce2ffefd"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/218",
+      "title": "[UVCCamera] Failed to open camera head_camera: Could not open device. Error: Operation not supported",
+      "state": "closed",
+      "updated_at": "2026-02-10T18:02:36Z",
+      "author_association": "NONE",
+      "body_sha256": "114af0a76594a0c267a5ca0e307cfa5c1d66fb53ac53e1c41fdaffa80b2c59b3"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/226",
+      "title": "V1.5遥操作vision pro显示问题",
+      "state": "closed",
+      "updated_at": "2026-03-10T00:51:48Z",
+      "author_association": "NONE",
+      "body_sha256": "ed9fbf2e7ce369668b41030aee22497865cccfa8c462e5af19decbadbaf63498"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/227",
+      "title": "Quest 3 No View - Teleop Motion Partially Working on G1",
+      "state": "closed",
+      "updated_at": "2026-01-13T18:55:12Z",
+      "author_association": "NONE",
+      "body_sha256": "bfba2eaf059ea5a3a96731fcce76d79a84a3f9db0ca125cfedc23c678c6f7187"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/229",
+      "title": "DEX3-1灵巧手遥操作问题",
+      "state": "closed",
+      "updated_at": "2026-05-14T05:53:34Z",
+      "author_association": "NONE",
+      "body_sha256": "c3c023f9b90b7b63c2880dfa23cb369050e16b6129ea335030fe0e16fd16d2fd"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/235",
+      "title": "--motion parameter not working",
+      "state": "closed",
+      "updated_at": "2026-01-20T08:44:27Z",
+      "author_association": "NONE",
+      "body_sha256": "8e74b59d781b3a35c93e3c4939139bdbc912efa3d1603961e5fa1436e1a94754"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/237",
+      "title": "[G1_29_ArmController] Waiting to subscribe dds...",
+      "state": "closed",
+      "updated_at": "2026-04-22T01:09:56Z",
+      "author_association": "NONE",
+      "body_sha256": "b37865a131c3aa1016b4fc562847b6ca1ef5907da355ab851bca2a6557d1d2e8"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/239",
+      "title": "Wireless teleoperation unable to stream image on VR headset",
+      "state": "closed",
+      "updated_at": "2026-04-22T01:10:28Z",
+      "author_association": "NONE",
+      "body_sha256": "01acd4700d745ca1f10bf23d0f92c8c094529428f38588d83539d72472b98b73"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/247",
+      "title": "遥操作滞后问题",
+      "state": "closed",
+      "updated_at": "2026-02-07T06:50:50Z",
+      "author_association": "NONE",
+      "body_sha256": "40caaf43245e551a742544d965c610eb0431f67bd2dac7475faee07848c9816a"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/248",
+      "title": "Video stream timeout on Vision Pro",
+      "state": "closed",
+      "updated_at": "2026-02-03T08:54:59Z",
+      "author_association": "NONE",
+      "body_sha256": "50deb1f545b577f6948d774fbbfcb820d919450d27dcb1f314e32607533bb36b"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/250",
+      "title": "only finger teleoperation works for g1 in sim mode",
+      "state": "closed",
+      "updated_at": "2026-05-05T03:08:50Z",
+      "author_association": "NONE",
+      "body_sha256": "26abdc51c62a85e3498c96297d6df4f136ae2f7fc867d019882f2ea4ee98bdec"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/256",
+      "title": "Streaming wrong camera (right_arm rotated 90 degrees instead of head) during teleoperation with Isaac Sim",
+      "state": "closed",
+      "updated_at": "2026-03-24T04:22:20Z",
+      "author_association": "NONE",
+      "body_sha256": "c828e3a4c5b711c94dc12115ae8c86be51db22b4a7db5328de2bf57320af245e"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/261",
+      "title": "Recording Error (Bug): OpenCV imwrite fails with non-binocular camera",
+      "state": "closed",
+      "updated_at": "2026-04-30T06:30:21Z",
+      "author_association": "CONTRIBUTOR",
+      "body_sha256": "547ee2da05d79acec011e0bb6cacc6703cdb526d9ef158043154f1aaedd90ccd"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/262",
+      "title": "Cannot view G1 camera stream on Apple Vision Pro / DDS connection fails over wireless network",
+      "state": "closed",
+      "updated_at": "2026-05-09T07:46:42Z",
+      "author_association": "NONE",
+      "body_sha256": "46bbf7d5ec5cd00927c151ffee7a1086529f25bf77efb73829f44a9fbd7f7fcd"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/264",
+      "title": "遥操数据保存可能出现丢帧问题吗？",
+      "state": "closed",
+      "updated_at": "2026-05-12T16:07:45Z",
+      "author_association": "NONE",
+      "body_sha256": "43c207711791bc0f45160f7cf4897bef30c25cb5530217cd76702026162c6e77"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/267",
+      "title": "Websocket session is missing",
+      "state": "open",
+      "updated_at": "2026-06-12T10:47:03Z",
+      "author_association": "NONE",
+      "body_sha256": "4ffb0da0c0c4f7e321ca7f893792a18919e96d597ef0d7ed0ace92d5de7bb9f5"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/270",
+      "title": "vision pro显示为黑色背景/Waiting tosubscribe dds.../Image Server",
+      "state": "closed",
+      "updated_at": "2026-05-12T16:25:24Z",
+      "author_association": "NONE",
+      "body_sha256": "693c9c162728c9c893341b78a33acd6559fa86436cd9c71f8eea1f39f3859758"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/271",
+      "title": "Apple Vision Pro: WebSocket immediately disconnects on every page load, requires headset removal to establish stable connection",
+      "state": "closed",
+      "updated_at": "2026-08-03T03:59:17Z",
+      "author_association": "CONTRIBUTOR",
+      "body_sha256": "860d57369ef83a680b8d7fb810f1435232b594153b0c0ee76e3ed87944de729d"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/284",
+      "title": "Error updating frame for head_camera camera  and VR only shows the first frame it can grab",
+      "state": "closed",
+      "updated_at": "2026-04-30T09:02:22Z",
+      "author_association": "NONE",
+      "body_sha256": "4ade4a87bb5534acfe398c4a617a8656bf547cb95faf05d5029b3fd198eb0a73"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/286",
+      "title": "Hand poses returned by televuer were shown abnormal",
+      "state": "closed",
+      "updated_at": "2026-07-24T02:18:15Z",
+      "author_association": "NONE",
+      "body_sha256": "4eebbe872862fd9dab580371138dbb00ceee6b7381aea0cd10cfde59d6ca76a6"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/288",
+      "title": "some DDS problem",
+      "state": "closed",
+      "updated_at": "2026-04-28T04:25:46Z",
+      "author_association": "NONE",
+      "body_sha256": "f9de279dbcbc285500a11ce61a4c2718a82ad5afeb9111314b9a0ef0e13f35d7"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/294",
+      "title": "Quest 3 cannot establish a working XR session with local Vuer client at :8012, but works with   vuer.ai remote client",
+      "state": "closed",
+      "updated_at": "2026-05-12T16:03:29Z",
+      "author_association": "NONE",
+      "body_sha256": "c53a063ef8ddf43923f5562bc7483db5588cfe16c0b0ce6059ab8e794f971739"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/296",
+      "title": "Meta Quest 3 WebSocket disconnects when entering Virtual Reality from host :8012 Vuer page",
+      "state": "closed",
+      "updated_at": "2026-08-03T04:04:23Z",
+      "author_association": "NONE",
+      "body_sha256": "2581fb1f08cde2db0cd535548aadd007cfcbd4ad49cbdb9986c970fa15a98063"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/297",
+      "title": "真机遥操时，从https://vuer.ai?ws=wss://<本机 ip>:8012可以进入，但https://<本机ip>:8012?ws=wss://<本机ip>:8012无法进入",
+      "state": "closed",
+      "updated_at": "2026-08-03T04:05:21Z",
+      "author_association": "NONE",
+      "body_sha256": "92eedc805558094cb8f1e455d73ef3e2e77971c0a902061d6d24d054c4175932"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/3",
+      "title": "Problem in running python teleop_hand_and_arm.py",
+      "state": "closed",
+      "updated_at": "2024-11-04T01:56:58Z",
+      "author_association": "NONE",
+      "body_sha256": "43d381da4da2db217f9b8419aec5e5b82ca145885e73d0344bef9e65ee2aa83f"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/309",
+      "title": "BrainCo hand controller keeps logging `Waiting to subscribe dds...` in `teleop_hand_and_arm.py`, while standalone BrainCo hand DDS test works",
+      "state": "closed",
+      "updated_at": "2026-08-03T04:06:47Z",
+      "author_association": "NONE",
+      "body_sha256": "2a081a8bf28ffe4dfe7749cbb73d2e60821a9034012b3f37e305995ab377dfad"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/32",
+      "title": "teleop based on Quest 3 / Pico 4UE",
+      "state": "closed",
+      "updated_at": "2026-04-28T08:57:43Z",
+      "author_association": "NONE",
+      "body_sha256": "d9d12af3af114a9361f7ce0cb92247a25d855c5a0b743fabb2d5db5ade9c4059"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/323",
+      "title": "Websocket session is missing 问题咨询",
+      "state": "closed",
+      "updated_at": "2026-08-19T01:22:42Z",
+      "author_association": "NONE",
+      "body_sha256": "65941d9c9e5b5aa73399a7da5b07dec70e75a0f29b04df815a62ec9bb122adb8"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/326",
+      "title": "pico vr界面黑屏",
+      "state": "open",
+      "updated_at": "2026-08-13T01:33:53Z",
+      "author_association": "NONE",
+      "body_sha256": "f688fcb791c46c81b344983eb33069697c7b0dfe4679f10879a00df30bd2bb9d"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/34",
+      "title": "AVP camera stream",
+      "state": "closed",
+      "updated_at": "2025-04-25T02:01:47Z",
+      "author_association": "NONE",
+      "body_sha256": "cfde7d0c080d59408d95c558d6b701e124ee90afb6d682b50ec2c709e73d145c"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/37",
+      "title": "Apple Vision Pro video stream blocked",
+      "state": "closed",
+      "updated_at": "2025-04-25T07:49:55Z",
+      "author_association": "NONE",
+      "body_sha256": "64c6f94c56dab73794279d449411943ef91c2812ba134ff486fdfebf20dbcb6e"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/42",
+      "title": "one method to Perform Dual-arm Teleoperation in --motion Mode",
+      "state": "closed",
+      "updated_at": "2025-11-17T01:20:33Z",
+      "author_association": "COLLABORATOR",
+      "body_sha256": "3a137e1dedf370c25b46ea98990683144452d2b45d60690d0d9e67c9f6aefd1c"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/48",
+      "title": "could you develop more compatibility for inspire hand RH56DFTP?",
+      "state": "closed",
+      "updated_at": "2026-01-14T12:19:47Z",
+      "author_association": "NONE",
+      "body_sha256": "09fb2fe4d0bd81d59ae312886905e777f9c03ab367c57d2f13efd6a14126b483"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/49",
+      "title": "G1 with Quest 3 hand positioning not working properly",
+      "state": "closed",
+      "updated_at": "2025-07-14T08:33:57Z",
+      "author_association": "NONE",
+      "body_sha256": "fdc759516ac1643228b6ef4358c078aac733cc00bea915d774b8ed74bb09bc6b"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/56",
+      "title": "无法获取realsense相机的数据",
+      "state": "closed",
+      "updated_at": "2025-07-01T12:14:23Z",
+      "author_association": "NONE",
+      "body_sha256": "31c6c7ddce0508e03ca719529eabc900cfb06c717024f25d97f86a887f115200"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/63",
+      "title": "Current status for G1 and Isaac Sym. Pico 4 Ultra (non enterprise)",
+      "state": "closed",
+      "updated_at": "2026-07-20T02:22:49Z",
+      "author_association": "NONE",
+      "body_sha256": "7111e86c7ac77d29a0a2f3312ecdc3d0432ae255c4362e24c9d02e712307ba71"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/64",
+      "title": "H1 Teleoperation 误差问题",
+      "state": "closed",
+      "updated_at": "2025-07-21T01:16:56Z",
+      "author_association": "NONE",
+      "body_sha256": "258aefff58f8e361b0669694a00ec5a650319d25e28160d2c8ad3e368a6076df"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/70",
+      "title": "waiting to subscribe dds...",
+      "state": "closed",
+      "updated_at": "2025-07-25T07:24:59Z",
+      "author_association": "NONE",
+      "body_sha256": "03cfbad9cffb490a9004d8e2e3a8d2c62040187ef2a8be6151e9cb468d1690fc"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/77",
+      "title": "遥操作控制G1不能行走",
+      "state": "closed",
+      "updated_at": "2025-07-29T08:06:11Z",
+      "author_association": "NONE",
+      "body_sha256": "eaf092570e36486d9bb035a43918093740adf75ac8201b7192ef2b995ca4d3fe"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/78",
+      "title": "AssertionError when running the Isaaclab example",
+      "state": "closed",
+      "updated_at": "2025-07-29T10:05:17Z",
+      "author_association": "NONE",
+      "body_sha256": "bc42fb7b69fb4e154c9cca6c1e897a994caf258aff4120abd71f9db7b43ceb62"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/84",
+      "title": "WARNING  [G1_29_ArmController] Waiting to subscribe dds...  Even both use ChannelFactoryInitialize(1)",
+      "state": "closed",
+      "updated_at": "2025-12-04T13:04:52Z",
+      "author_association": "NONE",
+      "body_sha256": "2c93e6713946432bcade266c5fb5fb0cf91df896087d2964ebeaea221ee84736"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/87",
+      "title": "使用brainco灵巧手时，握紧状态下会断联",
+      "state": "closed",
+      "updated_at": "2025-09-19T13:09:11Z",
+      "author_association": "NONE",
+      "body_sha256": "6afc4837cc4662d74748941500d389a487e896accdd6b15da7d67c0a732ffe9b"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/91",
+      "title": "Black screen on the record image after pressing `r` button",
+      "state": "closed",
+      "updated_at": "2025-07-24T02:39:20Z",
+      "author_association": "NONE",
+      "body_sha256": "d6114e7b6f2cfc2abf7f2c41c0431c951344d24aa34db52826e69e612cb7c281"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/96",
+      "title": "vision pro显示问题",
+      "state": "closed",
+      "updated_at": "2025-08-11T01:53:10Z",
+      "author_association": "NONE",
+      "body_sha256": "0ec21ff4442602ebc07ecc2109641b947c8f97100f44cb55f4443b1d0b52982a"
+    }
+  ],
+  "comment_threads": [
+    {
+      "url": "https://github.com/unitreerobotics/dex1_1_service/issues/4",
+      "comments_retrieved": 3,
+      "all_comment_pages_retrieved": true,
+      "comments": [
+        {
+          "url": "https://github.com/unitreerobotics/dex1_1_service/issues/4#issuecomment-4956879085",
+          "login": "jh-virtuals",
+          "author_association": "NONE",
+          "created_at": "2026-07-13T10:15:25Z",
+          "updated_at": "2026-07-13T10:15:25Z",
+          "body_sha256": "a351b064c344f67e243cee67d110125493f380fcf397347f2fa3f5bdca2dfd62"
+        },
+        {
+          "url": "https://github.com/unitreerobotics/dex1_1_service/issues/4#issuecomment-5090301615",
+          "login": "shivubind",
+          "author_association": "NONE",
+          "created_at": "2026-07-27T10:38:56Z",
+          "updated_at": "2026-07-27T10:38:56Z",
+          "body_sha256": "bb0490b2889f07120b0698854245a0ff8a16e3bc7355820e02deb71ae8be892b"
+        },
+        {
+          "url": "https://github.com/unitreerobotics/dex1_1_service/issues/4#issuecomment-5693917563",
+          "login": "silencht",
+          "author_association": "COLLABORATOR",
+          "created_at": "2026-09-16T07:49:21Z",
+          "updated_at": "2026-09-16T07:49:21Z",
+          "body_sha256": "7c9700117fa6026115247c775bbcd290fee16dc0a87d02cfbeacb916a2de11af"
+        }
+      ],
+      "title": "Dex1-1 errors on G1-D",
+      "state": "closed",
+      "updated_at": "2026-09-21T07:00:06Z",
+      "issue_body_sha256": "bf879dc787ff0708cf4eaf2a645fbb08d5cee002461fd895357cd1e8d4ff152c"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_actuator_sdk/issues/11",
+      "comments_retrieved": 5,
+      "all_comment_pages_retrieved": true,
+      "comments": [
+        {
+          "url": "https://github.com/unitreerobotics/unitree_actuator_sdk/issues/11#issuecomment-1875126630",
+          "login": "xiaoliangstd",
+          "author_association": "COLLABORATOR",
+          "created_at": "2024-01-03T10:13:26Z",
+          "updated_at": "2024-01-03T10:13:26Z",
+          "body_sha256": "3c292a89eb25ad1130e5f3b620d5f061ab23eb61301e1e4cfc6d1a0d8ac91521"
+        },
+        {
+          "url": "https://github.com/unitreerobotics/unitree_actuator_sdk/issues/11#issuecomment-1877176633",
+          "login": "NirViaje",
+          "author_association": "NONE",
+          "created_at": "2024-01-04T14:22:34Z",
+          "updated_at": "2024-01-04T14:22:34Z",
+          "body_sha256": "381009a046a92825a860b1dfe84747bf681e02cceb98c60ede36e61e647f5d60"
+        },
+        {
+          "url": "https://github.com/unitreerobotics/unitree_actuator_sdk/issues/11#issuecomment-1878217794",
+          "login": "xiaoliangstd",
+          "author_association": "COLLABORATOR",
+          "created_at": "2024-01-05T06:57:17Z",
+          "updated_at": "2024-01-05T06:57:17Z",
+          "body_sha256": "e6c27c27a1c04ba78a98cc9c1ab549de30565824455de57a961233310c087d40"
+        },
+        {
+          "url": "https://github.com/unitreerobotics/unitree_actuator_sdk/issues/11#issuecomment-1880470010",
+          "login": "NirViaje",
+          "author_association": "NONE",
+          "created_at": "2024-01-08T06:57:32Z",
+          "updated_at": "2024-01-08T06:57:32Z",
+          "body_sha256": "5f5c21b390e73fb2d9f2d4c842fe43745f4700795c3e3f04518c5fb91eb0e44e"
+        },
+        {
+          "url": "https://github.com/unitreerobotics/unitree_actuator_sdk/issues/11#issuecomment-2058214430",
+          "login": "xiaoliangstd",
+          "author_association": "COLLABORATOR",
+          "created_at": "2024-04-16T04:38:49Z",
+          "updated_at": "2024-04-16T04:38:49Z",
+          "body_sha256": "8dbcdf4d0ee5fdc1b1bf3b9addfad291175de12a080ca303f2799a4f67ed3a61"
+        }
+      ],
+      "title": "如何置零位？使用过程中发现并不是绝对值编码，每次开机的零位都不一样",
+      "state": "closed",
+      "updated_at": "2024-04-16T04:39:02Z",
+      "issue_body_sha256": "c6643b8572faaf87b380d42c95fc6914c3d6bc56d100cc27c7c8bffeff87a9e6"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_actuator_sdk/issues/23",
+      "comments_retrieved": 9,
+      "all_comment_pages_retrieved": true,
+      "comments": [
+        {
+          "url": "https://github.com/unitreerobotics/unitree_actuator_sdk/issues/23#issuecomment-2538796558",
+          "login": "xiaoliangstd",
+          "author_association": "COLLABORATOR",
+          "created_at": "2024-12-12T12:40:35Z",
+          "updated_at": "2024-12-12T12:40:35Z",
+          "body_sha256": "5d2ea90961f6a748c75129ec9168572f504ca3979e4d5ac14dd8deeb6dd806c8"
+        },
+        {
+          "url": "https://github.com/unitreerobotics/unitree_actuator_sdk/issues/23#issuecomment-2538798267",
+          "login": "xiaoliangstd",
+          "author_association": "COLLABORATOR",
+          "created_at": "2024-12-12T12:41:15Z",
+          "updated_at": "2024-12-12T12:41:15Z",
+          "body_sha256": "371c9b5e636308e8e612136693f487ac985500aeb7501bb369fcbdee5e03e345"
+        },
+        {
+          "url": "https://github.com/unitreerobotics/unitree_actuator_sdk/issues/23#issuecomment-2540464599",
+          "login": "jieyu-xue-hct",
+          "author_association": "NONE",
+          "created_at": "2024-12-13T03:33:08Z",
+          "updated_at": "2024-12-13T03:33:08Z",
+          "body_sha256": "a34902a99a73cbfd24cb8349ce94f7e2375ad5901e988befb67e21994a1118a4"
+        },
+        {
+          "url": "https://github.com/unitreerobotics/unitree_actuator_sdk/issues/23#issuecomment-2541338785",
+          "login": "jieyu-xue-hct",
+          "author_association": "NONE",
+          "created_at": "2024-12-13T12:26:22Z",
+          "updated_at": "2024-12-13T12:26:22Z",
+          "body_sha256": "a5e2d516d6799bdadbde175b89ca2da790cb7aa39842bc8f86232a4391fd3006"
+        },
+        {
+          "url": "https://github.com/unitreerobotics/unitree_actuator_sdk/issues/23#issuecomment-2541414842",
+          "login": "xiaoliangstd",
+          "author_association": "COLLABORATOR",
+          "created_at": "2024-12-13T13:00:45Z",
+          "updated_at": "2024-12-13T13:00:45Z",
+          "body_sha256": "0d1ea51d002dc5452065c28b934c65cedb249b6f0c8de9c862c619aa7e1d17ec"
+        },
+        {
+          "url": "https://github.com/unitreerobotics/unitree_actuator_sdk/issues/23#issuecomment-2541417255",
+          "login": "xiaoliangstd",
+          "author_association": "COLLABORATOR",
+          "created_at": "2024-12-13T13:02:09Z",
+          "updated_at": "2024-12-13T13:02:09Z",
+          "body_sha256": "9a0e56d4ed900957719949eb603e82ff0fd0b040e8738b9e4799befd9c7050c7"
+        },
+        {
+          "url": "https://github.com/unitreerobotics/unitree_actuator_sdk/issues/23#issuecomment-2541427443",
+          "login": "xiaoliangstd",
+          "author_association": "COLLABORATOR",
+          "created_at": "2024-12-13T13:08:07Z",
+          "updated_at": "2024-12-13T13:08:07Z",
+          "body_sha256": "5ad8da1649dd4b99b037ea595a260b63d875b081c0d64e11587ad213adf4d78c"
+        },
+        {
+          "url": "https://github.com/unitreerobotics/unitree_actuator_sdk/issues/23#issuecomment-2543017937",
+          "login": "jieyu-xue-hct",
+          "author_association": "NONE",
+          "created_at": "2024-12-14T09:13:52Z",
+          "updated_at": "2024-12-14T09:13:52Z",
+          "body_sha256": "0f08a006bf83c25f5044baab6781262d57f44adcd33247c2c2e7ccfd0e51bec6"
+        },
+        {
+          "url": "https://github.com/unitreerobotics/unitree_actuator_sdk/issues/23#issuecomment-2728371971",
+          "login": "jiaweinie",
+          "author_association": "NONE",
+          "created_at": "2025-03-17T06:48:24Z",
+          "updated_at": "2025-03-17T06:48:24Z",
+          "body_sha256": "73518bb02eb53d4e81bab84101735201f84efa9a7814cc2251825749ae00b77c"
+        }
+      ],
+      "title": "关于发送接收接口使用",
+      "state": "open",
+      "updated_at": "2025-03-17T06:48:25Z",
+      "issue_body_sha256": "000d8d5f6ea6b25152793a82759e98b7b2788d6b24ceeab32afd4050b75390d3"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_actuator_sdk/issues/26",
+      "comments_retrieved": 2,
+      "all_comment_pages_retrieved": true,
+      "comments": [
+        {
+          "url": "https://github.com/unitreerobotics/unitree_actuator_sdk/issues/26#issuecomment-2862899125",
+          "login": "songjunqianli",
+          "author_association": "NONE",
+          "created_at": "2025-05-08T12:33:50Z",
+          "updated_at": "2025-05-08T12:33:50Z",
+          "body_sha256": "bd1e625f5249aad38d0b0cca1f76c1cae4ce72669388de3a9deabe6e85977ea1"
+        },
+        {
+          "url": "https://github.com/unitreerobotics/unitree_actuator_sdk/issues/26#issuecomment-3509734978",
+          "login": "Steven0928",
+          "author_association": "NONE",
+          "created_at": "2025-11-10T06:57:54Z",
+          "updated_at": "2025-11-10T06:57:54Z",
+          "body_sha256": "56617fb4e1675324e923a132a71401f133623088b4a70bc18ff74e5e87142cf8"
+        }
+      ],
+      "title": "go电机怎么设置零位呢？",
+      "state": "open",
+      "updated_at": "2025-11-10T06:57:54Z",
+      "issue_body_sha256": "f8c32654faba1021dd3f80f7b843cfbd5577f516c30a7e188a73a9f92b7d4afd"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_lerobot/issues/20",
+      "comments_retrieved": 7,
+      "all_comment_pages_retrieved": true,
+      "comments": [
+        {
+          "url": "https://github.com/unitreerobotics/unitree_lerobot/issues/20#issuecomment-2976209210",
+          "login": "hengguo-boop",
+          "author_association": "COLLABORATOR",
+          "created_at": "2025-06-16T11:39:54Z",
+          "updated_at": "2025-06-16T11:39:54Z",
+          "body_sha256": "1137d998f36542fcd5ecbb0e3f688c4275481a051406643867a26c72fc80bf6a"
+        },
+        {
+          "url": "https://github.com/unitreerobotics/unitree_lerobot/issues/20#issuecomment-2976631650",
+          "login": "HarunEnsar",
+          "author_association": "NONE",
+          "created_at": "2025-06-16T13:18:33Z",
+          "updated_at": "2025-06-16T15:44:41Z",
+          "body_sha256": "c185ed4a11207b542c568cb82ae43df1bb746c2e457971b808d24a9eeb82a0db"
+        },
+        {
+          "url": "https://github.com/unitreerobotics/unitree_lerobot/issues/20#issuecomment-2977124097",
+          "login": "hengguo-boop",
+          "author_association": "COLLABORATOR",
+          "created_at": "2025-06-16T15:38:34Z",
+          "updated_at": "2025-06-16T15:38:34Z",
+          "body_sha256": "31b7954bfd717c23e5a0ed404389baaaf3376e0712d0d3a058fd875d5449955a"
+        },
+        {
+          "url": "https://github.com/unitreerobotics/unitree_lerobot/issues/20#issuecomment-3112545449",
+          "login": "PEAGREEABLB",
+          "author_association": "NONE",
+          "created_at": "2025-07-24T08:29:16Z",
+          "updated_at": "2025-07-24T08:29:16Z",
+          "body_sha256": "b546dce87a5f7b56ef4fb5a03815fc64efb2004104092538781b822b6ae32fbc"
+        },
+        {
+          "url": "https://github.com/unitreerobotics/unitree_lerobot/issues/20#issuecomment-3204600375",
+          "login": "soneo1127",
+          "author_association": "NONE",
+          "created_at": "2025-08-20T07:34:10Z",
+          "updated_at": "2025-08-20T07:34:10Z",
+          "body_sha256": "233e2089afbe9361f4e9d180af961d512795a9eecfb73dafc0f880f5bbf0df75"
+        },
+        {
+          "url": "https://github.com/unitreerobotics/unitree_lerobot/issues/20#issuecomment-3517196318",
+          "login": "Astro-Q",
+          "author_association": "NONE",
+          "created_at": "2025-11-11T14:32:12Z",
+          "updated_at": "2025-11-11T14:32:12Z",
+          "body_sha256": "2b4716fe1f5166b5eb729b4830db83e3795fcda85af430dc0182063073a96318"
+        },
+        {
+          "url": "https://github.com/unitreerobotics/unitree_lerobot/issues/20#issuecomment-4406060333",
+          "login": "Hahalim2022y",
+          "author_association": "NONE",
+          "created_at": "2026-05-08T11:30:05Z",
+          "updated_at": "2026-05-08T11:30:05Z",
+          "body_sha256": "e561db77f7690b67541c13854f103ed4068046bcc3e3607fcc179aea1a96d9d2"
+        }
+      ],
+      "title": "Real World Testing is Not Working",
+      "state": "closed",
+      "updated_at": "2026-05-08T11:30:05Z",
+      "issue_body_sha256": "f4f02f1965187c86016124afe85e0dd90aff81ef1632a5b2360e6cc22461d2fd"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_rl_gym/issues/94",
+      "comments_retrieved": 3,
+      "all_comment_pages_retrieved": true,
+      "comments": [
+        {
+          "url": "https://github.com/unitreerobotics/unitree_rl_gym/issues/94#issuecomment-5163255135",
+          "login": "abtonmoy",
+          "author_association": "NONE",
+          "created_at": "2026-08-03T06:56:56Z",
+          "updated_at": "2026-08-03T06:56:56Z",
+          "body_sha256": "94ecaceeab17e76ba09a15516f6856dd0db031cb28c923d4b1ac8d74e2da6115"
+        },
+        {
+          "url": "https://github.com/unitreerobotics/unitree_rl_gym/issues/94#issuecomment-5163302415",
+          "login": "abtonmoy",
+          "author_association": "NONE",
+          "created_at": "2026-08-03T07:03:20Z",
+          "updated_at": "2026-08-03T07:03:20Z",
+          "body_sha256": "f45573981024532a977745ad11db5b1819d438a506523b180ba9d807d81f6d63"
+        },
+        {
+          "url": "https://github.com/unitreerobotics/unitree_rl_gym/issues/94#issuecomment-5163360774",
+          "login": "abtonmoy",
+          "author_association": "NONE",
+          "created_at": "2026-08-03T07:10:36Z",
+          "updated_at": "2026-08-03T07:10:36Z",
+          "body_sha256": "aad5401118b333c93a6d5b69f4618c0cc3f7060ac06f82ff0c97fbe0ae552d09"
+        }
+      ],
+      "title": "G1 23-DOF joint order (dof_names) for Isaac Gym training config",
+      "state": "open",
+      "updated_at": "2026-08-03T07:10:36Z",
+      "issue_body_sha256": "34d0366a89a44fbdb52f2dede13c91f659eab59cb3d11a0238e021e3470819e2"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_rl_gym/issues/95",
+      "comments_retrieved": 1,
+      "all_comment_pages_retrieved": true,
+      "comments": [
+        {
+          "url": "https://github.com/unitreerobotics/unitree_rl_gym/issues/95#issuecomment-4275680371",
+          "login": "cblgg",
+          "author_association": "NONE",
+          "created_at": "2026-04-19T10:08:48Z",
+          "updated_at": "2026-04-19T10:08:48Z",
+          "body_sha256": "ac3d35cffb274c0d4d644ecfe5105800b31071deb4b2cd22732115d3b3335787"
+        }
+      ],
+      "title": "G1 23-DOF policy: obs format, scaling values, action scale and command range",
+      "state": "open",
+      "updated_at": "2026-04-19T10:08:48Z",
+      "issue_body_sha256": "aa8551e934c2ca23fda1832d06560d0574f1e9f07c7ecc1fd0361955026da455"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_rl_lab/issues/42",
+      "comments_retrieved": 2,
+      "all_comment_pages_retrieved": true,
+      "comments": [
+        {
+          "url": "https://github.com/unitreerobotics/unitree_rl_lab/issues/42#issuecomment-3240747293",
+          "login": "Agnel-Wang",
+          "author_association": "COLLABORATOR",
+          "created_at": "2025-09-01T03:19:50Z",
+          "updated_at": "2025-09-01T03:19:50Z",
+          "body_sha256": "b8205a75f99166142e34b50b5c51e552b407fbe36a591252c8ebc12bcc1f1844"
+        },
+        {
+          "url": "https://github.com/unitreerobotics/unitree_rl_lab/issues/42#issuecomment-3415355301",
+          "login": "Agnel-Wang",
+          "author_association": "COLLABORATOR",
+          "created_at": "2025-10-17T12:24:57Z",
+          "updated_at": "2025-10-17T12:24:57Z",
+          "body_sha256": "947c09ab675a80bbb1bfe37aa0d0a09a4d7360a6128b9bc4b2a3dffa578f03b2"
+        }
+      ],
+      "title": "What control limits should I apply on G1?",
+      "state": "closed",
+      "updated_at": "2025-10-17T12:24:57Z",
+      "issue_body_sha256": "c91960caca18038b37f45ff9be1ac39d2c0ae29b1ab26e1447f9c02f7646c154"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_sdk2_python/issues/129",
+      "comments_retrieved": 6,
+      "all_comment_pages_retrieved": true,
+      "comments": [
+        {
+          "url": "https://github.com/unitreerobotics/unitree_sdk2_python/issues/129#issuecomment-3749262343",
+          "login": "kguven",
+          "author_association": "NONE",
+          "created_at": "2026-01-14T12:07:13Z",
+          "updated_at": "2026-01-14T12:07:13Z",
+          "body_sha256": "bb22ef380fe6f8cbce9f015f89870818c317c34c9f833594a3d40b6b7d1f52cc"
+        },
+        {
+          "url": "https://github.com/unitreerobotics/unitree_sdk2_python/issues/129#issuecomment-3770697295",
+          "login": "JoAnnHang",
+          "author_association": "NONE",
+          "created_at": "2026-01-20T02:04:50Z",
+          "updated_at": "2026-01-20T02:05:47Z",
+          "body_sha256": "7093d401b27f5aa915995556a6bc5395afe0ac4222445f61445f8e90ff69318a"
+        },
+        {
+          "url": "https://github.com/unitreerobotics/unitree_sdk2_python/issues/129#issuecomment-3830711472",
+          "login": "voss01",
+          "author_association": "NONE",
+          "created_at": "2026-02-01T09:34:58Z",
+          "updated_at": "2026-02-01T09:34:58Z",
+          "body_sha256": "69b7da8dbe30d3b5674d874b5e4b6bc386b8c09e92dda3aa882a617270807ca2"
+        },
+        {
+          "url": "https://github.com/unitreerobotics/unitree_sdk2_python/issues/129#issuecomment-4096867675",
+          "login": "sanchitamuk",
+          "author_association": "NONE",
+          "created_at": "2026-03-20T09:40:10Z",
+          "updated_at": "2026-03-20T09:40:10Z",
+          "body_sha256": "a7247b9631014ac907ec23fa5dcfab8a55fd68ad2bc510c5e10efefff7965b72"
+        },
+        {
+          "url": "https://github.com/unitreerobotics/unitree_sdk2_python/issues/129#issuecomment-4110986950",
+          "login": "agvdndor",
+          "author_association": "NONE",
+          "created_at": "2026-03-23T14:20:15Z",
+          "updated_at": "2026-03-23T14:20:15Z",
+          "body_sha256": "bc7c4a78dbd04eb53cd7da61aeef3e6b04f7db2dcba2a0f7d963ff77c389f88d"
+        },
+        {
+          "url": "https://github.com/unitreerobotics/unitree_sdk2_python/issues/129#issuecomment-5746273963",
+          "login": "a-stachowicz-lab",
+          "author_association": "NONE",
+          "created_at": "2026-09-20T00:02:48Z",
+          "updated_at": "2026-09-20T00:02:48Z",
+          "body_sha256": "b0856c7f5770f2e80cc69aff5d41979b79bcae0670c636d6c0f31ddcab12cca1"
+        }
+      ],
+      "title": "Unitree G1 Motor Overheat when using Inspire FTP Dexterous Hand",
+      "state": "open",
+      "updated_at": "2026-09-20T00:02:48Z",
+      "issue_body_sha256": "fd9d75c6f70e90d12e2318e0060b586197e9cc910161ffbefa0ceb678ef8a002"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_sdk2_python/issues/162",
+      "comments_retrieved": 0,
+      "all_comment_pages_retrieved": true,
+      "comments": [],
+      "title": "Motor vibration on G1",
+      "title_source": "GitHub web page; body not obtained through REST search"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_sdk2_python/issues/170",
+      "comments_retrieved": 2,
+      "all_comment_pages_retrieved": true,
+      "comments": [
+        {
+          "url": "https://github.com/unitreerobotics/unitree_sdk2_python/issues/170#issuecomment-5945889928",
+          "login": "rsonawane2002",
+          "author_association": "NONE",
+          "created_at": "2026-10-02T05:00:34Z",
+          "updated_at": "2026-10-02T05:00:34Z",
+          "body_sha256": "cd9a916465a19404b9b9c1dfbee7981103d40644302bd2be65a8cccebb04e34a"
+        },
+        {
+          "url": "https://github.com/unitreerobotics/unitree_sdk2_python/issues/170#issuecomment-5955108638",
+          "login": "Nbot07",
+          "author_association": "NONE",
+          "created_at": "2026-10-02T14:56:19Z",
+          "updated_at": "2026-10-02T14:56:19Z",
+          "body_sha256": "ecc12a06b2681358eb09b217b2ec9681056c9b097dc2fff2d7afb7ce45a165d5"
+        }
+      ],
+      "title": "G1 EDU+ (sw 1.5.3): SDK high-level locomotion accepted but not executed; `sport_lease` unreachable",
+      "state": "open",
+      "updated_at": "2026-10-02T14:56:19Z",
+      "issue_body_sha256": "985bf091a465b8893f0e0ade36a9e214f23ab9b5913641b31c55aaef2ed74e7f"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_sdk2_python/issues/28",
+      "comments_retrieved": 4,
+      "all_comment_pages_retrieved": true,
+      "comments": [
+        {
+          "url": "https://github.com/unitreerobotics/unitree_sdk2_python/issues/28#issuecomment-2614111994",
+          "login": "Fatyhich",
+          "author_association": "NONE",
+          "created_at": "2025-01-25T21:56:25Z",
+          "updated_at": "2025-01-25T21:56:25Z",
+          "body_sha256": "29a4e1a139bb7da7f614a1079b328ad5913e8767ca79590e22bd30b4e23aea0c"
+        },
+        {
+          "url": "https://github.com/unitreerobotics/unitree_sdk2_python/issues/28#issuecomment-2865556404",
+          "login": "change-every",
+          "author_association": "NONE",
+          "created_at": "2025-05-09T08:00:08Z",
+          "updated_at": "2025-05-09T08:00:08Z",
+          "body_sha256": "78117ae148339fd7379094c9acbca76a9614677fce416d50e8631f5531288b66"
+        },
+        {
+          "url": "https://github.com/unitreerobotics/unitree_sdk2_python/issues/28#issuecomment-3563251760",
+          "login": "puneethgottam",
+          "author_association": "NONE",
+          "created_at": "2025-11-21T14:27:45Z",
+          "updated_at": "2025-11-21T14:27:45Z",
+          "body_sha256": "57fc5b365cb6a2873ddd9bac0799ae18aa033b4c9f95d99be1a408499b664c98"
+        },
+        {
+          "url": "https://github.com/unitreerobotics/unitree_sdk2_python/issues/28#issuecomment-3659500063",
+          "login": "YuehChuan",
+          "author_association": "NONE",
+          "created_at": "2025-12-16T09:03:22Z",
+          "updated_at": "2025-12-16T09:03:22Z",
+          "body_sha256": "56e7e4f4819a1d3341ca591162c4dc8ba29add6b5b62ccae811e30506f9338df"
+        }
+      ],
+      "title": "Unable to Get Low-Level State of G1 Robot with unitree_sdk2_python",
+      "state": "closed",
+      "updated_at": "2025-12-16T09:03:22Z",
+      "issue_body_sha256": "d42bb9778775c95e688cd2d45002ed5f97d35f17a91ecd5b57354304edb07cf9"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_sdk2_python/issues/72",
+      "comments_retrieved": 0,
+      "all_comment_pages_retrieved": true,
+      "comments": [],
+      "title": "Stability compensation when robot is lifting heavy objects",
+      "state": "open",
+      "updated_at": "2025-05-22T16:15:39Z",
+      "issue_body_sha256": "84b8b7721e4fc47551073b064c84f5e499ef934a793759cae28cc619a01bdcf6"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/42",
+      "comments_retrieved": 3,
+      "all_comment_pages_retrieved": true,
+      "comments": [
+        {
+          "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/42#issuecomment-2741251130",
+          "login": "schirane1",
+          "author_association": "NONE",
+          "created_at": "2025-03-20T17:54:15Z",
+          "updated_at": "2025-03-20T17:54:15Z",
+          "body_sha256": "29938a0a8fea96dad08495a2d2eea8203f73642ac137627fd532d63c927cd254"
+        },
+        {
+          "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/42#issuecomment-2893822681",
+          "login": "silencht",
+          "author_association": "COLLABORATOR",
+          "created_at": "2025-05-20T10:23:04Z",
+          "updated_at": "2025-05-20T10:23:04Z",
+          "body_sha256": "3ad6552f47e7b5a27437ada66590616723e32411d1af855c2dd11652e552513f"
+        },
+        {
+          "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/42#issuecomment-3068373702",
+          "login": "silencht",
+          "author_association": "COLLABORATOR",
+          "created_at": "2025-07-14T08:26:43Z",
+          "updated_at": "2025-07-14T08:26:43Z",
+          "body_sha256": "b107aa14c83face1e0fc3f37cb77a186c12565759a954596b3c693578c365ced"
+        }
+      ],
+      "title": "one method to Perform Dual-arm Teleoperation in --motion Mode",
+      "state": "closed",
+      "updated_at": "2025-11-17T01:20:33Z",
+      "issue_body_sha256": "3a137e1dedf370c25b46ea98990683144452d2b45d60690d0d9e67c9f6aefd1c"
+    }
+  ],
+  "limitations": [
+    "仅对检索命中做正文初筛；14 个相关 issue 完整读取评论，不表示完整人工审阅全部命中及其评论",
+    "8 个核心仓库的 Discussions 开关已查，不代表整个组织或私有支持渠道",
+    "GitHub 搜索索引和公开可见范围有限；最初 403 限流的查询和 config 第 2 页已重试成功",
+    "保存来源元数据及正文 SHA256，不复制评论中的控制代码或执行建议；哈希用于标记抓取版本，不等于官方签名"
+  ]
+}

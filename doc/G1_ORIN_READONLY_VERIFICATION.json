@@ -1,0 +1,369 @@
+{
+  "verified_at": "2026-10-20T23:17:35.273081+08:00",
+  "release": "4233d34f6b5a",
+  "robot": {
+    "ssh_host": "<ORIN_IP>",
+    "dds_interface": "eth0",
+    "dds_address": "192.168.123.164",
+    "computer": "NVIDIA Orin NX Developer Kit"
+  },
+  "mode": "robot",
+  "read_only": true,
+  "connected": true,
+  "joint_count": 23,
+  "joint_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    15,
+    16,
+    17,
+    18,
+    19,
+    22,
+    23,
+    24,
+    25,
+    26
+  ],
+  "websocket": {
+    "frames": 30,
+    "elapsed_s": 5.934,
+    "first_tick": 2891887,
+    "last_tick": 2897832,
+    "telemetry_age_ms_min": 15,
+    "telemetry_age_ms_max": 22
+  },
+  "telemetry": {
+    "temperature_c_min": 32,
+    "temperature_c_max": 46,
+    "motor_voltage_v_min": 49.5,
+    "motor_voltage_v_max": 50.0,
+    "raw_motor_statuses": [
+      0
+    ],
+    "imu": {
+      "rpy": [
+        0.15139062702655792,
+        -0.47610464692115784,
+        -0.045097678899765015
+      ],
+      "gyroscope": [
+        -0.0031957929022610188,
+        0.011717907153069973,
+        -0.0031957929022610188
+      ],
+      "accelerometer": [
+        4.094982624053955,
+        1.107019066810608,
+        8.646958351135254
+      ],
+      "quaternion": [
+        -0.9691721200942993,
+        -0.06817015260457993,
+        0.23673227429389954,
+        0.0040201833471655846
+      ],
+      "temperature": 79
+    },
+    "fsm": 0,
+    "mode_machine": 4,
+    "bad_packets": 0
+  },
+  "sdk_operation_count": 47,
+  "firmware_action_ids": [
+    1,
+    11,
+    12,
+    13,
+    15,
+    17,
+    18,
+    19,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    31,
+    32,
+    33,
+    34,
+    35,
+    99
+  ],
+  "firmware_catalog": [
+    {
+      "id": 99,
+      "name": "release_arm"
+    },
+    {
+      "id": 1,
+      "name": "turn_back_wave",
+      "fsm": [
+        500,
+        501
+      ]
+    },
+    {
+      "id": 11,
+      "name": "blow_kiss_with_both_hands"
+    },
+    {
+      "id": 12,
+      "name": "blow_kiss_with_left_hand"
+    },
+    {
+      "id": 13,
+      "name": "blow_kiss_with_right_hand"
+    },
+    {
+      "id": 15,
+      "name": "both_hands_up"
+    },
+    {
+      "id": 17,
+      "name": "clamp"
+    },
+    {
+      "id": 18,
+      "name": "high_five"
+    },
+    {
+      "id": 19,
+      "name": "hug"
+    },
+    {
+      "id": 22,
+      "name": "refuse"
+    },
+    {
+      "id": 23,
+      "name": "right_hand_up"
+    },
+    {
+      "id": 24,
+      "name": "ultraman_ray"
+    },
+    {
+      "id": 25,
+      "name": "wave_under_head"
+    },
+    {
+      "id": 26,
+      "name": "wave_above_head"
+    },
+    {
+      "id": 27,
+      "name": "shake_hand"
+    },
+    {
+      "id": 31,
+      "name": "extend_right_arm_forward",
+      "mode_machine": [
+        4
+      ]
+    },
+    {
+      "id": 32,
+      "name": "right_hand_on_mouth",
+      "mode_machine": [
+        4
+      ]
+    },
+    {
+      "id": 33,
+      "name": "right_hand_on_heart"
+    },
+    {
+      "id": 34,
+      "name": "both_hands_up_deviate_right"
+    },
+    {
+      "id": 35,
+      "name": "emphasize",
+      "mode_machine": [
+        4
+      ]
+    },
+    {
+      "id": null,
+      "name": "Waist_Drum_Dance",
+      "duration_s": 9.5
+    },
+    {
+      "id": null,
+      "name": "Scratch_head",
+      "duration_s": 8.1
+    },
+    {
+      "id": null,
+      "name": "Spin_discs",
+      "duration_s": 6.9
+    },
+    {
+      "id": null,
+      "name": "Throw_money",
+      "duration_s": 8.1
+    }
+  ],
+  "firmware_action_error": null,
+  "official_read_queries": {
+    "get_fsm": {
+      "status": "accepted",
+      "data": 0,
+      "event_id": "6836e27a27c74174812b09a42aa47d3f",
+      "message": "已读取官方返回值"
+    },
+    "get_actions": {
+      "status": "accepted",
+      "data": [
+        [
+          {
+            "id": 99,
+            "name": "release_arm"
+          },
+          {
+            "fsm": [
+              500,
+              501
+            ],
+            "id": 1,
+            "name": "turn_back_wave"
+          },
+          {
+            "id": 11,
+            "name": "blow_kiss_with_both_hands"
+          },
+          {
+            "id": 12,
+            "name": "blow_kiss_with_left_hand"
+          },
+          {
+            "id": 13,
+            "name": "blow_kiss_with_right_hand"
+          },
+          {
+            "id": 15,
+            "name": "both_hands_up"
+          },
+          {
+            "id": 17,
+            "name": "clamp"
+          },
+          {
+            "id": 18,
+            "name": "high_five"
+          },
+          {
+            "id": 19,
+            "name": "hug"
+          },
+          {
+            "id": 22,
+            "name": "refuse"
+          },
+          {
+            "id": 23,
+            "name": "right_hand_up"
+          },
+          {
+            "id": 24,
+            "name": "ultraman_ray"
+          },
+          {
+            "id": 25,
+            "name": "wave_under_head"
+          },
+          {
+            "id": 26,
+            "name": "wave_above_head"
+          },
+          {
+            "id": 27,
+            "name": "shake_hand"
+          },
+          {
+            "id": 31,
+            "mode_machine": [
+              4
+            ],
+            "name": "extend_right_arm_forward"
+          },
+          {
+            "id": 32,
+            "mode_machine": [
+              4
+            ],
+            "name": "right_hand_on_mouth"
+          },
+          {
+            "id": 33,
+            "name": "right_hand_on_heart"
+          },
+          {
+            "id": 34,
+            "name": "both_hands_up_deviate_right"
+          },
+          {
+            "id": 35,
+            "mode_machine": [
+              4
+            ],
+            "name": "emphasize"
+          }
+        ],
+        [
+          {
+            "name": "Waist_Drum_Dance",
+            "time": 9.5
+          },
+          {
+            "name": "Scratch_head",
+            "time": 8.1
+          },
+          {
+            "name": "Spin_discs",
+            "time": 6.9
+          },
+          {
+            "name": "Throw_money",
+            "time": 8.1
+          }
+        ]
+      ],
+      "event_id": "ac503efb63de4eb4a803a78c14c8bc99",
+      "message": "已读取官方返回值"
+    },
+    "get_volume": {
+      "status": "accepted",
+      "data": {
+        "volume": 41
+      },
+      "event_id": "9f03e748e281486794811018dc44d9a9",
+      "message": "已读取官方返回值"
+    }
+  },
+  "meshes_verified": 29,
+  "control_owner": null,
+  "navigation_status": "idle",
+  "command_accepted_events": 0,
+  "not_connected": [
+    "camera",
+    "battery_state_of_charge",
+    "map",
+    "localization",
+    "scan"
+  ]
+}

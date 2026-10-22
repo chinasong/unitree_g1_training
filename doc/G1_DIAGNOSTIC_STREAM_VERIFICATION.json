@@ -1,0 +1,33 @@
+{
+  "sources": [
+    {
+      "path": "doc/diagnostic-streams-20261021/g1_diagnostic_streams_v31.json",
+      "sha256": "910c2b2ec1d96f57cc6411fef588b974afab957997290ae828b25ed67b41120b",
+      "duration_s": 20.166691,
+      "stream_samples": 0
+    },
+    {
+      "path": "doc/diagnostic-streams-20261021/g1_diagnostic_streams_best_effort_v31.json",
+      "sha256": "0bbce524bf4e9664320edf26ae54331cfef1a49677396639becf366bfba58fc2",
+      "duration_s": 20.151564,
+      "stream_samples": 1
+    },
+    {
+      "path": "doc/diagnostic-streams-20261021/g1_service_version_binding_v31.json",
+      "sha256": "c5e602d6a2867d963197810f1a51b6c95c40a19c8303c79a490654736c3f406e",
+      "duration_s": 35.104123,
+      "stream_samples": 0
+    },
+    {
+      "path": "doc/diagnostic-streams-20261021/g1_service_version_binding_90_v31.json",
+      "sha256": "ed586f09acbbab6d99552243dfd7f0b510f0256bd5b7def5ca8a736aed55d085",
+      "duration_s": 90.110576,
+      "stream_samples": 0
+    }
+  ],
+  "firmware_confirmed": false,
+  "service_to_version_binding_confirmed": false,
+  "device_motion_firmware": null,
+  "exact_7301_predicate": null,
+  "note": "Original snapshots preserved. The 35-second snapshot has stale 20-second wording in limitations; use measured duration_s and UTC interval. Topic samples are not periodicity evidence."
+}

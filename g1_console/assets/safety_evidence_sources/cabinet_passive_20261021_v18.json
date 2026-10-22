@@ -1,0 +1,729 @@
+{
+  "current": false,
+  "checked_at_utc": "2026-10-21T07:08:02.232837+00:00",
+  "completed_at_utc": "2026-10-21T07:08:22.314287+00:00",
+  "boot_id": "b33a7dc5-2617-44cd-b353-041bab1c204f",
+  "duration_s": 20.078,
+  "total_publications": 137,
+  "all_publications": [
+    {
+      "topic": "rt/api/action_store/request",
+      "type": "unitree_api::msg::dds_::Request_"
+    },
+    {
+      "topic": "rt/api/action_store/response",
+      "type": "unitree_api::msg::dds_::Response_"
+    },
+    {
+      "topic": "rt/api/arm/request",
+      "type": "unitree_api::msg::dds_::Request_"
+    },
+    {
+      "topic": "rt/api/arm/request",
+      "type": "unitree_api::msg::dds_::Request_"
+    },
+    {
+      "topic": "rt/api/arm/request",
+      "type": "unitree_api::msg::dds_::Request_"
+    },
+    {
+      "topic": "rt/api/arm/request",
+      "type": "unitree_api::msg::dds_::Request_"
+    },
+    {
+      "topic": "rt/api/arm/response",
+      "type": "unitree_api::msg::dds_::Response_"
+    },
+    {
+      "topic": "rt/api/audiohub/request",
+      "type": "unitree_api::msg::dds_::Request_"
+    },
+    {
+      "topic": "rt/api/audiohub/response",
+      "type": "unitree_api::msg::dds_::Response_"
+    },
+    {
+      "topic": "rt/api/bashrunner/request",
+      "type": "unitree_api::msg::dds_::Request_"
+    },
+    {
+      "topic": "rt/api/bashrunner/response",
+      "type": "unitree_api::msg::dds_::Response_"
+    },
+    {
+      "topic": "rt/api/basic_clearoip/request",
+      "type": "unitree_api::msg::dds_::Request_"
+    },
+    {
+      "topic": "rt/api/basic_clearoip/response",
+      "type": "unitree_api::msg::dds_::Response_"
+    },
+    {
+      "topic": "rt/api/basic_clearoip_lease/response",
+      "type": "unitree_api::msg::dds_::Response_"
+    },
+    {
+      "topic": "rt/api/basic_demarcate/request",
+      "type": "unitree_api::msg::dds_::Request_"
+    },
+    {
+      "topic": "rt/api/basic_demarcate/request",
+      "type": "unitree_api::msg::dds_::Request_"
+    },
+    {
+      "topic": "rt/api/basic_demarcate/request",
+      "type": "unitree_api::msg::dds_::Request_"
+    },
+    {
+      "topic": "rt/api/basic_demarcate/response",
+      "type": "unitree_api::msg::dds_::Response_"
+    },
+    {
+      "topic": "rt/api/basic_demarcate_lease/response",
+      "type": "unitree_api::msg::dds_::Response_"
+    },
+    {
+      "topic": "rt/api/basic_softlimit/request",
+      "type": "unitree_api::msg::dds_::Request_"
+    },
+    {
+      "topic": "rt/api/basic_softlimit/response",
+      "type": "unitree_api::msg::dds_::Response_"
+    },
+    {
+      "topic": "rt/api/basic_softlimit_lease/response",
+      "type": "unitree_api::msg::dds_::Response_"
+    },
+    {
+      "topic": "rt/api/basic_taumax/response",
+      "type": "unitree_api::msg::dds_::Response_"
+    },
+    {
+      "topic": "rt/api/basic_taumax_lease/response",
+      "type": "unitree_api::msg::dds_::Response_"
+    },
+    {
+      "topic": "rt/api/config/request",
+      "type": "unitree_api::msg::dds_::Request_"
+    },
+    {
+      "topic": "rt/api/config/request",
+      "type": "unitree_api::msg::dds_::Request_"
+    },
+    {
+      "topic": "rt/api/config/request",
+      "type": "unitree_api::msg::dds_::Request_"
+    },
+    {
+      "topic": "rt/api/config/request",
+      "type": "unitree_api::msg::dds_::Request_"
+    },
+    {
+      "topic": "rt/api/config/request",
+      "type": "unitree_api::msg::dds_::Request_"
+    },
+    {
+      "topic": "rt/api/config/request",
+      "type": "unitree_api::msg::dds_::Request_"
+    },
+    {
+      "topic": "rt/api/config/response",
+      "type": "unitree_api::msg::dds_::Response_"
+    },
+    {
+      "topic": "rt/api/dex3_msg_controller/request",
+      "type": "unitree_api::msg::dds_::Request_"
+    },
+    {
+      "topic": "rt/api/dex3_msg_controller/response",
+      "type": "unitree_api::msg::dds_::Response_"
+    },
+    {
+      "topic": "rt/api/dex3_msg_controller/response",
+      "type": "unitree_api::msg::dds_::Response_"
+    },
+    {
+      "topic": "rt/api/gesture/request",
+      "type": "unitree_api::msg::dds_::Request_"
+    },
+    {
+      "topic": "rt/api/gpt/request",
+      "type": "unitree_api::msg::dds_::Request_"
+    },
+    {
+      "topic": "rt/api/gpt/request",
+      "type": "unitree_api::msg::dds_::Request_"
+    },
+    {
+      "topic": "rt/api/gpt/response",
+      "type": "unitree_api::msg::dds_::Response_"
+    },
+    {
+      "topic": "rt/api/motion_switcher/request",
+      "type": "unitree_api::msg::dds_::Request_"
+    },
+    {
+      "topic": "rt/api/motion_switcher/request",
+      "type": "unitree_api::msg::dds_::Request_"
+    },
+    {
+      "topic": "rt/api/motion_switcher/response",
+      "type": "unitree_api::msg::dds_::Response_"
+    },
+    {
+      "topic": "rt/api/rm_con/request",
+      "type": "unitree_api::msg::dds_::Request_"
+    },
+    {
+      "topic": "rt/api/robot_state/request",
+      "type": "unitree_api::msg::dds_::Request_"
+    },
+    {
+      "topic": "rt/api/robot_state/request",
+      "type": "unitree_api::msg::dds_::Request_"
+    },
+    {
+      "topic": "rt/api/robot_state/response",
+      "type": "unitree_api::msg::dds_::Response_"
+    },
+    {
+      "topic": "rt/api/robot_type_service/request",
+      "type": "unitree_api::msg::dds_::Request_"
+    },
+    {
+      "topic": "rt/api/robot_type_service/response",
+      "type": "unitree_api::msg::dds_::Response_"
+    },
+    {
+      "topic": "rt/api/slam_operate/request",
+      "type": "unitree_api::msg::dds_::Request_"
+    },
+    {
+      "topic": "rt/api/slam_operate/request",
+      "type": "unitree_api::msg::dds_::Request_"
+    },
+    {
+      "topic": "rt/api/sport/request",
+      "type": "unitree_api::msg::dds_::Request_"
+    },
+    {
+      "topic": "rt/api/sport/request",
+      "type": "unitree_api::msg::dds_::Request_"
+    },
+    {
+      "topic": "rt/api/sport/request",
+      "type": "unitree_api::msg::dds_::Request_"
+    },
+    {
+      "topic": "rt/api/sport/request",
+      "type": "unitree_api::msg::dds_::Request_"
+    },
+    {
+      "topic": "rt/api/sport/request",
+      "type": "unitree_api::msg::dds_::Request_"
+    },
+    {
+      "topic": "rt/api/sport/request",
+      "type": "unitree_api::msg::dds_::Request_"
+    },
+    {
+      "topic": "rt/api/sport/request",
+      "type": "unitree_api::msg::dds_::Request_"
+    },
+    {
+      "topic": "rt/api/sport/request",
+      "type": "unitree_api::msg::dds_::Request_"
+    },
+    {
+      "topic": "rt/api/sport/request",
+      "type": "unitree_api::msg::dds_::Request_"
+    },
+    {
+      "topic": "rt/api/sport/request",
+      "type": "unitree_api::msg::dds_::Request_"
+    },
+    {
+      "topic": "rt/api/sport/request",
+      "type": "unitree_api::msg::dds_::Request_"
+    },
+    {
+      "topic": "rt/api/sport/response",
+      "type": "unitree_api::msg::dds_::Response_"
+    },
+    {
+      "topic": "rt/api/sport/response",
+      "type": "unitree_api::msg::dds_::Response_"
+    },
+    {
+      "topic": "rt/api/sport/response",
+      "type": "unitree_api::msg::dds_::Response_"
+    },
+    {
+      "topic": "rt/api/videohub/request",
+      "type": "unitree_api::msg::dds_::Request_"
+    },
+    {
+      "topic": "rt/api/videohub/request",
+      "type": "unitree_api::msg::dds_::Request_"
+    },
+    {
+      "topic": "rt/api/videohub/request",
+      "type": "unitree_api::msg::dds_::Request_"
+    },
+    {
+      "topic": "rt/api/videohub/response",
+      "type": "unitree_api::msg::dds_::Response_"
+    },
+    {
+      "topic": "rt/api/vla/request",
+      "type": "unitree_api::msg::dds_::Request_"
+    },
+    {
+      "topic": "rt/api/voice/request",
+      "type": "unitree_api::msg::dds_::Request_"
+    },
+    {
+      "topic": "rt/api/voice/request",
+      "type": "unitree_api::msg::dds_::Request_"
+    },
+    {
+      "topic": "rt/api/voice/request",
+      "type": "unitree_api::msg::dds_::Request_"
+    },
+    {
+      "topic": "rt/api/voice/request",
+      "type": "unitree_api::msg::dds_::Request_"
+    },
+    {
+      "topic": "rt/api/voice/request",
+      "type": "unitree_api::msg::dds_::Request_"
+    },
+    {
+      "topic": "rt/api/voice/request",
+      "type": "unitree_api::msg::dds_::Request_"
+    },
+    {
+      "topic": "rt/api/voice/response",
+      "type": "unitree_api::msg::dds_::Response_"
+    },
+    {
+      "topic": "rt/api/vui/request",
+      "type": "unitree_api::msg::dds_::Request_"
+    },
+    {
+      "topic": "rt/api/vui/response",
+      "type": "unitree_api::msg::dds_::Response_"
+    },
+    {
+      "topic": "rt/api/waist_pitch_demarcate/request",
+      "type": "unitree_api::msg::dds_::Request_"
+    },
+    {
+      "topic": "rt/arm/action/state",
+      "type": "std_msgs::msg::dds_::String_"
+    },
+    {
+      "topic": "rt/arm/action/state",
+      "type": "std_msgs::msg::dds_::String_"
+    },
+    {
+      "topic": "rt/arm_sdk",
+      "type": "unitree_hg::msg::dds_::LowCmd_"
+    },
+    {
+      "topic": "rt/arm_sdk",
+      "type": "unitree_hg::msg::dds_::LowCmd_"
+    },
+    {
+      "topic": "rt/arm_sdk",
+      "type": "unitree_hg::msg::dds_::LowCmd_"
+    },
+    {
+      "topic": "rt/arm_service_inbound",
+      "type": "std_msgs::msg::dds_::String_"
+    },
+    {
+      "topic": "rt/arm_service_outbound",
+      "type": "std_msgs::msg::dds_::String_"
+    },
+    {
+      "topic": "rt/audio_msg",
+      "type": "std_msgs::msg::dds_::String_"
+    },
+    {
+      "topic": "rt/audio_msg/filter",
+      "type": "std_msgs::msg::dds_::String_"
+    },
+    {
+      "topic": "rt/config_change_status",
+      "type": "unitree_go::msg::dds_::ConfigChangeStatus_"
+    },
+    {
+      "topic": "rt/dex3/left/state",
+      "type": "unitree_hg::msg::dds_::HandState_"
+    },
+    {
+      "topic": "rt/dex3/right/state",
+      "type": "unitree_hg::msg::dds_::HandState_"
+    },
+    {
+      "topic": "rt/event/action_store",
+      "type": "std_msgs::msg::dds_::String_"
+    },
+    {
+      "topic": "rt/event/action_store",
+      "type": "std_msgs::msg::dds_::String_"
+    },
+    {
+      "topic": "rt/event/action_store",
+      "type": "std_msgs::msg::dds_::String_"
+    },
+    {
+      "topic": "rt/frontvideostream",
+      "type": "unitree_go::msg::dds_::Go2FrontVideoData_"
+    },
+    {
+      "topic": "rt/gpt_cmd",
+      "type": "std_msgs::msg::dds_::String_"
+    },
+    {
+      "topic": "rt/gpt_msg",
+      "type": "std_msgs::msg::dds_::String_"
+    },
+    {
+      "topic": "rt/gpt_state",
+      "type": "std_msgs::msg::dds_::String_"
+    },
+    {
+      "topic": "rt/gptflowfeedback",
+      "type": "std_msgs::msg::dds_::String_"
+    },
+    {
+      "topic": "rt/lf/battery_alarm",
+      "type": "std_msgs::msg::dds_::String_"
+    },
+    {
+      "topic": "rt/lf/bmsstate",
+      "type": "unitree_hg::msg::dds_::BmsState_"
+    },
+    {
+      "topic": "rt/lf/dex3/left/state",
+      "type": "unitree_hg::msg::dds_::HandState_"
+    },
+    {
+      "topic": "rt/lf/dex3/right/state",
+      "type": "unitree_hg::msg::dds_::HandState_"
+    },
+    {
+      "topic": "rt/lf/emergency_stop",
+      "type": "unitree_go::msg::dds_::Error_"
+    },
+    {
+      "topic": "rt/lf/lowstate",
+      "type": "unitree_hg::msg::dds_::LowState_"
+    },
+    {
+      "topic": "rt/lf/mainboardstate",
+      "type": "unitree_hg::msg::dds_::MainBoardState_"
+    },
+    {
+      "topic": "rt/lf/secondary_imu",
+      "type": "unitree_hg::msg::dds_::IMUState_"
+    },
+    {
+      "topic": "rt/lf/sportmodestate",
+      "type": "unitree_hg::msg::dds_::SportModeState_"
+    },
+    {
+      "topic": "rt/log_system_inbound",
+      "type": "std_msgs::msg::dds_::String_"
+    },
+    {
+      "topic": "rt/log_system_outbound",
+      "type": "std_msgs::msg::dds_::String_"
+    },
+    {
+      "topic": "rt/lowcmd",
+      "type": "unitree_hg::msg::dds_::LowCmd_"
+    },
+    {
+      "topic": "rt/lowcmd",
+      "type": "unitree_hg::msg::dds_::LowCmd_"
+    },
+    {
+      "topic": "rt/lowstate",
+      "type": "unitree_hg::msg::dds_::LowState_"
+    },
+    {
+      "topic": "rt/lowstate",
+      "type": "unitree_hg::msg::dds_::LowState_"
+    },
+    {
+      "topic": "rt/lowstate",
+      "type": "unitree_hg::msg::dds_::LowState_"
+    },
+    {
+      "topic": "rt/multiplestate",
+      "type": "std_msgs::msg::dds_::String_"
+    },
+    {
+      "topic": "rt/odommodestate",
+      "type": "unitree_go::msg::dds_::SportModeState_"
+    },
+    {
+      "topic": "rt/public_network_status",
+      "type": "std_msgs::msg::dds_::String_"
+    },
+    {
+      "topic": "rt/rtc/state",
+      "type": "std_msgs::msg::dds_::String_"
+    },
+    {
+      "topic": "rt/rtc_status",
+      "type": "std_msgs::msg::dds_::String_"
+    },
+    {
+      "topic": "rt/secondary_imu",
+      "type": "unitree_hg::msg::dds_::IMUState_"
+    },
+    {
+      "topic": "rt/selftest",
+      "type": "std_msgs::msg::dds_::String_"
+    },
+    {
+      "topic": "rt/servicestate",
+      "type": "std_msgs::msg::dds_::String_"
+    },
+    {
+      "topic": "rt/servicestateactivate",
+      "type": "std_msgs::msg::dds_::String_"
+    },
+    {
+      "topic": "rt/sportmodestate",
+      "type": "unitree_hg::msg::dds_::SportModeState_"
+    },
+    {
+      "topic": "rt/state_estimator/fusion_odom",
+      "type": "nav_msgs::msg::dds_::Odometry_"
+    },
+    {
+      "topic": "rt/state_estimator/fusion_odom_torso",
+      "type": "nav_msgs::msg::dds_::Odometry_"
+    },
+    {
+      "topic": "rt/state_estimator/odom_pelvis",
+      "type": "nav_msgs::msg::dds_::Odometry_"
+    },
+    {
+      "topic": "rt/state_estimator/odom_torso",
+      "type": "nav_msgs::msg::dds_::Odometry_"
+    },
+    {
+      "topic": "rt/user_lowcmd",
+      "type": "unitree_hg::msg::dds_::LowCmd_"
+    },
+    {
+      "topic": "rt/user_lowcmd",
+      "type": "unitree_hg::msg::dds_::LowCmd_"
+    },
+    {
+      "topic": "rt/videohub/inner",
+      "type": "std_msgs::msg::dds_::String_"
+    },
+    {
+      "topic": "rt/webrtcreq",
+      "type": "std_msgs::msg::dds_::String_"
+    },
+    {
+      "topic": "rt/webrtcres",
+      "type": "std_msgs::msg::dds_::String_"
+    },
+    {
+      "topic": "rt/wirelesscontroller",
+      "type": "unitree_go::msg::dds_::WirelessController_"
+    },
+    {
+      "topic": "rt/wirelesscontroller",
+      "type": "unitree_go::msg::dds_::WirelessController_"
+    },
+    {
+      "topic": "rt/xfk_webrtcreq",
+      "type": "std_msgs::msg::dds_::String_"
+    },
+    {
+      "topic": "rt/xfk_webrtcres",
+      "type": "std_msgs::msg::dds_::String_"
+    }
+  ],
+  "relevant_publications": [
+    {
+      "topic": "rt/lf/lowstate",
+      "type": "unitree_hg::msg::dds_::LowState_"
+    },
+    {
+      "topic": "rt/lf/mainboardstate",
+      "type": "unitree_hg::msg::dds_::MainBoardState_"
+    },
+    {
+      "topic": "rt/lowstate",
+      "type": "unitree_hg::msg::dds_::LowState_"
+    },
+    {
+      "topic": "rt/lowstate",
+      "type": "unitree_hg::msg::dds_::LowState_"
+    },
+    {
+      "topic": "rt/lowstate",
+      "type": "unitree_hg::msg::dds_::LowState_"
+    },
+    {
+      "topic": "rt/odommodestate",
+      "type": "unitree_go::msg::dds_::SportModeState_"
+    },
+    {
+      "topic": "rt/state_estimator/fusion_odom",
+      "type": "nav_msgs::msg::dds_::Odometry_"
+    },
+    {
+      "topic": "rt/state_estimator/fusion_odom_torso",
+      "type": "nav_msgs::msg::dds_::Odometry_"
+    },
+    {
+      "topic": "rt/state_estimator/odom_pelvis",
+      "type": "nav_msgs::msg::dds_::Odometry_"
+    },
+    {
+      "topic": "rt/state_estimator/odom_torso",
+      "type": "nav_msgs::msg::dds_::Odometry_"
+    }
+  ],
+  "observations": {
+    "rt/lf/lowstate": {
+      "type": "unitree_hg::msg::dds_::LowState_",
+      "advertised": [
+        {
+          "topic": "rt/lf/lowstate",
+          "type": "unitree_hg::msg::dds_::LowState_"
+        }
+      ],
+      "samples": 187,
+      "last": {
+        "version": [
+          0,
+          0
+        ],
+        "mode_pr": 0,
+        "mode_machine": 4,
+        "tick": 4023594
+      },
+      "physical_source_verified": false,
+      "received_at_utc": "2026-10-21T07:08:22.263665+00:00"
+    },
+    "rt/lf/mainboardstate": {
+      "type": "unitree_hg::msg::dds_::MainBoardState_",
+      "advertised": [
+        {
+          "topic": "rt/lf/mainboardstate",
+          "type": "unitree_hg::msg::dds_::MainBoardState_"
+        }
+      ],
+      "samples": 187,
+      "last": {
+        "fan_state": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "temperature": [
+          48,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "value": [
+          47.380550384521484,
+          47.53526306152344,
+          1.2000000476837158,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "state": [
+          32,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "physical_source_verified": false,
+      "received_at_utc": "2026-10-21T07:08:22.263802+00:00"
+    },
+    "rt/odommodestate": {
+      "type": "unitree_go::msg::dds_::SportModeState_",
+      "advertised": [
+        {
+          "topic": "rt/odommodestate",
+          "type": "unitree_go::msg::dds_::SportModeState_"
+        }
+      ],
+      "samples": 187,
+      "last": {
+        "foot_force": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "foot_position_body": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "foot_speed_body": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "body_height": 0.234053835272789
+      },
+      "physical_source_verified": false,
+      "received_at_utc": "2026-10-21T07:08:22.264184+00:00"
+    }
+  },
+  "rpc_calls": 0,
+  "command_writes": 0,
+  "lease_requests": 0,
+  "motor_configuration_values_obtained": 0,
+  "limitations": [
+    "raw version uint32[2] has no verified decoding to motion firmware",
+    "mainboard fields have no firmware version member in pinned HG IDL",
+    "GO four-foot arrays have no verified G1 left/right force mapping",
+    "bounded discovery does not prove an interface absent",
+    "receipt time is not sensor acquisition time"
+  ]
+}

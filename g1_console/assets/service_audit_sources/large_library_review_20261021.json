@@ -1,0 +1,303 @@
+{
+  "schema_version": 1,
+  "current": false,
+  "offline_only": true,
+  "checked_at_utc": "2026-10-21T03:41:23.700725+00:00",
+  "started_at_utc": "2026-10-21T03:40:52.623323+00:00",
+  "completed_at_utc": "2026-10-21T03:41:23.774910+00:00",
+  "read_only": true,
+  "payload_decoded": false,
+  "motor_configuration_present": null,
+  "motor_configuration_values_obtained": 0,
+  "command_writes": 0,
+  "rpc_calls": 0,
+  "configuration_calls": 0,
+  "calibration_calls": 0,
+  "vendor_program_executions": 0,
+  "runtime_memory_reads": 0,
+  "scope": "此前超过 64 MiB 上限的两份指定大库，单文件上限 200 MiB；全符号、动态导出、字符串与固定字节标记静态检查",
+  "files": [
+    {
+      "path": "/usr/local/lib/libcryptopp.a",
+      "bytes": 158103474,
+      "sha256": "40c71d267d6fb97daab8a3dc7bac76f533f9ffc8f03cfd1a5bc173c89188cb84",
+      "kind": "archive",
+      "symbols": {
+        "command": [
+          "/usr/bin/nm",
+          "--demangle",
+          "--print-file-name",
+          "/usr/local/lib/libcryptopp.a"
+        ],
+        "returncode": 0,
+        "output_bytes": 4172317,
+        "line_count": 28215,
+        "has_symbol_output": true,
+        "matches": [],
+        "matches_truncated": false,
+        "generic_algorithm_line_counts": {
+          "Blowfish": 31,
+          "AES": 4,
+          "SHA256": 571,
+          "CBC_Mode": 11,
+          "ECB_Mode": 0
+        },
+        "realsense_api_line_count": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_nonempty": false
+      },
+      "archive_members": 168,
+      "archive_member_name_matches": [],
+      "printable_strings": {
+        "returncode": 0,
+        "total_lines": 447044,
+        "marker_line_counts": {
+          "unitree::security::": 0,
+          "Mixer": 0,
+          "UT_MIXER": 0,
+          "ParseConfigContent": 0,
+          "decrypt_and_parse": 0,
+          "master_service": 0,
+          "FMX": 0
+        }
+      },
+      "exact_byte_markers": {
+        "unitree::security::": 0,
+        "Mixer": 0,
+        "UT_MIXER": 0,
+        "ParseConfigContent": 0,
+        "decrypt_and_parse": 0,
+        "master_service": 0,
+        "FMX": 0
+      },
+      "standalone_fmx_string_count": 0,
+      "sha256_after": "40c71d267d6fb97daab8a3dc7bac76f533f9ffc8f03cfd1a5bc173c89188cb84",
+      "unchanged_during_read": true,
+      "implementation_match_confirmed": false,
+      "fmx_loader_found": false,
+      "classification": "通用密码算法静态库；Blowfish/AES 等符号不证明 FMX 算法、密钥或加载顺序"
+    },
+    {
+      "path": "/usr/local/lib/librealsense2.so.2.50.0",
+      "bytes": 161735304,
+      "sha256": "ef030d74fca4d9dd7531ae1505c1d95b9eb1d376d4a97a876cf1134d051cf61e",
+      "kind": "ELF",
+      "symbols": {
+        "command": [
+          "/usr/bin/nm",
+          "--demangle",
+          "--print-file-name",
+          "/usr/local/lib/librealsense2.so.2.50.0"
+        ],
+        "returncode": 0,
+        "output_bytes": 33929868,
+        "line_count": 125567,
+        "has_symbol_output": true,
+        "matches": [],
+        "matches_truncated": false,
+        "generic_algorithm_line_counts": {
+          "Blowfish": 0,
+          "AES": 0,
+          "SHA256": 0,
+          "CBC_Mode": 0,
+          "ECB_Mode": 0
+        },
+        "realsense_api_line_count": 13501,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_nonempty": false
+      },
+      "dynamic_symbols": {
+        "command": [
+          "/usr/bin/nm",
+          "--demangle",
+          "--print-file-name",
+          "--dynamic",
+          "/usr/local/lib/librealsense2.so.2.50.0"
+        ],
+        "returncode": 0,
+        "output_bytes": 26583979,
+        "line_count": 84621,
+        "has_symbol_output": true,
+        "matches": [],
+        "matches_truncated": false,
+        "generic_algorithm_line_counts": {
+          "Blowfish": 0,
+          "AES": 0,
+          "SHA256": 0,
+          "CBC_Mode": 0,
+          "ECB_Mode": 0
+        },
+        "realsense_api_line_count": 9357,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_nonempty": false
+      },
+      "needed": [
+        "libpthread.so.0",
+        "libusb-1.0.so.0",
+        "librt.so.1",
+        "libdl.so.2",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "sonames": [
+        "librealsense2.so.2.50"
+      ],
+      "build_ids": [
+        "903edfeb6a1a20fb3449ca11371778c7cc0ba044"
+      ],
+      "has_symtab": true,
+      "has_debug_info": true,
+      "printable_strings": {
+        "returncode": 0,
+        "total_lines": 629300,
+        "marker_line_counts": {
+          "unitree::security::": 0,
+          "Mixer": 0,
+          "UT_MIXER": 0,
+          "ParseConfigContent": 0,
+          "decrypt_and_parse": 0,
+          "master_service": 0,
+          "FMX": 0
+        }
+      },
+      "exact_byte_markers": {
+        "unitree::security::": 0,
+        "Mixer": 0,
+        "UT_MIXER": 0,
+        "ParseConfigContent": 0,
+        "decrypt_and_parse": 0,
+        "master_service": 0,
+        "FMX": 0
+      },
+      "standalone_fmx_string_count": 0,
+      "sha256_after": "ef030d74fca4d9dd7531ae1505c1d95b9eb1d376d4a97a876cf1134d051cf61e",
+      "unchanged_during_read": true,
+      "implementation_match_confirmed": false,
+      "fmx_loader_found": false,
+      "classification": "RealSense 相机库；相机标定 API 不提供 G1 关节零位、编码器或电机标定"
+    }
+  ],
+  "master_linkage": {
+    "path": "/unitree/module/master_service/master_service",
+    "sha256": "380e34de9c2def2692c0bf1b73e969d3167c8270f2ed5f974bb01abd4e96f24e",
+    "needed": [
+      "libpthread.so.0",
+      "libcrypto.so.1.1",
+      "libstdc++.so.6",
+      "libgcc_s.so.1",
+      "libc.so.6",
+      "ld-linux-aarch64.so.1",
+      "libdl.so.2"
+    ],
+    "cryptopp_or_realsense_direct_needed": false,
+    "symbol_tables": [
+      ".symtab",
+      ".dynsym"
+    ],
+    "named_cryptopp_symbols": 0,
+    "named_realsense_symbols": 0,
+    "positive_control_loader_entries": [
+      {
+        "name": "Mixer::Gen",
+        "entry": "0x95a68",
+        "helper": "0x1e61e8",
+        "target": "0xa3fc78",
+        "section_type": "SHT_NOBITS",
+        "file_backed": false
+      },
+      {
+        "name": "Mixer::LoadFile",
+        "entry": "0x4beb80",
+        "helper": "0x1e61e8",
+        "target": "0xa3ee2c",
+        "section_type": "SHT_NOBITS",
+        "file_backed": false
+      }
+    ],
+    "static_or_runtime_linkage_excluded": false
+  },
+  "robot_recheck": {
+    "boot_id": "7a6791dc-f512-4b45-aca3-44fbde855e25",
+    "processes": [
+      {
+        "pid": 1296,
+        "argv": [
+          "/unitree/module/master_service/master_service"
+        ],
+        "start_ticks": 2242
+      },
+      {
+        "pid": 1298,
+        "argv": [
+          "/unitree/ota/pipe/ota_pipe_service"
+        ],
+        "start_ticks": 2242
+      },
+      {
+        "pid": 2557,
+        "argv": [
+          "/unitree/module/video_hub_pc4/videohub_pc4"
+        ],
+        "start_ticks": 2791
+      },
+      {
+        "pid": 2676,
+        "argv": [
+          "/home/unitree/megaflow_sdk/ws//bin/MegaFlowRuntimeDaemon",
+          "-c",
+          "/home/unitree/megaflow_sdk/ws//bin/config.bin",
+          "-w",
+          "/home/unitree/megaflow_sdk/ws/",
+          "-d",
+          "127.0.0.1:8899",
+          "-i",
+          "-e",
+          "/home/unitree/megaflow_sdk/ws//dep/",
+          "-l",
+          "0"
+        ],
+        "start_ticks": 3210
+      }
+    ],
+    "files": [
+      {
+        "path": "/unitree/module/master_service/master_service",
+        "bytes": 9083232,
+        "sha256": "380e34de9c2def2692c0bf1b73e969d3167c8270f2ed5f974bb01abd4e96f24e"
+      },
+      {
+        "path": "/unitree/module/master_service/master_service.json",
+        "bytes": 468,
+        "sha256": "31eae39936576504c40be767bd93cd34b7489154eca989e5e5c2781b05e3d977"
+      },
+      {
+        "path": "/unitree/robot/pkg/module/master_service_pc4/module.json",
+        "bytes": 2194,
+        "sha256": "ecfa15fd170078b6bf89cc02f2becf4672b8c6f3566607bdfbe2717424857771"
+      }
+    ]
+  },
+  "source_references": [
+    {
+      "url": "https://raw.githubusercontent.com/weidai11/cryptopp/master/Readme.txt",
+      "role": "库作者说明其为通用密码库；不用于确认 Orin 所装库版本或 FMX 格式"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/IntelRealSense/librealsense/v2.50.0/include/librealsense2/h/rs_device.h",
+      "role": "上游相机设备和 calibration table API 定义；未调用这些接口，也未证明实机库与标签源码完全相同"
+    }
+  ],
+  "conclusion": "两份大库漏扫已补齐，未找到匹配当前 master_service 的完整 Mixer/Gen 实现或 FMX 加载依据；新增实机电机配置及标定 0 项",
+  "limitations": [
+    "符号和字符串未命中不能排除改名、隐藏、混淆或其他未扫描位置的实现",
+    "符号行数含重复项、未定义项与静态库成员标题；动态符号是子集，不能相加当作唯一函数数",
+    "通用算法符号存在不能确定 FMX 算法、密钥、容器布局或电机参数；没有继续猜测解码组合",
+    "RealSense 的标定与 G1 关节标定归属不同；未打开相机设备、调用标定或写入 EEPROM",
+    "DT_NEEDED 和命名符号只能反映磁盘信息；不排除静态裁剪、动态加载或运行时保护代码，未读取进程内存",
+    "两份大库读取前后哈希和文件元数据一致；这是带时间的历史证据，不证明此刻加载或当前电机配置"
+  ],
+  "required_material": "与当前 master_service SHA256 匹配的官方 Mixer/Gen 实现，或正式 FMX 格式、校验及只读导出接口；解出字段后仍须核实实机生效性和单位"
+}

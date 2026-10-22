@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "received_at_utc": "2026-10-21T03:41:23.700725+00:00",
+  "clock_authority": "Mac UTC 接收时间；Orin 起止时间单列；均为历史证据",
+  "sources": [
+    {
+      "path": "g1_console/assets/service_audit_sources/large_library_review_20261021.json",
+      "bytes": 9968,
+      "sha256": "c171b5c691a4057e5e5da02cfa3fe6cbbb61756c15d8dcd940b8f84e1f4a7cbb"
+    },
+    {
+      "path": "g1_console/assets/service_audit_sources/large_library_inventory_20261021.json",
+      "bytes": 6547,
+      "sha256": "d5c1b6b3887a96662b8695486ac13e31db7ed274b0895fc0230858fdf8370845"
+    }
+  ],
+  "scripts": [
+    {
+      "path": "scripts/audit_g1_large_libraries.py",
+      "bytes": 4858,
+      "sha256": "d49fb00dd1e46fae698ca850ea016828575b78b8d8666ebe2e8556448cc1201b"
+    },
+    {
+      "path": "scripts/analyze_g1_large_libraries.py",
+      "bytes": 7585,
+      "sha256": "49658439bf54ec31e4713962a63262dc78fc8e4e10cc25dfb381e3f609033cf0"
+    }
+  ],
+  "private_materials_included": false
+}

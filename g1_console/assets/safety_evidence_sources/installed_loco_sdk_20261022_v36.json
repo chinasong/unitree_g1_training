@@ -1,0 +1,365 @@
+{
+  "schema_version": 1,
+  "current": false,
+  "checked_at_utc": "2026-10-22T08:12:12.706012+00:00",
+  "completed_at_utc": "2026-10-22T08:12:30.925593+00:00",
+  "release": "eea233656e28",
+  "boot_id": "fc0c327a-b381-400a-b20d-6307f4f43e2e",
+  "before": {
+    "fsm": 0,
+    "owner": null,
+    "armed": false
+  },
+  "after": {
+    "fsm": 0,
+    "owner": null,
+    "armed": false
+  },
+  "sources": [
+    {
+      "class_name": "LocoClient",
+      "path": "/home/unitree/workspace/g1-body-console/releases/953b51275852/externals/unitree_sdk2_python/unitree_sdk2py/g1/loco/g1_loco_client.py",
+      "sha256": "5fbc07b30994676cd2f7994a2389b24e9b51e2c13dfde7e565bfd77898300ce2",
+      "local_source": "externals/unitree_sdk2_python/unitree_sdk2py/g1/loco/g1_loco_client.py"
+    },
+    {
+      "class_name": "ClientBase",
+      "path": "/home/unitree/workspace/g1-body-console/releases/953b51275852/externals/unitree_sdk2_python/unitree_sdk2py/rpc/client_base.py",
+      "sha256": "2a815a5c798be95df1c8a4af525873c2ee47d5e0bbfbcc8a4ccf2d991a341321",
+      "local_source": "externals/unitree_sdk2_python/unitree_sdk2py/rpc/client_base.py"
+    },
+    {
+      "class_name": "ClientStub",
+      "path": "/home/unitree/workspace/g1-body-console/releases/953b51275852/externals/unitree_sdk2_python/unitree_sdk2py/rpc/client_stub.py",
+      "sha256": "37c860bb4783c2f13b24bc369ebf99b2131a21dfb49f0f7a8b74e79960d879b0",
+      "local_source": "externals/unitree_sdk2_python/unitree_sdk2py/rpc/client_stub.py"
+    }
+  ],
+  "installed_init_source": "    def Init(self):\n        # set api version\n        self._SetApiVerson(LOCO_API_VERSION)\n\n        # regist api\n        self._RegistApi(ROBOT_API_ID_LOCO_GET_FSM_ID, 0)\n        self._RegistApi(ROBOT_API_ID_LOCO_GET_FSM_MODE, 0)\n        self._RegistApi(ROBOT_API_ID_LOCO_GET_BALANCE_MODE, 0)\n        self._RegistApi(ROBOT_API_ID_LOCO_GET_SWING_HEIGHT, 0)\n        self._RegistApi(ROBOT_API_ID_LOCO_GET_STAND_HEIGHT, 0)\n        self._RegistApi(ROBOT_API_ID_LOCO_GET_PHASE, 0) # deprecated\n\n        self._RegistApi(ROBOT_API_ID_LOCO_SET_FSM_ID, 0)\n        self._RegistApi(ROBOT_API_ID_LOCO_SET_BALANCE_MODE, 0)\n        self._RegistApi(ROBOT_API_ID_LOCO_SET_SWING_HEIGHT, 0)\n        self._RegistApi(ROBOT_API_ID_LOCO_SET_STAND_HEIGHT, 0)\n        self._RegistApi(ROBOT_API_ID_LOCO_SET_VELOCITY, 0)\n        self._RegistApi(ROBOT_API_ID_LOCO_SET_ARM_TASK, 0)\n        self._RegistApi(ROBOT_API_ID_LOCO_SET_SPEED_MODE, 0)\n        self._RegistApi(ROBOT_API_ID_LOCO_SWITCH_TO_USER_CTRL, 0)\n        self._RegistApi(ROBOT_API_ID_LOCO_SWITCH_TO_INTERNAL_CTRL, 0)\n",
+  "constructor_rpc_requests": 0,
+  "init_rpc_requests": 0,
+  "sdk_getters": [
+    {
+      "api_id": 1,
+      "request_id": 1847560682627,
+      "sdk_code": 0,
+      "sdk_value": "1.0.0.0",
+      "replies": [
+        {
+          "code": 0,
+          "data": "1.0.0.0"
+        }
+      ],
+      "elapsed_ms": 246.31
+    },
+    {
+      "api_id": 7001,
+      "request_id": 1847914805512,
+      "sdk_code": 0,
+      "sdk_value": 0,
+      "replies": [
+        {
+          "code": 0,
+          "data": "{\"data\":0}"
+        }
+      ],
+      "elapsed_ms": 263.3
+    },
+    {
+      "api_id": 7002,
+      "request_id": 1848253638546,
+      "sdk_code": 0,
+      "sdk_value": "{\"data\":0}",
+      "replies": [
+        {
+          "code": 0,
+          "data": "{\"data\":0}"
+        }
+      ],
+      "elapsed_ms": 285.21
+    },
+    {
+      "api_id": 7003,
+      "request_id": 1848603733377,
+      "sdk_code": 7301,
+      "sdk_value": null,
+      "replies": [
+        {
+          "code": 7301,
+          "data": null
+        }
+      ],
+      "elapsed_ms": 270.77
+    },
+    {
+      "api_id": 7004,
+      "request_id": 1848945442198,
+      "sdk_code": 7301,
+      "sdk_value": null,
+      "replies": [
+        {
+          "code": 7301,
+          "data": null
+        }
+      ],
+      "elapsed_ms": 255.85
+    },
+    {
+      "api_id": 7005,
+      "request_id": 1849284348451,
+      "sdk_code": 7301,
+      "sdk_value": null,
+      "replies": [
+        {
+          "code": 7301,
+          "data": null
+        }
+      ],
+      "elapsed_ms": 206.96
+    },
+    {
+      "api_id": 7006,
+      "request_id": 1849546207219,
+      "sdk_code": 7301,
+      "sdk_value": null,
+      "replies": [
+        {
+          "code": 7301,
+          "data": null
+        }
+      ],
+      "elapsed_ms": 223.55
+    }
+  ],
+  "streams": {
+    "rt/odommodestate": {
+      "type": "unitree_go::msg::dds_::SportModeState_",
+      "samples": 619,
+      "first": {
+        "stamp": {
+          "sec": 1792656738,
+          "nanosec": 841093778
+        },
+        "error_code": 0,
+        "imu_state": {
+          "quaternion": [
+            -0.9953370690345764,
+            -0.06868907809257507,
+            0.020158566534519196,
+            0.06464995443820953
+          ],
+          "gyroscope": [
+            0.008522114716470242,
+            0.0063915858045220375,
+            -0.009587379172444344
+          ],
+          "accelerometer": [
+            0.05386953800916672,
+            1.1680711507797241,
+            9.659706115722656
+          ],
+          "rpy": [
+            0.13986773788928986,
+            -0.03125273436307907,
+            -0.13191281259059906
+          ],
+          "temperature": 79
+        },
+        "mode": 0,
+        "progress": 0.0,
+        "gait_type": 0,
+        "foot_raise_height": 0.0,
+        "position": [
+          -0.131388321518898,
+          -0.49430981278419495,
+          0.14862072467803955
+        ],
+        "body_height": 0.24142251908779144,
+        "velocity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "yaw_speed": -0.009587379172444344,
+        "range_obstacle": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "foot_force": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "foot_position_body": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "foot_speed_body": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "last": {
+        "stamp": {
+          "sec": 1792656750,
+          "nanosec": 802169561
+        },
+        "error_code": 0,
+        "imu_state": {
+          "quaternion": [
+            -0.9953959584236145,
+            -0.06880195438861847,
+            0.019445165991783142,
+            0.06383661925792694
+          ],
+          "gyroscope": [
+            0.004261057358235121,
+            0.0021305286791175604,
+            0.0010652643395587802
+          ],
+          "accelerometer": [
+            0.0942716896533966,
+            1.1563993692398071,
+            9.731532096862793
+          ],
+          "rpy": [
+            0.13997209072113037,
+            -0.029931580647826195,
+            -0.1301867514848709
+          ],
+          "temperature": 80
+        },
+        "mode": 0,
+        "progress": 0.0,
+        "gait_type": 0,
+        "foot_raise_height": 0.0,
+        "position": [
+          -0.131388321518898,
+          -0.49430981278419495,
+          0.14862072467803955
+        ],
+        "body_height": 0.2414265125989914,
+        "velocity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "yaw_speed": 0.0010652643395587802,
+        "range_obstacle": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "foot_force": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "foot_position_body": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "foot_speed_body": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "rt/sportmodestate": {
+      "type": "unitree_hg::msg::dds_::SportModeState_",
+      "samples": 1194,
+      "first": {
+        "fsm_id": 0,
+        "fsm_mode": 0,
+        "task_id": 4,
+        "task_time": 0.0
+      },
+      "last": {
+        "fsm_id": 0,
+        "fsm_mode": 0,
+        "task_id": 4,
+        "task_time": 0.0
+      }
+    },
+    "rt/lf/sportmodestate": {
+      "type": "unitree_hg::msg::dds_::SportModeState_",
+      "samples": 179,
+      "first": {
+        "fsm_id": 0,
+        "fsm_mode": 0,
+        "task_id": 4,
+        "task_time": 0.0
+      },
+      "last": {
+        "fsm_id": 0,
+        "fsm_mode": 0,
+        "task_id": 4,
+        "task_time": 0.0
+      }
+    }
+  },
+  "command_writes": 0,
+  "lease_requests": 0,
+  "device_motion_firmware": null,
+  "limits": [
+    "Only fixed official read APIs 1 and 7001-7006 were sent.",
+    "Public odometry does not establish private server LocoState availability.",
+    "Four generic foot_force slots are not validated G1 bilateral load readings.",
+    "Init registration of setters is local and does not execute them.",
+    "No mode transition was attempted to probe server readiness."
+  ],
+  "execution_allowed": false,
+  "motion_authority_verified": false,
+  "exact_7301_predicate": null,
+  "bilateral_foot_load_n": null,
+  "external_support_load_n": null,
+  "summary": "实机官方 SDK 构造与 Init 均无 RPC；7 项固定只读查询经独立 DDS 接收器按请求 ID 和 API 关联，四项 7003–7006 均返回 7301。公开里程计仍更新，未证明服务私有 LocoState 就绪。",
+  "readiness": "已排除控制台漏调 SDK Init 和本轮接收超时；运动服务内部 LocoState 的创建、有效性与就绪判定未取得实现或日志证据。不能把 FSM 0、Go 消息零足力或版本广告当作确切触发条件。",
+  "source_meaning": "Orin 实际加载的 Python 文件及 SHA256；旧 release 路径来自已安装 editable SDK，已与本项目锁定 SDK 内容校验一致。Init 注册写接口不等于执行写接口。",
+  "value_limits": "Go SportModeState 的四路 foot_force 和 body_height 尚未取得本机 G1 的有效物理语义；不填写双脚承重或真实离地高度。"
+}

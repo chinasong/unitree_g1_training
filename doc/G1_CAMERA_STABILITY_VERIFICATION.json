@@ -1,0 +1,363 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-10-21T04:54:51.591398+00:00",
+  "timezone": "Asia/Shanghai (UTC+08:00)",
+  "current": false,
+  "scope": "已完成的只读发布与测量回执；不替代之后实时状态，不构成动作安全认证",
+  "deployment": {
+    "at_utc": "2026-10-21T04:53:04.948358+00:00",
+    "release": "eb94ddc601d9",
+    "manifest_file_count": 430,
+    "all_sha256_match": true,
+    "console_pid": 21545,
+    "console_env": {
+      "G1_READ_ONLY": "1",
+      "G1_HOST": "127.0.0.1",
+      "G1_PORT": "8765",
+      "G1_CAMERA_BACKEND": "unitree"
+    },
+    "loopback_only": true,
+    "children": [
+      {
+        "pid": 21574,
+        "argv": [
+          "/home/unitree/workspace/g1-body-console/.venv/bin/python",
+          "-c",
+          "from multiprocessing.resource_tracker import main;main(19)"
+        ],
+        "cwd": "/home/unitree/workspace/g1-body-console/releases/eb94ddc601d9"
+      },
+      {
+        "pid": 21575,
+        "argv": [
+          "/home/unitree/workspace/g1-body-console/.venv/bin/python",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=20, pipe_handle=22)",
+          "--multiprocessing-fork"
+        ],
+        "cwd": "/home/unitree/workspace/g1-body-console/releases/eb94ddc601d9"
+      }
+    ],
+    "foundation_version": 13,
+    "foundation_id": "4cb7c9f1a0f03aaa1acaaee75dd54338fcbe92b4c6b632f664e3c7c465fd8ba3",
+    "actual_unknown_count": 253,
+    "boot_id": "7a6791dc-f512-4b45-aca3-44fbde855e25",
+    "official_processes_unchanged": [
+      {
+        "pid": 1296,
+        "ppid": 1,
+        "start_ticks": 2242,
+        "argv": [
+          "/unitree/module/master_service/master_service"
+        ],
+        "cgroup": [
+          "11:pids:/system.slice/master_service.service",
+          "10:cpuset:/",
+          "9:cpu,cpuacct:/system.slice/master_service.service",
+          "8:blkio:/system.slice/master_service.service",
+          "7:perf_event:/",
+          "6:net_cls,net_prio:/",
+          "5:freezer:/",
+          "4:memory:/system.slice/master_service.service",
+          "3:hugetlb:/",
+          "2:devices:/system.slice/master_service.service",
+          "1:name=systemd:/system.slice/master_service.service",
+          "0::/system.slice/master_service.service"
+        ],
+        "links": {
+          "exe": "PermissionError",
+          "cwd": "PermissionError",
+          "fd/1": "PermissionError",
+          "fd/2": "PermissionError"
+        }
+      },
+      {
+        "pid": 1298,
+        "ppid": 1,
+        "start_ticks": 2242,
+        "argv": [
+          "/unitree/ota/pipe/ota_pipe_service"
+        ],
+        "cgroup": [
+          "11:pids:/system.slice/ota_pipe.service",
+          "10:cpuset:/",
+          "9:cpu,cpuacct:/system.slice/ota_pipe.service",
+          "8:blkio:/system.slice/ota_pipe.service",
+          "7:perf_event:/",
+          "6:net_cls,net_prio:/",
+          "5:freezer:/",
+          "4:memory:/system.slice/ota_pipe.service",
+          "3:hugetlb:/",
+          "2:devices:/system.slice/ota_pipe.service",
+          "1:name=systemd:/system.slice/ota_pipe.service",
+          "0::/system.slice/ota_pipe.service"
+        ],
+        "links": {
+          "exe": "PermissionError",
+          "cwd": "PermissionError",
+          "fd/1": "PermissionError",
+          "fd/2": "PermissionError"
+        }
+      },
+      {
+        "pid": 2557,
+        "ppid": 1,
+        "start_ticks": 2791,
+        "argv": [
+          "/unitree/module/video_hub_pc4/videohub_pc4"
+        ],
+        "cgroup": [
+          "11:pids:/system.slice/master_service.service",
+          "10:cpuset:/",
+          "9:cpu,cpuacct:/system.slice/master_service.service",
+          "8:blkio:/system.slice/master_service.service",
+          "7:perf_event:/",
+          "6:net_cls,net_prio:/",
+          "5:freezer:/",
+          "4:memory:/system.slice/master_service.service",
+          "3:hugetlb:/",
+          "2:devices:/system.slice/master_service.service",
+          "1:name=systemd:/system.slice/master_service.service",
+          "0::/system.slice/master_service.service"
+        ],
+        "links": {
+          "exe": "PermissionError",
+          "cwd": "PermissionError",
+          "fd/1": "PermissionError",
+          "fd/2": "PermissionError"
+        }
+      },
+      {
+        "pid": 2676,
+        "ppid": 2674,
+        "start_ticks": 3210,
+        "argv": [
+          "/home/unitree/megaflow_sdk/ws//bin/MegaFlowRuntimeDaemon",
+          "-c",
+          "/home/unitree/megaflow_sdk/ws//bin/config.bin",
+          "-w",
+          "/home/unitree/megaflow_sdk/ws/",
+          "-d",
+          "127.0.0.1:8899",
+          "-i",
+          "-e",
+          "/home/unitree/megaflow_sdk/ws//dep/",
+          "-l",
+          "0"
+        ],
+        "cgroup": [
+          "11:pids:/system.slice/megaflowruntime.service",
+          "10:cpuset:/",
+          "9:cpu,cpuacct:/system.slice/megaflowruntime.service",
+          "8:blkio:/system.slice/megaflowruntime.service",
+          "7:perf_event:/",
+          "6:net_cls,net_prio:/",
+          "5:freezer:/",
+          "4:memory:/system.slice/megaflowruntime.service",
+          "3:hugetlb:/",
+          "2:devices:/system.slice/megaflowruntime.service",
+          "1:name=systemd:/system.slice/megaflowruntime.service",
+          "0::/system.slice/megaflowruntime.service"
+        ],
+        "links": {
+          "exe": "PermissionError",
+          "cwd": "PermissionError",
+          "fd/1": "PermissionError",
+          "fd/2": "PermissionError"
+        }
+      }
+    ]
+  },
+  "foundation": {
+    "schema_version": 13,
+    "foundation_id": "4cb7c9f1a0f03aaa1acaaee75dd54338fcbe92b4c6b632f664e3c7c465fd8ba3",
+    "motor_actual_config_null_count": 253,
+    "new_actual_config_values": 0,
+    "execution_allowed": false,
+    "validated_action_envelopes": [],
+    "sources": [
+      {
+        "path": "g1_console/assets/safety_evidence_sources/camera_transport_20261021.json",
+        "sha256": "0ba200b5c30da0a9951dc13089a5f3521bc83fe35603cd33bb90506be452ba26"
+      },
+      {
+        "path": "g1_console/assets/safety_evidence_sources/paired_observation_20261021_v13.json",
+        "sha256": "5669e6d4adc1985c73e5651e5c433fdd978113800d3b0f5e0f7aa49f2b175c58"
+      },
+      {
+        "path": "g1_console/assets/g1_safety_evidence_audit.json",
+        "sha256": "2b3345c4b931dfc004edfc82623fa50a68f5027c968f8dcd2502f00cb9d0fc60"
+      },
+      {
+        "path": "g1_console/assets/g1_motor_knowledge.json",
+        "sha256": "de0ee37cb9ea80161c4af1357a23d240b7b42879fe84d1787ee7b21588710141"
+      }
+    ]
+  },
+  "measurements": {
+    "integrated_180s": {
+      "start_at_utc": "2026-10-21T04:48:31.118297+00:00",
+      "end_at_utc": "2026-10-21T04:51:31.118947+00:00",
+      "state_samples": 181,
+      "live_samples": 181,
+      "samples_with_errors": 0,
+      "rpc_attempts": 899,
+      "rpc_successes": 899,
+      "rpc_timeouts": 0,
+      "max_camera_request_age_ms": 309,
+      "max_body_receive_age_ms": 54,
+      "mac_jpeg_decodes": 37,
+      "distinct_jpeg_sha256": 37,
+      "raw_measurement": {
+        "path": ".g1-deploy/research/camera-stability-20261021/isolated-180s.json",
+        "sha256": "4080f0592e6731cc9a0294cc2b9bcc8aa2a8173b83ba5f271fa9d0f3234a510a"
+      }
+    },
+    "final_release_60s": {
+      "start_at_utc": "2026-10-21T04:53:07.258918+00:00",
+      "end_at_utc": "2026-10-21T04:54:07.265347+00:00",
+      "state_samples": 61,
+      "live_samples": 61,
+      "samples_with_errors": 0,
+      "rpc_attempts": 300,
+      "rpc_successes": 300,
+      "rpc_timeouts": 0,
+      "max_camera_request_age_ms": 193,
+      "max_body_receive_age_ms": 60,
+      "mac_jpeg_decodes": 13,
+      "distinct_jpeg_sha256": 13,
+      "raw_measurement": {
+        "path": ".g1-deploy/research/camera-stability-20261021/final-release-60s.json",
+        "sha256": "839b50591828150d8a8e531c4e3288ec36549bae3472424fac173ea2f562279f"
+      }
+    }
+  },
+  "last_paired_body_observation": {
+    "at": 1792558447.344487,
+    "run_id": "7f5cc2158784",
+    "telemetry_age_ms": 59,
+    "posture": {
+      "description": "双膝显著屈曲",
+      "knee_deg": [
+        161.03173640075218,
+        160.0146529314456
+      ],
+      "imu_rpy_deg": [
+        7.817799519277099,
+        -3.4983191593825116,
+        -2.4791332724720183
+      ],
+      "whole_body_pose": "unknown",
+      "support": "unknown",
+      "detail": "双膝 >90° 仅为形态描述规则；未确定站/坐/卧、身体离地高度或接触对象。三维模型按关节角度显示，不表示世界中的支撑姿势"
+    },
+    "control_mode": {
+      "fsm": 0,
+      "sdk_label": "SDK ZeroTorque 对应状态 ID",
+      "active_capability_id": null,
+      "activity_verified": false,
+      "detail": "FSM 只表明服务回读的状态 ID；未取得具体能力执行中/完成的可信反馈。ZeroTorque ID 也不证明每个电机实际力矩为零"
+    },
+    "official_sport_feedback": {
+      "source": "rt/lf/sportmodestate",
+      "type": "unitree_hg::msg::dds_::SportModeState_",
+      "current": true,
+      "age_ms": 45,
+      "ttl_ms": 1500,
+      "received_at": 1792558447.2381425,
+      "samples": 1164,
+      "raw": {
+        "fsm_id": 0,
+        "fsm_mode": 0,
+        "task_id": 4,
+        "task_time": 0.0
+      },
+      "code": 0,
+      "physical_publisher_verified": false,
+      "hardware_health_verified": false,
+      "timestamp_basis": "local_receive_time",
+      "sensor_timestamp": null
+    },
+    "official_motion_mode": {
+      "source": "motion_switcher.CheckMode / 1001",
+      "type": "official JSON response",
+      "current": true,
+      "age_ms": 2013,
+      "ttl_ms": 6000,
+      "received_at": 1792558445.2699776,
+      "samples": 23,
+      "raw": {
+        "form": "0",
+        "name": "ai"
+      },
+      "code": 0,
+      "physical_publisher_verified": false,
+      "hardware_health_verified": false,
+      "timestamp_basis": "local_receive_time",
+      "sensor_timestamp": null
+    },
+    "current": false,
+    "execution_allowed": false
+  },
+  "read_only_assertions": {
+    "robot_connected": true,
+    "read_only": true,
+    "control_owner": null,
+    "navigation_status": "idle",
+    "insight_enabled": false,
+    "insight_status": "paused",
+    "insight_completed": 0,
+    "event_kinds": {
+      "state_observed": 3,
+      "camera_connected": 1,
+      "connected": 1
+    },
+    "official_services_restarted": false,
+    "robot_actions_executed": false,
+    "motor_commands_sent": false,
+    "control_lease_requested": false,
+    "camera_configuration_changed": false,
+    "calibration_changed": false,
+    "quantumult_x_touched": false,
+    "only_own_console_process_restarted": true
+  },
+  "verification": {
+    "tests": {
+      "command": ".venv/bin/python -m pytest tests -q",
+      "passed": 120,
+      "warnings": [
+        "Starlette deprecation warning"
+      ]
+    },
+    "frontend": {
+      "command": "npm run build",
+      "cwd": "console/web",
+      "passed": true,
+      "warnings": [
+        "Existing Three.js chunk size warning"
+      ]
+    },
+    "repository_wide_pytest": {
+      "command": ".venv/bin/python -m pytest -q",
+      "completed": false,
+      "reason": "旧 recorddata 研究脚本收集需要未安装的 tqdm/pandas；控制台定向测试全部通过"
+    },
+    "browser": {
+      "url": "http://127.0.0.1:18765/",
+      "view": "环境观察",
+      "observed": "实时画面；近60秒300/300成功、0超时；只读模式；自主观察暂停",
+      "screenshot": {
+        "path": "doc/screenshots/g1-v13-camera-live.jpg",
+        "sha256": "b60ae71a544ebe9316012795520398182fd4b6f46857fd7d814fc822bd65c667"
+      }
+    }
+  },
+  "limitations": [
+    "验证窗口有限，不能保证以后永不超时",
+    "请求时间不等于曝光时间，RGB与身体反馈未硬件同步",
+    "进程接收链路干扰由对照支持，具体底层唯一根因未证实",
+    "RGB画面未显示完整双脚及全部承重点",
+    "无法确认站坐卧、足底载荷、平衡裕量或具体官方能力正在执行",
+    "七类安全证据仍未核定，无逐动作安全范围"
+  ]
+}

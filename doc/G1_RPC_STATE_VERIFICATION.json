@@ -1,0 +1,229 @@
+{
+  "schema_version": 1,
+  "written_at_utc": "2026-10-21T12:27:36.656329+00:00",
+  "timezone": "Asia/Shanghai",
+  "release": "f9aaa040d082",
+  "run_id": "a5638725708c",
+  "manifest_file_count": 477,
+  "local_manifest_all_sha256_match": true,
+  "orin_manifest_all_sha256_match": true,
+  "manifest_sha256": "f9aaa040d08242f0571f21f5809fd8ce785d669de8174a9b0df397658467138c",
+  "deployment": {
+    "console_pid": 11508,
+    "loopback_only": true,
+    "mac_url": "http://127.0.0.1:18765/",
+    "orin_url": "http://127.0.0.1:8765/",
+    "manual_remote_enabled": true,
+    "control_owner": null,
+    "manual_armed": false
+  },
+  "foundation": {
+    "version": 22,
+    "id": "b2da4251df7d91e1ce30d0276f43a5d7f782b3f4ae8e27fe40855ee6b1a1f6bb",
+    "unknown_actual_motor_fields": 253,
+    "device_motion_firmware": null,
+    "execution_allowed": false
+  },
+  "catalog": {
+    "total": 57,
+    "mode_and_rise": 16,
+    "arm_tasks": 22,
+    "audio_light": 5,
+    "read_only": 10,
+    "advanced": 2,
+    "move_stop": 2,
+    "full_remote_equivalence": false,
+    "count_note": "Includes queries and generic action entries; not 57 distinct physical actions."
+  },
+  "query_verification": {
+    "started_at_utc": "2026-10-21T12:23:06.918862+00:00",
+    "completed_at_utc": "2026-10-21T12:23:10.630492+00:00",
+    "total": 60,
+    "outcomes": {
+      "0": 30,
+      "7301": 24,
+      "3203": 6
+    },
+    "sdk_3104": 0,
+    "by_capability": {
+      "get_fsm": {
+        "attempts": 6,
+        "outcomes": {
+          "0": 6
+        }
+      },
+      "get_fsm_mode": {
+        "attempts": 6,
+        "outcomes": {
+          "0": 6
+        }
+      },
+      "get_balance": {
+        "attempts": 6,
+        "outcomes": {
+          "7301": 6
+        }
+      },
+      "get_swing_height": {
+        "attempts": 6,
+        "outcomes": {
+          "7301": 6
+        }
+      },
+      "get_stand_height": {
+        "attempts": 6,
+        "outcomes": {
+          "7301": 6
+        }
+      },
+      "get_phase": {
+        "attempts": 6,
+        "outcomes": {
+          "7301": 6
+        }
+      },
+      "get_actions": {
+        "attempts": 6,
+        "outcomes": {
+          "0": 6
+        }
+      },
+      "get_volume": {
+        "attempts": 6,
+        "outcomes": {
+          "0": 6
+        }
+      },
+      "get_services": {
+        "attempts": 6,
+        "outcomes": {
+          "0": 6
+        }
+      },
+      "get_versions": {
+        "attempts": 6,
+        "outcomes": {
+          "3203": 6
+        }
+      }
+    },
+    "limitation": "Short real-device sample; does not guarantee zero future timeouts."
+  },
+  "diagnosis": {
+    "legacy_path_false_3104_confirmed": true,
+    "legacy_7003_to_7006": {
+      "samples": 16,
+      "reported_3104": 10,
+      "reported_7301": 6
+    },
+    "isolated_7003_to_7006": {
+      "samples": 32,
+      "reported_3104": 0,
+      "reported_7301": 32
+    },
+    "passive_requests": 93,
+    "passive_matched_responses": 93,
+    "all_48_target_api_responses": 7301,
+    "exact_sdk_internal_thread_or_queue_cause": null,
+    "earlier_voice_3104_proven_false": false,
+    "remaining_7301": "Device LocoState unavailable; invalid payload is discarded. No mode switching attempted.",
+    "remaining_3203": "GetPkgVersion is not supported by this endpoint; motion firmware remains unknown."
+  },
+  "validation": {
+    "python": {
+      "passed": 222,
+      "scope": "G1 console tests after Python changes; subsequent product change was layout CSS only.",
+      "existing_warning": "Starlette deprecation warning"
+    },
+    "node_deadman": {
+      "passed": 5
+    },
+    "typescript_vite": {
+      "passed": true,
+      "rerun_after_css_change": true,
+      "existing_warning": "3D chunk 568.91 kB exceeds the 500 kB warning threshold"
+    },
+    "real_browser": {
+      "passed": true,
+      "url": "http://127.0.0.1:18765/",
+      "read_only_interaction_only": true,
+      "viewport_width_px": 674,
+      "layout_width_scrollWidth": {
+        "main": [
+          609,
+          609
+        ],
+        "workspace": [
+          609,
+          609
+        ],
+        "remote_workspace": [
+          575,
+          575
+        ],
+        "remote_review": [
+          575,
+          575
+        ],
+        "motion_review": [
+          575,
+          573
+        ],
+        "table_scroll": [
+          529,
+          640
+        ]
+      },
+      "table_horizontal_scroll_is_local": true,
+      "screenshot": "doc/screenshots/g1-rpc-state-diagnosis-20261021.png"
+    }
+  },
+  "observed_state": {
+    "snapshot_at_utc": "2026-10-21T12:24:36.326264+00:00",
+    "fsm_id": 0,
+    "fsm_mode": 0,
+    "motion_switcher_name": "ai",
+    "joint_count": 23,
+    "camera_window_s": 60,
+    "camera_attempts": 300,
+    "camera_successes": 300,
+    "camera_timeouts": 0,
+    "camera_errors": 0,
+    "interpretation": "Neither FSM 0 nor CheckMode ai establishes standing, health, foot load or active balance."
+  },
+  "audit": {
+    "physical_writes_sent": 0,
+    "control_acquired": false,
+    "manual_armed": false,
+    "current_run_events": {
+      "camera_connected": 1,
+      "connected": 1,
+      "query_result": 30,
+      "sdk_rejected": 30,
+      "state_observed": 2
+    },
+    "historical_malformed_lines": 1,
+    "quantumult_x_touched": false,
+    "official_video_transition": "2349 -> 11061; cause unknown; no restart sent by this run",
+    "official_process_stop_or_restart_sent": false
+  },
+  "not_verified": [
+    "Motion host firmware version and matching remote/manual branch.",
+    "Direct rise route from floor-seated posture leaning on a cabinet.",
+    "Measured left/right foot, seated-body and cabinet loads.",
+    "Hardware-independent emergency stop, loss-of-link behavior and timing.",
+    "Physical execution of movement, rise, balance, damping or audio/light writes.",
+    "Long-term camera and query reliability."
+  ],
+  "source_sha256": {
+    "g1_console/assets/g1_motion_control_review.json": "b54f1743657b963e217eded6ef14c5b22f2fbba6989596ea2cb1f7202db5d683",
+    "g1_console/assets/safety_evidence_sources/loco_query_transport_20261021_v24.json": "61722b4aed8ee76a1a5da47c10ffc8da2c089add2fc838b0f432d201547c248b",
+    "g1_console/assets/safety_evidence_sources/firmware_polled_query_20261021_v24.json": "abf7475437d836cf2d198749368804e3f37c2fa7de3651c8b982d99f2f5c282c",
+    "g1_console/assets/safety_evidence_sources/query_path_followup_20261021_v24.json": "836e214659f0ec52f97282159347b28fe4fa3fc5e9b9565a86dbf2b9014b3dd2",
+    "doc/G1_RPC_STATE_QUERY_VERIFICATION.json": "fa25f0becf70cfbfc970d23188e688703036abba84f1a2e499d2fcfa554c3808",
+    "doc/G1_RPC_STATE_ORIN.json": "1da0c4158070e83b6aed5e8b4f92244b8d7cc6f35c3862264df560838d32c65b",
+    "doc/G1_RPC_STATE_FINAL_STATE.json": "ebcbf532246f9b7d5b94b95e1fbe347bd89529f9855cce5dc43012deba8b08fd",
+    "doc/G1_RPC_STATE_VIDEO_TRANSITION.json": "b1fa9e38e41e9e193c409b8d17ad449b4fb4fdfa1a93dfde12dd61e66bfdacfd",
+    "doc/screenshots/g1-rpc-state-diagnosis-20261021.png": "4aee001763b6dc3dea2a25b2022621e2a836176ded04c32675e6e3d08497d0d4"
+  }
+}

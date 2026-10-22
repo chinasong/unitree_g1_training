@@ -1,0 +1,187 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-10-21T11:34:06.384529+00:00",
+  "scope": "User-supplied App screenshot evidence integrated; no motion or configuration commands",
+  "remote": {
+    "run_id": "eb0ba625fb7a",
+    "current_run_events": {
+      "camera_connected": 1,
+      "connected": 1,
+      "state_observed": 5
+    },
+    "historical_malformed_lines": 1,
+    "control_owner": null,
+    "manual_armed": false,
+    "at_utc": "2026-10-21T11:33:42.703314+00:00",
+    "release": "b8f5ad421037",
+    "manifest_file_count": 474,
+    "all_sha256_match": true,
+    "console_pid": 5828,
+    "console_env": {
+      "G1_READ_ONLY": "0",
+      "G1_MANUAL_REMOTE": "1",
+      "G1_HOST": "127.0.0.1",
+      "G1_PORT": "8765",
+      "G1_CAMERA_BACKEND": "unitree"
+    },
+    "loopback_only": true,
+    "children": [
+      {
+        "pid": 5899,
+        "argv": [
+          "/home/unitree/workspace/g1-body-console/.venv/bin/python",
+          "-c",
+          "from multiprocessing.resource_tracker import main;main(19)"
+        ],
+        "cwd": "/home/unitree/workspace/g1-body-console/releases/b8f5ad421037"
+      },
+      {
+        "pid": 5900,
+        "argv": [
+          "/home/unitree/workspace/g1-body-console/.venv/bin/python",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=20, pipe_handle=22)",
+          "--multiprocessing-fork"
+        ],
+        "cwd": "/home/unitree/workspace/g1-body-console/releases/b8f5ad421037"
+      },
+      {
+        "pid": 5903,
+        "argv": [
+          "/home/unitree/workspace/g1-body-console/.venv/bin/python",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=20, pipe_handle=25)",
+          "--multiprocessing-fork"
+        ],
+        "cwd": "/home/unitree/workspace/g1-body-console/releases/b8f5ad421037"
+      }
+    ],
+    "foundation_version": 21,
+    "foundation_id": "29d041ca18247da791cd284c9a73fb90c2f0656c1a87b15bb16ef090dc9db44d",
+    "actual_unknown_count": 253,
+    "boot_id": "8d9a0e09-97e1-45fa-81d3-18822a3c760a",
+    "official_processes_unchanged": [
+      {
+        "pid": 1366,
+        "argv": [
+          "/unitree/module/master_service/master_service"
+        ],
+        "start_ticks": 2168
+      },
+      {
+        "pid": 1438,
+        "argv": [
+          "/unitree/ota/pipe/ota_pipe_service"
+        ],
+        "start_ticks": 2202
+      },
+      {
+        "pid": 2349,
+        "argv": [
+          "/unitree/module/video_hub_pc4/videohub_pc4"
+        ],
+        "start_ticks": 2480
+      },
+      {
+        "pid": 2760,
+        "argv": [
+          "/home/unitree/megaflow_sdk/ws//bin/MegaFlowRuntimeDaemon",
+          "-c",
+          "/home/unitree/megaflow_sdk/ws//bin/config.bin",
+          "-w",
+          "/home/unitree/megaflow_sdk/ws/",
+          "-d",
+          "127.0.0.1:8899",
+          "-i",
+          "-e",
+          "/home/unitree/megaflow_sdk/ws//dep/",
+          "-l",
+          "0"
+        ],
+        "start_ticks": 3139
+      }
+    ]
+  },
+  "mac_consumer": {
+    "url": "http://127.0.0.1:18765",
+    "body_foundation_exact_match": true,
+    "foundation_version": 21,
+    "foundation_id": "29d041ca18247da791cd284c9a73fb90c2f0656c1a87b15bb16ef090dc9db44d",
+    "robot_dof": 23,
+    "connected": true,
+    "telemetry_age_ms": 9,
+    "control_owner": null,
+    "manual_armed": false,
+    "read_only_server_setting": false,
+    "camera": {
+      "backend": "unitree",
+      "status": "live",
+      "error": null,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 297,
+        "successes": 296,
+        "timeouts": 0,
+        "errors": 1,
+        "total_attempts": 753,
+        "total_successes": 752,
+        "total_timeouts": 0
+      },
+      "source": "unitree-videohub-58d6ac5d9577",
+      "sequence": 752,
+      "age_ms": 94,
+      "request_started_at": 1792582446.3015473,
+      "received_at": 1792582446.3259664,
+      "width": 960,
+      "height": 540,
+      "source_width": 1920,
+      "source_height": 1080,
+      "request_ms": 24,
+      "timestamp_basis": "request_started_at",
+      "sensor_timestamp": null
+    },
+    "screenshot": "doc/screenshots/g1-app-evidence-20261021.png",
+    "screenshot_sha256": "000ded3174135f903c3de59f2cf6fd1dd4795e20e44756902795b979ee31c9b3",
+    "browser_visual_verification": true
+  },
+  "app_evidence": {
+    "model": "G1 EDU+",
+    "software_version": "v1.5.6",
+    "hardware_version": "v1.0",
+    "motion_firmware_version": null,
+    "captured_at": null,
+    "same_device_binding_independently_verified": false,
+    "historical_imu_temperatures_c": [
+      80,
+      79
+    ],
+    "all_23_motor_communication_coverage_verified": false,
+    "normalized_source": "g1_console/assets/safety_evidence_sources/app_screenshots_20261021_v22.json",
+    "private_original_images_in_release": false
+  },
+  "validation": {
+    "python_tests_passed": 170,
+    "deadman_node_tests_passed": 5,
+    "web_build_passed": true,
+    "unchanged_warnings": [
+      "Starlette/httpx deprecation",
+      "BodyView bundle exceeds 500 kB"
+    ],
+    "git_diff_check": "pre-existing trailing whitespace README.md:185"
+  },
+  "boundaries": {
+    "motion_commands_issued": 0,
+    "mode_switches_issued": 0,
+    "calibration_or_configuration_writes": 0,
+    "official_services_restarted": 0,
+    "quantumult_x_changed": false,
+    "all_8_reviewed_modes_execution_allowed": false,
+    "motor_actual_configuration_unknown_fields": 253,
+    "foot_loads": null,
+    "cabinet_load": null,
+    "independent_standing_verified": false,
+    "bus_traffic_independently_captured": false
+  },
+  "camera_note": "Live at check. The latest 60 second sample and cumulative counters are preserved above; no claim of continuous zero-error operation."
+}

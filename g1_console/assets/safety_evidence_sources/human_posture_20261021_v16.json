@@ -1,0 +1,22 @@
+{
+  "current": false,
+  "source": "user_direct_report",
+  "recorded_at_utc": "2026-10-21T06:30:15.647511+00:00",
+  "observed_at_utc": null,
+  "boot_context": "b33a7dc5-2617-44cd-b353-041bab1c204f",
+  "timestamp_basis": "记录时间为入档时间；用户未提供精确观察时间，不能视为传感器采样时间",
+  "reports": [
+    "人托住的",
+    "双脚贴地，坐在地下的",
+    "现在身体数字视图的样子是正确的"
+  ],
+  "reported_pose": "seated_on_floor",
+  "reported_left_sole_contact": true,
+  "reported_right_sole_contact": true,
+  "reported_external_support": "person",
+  "reported_digital_pose_matches": true,
+  "reported_independent_standing": false,
+  "left_load_n": null,
+  "right_load_n": null,
+  "scope": "人工核对了当时的坐地姿势、双脚接地、人员支撑和数字关节形态；不证明承重、独立平衡或外参标定。姿势变化或重启后须重新核对。"
+}

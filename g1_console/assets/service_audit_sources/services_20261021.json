@@ -1,0 +1,1076 @@
+{
+  "current": false,
+  "checked_at_utc": "2026-10-21T02:29:29.750402+00:00",
+  "boot_id": "7a6791dc-f512-4b45-aca3-44fbde855e25",
+  "clock_authority": "Mac receipt time is recorded separately; robot journal clocks can differ",
+  "command_writes": 0,
+  "rpc_calls": 0,
+  "configuration_calls": 0,
+  "calibration_calls": 0,
+  "motor_configuration_values_obtained": 0,
+  "processes": [
+    {
+      "pid": 1296,
+      "ppid": 1,
+      "start_ticks": 2242,
+      "argv": [
+        "/unitree/module/master_service/master_service"
+      ],
+      "cgroup": [
+        "11:pids:/system.slice/master_service.service",
+        "10:cpuset:/",
+        "9:cpu,cpuacct:/system.slice/master_service.service",
+        "8:blkio:/system.slice/master_service.service",
+        "7:perf_event:/",
+        "6:net_cls,net_prio:/",
+        "5:freezer:/",
+        "4:memory:/system.slice/master_service.service",
+        "3:hugetlb:/",
+        "2:devices:/system.slice/master_service.service",
+        "1:name=systemd:/system.slice/master_service.service",
+        "0::/system.slice/master_service.service"
+      ],
+      "links": {
+        "exe": "PermissionError",
+        "cwd": "PermissionError",
+        "fd/1": "PermissionError",
+        "fd/2": "PermissionError"
+      }
+    },
+    {
+      "pid": 1298,
+      "ppid": 1,
+      "start_ticks": 2242,
+      "argv": [
+        "/unitree/ota/pipe/ota_pipe_service"
+      ],
+      "cgroup": [
+        "11:pids:/system.slice/ota_pipe.service",
+        "10:cpuset:/",
+        "9:cpu,cpuacct:/system.slice/ota_pipe.service",
+        "8:blkio:/system.slice/ota_pipe.service",
+        "7:perf_event:/",
+        "6:net_cls,net_prio:/",
+        "5:freezer:/",
+        "4:memory:/system.slice/ota_pipe.service",
+        "3:hugetlb:/",
+        "2:devices:/system.slice/ota_pipe.service",
+        "1:name=systemd:/system.slice/ota_pipe.service",
+        "0::/system.slice/ota_pipe.service"
+      ],
+      "links": {
+        "exe": "PermissionError",
+        "cwd": "PermissionError",
+        "fd/1": "PermissionError",
+        "fd/2": "PermissionError"
+      }
+    },
+    {
+      "pid": 2557,
+      "ppid": 1,
+      "start_ticks": 2791,
+      "argv": [
+        "/unitree/module/video_hub_pc4/videohub_pc4"
+      ],
+      "cgroup": [
+        "11:pids:/system.slice/master_service.service",
+        "10:cpuset:/",
+        "9:cpu,cpuacct:/system.slice/master_service.service",
+        "8:blkio:/system.slice/master_service.service",
+        "7:perf_event:/",
+        "6:net_cls,net_prio:/",
+        "5:freezer:/",
+        "4:memory:/system.slice/master_service.service",
+        "3:hugetlb:/",
+        "2:devices:/system.slice/master_service.service",
+        "1:name=systemd:/system.slice/master_service.service",
+        "0::/system.slice/master_service.service"
+      ],
+      "links": {
+        "exe": "PermissionError",
+        "cwd": "PermissionError",
+        "fd/1": "PermissionError",
+        "fd/2": "PermissionError"
+      }
+    },
+    {
+      "pid": 2676,
+      "ppid": 2674,
+      "start_ticks": 3210,
+      "argv": [
+        "/home/unitree/megaflow_sdk/ws//bin/MegaFlowRuntimeDaemon",
+        "-c",
+        "/home/unitree/megaflow_sdk/ws//bin/config.bin",
+        "-w",
+        "/home/unitree/megaflow_sdk/ws/",
+        "-d",
+        "127.0.0.1:8899",
+        "-i",
+        "-e",
+        "/home/unitree/megaflow_sdk/ws//dep/",
+        "-l",
+        "0"
+      ],
+      "cgroup": [
+        "11:pids:/system.slice/megaflowruntime.service",
+        "10:cpuset:/",
+        "9:cpu,cpuacct:/system.slice/megaflowruntime.service",
+        "8:blkio:/system.slice/megaflowruntime.service",
+        "7:perf_event:/",
+        "6:net_cls,net_prio:/",
+        "5:freezer:/",
+        "4:memory:/system.slice/megaflowruntime.service",
+        "3:hugetlb:/",
+        "2:devices:/system.slice/megaflowruntime.service",
+        "1:name=systemd:/system.slice/megaflowruntime.service",
+        "0::/system.slice/megaflowruntime.service"
+      ],
+      "links": {
+        "exe": "PermissionError",
+        "cwd": "PermissionError",
+        "fd/1": "PermissionError",
+        "fd/2": "PermissionError"
+      }
+    }
+  ],
+  "units": [
+    {
+      "unit": "master_service.service",
+      "code": 0,
+      "fields": "MainPID=0\nExecStart={ path=/etc/init.d/master_service ; argv[]=/etc/init.d/master_service start ; ignore_errors=no ; start_time=[Wed 2023-11-22 05:10:27 CST] ; stop_time=[Wed 2023-11-22 05:10:28 CST] ; pid=1038 ; code=exited ; status=0 }\nWorkingDirectory=\nStandardOutput=journal\nStandardError=inherit\nUser=\nId=master_service.service\nLoadState=loaded\nActiveState=active\nSubState=running\nFragmentPath=/run/systemd/generator.late/master_service.service\nDropInPaths=",
+      "error": ""
+    },
+    {
+      "unit": "megaflowruntime.service",
+      "code": 0,
+      "fields": "MainPID=2674\nExecStart={ path=/home/unitree/megaflow_sdk/ws/bin/run.sh ; argv[]=/home/unitree/megaflow_sdk/ws//bin/run.sh ; ignore_errors=no ; start_time=[Wed 2026-10-21 09:39:21 CST] ; stop_time=[n/a] ; pid=2674 ; code=(null) ; status=0/0 }\nWorkingDirectory=\nStandardOutput=journal\nStandardError=inherit\nUser=root\nId=megaflowruntime.service\nLoadState=loaded\nActiveState=active\nSubState=running\nFragmentPath=/etc/systemd/system/megaflowruntime.service\nDropInPaths=",
+      "error": ""
+    }
+  ],
+  "files": [
+    {
+      "path": "/etc/init.d/master_service",
+      "bytes": 3205,
+      "sha256": "c6a77ab2ef9f3341c071c96b887a8ea6884541caabbdd07019f42adcc94c7b1e",
+      "format": "text",
+      "loaded_by_active_motor_controller_verified": false,
+      "text": "#! /bin/sh\n\n### BEGIN INIT INFO\n# Provides:          master_service\n# Required-Start:    $local_fs $network $named\n# Required-Stop:     $remote_fs\n# Default-Start:     2 3 4 5\n# Default-Stop:      0 1 6\n# Short-Description: master service init script.\n# Description:       master service init script. start master service use start-stop-daemon.\n### END INIT INFO\n\nPATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin\nDAEMON=/unitree/module/master_service/master_service\nNAME=master_service\nDESC=master_service\n\ntest -x $DAEMON || exit 0\n\n. /lib/init/vars.sh                                                                                                                                                                                                                       \n. /lib/lsb/init-functions\n\nPIDFILE=/unitree/var/run/master_service.pid\nSTOPDELAY=1\n\nSTARTDELAY=0.5\n\nrunning_pid()\n{\n    # Check if a given process pid's cmdline matches a given name\n    pid=$1\n    name=$2\n    [ -z \"$pid\" ] && return 1\n    [ ! -d /proc/$pid ] &&  return 1\n    cmd=`cat /proc/$pid/cmdline | tr \"\\000\" \"\\n\"|head -n 1 |cut -d : -f 1`\n    # Is this the expected child?\n    [ \"$cmd\" != \"$name\" ] &&  return 1\n    return 0\n}\n\nrunning()\n{\n# Check if the process is running looking at /proc\n# (works for all users)\n\n    # No pidfile, probably no daemon present\n    [ ! -f \"$PIDFILE\" ] && return 1\n    # Obtain the pid and check it against the binary name\n    pid=`cat $PIDFILE`\n    running_pid $pid $DAEMON || return 1\n    return 0\n}\n\ndo_force_stop() {\n# Forcefully kill the process\n    [ ! -f \"$PIDFILE\" ] && return\n    if running ; then\n        kill -2 $pid\n        sleep $STOPDELAY\n        if running ; then\n            kill -9 $pid\n\t    sleep $STOPDELAY\n            if running ; then\n                echo \"Cannot kill $NAME (pid=$pid)!\"\n                exit 1\n            fi\n        fi\n    fi\n    rm -f $PIDFILE\n    return 0\n}\ndo_start() {\n        # Check if we have the configuration file\n        ulimit -c 0\n        start-stop-daemon --start --background --no-close --make-pidfile --pidfile $PIDFILE --exec $DAEMON\n}\ndo_stop() {\n        start-stop-daemon --stop --pidfile $PIDFILE --exec $DAEMON\n}\n\ncase \"$1\" in\n  start)\n        echo -n \"Starting $DESC: \"\n        do_start\n\tsleep $STARTDELAY\n\n        if running ; then\n            echo \"$NAME.\"\n        else\n            echo \" ERROR.\"\n        fi\n        ;;\n  stop)\n        echo -n \"Stopping $DESC: \"\n        do_stop\n        echo \"$NAME.\"\n        ;;\n  force-stop)\n        echo -n \"Forcefully stopping $DESC: \"\n        do_force_stop\n        if ! running ; then\n            echo \"$NAME.\"\n        else\n            echo \" ERROR.\"\n        fi\n        ;;\n  restart|reload|force-reload)\n    echo -n \"Restarting $DESC: \"\n        do_stop\n        sleep $STOPDELAY\n        do_start\n        echo \"$NAME.\"\n        ;;\n\n  status)\n    echo -n \"$NAME is \"\n    if running ;  then\n        echo \"running\"\n    else\n        echo \" not running.\"\n        exit 1\n    fi\n    ;;\n  *)\n    N=/etc/init.d/$NAME\n    # echo \"Usage: $N {start|stop|restart|reload|force-reload}\" >&2\n    echo \"Usage: $N {start|stop|restart|force-reload|status|force-stop}\" >&2\n    exit 1\n    ;;\nesac\n\nexit 0"
+    },
+    {
+      "path": "/etc/systemd/system/megaflowruntime.service",
+      "bytes": 301,
+      "sha256": "ea44ad3c378c4bc719c67a8b0259da3533001ec79787247e8f3c951f80006cbc",
+      "format": "text",
+      "loaded_by_active_motor_controller_verified": false,
+      "text": "[Unit]\nDescription=MegaFlowRuntime Service\nWants=graphical-session.target\nAfter=graphical-session.target\nAfter=network.target\n\n[Service]\nExecStartPre=/bin/sleep 10\nExecStart=/home/unitree/megaflow_sdk/ws//bin/run.sh\nUser=root\nEnvironment=DISPLAY=:0\nRestart=always\n\n[Install]\nWantedBy=graphical.target"
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/bin/config.bin",
+      "bytes": 14640,
+      "sha256": "fd69673a007839f4a33ba1507fe043f6dbcc373bae703ecaa58eea54e61e9e6f",
+      "format": "opaque",
+      "loaded_by_active_motor_controller_verified": false,
+      "meaning": "非明文或超出读取上限；未解码，不能核定电机配置"
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/bin/debug.sh",
+      "bytes": 298,
+      "sha256": "6596e7b3995ea8a548f3b5012be946e4594e86a23a43b667f9b92d4a6f68efff",
+      "format": "text",
+      "loaded_by_active_motor_controller_verified": false,
+      "text": "#!/bin/bash\nexport LD_LIBRARY_PATH=/home/unitree/megaflow_sdk/ws//dep/:$LD_LIBRARY_PATH\n/home/unitree/megaflow_sdk/ws//bin/MegaFlowRuntimeDaemon -c /home/unitree/megaflow_sdk/ws//bin/config.bin -w /home/unitree/megaflow_sdk/ws/ -d 127.0.0.1:8899 -i  -e /home/unitree/megaflow_sdk/ws//dep/ -l 0 -v 1"
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/bin/run.sh",
+      "bytes": 294,
+      "sha256": "4a353878a42dc017c7ef42556fdd7c40c69d89298873ee3505c7ef88e50137a7",
+      "format": "text",
+      "loaded_by_active_motor_controller_verified": false,
+      "text": "#!/bin/bash\nexport LD_LIBRARY_PATH=/home/unitree/megaflow_sdk/ws//dep/:$LD_LIBRARY_PATH\n/home/unitree/megaflow_sdk/ws//bin/MegaFlowRuntimeSpawner -c /home/unitree/megaflow_sdk/ws//bin/config.bin -w /home/unitree/megaflow_sdk/ws/ -d 127.0.0.1:8899 -i  -e /home/unitree/megaflow_sdk/ws//dep/ -l 0"
+    },
+    {
+      "path": "/run/systemd/generator.late/master_service.service",
+      "bytes": 593,
+      "sha256": "999b52e6bcca628b33648ba97f0c1b2b12fc5956c7af72ebffe9ec1a5052d5b5",
+      "format": "text",
+      "loaded_by_active_motor_controller_verified": false,
+      "text": "# Automatically generated by systemd-sysv-generator\n\n[Unit]\nDocumentation=man:systemd-sysv-generator(8)\nSourcePath=/etc/init.d/master_service\nDescription=LSB: master service init script.\nBefore=multi-user.target\nBefore=multi-user.target\nBefore=multi-user.target\nBefore=graphical.target\nAfter=network-online.target\nAfter=nss-lookup.target\nWants=network-online.target\n\n[Service]\nType=forking\nRestart=no\nTimeoutSec=5min\nIgnoreSIGPIPE=no\nKillMode=process\nGuessMainPID=no\nRemainAfterExit=yes\nSuccessExitStatus=5 6\nExecStart=/etc/init.d/master_service start\nExecStop=/etc/init.d/master_service stop"
+    },
+    {
+      "path": "/unitree/etc/master_service/cmd/am-init",
+      "bytes": 72,
+      "sha256": "49f72453bb4b31a6974c2d2d3ba6f85580c01c815c11f3f5b13593eabb40cdc5",
+      "format": "text",
+      "loaded_by_active_motor_controller_verified": false,
+      "text": "{\n    \"Cmd\": \"/usr/bin/amixer set Speaker 75%\",\n    \"ExpectCode\": [0]\n}"
+    },
+    {
+      "path": "/unitree/etc/master_service/cmd/core-init",
+      "bytes": 93,
+      "sha256": "f1e49b420d549b93db85629868ad94e5fcb890e0c8c4a395dba56b564511c1d4",
+      "format": "text",
+      "loaded_by_active_motor_controller_verified": false,
+      "text": "{\n    \"Cmd\": \"echo /tmp/core.%e.%p > /proc/sys/kernel/core_pattern\",\n    \"ExpectCode\": [0]\n}"
+    },
+    {
+      "path": "/unitree/etc/master_service/cmd/ota-pipe",
+      "bytes": 236,
+      "sha256": "585ce543fa0356485ded21bb3045f1a254d895909ecd2b6a321b02b8e53e0fc2",
+      "format": "text",
+      "loaded_by_active_motor_controller_verified": false,
+      "text": "{\n    \"Cmd\": \"OTAPipe=/unitree/ota/pipe/ota_pipe_service; OTAPipeBackup=/unitree/ota/pipe/ota_pipe_service__ota_update_backup; if [ ! -s $OTAPipe ] && [ -s $OTAPipeBackup ]; then mv $OTAPipeBackup $OTAPipe; fi\",\n    \"ExpectCode\": [0]\n}"
+    },
+    {
+      "path": "/unitree/etc/master_service/cmd/ota-update",
+      "bytes": 199,
+      "sha256": "0fe72714a8934811f61b93d11ca65f87c836f75ccb59dbd7ef91d25aed8b6421",
+      "format": "text",
+      "loaded_by_active_motor_controller_verified": false,
+      "text": "{\n    \"Cmd\": \"OTUpdateScript=/unitree/var/data/ota_update/ota_update.sh; if [ -s $OTUpdateScript ]; then chmod +x $OTUpdateScript; $OTUpdateScript > /tmp/ota_update.LOG; fi\",\n    \"ExpectCode\": [0]\n}"
+    },
+    {
+      "path": "/unitree/etc/master_service/cmd/pd-init",
+      "bytes": 218,
+      "sha256": "d0ec2931ddbfbecca97d7d850fd42ced549d7ca327ec48b2c57e0a6fd5fac16d",
+      "format": "text",
+      "loaded_by_active_motor_controller_verified": false,
+      "text": "{\n    \"Cmd\": \"cd /unitree/var/run; ls *.pid | while read pidfile; do echo $pidfile; [ \\\"$pidfile\\\" != \\\"master_service.pid\\\" ] && [ \\\"$pidfile\\\" != \\\"ota_boxed.pid\\\" ] && rm -f $pidfile; done\",\n    \"ExpectCode\": [0]\n}"
+    },
+    {
+      "path": "/unitree/etc/master_service/conflict",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "format": "text",
+      "loaded_by_active_motor_controller_verified": false,
+      "text": "[]"
+    },
+    {
+      "path": "/unitree/etc/master_service/forbid",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "format": "text",
+      "loaded_by_active_motor_controller_verified": false,
+      "text": ""
+    },
+    {
+      "path": "/unitree/etc/master_service/init",
+      "bytes": 52,
+      "sha256": "ff2c1790b12e1f51f862f8de8c035b9860dad67c78bc67790d6a8e0ffb0f3ce3",
+      "format": "text",
+      "loaded_by_active_motor_controller_verified": false,
+      "text": "[\n    \"ota-pipe\",\n    \"ota-update\",\n    \"pd-init\"\n]"
+    },
+    {
+      "path": "/unitree/etc/master_service/manual",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "format": "text",
+      "loaded_by_active_motor_controller_verified": false,
+      "text": "[]"
+    },
+    {
+      "path": "/unitree/etc/master_service/once",
+      "bytes": 52,
+      "sha256": "ff2c1790b12e1f51f862f8de8c035b9860dad67c78bc67790d6a8e0ffb0f3ce3",
+      "format": "text",
+      "loaded_by_active_motor_controller_verified": false,
+      "text": "[\n    \"ota-pipe\",\n    \"ota-update\",\n    \"pd-init\"\n]"
+    },
+    {
+      "path": "/unitree/etc/master_service/path",
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "format": "text",
+      "loaded_by_active_motor_controller_verified": false,
+      "text": "{}"
+    },
+    {
+      "path": "/unitree/etc/master_service/plan",
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "format": "text",
+      "loaded_by_active_motor_controller_verified": false,
+      "text": "{}"
+    },
+    {
+      "path": "/unitree/etc/master_service/prio",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "format": "text",
+      "loaded_by_active_motor_controller_verified": false,
+      "text": "[]"
+    },
+    {
+      "path": "/unitree/etc/master_service/protect",
+      "bytes": 21,
+      "sha256": "c04c9a70676f103032e2ab65bbaecd0346293b798cdecd5a421c8aad87ecc3f5",
+      "format": "text",
+      "loaded_by_active_motor_controller_verified": false,
+      "text": "{\n   \"slam_nav\": 0\n}"
+    },
+    {
+      "path": "/unitree/etc/master_service/service/ota_pipe",
+      "bytes": 433,
+      "sha256": "855a3365332bb1abae17f3965312b8b7b5a156772aabf1245cbd3272181dfb67",
+      "format": "text",
+      "loaded_by_active_motor_controller_verified": false,
+      "text": "{\n    \"Start\": {\n        \"Cmd\": \"systemctl start ota_pipe\",\n        \"ExpectCode\": [\n            0,\n            1\n        ]\n    },\n    \"Stop\": {\n        \"Cmd\": \"systemctl stop ota_pipe\",\n        \"ExpectCode\": [\n            0,\n            1\n        ]\n    },\n    \"Status\": {\n        \"Cmd\": \"systemctl status ota_pipe\",\n        \"AliveCode\": [\n            0\n        ],\n        \"DeadCode\": [\n            1,\n            3\n        ]\n    }\n}"
+    },
+    {
+      "path": "/unitree/etc/master_service/service/video_hub_pc4",
+      "bytes": 738,
+      "sha256": "c764e9e5f96c6ab48304d3a0d85b62966528141bc45481f549bf432c621c6547",
+      "format": "text",
+      "loaded_by_active_motor_controller_verified": false,
+      "text": "{\n    \"Start\":\n    {\n        \"Cmd\": \"export CYCLONEDDS_URI=/unitree/module/video_hub_pc4/cyclonedds.xml;/unitree/sbin/start-stop-daemon --start --background --make-pidfile --pidfile=/unitree/var/run/videohub_pc4.pid --exec /unitree/module/video_hub_pc4/videohub_pc4\",\n        \"ExpectCode\": [0]\n    },\n    \"Stop\":\n    {\n        \"Cmd\": \"/unitree/sbin/start-stop-daemon --stop --pidfile=/unitree/var/run/videohub_pc4.pid --exec /unitree/module/video_hub_pc4/videohub_pc4\",\n        \"ExpectCode\": [0,1]\n    },\n    \"Status\":\n    {\n        \"Cmd\": \"/unitree/sbin/start-stop-daemon --status --pidfile=/unitree/var/run/videohub_pc4.pid --exec /unitree/module/video_hub_pc4/videohub_pc4\",\n        \"AliveCode\": [0],\n        \"DeadCode\": [1,3]\n    }\n}"
+    },
+    {
+      "path": "/unitree/module/master_service/default_logconf.json",
+      "bytes": 452,
+      "sha256": "e426e0483d418f5efe02b68ea3bff48d225f043545c2109d49af8d095952850a",
+      "format": "text",
+      "loaded_by_active_motor_controller_verified": false,
+      "text": "{\n    \"Policy\":\n    {\n        \"/\":\n        {\n            \"Level\": \"WARNING\",\n                \"Store\": \"default\"\n        },\n        \"/unitree\":\n        {\n            \"Level\": \"INFO\",\n            \"Store\": \"default\"\n        }\n    },\n    \"Store\":\n    {\n        \"default\":\n        {\n            \"Type\": \"FileAsync\",\n            \"FileSize\": 100000000,\n            \"FileNumber\": 2,\n            \"Directory\": \"/unitree/var/log/master_service\"\n        }\n    }\n}"
+    },
+    {
+      "path": "/unitree/module/master_service/master_service.json",
+      "bytes": 468,
+      "sha256": "31eae39936576504c40be767bd93cd34b7489154eca989e5e5c2781b05e3d977",
+      "format": "opaque",
+      "loaded_by_active_motor_controller_verified": false,
+      "meaning": "非明文或超出读取上限；未解码，不能核定电机配置"
+    },
+    {
+      "path": "/unitree/module/video_hub_pc4/cyclonedds.xml",
+      "bytes": 158,
+      "sha256": "3c64ba515a0489ee78118ee6a8e8a25540a08dd026c0ec0d9ef0cbed0fdba23b",
+      "format": "text",
+      "loaded_by_active_motor_controller_verified": false,
+      "text": "<CycloneDDS><Domain><General><Interfaces><NetworkInterface name=\"eth0\" priority=\"default\" multicast=\"default\" /></Interfaces></General></Domain></CycloneDDS>"
+    },
+    {
+      "path": "/unitree/robot/pkg/module/unitree_patch_pc4/module.json",
+      "bytes": 2880,
+      "sha256": "df22b0309ebae1b78380473a297eca6d21fd1311d725a1a1c529e7d5df0572a0",
+      "format": "text",
+      "loaded_by_active_motor_controller_verified": false,
+      "text": "{\n    \"Commit\": \"81529bedcf0a4ada51747bca72b246a4f533e774\",\n    \"FileList\": {\n        \"/etc/chrony/chrony.config\": 784,\n        \"/etc/chrony/chrony.service\": 615,\n        \"/etc/ld.so.conf.d/unitree.conf\": 30,\n        \"/root/.asoundrc\": 40,\n        \"/unitree/bin/json_checker\": 98192,\n        \"/unitree/etc/master_service/cmd/am-init\": 72,\n        \"/unitree/etc/master_service/cmd/core-init\": 93,\n        \"/unitree/etc/master_service/cmd/ota-pipe\": 236,\n        \"/unitree/etc/master_service/cmd/ota-update\": 199,\n        \"/unitree/etc/master_service/cmd/pd-init\": 218,\n        \"/unitree/etc/master_service/conflict\": 3,\n        \"/unitree/etc/master_service/forbid\": 0,\n        \"/unitree/etc/master_service/init\": 52,\n        \"/unitree/etc/master_service/manual\": 3,\n        \"/unitree/etc/master_service/once\": 52,\n        \"/unitree/etc/master_service/path\": 3,\n        \"/unitree/etc/master_service/plan\": 3,\n        \"/unitree/etc/master_service/prio\": 3,\n        \"/unitree/etc/master_service/protect\": 21,\n        \"/unitree/etc/ota_pipe/ota_pipe_hosts.json\": 48,\n        \"/unitree/sbin/mscli\": 5951720,\n        \"/unitree/sbin/ota_pipe_cli\": 6078920,\n        \"/unitree/sbin/start-stop-daemon\": 127936,\n        \"/unitree/var/data/chrony/chrony_3.5-6ubuntu6.2_arm64.deb\": 212496,\n        \"/unitree/var/data/chrony/chrony_setup.sh\": 1629,\n        \"/unitree/var/data/ota_update/ota_pipe/ota_pipe_service\": 9213664,\n        \"/unitree/var/data/ota_update/ota_update.sh\": 4103\n    },\n    \"Install\": {\n        \"CmdPostList\": [\n            {\n                \"Cmd\": \"chown root:root -R /unitree\",\n                \"Delay\": 0.0,\n                \"ExpectCode\": [\n                    0\n                ],\n                \"IgnoreUnexpected\": true\n            },\n            {\n                \"Cmd\": \"chmod +x /unitree/var/data/chrony/chrony_setup.sh; /unitree/var/data/chrony/chrony_setup.sh\",\n                \"Delay\": 0.0,\n                \"ExpectCode\": [\n                    0\n                ],\n                \"IgnoreUnexpected\": true\n            },\n            {\n                \"Cmd\": \"ldconfig\",\n                \"Delay\": 0.0,\n                \"ExpectCode\": [\n                    0\n                ],\n                \"IgnoreUnexpected\": false\n            },\n            {\n                \"Cmd\": \"systemctl stop unitree-upgrade.service; systemctl disable unitree-upgrade.service; rm /etc/systemd/system/unitree-upgrade.service; systemctl daemon-reload; rm -rf /upgradePythonServer\",\n                \"Delay\": 0.0,\n                \"ExpectCode\": [\n                    0\n                ],\n                \"IgnoreUnexpected\": false\n            }\n        ],\n        \"CmdPreList\": []\n    },\n    \"Method\": \"\",\n    \"Name\": \"unitree_patch_pc4\",\n    \"Remove\": {\n        \"CmdPostList\": [],\n        \"CmdPreList\": []\n    },\n    \"Time\": \"2026-04-04 22:43:53\",\n    \"Type\": \"VIRTUAL\",\n    \"Version\": \"1.0.0.6\"\n}"
+    },
+    {
+      "path": "/unitree/var/data/chrony/chrony_setup.sh",
+      "bytes": 1629,
+      "sha256": "543c6382d464d6d2d1b99a3c5ebbdb2fb72701bf8f80a4dc30acf885b99620f7",
+      "format": "text",
+      "loaded_by_active_motor_controller_verified": false,
+      "text": "#!/bin/bash\nCHRONY_DEB=/unitree/var/data/chrony/chrony_3.5-6ubuntu6.2_arm64.deb\n\necho \"=== Permanently disable systemd-timesyncd ===\"\necho \"\"\n# 1. 停止服务\nsudo systemctl stop systemd-timesyncd\nif [ $? -ne 0 ]; then\n    exit 1\nfi\n# 2. 禁用启动\nsudo systemctl disable systemd-timesyncd\nif [ $? -ne 0 ]; then\n    exit 1\nfi\n# 3. 屏蔽服务（防止被其他服务启动）\nsudo systemctl mask systemd-timesyncd\nif [ $? -ne 0 ]; then\n    exit 1\nfi\n# 4. 重新加载 systemd\nsudo systemctl daemon-reload\nif [ $? -ne 0 ]; then\n    exit 1\nelse\n    echo \"Confirmed: systemd-timesyncd is completely disabled\"\nfi\n\n# 5. 安装 chrony\nif sudo dpkg -i --force-conflicts \"$CHRONY_DEB\"; then\n\n    echo \"Chrony install success\"\n    echo \"Start config chrony\"\n    # 启动并启用 chrony 服务\n    sudo systemctl start chrony\n    if [ $? -ne 0 ]; then\n        echo \"start chrony failed\"\n        exit 1\n    fi\n    sudo systemctl enable chrony\n    if [ $? -ne 0 ]; then\n        echo \"enable chrony failed\"\n        exit 1\n    fi\n\n    #替换配置文件\n    sudo mv /etc/chrony/chrony.config /etc/chrony/chrony.conf\n    if [ $? -ne 0 ]; then\n        echo \"Replace the chrony.conf file failed\"\n        exit 1\n    fi\n\n    sudo mv /etc/chrony/chrony.service /lib/systemd/system/chrony.service\n    if [ $? -ne 0 ]; then\n        echo \"Replace the chrony.service file failed\"\n        exit 1\n    fi\n\n    # 重启 chrony 服务\n    sudo systemctl restart chrony\n    if [ $? -ne 0 ]; then\n        echo \"restart chrony failed\"\n        exit 1\n    fi\n\n    echo \"Chrony installed and configured successfully\"\nelse\n    echo \"Chrony install failed\"\nfi"
+    },
+    {
+      "path": "/unitree/var/etc/master_service/cmd/am-init",
+      "bytes": 72,
+      "sha256": "49f72453bb4b31a6974c2d2d3ba6f85580c01c815c11f3f5b13593eabb40cdc5",
+      "format": "text",
+      "loaded_by_active_motor_controller_verified": false,
+      "text": "{\n    \"Cmd\": \"/usr/bin/amixer set Speaker 75%\",\n    \"ExpectCode\": [0]\n}"
+    },
+    {
+      "path": "/unitree/var/etc/master_service/cmd/core-init",
+      "bytes": 93,
+      "sha256": "f1e49b420d549b93db85629868ad94e5fcb890e0c8c4a395dba56b564511c1d4",
+      "format": "text",
+      "loaded_by_active_motor_controller_verified": false,
+      "text": "{\n    \"Cmd\": \"echo /tmp/core.%e.%p > /proc/sys/kernel/core_pattern\",\n    \"ExpectCode\": [0]\n}"
+    },
+    {
+      "path": "/unitree/var/etc/master_service/cmd/ota-pipe",
+      "bytes": 236,
+      "sha256": "585ce543fa0356485ded21bb3045f1a254d895909ecd2b6a321b02b8e53e0fc2",
+      "format": "text",
+      "loaded_by_active_motor_controller_verified": false,
+      "text": "{\n    \"Cmd\": \"OTAPipe=/unitree/ota/pipe/ota_pipe_service; OTAPipeBackup=/unitree/ota/pipe/ota_pipe_service__ota_update_backup; if [ ! -s $OTAPipe ] && [ -s $OTAPipeBackup ]; then mv $OTAPipeBackup $OTAPipe; fi\",\n    \"ExpectCode\": [0]\n}"
+    },
+    {
+      "path": "/unitree/var/etc/master_service/cmd/ota-update",
+      "bytes": 199,
+      "sha256": "0fe72714a8934811f61b93d11ca65f87c836f75ccb59dbd7ef91d25aed8b6421",
+      "format": "text",
+      "loaded_by_active_motor_controller_verified": false,
+      "text": "{\n    \"Cmd\": \"OTUpdateScript=/unitree/var/data/ota_update/ota_update.sh; if [ -s $OTUpdateScript ]; then chmod +x $OTUpdateScript; $OTUpdateScript > /tmp/ota_update.LOG; fi\",\n    \"ExpectCode\": [0]\n}"
+    },
+    {
+      "path": "/unitree/var/etc/master_service/cmd/pd-init",
+      "bytes": 218,
+      "sha256": "d0ec2931ddbfbecca97d7d850fd42ced549d7ca327ec48b2c57e0a6fd5fac16d",
+      "format": "text",
+      "loaded_by_active_motor_controller_verified": false,
+      "text": "{\n    \"Cmd\": \"cd /unitree/var/run; ls *.pid | while read pidfile; do echo $pidfile; [ \\\"$pidfile\\\" != \\\"master_service.pid\\\" ] && [ \\\"$pidfile\\\" != \\\"ota_boxed.pid\\\" ] && rm -f $pidfile; done\",\n    \"ExpectCode\": [0]\n}"
+    },
+    {
+      "path": "/unitree/var/etc/master_service/conflict",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "format": "text",
+      "loaded_by_active_motor_controller_verified": false,
+      "text": "[]"
+    },
+    {
+      "path": "/unitree/var/etc/master_service/forbid",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "format": "text",
+      "loaded_by_active_motor_controller_verified": false,
+      "text": ""
+    },
+    {
+      "path": "/unitree/var/etc/master_service/init",
+      "bytes": 52,
+      "sha256": "ff2c1790b12e1f51f862f8de8c035b9860dad67c78bc67790d6a8e0ffb0f3ce3",
+      "format": "text",
+      "loaded_by_active_motor_controller_verified": false,
+      "text": "[\n    \"ota-pipe\",\n    \"ota-update\",\n    \"pd-init\"\n]"
+    },
+    {
+      "path": "/unitree/var/etc/master_service/manual",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "format": "text",
+      "loaded_by_active_motor_controller_verified": false,
+      "text": "[]"
+    },
+    {
+      "path": "/unitree/var/etc/master_service/once",
+      "bytes": 52,
+      "sha256": "ff2c1790b12e1f51f862f8de8c035b9860dad67c78bc67790d6a8e0ffb0f3ce3",
+      "format": "text",
+      "loaded_by_active_motor_controller_verified": false,
+      "text": "[\n    \"ota-pipe\",\n    \"ota-update\",\n    \"pd-init\"\n]"
+    },
+    {
+      "path": "/unitree/var/etc/master_service/path",
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "format": "text",
+      "loaded_by_active_motor_controller_verified": false,
+      "text": "{}"
+    },
+    {
+      "path": "/unitree/var/etc/master_service/plan",
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "format": "text",
+      "loaded_by_active_motor_controller_verified": false,
+      "text": "{}"
+    },
+    {
+      "path": "/unitree/var/etc/master_service/prio",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "format": "text",
+      "loaded_by_active_motor_controller_verified": false,
+      "text": "[]"
+    },
+    {
+      "path": "/unitree/var/etc/master_service/protect",
+      "bytes": 21,
+      "sha256": "c04c9a70676f103032e2ab65bbaecd0346293b798cdecd5a421c8aad87ecc3f5",
+      "format": "text",
+      "loaded_by_active_motor_controller_verified": false,
+      "text": "{\n   \"slam_nav\": 0\n}"
+    }
+  ],
+  "inventory": [
+    {
+      "path": "/unitree/etc/master_service/conflict",
+      "bytes": 3
+    },
+    {
+      "path": "/unitree/etc/master_service/forbid",
+      "bytes": 0
+    },
+    {
+      "path": "/unitree/etc/master_service/init",
+      "bytes": 52
+    },
+    {
+      "path": "/unitree/etc/master_service/manual",
+      "bytes": 3
+    },
+    {
+      "path": "/unitree/etc/master_service/once",
+      "bytes": 52
+    },
+    {
+      "path": "/unitree/etc/master_service/path",
+      "bytes": 3
+    },
+    {
+      "path": "/unitree/etc/master_service/plan",
+      "bytes": 3
+    },
+    {
+      "path": "/unitree/etc/master_service/prio",
+      "bytes": 3
+    },
+    {
+      "path": "/unitree/etc/master_service/protect",
+      "bytes": 21
+    },
+    {
+      "path": "/unitree/etc/master_service/cmd/am-init",
+      "bytes": 72
+    },
+    {
+      "path": "/unitree/etc/master_service/cmd/core-init",
+      "bytes": 93
+    },
+    {
+      "path": "/unitree/etc/master_service/cmd/ota-pipe",
+      "bytes": 236
+    },
+    {
+      "path": "/unitree/etc/master_service/cmd/ota-update",
+      "bytes": 199
+    },
+    {
+      "path": "/unitree/etc/master_service/cmd/pd-init",
+      "bytes": 218
+    },
+    {
+      "path": "/unitree/etc/master_service/service/ota_pipe",
+      "bytes": 433
+    },
+    {
+      "path": "/unitree/etc/master_service/service/video_hub_pc4",
+      "bytes": 738
+    },
+    {
+      "path": "/unitree/etc/ota_pipe/ota_pipe_hosts.json",
+      "bytes": 48
+    },
+    {
+      "path": "/unitree/module/master_service/default_logconf.json",
+      "bytes": 452
+    },
+    {
+      "path": "/unitree/module/master_service/master_service",
+      "bytes": 9083232
+    },
+    {
+      "path": "/unitree/module/master_service/master_service.json",
+      "bytes": 468
+    },
+    {
+      "path": "/unitree/module/video_hub_pc4/cyclonedds.xml",
+      "bytes": 158
+    },
+    {
+      "path": "/unitree/module/video_hub_pc4/videohub_pc4",
+      "bytes": 63592
+    },
+    {
+      "path": "/unitree/var/data/chrony/chrony_3.5-6ubuntu6.2_arm64.deb",
+      "bytes": 212496
+    },
+    {
+      "path": "/unitree/var/data/chrony/chrony_setup.sh",
+      "bytes": 1629
+    },
+    {
+      "path": "/unitree/var/data/ota_update/ota_update.sh",
+      "bytes": 4103
+    },
+    {
+      "path": "/unitree/var/etc/master_service/conflict",
+      "bytes": 3
+    },
+    {
+      "path": "/unitree/var/etc/master_service/forbid",
+      "bytes": 0
+    },
+    {
+      "path": "/unitree/var/etc/master_service/init",
+      "bytes": 52
+    },
+    {
+      "path": "/unitree/var/etc/master_service/manual",
+      "bytes": 3
+    },
+    {
+      "path": "/unitree/var/etc/master_service/once",
+      "bytes": 52
+    },
+    {
+      "path": "/unitree/var/etc/master_service/path",
+      "bytes": 3
+    },
+    {
+      "path": "/unitree/var/etc/master_service/plan",
+      "bytes": 3
+    },
+    {
+      "path": "/unitree/var/etc/master_service/prio",
+      "bytes": 3
+    },
+    {
+      "path": "/unitree/var/etc/master_service/protect",
+      "bytes": 21
+    },
+    {
+      "path": "/unitree/var/etc/master_service/cmd/am-init",
+      "bytes": 72
+    },
+    {
+      "path": "/unitree/var/etc/master_service/cmd/core-init",
+      "bytes": 93
+    },
+    {
+      "path": "/unitree/var/etc/master_service/cmd/ota-pipe",
+      "bytes": 236
+    },
+    {
+      "path": "/unitree/var/etc/master_service/cmd/ota-update",
+      "bytes": 199
+    },
+    {
+      "path": "/unitree/var/etc/master_service/cmd/pd-init",
+      "bytes": 218
+    },
+    {
+      "path": "/unitree/var/etc/ota_pipe/ota_pipe_hosts.json",
+      "bytes": 48
+    },
+    {
+      "path": "/unitree/var/log/master_service/master_service.LOG",
+      "bytes": 11483498
+    },
+    {
+      "path": "/unitree/var/log/ota_pipe/ota_pipe_service.LOG",
+      "bytes": 1878155
+    },
+    {
+      "path": "/unitree/var/run/master_service.pid",
+      "bytes": 5
+    },
+    {
+      "path": "/unitree/var/run/master_service.sock",
+      "bytes": 0
+    },
+    {
+      "path": "/unitree/var/run/pkg_version.lock",
+      "bytes": 0
+    },
+    {
+      "path": "/unitree/var/run/videohub_pc4.pid",
+      "bytes": 5
+    },
+    {
+      "path": "/unitree/robot/pkg/module/master_service_pc4/module.json",
+      "bytes": 2194
+    },
+    {
+      "path": "/unitree/robot/pkg/module/unitree_patch_pc4/module.json",
+      "bytes": 2880
+    },
+    {
+      "path": "/unitree/robot/pkg/module/video_hub_pc4/module.json",
+      "bytes": 1913
+    },
+    {
+      "path": "/unitree/robot/pkg/version/version.json",
+      "bytes": 160
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/bin/FlexFlowInvoker",
+      "bytes": 20112544
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/bin/MegaFlowRuntimeCli",
+      "bytes": 33526032
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/bin/MegaFlowRuntimeDaemon",
+      "bytes": 21448952
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/bin/MegaFlowRuntimeSpawner",
+      "bytes": 182760
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/bin/config.bin",
+      "bytes": 14640
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/bin/cos_config.json",
+      "bytes": 532
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/bin/debug.sh",
+      "bytes": 298
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/bin/install.sh",
+      "bytes": 630
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/bin/res.tar.xz",
+      "bytes": 1022988
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/bin/run.sh",
+      "bytes": 294
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/bin/uninstall.sh",
+      "bytes": 356
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/bin/res/MegaFlowStudio.ico",
+      "bytes": 103137
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/bin/res/app-loading.css",
+      "bytes": 720
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/bin/res/detect-ie.js",
+      "bytes": 303
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/bin/res/index.html",
+      "bytes": 855
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/bin/res/static/403-Ds1nJAex.js",
+      "bytes": 14187
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/bin/res/static/404-CWYnilA9.js",
+      "bytes": 52555
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/bin/res/static/ErrorPageLayout-CTLb_99k.js",
+      "bytes": 508
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/bin/res/static/ErrorPageLayout-CwUPYX8v.css",
+      "bytes": 183
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/bin/res/static/element-ta5zTiet.js",
+      "bytes": 976057
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/bin/res/static/face-CR2u4JKU.png",
+      "bytes": 6382
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/bin/res/static/iconfont.1729946347836-D4HyIDhF.woff",
+      "bytes": 21212
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/bin/res/static/iconfont.1729946347836-DDhY9P9i.ttf",
+      "bytes": 38572
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/bin/res/static/index-BFlvfpvo.js",
+      "bytes": 1300907
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/bin/res/static/index-BOMKG51t.css",
+      "bytes": 429
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/bin/res/static/index-Bvf1L8qd.css",
+      "bytes": 1237
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/bin/res/static/index-CK5Kcwug.js",
+      "bytes": 41500
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/bin/res/static/index-CazNiDSZ.js",
+      "bytes": 221
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/bin/res/static/index-CkyXzHJD.css",
+      "bytes": 15330
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/bin/res/static/index-CnNilW5Q.css",
+      "bytes": 14608
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/bin/res/static/index-DBPBOX0s.js",
+      "bytes": 2668
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/bin/res/static/index-Drm3r2QX.css",
+      "bytes": 579947
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/bin/res/static/index-DyVqUFBX.js",
+      "bytes": 80758
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/bin/res/static/index-uejiKKWD.js",
+      "bytes": 1948
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/bin/res/static/index.vue_vue_type_script_setup_true_lang-D7gn62GR.js",
+      "bytes": 1209
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/bin/res/static/logo-DnEqPhiQ.png",
+      "bytes": 103137
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/bin/res/static/vue-CP1l4rqT.js",
+      "bytes": 133589
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/bin/res/static/vxe-BO_OvH0x.js",
+      "bytes": 452641
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/data/mfrt.db",
+      "bytes": 32768
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/data/mosquitto.conf",
+      "bytes": 204
+    }
+  ],
+  "logs": [
+    {
+      "path": "/unitree/var/log/master_service/master_service.LOG",
+      "bytes": 11483498,
+      "tail_bytes": 65536,
+      "tail_sha256": "274c6255bfc88b09370d4934c88ec5fcffd8005fa1b7e2837cf4538fe04e2b67",
+      "matching_lines": 0,
+      "matches": [],
+      "truncated": true
+    },
+    {
+      "path": "/unitree/var/log/master_service/master_service.LOG",
+      "search_bytes": 11483498,
+      "search_sha256": "fd5e374d57dd1e496d7a89f1be86257a823366e8bc8827d66fc243d13a96141e",
+      "matching_lines": 61,
+      "matches": [
+        "[2026-01-05 23:14:32.707] [INFO] [1273] [1273] master service parse config content success. filename:/unitree/module/master_service/master_service.json",
+        "[2026-01-05 23:14:32.759] [INFO] [1273] [1273] master service parse config content success. filename:/unitree/module/master_service/master_service.json",
+        "[2026-01-05 23:14:32.812] [INFO] [1323] [1323] master service parse config content success. filename:/unitree/module/master_service/master_service.json",
+        "[2026-01-05 23:14:32.806] [INFO] [1270] [1270] master service parse config content success. filename:/unitree/module/master_service/master_service.json",
+        "[2026-01-05 23:14:32.778] [INFO] [1255] [1255] master service parse config content success. filename:/unitree/module/master_service/master_service.json",
+        "[2026-01-05 23:14:32.775] [INFO] [1322] [1322] master service parse config content success. filename:/unitree/module/master_service/master_service.json",
+        "[1970-01-02 08:01:40.033] [INFO] [1238] [1238] master service parse config content success. filename:/unitree/module/master_service/master_service.json",
+        "[2026-01-05 23:14:32.661] [INFO] [1275] [1275] master service parse config content success. filename:/unitree/module/master_service/master_service.json",
+        "[2026-01-05 23:14:32.825] [INFO] [1267] [1267] master service parse config content success. filename:/unitree/module/master_service/master_service.json",
+        "[2026-01-05 23:14:32.738] [INFO] [1326] [1326] master service parse config content success. filename:/unitree/module/master_service/master_service.json",
+        "[1970-01-02 21:57:58.269] [INFO] [1278] [1278] master service parse config content success. filename:/unitree/module/master_service/master_service.json",
+        "[2026-01-05 23:14:32.857] [INFO] [1276] [1276] master service parse config content success. filename:/unitree/module/master_service/master_service.json",
+        "[2026-01-05 23:14:32.714] [INFO] [1276] [1276] master service parse config content success. filename:/unitree/module/master_service/master_service.json",
+        "[2026-01-05 23:14:32.762] [INFO] [1276] [1276] master service parse config content success. filename:/unitree/module/master_service/master_service.json",
+        "[2026-01-05 23:14:32.822] [INFO] [1286] [1286] master service parse config content success. filename:/unitree/module/master_service/master_service.json",
+        "[2026-01-05 23:14:32.746] [INFO] [1264] [1264] master service parse config content success. filename:/unitree/module/master_service/master_service.json",
+        "[2026-01-05 23:14:32.755] [INFO] [1254] [1254] master service parse config content success. filename:/unitree/module/master_service/master_service.json",
+        "[2026-01-05 23:14:32.958] [INFO] [1265] [1265] master service parse config content success. filename:/unitree/module/master_service/master_service.json",
+        "[2026-01-05 23:14:32.951] [INFO] [1283] [1283] master service parse config content success. filename:/unitree/module/master_service/master_service.json",
+        "[2026-01-05 23:14:32.670] [INFO] [1251] [1251] master service parse config content success. filename:/unitree/module/master_service/master_service.json",
+        "[1970-01-01 08:00:45.166] [INFO] [1266] [1266] master service parse config content success. filename:/unitree/module/master_service/master_service.json",
+        "[2023-11-22 05:10:28.530] [INFO] [1347] [1347] master service parse config content success. filename:/unitree/module/master_service/master_service.json",
+        "[1970-01-01 08:38:58.237] [INFO] [1291] [1291] master service parse config content success. filename:/unitree/module/master_service/master_service.json",
+        "[2023-11-22 05:10:28.027] [INFO] [1296] [1296] master service parse config content success. filename:/unitree/module/master_service/master_service.json"
+      ],
+      "truncated": false,
+      "meaning": "文件历史日志；日期及 PID 均不足以证明属于当前启动"
+    },
+    {
+      "path": "/unitree/var/log/ota_pipe/ota_pipe_service.LOG",
+      "bytes": 1878155,
+      "tail_bytes": 65536,
+      "tail_sha256": "369fd3ef51db94949b7a3346450916230b113180ab1e8656601f02510a16df61",
+      "matching_lines": 1,
+      "matches": [
+        "[2023-11-22 05:10:28.011] [INFO] [1298] [1298] parse config success. filename:/unitree/ota/pipe/ota_pipe_service.json"
+      ],
+      "truncated": true
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/libhv.20261021.log",
+      "bytes": 1610,
+      "tail_bytes": 1610,
+      "tail_sha256": "ee57b0b6f62c327ce87d5c415aab7c82f08255d994caa81ab0aa3ff28a8a6cc3",
+      "matching_lines": 0,
+      "matches": [],
+      "truncated": false
+    },
+    {
+      "unit": "master_service.service",
+      "code": 0,
+      "lines_returned": 151,
+      "matches": [],
+      "error": "",
+      "bounded": true
+    },
+    {
+      "unit": "megaflowruntime.service",
+      "code": 0,
+      "lines_returned": 90,
+      "matches": [
+        "2026-10-21T09:39:27+0800 ubuntu run.sh[2679]: SELECT * FROM motionInfo LIMIT 36 OFFSET 0"
+      ],
+      "error": "",
+      "bounded": true
+    }
+  ],
+  "errors": [],
+  "roots": [
+    "/unitree/etc",
+    "/unitree/module",
+    "/unitree/var",
+    "/unitree/robot",
+    "/home/unitree/megaflow_sdk/ws/bin",
+    "/home/unitree/megaflow_sdk/ws/debug",
+    "/home/unitree/megaflow_sdk/ws/data",
+    "/home/unitree/megaflow_sdk/ws/flow"
+  ],
+  "bounds": {
+    "max_files": 1800,
+    "max_depth": 5,
+    "max_file_bytes": 65536,
+    "max_logs": 16,
+    "max_matches_per_log": 24,
+    "max_log_search_bytes": 16000000
+  },
+  "limitations": [
+    "Root process exe/cwd/fd links may be unreadable; no privilege escalation",
+    "Inventory and log tails are bounded; absence of matches is not proof of absence",
+    "Installed files and log messages do not prove active motor-controller use",
+    "Opaque binaries/config.bin/databases are not decoded; no parameter protocol guessed"
+  ],
+  "processes_after": [
+    {
+      "pid": 1296,
+      "ppid": 1,
+      "start_ticks": 2242,
+      "argv": [
+        "/unitree/module/master_service/master_service"
+      ],
+      "cgroup": [
+        "11:pids:/system.slice/master_service.service",
+        "10:cpuset:/",
+        "9:cpu,cpuacct:/system.slice/master_service.service",
+        "8:blkio:/system.slice/master_service.service",
+        "7:perf_event:/",
+        "6:net_cls,net_prio:/",
+        "5:freezer:/",
+        "4:memory:/system.slice/master_service.service",
+        "3:hugetlb:/",
+        "2:devices:/system.slice/master_service.service",
+        "1:name=systemd:/system.slice/master_service.service",
+        "0::/system.slice/master_service.service"
+      ],
+      "links": {
+        "exe": "PermissionError",
+        "cwd": "PermissionError",
+        "fd/1": "PermissionError",
+        "fd/2": "PermissionError"
+      }
+    },
+    {
+      "pid": 1298,
+      "ppid": 1,
+      "start_ticks": 2242,
+      "argv": [
+        "/unitree/ota/pipe/ota_pipe_service"
+      ],
+      "cgroup": [
+        "11:pids:/system.slice/ota_pipe.service",
+        "10:cpuset:/",
+        "9:cpu,cpuacct:/system.slice/ota_pipe.service",
+        "8:blkio:/system.slice/ota_pipe.service",
+        "7:perf_event:/",
+        "6:net_cls,net_prio:/",
+        "5:freezer:/",
+        "4:memory:/system.slice/ota_pipe.service",
+        "3:hugetlb:/",
+        "2:devices:/system.slice/ota_pipe.service",
+        "1:name=systemd:/system.slice/ota_pipe.service",
+        "0::/system.slice/ota_pipe.service"
+      ],
+      "links": {
+        "exe": "PermissionError",
+        "cwd": "PermissionError",
+        "fd/1": "PermissionError",
+        "fd/2": "PermissionError"
+      }
+    },
+    {
+      "pid": 2557,
+      "ppid": 1,
+      "start_ticks": 2791,
+      "argv": [
+        "/unitree/module/video_hub_pc4/videohub_pc4"
+      ],
+      "cgroup": [
+        "11:pids:/system.slice/master_service.service",
+        "10:cpuset:/",
+        "9:cpu,cpuacct:/system.slice/master_service.service",
+        "8:blkio:/system.slice/master_service.service",
+        "7:perf_event:/",
+        "6:net_cls,net_prio:/",
+        "5:freezer:/",
+        "4:memory:/system.slice/master_service.service",
+        "3:hugetlb:/",
+        "2:devices:/system.slice/master_service.service",
+        "1:name=systemd:/system.slice/master_service.service",
+        "0::/system.slice/master_service.service"
+      ],
+      "links": {
+        "exe": "PermissionError",
+        "cwd": "PermissionError",
+        "fd/1": "PermissionError",
+        "fd/2": "PermissionError"
+      }
+    },
+    {
+      "pid": 2676,
+      "ppid": 2674,
+      "start_ticks": 3210,
+      "argv": [
+        "/home/unitree/megaflow_sdk/ws//bin/MegaFlowRuntimeDaemon",
+        "-c",
+        "/home/unitree/megaflow_sdk/ws//bin/config.bin",
+        "-w",
+        "/home/unitree/megaflow_sdk/ws/",
+        "-d",
+        "127.0.0.1:8899",
+        "-i",
+        "-e",
+        "/home/unitree/megaflow_sdk/ws//dep/",
+        "-l",
+        "0"
+      ],
+      "cgroup": [
+        "11:pids:/system.slice/megaflowruntime.service",
+        "10:cpuset:/",
+        "9:cpu,cpuacct:/system.slice/megaflowruntime.service",
+        "8:blkio:/system.slice/megaflowruntime.service",
+        "7:perf_event:/",
+        "6:net_cls,net_prio:/",
+        "5:freezer:/",
+        "4:memory:/system.slice/megaflowruntime.service",
+        "3:hugetlb:/",
+        "2:devices:/system.slice/megaflowruntime.service",
+        "1:name=systemd:/system.slice/megaflowruntime.service",
+        "0::/system.slice/megaflowruntime.service"
+      ],
+      "links": {
+        "exe": "PermissionError",
+        "cwd": "PermissionError",
+        "fd/1": "PermissionError",
+        "fd/2": "PermissionError"
+      }
+    }
+  ],
+  "completed_at_utc": "2026-10-21T02:29:31.492978+00:00"
+}

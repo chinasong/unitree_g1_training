@@ -1,0 +1,230 @@
+{
+  "schema_version": 1,
+  "started_at_utc": "2026-10-21T03:40:52.623323+00:00",
+  "read_only": true,
+  "scope": "Only two exact large files; full symbol tables, dynamic exports, printable strings and fixed token bytes; no dlopen, archive extraction or vendor execution.",
+  "max_file_bytes": 209715200,
+  "command_writes": 0,
+  "rpc_calls": 0,
+  "vendor_program_executions": 0,
+  "runtime_memory_reads": 0,
+  "boot_id": "7a6791dc-f512-4b45-aca3-44fbde855e25",
+  "files": [
+    {
+      "path": "/usr/local/lib/libcryptopp.a",
+      "bytes": 158103474,
+      "sha256": "40c71d267d6fb97daab8a3dc7bac76f533f9ffc8f03cfd1a5bc173c89188cb84",
+      "kind": "archive",
+      "symbols": {
+        "command": [
+          "/usr/bin/nm",
+          "--demangle",
+          "--print-file-name",
+          "/usr/local/lib/libcryptopp.a"
+        ],
+        "returncode": 0,
+        "output_bytes": 4172317,
+        "line_count": 28215,
+        "has_symbol_output": true,
+        "matches": [],
+        "matches_truncated": false,
+        "generic_algorithm_line_counts": {
+          "Blowfish": 31,
+          "AES": 4,
+          "SHA256": 571,
+          "CBC_Mode": 11,
+          "ECB_Mode": 0
+        },
+        "realsense_api_line_count": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_nonempty": false
+      },
+      "archive_members": 168,
+      "archive_member_name_matches": [],
+      "printable_strings": {
+        "returncode": 0,
+        "total_lines": 447044,
+        "marker_line_counts": {
+          "unitree::security::": 0,
+          "Mixer": 0,
+          "UT_MIXER": 0,
+          "ParseConfigContent": 0,
+          "decrypt_and_parse": 0,
+          "master_service": 0,
+          "FMX": 0
+        }
+      },
+      "exact_byte_markers": {
+        "unitree::security::": 0,
+        "Mixer": 0,
+        "UT_MIXER": 0,
+        "ParseConfigContent": 0,
+        "decrypt_and_parse": 0,
+        "master_service": 0,
+        "FMX": 0
+      },
+      "standalone_fmx_string_count": 0,
+      "sha256_after": "40c71d267d6fb97daab8a3dc7bac76f533f9ffc8f03cfd1a5bc173c89188cb84",
+      "unchanged_during_read": true
+    },
+    {
+      "path": "/usr/local/lib/librealsense2.so.2.50.0",
+      "bytes": 161735304,
+      "sha256": "ef030d74fca4d9dd7531ae1505c1d95b9eb1d376d4a97a876cf1134d051cf61e",
+      "kind": "ELF",
+      "symbols": {
+        "command": [
+          "/usr/bin/nm",
+          "--demangle",
+          "--print-file-name",
+          "/usr/local/lib/librealsense2.so.2.50.0"
+        ],
+        "returncode": 0,
+        "output_bytes": 33929868,
+        "line_count": 125567,
+        "has_symbol_output": true,
+        "matches": [],
+        "matches_truncated": false,
+        "generic_algorithm_line_counts": {
+          "Blowfish": 0,
+          "AES": 0,
+          "SHA256": 0,
+          "CBC_Mode": 0,
+          "ECB_Mode": 0
+        },
+        "realsense_api_line_count": 13501,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_nonempty": false
+      },
+      "dynamic_symbols": {
+        "command": [
+          "/usr/bin/nm",
+          "--demangle",
+          "--print-file-name",
+          "--dynamic",
+          "/usr/local/lib/librealsense2.so.2.50.0"
+        ],
+        "returncode": 0,
+        "output_bytes": 26583979,
+        "line_count": 84621,
+        "has_symbol_output": true,
+        "matches": [],
+        "matches_truncated": false,
+        "generic_algorithm_line_counts": {
+          "Blowfish": 0,
+          "AES": 0,
+          "SHA256": 0,
+          "CBC_Mode": 0,
+          "ECB_Mode": 0
+        },
+        "realsense_api_line_count": 9357,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_nonempty": false
+      },
+      "needed": [
+        "libpthread.so.0",
+        "libusb-1.0.so.0",
+        "librt.so.1",
+        "libdl.so.2",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "sonames": [
+        "librealsense2.so.2.50"
+      ],
+      "build_ids": [
+        "903edfeb6a1a20fb3449ca11371778c7cc0ba044"
+      ],
+      "has_symtab": true,
+      "has_debug_info": true,
+      "printable_strings": {
+        "returncode": 0,
+        "total_lines": 629300,
+        "marker_line_counts": {
+          "unitree::security::": 0,
+          "Mixer": 0,
+          "UT_MIXER": 0,
+          "ParseConfigContent": 0,
+          "decrypt_and_parse": 0,
+          "master_service": 0,
+          "FMX": 0
+        }
+      },
+      "exact_byte_markers": {
+        "unitree::security::": 0,
+        "Mixer": 0,
+        "UT_MIXER": 0,
+        "ParseConfigContent": 0,
+        "decrypt_and_parse": 0,
+        "master_service": 0,
+        "FMX": 0
+      },
+      "standalone_fmx_string_count": 0,
+      "sha256_after": "ef030d74fca4d9dd7531ae1505c1d95b9eb1d376d4a97a876cf1134d051cf61e",
+      "unchanged_during_read": true
+    }
+  ],
+  "recheck": [
+    {
+      "path": "/unitree/module/master_service/master_service",
+      "bytes": 9083232,
+      "sha256": "380e34de9c2def2692c0bf1b73e969d3167c8270f2ed5f974bb01abd4e96f24e"
+    },
+    {
+      "path": "/unitree/module/master_service/master_service.json",
+      "bytes": 468,
+      "sha256": "31eae39936576504c40be767bd93cd34b7489154eca989e5e5c2781b05e3d977"
+    },
+    {
+      "path": "/unitree/robot/pkg/module/master_service_pc4/module.json",
+      "bytes": 2194,
+      "sha256": "ecfa15fd170078b6bf89cc02f2becf4672b8c6f3566607bdfbe2717424857771"
+    }
+  ],
+  "processes": [
+    {
+      "pid": 1296,
+      "argv": [
+        "/unitree/module/master_service/master_service"
+      ],
+      "start_ticks": 2242
+    },
+    {
+      "pid": 1298,
+      "argv": [
+        "/unitree/ota/pipe/ota_pipe_service"
+      ],
+      "start_ticks": 2242
+    },
+    {
+      "pid": 2557,
+      "argv": [
+        "/unitree/module/video_hub_pc4/videohub_pc4"
+      ],
+      "start_ticks": 2791
+    },
+    {
+      "pid": 2676,
+      "argv": [
+        "/home/unitree/megaflow_sdk/ws//bin/MegaFlowRuntimeDaemon",
+        "-c",
+        "/home/unitree/megaflow_sdk/ws//bin/config.bin",
+        "-w",
+        "/home/unitree/megaflow_sdk/ws/",
+        "-d",
+        "127.0.0.1:8899",
+        "-i",
+        "-e",
+        "/home/unitree/megaflow_sdk/ws//dep/",
+        "-l",
+        "0"
+      ],
+      "start_ticks": 3210
+    }
+  ],
+  "completed_at_utc": "2026-10-21T03:41:23.774910+00:00",
+  "received_at_utc": "2026-10-21T03:41:23.700725+00:00"
+}

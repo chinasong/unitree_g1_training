@@ -1,0 +1,145 @@
+{
+  "at_utc": "2026-10-21T12:45:34.869731+00:00",
+  "release": "861f842d8d59",
+  "run_id": "cb9ab226b9cf",
+  "robot": "G1 EDU 23 DOF / Orin",
+  "physical_writes_sent": 0,
+  "control_acquired": false,
+  "manual_armed": false,
+  "quantumult_x_modified": false,
+  "automated_queries": 39,
+  "browser_queries": 3,
+  "total_current_run_queries": 42,
+  "query_outcomes": {
+    "valid": 27,
+    "sdk_rejected": 15,
+    "3104": 0
+  },
+  "sdk_rejections": {
+    "7301": 12,
+    "3203": 3
+  },
+  "protocol_versions": {
+    "sport": "1.0.0.0",
+    "motion_switcher": "1.0.0.1",
+    "robot_state": "1.0.0.2"
+  },
+  "device_motion_firmware": null,
+  "selected_firmware_branch": null,
+  "rise_route_verified": false,
+  "full_remote_equivalence": false,
+  "capability_catalog_entries": 60,
+  "read_query_entries": 13,
+  "foundation_version": 23,
+  "foundation_id": "721c211ff1e456e62d123b8865c7c06373d54fa645f0c90d01ee186af5597712",
+  "actual_unknown_motor_fields": 253,
+  "safety_execution_allowed": false,
+  "tests": {
+    "python_passed": 239,
+    "node_passed": 5,
+    "frontend_build": "passed",
+    "known_warning": "existing 3D chunk size"
+  },
+  "deployment": {
+    "manifest_files": 480,
+    "all_sha256_match": true,
+    "official_processes_unchanged": true,
+    "loopback_only": true
+  },
+  "final_observation": {
+    "at_epoch": 1792586769.5760903,
+    "telemetry_age_ms": 16,
+    "joint_count": 23,
+    "fsm": 0,
+    "navigation_status": "idle",
+    "camera": {
+      "backend": "unitree",
+      "status": "live",
+      "error": null,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 1066,
+        "total_successes": 1066,
+        "total_timeouts": 0
+      },
+      "source": "unitree-videohub-b1731075ebc8",
+      "sequence": 1066,
+      "age_ms": 81,
+      "request_started_at": 1792586769.4950905,
+      "received_at": 1792586769.516949,
+      "width": 960,
+      "height": 540,
+      "source_width": 1920,
+      "source_height": 1080,
+      "request_ms": 22,
+      "timestamp_basis": "request_started_at",
+      "sensor_timestamp": null
+    }
+  },
+  "browser_results": [
+    {
+      "request_id": "54918355-0be2-40cd-8901-3e8986794582",
+      "capability": "get_state_api_version",
+      "label": "读取状态服务协议版本",
+      "at": 1792586612.8609838,
+      "updated_at": 1792586612.860984,
+      "mode": "robot",
+      "status": "read_result",
+      "message": "已读取官方返回值",
+      "data": {
+        "service": "robot_state",
+        "api_version": "1.0.0.2",
+        "firmware_version": null
+      }
+    },
+    {
+      "request_id": "bb4a6d5f-b7d9-42a2-a318-22c4a86f7097",
+      "capability": "get_motion_api_version",
+      "label": "读取模式服务协议版本",
+      "at": 1792586609.7197936,
+      "updated_at": 1792586609.719794,
+      "mode": "robot",
+      "status": "read_result",
+      "message": "已读取官方返回值",
+      "data": {
+        "service": "motion_switcher",
+        "api_version": "1.0.0.1",
+        "firmware_version": null
+      }
+    },
+    {
+      "request_id": "7dc57599-b567-43d3-89d8-97384d2b86b9",
+      "capability": "get_loco_api_version",
+      "label": "读取运动服务协议版本",
+      "at": 1792586603.965084,
+      "updated_at": 1792586603.9650843,
+      "mode": "robot",
+      "status": "read_result",
+      "message": "已读取官方返回值",
+      "data": {
+        "service": "sport",
+        "api_version": "1.0.0.0",
+        "firmware_version": null
+      }
+    }
+  ],
+  "limits": [
+    "All motor/load/firmware unknowns remain unknown.",
+    "No physical motion, mode, audio or light operation was verified.",
+    "7301 internal trigger unknown; protocol versions are not motion firmware.",
+    "Readback and camera statistics cover sampled windows only.",
+    "Old console shutdown logged five leaked semaphore warnings; not fixed in this change."
+  ],
+  "evidence_files": [
+    "G1_LOCO_READINESS_QUERY_VERIFICATION.json",
+    "G1_LOCO_READINESS_ORIN.json",
+    "G1_LOCO_READINESS_FINAL_STATE.json",
+    "screenshots/g1-loco-readiness-20261021.png",
+    "screenshots/g1-protocol-readback-20261021.png"
+  ]
+}

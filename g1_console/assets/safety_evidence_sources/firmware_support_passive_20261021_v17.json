@@ -1,0 +1,179 @@
+{
+  "current": false,
+  "checked_at_utc": "2026-10-21T06:55:02.160849+00:00",
+  "completed_at_utc": "2026-10-21T06:55:22.294668+00:00",
+  "boot_id": "b33a7dc5-2617-44cd-b353-041bab1c204f",
+  "duration_s": 20.131,
+  "total_publications": 137,
+  "relevant_publications": [
+    {
+      "topic": "rt/lf/lowstate",
+      "type": "unitree_hg::msg::dds_::LowState_"
+    },
+    {
+      "topic": "rt/lf/mainboardstate",
+      "type": "unitree_hg::msg::dds_::MainBoardState_"
+    },
+    {
+      "topic": "rt/lowstate",
+      "type": "unitree_hg::msg::dds_::LowState_"
+    },
+    {
+      "topic": "rt/lowstate",
+      "type": "unitree_hg::msg::dds_::LowState_"
+    },
+    {
+      "topic": "rt/lowstate",
+      "type": "unitree_hg::msg::dds_::LowState_"
+    },
+    {
+      "topic": "rt/odommodestate",
+      "type": "unitree_go::msg::dds_::SportModeState_"
+    },
+    {
+      "topic": "rt/state_estimator/fusion_odom",
+      "type": "nav_msgs::msg::dds_::Odometry_"
+    },
+    {
+      "topic": "rt/state_estimator/fusion_odom_torso",
+      "type": "nav_msgs::msg::dds_::Odometry_"
+    },
+    {
+      "topic": "rt/state_estimator/odom_pelvis",
+      "type": "nav_msgs::msg::dds_::Odometry_"
+    },
+    {
+      "topic": "rt/state_estimator/odom_torso",
+      "type": "nav_msgs::msg::dds_::Odometry_"
+    }
+  ],
+  "observations": {
+    "rt/lf/lowstate": {
+      "type": "unitree_hg::msg::dds_::LowState_",
+      "advertised": [
+        {
+          "topic": "rt/lf/lowstate",
+          "type": "unitree_hg::msg::dds_::LowState_"
+        }
+      ],
+      "samples": 191,
+      "last": {
+        "version": [
+          0,
+          0
+        ],
+        "mode_pr": 0,
+        "mode_machine": 4,
+        "tick": 3243586
+      },
+      "physical_source_verified": false,
+      "received_at_utc": "2026-10-21T06:55:22.244000+00:00"
+    },
+    "rt/lf/mainboardstate": {
+      "type": "unitree_hg::msg::dds_::MainBoardState_",
+      "advertised": [
+        {
+          "topic": "rt/lf/mainboardstate",
+          "type": "unitree_hg::msg::dds_::MainBoardState_"
+        }
+      ],
+      "samples": 191,
+      "last": {
+        "fan_state": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "temperature": [
+          48,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "value": [
+          47.960723876953125,
+          48.11543273925781,
+          1.25,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "state": [
+          32,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "physical_source_verified": false,
+      "received_at_utc": "2026-10-21T06:55:22.244171+00:00"
+    },
+    "rt/odommodestate": {
+      "type": "unitree_go::msg::dds_::SportModeState_",
+      "advertised": [
+        {
+          "topic": "rt/odommodestate",
+          "type": "unitree_go::msg::dds_::SportModeState_"
+        }
+      ],
+      "samples": 191,
+      "last": {
+        "foot_force": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "foot_position_body": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "foot_speed_body": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "body_height": 0.23406578600406647
+      },
+      "physical_source_verified": false,
+      "received_at_utc": "2026-10-21T06:55:22.244566+00:00"
+    }
+  },
+  "rpc_calls": 0,
+  "command_writes": 0,
+  "lease_requests": 0,
+  "motor_configuration_values_obtained": 0,
+  "limitations": [
+    "raw version uint32[2] has no verified decoding to motion firmware",
+    "mainboard fields have no firmware version member in pinned HG IDL",
+    "GO four-foot arrays have no verified G1 left/right force mapping",
+    "bounded discovery does not prove an interface absent",
+    "receipt time is not sensor acquisition time"
+  ]
+}

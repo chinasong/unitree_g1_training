@@ -1,0 +1,3218 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-22T16:47:02.758925+08:00",
+  "timezone": "Asia/Shanghai",
+  "workspace": ".",
+  "head": "e2f688b1bc2cb8327e4b89f2c3a36602a7bdcaed",
+  "branch": "master",
+  "snapshot_not_commit": true,
+  "includes_untracked_source": true,
+  "excluded_directory_names": [
+    ".agents",
+    ".aws",
+    ".codex",
+    ".g1-console",
+    ".g1-deploy",
+    ".g1-observer",
+    ".git",
+    ".pytest_cache",
+    ".venv",
+    "__pycache__",
+    "dist",
+    "externals",
+    "node_modules"
+  ],
+  "excluded_files": [
+    ".DS_Store",
+    "*.pyc",
+    "*.pyo",
+    "symlinks",
+    "this inventory itself"
+  ],
+  "file_count": 520,
+  "total_bytes": 16719205,
+  "groups": {
+    "(root)": {
+      "files": 16,
+      "bytes": 98497
+    },
+    "armdev": {
+      "files": 7,
+      "bytes": 317934
+    },
+    "cameradev": {
+      "files": 12,
+      "bytes": 5669378
+    },
+    "console": {
+      "files": 38,
+      "bytes": 331048
+    },
+    "doc": {
+      "files": 206,
+      "bytes": 6399931
+    },
+    "g1_console": {
+      "files": 157,
+      "bytes": 3301185
+    },
+    "g1dev": {
+      "files": 1,
+      "bytes": 11816
+    },
+    "legdev": {
+      "files": 1,
+      "bytes": 7762
+    },
+    "recorddata": {
+      "files": 10,
+      "bytes": 34073
+    },
+    "scripts": {
+      "files": 40,
+      "bytes": 313823
+    },
+    "tests": {
+      "files": 30,
+      "bytes": 229429
+    },
+    "trainging": {
+      "files": 1,
+      "bytes": 1458
+    },
+    "videodev": {
+      "files": 1,
+      "bytes": 2871
+    }
+  },
+  "git_state_counts": {
+    "tracked_modified": 3,
+    "tracked": 43,
+    "untracked": 473,
+    "ignored": 1
+  },
+  "entries_sha256": "dd91a172998a519bc27c0b433bf2d388870882309f6d1407b2956adc7e740022",
+  "entries": [
+    {
+      "path": ".gitignore",
+      "bytes": 759,
+      "sha256": "ef8781757447102821ff3fa3605bf47b1d112aea532e1c118cc73446feac0159",
+      "git_state": "tracked_modified"
+    },
+    {
+      "path": ".gitmodules",
+      "bytes": 1081,
+      "sha256": "7601de9ec4c9c8523488a6321f1c4fe409c56783f3fabd9415a71ef496b91dad",
+      "git_state": "tracked"
+    },
+    {
+      "path": "CLAUDE.md",
+      "bytes": 3078,
+      "sha256": "8fb7ef1beb9821f9b5197c9d992d98f8def7face0ac96ee7d880ce5b13a97c42",
+      "git_state": "untracked"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6269,
+      "sha256": "3b6cff524e493e878b4944fc56c700924d49b55a7900fbe51d476cb10615f6da",
+      "git_state": "tracked_modified"
+    },
+    {
+      "path": "armdev/armdev_data.py",
+      "bytes": 3966,
+      "sha256": "b09ad37aded71b9779452e597ac9fe6d7a715cf68d3d73741d30cc2c3048c9d6",
+      "git_state": "tracked"
+    },
+    {
+      "path": "armdev/g1_23dof.xml",
+      "bytes": 21281,
+      "sha256": "aaca282f79cc4cdd20fafa27656e766e35eb1455edb6f341165e27b137a036b6",
+      "git_state": "tracked"
+    },
+    {
+      "path": "armdev/g1_csv_to_lowcmd_player_with_legs.py",
+      "bytes": 4110,
+      "sha256": "d8ca0507d0f482e45fe188f6030ceda99e9ba4c25cee9dc5154cc62010569f7f",
+      "git_state": "tracked"
+    },
+    {
+      "path": "armdev/g1_csv_to_mujoco.py",
+      "bytes": 3118,
+      "sha256": "39afc1d54562371d70c8b469dccc27b29b1ca6fe0aa8f8b2f5d78bcb55548889",
+      "git_state": "tracked"
+    },
+    {
+      "path": "armdev/g1_joint_output.csv",
+      "bytes": 284602,
+      "sha256": "4105c28ce884bf45940abcab296d966e9ab6e70e90724c06f166cc5decd5a0be",
+      "git_state": "tracked"
+    },
+    {
+      "path": "armdev/testarmdev.py",
+      "bytes": 435,
+      "sha256": "e853cf855ef5f93e32bc664d98d9f25cf8d840f870b8d052314f3ba2906d9886",
+      "git_state": "tracked"
+    },
+    {
+      "path": "armdev/testdata.py",
+      "bytes": 422,
+      "sha256": "039b779987508af3f7e554fe4c266d81ffde2375a2d764abf61d37ce31ec7c6f",
+      "git_state": "tracked"
+    },
+    {
+      "path": "cameradev/G1_HUMOROUS_CHAT_README.md",
+      "bytes": 6664,
+      "sha256": "409fd8a021f69aa37ec4c8af0d68a0d99680f28dffb773bf243b73c270d62e14",
+      "git_state": "tracked"
+    },
+    {
+      "path": "cameradev/INSTALL_ROSPY.md",
+      "bytes": 6850,
+      "sha256": "3797bd3e64e44219ca585f41a192f3cbdb24c52cae6e3f99af5d47849d42d522",
+      "git_state": "tracked"
+    },
+    {
+      "path": "cameradev/RUN_GUIDE.md",
+      "bytes": 8515,
+      "sha256": "ba71ffda59b2c4101a6f377da5a721e7e88c07b03815ec5838b6cdfe3ebb694b",
+      "git_state": "tracked"
+    },
+    {
+      "path": "cameradev/cameratovoice.py",
+      "bytes": 2456,
+      "sha256": "cd49cbff5af3ac78d670a9162abd9019e58e14cfa645c091572dded28cf33978",
+      "git_state": "tracked"
+    },
+    {
+      "path": "cameradev/en_to_zh.js",
+      "bytes": 1889,
+      "sha256": "3402947a293d35e77354de3e2707b6aa40196b2f4f0fd09bfe043214fb259dfa",
+      "git_state": "tracked"
+    },
+    {
+      "path": "cameradev/env.example",
+      "bytes": 345,
+      "sha256": "f0be5adb4883276443959132788f2ff61ec52877b8d61c9b70b6a5b222dea5b6",
+      "git_state": "tracked"
+    },
+    {
+      "path": "cameradev/face_recognition_voice.py",
+      "bytes": 2945,
+      "sha256": "9fe3f1414ee4972e1805a870c91fc30932b64fec6cbf5197edfb5cdc33533558",
+      "git_state": "tracked"
+    },
+    {
+      "path": "cameradev/g1_cameratovoice.py",
+      "bytes": 1900,
+      "sha256": "d714b6e9ec392a733ea93c1d4dd0556b0c797eb57420d2ac01b7e2d7b5954836",
+      "git_state": "tracked"
+    },
+    {
+      "path": "cameradev/g1_face_recognition_voice.py",
+      "bytes": 3531,
+      "sha256": "bbabe476ca1cb7dc798466682243100fd8dda2c7a5babcc445d318c137395398",
+      "git_state": "tracked"
+    },
+    {
+      "path": "cameradev/g1_humorous_chat.py",
+      "bytes": 17701,
+      "sha256": "0efed300154ade44a0e0ca8f9566498d2e17e680dc06077248dccc4bde9dfa4c",
+      "git_state": "tracked"
+    },
+    {
+      "path": "cameradev/start_humorous_chat.sh",
+      "bytes": 2818,
+      "sha256": "aa08d00aca09bf9e0ec9bab452df6794559139b747097e13c76992e490b90894",
+      "git_state": "tracked"
+    },
+    {
+      "path": "cameradev/yolo11n.pt",
+      "bytes": 5613764,
+      "sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+      "git_state": "tracked"
+    },
+    {
+      "path": "console/web/index.html",
+      "bytes": 311,
+      "sha256": "0d2c40efc9476558b6fd59a89d45ff580cc7ee0f00dcf37a9b2a456acac1817e",
+      "git_state": "untracked"
+    },
+    {
+      "path": "console/web/package-lock.json",
+      "bytes": 65480,
+      "sha256": "0a8d9e64c0ef426d960fb2979ee87d761f9e2aba853549d676f5432f88cd711f",
+      "git_state": "untracked"
+    },
+    {
+      "path": "console/web/package.json",
+      "bytes": 614,
+      "sha256": "58a2b8868ba2c35ccfa9b54004513e3fb1631904f1095d55298f23ccfb7c56b7",
+      "git_state": "untracked"
+    },
+    {
+      "path": "console/web/src/App.tsx",
+      "bytes": 37649,
+      "sha256": "a17a84bf1fd16c99c86b5206066939f8fb1933ff894bc0859269eae4a8a06273",
+      "git_state": "untracked"
+    },
+    {
+      "path": "console/web/src/BodyKnowledge.tsx",
+      "bytes": 15308,
+      "sha256": "7b9367d52d07bfafb465bba36526312e78f7617a292ac1e0db60001bcd992736",
+      "git_state": "untracked"
+    },
+    {
+      "path": "console/web/src/BodyView.tsx",
+      "bytes": 7503,
+      "sha256": "56b3ecfa989f18ab9516a5c2da21e594091af53c7aac2f7fef67af6f12f84c91",
+      "git_state": "untracked"
+    },
+    {
+      "path": "console/web/src/CameraView.tsx",
+      "bytes": 4412,
+      "sha256": "da55e578c58ec5d9dd778dfe7e0af4ffe8fc01d54dea212bc9aa19bf9f74a9c9",
+      "git_state": "untracked"
+    },
+    {
+      "path": "console/web/src/ControllerReadiness.tsx",
+      "bytes": 8356,
+      "sha256": "c0f63f7bd0d5fcc909dd91529a8551f87ceaab207b4bc5c7adfa3f3a44194cfe",
+      "git_state": "untracked"
+    },
+    {
+      "path": "console/web/src/CurrentPosture.tsx",
+      "bytes": 1769,
+      "sha256": "b4598f923c17860beae024565f3b5fe885773135ecd199835df22cece635eec3",
+      "git_state": "untracked"
+    },
+    {
+      "path": "console/web/src/DampingTest.tsx",
+      "bytes": 2930,
+      "sha256": "82a49fee4563b681e07944b615cd716eeff719d261e94bf57c46bc6c867cf7d0",
+      "git_state": "untracked"
+    },
+    {
+      "path": "console/web/src/LocoReadback.tsx",
+      "bytes": 3183,
+      "sha256": "482f76fbf85a61553d042fa57be5f7532eb9f7e8bc28b30a1bc560666ec78489",
+      "git_state": "untracked"
+    },
+    {
+      "path": "console/web/src/MapView.tsx",
+      "bytes": 2981,
+      "sha256": "8a755b2827d4c2813e712d6e8db537ffd952f252d4ff4c0523534b4d16f11c85",
+      "git_state": "untracked"
+    },
+    {
+      "path": "console/web/src/MotionModeReview.tsx",
+      "bytes": 10493,
+      "sha256": "d113f5d04c0d2dec5d7e87a5e9dfeb0e3b143e5862b46fed54a075f6fdbdc98c",
+      "git_state": "untracked"
+    },
+    {
+      "path": "console/web/src/ObservationView.tsx",
+      "bytes": 5010,
+      "sha256": "93ca73a5cbfc617f5bc85ba6ac4b555cc4e7841dead2acbb717ca52d84ba1cd2",
+      "git_state": "untracked"
+    },
+    {
+      "path": "console/web/src/OfficialKnowledge.tsx",
+      "bytes": 15756,
+      "sha256": "27e6637036633d5f62c4865a0ffb14873349ca7503b756d708a5df397c104697",
+      "git_state": "untracked"
+    },
+    {
+      "path": "console/web/src/OfficialRemoteManual.tsx",
+      "bytes": 2658,
+      "sha256": "16346e18a7af96a7475dd150685772fdade9e212f69ae04c9fb996db2072af94",
+      "git_state": "untracked"
+    },
+    {
+      "path": "console/web/src/OperationDialog.tsx",
+      "bytes": 7763,
+      "sha256": "d2b802c0eb887178cb567eea13433b5d5ef6e24613d12832cd5c9294ec0a8897",
+      "git_state": "untracked"
+    },
+    {
+      "path": "console/web/src/RemoteOperations.tsx",
+      "bytes": 5003,
+      "sha256": "ffd55a0643f0b0345a85ffb5d51ffb1dabef4714f1dca09b56fae2a93d334459",
+      "git_state": "untracked"
+    },
+    {
+      "path": "console/web/src/RemoteView.tsx",
+      "bytes": 17076,
+      "sha256": "959d376d421c1ed29dac47c69d2f7c8e2aeef6b2447132d16ef21c618886d918",
+      "git_state": "untracked"
+    },
+    {
+      "path": "console/web/src/ServiceReadback.tsx",
+      "bytes": 1141,
+      "sha256": "1024cdd69a8019c7f01875e7d7c8aa65adc0d59630dfcab6ef6aac3e13e27170",
+      "git_state": "untracked"
+    },
+    {
+      "path": "console/web/src/StateLearningView.tsx",
+      "bytes": 14592,
+      "sha256": "2d13a74e7f306e040521af45c1461e64871cd60b3a8e0d0d70adb53d55d23329",
+      "git_state": "untracked"
+    },
+    {
+      "path": "console/web/src/api.ts",
+      "bytes": 823,
+      "sha256": "64969d81f1f59c61e45b886b2f3444461bcb5288be49ef15d642d322c9ea6e2b",
+      "git_state": "untracked"
+    },
+    {
+      "path": "console/web/src/deadman.ts",
+      "bytes": 1528,
+      "sha256": "aeba159ae420229e3180fb697af0abfd2e3d729bb8d3469cb57816e6226af42f",
+      "git_state": "untracked"
+    },
+    {
+      "path": "console/web/src/main.tsx",
+      "bytes": 155,
+      "sha256": "1411490ded30f203ea8d24183d9adf5c734984f1d6df8934f7fde5c56745eab5",
+      "git_state": "untracked"
+    },
+    {
+      "path": "console/web/src/queryReadback.ts",
+      "bytes": 1057,
+      "sha256": "d1e8d57399e5fb3f47355b6606e41c65f161496ff581d1e9526d63c8f8817473",
+      "git_state": "untracked"
+    },
+    {
+      "path": "console/web/src/serviceState.ts",
+      "bytes": 606,
+      "sha256": "8e0f308f8398585128273ec61a1745f507e7d4e88f47ba09a88bcce8ff4d6892",
+      "git_state": "untracked"
+    },
+    {
+      "path": "console/web/src/stateStream.ts",
+      "bytes": 1348,
+      "sha256": "9627bac5940f659a89d0d08f6d6dbbeba553d20a66075f70fb23c7ce9e73f92f",
+      "git_state": "untracked"
+    },
+    {
+      "path": "console/web/src/style.css",
+      "bytes": 54241,
+      "sha256": "56f1e63aafa1baa4caa49c3866c7aaacbe04bad7579c0857419fdde0df01cb3d",
+      "git_state": "untracked"
+    },
+    {
+      "path": "console/web/src/telemetryAge.ts",
+      "bytes": 404,
+      "sha256": "9f4b50b957d5de2db775d44e0cde0c53fef174707b9c68fbb4841141c79826b1",
+      "git_state": "untracked"
+    },
+    {
+      "path": "console/web/src/types.ts",
+      "bytes": 23962,
+      "sha256": "b182b6b122b0111b680d65b1f11beb5e580cbdb5b94d212eeb7225361ca63379",
+      "git_state": "untracked"
+    },
+    {
+      "path": "console/web/tests/deadman.test.mjs",
+      "bytes": 2518,
+      "sha256": "f4ecfd98d55f5a976e089005406a2733beb5a5c00485b2e7a95bd1ba398ef56b",
+      "git_state": "untracked"
+    },
+    {
+      "path": "console/web/tests/query-readback.test.mjs",
+      "bytes": 1716,
+      "sha256": "b8f7506992ee9efd6ff61dbeb9ad87ccf9616987d79ae7ada0d490fa97f625dc",
+      "git_state": "untracked"
+    },
+    {
+      "path": "console/web/tests/service-state.test.mjs",
+      "bytes": 996,
+      "sha256": "dc8821eaa64b3b3f2cecd0ff1be967971e84408468f9f1a57829d6df57474df6",
+      "git_state": "untracked"
+    },
+    {
+      "path": "console/web/tests/state-stream.test.mjs",
+      "bytes": 2048,
+      "sha256": "cf01603a1197487992f033efef42916c6a6046060aabc0322134d83402fd460c",
+      "git_state": "untracked"
+    },
+    {
+      "path": "console/web/tests/telemetry-age.test.mjs",
+      "bytes": 819,
+      "sha256": "ff666b56a9ef158c0a72e2689f9900303a3879b01ff2d7ef8ce0b45b7ead4d0d",
+      "git_state": "untracked"
+    },
+    {
+      "path": "console/web/tsconfig.json",
+      "bytes": 309,
+      "sha256": "b803cdce8dd07afd3381db687353248c3b79c0f618ba8f59373bdb42ddad3c89",
+      "git_state": "untracked"
+    },
+    {
+      "path": "console/web/tsconfig.tsbuildinfo",
+      "bytes": 8266,
+      "sha256": "142da04234e517bfd67e0c8959eb01ee7c180f07f5c573252288d09dd5a21a56",
+      "git_state": "ignored"
+    },
+    {
+      "path": "console/web/vite.config.ts",
+      "bytes": 264,
+      "sha256": "2d9c4fe5a952d59c55e59b012bd16fc159a8d7ee29163d34fe01a498f824fe5b",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/CLAUDE_CODE_HANDOFF_20261022.md",
+      "bytes": 36318,
+      "sha256": "c4195db9972c7145967877c3c8c4d2e3bd1d7f1386b518ad94b65d20dc86ce93",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/CLAUDE_CODE_START_PROMPT.txt",
+      "bytes": 1733,
+      "sha256": "7f57911ab95402fe356bbee30706b760db9ee6a5ea541e241dc29c448908bb63",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_AI_SPORT_HOST_DIAGNOSIS.md",
+      "bytes": 8658,
+      "sha256": "3d0c147ffb6ea165d57a58ec92cfc0d6ca08d0aba2fbe84ab8d12e9be6ac75c5",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_AI_SPORT_HOST_FINAL_STATE.json",
+      "bytes": 19250,
+      "sha256": "0e9075e72583ecccd14876215d45bd3c597e6238ef3b21a9916c7c0bbeec88ef",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_AI_SPORT_HOST_ORIN.json",
+      "bytes": 2720,
+      "sha256": "529cd9df40b3b04b6bde5ac17a32ae51952ae5d3b6da476c4ead199a233f6714",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_AI_SPORT_HOST_QUERY_VERIFICATION.json",
+      "bytes": 8576,
+      "sha256": "7b2000d4168265216ddf263f40de9ed69a582be6e491448f978b0bbe860b59d4",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_AI_SPORT_HOST_VERIFICATION.json",
+      "bytes": 3774,
+      "sha256": "4cabf60ce71667e6b340eb51062542e1b7f328149cf78a16b0cf8855062e7868",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_AI_SPORT_NODE161_FINAL_STATE.json",
+      "bytes": 16623,
+      "sha256": "8e50937b48e8653f5b6f3966155a23de9927e280ffad28d7ff6b98c33388e22f",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_AI_SPORT_NODE161_ORIN.json",
+      "bytes": 2720,
+      "sha256": "31c90b430ad9ba5473d99d07982c079fd67c6b51878ae39efa921223b9344955",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_AI_SPORT_NODE161_PREDEPLOY.json",
+      "bytes": 1916,
+      "sha256": "49bcb192e64424e4daf14c0be3ba7734a7fa69d8a7b002daf764a86dcba363ee",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_AI_SPORT_NODE161_READ_AUDIT.md",
+      "bytes": 9079,
+      "sha256": "25ce6ec5cc51722fd4866916464434fe1adc2d433aa8a83f34b0ee07a4a56802",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_AI_SPORT_NODE161_VERIFICATION.json",
+      "bytes": 7177,
+      "sha256": "2d152002fd4581200cf874b54b386fc0dfe1747f29c587880b18810972b30891",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_APP_EVIDENCE_REVIEW.md",
+      "bytes": 3881,
+      "sha256": "290e2e486b3644fd64c75b6dfcad5de1472fc44d8e2dac319183ec578b0e6680",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_APP_EVIDENCE_VERIFICATION.json",
+      "bytes": 5803,
+      "sha256": "dfcf6a7d169b8ec70ab0f6ff9d510b9144c815e555fa3ae9ea038e33e4f680d6",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_APP_NODE_HTTP_IDENTIFICATION_20261022.json",
+      "bytes": 789,
+      "sha256": "95851268a552a912bd56889d4aed98193af48c71de7bd91f06b0ef1cf501e74e",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_APP_NODE_PASSIVE_PROBE_20261022.json",
+      "bytes": 667,
+      "sha256": "00ecf1fdfd7221f2668560fd227e15b8f3b0ac2acd449db0dac0c98a894bb60a",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_AUTONOMOUS_OBSERVATION.md",
+      "bytes": 6248,
+      "sha256": "21e34b1d42596b6ccb8527baaed6bf6134a4bd810f3519779de393a67f147832",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_BOARD_PARAMETER_VERIFICATION.json",
+      "bytes": 1727,
+      "sha256": "78d2d3539d13f9aafd582e48eb0cf24fb84c7359476028ad4db1f4145315467d",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_BODY_CONSOLE.md",
+      "bytes": 17236,
+      "sha256": "36a375ec009dfc5c2838b0ad4d908efd29195db4209411c79bccaa272d5ebce1",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_BOOT_NETWORK_REACHABILITY_20261022.json",
+      "bytes": 24792,
+      "sha256": "e8aaefba1317cbf4091438afc91559194f1365054892b38ab6318207143cc44c",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_CABINET_APPLICABILITY_VERIFICATION.json",
+      "bytes": 25655,
+      "sha256": "b3a4579981d90b048fa0167e9555d3897d033ed7fffab09fa31cbf4f73543d3b",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_CABINET_SUPPORT_VERIFICATION.json",
+      "bytes": 7821,
+      "sha256": "826a9872f297f22269a9e3d67cacf411ada13560530186abd1ed0418750e8503",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_CAMERA_READONLY.md",
+      "bytes": 5801,
+      "sha256": "ea21f7bcf10e1712febd3176539cc1bb704f2365857b76cf0041241be762eb2b",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_CAMERA_RUNTIME_READONLY_20261021.json",
+      "bytes": 3867,
+      "sha256": "0164fc4613366f477141baeb6103f8ed22d1ebe8dd629c217b88287665534307",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_CAMERA_STABILITY_AUDIT.md",
+      "bytes": 5729,
+      "sha256": "31106108df0d4b43aa2cfc6038767e5d9c3afdd555f586d60e5a91d072e1d28d",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_CAMERA_STABILITY_VERIFICATION.json",
+      "bytes": 12114,
+      "sha256": "cfbae5c13da8b74040214502bc521018b083ddf46dddf8ae3b5d8c0734028d1b",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_CAMERA_VERIFICATION.json",
+      "bytes": 7988,
+      "sha256": "5714441ab43595818e780af341b1b20a3cc29102f4e85149b407e312c13ccfa4",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_CONFIGURATION_ANALYSIS_VERIFICATION.json",
+      "bytes": 6172,
+      "sha256": "125e4ef5eae231b1a43abb21a2951032a8c0b8a56f26a443c91d514cc3d2d601",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_CONTROLLER_READINESS_20261022.json",
+      "bytes": 25505,
+      "sha256": "eb5fcade6145ae529be356958e884445f8f27233ab2f639cfa55fc0c8b71584c",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_CONTROLLER_READINESS_20261022.md",
+      "bytes": 6282,
+      "sha256": "d256be668048b01c2134bb17b0238097df36c9460badee5151c3994525e9134d",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_CURRENT_POSTURE_ACCESSORY_TEST_20261022.json",
+      "bytes": 10713,
+      "sha256": "d8ba98115a682089e880bb57c926265a787f8445de691fb765fa94037e95eb35",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_CURRENT_POSTURE_ACCESSORY_TEST_20261022.md",
+      "bytes": 7012,
+      "sha256": "29fb9f75b752790994948cd6fe71d5de2e5a871c603dd9f422c747106b219c1f",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_DIAGNOSTIC_STREAM_READ_AUDIT.md",
+      "bytes": 2652,
+      "sha256": "55904ea69f7dd0235605e5414073b49160f414bf9adaf17fd61da4120d3f5df1",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_DIAGNOSTIC_STREAM_VERIFICATION.json",
+      "bytes": 1325,
+      "sha256": "7f83cacce4879db93df9060e00c65b7ae4abb2a1abab79e44aa9411e03373826",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_FMX_ANALYSIS.md",
+      "bytes": 4875,
+      "sha256": "9f57a95b75873a30067c70d2c850afde41f3967e8749b92fb6afb7a6d3df80b9",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_FMX_ANALYSIS_VERIFICATION.json",
+      "bytes": 6878,
+      "sha256": "12d93a66899b0e9fa0e82bf04875d63da2c1a3cd7733b47adc91340c3bbd8fa2",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_FMX_LOADER_SEARCH.md",
+      "bytes": 6603,
+      "sha256": "12af5b7ed998adcec32179a4c06f2cb9251064c4276316b5531ef4cde02ada23",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_FMX_LOADER_SEARCH_VERIFICATION.json",
+      "bytes": 8629,
+      "sha256": "356e678d9efea7ae6d0a79405b80df7000969990878b7fb55ef44ac0e9d6b247",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_FOUNDATION_VERIFICATION.json",
+      "bytes": 8004,
+      "sha256": "1bf154acc3e4424fb4beb3ecc687c2d0d3adffa551a393d53d923fb69e44e67f",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_GITHUB_PARAMETER_VERIFICATION.json",
+      "bytes": 3158,
+      "sha256": "0b50bac7b3b0bd65be1cc626dca7a5df1ebfb43bb37e0d50fbefcae0d70e244c",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_HISTORICAL_CONNECTION_RETEST_20261022.json",
+      "bytes": 4118,
+      "sha256": "2be68dc31cd4f360bbee6702380efd7398938124e0ceabd19e0c35edef491c6c",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_HUMANOID_FINAL_STATE.json",
+      "bytes": 14357,
+      "sha256": "2766689c5d92351846c4a48da14e50b140af39e4cc4397f40a6db78f3e377f61",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_HUMANOID_ORIN.json",
+      "bytes": 2682,
+      "sha256": "a2a1dc0253a176c33da24b2dfb3e8d0ffa98c03916d9c5e115161c03e6e75655",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_HUMANOID_PREDEPLOY.json",
+      "bytes": 2721,
+      "sha256": "7ba600dab92efb611c866b47c5e570d444b9fe3518b74bdf0e5163d848238b2e",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_HUMANOID_STATE_READ_AUDIT.md",
+      "bytes": 9601,
+      "sha256": "97f6d1a0ca1889bd6d6d41c6d09c954d256306d2d1e37057ce729d47c69d3209",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_HUMANOID_VERIFICATION.json",
+      "bytes": 9414,
+      "sha256": "515b4423f4c5cd5a3194676d9a41d2c1c32ee28243018bd306ea8ef6974119fa",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_INTERFACE_PARAMETER_VERIFICATION.json",
+      "bytes": 4513,
+      "sha256": "0e83706e88836c4f0fbf3b9166a31d276defa8d0134b66a1e42131ac561896d3",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_LAN_SSH_ENUMERATION_20261022.json",
+      "bytes": 32449,
+      "sha256": "e3b622f372fb7113c93ed10fab41111a5ab58f1de5c23be5bd21905347f4c59a",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_LARGE_LIBRARY_AUDIT.md",
+      "bytes": 6601,
+      "sha256": "34c36d49c0c34fbf854996082f764baba2a91fb9287e309191fd0ec90b69df7a",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_LARGE_LIBRARY_VERIFICATION.json",
+      "bytes": 10903,
+      "sha256": "f738200cf29f2277c5cea412e072def040e6868ac4015036b50b097a785644aa",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_LOCO_READINESS_DIAGNOSIS.md",
+      "bytes": 9264,
+      "sha256": "91fcb2e0b3acf723073f38899d30c1730938d5c1158e9a3f8262c9ab073dfbc6",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_LOCO_READINESS_FINAL_STATE.json",
+      "bytes": 281081,
+      "sha256": "dff62508472fa0e2d00adcd54b4a6e507630769a1e48515faa7275a93eb761a7",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_LOCO_READINESS_ORIN.json",
+      "bytes": 3546,
+      "sha256": "916f2ce9d9306bebab2a7cf2d62e2257f113fd8df79d7b8492b3bba8638a335e",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_LOCO_READINESS_QUERY_VERIFICATION.json",
+      "bytes": 70828,
+      "sha256": "aeeaff2048bdfa10f0f6d0eda516e99eb5f1bf227d07fec90be64a551a0e4d4e",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_LOCO_READINESS_VERIFICATION.json",
+      "bytes": 4280,
+      "sha256": "dcb30372b2f9f85a178632887a4276b9617b925fd02f38b4095bb49614751605",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_MAC_CODEX_ARCHITECTURE.md",
+      "bytes": 21661,
+      "sha256": "3580576649a9a2cbbe9406467fff9a902b09723fdef07dbb21655c554286a462",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_MAC_CONNECTION_CHECK.md",
+      "bytes": 15212,
+      "sha256": "61122df455edb95161a5c8d3a750373a6021b05afe5607599b19a3fcc9c9e327",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_MANUAL_REMOTE_VERIFICATION_20261022.json",
+      "bytes": 15235,
+      "sha256": "e9186c8b670a6aa0f2e86315c621ddd78b714b6949bb0ea70fdf8ad44907527d",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_MANUAL_REMOTE_VERIFICATION_20261022.md",
+      "bytes": 3891,
+      "sha256": "070d536f9851c5e5009c754a1d33567bfe4e808cdc547f121826427acfbe873e",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_MDNS_DISCOVERY_20261022.json",
+      "bytes": 719,
+      "sha256": "6960fc4458ec0b7583861fd8fc76599a2a92d626b7b59b7c0fea7db63ead2813",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_MODE_READBACK_AND_STANDING_AUDIT.md",
+      "bytes": 4352,
+      "sha256": "7487950fefb55a01c7d2eeda4d0b4d888cb1332edda127dd0bb1ed1ee6b54ee2",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_MODE_READBACK_AND_STANDING_VERIFICATION.json",
+      "bytes": 12974,
+      "sha256": "d54ecadc2fdcb613004aa910ea587ce352e8acf7c86d88eb792c77cb7d43ba10",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_MOTION_MODE_REVIEW_VERIFICATION.json",
+      "bytes": 12101,
+      "sha256": "3b4a0472225266d670eedcd5045532ec2f95fd70a4a4b0f7a4a83116cbba03bf",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_MOTOR_PARAMETER_AUDIT.md",
+      "bytes": 17811,
+      "sha256": "12fa120afe9cd879d978a6422dd75e126a7173a02ddb5aebf01975bc57bc0823",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_MOTOR_PARAMETER_VERIFICATION.json",
+      "bytes": 7586,
+      "sha256": "38fac880c8a7c78bde17e0b11f1ee0d3d4b59aef46725c920fe2ae43840744e2",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_NETWORK_ENTRY_PROBES_20261022.json",
+      "bytes": 2250,
+      "sha256": "b2a960867f4a337dcffb048c819525564c3d0f599e09a504749e640440148a06",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_OBSERVATION_VERIFICATION.json",
+      "bytes": 38235,
+      "sha256": "72151e7299c3f43ee3c5b2ca779072ddf9aef7e42ee3e9af2926fe33f22e47b0",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_OPAQUE_CONFIGURATION_AUDIT.md",
+      "bytes": 6409,
+      "sha256": "06d91fff9898a7ce45a96cdd033419d74af9d586aeeaee5a7d24c670f6157afd",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_OPEN_SOURCE_COVERAGE.md",
+      "bytes": 4134,
+      "sha256": "e53ae0e7c08fc1e94db42c8a80fcc480f0da3cbc226055656bb4a33f2433f093",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_OPEN_SOURCE_COVERAGE_VERIFICATION.json",
+      "bytes": 13116,
+      "sha256": "05d9429122421eb20f3e40c4ae573170c47582a140b197f8bb70946c99525dc8",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_ORIN_READONLY_DEPLOYMENT.md",
+      "bytes": 13366,
+      "sha256": "004b4e1db91a7829e3600c6ce142c3dc728e615b9ccec4d9683bde5cf5c1297c",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_ORIN_READONLY_VERIFICATION.json",
+      "bytes": 6653,
+      "sha256": "336710c5b545cd344650833249c598b02ab6725fbbafd60c54c66fc92b84c809",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_ORIN_WIFI_REPAIR_PLAN.md",
+      "bytes": 5492,
+      "sha256": "74644d6b0b0fe6488a57d9a811a01a5b2675ee128bd5b3a27c09b6cc74b01db1",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_OTA_VERSION_DIAGNOSIS.md",
+      "bytes": 6262,
+      "sha256": "a153845467ec14e26a467523b2cbc4abd8e2c466d3962b1dfe6a340e4b601707",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_OTA_VERSION_DIAGNOSIS_VERIFICATION.json",
+      "bytes": 4552,
+      "sha256": "86022d73cf8493e22a0bac616b1a37ef01c4955071c7925c3e69cfcf0eea7d67",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_POSTURE_SUPPORT_AUDIT.md",
+      "bytes": 7667,
+      "sha256": "5a8acff2d83ed50ed8d9bd637a55fd8e8290325844b74dfcaf54b020524e2547",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_POSTURE_SUPPORT_VERIFICATION.json",
+      "bytes": 25800,
+      "sha256": "405023eb6ada14ad05c46d9843103390defbf0935b48267de40fb4431182bc64",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_PROGRESS_HISTORY.md",
+      "bytes": 7389,
+      "sha256": "6d308a2c1c4e0317aa6e64b0d32f2b596c16749fe1c41678657209d9f834e206",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_PUBLISHER_READINESS_20261022.json",
+      "bytes": 19153,
+      "sha256": "31a448b69b8ac4c18a237b3acb4d146fac3eedc123466e0f75a24587cea435c9",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_PUBLISHER_READINESS_20261022.md",
+      "bytes": 8318,
+      "sha256": "a26ab892cec1d421b1dc4016765251a1d82bbeb5ba5d3438ecb4714cc95a0af8",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_REBOOT_NETWORK_AUDIT_20261022.json",
+      "bytes": 17831,
+      "sha256": "1040a36ccf170b7f53fbd0e015bdf2222c868539e1a5def285783ab6b2321dc8",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_REBOOT_RECOVERY.md",
+      "bytes": 13564,
+      "sha256": "94b6376e32b3285026921a1f96817620784407226f304eef7202d49507b9479c",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_REBOOT_RECOVERY_VERIFICATION.json",
+      "bytes": 8692,
+      "sha256": "e5344531ca26ea118415781136db9a748816f3df85c88123ceb804d58cf18803",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_REBOOT_REMOTE_VERIFICATION_20261022.md",
+      "bytes": 8428,
+      "sha256": "e97d0911501a2e8d48f4f472cd504eb8886171be0f7622b79bc6215b6e8abbc4",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_REMOTE_MANUAL_AND_DAMPING_TEST_20261022.md",
+      "bytes": 6877,
+      "sha256": "811d4814ff1579eec261f7dce88623e809cde90bc33842ad13f74f625dbd11be",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_ROBOT_FOUNDATION.md",
+      "bytes": 14934,
+      "sha256": "79e481548b769cd5dfa92f808bcd18f965ee8ebeecc399b8b26f1aefe04486f2",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_ROTATED_LOG_RPC_AUDIT_20261022.json",
+      "bytes": 21237,
+      "sha256": "b902436527309ea0eec63a811ebfb811652a9999dab67f7ba90dec339d47886d",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_ROTATED_LOG_RPC_AUDIT_20261022.md",
+      "bytes": 10229,
+      "sha256": "d3aef678b41bdd2e7f475d70c5a7737bbc6709eebfa9b94e10103afb14901edf",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_RPC_STATE_DIAGNOSIS.md",
+      "bytes": 10414,
+      "sha256": "b67dd1e5c4f9aaf841320cfa941c1802267fd8842d2aef6f7763ae930f863582",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_RPC_STATE_FINAL_STATE.json",
+      "bytes": 2632,
+      "sha256": "ebcbf532246f9b7d5b94b95e1fbe347bd89529f9855cce5dc43012deba8b08fd",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_RPC_STATE_ORIN.json",
+      "bytes": 2796,
+      "sha256": "1da0c4158070e83b6aed5e8b4f92244b8d7cc6f35c3862264df560838d32c65b",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_RPC_STATE_QUERY_VERIFICATION.json",
+      "bytes": 74802,
+      "sha256": "fa25f0becf70cfbfc970d23188e688703036abba84f1a2e499d2fcfa554c3808",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_RPC_STATE_VERIFICATION.json",
+      "bytes": 7015,
+      "sha256": "3c05205eaff40ff2e348864e5c632303b6b156d4ff49545c3a3d1508dfde7af2",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_RPC_STATE_VIDEO_TRANSITION.json",
+      "bytes": 6279,
+      "sha256": "b1fa9e38e41e9e193c409b8d17ad449b4fb4fdfa1a93dfde12dd61e66bfdacfd",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_SAFETY_EVIDENCE_AUDIT.md",
+      "bytes": 7004,
+      "sha256": "ccbf4b018baa3b7cf126fd4bc5fd85e3ee0e65fe7afee1880f4c045bd9d74420",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_SAFETY_EVIDENCE_VERIFICATION.json",
+      "bytes": 42473,
+      "sha256": "429141578b8a744873e071dae455129f3a0a87c6abe3c8c9d733a9d9bcb2a9f7",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_SEATED_STANDING_REVIEW.md",
+      "bytes": 18737,
+      "sha256": "fceadc17bc00eebaff85c2da76d60f72e211091d9d779d51010a3b0fc6e50318",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_SEATED_STANDING_VERIFICATION.json",
+      "bytes": 10582,
+      "sha256": "fd47fa600ac7f42acdc0bf2acab0e0acbbc3ae436b12ead11079b594564bf3f5",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_SERVICE_CAPABILITY_AUDIT.md",
+      "bytes": 6013,
+      "sha256": "118b3b84dfbedd0e307b289f21eb6b89b23af22d26748543168e91e128d3239d",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_SERVICE_CAPABILITY_VERIFICATION.json",
+      "bytes": 4993,
+      "sha256": "0dee6ff297aa14e306d9de5e981bb462ab438f6de3a3e5b7717901b44de4347e",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_SILENT_AND_VERSION_READONLY_20261022.json",
+      "bytes": 12543,
+      "sha256": "f487e96a525c0b5eb9a71d6a96472d8b54522b8f0c6c4d2dc8591ac702c15246",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_SOFTWARE_REMOTE.md",
+      "bytes": 22080,
+      "sha256": "5fe8f0cc9c5acd46de47469d36867a08ed5083fc766821123ed18b5e2b02ea09",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_SOFTWARE_REMOTE_COMPLETION_ORIN.json",
+      "bytes": 2695,
+      "sha256": "f080f588a6422aaed94b2da41e101d4c885c87a1b1bf885470ace06346d0bcf4",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_SOFTWARE_REMOTE_COMPLETION_VERIFICATION.json",
+      "bytes": 4738,
+      "sha256": "28c036737108ae3db90d952eb75fbd6de1463ed22c4dcc7aa48de0e39ec0d892",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_SOFTWARE_REMOTE_QUERY_VERIFICATION.json",
+      "bytes": 10885,
+      "sha256": "1e518bae785a4f670cada18371dd0dce64843d74aecf8c46d5decce6d3e33d93",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_SOFTWARE_REMOTE_READONLY_VERIFICATION_20261022.json",
+      "bytes": 28387,
+      "sha256": "dcd3cfa86f81e48067c3dda4ddc0a682820c2457c5afaec3461e09e6fd8a14cf",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_SOFTWARE_REMOTE_VERIFICATION.json",
+      "bytes": 5950,
+      "sha256": "b9e41bf793f02d6ab67a016b2e99c979c06e35de9e0129d82d12adf4b83f6801",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_SSH_NOMACHINE_ENUMERATION_20261022.json",
+      "bytes": 265,
+      "sha256": "210fc20fd50654dd3261245521ecfc68f9840843926b3e2f12870ffb0ed88a1f",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_STATE_SAFETY_AND_OTA_AUDIT.md",
+      "bytes": 7252,
+      "sha256": "f724cd350f5acf0b979120e3f6db58c9247614f0205b8ccab2383da795b66a20",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_STATE_SAFETY_VERIFICATION.json",
+      "bytes": 22665,
+      "sha256": "ad7055c1a37f46205ed4bda6aa3ad7940f278e59845244b2dac1d740801a929d",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_TARGETED_DISCOVERY_20261022.json",
+      "bytes": 1732,
+      "sha256": "ff2e5dd432274d1711d189dad4a4e86bc6caf060f6cd6f9c6eaf6897e37f5a9d",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_WIFI_DRIVER_READONLY_DIAGNOSIS_20261022.json",
+      "bytes": 9170,
+      "sha256": "7aff97f17f1b8dfec071ae2a8e740a712999c1fc2880cb189720ca373089e466",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/G1_WIFI_DRIVER_READONLY_DIAGNOSIS_20261022.md",
+      "bytes": 7855,
+      "sha256": "29a9dd653f5812a62db954d3b1e2626b9143890b2fc46ed0ff96e1c84502071f",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/UNITREE_UPSTREAM_UPDATE.md",
+      "bytes": 6786,
+      "sha256": "c63d2aaa1a1a26560c7a80ff825b17009a0f5fa094ef53c8d85179e20c8ac78e",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/diagnostic-streams-20261021/g1_diagnostic_streams_best_effort_v31.json",
+      "bytes": 6410,
+      "sha256": "0bbce524bf4e9664320edf26ae54331cfef1a49677396639becf366bfba58fc2",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/diagnostic-streams-20261021/g1_diagnostic_streams_v31.json",
+      "bytes": 4263,
+      "sha256": "910c2b2ec1d96f57cc6411fef588b974afab957997290ae828b25ed67b41120b",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/diagnostic-streams-20261021/g1_service_version_binding_90_v31.json",
+      "bytes": 5096,
+      "sha256": "ed586f09acbbab6d99552243dfd7f0b510f0256bd5b7def5ca8a736aed55d085",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/diagnostic-streams-20261021/g1_service_version_binding_v31.json",
+      "bytes": 5096,
+      "sha256": "c5e602d6a2867d963197810f1a51b6c95c40a19c8303c79a490654736c3f406e",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/env/catkin_ws.MD",
+      "bytes": 139,
+      "sha256": "5e8162eb85d7fe7a84f8e92a131cd6880421fa0b0ecae8c11092fe74ec32b0c9",
+      "git_state": "tracked"
+    },
+    {
+      "path": "doc/env/miniconda3.MD",
+      "bytes": 646,
+      "sha256": "5371aeb6c1dc1909b93197bd4b2347e6ec184f40f1663f2ea3702efb8b604875",
+      "git_state": "tracked"
+    },
+    {
+      "path": "doc/env/nomachine.MD",
+      "bytes": 1903,
+      "sha256": "2f6c310684e3e3c8fb995bb602243b15984ef7c1a289702b205cddcc1ac4252f",
+      "git_state": "tracked"
+    },
+    {
+      "path": "doc/env/nvidia.MD",
+      "bytes": 875,
+      "sha256": "aecf4ef8db72e673903a5802316737f98f82b6607b6e07a07cf4056a5ef78f9c",
+      "git_state": "tracked"
+    },
+    {
+      "path": "doc/env/ros1.MD",
+      "bytes": 3598,
+      "sha256": "e3c3f4fe500e49b6c8546f25591f01a241ac48aa20992b31605c8f75b010042b",
+      "git_state": "tracked"
+    },
+    {
+      "path": "doc/env/ros2.MD",
+      "bytes": 932,
+      "sha256": "7b4bf3abeaa067d2bfe4288f28dbdde9d0d97b10648a972b8a4c18feb936182e",
+      "git_state": "tracked"
+    },
+    {
+      "path": "doc/env/v2rayA.MD",
+      "bytes": 3265,
+      "sha256": "39a41132dddf1cdcb12f201c3c4bf214bab8ab23c45ae8e8122ea2d37c168162",
+      "git_state": "tracked"
+    },
+    {
+      "path": "doc/evidence/claude_handoff_20261022.json",
+      "bytes": 19776,
+      "sha256": "911b0889bcf724aaf89cbfc3c5da6b45f422d1404753d025437e1181350c42a1",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/evidence/damping_test_20261022/after_camera.jpg",
+      "bytes": 40795,
+      "sha256": "77d8c9aeff1c8c4c5d2ac84737553ced8092258fe00a0871d652be32d99e73e7",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/evidence/damping_test_20261022/after_camera.json",
+      "bytes": 828,
+      "sha256": "f72a83b83021d8c85a2ef5c4e94c3739bc57d3a9f862761c31297f5cd419d503",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/evidence/damping_test_20261022/after_queries.json",
+      "bytes": 1261,
+      "sha256": "7c8ae63906874219d52f596f9b9e2aecc1c1c65cf00be47b920f302045804fdd",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/evidence/damping_test_20261022/before_camera.jpg",
+      "bytes": 40584,
+      "sha256": "fd767bf6eed94af16fb19c5679d328d53699d0e42cc6626df8513d2c824bb56d",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/evidence/damping_test_20261022/before_camera.json",
+      "bytes": 826,
+      "sha256": "529427c8ad8f6e21aad32728d0efac1e9d16be64ff9c2eed49068db99ebff212",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/evidence/damping_test_20261022/before_queries.json",
+      "bytes": 1260,
+      "sha256": "b1199ac48609ac6df3fdd2fc5c41d6c6abc016c9051794b03deacee21cc33956",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/evidence/damping_test_20261022/observed_attempt.json",
+      "bytes": 148,
+      "sha256": "7c432eba2ba464063b9330019d7dbb94078fa6a6cbf2d09bc4b390bf06a2a3b4",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/evidence/damping_test_20261022/trace.jsonl.gz",
+      "bytes": 649938,
+      "sha256": "20809acd5901ffe46c57187b05e54be70f175831e507d930c506c48fdcc4b0d7",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/evidence/reboot_remote_20261022.json",
+      "bytes": 8350,
+      "sha256": "3fcc1ee4111d4f1af80887b09b4dd0a19ecf87581ed69816c6b86041059f2f7d",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/official/G1_REMOTE_CONTROL_23DOF_20260407.pdf",
+      "bytes": 566412,
+      "sha256": "b50e7a6382f7069461c047825771d99a58ca387113f9b17667172427fc44d569",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-23dof-manual-branches-20261021.png",
+      "bytes": 66125,
+      "sha256": "10ea7d6065a5c16de3e3152fe28f0a301fd5edf2321f1f9410185eec57d997e9",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-ai-sport-7301-20261021.png",
+      "bytes": 94209,
+      "sha256": "07389b3371466f950c8967d4b066948dc7d2768677a70d9ecfb4b0e6d0a8b75d",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-app-evidence-20261021.png",
+      "bytes": 59949,
+      "sha256": "000ded3174135f903c3de59f2cf6fd1dd4795e20e44756902795b979ee31c9b3",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-autonomous-observation.png",
+      "bytes": 48354,
+      "sha256": "7119a88ce9b6b96c6df2b39b211fc4346eb5abbc02653ca2544daad020716301",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-board-parameter-audit.png",
+      "bytes": 35311,
+      "sha256": "5187456521cd0e32a51317a39137eb4b0c87b2ae631ea7a7969828dbf6e97023",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-body-console.png",
+      "bytes": 59300,
+      "sha256": "626a876a80b504448736e9e5c9fcf329097675e379d83b05d5867c11ae789287",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-body-foundation-state.png",
+      "bytes": 40569,
+      "sha256": "a266db148ef1718eecd69c64dbb402e9752fec27c0a9666d2354e7fb44ac0d8e",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-cabinet-applicability-v18.png",
+      "bytes": 63602,
+      "sha256": "9c14133d9fe43b725875c138468ea3c7b5b7f247bcdac2e0c5d6aeaca7f5f0b8",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-cabinet-support-v17.png",
+      "bytes": 53196,
+      "sha256": "b1e2e8f35c4eb0a5dec6f98737a6141d3218ceabe7dd87b3ec2d1eea143d41f7",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-camera-scene-v13.jpg",
+      "bytes": 33005,
+      "sha256": "efcbed0290d5ec0ef993d99503e52fc74a1ba4c9262a1f971288ac049b97a705",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-capability-conditions.png",
+      "bytes": 42563,
+      "sha256": "16a9640826c62b1988b858ab0f014d91bccf2e180420eac950aa910daa7ffea5",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-capability-overview-20261021.jpg",
+      "bytes": 43440,
+      "sha256": "7851e8262c398bf481a8f0c4a198a09ed750cc8f0f96a28aa8cfa8b9ba3f7751",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-capability-parameters-20261021.jpg",
+      "bytes": 45600,
+      "sha256": "854a46de9ce63a0ce7b1ed2b6bbb38d5bbb1d4120be7245fe2cc1c3e0ef29feb",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-configuration-format-20261021.jpg",
+      "bytes": 50066,
+      "sha256": "3a56611760a5d803edd43972c0812c8919b7a66942226f56ce061ffe7f9a62bb",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-controller-readiness-20261022.png",
+      "bytes": 32883,
+      "sha256": "be9f9445ca3e8de346a4a68fc8fadfebe70ddfb906ca4cd646249bc4471178d2",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-current-posture-accessory-20261022.png",
+      "bytes": 33434,
+      "sha256": "582cd647f18fc0538903a943adacf703c1963d99cf3c260f341ab065ce9dda68",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-current-scene-20261022-130635.jpg",
+      "bytes": 40320,
+      "sha256": "95ddfdfaa3e816d4000c36ab472b0394559d7b0427e1b18047e0baa76828c6c8",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-fmx-analysis-20261021.jpg",
+      "bytes": 50903,
+      "sha256": "c4b60e8a5f1b6d1f3dd067ca04b4f983ea1af79e7bb32fd9e38de24cdfd2d9f1",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-fmx-loader-search-v9.jpg",
+      "bytes": 44571,
+      "sha256": "3735eb4224d3d888eff39249288e2744ada3a6c3a80a54724b59e51e93f8bcb7",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-fsm-parameters-demo-20261022.png",
+      "bytes": 35365,
+      "sha256": "b7e10cf653ea08e27e3ac4dc83d763e0398739abd92e8daab599c767d97dd9e4",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-github-parameter-audit.jpg",
+      "bytes": 53509,
+      "sha256": "f03d71bcbf817e82d9e40914645a7ab82b1222e9c69bcef0ab45bb5bac8bc30f",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-human-posture-confirmation-v16.png",
+      "bytes": 46070,
+      "sha256": "a94857d5190bd98633fd1666df7d71349b5fb25f6aa581479d021b390194be80",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-humanoid-state-audit-20261021.png",
+      "bytes": 94380,
+      "sha256": "dd1d1cc708e7a256dcbb631c92ff286f7623261b4d9abfbd5456d5b6bd1e8f70",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-interface-parameter-audit.png",
+      "bytes": 51967,
+      "sha256": "54c8782098aa8ee3e6df4f8d452675026f9a9bebbff7ed8f37b7f1fa780ecb13",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-large-library-audit-v10.jpg",
+      "bytes": 54374,
+      "sha256": "a38dcf5bfd902a3a5f5e6c9993216fb945414d4a95a13b83b0ab3ba200d396e5",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-loco-readiness-20261021.png",
+      "bytes": 101579,
+      "sha256": "2726425c1b610f98c2de91c2ad638f0235d28c7fe46b5b32536d590eb7857cdd",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-locostate-expiry-20261022.png",
+      "bytes": 32551,
+      "sha256": "54d69859ea8891f10401af13cd2772a30db3480167e17ea409c39d8f568818ae",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-manual-balance-preflight-20261022.png",
+      "bytes": 29480,
+      "sha256": "057b878d8ca8c045a0a00362eed77443878a9408c9717456eab2e9b466bd1011",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-manual-remote-verification-20261022.png",
+      "bytes": 28001,
+      "sha256": "6c23a406c73aafd397a64e7728e0975e54b3602a9b2206b610177c4d5aed892d",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-manual-rise-preflight-20261022.png",
+      "bytes": 31626,
+      "sha256": "1c6927827e79c907ad9f4096f4de92a48ae7e8d96ff096e36d32956a087bd898",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-mode-conditions-20261022.png",
+      "bytes": 37885,
+      "sha256": "a97f4fd392bf5ed82e20c525c5356b3f24c46f6271d66470c5e5cbc05ce75294",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-mode-standing-v15.png",
+      "bytes": 51297,
+      "sha256": "1d56f7f14882dfa07168f6acbbe47fbe420a41dccea64ffee9f89b8b79156219",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-motion-mode-review-20261021.png",
+      "bytes": 56629,
+      "sha256": "da1125dc2560980c9cb3b21e9d2f82ea79f9ddacd62d9ebbd066a442fff6f7f1",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-motor-foundation.png",
+      "bytes": 38915,
+      "sha256": "6c7bd6474b7453286af3934786949462b0ec771abc7ff3c5c3751660c306cdca",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-motor-parameter-audit.png",
+      "bytes": 34393,
+      "sha256": "aab64fb55ace51818f0dd0134038c7f7abd1cf7e49be46d5be28687791506cdc",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-navigation-verified.png",
+      "bytes": 61092,
+      "sha256": "f7e7073f055778dc967bdeaca80f7696147f27bff090a9b7f9040f8bfcc65af8",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-node161-read-audit-20261021.png",
+      "bytes": 112009,
+      "sha256": "681f127ab0f1d7a7c007fb0ad56dc2b4d3cf0e4cb48200fcdabbaf95b79c4f96",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-observation-paused.png",
+      "bytes": 42745,
+      "sha256": "cbfac9be446dc9c04e7c9d4c4f01dfde35e5dd3dc8dc64bf56a0e652d311b6d6",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-observation-suggestions.png",
+      "bytes": 47573,
+      "sha256": "5034e2b2c7bee326f508cf9fd4fc3913d5040ec791d937db361f06b439acbfbc",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-offline-manual-20261022.png",
+      "bytes": 39661,
+      "sha256": "6634d0c7da58294a9bf1d8f88fe2e4bd97f441829f5fb10f108a304ec55d56e9",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-ota-version-diagnosis-20261021.png",
+      "bytes": 65754,
+      "sha256": "2211465edc42de3de0d1713e3ca58314155b65294395383d091b17ca32345105",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-posture-live-v14.jpg",
+      "bytes": 33393,
+      "sha256": "792d8689ad68e3c21a80c0399c2034358e64d9199e6af8304cc3f3510353a8aa",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-posture-scene-v14.jpg",
+      "bytes": 41024,
+      "sha256": "9143f78a1b77bbda21152b9b73979a8d16a2aa20c2538544f748cbb9438f7505",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-posture-support-v14-feet.png",
+      "bytes": 49664,
+      "sha256": "57eaf1f629ae3c954328581f10807a2bbad369579b257e3e00417c043f2cd5ae",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-posture-support-v14.png",
+      "bytes": 38639,
+      "sha256": "ffec4975d10ca4a7a662f8a3098957ea532fb94673b13f0f6aa475255399604a",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-protocol-readback-20261021.png",
+      "bytes": 27993,
+      "sha256": "4fcc553a8b576f18daceccd23ff889d3e916453fc51acbf66e453fdc7f92f9c7",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-publisher-readiness-20261022.png",
+      "bytes": 44867,
+      "sha256": "d4b5059ec51438fc375a65c7585f9a1c1b43409163446e013ed5c4ba2807f12d",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-query-package-3203-20261022.png",
+      "bytes": 102637,
+      "sha256": "e0a19168ddca3cfb866bc3ac3b483dd2576cd98d3a4785e2324af1e13bc9347a",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-query-readback-20261022.png",
+      "bytes": 98367,
+      "sha256": "cbef071f8509a15b0662caf13e31b576ad107e9479484c07ac3330198727ba8b",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-readiness-balance-preflight-20261022.png",
+      "bytes": 29487,
+      "sha256": "b6397457382046e60db2f3805e8815544dbf291f848235926855de01a15c4e3b",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-readonly-remote-20261022.png",
+      "bytes": 30111,
+      "sha256": "9a429a24f547191dbfcf514e67d11cd6206dd843d901b0a82e8287142cdf581c",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-readonly-remote-overview-20261022.png",
+      "bytes": 81019,
+      "sha256": "2c3173ef9acf596bb4d5a8e92c84321a011fb33b607eb6fd75b53763d485d59a",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-real-camera.png",
+      "bytes": 37450,
+      "sha256": "c99234940cf69ad5be47e9d409884fbf01cc48bccb9d521adb98ca60626402b4",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-real-capabilities.png",
+      "bytes": 47521,
+      "sha256": "6d4bee6578490fac0699c4c4130605e8b73a287dfc1429af4843a9aaac14fe87",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-real-readonly.png",
+      "bytes": 48613,
+      "sha256": "5b49fe9d97f248280898b2e35ffcf9cdaccb0573892bb0ef9a37b7b58d09cfeb",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-reboot-recovery-20261022.png",
+      "bytes": 52352,
+      "sha256": "6e0a9d5d13557d250857790d23814fbd71c903911e5721fea9e3d5381b89098d",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-reboot-remote-20261022.png",
+      "bytes": 30367,
+      "sha256": "ecff9c580360c2a3b9f7cd304025e394726f867df06c70420e56ad190b9f3ed5",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-rpc-state-diagnosis-20261021.png",
+      "bytes": 70107,
+      "sha256": "4aee001763b6dc3dea2a25b2022621e2a836176ded04c32675e6e3d08497d0d4",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-safety-conditions-v11.jpg",
+      "bytes": 46807,
+      "sha256": "aae66194d8673852eeb78b6aa692adafaf7d2215e42c2fb35a8da8195568bfaa",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-safety-scene-v12.jpg",
+      "bytes": 36899,
+      "sha256": "6859e0f520a57c6c4f7460841138174e6008343c29c7e47a869d77b82e44f4b2",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-service-audit-20261021.jpg",
+      "bytes": 46775,
+      "sha256": "238040644c7cd6962b63fa3e705c2210929da6dd7959f0177327fffaa942ff06",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-service-readback-20261021.png",
+      "bytes": 43627,
+      "sha256": "8212c7fb1a9ccbe7735336be7e11fe6fe7f59d5ab226052069bfa06126f885f8",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-software-remote-complete-20261021.png",
+      "bytes": 42061,
+      "sha256": "83c601daed79f6f011a9c6c10e966a384e9f30e85d4ccad6bdbcfb251bed6379",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-software-remote.png",
+      "bytes": 36118,
+      "sha256": "2d90e24c2dcca872e370f97cd56e2b2760669e571eb89edd931192d21968ec2b",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-state-safety-v11.jpg",
+      "bytes": 38944,
+      "sha256": "a4931df01ea2796203c898b06c16f7fbaed833321d71f59b0eaa0bbaf2e15a93",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-v12-body.jpg",
+      "bytes": 49652,
+      "sha256": "ec170ece2a15f1f0224be5f78bf0209c20884c416f66163410bc57ec21599cb7",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-v12-camera-live.jpg",
+      "bytes": 47100,
+      "sha256": "4829f0f0f52652bbdeb36075718e8b5d91edf69b4d004d77cf101320307afb43",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-v12-camera-timeout.jpg",
+      "bytes": 47096,
+      "sha256": "6632927fe34eb805651a5ddf10f7fe99dab13f62ba81ccd954564f8fc4438cee",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-v12-safety.jpg",
+      "bytes": 80302,
+      "sha256": "a9cc05d60a74fb65c291b5cdcb34a5027542ef37e4571ca6d92bbc40bf809731",
+      "git_state": "untracked"
+    },
+    {
+      "path": "doc/screenshots/g1-v13-camera-live.jpg",
+      "bytes": 42582,
+      "sha256": "b60ae71a544ebe9316012795520398182fd4b6f46857fd7d814fc822bd65c667",
+      "git_state": "untracked"
+    },
+    {
+      "path": "douji_voice_chat_ubuntu.py",
+      "bytes": 29381,
+      "sha256": "eb1c0f7a149406e4ef5e628d428756e01672329c91ff96429bc786138687b475",
+      "git_state": "tracked"
+    },
+    {
+      "path": "g1_console/__init__.py",
+      "bytes": 84,
+      "sha256": "0bcf1bc2a3d35e84c63b3aededeaeee0ac641e858a3f24a12bb6b44f4b2fa08c",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/__main__.py",
+      "bytes": 2192,
+      "sha256": "e82e046515af7d2e113d3dab1c3fee0de679c7f4c8eda0222c2789328e2e93b8",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/adapters.py",
+      "bytes": 14608,
+      "sha256": "7d404e1120da62b70d4ada57372ddb0fb4f6272b78f9b97e15edcc3481cd8142",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/app.py",
+      "bytes": 11368,
+      "sha256": "2b4c8baed7f5143d3e4a9ff0adfbc8a3b0982f68136119f572c5421016d16e8e",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assessment.py",
+      "bytes": 7556,
+      "sha256": "de9804a7fb6da4d186dcb40c2142fd1680e775522f2ed60d0cb90521510c96f5",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/UNITREE_MODEL_LICENSE.txt",
+      "bytes": 1561,
+      "sha256": "aef6394ba1597725a68308167324e675f562e6606027404deb1b9da254c2b9c1",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/board_audit_sources/g1_23dof_rev_1_0.xml",
+      "bytes": 20834,
+      "sha256": "8ca62fcccdca91a431ca04f1a42f9c2fda241fdd5e13411168dc82de00f978de",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/board_audit_sources/passive_read_20261021.json",
+      "bytes": 91200,
+      "sha256": "770d01aca57989a42a8bb10e3a7a909baf8ff42689f0f10f8d639a07cd3a0d11",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/capability_sources/g1_agv_api.hpp",
+      "bytes": 1053,
+      "sha256": "185d5063a282a4223331bb8471e89bb0e6dbc2259a43d54995be6cf5de150de0",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/capability_sources/g1_agv_client.hpp",
+      "bytes": 3685,
+      "sha256": "fe3c41847c2fcf5ecd042faf7ca0a04793f84f107ce2e4a945f953baf0a600c8",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/capability_sources/g1_agv_error.hpp",
+      "bytes": 488,
+      "sha256": "3ab35d248d3efe846413c3c223bade2595a2e098e62f33c25a27d7e28f16a520",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/capability_sources/g1_arm_action_api.hpp",
+      "bytes": 603,
+      "sha256": "d7610da8a620a7ce640edfe7cdbba803763321c0cfe0b362b7f2016545205d26",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/capability_sources/g1_arm_action_client.hpp",
+      "bytes": 3347,
+      "sha256": "10110c2bb33e10c3b8b811978dc769808eec399095add4197c9d43837fbb6e33",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/capability_sources/g1_arm_action_error.hpp",
+      "bytes": 857,
+      "sha256": "71da4d4932e15c168f82f123902d52ce0074a7f2dcf7ae43cb3e34ee2a5a40f8",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/capability_sources/g1_audio_api.hpp",
+      "bytes": 2206,
+      "sha256": "40d83bda7cf52a0bbffb8dc53f73c42efce9c91d23435eb4c55ab0fa14ffcae9",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/capability_sources/g1_audio_client.hpp",
+      "bytes": 2947,
+      "sha256": "01108471362e15c3dec01db77023da520b3450725fd72a52b934cec39492fd0c",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/capability_sources/g1_audio_error.hpp",
+      "bytes": 343,
+      "sha256": "edb776ce3e8928be0c8e238afef0e326cc98da1a98f87134e0bdf122bc10fc84",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/capability_sources/g1_loco_api.hpp",
+      "bytes": 2269,
+      "sha256": "db7f771fad9ab8d40b3f3bf3651df28ee9cde1a937ae21dcdae2f4165f37e0ce",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/capability_sources/g1_loco_client.hpp",
+      "bytes": 8538,
+      "sha256": "d9aabe78918312c2ec60c5df94653e81319eb6730cc1479372a09849d99cd361",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/capability_sources/g1_loco_error.hpp",
+      "bytes": 517,
+      "sha256": "8b33d73f9857d1581c11b362d2705f031020a084db12b00cadfaac0255f46579",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/capability_sources/sources.json",
+      "bytes": 5624,
+      "sha256": "4f15001025f054ce1f4f3abdba6c2da45446d4704712d048779330237f4b90d6",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/g1_23.json",
+      "bytes": 33843,
+      "sha256": "9dad426d00f160a9a8fc62e7cf6135de14fdbbc5f218d89c072ac685b2f61a8a",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/g1_board_parameter_audit.json",
+      "bytes": 1307,
+      "sha256": "9219294786d0e290bafe89224b76f6ea136995fc845c3ce2fc09cf9c502a1083",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/g1_device_parameter_audit.json",
+      "bytes": 3225,
+      "sha256": "f12fdb3acaf1fa58b744c5e99723fee0b51e9e79d8395d5f0c55be296a08cf23",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/g1_github_parameter_audit.json",
+      "bytes": 7885,
+      "sha256": "21fb7e65da4097b85c71ddaf85c837dd2e4fb0a450f1d4f28a69c17b08014a69",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/g1_interface_parameter_audit.json",
+      "bytes": 12753,
+      "sha256": "bc6316fe57802f7844b73b45760ff557b024742bd2f4486b105e80bfcfd1ece0",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/g1_motion_control_review.json",
+      "bytes": 55135,
+      "sha256": "649c3795df7fc5214c0fe5f699bf364a6f3a0f0cdeee903753468598d6aed696",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/g1_motor_knowledge.json",
+      "bytes": 543339,
+      "sha256": "f17e1805723258808a2c3c17b5cc8a6ddcbae70ff55470af868991eff7f5e964",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/g1_safety_evidence_audit.json",
+      "bytes": 23338,
+      "sha256": "6149d3f9525d6b8f7d5ad6cbe3867f5aa32d22b990605284343dce2f167153e3",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/g1_standing_support_audit.json",
+      "bytes": 6622,
+      "sha256": "dbc1981dbdba1c86ec4aaaf470c6a3fca0405f2044c7b69939ed208e8efb71e0",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/github_audit_sources/review_20261021.json",
+      "bytes": 104209,
+      "sha256": "b1705308f2fd8d478e39a7c2159df9c211c62c56b02991dad431034b475dea39",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/interface_audit_sources/rpc_metadata_20261021.json",
+      "bytes": 5079,
+      "sha256": "b739e36fa259ea29937ac321966b2e30f857cde59720863f7f4d15ac85632241",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/interface_audit_sources/unitree_ros2-source-inventory.json",
+      "bytes": 17812,
+      "sha256": "7951006e874489ab29b1918738dca0b040050e7db398195088178746bdd13336",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/interface_audit_sources/unitree_ros2/cyclonedds_ws/src/unitree/unitree_hg/msg/LowState.msg",
+      "bytes": 163,
+      "sha256": "e0472b7d1d1e5177ccd44ed591c2eca3e0781ebff41b59f2802eb1fa6adbdd57",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/interface_audit_sources/unitree_ros2/cyclonedds_ws/src/unitree/unitree_hg/msg/MotorCmd.msg",
+      "bytes": 80,
+      "sha256": "8cd7564b21acfaf933e6a854e7f7958163d3fbf1280c947aaba21fd45ab95ef7",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/interface_audit_sources/unitree_ros2/cyclonedds_ws/src/unitree/unitree_hg/msg/MotorState.msg",
+      "bytes": 146,
+      "sha256": "9627e5eaaa3d360f33f10b120e7aa45eab811e37b4f67c4321ca03b6fdaa5a5e",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/interface_audit_sources/unitree_sdk2-source-inventory.json",
+      "bytes": 133816,
+      "sha256": "89fc5d2de7bee37bfd6fc2c9b80f4d4e82b1c38431d331fbc45d21dcb1860e9d",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/interface_audit_sources/unitree_sdk2/include/unitree/robot/b2/config/config_api.hpp",
+      "bytes": 3603,
+      "sha256": "232344eeaa7f3a5f75a121739b7b9d902d1fbdeef64d90e6dad5a7f931fd3e00",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/interface_audit_sources/unitree_sdk2/include/unitree/robot/g1/loco/g1_loco_api.hpp",
+      "bytes": 2269,
+      "sha256": "db7f771fad9ab8d40b3f3bf3651df28ee9cde1a937ae21dcdae2f4165f37e0ce",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/interface_audit_sources/unitree_sdk2/include/unitree/robot/go2/config/config_api.hpp",
+      "bytes": 3607,
+      "sha256": "350048feddae746f7d4408808efcf130ef297a83d4c68ba10eeee2bd26d9b39a",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/interface_audit_sources/unitree_sdk2/include/unitree/robot/go2/config/config_client.hpp",
+      "bytes": 1485,
+      "sha256": "6ab2ab6a319342f7cc5a1e803b8afb25c7f20aa000b39f18a5ad10d4485a18ea",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/interface_audit_sources/unitree_sdk2_python-source-inventory.json",
+      "bytes": 38681,
+      "sha256": "2d77a1378f307871f1e445add1843487f18975fb5771cdf42132d32fab6bb6e9",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/interface_audit_sources/unitree_sdk2_python/unitree_sdk2py/b2/robot_state/robot_state_api.py",
+      "bytes": 497,
+      "sha256": "eff5b53dde23e62e5815b4f8893d23ee5d8ce1cd6a32a274996db37674fb538a",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/interface_audit_sources/unitree_sdk2_python/unitree_sdk2py/b2/robot_state/robot_state_client.py",
+      "bytes": 3108,
+      "sha256": "bb1724f1d0a3d80e75aa88e754fea0594595bb5fa7e9b81266d773e72c69f4b6",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/interface_audit_sources/unitree_sdk2_python/unitree_sdk2py/rpc/client.py",
+      "bytes": 4032,
+      "sha256": "20840192dee42525b64ecc3a3e8d5ec5d1d7e122b7bfc4236c482cb2b0f6e186",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/interface_audit_sources/unitree_sdk2_python/unitree_sdk2py/rpc/client_base.py",
+      "bytes": 5078,
+      "sha256": "2a815a5c798be95df1c8a4af525873c2ee47d5e0bbfbcc8a4ccf2d991a341321",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/interface_audit_sources/unitree_sdk2_python/unitree_sdk2py/rpc/internal.py",
+      "bytes": 743,
+      "sha256": "38896942088a7b0d03e3d9e5fa06ef3aee81e8ec6d52e0a9a640e35aaf955343",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/interface_audit_sources/unitree_sdk2_python/unitree_sdk2py/rpc/server.py",
+      "bytes": 4070,
+      "sha256": "80e114fc190cd2394d48ce0f4e8187fcafc28339fe41ba0a38b4c5fb14ba2ff9",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/official_motor_sources/motor_catalog.md",
+      "bytes": 636,
+      "sha256": "dfd34cffa75519f2ca4247e374d90b4004c7226bf0277345451ed49a4e94fdaf",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/official_motor_sources/sources.json",
+      "bytes": 1534,
+      "sha256": "d89fbd5ee3fd1fbc5367a5dce43a44051b2853a158b45e461cbed018b4d3f20d",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/official_motor_sources/terminations.hpp",
+      "bytes": 3374,
+      "sha256": "ab5ea5b76d3cccef8c6a06ddd28cd163d76007bcc42305a5aed666f6884634f9",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/official_motor_sources/variant_urdf.urdf",
+      "bytes": 27422,
+      "sha256": "7a16cc8fc1cd053ba8ee7b03057585959336c9aee2bad720bb4d2fa980034efb",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/official_motor_sources/variants.md",
+      "bytes": 6818,
+      "sha256": "0f3d66629ca904b3d01d8b20186b26d17cca513d7217f66649dc68523aa94f43",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/HandState_.hpp",
+      "bytes": 39908,
+      "sha256": "2d45978c10533a65c84090b533e332536129395cf7892c6a360c5724676429dd",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/IMUState_.hpp",
+      "bytes": 19212,
+      "sha256": "0b078db5401a35c2421190adb98c0a7e94472ee798b20aa4d1a345513dc88b1b",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/Odometry_.hpp",
+      "bytes": 36023,
+      "sha256": "83b3f0dfd4ae724a3d2967541a7389b2183a4ddfcadf0133336cbfa2292d2288",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/PressSensorState_.hpp",
+      "bytes": 15879,
+      "sha256": "087890d59d907dfda6d2f713ae866c48c7c543a5352b3f6fcad1149ec7f452e0",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/SportModeState_.hpp",
+      "bytes": 13727,
+      "sha256": "85dda303b93504204693cfd456e977d3a9e2f07d74c06609929f4f156cf08858",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/app_screenshots_20261021_v22.json",
+      "bytes": 4153,
+      "sha256": "37e80b1f2a6541478d594137728730840f1b2e643cd171d416309f03aea686fc",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/cabinet_cached-manifest_20261021_v18.json",
+      "bytes": 285,
+      "sha256": "6e61ab12f23fbd847b15e08219b35dfd7f88ec3889f47fed639461545801014d",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/cabinet_orin-inventory_20261021_v18.json",
+      "bytes": 4060,
+      "sha256": "585256664c642a4c4692f061f2d42f8e9fd38f8d991af279b23187a4d1527012",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/cabinet_ota-version-context_20261021_v18.json",
+      "bytes": 5884,
+      "sha256": "ea12595847fa4e2da88148795999062bbc1862c2f4f7a39eb757938142a16d93",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/cabinet_passive-status_20261021_v18.json",
+      "bytes": 1618,
+      "sha256": "a014b2c878cb40c4e33df4b2ad1920ad062dd17aae9d018355ee0f8eafc28b8d",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/cabinet_passive_20261021_v18.json",
+      "bytes": 18141,
+      "sha256": "a0a613e0d3fc232665a11ac15df5e480ee787e4f48db465674f81a32434947be",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/camera_recovery_20261021.json",
+      "bytes": 3658,
+      "sha256": "23b3657a8b89a32d3c078c9a316dbe2b80303e61c02e9c48ac1461bc1448b404",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/camera_transport_20261021.json",
+      "bytes": 184956,
+      "sha256": "0ba200b5c30da0a9951dc13089a5f3521bc83fe35603cd33bb90506be452ba26",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/damping_device_test_20261022_v34.json",
+      "bytes": 8403,
+      "sha256": "20e2274d1b1ddc7bf83cf5f3ce3640f31965dae4ffb35cc48eb56ff96b558ae2",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/dds_passive_20261021_v14.json",
+      "bytes": 73112,
+      "sha256": "03c15dff23e943321d98e4cce68f1680dab4b187192768bdb7a0742992a81fa7",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/dds_reads_20261021.json",
+      "bytes": 69854,
+      "sha256": "b0ae677d8150d107c570eff6f91747a28968cc2e716828fa7a27aa8ba16569b7",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/firmware_polled_query_20261021_v24.json",
+      "bytes": 8154,
+      "sha256": "abf7475437d836cf2d198749368804e3f37c2fa7de3651c8b982d99f2f5c282c",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/firmware_support_orin-inventory_20261021_v17.json",
+      "bytes": 4060,
+      "sha256": "64f1132de997fdc333100fcf7a17d7ecee9c01c6d58c02383c873f0ab9f0d9cc",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/firmware_support_passive_20261021_v17.json",
+      "bytes": 4113,
+      "sha256": "526140f97e00e8f1534b8200c3009e9306d7d765b92b1bf731b61b5204a06627",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/firmware_support_review_20261021_v17.json",
+      "bytes": 3037,
+      "sha256": "45dbf99231ce98a815b657a9d4d21ddcdb881a973f4bc3fe8640cf8c3a04a9c8",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/firmware_support_review_20261021_v18.json",
+      "bytes": 3533,
+      "sha256": "7cf81626b036fbed2d64b1692cd2b39e8f1ea71269de80543b6fde3b7ee6c9a9",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/g1_ankle_swing_example.cpp",
+      "bytes": 12690,
+      "sha256": "9394824751ee4f74d252546fe4f3c20145f9148becfbb9eeb53cbeef449c6b8b",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/g1_loco_client.hpp",
+      "bytes": 8538,
+      "sha256": "d9aabe78918312c2ec60c5df94653e81319eb6730cc1479372a09849d99cd361",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/g1_loco_error.hpp",
+      "bytes": 517,
+      "sha256": "8b33d73f9857d1581c11b362d2705f031020a084db12b00cadfaac0255f46579",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/human_posture_20261021_v16.json",
+      "bytes": 934,
+      "sha256": "51496501c3c1f36bdaa86143f89b173fd15256d5b8f37cceb1c7000c05e9119d",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/human_posture_20261021_v17.json",
+      "bytes": 1978,
+      "sha256": "3e3cfd8049b9d1386db9a2b7aa8a3312378bcbaa7e04557e54765d914480a2ae",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/humanoid_files_20261021_v30.json",
+      "bytes": 1395,
+      "sha256": "8728e9ac5719bbb7d33701d3673a2a18baf021a9a3a55f0b24fdd0209b903d9c",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/humanoid_state_20261021_v30.json",
+      "bytes": 100232,
+      "sha256": "a03e1f00d6f5a230d69b0eb268f1c72a7f405303c8c8ac2846b6d31092907838",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/installed_loco_sdk_20261022_v36.json",
+      "bytes": 10317,
+      "sha256": "326ac510f1c6783177be1eb9986ff97c5f39ebf1136739fe6a3ce1d68ed68391",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/loco_community_compatibility_20261021_v27.json",
+      "bytes": 1119,
+      "sha256": "e89dad54d900b177b0e26b610173ac977511b7986c18639d4251b7fdf454b3e5",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/loco_compatibility_followup_20261022_v33.json",
+      "bytes": 1551,
+      "sha256": "d67b9a2371ca24dc1c525b9670c204166b8800485fcb0b0508d5896f75abc03f",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/loco_query_transport_20261021_v24.json",
+      "bytes": 58876,
+      "sha256": "61722b4aed8ee76a1a5da47c10ffc8da2c089add2fc838b0f432d201547c248b",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/loco_readiness_20261021_v27.json",
+      "bytes": 32010,
+      "sha256": "555d7f129b1eabfab91dfc6c216d6cfedd21d4af4e534f03b46a7dca851e70d6",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/loco_responders_20261021_v27.json",
+      "bytes": 4134,
+      "sha256": "6445bbc81e21616b3a1f8891789decce613ffecb101894ff5342914a74fb1134",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/mode_console_baseline_20261021_v15.json",
+      "bytes": 240487,
+      "sha256": "7fbb1241e9a49cf02592d29cf2150c2033b63d8a1eee158a41bba78fef3baba1",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/mode_transport_with_console_20261021_v15.json",
+      "bytes": 175835,
+      "sha256": "0e084db904f683f829eb1214fe0569309d8856fed7700b987a8850e4a7d3f67c",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/mode_transport_without_console_20261021_v15.json",
+      "bytes": 120386,
+      "sha256": "f059b75bfc885ea638acf885fc3092f458f23ab7ca31425ce7b8e50e8fca2bb9",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/odom_passive_20261021_v14.json",
+      "bytes": 80981,
+      "sha256": "2fab69b4b3d3212635f6f155344efac47523f0425955744002dc09d73837571c",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/official_23dof_manual_review_20261021_v21.json",
+      "bytes": 1833,
+      "sha256": "6ecf8dd812d2da383d75fbaccbee049d3347e3b7bdc28b6e534586ceddcd95dc",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/official_getters_20261021.json",
+      "bytes": 1505,
+      "sha256": "33f246d9134c3e6cffe48524acd63d4ba98a3c6ce93cca28a0d0b48a8e465827",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/official_getters_20261021_v14.json",
+      "bytes": 1313,
+      "sha256": "c6c4833f1603b71f55324462b7aa0acb59ec577b3e2d22c3b9f865113406c0f4",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/official_processes_20261021_v15.json",
+      "bytes": 1016,
+      "sha256": "c77e599c5ca1f61851654b73a2088a50fb66d3f43ffb1701a0ba74d45721ef25",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/official_remote_manual_20261022_v34.json",
+      "bytes": 5200,
+      "sha256": "12a794a5f11e2aa12d8fbdf7115dd420e820256ffb85ed94b146483e1c4e7fc2",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/ota_contract_inventory_20261021_v20.json",
+      "bytes": 11961,
+      "sha256": "997140b2e426f568275126a0e30e44f944822919bd5d2ebbce2bc808022c1ab2",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/ota_diagnosis_20261021_v21.json",
+      "bytes": 78302,
+      "sha256": "9783f4f02ac3ad4aa095bcbd71f1241749cb222326dddca74c39635c4df116c3",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/ota_version_query_20261021_v20.json",
+      "bytes": 715,
+      "sha256": "cf550f1c5b5036a010ece6afa33b1a6dadccfa1f3bbf51d92be9d6545753a19c",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/paired_observation_20261021.json",
+      "bytes": 6613,
+      "sha256": "0bdc99ed649177afe18b5b1d9e07ff5f4d900cc6ecaca9f6bb13d4d9ca7b5611",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/paired_observation_20261021_v13.json",
+      "bytes": 29604,
+      "sha256": "5669e6d4adc1985c73e5651e5c433fdd978113800d3b0f5e0f7aa49f2b175c58",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/paired_observation_20261021_v14.json",
+      "bytes": 29543,
+      "sha256": "4726af8fb230cf0ef66e90602790db385ed235b6a39fedafe4f62338a30e634c",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/posture_interfaces_20261021_v14.json",
+      "bytes": 5473,
+      "sha256": "3cf7097394dcdcf0d713e1e8139a5f199cf4ef37f6f981787b079fb7ae3381a8",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/query_path_followup_20261021_v24.json",
+      "bytes": 2003,
+      "sha256": "836e214659f0ec52f97282159347b28fe4fa3fc5e9b9565a86dbf2b9014b3dd2",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/reboot_loco_readonly_20261022_v35.json",
+      "bytes": 31953,
+      "sha256": "d2a56b1b75009d4ef860ce50000f62ef86b6c392cd4d6f1070797814f92cd427",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/service_advertisement_20261022_v32.json",
+      "bytes": 4022,
+      "sha256": "5caa020daec5529e00580372e5f4ea6362b27a7e8c1d275f31dd8b3e3843ff0a",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/service_publisher_20261022_v33.json",
+      "bytes": 16690,
+      "sha256": "dbfde31168bda86ddc701c1b9ac4df01ee9b7726a5027d8c6a6ae84c9a0d5a6d",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/sport_host_20261021_v28.json",
+      "bytes": 21199,
+      "sha256": "f72108b21f4cd730d5b2a7a0fd483bafae8843ef86c716e19726085e93c6b62f",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/sport_host_20261021_v29.json",
+      "bytes": 25499,
+      "sha256": "74e6a6672973df49fde07cc49a5792397ac009e0fd7abf3abfafea9c38fa405b",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/sport_host_20261022_v31.json",
+      "bytes": 25513,
+      "sha256": "78af309737f2179f388a0c0a515eefe0296844e74587a05472ee23d51f6c0e3e",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/sport_service_contract_20261021_v28.json",
+      "bytes": 1967,
+      "sha256": "66b39c7d551fdfc8ea02b9dfb1f7868622e9e0399662738a7f82d8f9eea9e46a",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/standing_applicability_20261021_v18.json",
+      "bytes": 9426,
+      "sha256": "97e7164089b46da7fa18ca29e27a9c202cd92da740fc324f0c58eb0ad1e803f1",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/standing_manual_review_20261021_v16.json",
+      "bytes": 4949,
+      "sha256": "04f434d7a40b920ca6bcf7f1bd499d75c77029ec42e421566e47b23f8280880c",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/standing_observation_20261021_v16.json",
+      "bytes": 9162,
+      "sha256": "3de9d9a8859dbc1f52335b858375edf4b4a1fa26b4da0d999861d8bfec78ef98",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/standing_observation_20261021_v17.json",
+      "bytes": 6655,
+      "sha256": "388241090253176893df268c9bf20216cab8d067b15da4e768a7be6af94a031a",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/standing_observation_20261021_v18.json",
+      "bytes": 6653,
+      "sha256": "b0aa8e301445261b0275bb85bdc2f28eb95762780ff937c3a4126c85b75f8167",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/standing_reads_20261021_v16.json",
+      "bytes": 4350,
+      "sha256": "d39f552f16cf84e75d6f38b609d12b3d96f6e7a0ff4524df3578ddc1a5d798ed",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/standing_reads_20261021_v18.json",
+      "bytes": 4350,
+      "sha256": "4479c71f38fb0c43bdaea0eee43cfc71b80d194b5bf471f51b032cd61b288fc2",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/support_newboot_20261021_v15.json",
+      "bytes": 3708,
+      "sha256": "c726b32e3585aeb355dfa7b7d227af8c59cfe75a732c716497ee2476340f6139",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/service_audit_sources/capability_reads_20261021.json",
+      "bytes": 5131,
+      "sha256": "db539c23896f3b7145c2879f05ac4b391b455c5d27b4816cfc5dc0c60869aa5e",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/service_audit_sources/configuration_analysis_20261021.json",
+      "bytes": 8348,
+      "sha256": "e8f71f61883b98dead5c5c75675fe34b01fcf1a1bd6fa3646a3a32cef3a9e9a1",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/service_audit_sources/configuration_receipt_20261021.json",
+      "bytes": 508,
+      "sha256": "4959dea77be4be571ae47c84a2050670cd4e0e9237b8d2c37fd390684e775170",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/service_audit_sources/fmx_analysis_20261021.json",
+      "bytes": 10154,
+      "sha256": "2d5714cd21690df14de350fe6844fa6ed0649bf023b40cd0e91c50914d8314eb",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/service_audit_sources/fmx_inventory_20261021.json",
+      "bytes": 7484,
+      "sha256": "850e90b649b74e4b2c8b636f396fbdf6ca6af0f5e7e2b597148e7e479cf283f3",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/service_audit_sources/fmx_loader_inventory_20261021.json",
+      "bytes": 43457,
+      "sha256": "40e9e345f5d6283055cf20580b51e7cba93bc772533f83f57092d07a7dbbe188",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/service_audit_sources/fmx_loader_receipt_20261021.json",
+      "bytes": 1264,
+      "sha256": "dfa8f9cff14b7cae39cade4313da188a2f7bf57baac63128fca375d7d43f2010",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/service_audit_sources/fmx_loader_review_20261021.json",
+      "bytes": 11553,
+      "sha256": "ce405d3a7ddc20e01ec110aba913721d0457966ab95cb60c3a92a5dc1cb68e47",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/service_audit_sources/fmx_module_recheck_20261021.json",
+      "bytes": 1096,
+      "sha256": "7699587c3e8f397b3a81a934a530c0f574895c4b3ab093e6f8ac87688ae84fbf",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/service_audit_sources/fmx_official_code_search_20261021.json",
+      "bytes": 1222,
+      "sha256": "0b2029b307bc0d5204e59263f770584a447dbbeae599701554355fb7f8a1e05c",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/service_audit_sources/fmx_receipt_20261021.json",
+      "bytes": 825,
+      "sha256": "0d7845076f746364f3ca66d94751e6709b26a5cc6ba342322f5080b4d81e7811",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/service_audit_sources/large_library_inventory_20261021.json",
+      "bytes": 6547,
+      "sha256": "d5c1b6b3887a96662b8695486ac13e31db7ed274b0895fc0230858fdf8370845",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/service_audit_sources/large_library_receipt_20261021.json",
+      "bytes": 1015,
+      "sha256": "c0bf843ccdc68cf9ccba35b72354210f4389260f5a09ba0dbbb4e17e99a8633f",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/service_audit_sources/large_library_review_20261021.json",
+      "bytes": 9968,
+      "sha256": "c171b5c691a4057e5e5da02cfa3fe6cbbb61756c15d8dcd940b8f84e1f4a7cbb",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/service_audit_sources/package_cache_inventory_20261021.json",
+      "bytes": 22223,
+      "sha256": "88ee07979a9eb881ea106fd3f666380e08fa28cd1042c9e26025f246d7971d52",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/service_audit_sources/package_cache_receipt_20261021.json",
+      "bytes": 716,
+      "sha256": "76e77801de02c3b0a51dbd755c7613b010f4a2b21274b442896ec806c8d2590b",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/service_audit_sources/package_cache_review_20261021.json",
+      "bytes": 3807,
+      "sha256": "970a2824ad9d8fb7d0abefa2e2ae639b4096acd016ed73753a0d71cd1012a7c3",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/service_audit_sources/receipt_20261021.json",
+      "bytes": 847,
+      "sha256": "f10e0354c91a82f0751a90945ed983d20e6ffb73bfc02ba6852b2704ce3eef48",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/assets/service_audit_sources/services_20261021.json",
+      "bytes": 49763,
+      "sha256": "0cabaf079d31ce7d49dba92494ca4a2abbca167ac45afb2b515922d346ce00da",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/body.py",
+      "bytes": 632,
+      "sha256": "6ff6f49d496726020845d9215977ae3efe84db567755a28383cc8ff4ff9d785f",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/camera.py",
+      "bytes": 4681,
+      "sha256": "f3ba3425264df31074139d3e85c954b029cc4539dfbb4f134ba5747b342d2248",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/camera_process.py",
+      "bytes": 3927,
+      "sha256": "f11c3251dcd029e5e4158b3388803f3b428978e8eea9bc9fb09e0cba5655af93",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/camera_rpc.py",
+      "bytes": 2172,
+      "sha256": "6f5177cc671496c7e85a5599dd16a2b1c2e4c8d758fa2d5569746730c19ef412",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/capabilities.py",
+      "bytes": 11727,
+      "sha256": "56392d9b20cd3a86d81e4ec92c34468bf13c2be75f2ef934ded990754ddaca25",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/config.py",
+      "bytes": 3621,
+      "sha256": "25e65d58de2cb8f4b6082a510167750eb39fe47704a1696e5241106396f944af",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/contracts.py",
+      "bytes": 4108,
+      "sha256": "b14a0493a79681e441322e6a66b4074d806836d43a8ddbb5240adaa087dd1b40",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/hg_sport_state.py",
+      "bytes": 634,
+      "sha256": "b1d31132d28d42cf556e2eccde7e1eaf2fa189961f81e49593be525ee20da326",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/insight.py",
+      "bytes": 7561,
+      "sha256": "1cd7231ae16659532d325a20c12cfa9b81f3a916998fa3434a27de7aa090c28e",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/mode_readback.py",
+      "bytes": 15832,
+      "sha256": "bd704a94c189fee6c78cf7a91dcacc636316f922eedef10cc794fc987febd46e",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/navigation.py",
+      "bytes": 5817,
+      "sha256": "d53ac6b9fdfc8b5b941aeb2c3a5baa556f32a6c5c60fbccaa48d7410be58d652",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/remote_preflight.py",
+      "bytes": 1586,
+      "sha256": "2c3bb09e26bca51dc0ea60bfc170657a1e8af15df66afb196937783031769598",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/ros_bridge.py",
+      "bytes": 10611,
+      "sha256": "304857069a13c4656327b0603b97adaff8e3ba459de98e6dc826c75b61fd7acb",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/safety_feedback.py",
+      "bytes": 4724,
+      "sha256": "170694684fc0ccea8e9490f4d93d5107dff734a17bd1f9a7474b3fb9b90d0429",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/service.py",
+      "bytes": 55475,
+      "sha256": "794e46e84a65bff98436b8190eb5bd81211c648fd902211a7cf433235be75e81",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/service_versions.py",
+      "bytes": 5243,
+      "sha256": "7459858a2ffafc0c4e6ebeeb007ebab2e3572fdc27c48d099f8010dc4c6e9cee",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/simulation.py",
+      "bytes": 1299,
+      "sha256": "7ada094a16417c422e10c89614c9c439b2066957d72cb2b1c56eaeac74d2fa9c",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/standing.py",
+      "bytes": 1970,
+      "sha256": "a1166a79a37d346c9360faadc15b43ba923153fcb9af15955675a753f3dfc11c",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_console/state_learning.py",
+      "bytes": 11121,
+      "sha256": "a62f858dd0605c4cb0afd969ba285d980c01826fced7582e09cc270d850eb6e7",
+      "git_state": "untracked"
+    },
+    {
+      "path": "g1_douji_voice_chat.py",
+      "bytes": 51276,
+      "sha256": "ad5b89f5d1a29d1d47ff3eeeadf89886489a05068bf2929201892c42513d2445",
+      "git_state": "tracked_modified"
+    },
+    {
+      "path": "g1dev/g1_dev_data.py",
+      "bytes": 11816,
+      "sha256": "6bafe05863c371e551b07ddfbdf24705096975674fba2694c07a6da3a2266aee",
+      "git_state": "tracked"
+    },
+    {
+      "path": "legdev/g1_leg.py",
+      "bytes": 7762,
+      "sha256": "4b76b05c28f339fa7433ac6f1161c4f498c7b0c5655074eb6b756f6dce50a825",
+      "git_state": "tracked"
+    },
+    {
+      "path": "pytest.ini",
+      "bytes": 27,
+      "sha256": "c809c969ec7e11b9ff37784e9c6fcc0b7c5148d168e18b05aed797e03fbd6ead",
+      "git_state": "untracked"
+    },
+    {
+      "path": "recorddata/README_smooth_optimization.md",
+      "bytes": 3515,
+      "sha256": "799f968bd256553bd2e3adbf755af61e5c63ca07770e97615379ca6b6f3be68a",
+      "git_state": "tracked"
+    },
+    {
+      "path": "recorddata/csv_to_gif.py",
+      "bytes": 1007,
+      "sha256": "a0807beb9ab3ce0baf04ae5c9ea6982a6f33ebaf6598592b8b4cdba85b168b9e",
+      "git_state": "tracked"
+    },
+    {
+      "path": "recorddata/extract_romp_joints_to_csv.py",
+      "bytes": 8118,
+      "sha256": "6ef73805ad3a38bb00daf3e36b775d14448d16296dace5218b3f60e6f0a20661",
+      "git_state": "tracked"
+    },
+    {
+      "path": "recorddata/g1_data_dev_gui.py",
+      "bytes": 7299,
+      "sha256": "6a776cf1841d0aa2eb12dc708987c14a382e26137844d98dc8681fb854248f09",
+      "git_state": "tracked"
+    },
+    {
+      "path": "recorddata/readnpz.py",
+      "bytes": 433,
+      "sha256": "efdc3389338927c58fb47aa480d176ae1d0a1a6878c6059240cd902909e7f2d2",
+      "git_state": "tracked"
+    },
+    {
+      "path": "recorddata/romp_to_g1_csv_upper.py",
+      "bytes": 2862,
+      "sha256": "407208a7817d3a48b9437d3a520f02e8dbdd329b2693c48f6db7d6c649de4b62",
+      "git_state": "tracked"
+    },
+    {
+      "path": "recorddata/safe_save_video_results.py",
+      "bytes": 1629,
+      "sha256": "a2a7edd2a8cec3ff7be47b0fb75e27e0b3338685b2a89e84f2eaea458e98c887",
+      "git_state": "tracked"
+    },
+    {
+      "path": "recorddata/smooth_g1_csv.py",
+      "bytes": 1852,
+      "sha256": "142729b6bd8a02a8345fa987fdca4391aa2b62763891632dbad1f4346f89c813",
+      "git_state": "tracked"
+    },
+    {
+      "path": "recorddata/test_romp_output_data.py",
+      "bytes": 2619,
+      "sha256": "dd6d3ccaae554a6f2610e3034ed75fcf807b1d3e718b0806862b87746206dd3f",
+      "git_state": "tracked"
+    },
+    {
+      "path": "recorddata/test_smooth_effect.py",
+      "bytes": 4739,
+      "sha256": "88b1928f4a0662b2eb67a0d8bee0d8ddbbc3a3602e760e401ab2129249be0520",
+      "git_state": "tracked"
+    },
+    {
+      "path": "requirements-console.lock.txt",
+      "bytes": 1154,
+      "sha256": "b1f0184db015a2adf302393ba36b42381c246e5eef3129d290c4e17f0a35f04b",
+      "git_state": "untracked"
+    },
+    {
+      "path": "requirements-console.txt",
+      "bytes": 152,
+      "sha256": "efcbf2a4c093692e7be84b96508be4dd7a858174e2c2ad48d6c1b386173761d4",
+      "git_state": "untracked"
+    },
+    {
+      "path": "requirements-mac-connection.txt",
+      "bytes": 93,
+      "sha256": "c321bccd12bfededaea97e6e28f61f11d566da4221c8c438a2ff13e8aeb4c843",
+      "git_state": "untracked"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 984,
+      "sha256": "64495335a226aa245c1c6460deb19af003604b63c8d86d55c7e8912275a2af86",
+      "git_state": "tracked"
+    },
+    {
+      "path": "scripts/analyze_g1_fmx.py",
+      "bytes": 8987,
+      "sha256": "c5df38738a62e79684c9b7885cd688ccd7b1f9e7f4ce55f17fd6fbdb797e8ebf",
+      "git_state": "untracked"
+    },
+    {
+      "path": "scripts/analyze_g1_fmx_loader_search.py",
+      "bytes": 10384,
+      "sha256": "42e03fb8f11e99b9c79b82acfe4c9af499e7f06f3b19d9b3560f17d409ead78b",
+      "git_state": "untracked"
+    },
+    {
+      "path": "scripts/analyze_g1_large_libraries.py",
+      "bytes": 7585,
+      "sha256": "49658439bf54ec31e4713962a63262dc78fc8e4e10cc25dfb381e3f609033cf0",
+      "git_state": "untracked"
+    },
+    {
+      "path": "scripts/analyze_g1_opaque_configs.py",
+      "bytes": 9007,
+      "sha256": "9ec760e7b70c9e0fe70d0f85bb2d7b140848854a4d1a4de116b24222e7702145",
+      "git_state": "untracked"
+    },
+    {
+      "path": "scripts/analyze_g1_package_cache.py",
+      "bytes": 3360,
+      "sha256": "b144ebe247e725a4576241ffa60a329f7ca0855e907c8107efe2da751e3e82ae",
+      "git_state": "untracked"
+    },
+    {
+      "path": "scripts/audit_g1_boards.py",
+      "bytes": 8142,
+      "sha256": "0cb127d0977ee02d36523a0619069618a26e14d11a993478c736fb7d700f15c5",
+      "git_state": "untracked"
+    },
+    {
+      "path": "scripts/audit_g1_capability_reads.py",
+      "bytes": 2612,
+      "sha256": "df9d425c8365caf661cea386f985611b5d6544d56ec66bd33d8a765f4a962185",
+      "git_state": "untracked"
+    },
+    {
+      "path": "scripts/audit_g1_firmware_support.py",
+      "bytes": 3258,
+      "sha256": "095594bc20ab156771d3c2e3b655109f608c7d818fbf0c8120a2ec356d2eeab0",
+      "git_state": "untracked"
+    },
+    {
+      "path": "scripts/audit_g1_humanoid_discovery.py",
+      "bytes": 12100,
+      "sha256": "65e6a60eba2979378135cf875c56807cffec243806cc8c1bbab06dceb5e9a429",
+      "git_state": "untracked"
+    },
+    {
+      "path": "scripts/audit_g1_humanoid_files.py",
+      "bytes": 5714,
+      "sha256": "cc5068a3b8b496cee24f0d1d0cd572e005c06abe27201b840585380c60bb1f6d",
+      "git_state": "untracked"
+    },
+    {
+      "path": "scripts/audit_g1_installed_loco.py",
+      "bytes": 7300,
+      "sha256": "3958e1a66228ee7f63da8de34eca27fa955712bd1756120f3e6ca59ab5bffd38",
+      "git_state": "untracked"
+    },
+    {
+      "path": "scripts/audit_g1_installed_versions.py",
+      "bytes": 3569,
+      "sha256": "1a99ceef3860292952c30c1d65aa4359bb5764351d1244e035ecae6b051636cc",
+      "git_state": "untracked"
+    },
+    {
+      "path": "scripts/audit_g1_interfaces.py",
+      "bytes": 3520,
+      "sha256": "d9141a7ef44b64cc188cd5b30032182801772ed9fecbff2e2fd6cd3ce3ca7139",
+      "git_state": "untracked"
+    },
+    {
+      "path": "scripts/audit_g1_large_libraries.py",
+      "bytes": 4858,
+      "sha256": "d49fb00dd1e46fae698ca850ea016828575b78b8d8666ebe2e8556448cc1201b",
+      "git_state": "untracked"
+    },
+    {
+      "path": "scripts/audit_g1_loco_readiness.py",
+      "bytes": 5861,
+      "sha256": "f94c6c12dbaeee617b09f8dec2ee1a8b6c29afb0fb47d2c7a572f6158ead4645",
+      "git_state": "untracked"
+    },
+    {
+      "path": "scripts/audit_g1_loco_responders.py",
+      "bytes": 4379,
+      "sha256": "ae007092a476a094a70bcc697730b68a85d0d6dd9c3bc99d324e9e381428890a",
+      "git_state": "untracked"
+    },
+    {
+      "path": "scripts/audit_g1_mode_transport.py",
+      "bytes": 4106,
+      "sha256": "839be103ce58c6f05e9688b5a0fc4bf71c5d8ad3bb1ee528565a93ed195d440c",
+      "git_state": "untracked"
+    },
+    {
+      "path": "scripts/audit_g1_ota_versions.py",
+      "bytes": 2105,
+      "sha256": "55460f50721e016c3749f1b4240136c492cb6b6be46afbd01c49235d1a3ac314",
+      "git_state": "untracked"
+    },
+    {
+      "path": "scripts/audit_g1_package_cache.py",
+      "bytes": 8712,
+      "sha256": "067c16acc75c5edecfb337c8dbade0bcb21332760d5b3889d9f67db9121a9588",
+      "git_state": "untracked"
+    },
+    {
+      "path": "scripts/audit_g1_passive_status.py",
+      "bytes": 3944,
+      "sha256": "9f441963bad1acb5842f961e6141034cf055d7e3318ef1f7e5ba2b9074ba4b53",
+      "git_state": "untracked"
+    },
+    {
+      "path": "scripts/audit_g1_service_publisher.py",
+      "bytes": 11899,
+      "sha256": "54eb0b49d32625a47259fda920645d8f641030242782b542d428d52bafe2d2cd",
+      "git_state": "untracked"
+    },
+    {
+      "path": "scripts/audit_g1_services.py",
+      "bytes": 10083,
+      "sha256": "ca513a94dd9b0ef3894a96f30c563b2ab3d4cfa8492a968b41018a251f07b046",
+      "git_state": "untracked"
+    },
+    {
+      "path": "scripts/audit_g1_sport_host.py",
+      "bytes": 12462,
+      "sha256": "8ff6f37f58757d56a493bc338af509c87d958e1d57edbe9752d6226ca6c054f4",
+      "git_state": "untracked"
+    },
+    {
+      "path": "scripts/audit_g1_standing_reads.py",
+      "bytes": 3674,
+      "sha256": "66e60455b176a892978a3c1b8433dde849be97c3ea795c4124e060d46ef27799",
+      "git_state": "untracked"
+    },
+    {
+      "path": "scripts/audit_g1_support_reads.py",
+      "bytes": 4079,
+      "sha256": "db312d2ef380b2e4764c30859b17322f5224ebcb841a86ac2742fededd23b890",
+      "git_state": "untracked"
+    },
+    {
+      "path": "scripts/audit_g1_wifi_logs.py",
+      "bytes": 5412,
+      "sha256": "8399f1159e103ce805c00e8df955b1c16414c5e1a93766790dc96b610f8669be",
+      "git_state": "untracked"
+    },
+    {
+      "path": "scripts/build_g1_body.py",
+      "bytes": 4224,
+      "sha256": "56926265c29967c4ffa08ac235161da754c26c3ee81cd272afcfcc9521e1299c",
+      "git_state": "untracked"
+    },
+    {
+      "path": "scripts/build_g1_capability_knowledge.py",
+      "bytes": 21625,
+      "sha256": "95fe1f06f381e936548a5253188088f7d03942515ba5e6c33d83e36c7822a83c",
+      "git_state": "untracked"
+    },
+    {
+      "path": "scripts/build_g1_motor_knowledge.py",
+      "bytes": 34395,
+      "sha256": "77e6b57e2252d9d74d6e5c0972e2fcba0720215796a96694304291ab98af9ef4",
+      "git_state": "untracked"
+    },
+    {
+      "path": "scripts/check_unitree_compat.py",
+      "bytes": 4267,
+      "sha256": "0420ca7a2f3ff739565f9c363a5e3330c0b7b59b64b6d31821e60d941f7713bf",
+      "git_state": "untracked"
+    },
+    {
+      "path": "scripts/connect_orin_console.py",
+      "bytes": 23948,
+      "sha256": "e683425395b5ee627a2633c17081c3fd34c0b5e225bd3d7f7fafc9aa963bf896",
+      "git_state": "untracked"
+    },
+    {
+      "path": "scripts/g1_humanoid_evidence.py",
+      "bytes": 9343,
+      "sha256": "f24c012ab180cab69ffaa6169e017625162cbf7cbb18853f8b7b4cded64e64fe",
+      "git_state": "untracked"
+    },
+    {
+      "path": "scripts/g1_publisher_evidence.py",
+      "bytes": 4235,
+      "sha256": "e3df6c23a60bdc7ebaf73944c6ad7900db66956e6cf1c83f8d9f8ae8c47a3987",
+      "git_state": "untracked"
+    },
+    {
+      "path": "scripts/g1_sport_evidence.py",
+      "bytes": 8388,
+      "sha256": "26c9ceb22beee2a7a0f3114fcc7881141b1fd4747aa4bbd4a554af7b94f5b35a",
+      "git_state": "untracked"
+    },
+    {
+      "path": "scripts/observe_g1.py",
+      "bytes": 16323,
+      "sha256": "19913f35b6d18fb2ad15f6df86c280fae3ed2d20417ea8d4476a42ed60419d1e",
+      "git_state": "untracked"
+    },
+    {
+      "path": "scripts/orin_console_recovery.py",
+      "bytes": 9313,
+      "sha256": "d9b483b27d7e79441954f17bcd0ea9ea94acd89b1367735297c71dbd0fc5b430",
+      "git_state": "untracked"
+    },
+    {
+      "path": "scripts/package_orin_console.py",
+      "bytes": 1761,
+      "sha256": "9764414eacb153ea4504002eab352a04b3beb99720ee0a73b4388b6ad38e6f30",
+      "git_state": "untracked"
+    },
+    {
+      "path": "scripts/read_g1_camera.py",
+      "bytes": 3281,
+      "sha256": "d57823b669c3d09bf7f024d9c9f7eb35aac163231531a9a3005ad23387d1ad0c",
+      "git_state": "untracked"
+    },
+    {
+      "path": "scripts/start_g1_console.sh",
+      "bytes": 2388,
+      "sha256": "4612c045718872fac9f9af99dda5172f4a6336ed66594b710489a1c75c39d0d2",
+      "git_state": "untracked"
+    },
+    {
+      "path": "scripts/sync_unitree_deps.py",
+      "bytes": 3220,
+      "sha256": "29be5233c121572bbcdef4c7bf1e39d0c5aa156fa136a5f67382773ea835472d",
+      "git_state": "untracked"
+    },
+    {
+      "path": "tests/test_g1_accessory_test.py",
+      "bytes": 6635,
+      "sha256": "7abc8da425c1759f374046725c6dbfa3fc091ae610080b1404cc47205bd183a8",
+      "git_state": "untracked"
+    },
+    {
+      "path": "tests/test_g1_camera.py",
+      "bytes": 5809,
+      "sha256": "aab917c0a8479595e6425ab4f356fa46747a5fcf0bd1e01321c305964ca2ed3e",
+      "git_state": "untracked"
+    },
+    {
+      "path": "tests/test_g1_camera_process.py",
+      "bytes": 1759,
+      "sha256": "d6332d03147b2bb974851a43fcf95fe6d577985a1af78e284e54f15246407f85",
+      "git_state": "untracked"
+    },
+    {
+      "path": "tests/test_g1_camera_rpc.py",
+      "bytes": 2710,
+      "sha256": "71eeea0a7da2edef54e70c648a5854b4b66ded04b94f0ceecf23c033f964f9ef",
+      "git_state": "untracked"
+    },
+    {
+      "path": "tests/test_g1_configuration_analysis.py",
+      "bytes": 5695,
+      "sha256": "fc1c579b044697621ff20e5811538d5e9212b0e85e87b13fa1db4c5fbc340207",
+      "git_state": "untracked"
+    },
+    {
+      "path": "tests/test_g1_console.py",
+      "bytes": 26140,
+      "sha256": "93b4dc99e875cba971b0737fc24877440a92c3b1436ea742f684ec43a7d2a84e",
+      "git_state": "untracked"
+    },
+    {
+      "path": "tests/test_g1_damping_test.py",
+      "bytes": 11982,
+      "sha256": "1dc5abdb4a4077e774b91847fc9b04a35f152eef253ee2e81b7b43234fa5d98e",
+      "git_state": "untracked"
+    },
+    {
+      "path": "tests/test_g1_fmx.py",
+      "bytes": 4444,
+      "sha256": "eccddd4bcec17c7c7b520c79b22327cfeb983daedcd214197997ce2f114b0a42",
+      "git_state": "untracked"
+    },
+    {
+      "path": "tests/test_g1_fmx_loader_search.py",
+      "bytes": 4658,
+      "sha256": "5396c35c9506ddd372b2bdf829078acfff9852dd7dab8964757fbf0d8310c9a4",
+      "git_state": "untracked"
+    },
+    {
+      "path": "tests/test_g1_foundation.py",
+      "bytes": 15692,
+      "sha256": "ee70d34368ff1347cd66dff1de4845fe2822211f41b959a7a9481f4672bea7d1",
+      "git_state": "untracked"
+    },
+    {
+      "path": "tests/test_g1_github_audit.py",
+      "bytes": 2048,
+      "sha256": "a2ac7a219e449e441594489dc4bdb85359c3ffbd9999639989f03890ec986c47",
+      "git_state": "untracked"
+    },
+    {
+      "path": "tests/test_g1_humanoid_evidence.py",
+      "bytes": 3598,
+      "sha256": "bc6ba8f104d48db06fb20863880610f09b230c521be6125b37c4c171bfa24fd1",
+      "git_state": "untracked"
+    },
+    {
+      "path": "tests/test_g1_insight.py",
+      "bytes": 11035,
+      "sha256": "91df8def87daa2e2d75693ff2405c6425a63200fedaac7396a192c3b7805c37d",
+      "git_state": "untracked"
+    },
+    {
+      "path": "tests/test_g1_interface_audit.py",
+      "bytes": 4324,
+      "sha256": "59536aef0c849b1c26178d5d44c556c17944bb0232b8fa14484615ea68edff7e",
+      "git_state": "untracked"
+    },
+    {
+      "path": "tests/test_g1_large_libraries.py",
+      "bytes": 3876,
+      "sha256": "3ca1c590fd055a32640ae832b9799f48bfcf36e321a58e3deb7cd7e991f213e7",
+      "git_state": "untracked"
+    },
+    {
+      "path": "tests/test_g1_manual_remote.py",
+      "bytes": 11818,
+      "sha256": "a02a649d29b88229fd8d5b2a05de5c48d5e9e30b4359bed987b00e0dfadc0f5f",
+      "git_state": "untracked"
+    },
+    {
+      "path": "tests/test_g1_mode_readback.py",
+      "bytes": 14662,
+      "sha256": "d88d01269a42530fa3125eef0a11a1c679a5f0eea6eafd335c122a21b143be05",
+      "git_state": "untracked"
+    },
+    {
+      "path": "tests/test_g1_motion_control_review.py",
+      "bytes": 10625,
+      "sha256": "b6834d5db6a5162bfb384ba4ca928e6f07ebf15a457799b92346bb9efc12c8f9",
+      "git_state": "untracked"
+    },
+    {
+      "path": "tests/test_g1_ota_version_query.py",
+      "bytes": 1861,
+      "sha256": "55383ce0dddac61788d4ec685bf2403b90bbd49b4c9e2880bcb5b221b8143709",
+      "git_state": "untracked"
+    },
+    {
+      "path": "tests/test_g1_package_cache.py",
+      "bytes": 2836,
+      "sha256": "bc226df17f3afcac5b6e7ca1b4e2b33c9849c82f163badb660fbdfe07f4e3bfc",
+      "git_state": "untracked"
+    },
+    {
+      "path": "tests/test_g1_publisher_evidence.py",
+      "bytes": 2296,
+      "sha256": "999590fd29d13a711e008647900d04ed2ad16715a7cca8496aac82deedff04d9",
+      "git_state": "untracked"
+    },
+    {
+      "path": "tests/test_g1_reboot_connection.py",
+      "bytes": 20763,
+      "sha256": "2ef8e0a0aac8243224ad68200e89996d269db2b28fcb4e2a928d9b8929337d1a",
+      "git_state": "untracked"
+    },
+    {
+      "path": "tests/test_g1_remote_operations.py",
+      "bytes": 8232,
+      "sha256": "aaf451632ebb6172acefaf2ece3584acdaf9729184d1dda1a83cb3bb97667ae2",
+      "git_state": "untracked"
+    },
+    {
+      "path": "tests/test_g1_remote_verification.py",
+      "bytes": 8184,
+      "sha256": "b839f96f10b195f59aec7171baf88fb2e74133d328fb81de956ac9bb5ec7ac99",
+      "git_state": "untracked"
+    },
+    {
+      "path": "tests/test_g1_safety_evidence.py",
+      "bytes": 7778,
+      "sha256": "ee24d5da3acbfd19af09e6c9633bd1255b181b51711f07dfb17a6ccd829fe5c8",
+      "git_state": "untracked"
+    },
+    {
+      "path": "tests/test_g1_service_capabilities.py",
+      "bytes": 6480,
+      "sha256": "b96eb47e9dc273d8a5065c058f98223050f8e702b87132fef5ef57ad148223d3",
+      "git_state": "untracked"
+    },
+    {
+      "path": "tests/test_g1_service_versions.py",
+      "bytes": 3695,
+      "sha256": "731265a26d3939548eaf116f1f0275f979d2a75f2c6e19fe5327b35c09acc834",
+      "git_state": "untracked"
+    },
+    {
+      "path": "tests/test_g1_sport_host.py",
+      "bytes": 6082,
+      "sha256": "941ac157ed36ff3936d5c900c0852781da217ecef8071df654cd8b1a5f180010",
+      "git_state": "untracked"
+    },
+    {
+      "path": "tests/test_g1_state_safety.py",
+      "bytes": 10936,
+      "sha256": "e0856c6696f1e715ffb8be21e7311e4795fea7a0de26fa7fc5443efd4983fe9f",
+      "git_state": "untracked"
+    },
+    {
+      "path": "tests/test_g1_wifi_logs.py",
+      "bytes": 2776,
+      "sha256": "c68e57b9daf88a6b6bb3b262b278cd62b82029978f6b400d5b3a052c9c15bd4c",
+      "git_state": "untracked"
+    },
+    {
+      "path": "trainging/record_g1_right_arm_csv.py",
+      "bytes": 1458,
+      "sha256": "7042884144b69f3a4937df598fa99a63877c4c18ecc2fe874a886c55ab03b477",
+      "git_state": "tracked"
+    },
+    {
+      "path": "unitree-deps.lock.json",
+      "bytes": 468,
+      "sha256": "0688e3730d7047b912912cae1a0eb416c947a5c84121d1458536f2e79f145837",
+      "git_state": "untracked"
+    },
+    {
+      "path": "videodev/videotocsv.py",
+      "bytes": 2871,
+      "sha256": "800e3e64ad4a78806c9c1525c03121f0ad341ac809f50669a4709da790664029",
+      "git_state": "tracked"
+    },
+    {
+      "path": "启动G1控制台.command",
+      "bytes": 222,
+      "sha256": "56fdef3bd4ac3722ec164cac6619b3f2f57d8396bafe3c3eab203dc3da06b4ec",
+      "git_state": "untracked"
+    },
+    {
+      "path": "启动G1自主观察.command",
+      "bytes": 726,
+      "sha256": "c6df3d49921ebf91c55230b33084f4e4afb8e9c6207d381981169fa8f8cc8e3b",
+      "git_state": "untracked"
+    },
+    {
+      "path": "连接G1只读控制台.command",
+      "bytes": 1359,
+      "sha256": "4a70bad116bfaea3f5119910cafd7cf6d858173e78fc867321cdfc8aa2fb2abf",
+      "git_state": "untracked"
+    },
+    {
+      "path": "连接G1软件遥控器.command",
+      "bytes": 1468,
+      "sha256": "b8f71fbbdf8b2aa7f6bb6b41c162b06ae0d5a1f763e5656adef6a4c1331c809c",
+      "git_state": "untracked"
+    }
+  ],
+  "limits": "这是路径/大小/哈希清单，不复制文件内容；不包含运行缓存、依赖和部署包，也不包含清单自身，避免自引用。"
+}

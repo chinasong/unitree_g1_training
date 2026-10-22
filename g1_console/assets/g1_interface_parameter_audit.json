@@ -1,0 +1,214 @@
+{
+  "current": false,
+  "checked_at_utc": "2026-10-21T01:58:51.475351+00:00",
+  "conclusion": "已验证无需登录运动主机即可查询 DDS/RPC 元数据；在本轮官方资料范围内，未找到可核实的 G1 电机配置/标定读取协议。未确认等于未知，不等于接口不存在",
+  "repositories": [
+    {
+      "repo": "unitree_sdk2",
+      "commit": "d1abf001220d3e5f59e00a0c4aaa595e00089a4a",
+      "commit_time": "2026-10-15T10:02:51Z",
+      "checked_at": "2026-10-21T01:56:03.887942+00:00",
+      "archive_bytes": 17083237,
+      "extracted_source_files": 862,
+      "inventory": {
+        "path": "g1_console/assets/interface_audit_sources/unitree_sdk2-source-inventory.json",
+        "sha256": "89fc5d2de7bee37bfd6fc2c9b80f4d4e82b1c38431d331fbc45d21dcb1860e9d"
+      }
+    },
+    {
+      "repo": "unitree_sdk2_python",
+      "commit": "814556d15970dd2ecf1c9984e845ca02ab07e206",
+      "commit_time": "2026-09-21T12:06:06Z",
+      "checked_at": "2026-10-21T01:56:06.111826+00:00",
+      "archive_bytes": 279420,
+      "extracted_source_files": 258,
+      "inventory": {
+        "path": "g1_console/assets/interface_audit_sources/unitree_sdk2_python-source-inventory.json",
+        "sha256": "2d77a1378f307871f1e445add1843487f18975fb5771cdf42132d32fab6bb6e9"
+      }
+    },
+    {
+      "repo": "unitree_ros2",
+      "commit": "668d1ec5a05d1c38d3306bdca7d59f2ba3581a88",
+      "commit_time": "2026-07-02T12:45:43Z",
+      "checked_at": "2026-10-21T01:56:08.550796+00:00",
+      "archive_bytes": 1426912,
+      "extracted_source_files": 114,
+      "inventory": {
+        "path": "g1_console/assets/interface_audit_sources/unitree_ros2-source-inventory.json",
+        "sha256": "7951006e874489ab29b1918738dca0b040050e7db398195088178746bdd13336"
+      }
+    }
+  ],
+  "source_files": [
+    {
+      "repo": "unitree_sdk2",
+      "commit": "d1abf001220d3e5f59e00a0c4aaa595e00089a4a",
+      "repository_path": "include/unitree/robot/go2/config/config_api.hpp",
+      "path": "g1_console/assets/interface_audit_sources/unitree_sdk2/include/unitree/robot/go2/config/config_api.hpp",
+      "sha256": "350048feddae746f7d4408808efcf130ef297a83d4c68ba10eeee2bd26d9b39a",
+      "url": "https://github.com/unitreerobotics/unitree_sdk2/blob/d1abf001220d3e5f59e00a0c4aaa595e00089a4a/include/unitree/robot/go2/config/config_api.hpp"
+    },
+    {
+      "repo": "unitree_sdk2",
+      "commit": "d1abf001220d3e5f59e00a0c4aaa595e00089a4a",
+      "repository_path": "include/unitree/robot/go2/config/config_client.hpp",
+      "path": "g1_console/assets/interface_audit_sources/unitree_sdk2/include/unitree/robot/go2/config/config_client.hpp",
+      "sha256": "6ab2ab6a319342f7cc5a1e803b8afb25c7f20aa000b39f18a5ad10d4485a18ea",
+      "url": "https://github.com/unitreerobotics/unitree_sdk2/blob/d1abf001220d3e5f59e00a0c4aaa595e00089a4a/include/unitree/robot/go2/config/config_client.hpp"
+    },
+    {
+      "repo": "unitree_sdk2",
+      "commit": "d1abf001220d3e5f59e00a0c4aaa595e00089a4a",
+      "repository_path": "include/unitree/robot/b2/config/config_api.hpp",
+      "path": "g1_console/assets/interface_audit_sources/unitree_sdk2/include/unitree/robot/b2/config/config_api.hpp",
+      "sha256": "232344eeaa7f3a5f75a121739b7b9d902d1fbdeef64d90e6dad5a7f931fd3e00",
+      "url": "https://github.com/unitreerobotics/unitree_sdk2/blob/d1abf001220d3e5f59e00a0c4aaa595e00089a4a/include/unitree/robot/b2/config/config_api.hpp"
+    },
+    {
+      "repo": "unitree_sdk2",
+      "commit": "d1abf001220d3e5f59e00a0c4aaa595e00089a4a",
+      "repository_path": "include/unitree/robot/g1/loco/g1_loco_api.hpp",
+      "path": "g1_console/assets/interface_audit_sources/unitree_sdk2/include/unitree/robot/g1/loco/g1_loco_api.hpp",
+      "sha256": "db7f771fad9ab8d40b3f3bf3651df28ee9cde1a937ae21dcdae2f4165f37e0ce",
+      "url": "https://github.com/unitreerobotics/unitree_sdk2/blob/d1abf001220d3e5f59e00a0c4aaa595e00089a4a/include/unitree/robot/g1/loco/g1_loco_api.hpp"
+    },
+    {
+      "repo": "unitree_sdk2_python",
+      "commit": "814556d15970dd2ecf1c9984e845ca02ab07e206",
+      "repository_path": "unitree_sdk2py/rpc/client.py",
+      "path": "g1_console/assets/interface_audit_sources/unitree_sdk2_python/unitree_sdk2py/rpc/client.py",
+      "sha256": "20840192dee42525b64ecc3a3e8d5ec5d1d7e122b7bfc4236c482cb2b0f6e186",
+      "url": "https://github.com/unitreerobotics/unitree_sdk2_python/blob/814556d15970dd2ecf1c9984e845ca02ab07e206/unitree_sdk2py/rpc/client.py"
+    },
+    {
+      "repo": "unitree_sdk2_python",
+      "commit": "814556d15970dd2ecf1c9984e845ca02ab07e206",
+      "repository_path": "unitree_sdk2py/rpc/client_base.py",
+      "path": "g1_console/assets/interface_audit_sources/unitree_sdk2_python/unitree_sdk2py/rpc/client_base.py",
+      "sha256": "2a815a5c798be95df1c8a4af525873c2ee47d5e0bbfbcc8a4ccf2d991a341321",
+      "url": "https://github.com/unitreerobotics/unitree_sdk2_python/blob/814556d15970dd2ecf1c9984e845ca02ab07e206/unitree_sdk2py/rpc/client_base.py"
+    },
+    {
+      "repo": "unitree_sdk2_python",
+      "commit": "814556d15970dd2ecf1c9984e845ca02ab07e206",
+      "repository_path": "unitree_sdk2py/rpc/server.py",
+      "path": "g1_console/assets/interface_audit_sources/unitree_sdk2_python/unitree_sdk2py/rpc/server.py",
+      "sha256": "80e114fc190cd2394d48ce0f4e8187fcafc28339fe41ba0a38b4c5fb14ba2ff9",
+      "url": "https://github.com/unitreerobotics/unitree_sdk2_python/blob/814556d15970dd2ecf1c9984e845ca02ab07e206/unitree_sdk2py/rpc/server.py"
+    },
+    {
+      "repo": "unitree_sdk2_python",
+      "commit": "814556d15970dd2ecf1c9984e845ca02ab07e206",
+      "repository_path": "unitree_sdk2py/rpc/internal.py",
+      "path": "g1_console/assets/interface_audit_sources/unitree_sdk2_python/unitree_sdk2py/rpc/internal.py",
+      "sha256": "38896942088a7b0d03e3d9e5fa06ef3aee81e8ec6d52e0a9a640e35aaf955343",
+      "url": "https://github.com/unitreerobotics/unitree_sdk2_python/blob/814556d15970dd2ecf1c9984e845ca02ab07e206/unitree_sdk2py/rpc/internal.py"
+    },
+    {
+      "repo": "unitree_sdk2_python",
+      "commit": "814556d15970dd2ecf1c9984e845ca02ab07e206",
+      "repository_path": "unitree_sdk2py/b2/robot_state/robot_state_client.py",
+      "path": "g1_console/assets/interface_audit_sources/unitree_sdk2_python/unitree_sdk2py/b2/robot_state/robot_state_client.py",
+      "sha256": "bb1724f1d0a3d80e75aa88e754fea0594595bb5fa7e9b81266d773e72c69f4b6",
+      "url": "https://github.com/unitreerobotics/unitree_sdk2_python/blob/814556d15970dd2ecf1c9984e845ca02ab07e206/unitree_sdk2py/b2/robot_state/robot_state_client.py"
+    },
+    {
+      "repo": "unitree_sdk2_python",
+      "commit": "814556d15970dd2ecf1c9984e845ca02ab07e206",
+      "repository_path": "unitree_sdk2py/b2/robot_state/robot_state_api.py",
+      "path": "g1_console/assets/interface_audit_sources/unitree_sdk2_python/unitree_sdk2py/b2/robot_state/robot_state_api.py",
+      "sha256": "eff5b53dde23e62e5815b4f8893d23ee5d8ce1cd6a32a274996db37674fb538a",
+      "url": "https://github.com/unitreerobotics/unitree_sdk2_python/blob/814556d15970dd2ecf1c9984e845ca02ab07e206/unitree_sdk2py/b2/robot_state/robot_state_api.py"
+    },
+    {
+      "repo": "unitree_ros2",
+      "commit": "668d1ec5a05d1c38d3306bdca7d59f2ba3581a88",
+      "repository_path": "cyclonedds_ws/src/unitree/unitree_hg/msg/MotorState.msg",
+      "path": "g1_console/assets/interface_audit_sources/unitree_ros2/cyclonedds_ws/src/unitree/unitree_hg/msg/MotorState.msg",
+      "sha256": "9627e5eaaa3d360f33f10b120e7aa45eab811e37b4f67c4321ca03b6fdaa5a5e",
+      "url": "https://github.com/unitreerobotics/unitree_ros2/blob/668d1ec5a05d1c38d3306bdca7d59f2ba3581a88/cyclonedds_ws/src/unitree/unitree_hg/msg/MotorState.msg"
+    },
+    {
+      "repo": "unitree_ros2",
+      "commit": "668d1ec5a05d1c38d3306bdca7d59f2ba3581a88",
+      "repository_path": "cyclonedds_ws/src/unitree/unitree_hg/msg/MotorCmd.msg",
+      "path": "g1_console/assets/interface_audit_sources/unitree_ros2/cyclonedds_ws/src/unitree/unitree_hg/msg/MotorCmd.msg",
+      "sha256": "8cd7564b21acfaf933e6a854e7f7958163d3fbf1280c947aaba21fd45ab95ef7",
+      "url": "https://github.com/unitreerobotics/unitree_ros2/blob/668d1ec5a05d1c38d3306bdca7d59f2ba3581a88/cyclonedds_ws/src/unitree/unitree_hg/msg/MotorCmd.msg"
+    },
+    {
+      "repo": "unitree_ros2",
+      "commit": "668d1ec5a05d1c38d3306bdca7d59f2ba3581a88",
+      "repository_path": "cyclonedds_ws/src/unitree/unitree_hg/msg/LowState.msg",
+      "path": "g1_console/assets/interface_audit_sources/unitree_ros2/cyclonedds_ws/src/unitree/unitree_hg/msg/LowState.msg",
+      "sha256": "e0472b7d1d1e5177ccd44ed591c2eca3e0781ebff41b59f2802eb1fa6adbdd57",
+      "url": "https://github.com/unitreerobotics/unitree_ros2/blob/668d1ec5a05d1c38d3306bdca7d59f2ba3581a88/cyclonedds_ws/src/unitree/unitree_hg/msg/LowState.msg"
+    }
+  ],
+  "query_source": {
+    "path": "g1_console/assets/interface_audit_sources/rpc_metadata_20261021.json",
+    "sha256": "b739e36fa259ea29937ac321966b2e30f857cde59720863f7f4d15ac85632241"
+  },
+  "documents": [
+    {
+      "title": "Basic Services Interface",
+      "url": "https://support.unitree.com/home/en/G1_developer/basic_services_interface",
+      "updated": "2025-10-21 14:45:49",
+      "review": "浏览器读取渲染正文；MotorState 为反馈，Kp/Kd 属于 MotorCmd；文档 q_raw 等标为保留，且与当前 IDL 有差异，不用来反推零位"
+    },
+    {
+      "title": "Robot State Client Interface",
+      "url": "https://support.unitree.com/home/en/G1_developer/robot_state_client_interface",
+      "updated": "2025-11-19 14:49:52",
+      "review": "正文明确 G1 复用 B2 RobotStateClient；公开服务状态及控制接口，不是逐电机配置导出"
+    },
+    {
+      "title": "Debugging Specification",
+      "url": "https://support.unitree.com/home/en/G1_developer/debugging_specification",
+      "updated": "2024-12-05 18:34:59",
+      "review": "正文说明可在开发板经 DDS 通信，未给出电机配置或标定的读取入口"
+    }
+  ],
+  "review_scope": {
+    "repositories": "三个官方仓库 HEAD 固定提交；读取提取的 Python/C++/IDL/Markdown/XML/JSON/YAML/TXT 源文件，另读取三个 HG ROS2 .msg；未逆向二进制或私有 App 协议",
+    "search": "calibr|demarc|softlimit|taumax|zero.?offset|GetConfig|GetMotor|motor.*(config|param)|config.*(read|get)",
+    "limitations": "这是有范围的公开资料核查，不能证明所有官方资料或私有固件中不存在其他接口"
+  },
+  "findings": [
+    {
+      "interface": "DDS / ROS2 MotorState",
+      "result": "可读反馈，未提供配置",
+      "detail": "角度、速度、估算力矩、温度、电压和原码；没有 Kp/Kd、序号、驱动固件、电流上限、减速比或零位标定字段。ROS2 使用同一类反馈，不会新增缺失字段"
+    },
+    {
+      "interface": "通用 RPC API 1",
+      "result": "6 个服务返回版本",
+      "detail": "GetServerApiVersion 仅返回服务 API 版本，lease=0；不能把版本号当电机固件，也不能据版本相同认定业务协议兼容"
+    },
+    {
+      "interface": "RobotStateClient",
+      "result": "服务列表可读；包版本未实现",
+      "detail": "ServiceList 成功返回 28 条软件服务原码；GetPkgVersion 返回 3203。软件服务不证明物理板/灵巧手安装、健康或动作安全"
+    },
+    {
+      "interface": "Go2 / B2 ConfigClient",
+      "result": "G1 适用性未确认，未调用",
+      "detail": "官方 Get(1002)/Meta(1004) 需要具体配置 name；没有 G1 复用说明、电机配置名称、文件白名单或标定格式。即使 config API 版本同为 1.0.0.1 也不能套用；未猜名称、列目录或请求任意文件"
+    },
+    {
+      "interface": "G1 标定 / 限值服务",
+      "result": "仅核实服务版本",
+      "detail": "basic_demarcate / basic_softlimit / basic_taumax 已返回 API 版本；未找到匹配的 G1 公开业务方法、读写语义和返回字段，不发业务请求"
+    }
+  ],
+  "motor_configuration_read_supported": null,
+  "calibration_read_supported": null,
+  "motor_configuration_values_obtained": 0,
+  "adapter_note": "官方 Python RobotStateClient 引用不存在的 rpc.client_internal；审计脚本仅复现公开 ServiceList/GetPkgVersion 两个 getter 的协议，不修改 SDK，不导入或运行控制示例",
+  "required_official_materials": [
+    "适配此 G1 运动固件的 config/标定只读 API ID、参数及返回 schema",
+    "获准读取的精确配置 name、逐电机编号和序号映射；无租约/不切模式/不重载的明确语义",
+    "本机专属标定导出及单位、坐标、编码/缩放、版本与完整性校验；Kp/Kd 的出厂/当前生效区分"
+  ]
+}

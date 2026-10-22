@@ -1,0 +1,40 @@
+{
+  "current": false,
+  "checked_at_utc": "2026-10-22T04:44:25.631571+00:00",
+  "execution_allowed": false,
+  "motion_writes": 0,
+  "sources": [
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/pull/312",
+      "state": "open",
+      "merged": false,
+      "head_sha": "1123c078e4902a6726b56aa7851c5b36cc1031ed",
+      "updated_at": "2026-08-26T20:59:12Z",
+      "scope": "Community proposal for reported G1 software 1.5.3; no verification for this G1 EDU 23 DOF or 8.7.5.212. Physical constructor transitions are not adopted."
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_sdk2_python/issues/170",
+      "scope": "Report for 29 DOF software 1.5.3. October 2 followup describes rocking with 501 and stepping with 200; no exact successful trace. Not device-specific evidence."
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_sdk2/blob/d1abf001220d3e5f59e00a0c4aaa595e00089a4a/include/unitree/robot/g1/loco/g1_loco_error.hpp",
+      "scope": "7301 is LocoState not available. Does not publish the server readiness predicate."
+    }
+  ],
+  "searches": [
+    {
+      "query": "org:unitreerobotics \"8.7.5.212\"",
+      "kind": "issues",
+      "total_count": 0
+    },
+    {
+      "query": "\"LocoState\" org:unitreerobotics",
+      "kind": "code",
+      "total_count": 9,
+      "result_scope": "Error constants, clients and examples; no server predicate in these indexed results."
+    }
+  ],
+  "device_motion_firmware": null,
+  "exact_7301_predicate": null,
+  "adopted_transition": null
+}

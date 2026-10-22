@@ -1,0 +1,2 @@
+# Mac-side SSH forwarding only; keep separate from the Orin console runtime.
+paramiko==5.1.0

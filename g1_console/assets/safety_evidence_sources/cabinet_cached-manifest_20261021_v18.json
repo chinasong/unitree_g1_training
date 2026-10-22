@@ -1,0 +1,11 @@
+{
+  "at_utc": "2026-10-21T07:10:40.716375+00:00",
+  "files": [
+    {
+      "path": "/unitree/ota/update/1.5.3/package_1.5.3.8_G1_Edu+_upk/module/unitree_patch_pc4/1.0.0.6/file/unitree_patch_pc4_1.0.0.6.upk",
+      "bytes": 21731956
+    }
+  ],
+  "command_writes": 0,
+  "rpc_calls": 0
+}

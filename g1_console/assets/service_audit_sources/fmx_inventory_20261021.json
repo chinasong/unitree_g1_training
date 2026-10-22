@@ -1,0 +1,177 @@
+{
+  "started_at_utc": "2026-10-21T02:59:26.860406+00:00",
+  "roots": [
+    "/unitree/module",
+    "/unitree/ota",
+    "/unitree/lib",
+    "/unitree/robot/pkg/module",
+    "/home/unitree/megaflow_sdk/ws/bin",
+    "/home/unitree/megaflow_sdk/ws/lib"
+  ],
+  "boot_id": "7a6791dc-f512-4b45-aca3-44fbde855e25",
+  "elfs": [
+    {
+      "path": "/unitree/module/master_service/master_service",
+      "bytes": 9083232,
+      "nm_returncode": 0,
+      "nm_matches": [
+        "0000000000cd0550 D UT_MIXER_MAGIC_V1",
+        "0000000000cd0be0 u guard variable for unitree::security::Mixer::Instance()::inst",
+        "00000000004dd490 T unitree::common::ServiceBase::ParseConfigContent(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)",
+        "0000000000445180 T unitree::security::Mixer::SetCodeVer(int)",
+        "0000000000095a68 T unitree::security::Mixer::Gen(unsigned int, unsigned char*, unsigned int)",
+        "00000000001eaa08 T unitree::security::Mixer::Load(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)",
+        "00000000001d83e8 T unitree::security::Mixer::Wrap(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)",
+        "00000000004bc668 T unitree::security::Mixer::LoadMM(int, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)",
+        "0000000000089100 T unitree::security::Mixer::WrapMM(int, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool)",
+        "00000000000819c0 T unitree::security::Mixer::CheckMM(int, int)",
+        "0000000000071688 W unitree::security::Mixer::Instance()",
+        "00000000004dcbe8 T unitree::security::Mixer::LoadAddr(char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)",
+        "00000000004beb80 T unitree::security::Mixer::LoadFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)",
+        "00000000004abe00 T unitree::security::Mixer::WrapFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)",
+        "00000000004c1e58 T unitree::security::Mixer::Mixer()",
+        "00000000004c7b70 T unitree::security::Mixer::Mixer()",
+        "00000000000870c8 T Blowfish::SetKey(unsigned char const*, int)",
+        "00000000004c9368 T Blowfish::DecryptBlock(unsigned int*, unsigned int*) const",
+        "000000000008b1b8 T Blowfish::EncryptBlock(unsigned int*, unsigned int*) const",
+        "00000000001e5098 T Blowfish::Decrypt(unsigned char*, unsigned char const*, int) const",
+        "00000000000845f0 T Blowfish::Encrypt(unsigned char*, unsigned char const*, int) const",
+        "0000000000205e08 T Blowfish::Feistel(unsigned int) const",
+        "0000000000cd0bd8 u unitree::security::Mixer::Instance()::inst"
+      ],
+      "matches_truncated": false,
+      "has_symbols": true,
+      "sha256": "380e34de9c2def2692c0bf1b73e969d3167c8270f2ed5f974bb01abd4e96f24e"
+    },
+    {
+      "path": "/unitree/module/video_hub_pc4/videohub_pc4",
+      "bytes": 63592,
+      "nm_returncode": 0,
+      "nm_matches": [],
+      "matches_truncated": false,
+      "has_symbols": true
+    },
+    {
+      "path": "/unitree/ota/pipe/ota_pipe_service",
+      "bytes": 9213664,
+      "nm_returncode": 0,
+      "nm_matches": [
+        "00000000000633a8 T unitree::common::ServiceBase::ParseConfigContent(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)"
+      ],
+      "matches_truncated": false,
+      "has_symbols": true,
+      "sha256": "fcca57b1f2c67af0123235cbbdd17f8f5a444a64d105a928b683cd5074be60e7"
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/bin/FlexFlowInvoker",
+      "bytes": 20112544,
+      "nm_returncode": 0,
+      "nm_matches": [],
+      "matches_truncated": false,
+      "has_symbols": true
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/bin/MegaFlowRuntimeCli",
+      "bytes": 33526032,
+      "nm_returncode": 0,
+      "nm_matches": [
+        "0000000000412340 t _GLOBAL__sub_I__Z38decrypt_and_parse_config_with_all_macsRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE",
+        "0000000000433a10 T decrypt_and_parse_config_with_all_macs(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)"
+      ],
+      "matches_truncated": false,
+      "has_symbols": true,
+      "sha256": "8e41893b21063d6e07006ce582c510183e7c649488c49daae0209208627be8fd"
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/bin/MegaFlowRuntimeDaemon",
+      "bytes": 21448952,
+      "nm_returncode": 0,
+      "nm_matches": [
+        "000000000041c320 t _GLOBAL__sub_I__Z38decrypt_and_parse_config_with_all_macsRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE",
+        "00000000004632c0 T decrypt_and_parse_config_with_all_macs(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)"
+      ],
+      "matches_truncated": false,
+      "has_symbols": true,
+      "sha256": "3670595470afb44f037e083200ca33bc8905dfe06a2650399875c3c6fa501473"
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/bin/MegaFlowRuntimeSpawner",
+      "bytes": 182760,
+      "nm_returncode": 0,
+      "nm_matches": [],
+      "matches_truncated": false,
+      "has_symbols": true
+    }
+  ],
+  "fmx_files": [
+    {
+      "path": "/unitree/module/master_service/master_service.json",
+      "bytes": 468,
+      "sha256": "31eae39936576504c40be767bd93cd34b7489154eca989e5e5c2781b05e3d977",
+      "magic_hex": "464d5801",
+      "offset8_u32_le": 448,
+      "payload_mod8_after_20": 0,
+      "payload_mod8_after_32": 4
+    }
+  ],
+  "errors": [],
+  "read_only": true,
+  "rpc_calls": 0,
+  "command_writes": 0,
+  "vendor_program_executions": 0,
+  "recheck": [
+    {
+      "path": "/unitree/module/master_service/master_service",
+      "bytes": 9083232,
+      "sha256": "380e34de9c2def2692c0bf1b73e969d3167c8270f2ed5f974bb01abd4e96f24e"
+    },
+    {
+      "path": "/unitree/module/master_service/master_service.json",
+      "bytes": 468,
+      "sha256": "31eae39936576504c40be767bd93cd34b7489154eca989e5e5c2781b05e3d977"
+    }
+  ],
+  "processes": [
+    {
+      "pid": 1296,
+      "argv": [
+        "/unitree/module/master_service/master_service"
+      ],
+      "start_ticks": 2242
+    },
+    {
+      "pid": 1298,
+      "argv": [
+        "/unitree/ota/pipe/ota_pipe_service"
+      ],
+      "start_ticks": 2242
+    },
+    {
+      "pid": 2557,
+      "argv": [
+        "/unitree/module/video_hub_pc4/videohub_pc4"
+      ],
+      "start_ticks": 2791
+    },
+    {
+      "pid": 2676,
+      "argv": [
+        "/home/unitree/megaflow_sdk/ws//bin/MegaFlowRuntimeDaemon",
+        "-c",
+        "/home/unitree/megaflow_sdk/ws//bin/config.bin",
+        "-w",
+        "/home/unitree/megaflow_sdk/ws/",
+        "-d",
+        "127.0.0.1:8899",
+        "-i",
+        "-e",
+        "/home/unitree/megaflow_sdk/ws//dep/",
+        "-l",
+        "0"
+      ],
+      "start_ticks": 3210
+    }
+  ],
+  "completed_at_utc": "2026-10-21T02:59:29.343858+00:00",
+  "received_at_utc": "2026-10-21T02:59:29.275144+00:00"
+}

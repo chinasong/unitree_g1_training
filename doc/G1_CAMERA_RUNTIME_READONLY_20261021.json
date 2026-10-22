@@ -1,0 +1,51 @@
+{
+  "current": false,
+  "observed_at": 1792557405.406121,
+  "usb_runtime": {
+    "speed": "5000",
+    "power/runtime_status": "active",
+    "power/control": "auto",
+    "power/autosuspend_delay_ms": "2000"
+  },
+  "kernel_read": {
+    "exit_code": 0,
+    "since": "15 minutes ago",
+    "max_lines": 120,
+    "camera_lines": [
+      "Oct 21 12:23:12 ubuntu kernel: usb 2-2.3: new SuperSpeed Gen 1 USB device number 3 using tegra-xusb",
+      "Oct 21 12:23:12 ubuntu kernel: usb 2-2.3: New USB device found, idVendor=8086, idProduct=0b3a, bcdDevice=50.d0",
+      "Oct 21 12:23:12 ubuntu kernel: usb 2-2.3: Product: Intel(R) RealSense(TM) Depth Camera 435i",
+      "Oct 21 12:23:12 ubuntu kernel: usb 2-2.3: Manufacturer: Intel(R) RealSense(TM) Depth Camera 435i",
+      "Oct 21 12:23:12 ubuntu kernel: hid-generic 0003:8086:0B3A.0001: hiddev96,hidraw0: USB HID v1.10 Device [Intel(R) RealSense(TM) Depth Camera 435i Intel(R) RealSense(TM) Depth Camera 435i] on usb-3610000.xhci-2.3/input5",
+      "Oct 21 12:23:13 ubuntu kernel: uvcvideo: Found UVC 1.50 device Intel(R) RealSense(TM) Depth Camera 435i (8086:0b3a)",
+      "Oct 21 12:23:13 ubuntu kernel: input: Intel(R) RealSense(TM) Depth Ca as /devices/platform/3610000.xhci/usb2/2-2/2-2.3/2-2.3:1.0/input/input5",
+      "Oct 21 12:23:13 ubuntu kernel: uvcvideo: Found UVC 1.50 device Intel(R) RealSense(TM) Depth Camera 435i (8086:0b3a)",
+      "Oct 21 12:23:13 ubuntu kernel: usbcore: registered new interface driver uvcvideo",
+      "Oct 21 12:23:13 ubuntu kernel: USB Video Class driver (1.1.1)",
+      "Oct 21 12:23:15 ubuntu kernel: usb 2-2.3: Disable of device-initiated U1 failed.",
+      "Oct 21 12:23:16 ubuntu kernel: usb 2-2.3: Disable of device-initiated U2 failed.",
+      "Oct 21 12:23:16 ubuntu kernel: usb 2-2.3: USB disconnect, device number 3",
+      "Oct 21 12:23:19 ubuntu kernel: usb 2-2.3: new SuperSpeed Gen 1 USB device number 4 using tegra-xusb",
+      "Oct 21 12:23:19 ubuntu kernel: usb 2-2.3: New USB device found, idVendor=8086, idProduct=0b3a, bcdDevice=50.d0",
+      "Oct 21 12:23:19 ubuntu kernel: usb 2-2.3: Product: Intel(R) RealSense(TM) Depth Camera 435i",
+      "Oct 21 12:23:19 ubuntu kernel: usb 2-2.3: Manufacturer: Intel(R) RealSense(TM) Depth Camera 435i",
+      "Oct 21 12:23:19 ubuntu kernel: uvcvideo: Found UVC 1.50 device Intel(R) RealSense(TM) Depth Camera 435i (8086:0b3a)",
+      "Oct 21 12:23:19 ubuntu kernel: input: Intel(R) RealSense(TM) Depth Ca as /devices/platform/3610000.xhci/usb2/2-2/2-2.3/2-2.3:1.0/input/input6",
+      "Oct 21 12:23:19 ubuntu kernel: uvcvideo: Found UVC 1.50 device Intel(R) RealSense(TM) Depth Camera 435i (8086:0b3a)",
+      "Oct 21 12:23:22 ubuntu kernel: usb 2-2.3: USB disconnect, device number 4",
+      "Oct 21 12:23:43 ubuntu kernel: usb 2-2.3: new SuperSpeed Gen 1 USB device number 5 using tegra-xusb",
+      "Oct 21 12:23:43 ubuntu kernel: usb 2-2.3: New USB device found, idVendor=8086, idProduct=0b3a, bcdDevice=50.d0",
+      "Oct 21 12:23:43 ubuntu kernel: usb 2-2.3: Product: Intel(R) RealSense(TM) Depth Camera 435i",
+      "Oct 21 12:23:43 ubuntu kernel: usb 2-2.3: Manufacturer: Intel(R) RealSense(TM) Depth Camera 435i",
+      "Oct 21 12:23:43 ubuntu kernel: uvcvideo: Found UVC 1.50 device Intel(R) RealSense(TM) Depth Camera 435i (8086:0b3a)",
+      "Oct 21 12:23:43 ubuntu kernel: input: Intel(R) RealSense(TM) Depth Ca as /devices/platform/3610000.xhci/usb2/2-2/2-2.3/2-2.3:1.0/input/input7",
+      "Oct 21 12:23:43 ubuntu kernel: uvcvideo: Found UVC 1.50 device Intel(R) RealSense(TM) Depth Camera 435i (8086:0b3a)"
+    ],
+    "error": ""
+  },
+  "changes": 0,
+  "notes": [
+    "USB runtime status and kernel log are read-only evidence, not proof of current image delivery.",
+    "Early USB reconnects occurred during initial Type-C attachment; subsequent RPC timeouts are not proven to have the same cause."
+  ]
+}

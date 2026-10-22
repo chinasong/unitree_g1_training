@@ -1,0 +1,40 @@
+{
+  "current": false,
+  "checked_at_utc": "2026-10-21T11:18:20.733922+00:00",
+  "source_page": "https://support.unitree.com/home/en/G1_developer/remote_control",
+  "source_updated": "2026-06-25 15:06:42",
+  "dof": 23,
+  "selected_branch": null,
+  "device_motion_firmware": null,
+  "branches": [
+    {
+      "id": "23_gt_8_6",
+      "label": "运动版本 >8.6.0.0 · 23 DOF",
+      "source_url": "https://oss-global-cdn.unitree.com/static/22972694fe684e1c89c9832f75d0938f.pdf",
+      "lying_path": "阻尼 → 自适应起身（⑩）",
+      "sdk_mapping": null,
+      "device_applicable": null
+    },
+    {
+      "id": "23_ge_8_4_2_222",
+      "label": "运动版本 ≥8.4.2.222 · 23 DOF 旧版手册",
+      "source_url": "https://oss-global-cdn.unitree.com/static/656cb0b067a64efc8c2d3e439a0e13c2.pdf",
+      "lying_path": "阻尼 → 躺站（⑤）",
+      "sdk_mapping": null,
+      "device_applicable": null
+    }
+  ],
+  "shared_conditions": [
+    "躺卧和蹲姿启动只适用于平整坚硬地面；当前靠柜坐地未核定为允许起点。",
+    "推荐椅坐启动路线涉及锁定站立再进入运动控制，②→③需人工辅助扶正；不能把地面和柜体当作椅子。",
+    "站立模式允许在受扰、难维持平衡时迈步；“站立”不等于双脚位置固定。",
+    "预备姿态、坐姿或蹲姿说明的约 5 秒时序不证明起身可通过 SDK 减速；坐姿和蹲姿不带平衡控制。"
+  ],
+  "limitations": [
+    "官方目录的 ≥8.4.2.222 与 >8.6.0.0 分支存在覆盖范围，不在未知版本时自行选择。",
+    "29 DOF、三自由度腰或 EDU+ 缓存不作为本机 23 DOF 版本证据。",
+    "自适应起身遥控入口与 Python FSM 702、C++ FSM 4 之间没有已核定的本机映射。"
+  ],
+  "execution_allowed": false,
+  "motion_writes": 0
+}

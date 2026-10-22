@@ -1,0 +1,18 @@
+{
+  "observed_at": "2026-10-22T11:00:09.591422+08:00",
+  "method": "native dns-sd browse; no authentication or configuration changes",
+  "browses": [
+    {
+      "service": "_ssh._tcp",
+      "output": "Browsing for _ssh._tcp.local.\nDATE: ---Thu 22 Oct 2026---\n11:00:01.590  ...STARTING...\nTimestamp     A/R    Flags  if Domain               Service Type         Instance Name\n11:00:01.591  Add        3   1 local.               _ssh._tcp.           doge的MacBook Pro\n11:00:01.591  Add        2  15 local.               _ssh._tcp.           doge的MacBook Pro\n"
+    },
+    {
+      "service": "_workstation._tcp",
+      "output": ""
+    },
+    {
+      "service": "_nomachine._tcp",
+      "output": ""
+    }
+  ]
+}

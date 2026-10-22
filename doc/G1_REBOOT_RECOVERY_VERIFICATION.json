@@ -1,0 +1,212 @@
+{
+  "checked_at_utc": "2026-10-22T02:38:36.189787+00:00",
+  "checked_at_asia_shanghai": "2026-10-22T10:38:36.189787+08:00",
+  "completion": "mac_recovery_verified_orin_network_root_cause_unresolved",
+  "mac_connector": {
+    "url": "http://127.0.0.1:18765/",
+    "live_status": {
+      "ready": false,
+      "phase": "等待 Orin 恢复连接",
+      "detail": "<LAN_NET>/24 暂未发现已核验的 Orin SSH。App 的 <APP_REPORTED_IP> 尚不能证明是 Orin；继续等待。",
+      "host": null,
+      "verified": false,
+      "attempt": 9,
+      "updated_at": 1792636713.627437,
+      "manual_remote": false,
+      "last_connected_at": null
+    },
+    "read_only_default": true,
+    "requires_process_window_open": true,
+    "installed_global_daemon": false
+  },
+  "network_evidence": {
+    "lan_scan": {
+      "checked_at": "2026-10-22T02:19:40.284257+00:00",
+      "ssh_hosts_excluding_mac": [],
+      "network_changed": false
+    },
+    "app_reported_ip_ssh_check": {
+      "checked_at": "2026-10-22T02:21:28.957768+00:00",
+      "target": "<APP_REPORTED_IP>",
+      "network_changed": false,
+      "authentication_attempted": false,
+      "error": "ConnectionRefusedError: [Errno 61] Connection refused"
+    },
+    "historical_verified_orin": {
+      "host": "<ORIN_IP>",
+      "wlan_mac": "78:22:88:af:97:a5",
+      "ssh_host_fingerprint": "<ORIN_HOST_FINGERPRINT>",
+      "current_address_confirmed": false
+    },
+    "orin_wifi_autoconnect": null,
+    "orin_ssh_enabled_at_boot": null,
+    "orin_current_boot_id": null
+  },
+  "verification": {
+    "python": {
+      "passed": 75,
+      "runs": [
+        {
+          "tests": [
+            "tests/test_g1_reboot_connection.py",
+            "tests/test_g1_manual_remote.py"
+          ],
+          "passed": 44
+        },
+        {
+          "tests": [
+            "tests/test_g1_remote_operations.py",
+            "tests/test_g1_service_capabilities.py"
+          ],
+          "passed": 31
+        }
+      ],
+      "warning": "existing Starlette httpx deprecation"
+    },
+    "frontend": {
+      "command": "node --test tests/*.test.mjs",
+      "directory": "console/web",
+      "passed": 11,
+      "typescript_vite_build": "passed",
+      "warning": "existing chunk size warning"
+    },
+    "browser_service_restart": {
+      "environment": "synthetic demo on loopback 18766; stopped after verification",
+      "checked_at": "2026-10-22T02:34:32.487694+00:00",
+      "browser_reloaded": false,
+      "before_run_id": "1e528f5c9f5c",
+      "after_run_id": "d9e54a5d6775",
+      "before_control_owner": null,
+      "after_control_owner": null,
+      "before_manual_armed": false,
+      "after_manual_armed": false,
+      "after_command_count": 0,
+      "offline_ui": "4076 ms 实时状态流未就绪；保留上次反馈 · 已过期",
+      "recovered_ui": "26 ms 实时状态流在线；23 / 23；合成演示环境",
+      "commands_replayed": false
+    },
+    "new_frontend_deployed_to_orin": false,
+    "physical_robot_reboot_acceptance_completed": false,
+    "actual_robot_dds_and_camera_recovery_verified": false,
+    "screenshot": "screenshots/g1-reboot-recovery-20261022.png"
+  },
+  "boundaries": {
+    "robot_motion_executed": false,
+    "motion_authority_acquired": false,
+    "quantumult_x_modified": false,
+    "system_network_modified": false,
+    "official_robot_services_restarted": false,
+    "ssh_credentials_persisted": false
+  },
+  "source_sha256": {
+    "scripts/connect_orin_console.py": "c0724b785666815b0e84d00af0a80d75084b1758a334afa960af749014cb04ed",
+    "scripts/orin_console_recovery.py": "a895c9163091489cd08f29ed73347654ac70e9544f32afb1eb90d8b2aa3d1791",
+    "console/web/src/stateStream.ts": "9627bac5940f659a89d0d08f6d6dbbeba553d20a66075f70fb23c7ce9e73f92f",
+    "console/web/src/telemetryAge.ts": "9f4b50b957d5de2db775d44e0cde0c53fef174707b9c68fbb4841141c79826b1",
+    "console/web/src/App.tsx": "067a705aaccd025c95251307569bd4f037b542d541a63220b2b5b847533918de",
+    "tests/test_g1_reboot_connection.py": "cf721efaca0e876a1eec7a8c62149ba8d2d6f2d8e837e2ae54b61d609f1bfd48"
+  },
+  "boot_diagnostics_followup": {
+    "checked_at_asia_shanghai": "2026-10-22T11:06:10.552155+08:00",
+    "completion": "trusted_orin_entry_unavailable_wifi_and_ssh_boot_cause_still_unknown",
+    "app_endpoint": {
+      "ip": "<APP_REPORTED_IP>",
+      "robot_serial_match": true,
+      "matching_discovery_replies": 6,
+      "verified_as_orin_ssh": false
+    },
+    "evidence_files": [
+      "G1_TARGETED_DISCOVERY_20261022.json",
+      "G1_SSH_NOMACHINE_ENUMERATION_20261022.json",
+      "G1_MDNS_DISCOVERY_20261022.json",
+      "G1_APP_NODE_HTTP_IDENTIFICATION_20261022.json"
+    ],
+    "official_sources": [
+      {
+        "url": "https://serviceconsole.unitree.com/index.html#/help/031304",
+        "title": "开发PC连接失败速查手册",
+        "finding": "App/PC1 network is separate from PC2 development network"
+      },
+      {
+        "url": "https://serviceconsole.unitree.com/index.html#/help/031346",
+        "title": "连接G1机器人的方式",
+        "finding": "wired, preconfigured PC2 AP, or preconfigured PC2 STA"
+      },
+      {
+        "url": "https://serviceconsole.unitree.com/index.html#/help/031312",
+        "title": "G1 pc2的WiFi网卡不见了怎么办？",
+        "finding": "driver branch requires PC2 evidence"
+      },
+      {
+        "url": "https://serviceconsole.unitree.com/index.html#/help/031308",
+        "title": "G1WiFi网卡被RF-kill锁定",
+        "finding": "RF-kill branch requires PC2 evidence"
+      }
+    ],
+    "current_robot_boot_diagnostics_obtained": false,
+    "wifi_autoconnect": null,
+    "wifi_driver_current_boot": null,
+    "rfkill_current_boot": null,
+    "ssh_active_current_boot": null,
+    "diagnostic_code": {
+      "loaded_by_local_connector": true,
+      "test_command": ".venv/bin/python -m pytest tests/test_g1_reboot_connection.py -q",
+      "passed": 31,
+      "environment": "local loopback fixtures; no robot control endpoints",
+      "source_sha256": {
+        "scripts/connect_orin_console.py": "e2b498e2148cb2f5ec87f8d64acb3d940a05747264d480f54ba6dcb4d308ffa0",
+        "scripts/orin_console_recovery.py": "cc10e638252e179be1866055521688fc90c715998514c893eb29e3675a8b8582",
+        "tests/test_g1_reboot_connection.py": "e77032f0c081473b4182499f538bb2a2e534bd7a0d91c4a4a921712da481ca54"
+      }
+    },
+    "live_mac_connector": {
+      "ready": false,
+      "phase": "等待 Orin 恢复连接",
+      "detail": "<LAN_NET>/24 暂未发现已核验的 Orin SSH。App 的 <APP_REPORTED_IP> 尚不能证明是 Orin；继续等待。",
+      "host": null,
+      "verified": false,
+      "attempt": 3,
+      "updated_at": 1792638336.246947,
+      "manual_remote": false,
+      "last_connected_at": null
+    },
+    "system_fix_applied": false,
+    "robot_reboot_acceptance_completed": false,
+    "quantumult_x_modified": false,
+    "robot_motion_executed": false,
+    "known_entry_blockers": [
+      "router login unavailable",
+      "wired adapter and cable unavailable",
+      "Orin local terminal unavailable"
+    ],
+    "supported_next_entry": "one-time wired access to G1 external Ethernet / PC2 192.168.123.164; Mac address setup requires user confirmation"
+  },
+  "latest_observation": "robot_reboot_observation_20261022",
+  "robot_reboot_observation_20261022": {
+    "checked_at_asia_shanghai": "2026-10-22T11:19:35.148554+08:00",
+    "status": "one_actual_reboot_recovered_readonly_wifi_driver_failure_trigger_unresolved",
+    "evidence_file": "G1_REBOOT_NETWORK_AUDIT_20261022.json",
+    "boot_id": "aed898cb-acfd-44a2-8e9c-50f1f00269aa",
+    "verified_orin_host": "<ORIN_IP>",
+    "readonly_console_live": true,
+    "joint_count": 23,
+    "telemetry_tick_advanced": true,
+    "camera_sequence_advanced": true,
+    "system_network_modified": false,
+    "robot_motion_executed": false,
+    "quantumult_x_modified": false,
+    "physical_reboot_acceptance_completed": false,
+    "new_session_recovery_frontend_deployed": false,
+    "wifi_driver_failure_trigger_unknown": true,
+    "directed_tests_passed": 32,
+    "source_sha256": {
+      "scripts/connect_orin_console.py": "e2b498e2148cb2f5ec87f8d64acb3d940a05747264d480f54ba6dcb4d308ffa0",
+      "scripts/orin_console_recovery.py": "1c32371bde5cb82fb9829c07e843f174db0958bdd59fbf5c47412f64bd4c183e",
+      "tests/test_g1_reboot_connection.py": "5fac4913eb4e486d1f7917e00dd69276a7b93df70dad02bbfa8b5039e2cd19c5"
+    },
+    "final_read_only_check_at_asia_shanghai": "2026-10-22T11:22:17.174798+08:00",
+    "user_decision": "defer_wifi_powersave_trial_keep_read_only",
+    "system_network_changes_authorized": false,
+    "final_read_only_check_passed": true
+  }
+}

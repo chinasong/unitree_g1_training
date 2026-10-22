@@ -1,0 +1,372 @@
+{
+  "checked_at_utc": "2026-10-21T12:04:29.476156+00:00",
+  "boot_id": "8d9a0e09-97e1-45fa-81d3-18822a3c760a",
+  "release": "7e95a6e5a046",
+  "readings": [
+    {
+      "api_id": 1003,
+      "code": 0,
+      "data": [
+        {
+          "name": "ai_sport",
+          "protect": 0,
+          "status": 0
+        },
+        {
+          "name": "audio_player_service",
+          "protect": 0,
+          "status": 0
+        },
+        {
+          "name": "auto_test_arm",
+          "protect": 0,
+          "status": 1
+        },
+        {
+          "name": "auto_test_low",
+          "protect": 0,
+          "status": 1
+        },
+        {
+          "name": "bashrunner",
+          "protect": 0,
+          "status": 0
+        },
+        {
+          "name": "basic_service",
+          "protect": 1,
+          "status": 0
+        },
+        {
+          "name": "battery_guard",
+          "protect": 0,
+          "status": 0
+        },
+        {
+          "name": "chat_go",
+          "protect": 0,
+          "status": 0
+        },
+        {
+          "name": "dex3_service_l",
+          "protect": 0,
+          "status": 0
+        },
+        {
+          "name": "dex3_service_r",
+          "protect": 0,
+          "status": 0
+        },
+        {
+          "name": "emergency_stop",
+          "protect": 0,
+          "status": 0
+        },
+        {
+          "name": "g1_arm_example",
+          "protect": 0,
+          "status": 0
+        },
+        {
+          "name": "lidar_driver",
+          "protect": 0,
+          "status": 1
+        },
+        {
+          "name": "log_system",
+          "protect": 0,
+          "status": 0
+        },
+        {
+          "name": "motion_switcher",
+          "protect": 0,
+          "status": 0
+        },
+        {
+          "name": "net_switcher",
+          "protect": 0,
+          "status": 0
+        },
+        {
+          "name": "ota_box",
+          "protect": 0,
+          "status": 1
+        },
+        {
+          "name": "ota_pipe",
+          "protect": 0,
+          "status": 0
+        },
+        {
+          "name": "robot_state",
+          "protect": 1,
+          "status": 0
+        },
+        {
+          "name": "robot_type_service",
+          "protect": 0,
+          "status": 0
+        },
+        {
+          "name": "state_estimator",
+          "protect": 0,
+          "status": 0
+        },
+        {
+          "name": "unistore",
+          "protect": 0,
+          "status": 0
+        },
+        {
+          "name": "unitree_slam",
+          "protect": 0,
+          "status": 1
+        },
+        {
+          "name": "video_hub_pc4",
+          "protect": 0,
+          "status": 0
+        },
+        {
+          "name": "vui_service",
+          "protect": 0,
+          "status": 0
+        },
+        {
+          "name": "webrtc_bridge",
+          "protect": 1,
+          "status": 0
+        },
+        {
+          "name": "webrtc_multicast_responder",
+          "protect": 0,
+          "status": 0
+        },
+        {
+          "name": "webrtc_signal_server",
+          "protect": 1,
+          "status": 0
+        }
+      ],
+      "elapsed_ms": 3.0,
+      "transport": "isolated_polled",
+      "lease": 0
+    },
+    {
+      "api_id": 1006,
+      "code": 3203,
+      "data": null,
+      "elapsed_ms": 0.71,
+      "transport": "isolated_polled",
+      "lease": 0
+    },
+    {
+      "api_id": 1006,
+      "code": 3203,
+      "data": null,
+      "elapsed_ms": 0.71,
+      "transport": "isolated_polled",
+      "lease": 0
+    },
+    {
+      "api_id": 1003,
+      "code": 0,
+      "data": [
+        {
+          "name": "ai_sport",
+          "protect": 0,
+          "status": 0
+        },
+        {
+          "name": "audio_player_service",
+          "protect": 0,
+          "status": 0
+        },
+        {
+          "name": "auto_test_arm",
+          "protect": 0,
+          "status": 1
+        },
+        {
+          "name": "auto_test_low",
+          "protect": 0,
+          "status": 1
+        },
+        {
+          "name": "bashrunner",
+          "protect": 0,
+          "status": 0
+        },
+        {
+          "name": "basic_service",
+          "protect": 1,
+          "status": 0
+        },
+        {
+          "name": "battery_guard",
+          "protect": 0,
+          "status": 0
+        },
+        {
+          "name": "chat_go",
+          "protect": 0,
+          "status": 0
+        },
+        {
+          "name": "dex3_service_l",
+          "protect": 0,
+          "status": 0
+        },
+        {
+          "name": "dex3_service_r",
+          "protect": 0,
+          "status": 0
+        },
+        {
+          "name": "emergency_stop",
+          "protect": 0,
+          "status": 0
+        },
+        {
+          "name": "g1_arm_example",
+          "protect": 0,
+          "status": 0
+        },
+        {
+          "name": "lidar_driver",
+          "protect": 0,
+          "status": 1
+        },
+        {
+          "name": "log_system",
+          "protect": 0,
+          "status": 0
+        },
+        {
+          "name": "motion_switcher",
+          "protect": 0,
+          "status": 0
+        },
+        {
+          "name": "net_switcher",
+          "protect": 0,
+          "status": 0
+        },
+        {
+          "name": "ota_box",
+          "protect": 0,
+          "status": 1
+        },
+        {
+          "name": "ota_pipe",
+          "protect": 0,
+          "status": 0
+        },
+        {
+          "name": "robot_state",
+          "protect": 1,
+          "status": 0
+        },
+        {
+          "name": "robot_type_service",
+          "protect": 0,
+          "status": 0
+        },
+        {
+          "name": "state_estimator",
+          "protect": 0,
+          "status": 0
+        },
+        {
+          "name": "unistore",
+          "protect": 0,
+          "status": 0
+        },
+        {
+          "name": "unitree_slam",
+          "protect": 0,
+          "status": 1
+        },
+        {
+          "name": "video_hub_pc4",
+          "protect": 0,
+          "status": 0
+        },
+        {
+          "name": "vui_service",
+          "protect": 0,
+          "status": 0
+        },
+        {
+          "name": "webrtc_bridge",
+          "protect": 1,
+          "status": 0
+        },
+        {
+          "name": "webrtc_multicast_responder",
+          "protect": 0,
+          "status": 0
+        },
+        {
+          "name": "webrtc_signal_server",
+          "protect": 1,
+          "status": 0
+        }
+      ],
+      "elapsed_ms": 1.46,
+      "transport": "isolated_polled",
+      "lease": 0
+    }
+  ],
+  "installed_metadata": [
+    {
+      "path": "/unitree/robot/pkg/version/version.json",
+      "sha256": "b5d64c6e23e1a701172010a90ee8b17c83107c6560e9abb459db246b5f85842c",
+      "data": {
+        "Module": {
+          "master_service_pc4": "1.0.0.2",
+          "unitree_patch_pc4": "1.0.0.6",
+          "video_hub_pc4": "1.0.1.1"
+        },
+        "Package": ""
+      }
+    },
+    {
+      "path": "/unitree/robot/pkg/module/master_service_pc4/module.json",
+      "sha256": "ecfa15fd170078b6bf89cc02f2becf4672b8c6f3566607bdfbe2717424857771",
+      "data": {
+        "Name": "master_service_pc4",
+        "Version": "1.0.0.2",
+        "Commit": "dc964a3354534a80881d92daaf18d421fafc7916",
+        "Time": "2025-02-28 10:35:54",
+        "Type": "NORMAL"
+      }
+    },
+    {
+      "path": "/unitree/robot/pkg/module/unitree_patch_pc4/module.json",
+      "sha256": "df22b0309ebae1b78380473a297eca6d21fd1311d725a1a1c529e7d5df0572a0",
+      "data": {
+        "Name": "unitree_patch_pc4",
+        "Version": "1.0.0.6",
+        "Commit": "81529bedcf0a4ada51747bca72b246a4f533e774",
+        "Time": "2026-04-04 22:43:53",
+        "Type": "VIRTUAL"
+      }
+    },
+    {
+      "path": "/unitree/robot/pkg/module/video_hub_pc4/module.json",
+      "sha256": "e59171ecf2b3a3ce4101cc934fbe7ee775583874a2938cdbd38b32e304f35844",
+      "data": {
+        "Name": "video_hub_pc4",
+        "Version": "1.0.1.1",
+        "Commit": "99fbcc2c6ffe93754701d45074493e216929f18f",
+        "Time": "2025-03-28 10:52:48",
+        "Type": "NORMAL"
+      }
+    }
+  ],
+  "device_motion_firmware": null,
+  "physical_writes_sent": 0,
+  "control_acquired": false,
+  "manual_armed": false
+}

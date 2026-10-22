@@ -1,0 +1,250 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-10-21T14:33:23.177724+00:00",
+  "upstream_check": {
+    "checked_at_utc": "2026-10-21T14:27:23.462694+00:00",
+    "method": "GitHub public REST GET; no robot call",
+    "repositories": [
+      {
+        "repo": "unitree_sdk2",
+        "branch": "main",
+        "commit": "d1abf001220d3e5f59e00a0c4aaa595e00089a4a",
+        "commit_time_utc": "2026-10-15T10:02:51Z",
+        "url": "https://github.com/unitreerobotics/unitree_sdk2/commit/d1abf001220d3e5f59e00a0c4aaa595e00089a4a"
+      },
+      {
+        "repo": "unitree_sdk2_python",
+        "branch": "master",
+        "commit": "814556d15970dd2ecf1c9984e845ca02ab07e206",
+        "commit_time_utc": "2026-09-21T12:06:06Z",
+        "url": "https://github.com/unitreerobotics/unitree_sdk2_python/commit/814556d15970dd2ecf1c9984e845ca02ab07e206"
+      },
+      {
+        "repo": "unitree_ros2",
+        "branch": "master",
+        "commit": "668d1ec5a05d1c38d3306bdca7d59f2ba3581a88",
+        "commit_time_utc": "2026-07-02T12:45:43Z",
+        "url": "https://github.com/unitreerobotics/unitree_ros2/commit/668d1ec5a05d1c38d3306bdca7d59f2ba3581a88"
+      }
+    ]
+  },
+  "foundation": {
+    "path": "g1_console/assets/g1_motor_knowledge.json",
+    "sha256": "b2cafb99d9d986d8bd6b25af4d2e3efdab068f10dfc5341cfcde4206aedd27c5",
+    "version": 26,
+    "foundation_id": "b70ee76711b5e9d1f995614b6fbd16ed21ac6282c092a16ab74ed90a1e154df2"
+  },
+  "scope": "固定提交的 G1 Loco/Arm/Audio 全部公开业务方法、共享 Video 读取，以及单列的 AGV 变体；不包含厂商未公开的 App/私有能力",
+  "all_unitree_repositories_reviewed": false,
+  "all_files_reviewed": false,
+  "generator_reproduces_archive": true,
+  "sources": [
+    {
+      "name": "cpp_loco_client",
+      "path": "g1_console/assets/capability_sources/g1_loco_client.hpp",
+      "repository_path": "include/unitree/robot/g1/loco/g1_loco_client.hpp",
+      "commit": "d1abf001220d3e5f59e00a0c4aaa595e00089a4a",
+      "sha256": "d9aabe78918312c2ec60c5df94653e81319eb6730cc1479372a09849d99cd361",
+      "url": "https://github.com/unitreerobotics/unitree_sdk2/blob/d1abf001220d3e5f59e00a0c4aaa595e00089a4a/include/unitree/robot/g1/loco/g1_loco_client.hpp",
+      "sha256_verified": true
+    },
+    {
+      "name": "cpp_loco_api",
+      "path": "g1_console/assets/capability_sources/g1_loco_api.hpp",
+      "repository_path": "include/unitree/robot/g1/loco/g1_loco_api.hpp",
+      "commit": "d1abf001220d3e5f59e00a0c4aaa595e00089a4a",
+      "sha256": "db7f771fad9ab8d40b3f3bf3651df28ee9cde1a937ae21dcdae2f4165f37e0ce",
+      "url": "https://github.com/unitreerobotics/unitree_sdk2/blob/d1abf001220d3e5f59e00a0c4aaa595e00089a4a/include/unitree/robot/g1/loco/g1_loco_api.hpp",
+      "sha256_verified": true
+    },
+    {
+      "name": "cpp_loco_error",
+      "path": "g1_console/assets/capability_sources/g1_loco_error.hpp",
+      "repository_path": "include/unitree/robot/g1/loco/g1_loco_error.hpp",
+      "commit": "d1abf001220d3e5f59e00a0c4aaa595e00089a4a",
+      "sha256": "8b33d73f9857d1581c11b362d2705f031020a084db12b00cadfaac0255f46579",
+      "url": "https://github.com/unitreerobotics/unitree_sdk2/blob/d1abf001220d3e5f59e00a0c4aaa595e00089a4a/include/unitree/robot/g1/loco/g1_loco_error.hpp",
+      "sha256_verified": true
+    },
+    {
+      "name": "cpp_arm_client",
+      "path": "g1_console/assets/capability_sources/g1_arm_action_client.hpp",
+      "repository_path": "include/unitree/robot/g1/arm/g1_arm_action_client.hpp",
+      "commit": "d1abf001220d3e5f59e00a0c4aaa595e00089a4a",
+      "sha256": "10110c2bb33e10c3b8b811978dc769808eec399095add4197c9d43837fbb6e33",
+      "url": "https://github.com/unitreerobotics/unitree_sdk2/blob/d1abf001220d3e5f59e00a0c4aaa595e00089a4a/include/unitree/robot/g1/arm/g1_arm_action_client.hpp",
+      "sha256_verified": true
+    },
+    {
+      "name": "cpp_arm_api",
+      "path": "g1_console/assets/capability_sources/g1_arm_action_api.hpp",
+      "repository_path": "include/unitree/robot/g1/arm/g1_arm_action_api.hpp",
+      "commit": "d1abf001220d3e5f59e00a0c4aaa595e00089a4a",
+      "sha256": "d7610da8a620a7ce640edfe7cdbba803763321c0cfe0b362b7f2016545205d26",
+      "url": "https://github.com/unitreerobotics/unitree_sdk2/blob/d1abf001220d3e5f59e00a0c4aaa595e00089a4a/include/unitree/robot/g1/arm/g1_arm_action_api.hpp",
+      "sha256_verified": true
+    },
+    {
+      "name": "cpp_arm_error",
+      "path": "g1_console/assets/capability_sources/g1_arm_action_error.hpp",
+      "repository_path": "include/unitree/robot/g1/arm/g1_arm_action_error.hpp",
+      "commit": "d1abf001220d3e5f59e00a0c4aaa595e00089a4a",
+      "sha256": "71da4d4932e15c168f82f123902d52ce0074a7f2dcf7ae43cb3e34ee2a5a40f8",
+      "url": "https://github.com/unitreerobotics/unitree_sdk2/blob/d1abf001220d3e5f59e00a0c4aaa595e00089a4a/include/unitree/robot/g1/arm/g1_arm_action_error.hpp",
+      "sha256_verified": true
+    },
+    {
+      "name": "cpp_audio_client",
+      "path": "g1_console/assets/capability_sources/g1_audio_client.hpp",
+      "repository_path": "include/unitree/robot/g1/audio/g1_audio_client.hpp",
+      "commit": "d1abf001220d3e5f59e00a0c4aaa595e00089a4a",
+      "sha256": "01108471362e15c3dec01db77023da520b3450725fd72a52b934cec39492fd0c",
+      "url": "https://github.com/unitreerobotics/unitree_sdk2/blob/d1abf001220d3e5f59e00a0c4aaa595e00089a4a/include/unitree/robot/g1/audio/g1_audio_client.hpp",
+      "sha256_verified": true
+    },
+    {
+      "name": "cpp_audio_api",
+      "path": "g1_console/assets/capability_sources/g1_audio_api.hpp",
+      "repository_path": "include/unitree/robot/g1/audio/g1_audio_api.hpp",
+      "commit": "d1abf001220d3e5f59e00a0c4aaa595e00089a4a",
+      "sha256": "40d83bda7cf52a0bbffb8dc53f73c42efce9c91d23435eb4c55ab0fa14ffcae9",
+      "url": "https://github.com/unitreerobotics/unitree_sdk2/blob/d1abf001220d3e5f59e00a0c4aaa595e00089a4a/include/unitree/robot/g1/audio/g1_audio_api.hpp",
+      "sha256_verified": true
+    },
+    {
+      "name": "cpp_audio_error",
+      "path": "g1_console/assets/capability_sources/g1_audio_error.hpp",
+      "repository_path": "include/unitree/robot/g1/audio/g1_audio_error.hpp",
+      "commit": "d1abf001220d3e5f59e00a0c4aaa595e00089a4a",
+      "sha256": "edb776ce3e8928be0c8e238afef0e326cc98da1a98f87134e0bdf122bc10fc84",
+      "url": "https://github.com/unitreerobotics/unitree_sdk2/blob/d1abf001220d3e5f59e00a0c4aaa595e00089a4a/include/unitree/robot/g1/audio/g1_audio_error.hpp",
+      "sha256_verified": true
+    },
+    {
+      "name": "cpp_agv_client",
+      "path": "g1_console/assets/capability_sources/g1_agv_client.hpp",
+      "repository_path": "include/unitree/robot/g1/agv/g1_agv_client.hpp",
+      "commit": "d1abf001220d3e5f59e00a0c4aaa595e00089a4a",
+      "sha256": "fe3c41847c2fcf5ecd042faf7ca0a04793f84f107ce2e4a945f953baf0a600c8",
+      "url": "https://github.com/unitreerobotics/unitree_sdk2/blob/d1abf001220d3e5f59e00a0c4aaa595e00089a4a/include/unitree/robot/g1/agv/g1_agv_client.hpp",
+      "sha256_verified": true
+    },
+    {
+      "name": "cpp_agv_api",
+      "path": "g1_console/assets/capability_sources/g1_agv_api.hpp",
+      "repository_path": "include/unitree/robot/g1/agv/g1_agv_api.hpp",
+      "commit": "d1abf001220d3e5f59e00a0c4aaa595e00089a4a",
+      "sha256": "185d5063a282a4223331bb8471e89bb0e6dbc2259a43d54995be6cf5de150de0",
+      "url": "https://github.com/unitreerobotics/unitree_sdk2/blob/d1abf001220d3e5f59e00a0c4aaa595e00089a4a/include/unitree/robot/g1/agv/g1_agv_api.hpp",
+      "sha256_verified": true
+    },
+    {
+      "name": "cpp_agv_error",
+      "path": "g1_console/assets/capability_sources/g1_agv_error.hpp",
+      "repository_path": "include/unitree/robot/g1/agv/g1_agv_error.hpp",
+      "commit": "d1abf001220d3e5f59e00a0c4aaa595e00089a4a",
+      "sha256": "3ab35d248d3efe846413c3c223bade2595a2e098e62f33c25a27d7e28f16a520",
+      "url": "https://github.com/unitreerobotics/unitree_sdk2/blob/d1abf001220d3e5f59e00a0c4aaa595e00089a4a/include/unitree/robot/g1/agv/g1_agv_error.hpp",
+      "sha256_verified": true
+    },
+    {
+      "name": "py_loco_client",
+      "path": "externals/unitree_sdk2_python/unitree_sdk2py/g1/loco/g1_loco_client.py",
+      "sha256": "5fbc07b30994676cd2f7994a2389b24e9b51e2c13dfde7e565bfd77898300ce2",
+      "commit": "814556d15970dd2ecf1c9984e845ca02ab07e206",
+      "repository_path": "unitree_sdk2py/g1/loco/g1_loco_client.py",
+      "url": "https://github.com/unitreerobotics/unitree_sdk2_python/blob/814556d15970dd2ecf1c9984e845ca02ab07e206/unitree_sdk2py/g1/loco/g1_loco_client.py",
+      "sha256_verified": true
+    },
+    {
+      "name": "py_loco_api",
+      "path": "externals/unitree_sdk2_python/unitree_sdk2py/g1/loco/g1_loco_api.py",
+      "sha256": "0127e2b266ced4bce67fc264c1858e53ee9e0d9301ac06f3d58af4903e50c908",
+      "commit": "814556d15970dd2ecf1c9984e845ca02ab07e206",
+      "repository_path": "unitree_sdk2py/g1/loco/g1_loco_api.py",
+      "url": "https://github.com/unitreerobotics/unitree_sdk2_python/blob/814556d15970dd2ecf1c9984e845ca02ab07e206/unitree_sdk2py/g1/loco/g1_loco_api.py",
+      "sha256_verified": true
+    },
+    {
+      "name": "py_arm_client",
+      "path": "externals/unitree_sdk2_python/unitree_sdk2py/g1/arm/g1_arm_action_client.py",
+      "sha256": "0617124577a1d41b2fd559d8fbba8bb1b6ace43e0471a7dbbb972b51ac155872",
+      "commit": "814556d15970dd2ecf1c9984e845ca02ab07e206",
+      "repository_path": "unitree_sdk2py/g1/arm/g1_arm_action_client.py",
+      "url": "https://github.com/unitreerobotics/unitree_sdk2_python/blob/814556d15970dd2ecf1c9984e845ca02ab07e206/unitree_sdk2py/g1/arm/g1_arm_action_client.py",
+      "sha256_verified": true
+    },
+    {
+      "name": "py_arm_api",
+      "path": "externals/unitree_sdk2_python/unitree_sdk2py/g1/arm/g1_arm_action_api.py",
+      "sha256": "e929f22cb2bc6e65bbbf2aa1f6f57983a14c1937b53bde7b49c85c30af8e73d0",
+      "commit": "814556d15970dd2ecf1c9984e845ca02ab07e206",
+      "repository_path": "unitree_sdk2py/g1/arm/g1_arm_action_api.py",
+      "url": "https://github.com/unitreerobotics/unitree_sdk2_python/blob/814556d15970dd2ecf1c9984e845ca02ab07e206/unitree_sdk2py/g1/arm/g1_arm_action_api.py",
+      "sha256_verified": true
+    },
+    {
+      "name": "py_audio_client",
+      "path": "externals/unitree_sdk2_python/unitree_sdk2py/g1/audio/g1_audio_client.py",
+      "sha256": "64a9942c1278b3b5badf2ae7d1b871ac785f5fd3deda9404e97088b1e9aff74b",
+      "commit": "814556d15970dd2ecf1c9984e845ca02ab07e206",
+      "repository_path": "unitree_sdk2py/g1/audio/g1_audio_client.py",
+      "url": "https://github.com/unitreerobotics/unitree_sdk2_python/blob/814556d15970dd2ecf1c9984e845ca02ab07e206/unitree_sdk2py/g1/audio/g1_audio_client.py",
+      "sha256_verified": true
+    },
+    {
+      "name": "py_audio_api",
+      "path": "externals/unitree_sdk2_python/unitree_sdk2py/g1/audio/g1_audio_api.py",
+      "sha256": "7ccd417ef05637617a012606dc752709674a3c9984a3828b72c9f5c453db66a8",
+      "commit": "814556d15970dd2ecf1c9984e845ca02ab07e206",
+      "repository_path": "unitree_sdk2py/g1/audio/g1_audio_api.py",
+      "url": "https://github.com/unitreerobotics/unitree_sdk2_python/blob/814556d15970dd2ecf1c9984e845ca02ab07e206/unitree_sdk2py/g1/audio/g1_audio_api.py",
+      "sha256_verified": true
+    },
+    {
+      "name": "py_video_client",
+      "path": "externals/unitree_sdk2_python/unitree_sdk2py/go2/video/video_client.py",
+      "sha256": "90e5295dc1f706f1a224b6ab38a4c830189fe3aa77c0f8ce743768e426896f84",
+      "commit": "814556d15970dd2ecf1c9984e845ca02ab07e206",
+      "repository_path": "unitree_sdk2py/go2/video/video_client.py",
+      "url": "https://github.com/unitreerobotics/unitree_sdk2_python/blob/814556d15970dd2ecf1c9984e845ca02ab07e206/unitree_sdk2py/go2/video/video_client.py",
+      "sha256_verified": true
+    },
+    {
+      "name": "py_video_api",
+      "path": "externals/unitree_sdk2_python/unitree_sdk2py/go2/video/video_api.py",
+      "sha256": "8bb53f1840021558e955e292460d3f4d7f668787969e5730f1e91c2ebf805eba",
+      "commit": "814556d15970dd2ecf1c9984e845ca02ab07e206",
+      "repository_path": "unitree_sdk2py/go2/video/video_api.py",
+      "url": "https://github.com/unitreerobotics/unitree_sdk2_python/blob/814556d15970dd2ecf1c9984e845ca02ab07e206/unitree_sdk2py/go2/video/video_api.py",
+      "sha256_verified": true
+    }
+  ],
+  "verified_source_files": 20,
+  "method_records": 76,
+  "method_records_are_device_actions": false,
+  "method_counts": {
+    "C++ loco": 32,
+    "C++ arm": 4,
+    "C++ audio": 6,
+    "C++ agv": 2,
+    "Python loco": 23,
+    "Python arm": 2,
+    "Python audio": 6,
+    "Python video": 1
+  },
+  "method_kinds": {
+    "read": 13,
+    "state_change": 62,
+    "client_local": 1
+  },
+  "motor_count": 23,
+  "actual_motor_configuration_fields": 253,
+  "verified_actual_motor_configuration_fields": 0,
+  "limitations": [
+    "Selected source files only; no whole-repository coverage percentage.",
+    "Source signatures and SDK defaults do not establish device support or motor configuration.",
+    "No physical action tested in this audit."
+  ],
+  "robot_commands_written": 0
+}

@@ -1,0 +1,484 @@
+{
+  "checked_at_asia_shanghai": "2026-10-22T11:19:35.148554+08:00",
+  "status": "one_actual_reboot_recovered_readonly_wifi_driver_failure_trigger_unresolved",
+  "identity": {
+    "host": "<ORIN_IP>",
+    "wlan_mac": "78:22:88:af:97:a5",
+    "ssh_fingerprint": "<ORIN_HOST_FINGERPRINT>",
+    "fingerprint_verified_before_authentication": true,
+    "app_endpoint_is_distinct": "<APP_REPORTED_IP>"
+  },
+  "current_boot": {
+    "boot_id": "aed898cb-acfd-44a2-8e9c-50f1f00269aa",
+    "first_audit_at_asia_shanghai": "2026-10-22T11:13:31.898606+08:00",
+    "ssh_listening_monotonic_s": 21.720221,
+    "wifi_activation_succeeded_monotonic_s": 31.096114,
+    "ssh_enabled": true,
+    "ssh_active": true,
+    "ssh_tcp22_listening": true,
+    "wifi_autoconnect": true,
+    "active_profile_uuid": "2a326059-b7e2-480a-aaa0-de96f8fe4980",
+    "profile_powersave": 0,
+    "global_powersave": 3,
+    "runtime_powersave": "on",
+    "rfkill_soft_blocked": false,
+    "rfkill_hard_blocked": false,
+    "kernel_log_sample": {
+      "start": "Nov 22 05:10:24 ubuntu kernel: [    0.000000] Booting Linux on physical CPU 0x0000000000 [0x410fd421]",
+      "line_count": 1320,
+      "event_counts": {
+        "driver_io_offload_failure": 0,
+        "driver_rf_api_failure": 0,
+        "power_control_api_failure": 0,
+        "usb_error_or_disconnect": 0
+      },
+      "samples": {
+        "driver_io_offload_failure": [],
+        "driver_rf_api_failure": [],
+        "power_control_api_failure": [],
+        "usb_error_or_disconnect": []
+      }
+    },
+    "service_log_categories": {
+      "status": "completed",
+      "returncode": 0,
+      "sampled_lines": 168,
+      "limit": 500,
+      "events": {
+        "wifi_authentication_failure": 0,
+        "wifi_network_not_found": 0,
+        "wifi_rfkill_event": 5,
+        "wifi_dhcp_failure": 0,
+        "wifi_activation_failed": 0,
+        "network_activation_succeeded": 3
+      },
+      "scope": "readable current-boot service journal tail; zero matches do not prove absence"
+    }
+  },
+  "previous_boot_evidence": {
+    "source": "read-only /var/log/syslog and /var/log/kern.log bounded 32 MiB tails; last two kernel boot boundaries",
+    "previous_journal_available": false,
+    "wifi_activated_at_asia_shanghai": "2026-10-22T10:10:57+08:00",
+    "dhcp_address": "<ORIN_IP>",
+    "disconnected_at_asia_shanghai": "2026-10-22T10:38:37+08:00",
+    "supplicant_timeout_at_asia_shanghai": "2026-10-22T10:38:53+08:00",
+    "reconnect_failed_at_asia_shanghai": "2026-10-22T10:40:10+08:00",
+    "reconnect_failure_reason": "no-secrets",
+    "association_reject_status_1_count": 8,
+    "saved_secrets_exist_logged": true,
+    "password_loss_or_wrong_password_confirmed": false,
+    "kernel_log_sample": {
+      "start": "Nov 22 05:10:25 ubuntu kernel: [    0.000000] Booting Linux on physical CPU 0x0000000000 [0x410fd421]",
+      "line_count": 191376,
+      "event_counts": {
+        "driver_io_offload_failure": 143797,
+        "driver_rf_api_failure": 37247,
+        "power_control_api_failure": 1243,
+        "usb_error_or_disconnect": 0
+      },
+      "samples": {
+        "driver_io_offload_failure": [
+          "Oct 22 10:13:25 ubuntu kernel: [  179.250483] [WARNING][BB][halbb_fw_set_reg] IO offload fail: 1",
+          "Oct 22 10:13:27 ubuntu kernel: [  181.557014] [WARNING][BB][halbb_fw_set_reg] IO offload fail: 1",
+          "Oct 22 10:13:29 ubuntu kernel: [  183.865875] [WARNING][BB][halbb_fw_set_reg] IO offload fail: 1",
+          "Oct 22 10:13:32 ubuntu kernel: [  186.165773] [WARNING][BB][halbb_fw_set_reg] IO offload fail: 1",
+          "Oct 22 11:09:47 ubuntu kernel: [ 3561.303258] [WARNING][BB][halbb_fw_set_reg] IO offload fail: 1",
+          "Oct 22 11:09:47 ubuntu kernel: [ 3561.303325] [WARNING][BB][halbb_fw_set_reg] IO offload fail: 1",
+          "Oct 22 11:09:47 ubuntu kernel: [ 3561.303329] [WARNING][BB][halbb_fw_set_reg] IO offload fail: 1"
+        ],
+        "driver_rf_api_failure": [
+          "Oct 22 10:38:37 ubuntu kernel: [ 1692.045962] [WARNING][RF]======>halrf_wrf return fail error code = 1 !!!",
+          "Oct 22 10:38:37 ubuntu kernel: [ 1692.045971] [WARNING][RF]======>halrf_wrf return fail error code = 1 !!!",
+          "Oct 22 10:38:37 ubuntu kernel: [ 1692.045975] [WARNING][RF]======>halrf_polling_rf return fail error code = 1 !!!",
+          "Oct 22 10:38:37 ubuntu kernel: [ 1692.045983] [WARNING][RF]======>halrf_wrf return fail error code = 1 !!!",
+          "Oct 22 11:09:47 ubuntu kernel: [ 3561.312236] [WARNING][RF]======>halrf_polling_rf return fail error code = 1 !!!",
+          "Oct 22 11:09:47 ubuntu kernel: [ 3561.312243] [WARNING][RF]======>halrf_wrf return fail error code = 1 !!!",
+          "Oct 22 11:09:47 ubuntu kernel: [ 3561.312248] [WARNING][RF]======>halrf_write_fwofld_trigger return fail error code = 1 !!!"
+        ],
+        "power_control_api_failure": [
+          "Oct 22 10:18:20 ubuntu kernel: [  475.060759] [WARNING][BB]Error Enable Power Control for API return fail!!",
+          "Oct 22 10:18:23 ubuntu kernel: [  477.300013] [WARNING][BB]Error Enable Power Control for API return fail!!",
+          "Oct 22 10:18:25 ubuntu kernel: [  479.547131] [WARNING][BB]Error Enable Power Control for API return fail!!",
+          "Oct 22 10:18:27 ubuntu kernel: [  481.787260] [WARNING][BB]Error Enable Power Control for API return fail!!",
+          "Oct 22 11:09:38 ubuntu kernel: [ 3552.879506] [WARNING][BB]Error Enable Power Control for API return fail!!",
+          "Oct 22 11:09:41 ubuntu kernel: [ 3555.123644] [WARNING][BB]Error Enable Power Control for API return fail!!",
+          "Oct 22 11:09:43 ubuntu kernel: [ 3557.359250] [WARNING][BB]Error Enable Power Control for API return fail!!"
+        ],
+        "usb_error_or_disconnect": []
+      }
+    },
+    "clock_note": "boot clocks jump before synchronization; current boot startup timing uses monotonic journal timestamps; previous boot wall-clock events listed only after time synchronization"
+  },
+  "driver": {
+    "module": "8852bu",
+    "version": "v1.19.3-45-g7583a804a.20230505",
+    "kernel": "5.10.104-tegra",
+    "usb_vendor_product": "0bda:a85b",
+    "usb_device_power": {
+      "power/control": "on",
+      "power/runtime_status": "active",
+      "power/autosuspend_delay_ms": "2000",
+      "speed": "480",
+      "authorized": "1"
+    }
+  },
+  "readonly_console": {
+    "url": "http://127.0.0.1:18765/",
+    "connection": {
+      "ready": true,
+      "phase": "已核验 Orin，控制台已恢复",
+      "detail": "身体反馈在线",
+      "host": "<ORIN_IP>",
+      "verified": true,
+      "attempt": 20,
+      "updated_at": 1792639086.370979,
+      "manual_remote": false,
+      "last_connected_at": 1792638684.571806
+    },
+    "samples": [
+      {
+        "at": 1792639084.5946896,
+        "run_id": "d201e239ee56",
+        "mode": "robot",
+        "read_only": true,
+        "connected": true,
+        "telemetry_age_ms": 8,
+        "joint_count": 23,
+        "tick": 480266,
+        "fsm": 0,
+        "mode_machine": 4,
+        "camera": {
+          "backend": "unitree",
+          "status": "live",
+          "error": null,
+          "diagnostics": {
+            "transport": "official_api_1001_isolated_polled",
+            "window_s": 60,
+            "attempts": 300,
+            "successes": 300,
+            "timeouts": 0,
+            "errors": 0,
+            "total_attempts": 1995,
+            "total_successes": 1995,
+            "total_timeouts": 0
+          },
+          "source": "unitree-videohub-f98551f57140",
+          "sequence": 1995,
+          "age_ms": 63,
+          "request_started_at": 1792639084.5314012,
+          "received_at": 1792639084.5516956,
+          "width": 960,
+          "height": 540,
+          "source_width": 1920,
+          "source_height": 1080,
+          "request_ms": 20,
+          "timestamp_basis": "request_started_at",
+          "sensor_timestamp": null
+        },
+        "control": {
+          "owner": null,
+          "expires_in": 0,
+          "floor_verified": false
+        },
+        "manual_remote": {
+          "enabled": false,
+          "armed": false,
+          "owner": null,
+          "expires_in": 0,
+          "observed_at": null,
+          "blocker": {
+            "code": "READ_ONLY",
+            "message": "只读观察模式：禁止动作、声光和控制模式写入"
+          },
+          "authority": "人工现场确认与官方高层控制；不修改基础模型或授权自主任务",
+          "full_remote_equivalence": false
+        },
+        "navigation_status": "idle",
+        "command_count": 0
+      },
+      {
+        "at": 1792639087.6791952,
+        "run_id": "d201e239ee56",
+        "mode": "robot",
+        "read_only": true,
+        "connected": true,
+        "telemetry_age_ms": 9,
+        "joint_count": 23,
+        "tick": 483392,
+        "fsm": 0,
+        "mode_machine": 4,
+        "camera": {
+          "backend": "unitree",
+          "status": "live",
+          "error": null,
+          "diagnostics": {
+            "transport": "official_api_1001_isolated_polled",
+            "window_s": 60,
+            "attempts": 300,
+            "successes": 300,
+            "timeouts": 0,
+            "errors": 0,
+            "total_attempts": 2010,
+            "total_successes": 2010,
+            "total_timeouts": 0
+          },
+          "source": "unitree-videohub-f98551f57140",
+          "sequence": 2010,
+          "age_ms": 146,
+          "request_started_at": 1792639087.5334065,
+          "received_at": 1792639087.561277,
+          "width": 960,
+          "height": 540,
+          "source_width": 1920,
+          "source_height": 1080,
+          "request_ms": 28,
+          "timestamp_basis": "request_started_at",
+          "sensor_timestamp": null
+        },
+        "control": {
+          "owner": null,
+          "expires_in": 0,
+          "floor_verified": false
+        },
+        "manual_remote": {
+          "enabled": false,
+          "armed": false,
+          "owner": null,
+          "expires_in": 0,
+          "observed_at": null,
+          "blocker": {
+            "code": "READ_ONLY",
+            "message": "只读观察模式：禁止动作、声光和控制模式写入"
+          },
+          "authority": "人工现场确认与官方高层控制；不修改基础模型或授权自主任务",
+          "full_remote_equivalence": false
+        },
+        "navigation_status": "idle",
+        "command_count": 0
+      }
+    ],
+    "tick_advanced": true,
+    "camera_sequence_advanced": true,
+    "browser_confirmed_online": true,
+    "browser_snapshot_at_asia_shanghai": "2026-10-22T11:18:29+08:00",
+    "browser_joint_count": 23,
+    "browser_camera_sequence": 2118,
+    "browser_camera_frame_age_ms": 183
+  },
+  "diagnosis": {
+    "confirmed_failure_layer": "wifi link / Realtek driver or firmware I/O path",
+    "specific_trigger": null,
+    "powersave_causality_confirmed": false,
+    "repeated_root_fix_proven": false,
+    "unknowns": [
+      "driver firmware I/O failure trigger",
+      "whether disabling Wi-Fi power saving prevents recurrence",
+      "AP compatibility or hardware contribution",
+      "two consecutive physical reboot recovery with final deployed frontend"
+    ]
+  },
+  "validation": {
+    "command": ".venv/bin/python -m pytest tests/test_g1_reboot_connection.py -q",
+    "passed": 32,
+    "normal_dhcp_timeout_budget_false_positive_fixed": true,
+    "real_boot_service_dhcp_failure_matches": 0,
+    "actual_robot_recovery_observations_this_connector": 1,
+    "required_consecutive_reboots": 2,
+    "physical_reboot_acceptance_completed": false,
+    "new_session_recovery_frontend_deployed": false
+  },
+  "boundaries": {
+    "robot_motion_executed": false,
+    "motion_authority_acquired": false,
+    "commands_replayed": false,
+    "quantumult_x_modified": false,
+    "system_network_modified": false,
+    "official_services_restarted": false,
+    "system_wifi_repair_approved": false,
+    "system_wifi_repair_applied": false
+  },
+  "source_sha256": {
+    "scripts/connect_orin_console.py": "e2b498e2148cb2f5ec87f8d64acb3d940a05747264d480f54ba6dcb4d308ffa0",
+    "scripts/orin_console_recovery.py": "1c32371bde5cb82fb9829c07e843f174db0958bdd59fbf5c47412f64bd4c183e",
+    "tests/test_g1_reboot_connection.py": "5fac4913eb4e486d1f7917e00dd69276a7b93df70dad02bbfa8b5039e2cd19c5"
+  },
+  "final_read_only_check": {
+    "checked_at_asia_shanghai": "2026-10-22T11:22:17.174798+08:00",
+    "user_decision": "read_only_no_network_changes",
+    "connection": {
+      "ready": true,
+      "phase": "已核验 Orin，控制台已恢复",
+      "detail": "身体反馈在线",
+      "host": "<ORIN_IP>",
+      "verified": true,
+      "attempt": 20,
+      "updated_at": 1792639335.146903,
+      "manual_remote": false,
+      "last_connected_at": 1792638684.571806
+    },
+    "samples": [
+      {
+        "at": 1792639337.350875,
+        "run_id": "d201e239ee56",
+        "read_only": true,
+        "connected": true,
+        "joint_count": 23,
+        "tick": 733028,
+        "fsm": 0,
+        "mode_machine": 4,
+        "telemetry_age_ms": 31,
+        "camera_sequence": 3257,
+        "camera_status": "live",
+        "camera_age_ms": 247,
+        "camera_diagnostics": {
+          "transport": "official_api_1001_isolated_polled",
+          "window_s": 60,
+          "attempts": 300,
+          "successes": 300,
+          "timeouts": 0,
+          "errors": 0,
+          "total_attempts": 3257,
+          "total_successes": 3257,
+          "total_timeouts": 0
+        },
+        "control_owner": null,
+        "manual_armed": false,
+        "command_count": 0
+      },
+      {
+        "at": 1792639340.4167762,
+        "run_id": "d201e239ee56",
+        "read_only": true,
+        "connected": true,
+        "joint_count": 23,
+        "tick": 735995,
+        "fsm": 0,
+        "mode_machine": 4,
+        "telemetry_age_ms": 33,
+        "camera_sequence": 3273,
+        "camera_status": "live",
+        "camera_age_ms": 110,
+        "camera_diagnostics": {
+          "transport": "official_api_1001_isolated_polled",
+          "window_s": 60,
+          "attempts": 300,
+          "successes": 300,
+          "timeouts": 0,
+          "errors": 0,
+          "total_attempts": 3273,
+          "total_successes": 3273,
+          "total_timeouts": 0
+        },
+        "control_owner": null,
+        "manual_armed": false,
+        "command_count": 0
+      }
+    ],
+    "tick_advanced": true,
+    "camera_sequence_advanced": true,
+    "orin_read_only_audit": {
+      "boot_id": "aed898cb-acfd-44a2-8e9c-50f1f00269aa",
+      "uptime_seconds": 714.78,
+      "active_profile_uuid": {
+        "returncode": 0,
+        "stdout": "2a326059-b7e2-480a-aaa0-de96f8fe4980"
+      },
+      "profile_powersave": {
+        "returncode": 0,
+        "stdout": "default"
+      },
+      "runtime_powersave": {
+        "returncode": 0,
+        "stdout": "Power save: on"
+      },
+      "ssh_active": {
+        "returncode": 0,
+        "stdout": "active"
+      },
+      "kernel_journal_returncode": 0,
+      "kernel_log_lines": 1374,
+      "current_boot_error_counts": {
+        "driver_io_offload_failure": 0,
+        "driver_rf_api_failure": 0,
+        "power_control_api_failure": 0
+      }
+    }
+  },
+  "user_decision": {
+    "decision": "defer_wifi_powersave_trial_keep_read_only",
+    "system_network_changes_authorized": false,
+    "system_network_changes_applied": false,
+    "recorded_at_asia_shanghai": "2026-10-22T11:22:17.174798+08:00"
+  },
+  "unexecuted_repair_plan": "G1_ORIN_WIFI_REPAIR_PLAN.md",
+  "follow_up_source_analysis": {
+    "checked_at_asia_shanghai": "2026-10-22T11:33:18.419270+08:00",
+    "evidence": "G1_WIFI_DRIVER_READONLY_DIAGNOSIS_20261022.json",
+    "report": "G1_WIFI_DRIVER_READONLY_DIAGNOSIS_20261022.md",
+    "corrected_full_segment_counts": {
+      "previous": {
+        "line_count": 191376,
+        "matches": {
+          "bb_offload": {
+            "count": 148445,
+            "first_kernel_monotonic_seconds": 179.250483
+          },
+          "rf_all_warning": {
+            "count": 38787,
+            "first_kernel_monotonic_seconds": 1692.045962
+          },
+          "rf_wrf": {
+            "count": 8480,
+            "first_kernel_monotonic_seconds": 1692.045962
+          },
+          "power_control": {
+            "count": 1243,
+            "first_kernel_monotonic_seconds": 475.060759
+          },
+          "h2c_all": {
+            "count": 1189,
+            "first_kernel_monotonic_seconds": 333.566486
+          },
+          "usb_fault": {
+            "count": 0,
+            "first_kernel_monotonic_seconds": null
+          }
+        },
+        "original_mac_status_log_matches": 0,
+        "offload_busy_log_matches": 0
+      },
+      "current": {
+        "line_count": 1320,
+        "matches": {
+          "bb_offload": {
+            "count": 0,
+            "first_kernel_monotonic_seconds": null
+          },
+          "rf_all_warning": {
+            "count": 0,
+            "first_kernel_monotonic_seconds": null
+          },
+          "rf_wrf": {
+            "count": 0,
+            "first_kernel_monotonic_seconds": null
+          },
+          "power_control": {
+            "count": 0,
+            "first_kernel_monotonic_seconds": null
+          },
+          "h2c_all": {
+            "count": 0,
+            "first_kernel_monotonic_seconds": null
+          },
+          "usb_fault": {
+            "count": 0,
+            "first_kernel_monotonic_seconds": null
+          }
+        },
+        "original_mac_status_log_matches": 0,
+        "offload_busy_log_matches": 0
+      }
+    },
+    "note": "Earlier counts are historical narrower categories; Power Control refers to TX register control, not proven powersave cause. IO offload fail 1 is a generic HAL status, not Linux errno EIO. Specific trigger remains unknown."
+  }
+}

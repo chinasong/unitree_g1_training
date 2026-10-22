@@ -1,0 +1,177 @@
+{
+  "observed_on": "2026-10-21",
+  "boot_id": "8d9a0e09-97e1-45fa-81d3-18822a3c760a",
+  "cause": null,
+  "our_official_process_stop_or_restart_sent": false,
+  "initial_identity_audit": {
+    "passed": false,
+    "reason": "previous video process cmdline was empty; do not claim all four processes unchanged throughout the turn",
+    "observed_identities": [
+      {
+        "pid": 1366,
+        "argv": [
+          "/unitree/module/master_service/master_service"
+        ],
+        "start_ticks": 2168,
+        "argv_match": true,
+        "ticks_match": true
+      },
+      {
+        "pid": 1438,
+        "argv": [
+          "/unitree/ota/pipe/ota_pipe_service"
+        ],
+        "start_ticks": 2202,
+        "argv_match": true,
+        "ticks_match": true
+      },
+      {
+        "pid": 2349,
+        "argv": [],
+        "start_ticks": 2480,
+        "argv_match": false,
+        "ticks_match": true
+      },
+      {
+        "pid": 2760,
+        "argv": [
+          "/home/unitree/megaflow_sdk/ws//bin/MegaFlowRuntimeDaemon",
+          "-c",
+          "/home/unitree/megaflow_sdk/ws//bin/config.bin",
+          "-w",
+          "/home/unitree/megaflow_sdk/ws/",
+          "-d",
+          "127.0.0.1:8899",
+          "-i",
+          "-e",
+          "/home/unitree/megaflow_sdk/ws//dep/",
+          "-l",
+          "0"
+        ],
+        "start_ticks": 3139,
+        "argv_match": true,
+        "ticks_match": true
+      }
+    ]
+  },
+  "video_transition": {
+    "previous_pid": 2349,
+    "previous_start_ticks": 2480,
+    "current_pid": 11061,
+    "current_start_ticks": 438066,
+    "cause": null,
+    "our_restart_sent": false
+  },
+  "gap_observed_at_utc": "2026-10-21T12:18:55.874541+00:00",
+  "gap_camera": {
+    "backend": "unitree",
+    "status": "live",
+    "error": null,
+    "diagnostics": {
+      "transport": "official_api_1001_isolated_polled",
+      "window_s": 60,
+      "attempts": 161,
+      "successes": 139,
+      "timeouts": 21,
+      "errors": 22,
+      "total_attempts": 192,
+      "total_successes": 170,
+      "total_timeouts": 21
+    },
+    "source": "unitree-videohub-177a835400a7",
+    "sequence": 170,
+    "age_ms": 174,
+    "request_started_at": 1792585135.758011,
+    "received_at": 1792585135.7824042,
+    "width": 960,
+    "height": 540,
+    "source_width": 1920,
+    "source_height": 1080,
+    "request_ms": 24,
+    "timestamp_basis": "request_started_at",
+    "sensor_timestamp": null
+  },
+  "process_scan_limit": "The first scan skipped processes when /proc exe/cwd reads raised PermissionError; an empty scan is not proof the video service was absent.",
+  "followup_observed_at_utc": "2026-10-21T12:19:34.031669+00:00",
+  "followup_video_process": {
+    "pid": 11061,
+    "comm": "videohub_pc4",
+    "argv": [
+      "/unitree/module/video_hub_pc4/videohub_pc4"
+    ],
+    "stat": "11061 (videohub_pc4) S 1 11060 11060 0 -1 4194560 7854 682 0 0 216 504 0 0 20 0 27 0 438066 22460080128 13181 18446744073709551615 1 1 0 0 0 0 0 4096 0 0 0 0 17 4 0 0 0 0 0 0 0 0 0 0 0 0 0\n",
+    "status": "Name:\tvideohub_pc4\nUmask:\t0000\nState:\tS (sleeping)\nTgid:\t11061\nNgid:\t0\nPid:\t11061\nPPid:\t1\nTracerPid:\t0\nUid:\t0\t0\t0\t0\nGid:\t0\t0\t0\t0\nFDSize:\t512\nGroups:\t \nNStgid:\t11061\nNSpid:\t11061\nNSpgid:\t11060\nNSsid:\t11060\nVmPeak:\t21934268 kB\nVmSize:\t21933672 kB\nVmLck:\t       0 kB\nVmPin:\t       0 kB\nVmHWM:\t   52724 kB\nVmRSS:\t   52724 kB\nRssAnon:\t   22804 kB\nRssFile:\t   29920 kB\nRssShmem:\t       0 kB\nVmData:\t  257064 kB\nVmStk:\t     132 kB\nVmExe:\t      36 kB\nVmLib:\t   95484 kB\nVmPTE:\t    3436 kB\nVmSwap:\t       0 kB\nHugetlbPages:\t       0 kB\nCoreDumping:\t0\nTHP_enabled:\t1\nThreads:\t27\nSigQ:\t1/60479\nSigPnd:\t0000000000000000\nShdPnd:\t0000000000000000\nSigBlk:\t0000000000000000\nSigIgn:\t0000000000001000\nSigCgt:\t0000000180000000\nCapInh:\t0000000000000000\nCapPrm:\t000001ffffffffff\nCapEff:\t000001ffffffffff\nCapBnd:\t000001ffffffffff\nCapAmb:\t0000000000000000\nNoNewPrivs:\t0\nSeccomp:\t0\nSeccomp_filters:\t0\nSpeculation_Store_Bypass:\tthread vulnerable\nCpus_allowed:\tff\nCpus_allowed_list:\t0-7\nMems_allowed:\t1\nMems_allowed_list:\t0\nvoluntary_ctxt_switches:\t121\nnonvoluntary_ctxt_switches:\t6\n",
+    "cwd": "PermissionError",
+    "exe": "PermissionError"
+  },
+  "other_three_processes_unchanged": [
+    {
+      "pid": 1366,
+      "argv": [
+        "/unitree/module/master_service/master_service"
+      ],
+      "start_ticks": 2168
+    },
+    {
+      "pid": 1438,
+      "argv": [
+        "/unitree/ota/pipe/ota_pipe_service"
+      ],
+      "start_ticks": 2202
+    },
+    {
+      "pid": 2760,
+      "argv": [
+        "/home/unitree/megaflow_sdk/ws//bin/MegaFlowRuntimeDaemon",
+        "-c",
+        "/home/unitree/megaflow_sdk/ws//bin/config.bin",
+        "-w",
+        "/home/unitree/megaflow_sdk/ws/",
+        "-d",
+        "127.0.0.1:8899",
+        "-i",
+        "-e",
+        "/home/unitree/megaflow_sdk/ws//dep/",
+        "-l",
+        "0"
+      ],
+      "start_ticks": 3139
+    }
+  ],
+  "final_deployment": "f9aaa040d082",
+  "final_deployment_guard": "All four then-running official process identities were verified unchanged before/after final console deployment; video guard used PID 11061.",
+  "final_camera_observed_at_utc": "2026-10-21T12:24:36.326264+00:00",
+  "final_camera": {
+    "backend": "unitree",
+    "status": "live",
+    "error": null,
+    "diagnostics": {
+      "transport": "official_api_1001_isolated_polled",
+      "window_s": 60,
+      "attempts": 300,
+      "successes": 300,
+      "timeouts": 0,
+      "errors": 0,
+      "total_attempts": 482,
+      "total_successes": 482,
+      "total_timeouts": 0
+    },
+    "source": "unitree-videohub-09ba96f91b74",
+    "sequence": 481,
+    "age_ms": 249,
+    "request_started_at": 1792585476.038766,
+    "received_at": 1792585476.0628262,
+    "width": 960,
+    "height": 540,
+    "source_width": 1920,
+    "source_height": 1080,
+    "request_ms": 24,
+    "timestamp_basis": "request_started_at",
+    "sensor_timestamp": null
+  },
+  "limitations": [
+    "Cause of the official video process replacement remains unknown.",
+    "Camera recovery is evidence for this capture window only, not long-term stability, posture support or motion safety.",
+    "PPID 1 does not establish a watchdog restart cause."
+  ]
+}

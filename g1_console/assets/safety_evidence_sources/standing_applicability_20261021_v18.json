@@ -1,0 +1,199 @@
+{
+  "current": false,
+  "checked_at_utc": "2026-10-21T07:14:02.238249+00:00",
+  "boot_id": "b33a7dc5-2617-44cd-b353-041bab1c204f",
+  "command_writes": 0,
+  "lease_requests": 0,
+  "motor_configuration_values_obtained": 0,
+  "conclusion": "未确认任何官方起身入口适用于当前靠柜坐地；姿态保持和主动平衡的本机交接条件尚未核定。尚无可执行的缓慢起身路线。",
+  "contacts": [
+    {
+      "id": "left_foot",
+      "name": "左脚",
+      "contact_verified": null,
+      "load_n": null,
+      "evidence": "先前人工报告脚底贴地；本轮相机看不到脚底",
+      "needed": "匹配本机的有效左足载荷传感或经过验证的估计器；确认单位、映射、标定、质量与时效"
+    },
+    {
+      "id": "right_foot",
+      "name": "右脚",
+      "contact_verified": null,
+      "load_n": null,
+      "evidence": "先前人工报告脚底贴地；本轮相机看不到脚底",
+      "needed": "匹配本机的有效右足载荷传感或经过验证的估计器；确认单位、映射、标定、质量与时效"
+    },
+    {
+      "id": "seat",
+      "name": "身体坐地处",
+      "contact_verified": null,
+      "load_n": null,
+      "evidence": "先前人工报告坐在地上；当前接触位置和受力分布未测量",
+      "needed": "全身接触几何及接触载荷证据，区分足底与身体坐地的支撑份额"
+    },
+    {
+      "id": "cabinet",
+      "name": "柜体",
+      "contact_verified": null,
+      "load_n": null,
+      "evidence": "最近人工更正为靠柜；接触点、柜体是否固定及摩擦未知",
+      "needed": "外部可核验的接触点和柜体条件，以及有效载荷测量或经验证的全身接触估计"
+    }
+  ],
+  "capabilities": [
+    {
+      "name": "阻尼",
+      "documented_entry": "Damp / FSM 1",
+      "documented_start": "文档定义的阻尼状态",
+      "applicable_to_current_pose": null,
+      "missing": "速度阻力不等于位置锁定或主动平衡；不能作为靠柜坐地起身方案",
+      "execution_allowed": false
+    },
+    {
+      "name": "预备 / 姿态保持",
+      "documented_entry": "官方手册辅助预备流程",
+      "documented_start": "需满足手册规定的辅助条件和指定起始姿态",
+      "applicable_to_current_pose": null,
+      "missing": "未核实当前靠柜坐地是否是允许起点；位置保持并不证明平衡控制在运行",
+      "execution_allowed": false
+    },
+    {
+      "name": "蹲姿起身",
+      "documented_entry": "Python Squat2StandUp / FSM 706",
+      "documented_start": "官方允许的蹲姿",
+      "applicable_to_current_pose": null,
+      "missing": "当前人工报告为坐地，不能直接当蹲姿；与 StandUp2Squat 共用 706，不可重复试发判断",
+      "execution_allowed": false
+    },
+    {
+      "name": "卧姿起身",
+      "documented_entry": "Python Lie2StandUp / FSM 702",
+      "documented_start": "官方允许的卧姿",
+      "applicable_to_current_pose": null,
+      "missing": "没有证据把当前靠柜坐地视作适用卧姿",
+      "execution_allowed": false
+    },
+    {
+      "name": "站起包装",
+      "documented_entry": "固定版本 C++ StandUp / FSM 4",
+      "documented_start": "此包装没有给出完整起始姿势契约",
+      "applicable_to_current_pose": null,
+      "missing": "与 Python 入口不同；本机固件兼容性和完整进入/失败恢复条件未知",
+      "execution_allowed": false
+    },
+    {
+      "name": "主动平衡站立",
+      "documented_entry": "C++ BalanceStand / SetBalanceMode(0)",
+      "documented_start": "需先满足匹配固件的控制归属与站立/运动前提",
+      "applicable_to_current_pose": null,
+      "missing": "BalanceMode getter 返回 7301；该包装不定义任意坐姿起身轨迹，也不证明平衡已接管",
+      "execution_allowed": false
+    }
+  ],
+  "conditional_plan": [
+    {
+      "name": "固定姿势与接触证据",
+      "status": "partial",
+      "detail": "保留靠柜更正及早先坐地、双脚贴地的人工报告。同步核对全身和四处接触；当前机载视野不足，不能自行认定起点一直未变。",
+      "completion_evidence": "带时间的全身/接触核对，与同一窗口关节和 IMU 对应"
+    },
+    {
+      "name": "核定多处承重与现场保护",
+      "status": "unknown",
+      "detail": "分别取得左右脚、坐地处及柜体的有效承重证据，核对柜体固定、接触、地面与全身净空。当前不改变支撑；柜体不当作已核定防跌落保护。",
+      "completion_evidence": "有效单位、映射、标定、质量和时效明确的载荷/接触数据及适用现场保护"
+    },
+    {
+      "name": "匹配固件和官方起点",
+      "status": "unknown",
+      "detail": "以当前运动主机版本及官方 23 DOF 契约核定允许起始姿态。若只支持指定蹲姿、卧姿或辅助预备，靠柜坐地保持不适用性未知，不自行拼接转换。",
+      "completion_evidence": "本机版本与官方进入、完成、中断和失败恢复条件对应"
+    },
+    {
+      "name": "确认慢速转换能力",
+      "status": "unknown",
+      "detail": "查明官方是否提供针对该转换的速度或时长设置。现有起身包装没有此参数；不拿 SetVelocity.duration、手臂权重、sleep 或示例增益代替。若无接口，缓慢自主起身方案保持未具备。",
+      "completion_evidence": "匹配该固件和转换的官方可调参数及语义；目前为空"
+    },
+    {
+      "name": "核定姿态保持到主动平衡的交接",
+      "status": "unknown",
+      "detail": "确认控制归属、模式反馈、有效 BalanceMode、转换完成与失败反馈。预备位置保持不等于主动平衡，Start/BalanceStand 不是从任意坐姿起身的替代入口。",
+      "completion_evidence": "匹配官方契约的控制归属和有效阶段回读，不能由 FSM 一项替代"
+    },
+    {
+      "name": "独立站稳验收条件",
+      "status": "unknown",
+      "detail": "需脚底载荷、柜体及坐地支撑关系、全身姿态、重心/动量和平衡裕量共同成立，并满足核定速度阈值和持续时间。当前阈值与时长均未知，不能宣布站稳。",
+      "completion_evidence": "经核定的站稳判据、阈值和观察持续时间；支撑变化需另行验证"
+    }
+  ],
+  "ota_history": {
+    "log_timestamp_literal": "2026-10-20 22:15:05–06",
+    "log_timezone": null,
+    "package_directory_label": "1.5.3.8_G1_Edu+",
+    "parent_directory_label": "1.5.3",
+    "module": "unitree_patch_pc4",
+    "module_version": "1.0.0.6",
+    "device_motion_firmware": null,
+    "meaning": "历史 OTA 日志与缓存文件路径标签；不是当前运动主机已安装版本，不能据 Edu+ 包名更改用户确认的 EDU 配置。未运行更新器或安装包。"
+  },
+  "passive_status": {
+    "sample_window_s": 15,
+    "discovery_window_s": 5,
+    "topics": [
+      {
+        "topic": "rt/multiplestate",
+        "samples": 0
+      },
+      {
+        "topic": "rt/selftest",
+        "samples": 0
+      },
+      {
+        "topic": "rt/servicestate",
+        "samples": 0
+      },
+      {
+        "topic": "rt/servicestateactivate",
+        "samples": 0
+      },
+      {
+        "topic": "rt/arm/action/state",
+        "samples": 0
+      },
+      {
+        "topic": "rt/arm_service_outbound",
+        "samples": 0
+      }
+    ],
+    "active_capability": null,
+    "meaning": "六个匹配类型通道在有限窗口均无样本；无消息不证明未执行能力、无故障或接口不存在。"
+  },
+  "load_reason": "左右脚、坐地处和柜体构成多处接触；即使近似静止，力/力矩平衡也不足以在未知接触点、摩擦、质心与传感有效性的情况下唯一分配载荷。tau_est 不是独立足底测力；不能用模型质量或四路全零反推。",
+  "slow_control": {
+    "speed_parameter": null,
+    "duration_s": null,
+    "trajectory": null,
+    "verified_stability_thresholds": null,
+    "stable_duration_s": null,
+    "meaning": "已核对起身包装未暴露起身速度或时长；SetVelocity.duration 是速度命令持续时间，xr_teleoperate 的渐增 weight 是手臂命令混合，均不能证实全身起身可减速。"
+  },
+  "next_readonly_evidence": [
+    "通过官方 App 的版本页面或匹配官方接口确认运动主机当前固件；Orin 包元数据和缓存不能代替",
+    "取得同步全身外部观察与接触点资料；仅机载前视 RGB 无法覆盖脚底及靠柜处",
+    "取得匹配 G1 的足底/外部接触载荷定义与有效读数，或经过验证的全身接触估计器",
+    "由对应固件的官方说明确认当前起点、慢速参数、交接与失败恢复契约"
+  ],
+  "official_references": [
+    {
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/wiki/Motion",
+      "checked_at_utc": "2026-10-21T07:14:02.238249+00:00",
+      "scope": "锁定站立与下肢运动控制区别；手臂命令权重不是全身起身速度；文档按键存在更新，不据此认定本机可用"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/unitree_sdk2/blob/d1abf001220d3e5f59e00a0c4aaa595e00089a4a/include/unitree/robot/g1/loco/g1_loco_client.hpp",
+      "scope": "固定官方 C++ 包装源码，不作为本机起始条件契约"
+    }
+  ]
+}

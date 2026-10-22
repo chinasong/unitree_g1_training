@@ -1,0 +1,1287 @@
+{
+  "schema_version": 15,
+  "current": false,
+  "checked_at_utc": "2026-10-22T05:33:00+00:00",
+  "device_motion_firmware": null,
+  "execution_allowed": false,
+  "motion_writes": 0,
+  "motor_configuration_values_obtained": 0,
+  "authority": "官方接口常量与进入条件的研究档案；不授权模式切换，不将 SDK 定义、历史读数或 OTA 缓存当作本机固件事实。",
+  "conclusion": "2026-10-22 充电重启后，33 次固定官方只读查询零 3104；四项 LocoState 查询仍各三次返回 7301。历史单次阻尼切换不代表重启后模式、起身或平衡就绪。运行固件、承重和适用起身路线仍未知。",
+  "firmware": {
+    "summary": "2026-10-22 12:25:35（北京时间）实际服务公告明确绑定 ai_sport=8.7.5.212；它是公告版本，尚未核验对应正在运行的 humanoid 构建。12:17 GetSilent三次false；FSM ID/Mode=0、CheckMode=ai；四项LocoState查询7301、GetPkgVersion3203。",
+    "ota_endpoint": "tcp://192.168.123.164:1026",
+    "ota_query_returncode": 0,
+    "ota_query_code_meaning": "本轮 listmoduleversion 成功；结果范围为 PC4，不代表运动主机。",
+    "next_step": "核对 ai_sport=8.7.5.212 服务公告与 .161 当前 humanoid 运行构建的官方对应关系和7301内部就绪判定。23自由度 >8.6.0.0 手册仅为候选，未选择为实机分支；不得为验证而切换靠柜坐地机器人的模式。",
+    "layers": [
+      {
+        "name": "运动主机固件",
+        "value": null,
+        "meaning": "必须先取得本机版本，再选择相应 23 DOF 遥控手册"
+      },
+      {
+        "name": "实际收到的服务版本公告",
+        "value": "ai_sport 8.7.5.212",
+        "meaning": "2026-10-22 12:25:35北京时间，rt/servicestate $[0] 显式绑定；未核验运行构建，不能替代已核定运动固件。"
+      },
+      {
+        "name": "App 关于设备 / 软件版本",
+        "value": "v1.5.6",
+        "meaning": "用户截图，机型 G1 EDU+、硬件 v1.0；版本所属组件未核定，不替代运动固件。"
+      },
+      {
+        "name": "sport 服务协议（此前实测）",
+        "value": "1.0.0.0",
+        "meaning": "API 1 三次成功；协议标识，不是运动主机固件"
+      },
+      {
+        "name": "motion_switcher / robot_state 服务协议",
+        "value": "1.0.0.1 / 1.0.0.2",
+        "meaning": "API 1 各三次成功；不是对应组件安装版本"
+      },
+      {
+        "name": "Orin / PC4 模块（此前查询）",
+        "value": "master_service 1.0.0.2 / patch 1.0.0.6 / video_hub 1.0.1.1",
+        "meaning": "OTA 实际返回，与本地清单一致；非运动主机版本"
+      },
+      {
+        "name": "HG LowState.version",
+        "value": "[0, 0]",
+        "meaning": "先前原始回读；未取得版本编码说明"
+      },
+      {
+        "name": "OTA 缓存目录",
+        "value": "1.5.3.8_G1_Edu+",
+        "meaning": "缓存包标签；不证明当前已安装或机型为 EDU+"
+      }
+    ],
+    "diagnosis": {
+      "historical_returncode": 104,
+      "internal_codes_mapped_to_104": [
+        120003,
+        120004
+      ],
+      "timeout_us": 3000000,
+      "old_timeout_us": 3,
+      "summary": "旧命令 -T 3 被当作 3 微秒，TCP 接收转为 poll 等待 0 毫秒；修正为 -T 3000000（3 秒）后返回 0。",
+      "proof": "同一程序哈希、同一启动周期和端点，A/B 返回 104 / 0；实际 WaitRecv 代码将超时除以 1000 后传入 poll。104 合并映射两个内部码，不能仅据退出码断言具体底层错误。"
+    },
+    "queried_modules": [
+      {
+        "name": "master_service_pc4",
+        "version": "1.0.0.2"
+      },
+      {
+        "name": "unitree_patch_pc4",
+        "version": "1.0.0.6"
+      },
+      {
+        "name": "video_hub_pc4",
+        "version": "1.0.1.1"
+      }
+    ],
+    "query_scope": "Orin / PC4，已与本地 version.json 一致核对；不是运动主机固件。",
+    "pkg_version_retry": {
+      "code": 3203,
+      "checked_at_utc": "2026-10-21T12:33:38.831806+00:00",
+      "motion_firmware": null,
+      "transport": "official_getters_isolated_polled",
+      "attempts": 3
+    },
+    "selected_manual_branch": null,
+    "manual_branches": [
+      {
+        "id": "23_gt_8_6",
+        "label": "运动版本 >8.6.0.0 · 23 DOF",
+        "source_url": "https://oss-global-cdn.unitree.com/static/22972694fe684e1c89c9832f75d0938f.pdf",
+        "lying_path": "阻尼 → 自适应起身（⑩）",
+        "sdk_mapping": null,
+        "device_applicable": null
+      },
+      {
+        "id": "23_ge_8_4_2_222",
+        "label": "运动版本 ≥8.4.2.222 · 23 DOF 旧版手册",
+        "source_url": "https://oss-global-cdn.unitree.com/static/656cb0b067a64efc8c2d3e439a0e13c2.pdf",
+        "lying_path": "阻尼 → 躺站（⑤）",
+        "sdk_mapping": null,
+        "device_applicable": null
+      }
+    ],
+    "manual_conditions": [
+      "躺卧和蹲姿启动只适用于平整坚硬地面；当前靠柜坐地未核定为允许起点。",
+      "推荐椅坐启动路线涉及锁定站立再进入运动控制，②→③需人工辅助扶正；不能把地面和柜体当作椅子。",
+      "站立模式允许在受扰、难维持平衡时迈步；“站立”不等于双脚位置固定。",
+      "预备姿态、坐姿或蹲姿说明的约 5 秒时序不证明起身可通过 SDK 减速；坐姿和蹲姿不带平衡控制。"
+    ],
+    "manual_branch_candidate": "23_gt_8_6"
+  },
+  "modes": [
+    {
+      "id": "prepare",
+      "name": "站立预备 / 姿态保持",
+      "documented_entry": "C++ StandUp → SetFsmId(4)",
+      "entry_conditions": "官方椅坐启动路线要求相应预备姿态；预备转运动有人辅助扶正。当前靠柜坐地不等于椅坐。",
+      "feedback": "GetFsmId / GetFsmMode 加实际姿态和外部支撑反馈；单个编号不能证明站稳。",
+      "remaining_unknown": "FSM 4 与遥控“锁定站立”的本机映射、进入/退出、保持力矩与保护条件未核定。",
+      "device_applicable": null,
+      "execution_allowed": false
+    },
+    {
+      "id": "squat_mode",
+      "name": "蹲姿模式",
+      "documented_entry": "C++ Squat → SetFsmId(2)",
+      "entry_conditions": "需相应固件认可的蹲姿路线和支撑条件；蹲姿没有平衡控制，坐地靠柜不能等同于蹲姿。",
+      "feedback": "GetFsmId / GetFsmMode 和全身姿态；编号不能证明承重或独立站稳。",
+      "remaining_unknown": "本机固件对 FSM 2 的接受、退出与安全支撑条件未核定；不能与 Python 的双向 706 混用。",
+      "device_applicable": null,
+      "execution_allowed": false
+    },
+    {
+      "id": "lie",
+      "name": "躺卧起身",
+      "documented_entry": "Python Lie2StandUp → SetFsmId(702)",
+      "entry_conditions": "官方要求平整坚硬地面和规定躺卧起点；当前坐地靠柜不满足已核对的起点描述。",
+      "feedback": "需要阶段、失败及完成反馈，并核验支撑与站稳；没有已验证完成判据。",
+      "remaining_unknown": ">8.6.0.0 手册改用“自适应起身”，尚未核定与 FSM 702 的映射；本机固件、净空、柜体接触、失败恢复和慢速参数未知。",
+      "device_applicable": null,
+      "execution_allowed": false
+    },
+    {
+      "id": "squat",
+      "name": "蹲站双向转换",
+      "documented_entry": "Python Squat2StandUp / StandUp2Squat → SetFsmId(706)",
+      "entry_conditions": "双向共用入口；需核实当前是其允许的蹲姿或站姿。坐地不能直接当蹲姿。",
+      "feedback": "回读 FSM 和实际转换方向；应答成功不能证明完成。",
+      "remaining_unknown": "本机方向判定、触发条件、执行时长及退出/恢复未确认。",
+      "device_applicable": null,
+      "execution_allowed": false
+    },
+    {
+      "id": "start",
+      "name": "进入行走控制",
+      "documented_entry": "Start → SetFsmId(500)",
+      "entry_conditions": "先满足本机规定的预备与支撑条件；Start 不是从任意坐姿起身。",
+      "feedback": "需要新鲜 FSM、控制归属、身体反馈和独立站稳证据。",
+      "remaining_unknown": "从预备到原生运动控制的本机交接契约未核定。",
+      "device_applicable": null,
+      "execution_allowed": false
+    },
+    {
+      "id": "balance",
+      "name": "站立平衡模式",
+      "documented_entry": "C++ BalanceStand → SetBalanceMode(0) · API 7102",
+      "entry_conditions": "需先核定直立和原生运动控制适用状态；不是关节位置锁死，也不是坐地起身入口。",
+      "feedback": "GetBalanceMode · API 7003；先前本机返回 7301，没有有效模式值。",
+      "remaining_unknown": "本机支持与退出条件、承重、平衡裕量未核定。",
+      "device_applicable": null,
+      "execution_allowed": false
+    },
+    {
+      "id": "gait",
+      "name": "持续踏步 / 返回站立",
+      "documented_entry": "C++ ContinuousGait(true/false) → SetBalanceMode(1/0)",
+      "entry_conditions": "仅在适用运动状态研究；持续踏步可能主动迈步，不是固定双脚。",
+      "feedback": "需有效 GetBalanceMode 及步态、脚接触与负载反馈。",
+      "remaining_unknown": "本机版本映射、当前能否接受及安全转换条件未知。",
+      "device_applicable": null,
+      "execution_allowed": false
+    },
+    {
+      "id": "damp",
+      "name": "阻尼保护",
+      "documented_entry": "Damp → SetFsmId(1)",
+      "entry_conditions": "官方定义为停止主动运动、关节移动有阻力；不能由此推导主动站立平衡。",
+      "feedback": "FSM 回读与身体响应；网络应答不能保证转换完成或不会下沉。",
+      "remaining_unknown": "当前靠柜姿势切换后的支撑变化与保护响应未知。",
+      "device_applicable": null,
+      "execution_allowed": false
+    },
+    {
+      "id": "zero",
+      "name": "零力矩",
+      "documented_entry": "ZeroTorque → SetFsmId(0)",
+      "entry_conditions": "官方定义无主动驱动、移动关节无阻尼；不能用于让身体有力站稳。",
+      "feedback": "新鲜 FSM 与身体反馈；FSM 0 不测量全部电机实际力矩。",
+      "remaining_unknown": "退出路线与本机支撑条件未核定。",
+      "device_applicable": null,
+      "execution_allowed": false
+    }
+  ],
+  "stop_semantics": [
+    {
+      "name": "软件停止行走",
+      "mechanism": "StopMove → SetVelocity(0, 0, 0)，停止平移与转向目标",
+      "scope": "不切换到阻尼、不切断电源，不保证取消起身、手势或舞蹈；网络断开时送达也无保证。",
+      "verified": "已核对锁定 SDK；本轮未实机发送。"
+    },
+    {
+      "name": "实体遥控器阻尼保护",
+      "mechanism": "遥控说明称阻尼按键可作 emergency stop；通用页为 L2+B，新版 23 DOF 手册还写运动状态长按 5 秒。",
+      "scope": "属于控制模式切换，不能视作电机断电；需先匹配本机固件手册。通用页与新版手册的时序不能混用。",
+      "verified": "官方说明称调试模式也有效；未证明硬件独立性、认证、时延或失联策略。"
+    },
+    {
+      "name": "硬件断电急停",
+      "mechanism": "本机是否有独立安全回路、切断驱动能力的实体急停：未知。",
+      "scope": "不能把网页停止、无线遥控保护键或普通关机键直接等同于此类急停。",
+      "verified": "本轮未测试断电、无线失联或急停；也未发现可核验的安全回路说明。"
+    }
+  ],
+  "controller_notes": [
+    "官方站立模式在摇杆为零时通常停止踏步，受扰难平衡时可能迈步；姿态保持不等于双脚永不移动。",
+    "通用遥控文档明确蹲姿和坐姿没有平衡控制；不能将坐姿稳定当成站立平衡已启用。",
+    "调试模式会停止原生运动控制器，不作为本项目复用官方高层平衡的入口。",
+    "Python 高层包装可能丢弃返回码；未来接入应记录底层 RPC 码、实际模式和完成证据，不能把 None 或 code 0 当作站稳。",
+    "新版自适应起身没有核定 SDK 映射；不猜状态 ID。",
+    "C++ StandUp=4、Squat=2；锁定 Python 的蹲站双向包装=706。它们不能按同名或相近名称互换，也不能由 SDK 升级推断固件支持。",
+    "官方 G1 文档已确认 ServiceList 的 status 0 为开启、1 为关闭；protect 语义未知。服务开启不证明控制权限、LocoState 可读或站稳；名为 emergency_stop 的服务不证明硬件断电急停。"
+  ],
+  "readiness": [
+    "确认运动固件及对应 23 DOF 手册；核实起身、预备、原生控制交接、退出和失败恢复。",
+    "核实当前足底、臀部与柜体接触、载荷和净空；脚底贴地不等于独立承重。",
+    "当前保持只读；不能将柜坐变成椅坐或躺卧的假设来选择执行入口。",
+    "确认后才形成现场可复核的转换方案；当前不生成低层插值，也不以命令 duration 冒充起身减速。"
+  ],
+  "sources": [
+    {
+      "title": "Python LocoClient",
+      "path": "externals/unitree_sdk2_python/unitree_sdk2py/g1/loco/g1_loco_client.py",
+      "sha256": "5fbc07b30994676cd2f7994a2389b24e9b51e2c13dfde7e565bfd77898300ce2",
+      "url": "https://github.com/unitreerobotics/unitree_sdk2_python/blob/814556d15970dd2ecf1c9984e845ca02ab07e206/unitree_sdk2py/g1/loco/g1_loco_client.py"
+    },
+    {
+      "title": "C++ LocoClient",
+      "path": "g1_console/assets/capability_sources/g1_loco_client.hpp",
+      "sha256": "d9aabe78918312c2ec60c5df94653e81319eb6730cc1479372a09849d99cd361",
+      "url": "https://github.com/unitreerobotics/unitree_sdk2/blob/d1abf001220d3e5f59e00a0c4aaa595e00089a4a/include/unitree/robot/g1/loco/g1_loco_client.hpp"
+    },
+    {
+      "title": "本机 OTA 程序与配置",
+      "path": "g1_console/assets/safety_evidence_sources/ota_contract_inventory_20261021_v20.json",
+      "sha256": "997140b2e426f568275126a0e30e44f944822919bd5d2ebbce2bc808022c1ab2",
+      "url": null
+    },
+    {
+      "title": "官方 OTA 只读查询结果",
+      "path": "g1_console/assets/safety_evidence_sources/ota_version_query_20261021_v20.json",
+      "sha256": "cf550f1c5b5036a010ece6afa33b1a6dadccfa1f3bbf51d92be9d6545753a19c",
+      "url": null
+    },
+    {
+      "title": "104 静态解码、超时 A/B 与 PC4 只读查询",
+      "url": null,
+      "path": "g1_console/assets/safety_evidence_sources/ota_diagnosis_20261021_v21.json",
+      "sha256": "9783f4f02ac3ad4aa095bcbd71f1241749cb222326dddca74c39635c4df116c3"
+    },
+    {
+      "title": "官方 23 DOF 手册分支与条件",
+      "url": null,
+      "path": "g1_console/assets/safety_evidence_sources/official_23dof_manual_review_20261021_v21.json",
+      "sha256": "6ecf8dd812d2da383d75fbaccbee049d3347e3b7bdc28b6e534586ceddcd95dc"
+    },
+    {
+      "title": "修正后的固定 OTA 只读查询脚本",
+      "url": null,
+      "path": "scripts/audit_g1_ota_versions.py",
+      "sha256": "55460f50721e016c3749f1b4240136c492cb6b6be46afbd01c49235d1a3ac314"
+    },
+    {
+      "title": "用户提供的官方 App 截图字段与边界",
+      "url": null,
+      "path": "g1_console/assets/safety_evidence_sources/app_screenshots_20261021_v22.json",
+      "sha256": "37e80b1f2a6541478d594137728730840f1b2e643cd171d416309f03aea686fc"
+    },
+    {
+      "title": "7301 官方错误定义",
+      "path": "g1_console/assets/capability_sources/g1_loco_error.hpp",
+      "sha256": "8b33d73f9857d1581c11b362d2705f031020a084db12b00cadfaac0255f46579",
+      "url": "https://github.com/unitreerobotics/unitree_sdk2/blob/main/include/unitree/robot/g1/loco/g1_loco_error.hpp"
+    },
+    {
+      "title": "本机 3104 / 7301 配对应答证据",
+      "path": "g1_console/assets/safety_evidence_sources/loco_query_transport_20261021_v24.json",
+      "sha256": "61722b4aed8ee76a1a5da47c10ffc8da2c089add2fc838b0f432d201547c248b",
+      "url": null
+    },
+    {
+      "title": "本机版本接口与安装清单复查",
+      "path": "g1_console/assets/safety_evidence_sources/firmware_polled_query_20261021_v24.json",
+      "sha256": "abf7475437d836cf2d198749368804e3f37c2fa7de3651c8b982d99f2f5c282c",
+      "url": null
+    },
+    {
+      "title": "官方 RobotState 只读接口",
+      "path": "g1_console/assets/interface_audit_sources/unitree_sdk2_python/unitree_sdk2py/b2/robot_state/robot_state_client.py",
+      "sha256": "bb1724f1d0a3d80e75aa88e754fea0594595bb5fa7e9b81266d773e72c69f4b6",
+      "url": null
+    },
+    {
+      "title": "首轮隔离查询验收与音量旧路径超时",
+      "path": "g1_console/assets/safety_evidence_sources/query_path_followup_20261021_v24.json",
+      "sha256": "836e214659f0ec52f97282159347b28fe4fa3fc5e9b9565a86dbf2b9014b3dd2",
+      "url": null
+    },
+    {
+      "title": "本轮 33 次固定查询及 DDS 发现",
+      "path": "g1_console/assets/safety_evidence_sources/loco_readiness_20261021_v27.json",
+      "sha256": "555d7f129b1eabfab91dfc6c216d6cfedd21d4af4e534f03b46a7dca851e70d6",
+      "url": null
+    },
+    {
+      "title": "单发布者配对应答与被动服务状态窗口",
+      "path": "g1_console/assets/safety_evidence_sources/loco_responders_20261021_v27.json",
+      "sha256": "6445bbc81e21616b3a1f8891789decce613ffecb101894ff5342914a74fb1134",
+      "url": null
+    },
+    {
+      "title": "官方仓库社区兼容性报告及适用边界",
+      "path": "g1_console/assets/safety_evidence_sources/loco_community_compatibility_20261021_v27.json",
+      "sha256": "e89dad54d900b177b0e26b610173ac977511b7986c18639d4251b7fdf454b3e5",
+      "url": null
+    },
+    {
+      "title": "锁定官方 RPC 内部 API 与错误码",
+      "path": "externals/unitree_sdk2_python/unitree_sdk2py/rpc/internal.py",
+      "sha256": "38896942088a7b0d03e3d9e5fa06ef3aee81e8ec6d52e0a9a640e35aaf955343",
+      "url": null
+    },
+    {
+      "title": "锁定官方 GetServerApiVersion 原始字符串契约",
+      "path": "externals/unitree_sdk2_python/unitree_sdk2py/rpc/client.py",
+      "sha256": "20840192dee42525b64ecc3a3e8d5ec5d1d7e122b7bfc4236c482cb2b0f6e186",
+      "url": null
+    },
+    {
+      "title": "本机应答归属、参与者自报信息及已知只读路径检查",
+      "path": "g1_console/assets/safety_evidence_sources/sport_host_20261021_v29.json",
+      "sha256": "74e6a6672973df49fde07cc49a5792397ac009e0fd7abf3abfafea9c38fa405b",
+      "url": null
+    },
+    {
+      "title": "官方 G1 服务状态枚举与 DDS 归属边界",
+      "path": "g1_console/assets/safety_evidence_sources/sport_service_contract_20261021_v28.json",
+      "sha256": "66b39c7d551fdfc8ea02b9dfb1f7868622e9e0399662738a7f82d8f9eea9e46a",
+      "url": "https://support.unitree.com/home/en/G1_developer/robot_state_client_interface"
+    },
+    {
+      "title": "固定只读应答归属审计实现",
+      "path": "scripts/audit_g1_sport_host.py",
+      "sha256": "8ff6f37f58757d56a493bc338af509c87d958e1d57edbe9752d6226ca6c054f4",
+      "url": null
+    },
+    {
+      "title": "历史服务证据的配对验证与派生实现",
+      "path": "scripts/g1_sport_evidence.py",
+      "sha256": "26c9ceb22beee2a7a0f3114fcc7881141b1fd4747aa4bbd4a554af7b94f5b35a",
+      "url": null
+    },
+    {
+      "title": "humanoid 并发状态与固定 getter 原始证据",
+      "path": "g1_console/assets/safety_evidence_sources/humanoid_state_20261021_v30.json",
+      "sha256": "a03e1f00d6f5a230d69b0eb268f1c72a7f405303c8c8ac2846b6d31092907838",
+      "url": null
+    },
+    {
+      "title": "Orin 官方文本和日志有界检查",
+      "path": "g1_console/assets/safety_evidence_sources/humanoid_files_20261021_v30.json",
+      "sha256": "8728e9ac5719bbb7d33701d3673a2a18baf021a9a3a55f0b24fdd0209b903d9c",
+      "url": null
+    },
+    {
+      "title": "humanoid 只读发现与状态采样实现",
+      "path": "scripts/audit_g1_humanoid_discovery.py",
+      "sha256": "65e6a60eba2979378135cf875c56807cffec243806cc8c1bbab06dceb5e9a429",
+      "url": null
+    },
+    {
+      "title": "Orin 只读文件检查实现",
+      "path": "scripts/audit_g1_humanoid_files.py",
+      "sha256": "cc5068a3b8b496cee24f0d1d0cd572e005c06abe27201b840585380c60bb1f6d",
+      "url": null
+    },
+    {
+      "title": "humanoid 配对验证与解释实现",
+      "path": "scripts/g1_humanoid_evidence.py",
+      "sha256": "f24c012ab180cab69ffaa6169e017625162cbf7cbb18853f8b7b4cded64e64fe",
+      "url": null
+    },
+    {
+      "title": "重启后固定 getter 与运动节点配对复核（2026-10-22）",
+      "path": "g1_console/assets/safety_evidence_sources/sport_host_20261022_v31.json",
+      "sha256": "78af309737f2179f388a0c0a515eefe0296844e74587a05472ee23d51f6c0e3e",
+      "url": null
+    },
+    {
+      "path": "doc/G1_SILENT_AND_VERSION_READONLY_20261022.json",
+      "sha256": "f487e96a525c0b5eb9a71d6a96472d8b54522b8f0c6c4d2dc8591ac702c15246"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/service_advertisement_20261022_v32.json",
+      "sha256": "5caa020daec5529e00580372e5f4ea6362b27a7e8c1d275f31dd8b3e3843ff0a",
+      "meaning": "持续只读监听实际收到的显式服务版本绑定，非运行构建确认"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/service_publisher_20261022_v33.json",
+      "sha256": "dbfde31168bda86ddc701c1b9ac4df01ee9b7726a5027d8c6a6ae84c9a0d5a6d"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/loco_compatibility_followup_20261022_v33.json",
+      "sha256": "d67b9a2371ca24dc1c525b9670c204166b8800485fcb0b0508d5896f75abc03f"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/official_remote_manual_20261022_v34.json",
+      "sha256": "12a794a5f11e2aa12d8fbdf7115dd420e820256ffb85ed94b146483e1c4e7fc2"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/damping_device_test_20261022_v34.json",
+      "sha256": "20e2274d1b1ddc7bf83cf5f3ce3640f31965dae4ffb35cc48eb56ff96b558ae2"
+    },
+    {
+      "path": "doc/official/G1_REMOTE_CONTROL_23DOF_20260407.pdf",
+      "sha256": "b50e7a6382f7069461c047825771d99a58ca387113f9b17667172427fc44d569"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/reboot_loco_readonly_20261022_v35.json",
+      "sha256": "d2a56b1b75009d4ef860ce50000f62ef86b6c392cd4d6f1070797814f92cd427"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/installed_loco_sdk_20261022_v36.json",
+      "sha256": "326ac510f1c6783177be1eb9986ff97c5f39ebf1136739fe6a3ce1d68ed68391"
+    }
+  ],
+  "documents": [
+    {
+      "title": "23 自由度遥控手册（2026-04-07，2026-10-22 核对）",
+      "url": "https://oss-global-cdn.unitree.com/static/22972694fe684e1c89c9832f75d0938f.pdf",
+      "updated": "2026-04-07"
+    },
+    {
+      "title": "官方 G1 遥控说明",
+      "url": "https://support.unitree.com/home/en/G1_developer/remote_control",
+      "updated": "2026-06-25 15:06:42"
+    },
+    {
+      "title": ">8.6.0.0 的 23 DOF 遥控手册",
+      "url": "https://oss-global-cdn.unitree.com/static/22972694fe684e1c89c9832f75d0938f.pdf",
+      "updated": "标题 20260407"
+    },
+    {
+      "title": "官方 G1 RobotStateClient",
+      "url": "https://support.unitree.com/home/en/G1_developer/robot_state_client_interface",
+      "updated": "2025-11-19 14:49:52"
+    },
+    {
+      "title": "≥8.4.2.222 的 23 DOF 旧版遥控手册",
+      "url": "https://oss-global-cdn.unitree.com/static/656cb0b067a64efc8c2d3e439a0e13c2.pdf",
+      "updated": "本轮重新核对"
+    },
+    {
+      "title": "官方错误定义：7301 LocoState 不可用",
+      "url": "https://github.com/unitreerobotics/unitree_sdk2/blob/main/include/unitree/robot/g1/loco/g1_loco_error.hpp",
+      "updated": "本轮核对"
+    },
+    {
+      "title": "官方仓库 issue #43：服务页版本线索（用户报告）",
+      "url": "https://github.com/unitreerobotics/unitree_sdk2_python/issues/43",
+      "updated": "历史社区报告，非本机证据"
+    },
+    {
+      "title": "G1 EDU+ 29 DOF 兼容性用户报告 #170",
+      "url": "https://github.com/unitreerobotics/unitree_sdk2_python/issues/170",
+      "updated": "2026-10-21 查阅；非本机结论"
+    },
+    {
+      "title": "未合并的启动序列提案 #312（未采纳）",
+      "url": "https://github.com/unitreerobotics/xr_teleoperate/pull/312",
+      "updated": "2026-10-21 查阅；非官方批准"
+    }
+  ],
+  "app_evidence_source": "g1_console/assets/safety_evidence_sources/app_screenshots_20261021_v22.json",
+  "rpc_diagnosis": {
+    "current": false,
+    "checked_at_utc": "2026-10-21T12:13:46.374180+00:00",
+    "summary": "已证明旧接收路径存在假 3104：16 次控制台查询实际均收到 7301，旧接收端却报告 10 次超时。改用独立进程轮询接收，保留真实返回码。",
+    "trials": [
+      {
+        "path": "旧控制台接收路径",
+        "attempts": 16,
+        "timeouts": 10,
+        "code_7301": 6
+      },
+      {
+        "path": "独立进程轮询（空串与 {} 参数各半）",
+        "attempts": 32,
+        "timeouts": 0,
+        "code_7301": 32
+      },
+      {
+        "path": "部署后 7003–7006 隔离查询",
+        "attempts": 24,
+        "timeouts": 0,
+        "code_7301": 24
+      },
+      {
+        "path": "本轮固定查询 / 7003–7006",
+        "attempts": 12,
+        "timeouts": 0,
+        "code_7301": 12
+      }
+    ],
+    "proof": "同一启动周期、同一官方服务，按 DDS request id 和 api id 配对的 93 个请求全部有回复；7003–7006 的 48 个回复均为 7301。参数空串和 {} 得到相同错误，不能靠改参数解决 LocoState。尚未定位旧 SDK 内部丢失回复的具体线程/队列原因。",
+    "code_meanings": [
+      {
+        "code": "3104",
+        "meaning": "客户端等待应答超时；不能仅据此判断网络故障或服务没有回复。"
+      },
+      {
+        "code": "7301",
+        "meaning": "官方定义 LocoState 不可用；raw.data 的 0、0.0、[] 均不构成有效值，保持未知。"
+      },
+      {
+        "code": "3203",
+        "meaning": "服务不支持该 API；本轮 GetPkgVersion 三次均返回此码。"
+      },
+      {
+        "code": "MODE_WORKER_TIMEOUT",
+        "meaning": "本软件进程间查询超时；与机器人返回 3104 分开记录。"
+      }
+    ],
+    "limits": [
+      "7301 未证明由哪个物理姿态或内部模块条件触发；不以切换模式来试错。",
+      "CheckMode=ai、FSM=0 不能证明平衡开启、脚底承重、硬件健康或任何动作已完成。",
+      "所有读查询按需执行，不自动重试、不取得控制权、不切换服务或运动模式。",
+      "首轮部署后音量旧路径一次 3104 未被动配对应答，不能认定为假超时。音量与动作清单现也使用隔离接收进程，实际结果以新鲜查询为准。"
+    ],
+    "sources": [
+      "g1_console/assets/safety_evidence_sources/loco_query_transport_20261021_v24.json",
+      "g1_console/assets/safety_evidence_sources/firmware_polled_query_20261021_v24.json",
+      "g1_console/assets/safety_evidence_sources/query_path_followup_20261021_v24.json"
+    ]
+  },
+  "protocol_review": {
+    "current": false,
+    "checked_at_utc": "2026-10-21T12:34:54.637691+00:00",
+    "summary": "API 1 返回纯文本协议版本，已新增三个按需只读查询。运动固件字段始终独立保留未知。",
+    "services": [
+      {
+        "service": "sport",
+        "api_version": "1.0.0.0",
+        "firmware_version": null
+      },
+      {
+        "service": "motion_switcher",
+        "api_version": "1.0.0.1",
+        "firmware_version": null
+      },
+      {
+        "service": "robot_state",
+        "api_version": "1.0.0.2",
+        "firmware_version": null
+      }
+    ],
+    "responder_evidence": "DDS 发现三个 sport 应答发布者；7 个查询在各自 1 秒窗口内均只收到同一发布者的一份配对应答。7003–7006 在 0.86–1.35 ms 内返回 7301，未发现本轮多份应答冲突。",
+    "limits": [
+      "发现发布者不等于全部参与应答；GUID 不证明物理控制板或固件。",
+      "rt/servicestate、rt/multiplestate、rt/servicestateactivate 的 8 秒读取窗口均无样本；不能证明整个系统没有状态信息。",
+      "API 7001/7002 各三次成功为 0，CheckMode 为 ai；这些值不能证明坐姿、平衡启用或足底/柜体承重。",
+      "7301 的内部触发条件仍未知；未用模式切换、控制租约或重启官方服务试错。"
+    ],
+    "compatibility_notes": [
+      "作者报告 API 版本匹配，但 FSM/速度成功应答未产生预期变化；不能据此证明本机存在同样问题。 环境为 EDU+ 29 DOF / 软件 1.5.3。",
+      "作者提议改变启动 FSM 序列；独立审阅提出自动启动运动、错误处理和验证缺口。没有采纳、运行或开放其新增 FSM。",
+      "协议匹配、服务名 ai 和 RPC 成功均不足以核定起身或控制切换；29 DOF 社区路线不能套用本机 23 DOF。",
+      "2026-10-22 复查：PR #312 仍开放未合并（head 1123c078e4902a6726b56aa7851c5b36cc1031ed）；issue #170 的 29 DOF 后续反馈含 501 摇摆、200 踏步，没有本机 23 DOF / 8.7.5.212 的成功轨迹。未采用这些物理切换。"
+    ]
+  },
+  "service_evidence_source": "g1_console/assets/safety_evidence_sources/sport_host_20261022_v31.json",
+  "humanoid_evidence_source": "g1_console/assets/safety_evidence_sources/humanoid_state_20261021_v30.json",
+  "humanoid_files_source": "g1_console/assets/safety_evidence_sources/humanoid_files_20261021_v30.json",
+  "rpc_contract_review": {
+    "current": false,
+    "checked_at_utc": "2026-10-22T03:45:33.100659+00:00",
+    "device_motion_firmware": null,
+    "exact_7301_predicate": null,
+    "execution_allowed": false,
+    "motion_writes": 0,
+    "codes": [
+      {
+        "code": 7301,
+        "symbol": "UT_ROBOT_LOCO_ERR_LOCOSTATE_NOT_AVAILABLE",
+        "meaning": "LocoState 不可用。官方公开头文件没有给出服务端内部就绪判定；FSM=0 同期出现不能证明因果。",
+        "url": "https://github.com/unitreerobotics/unitree_sdk2/blob/main/include/unitree/robot/g1/loco/g1_loco_error.hpp"
+      },
+      {
+        "code": 3203,
+        "symbol": "RPC_ERR_SERVER_API_NOT_IMPL",
+        "meaning": "官方 RPC 契约为服务端 API 未实现。Python 参考服务端在文本和二进制 handler 都未注册时先返回 3203，早于 lease 检查；这不是实机服务端源码证明。",
+        "url": "https://github.com/unitreerobotics/unitree_sdk2_python/blob/master/unitree_sdk2py/rpc/server.py"
+      },
+      {
+        "code": 3104,
+        "symbol": "RPC_ERR_CLIENT_API_TIMEOUT",
+        "meaning": "客户端等待应答超时，与收到明确 7301/3203 分开处理。",
+        "url": "https://github.com/unitreerobotics/unitree_sdk2_python/blob/master/unitree_sdk2py/rpc/internal.py"
+      }
+    ],
+    "conclusions": [
+      "不为 3203 获取 lease、试传未知参数或重试写接口；官方契约中 lease 拒绝为 3205、参数错误为 3204、内部错误为 3202。",
+      "GetPkgVersion 使用 API 1006 和空 JSON 参数；本轮已收到配对的 3203，错误载荷保持 null。不能补造包版本。",
+      "10 次固定只读查询均有单一匹配应答，本窗口无 3104；不据此保证永久无超时。"
+    ]
+  },
+  "readonly_control_evidence": {
+    "source": "doc/G1_SILENT_AND_VERSION_READONLY_20261022.json",
+    "current": false,
+    "firmware_acceptance": "unknown",
+    "physical_result": "not_tested",
+    "sdk_lease_enabled": false,
+    "project_lease_grants_robot_authority": false,
+    "get_silent": {
+      "api": 1005,
+      "parameter": "",
+      "codes": [
+        0,
+        0,
+        0
+      ],
+      "values": [
+        false,
+        false,
+        false
+      ],
+      "checked_at_utc": "2026-10-22T04:17:26.897624+00:00",
+      "current": false
+    },
+    "loco_state_codes": [
+      7301,
+      7301,
+      7301,
+      7301
+    ],
+    "pkg_version_code": 3203,
+    "device_motion_firmware": null,
+    "passive_version_frames": 0,
+    "passive_duration_s": 120,
+    "execution_allowed": false,
+    "conclusion": {
+      "silent": "三次官方 GetSilent 为 false；同一只读采样期间 LocoState 查询为 7301，不能归因于 silent 当前开启；不证明动作控制权。",
+      "7301": "官方名称 LocoStateNotAvailable；服务端具体状态与就绪判定未公开，未通过动作试探。",
+      "3203": "服务端 API_NOT_IMPL；GetPkgVersion 未实现，非超时，不填默认固件。",
+      "version": "本次实际收到的服务公告明确绑定 ai_sport=8.7.5.212。它大于8.6.0.0，可作为23自由度新版手册候选；未核验公告与正在应答的 humanoid 可执行文件、当前运行构建及标定的对应关系，不能填作已核定运动固件或解锁动作。",
+      "authority": "官方 G1 LocoClient 和通用 MotionSwitcherClient 初始化 enableLease=False；窗口 mutex 不等于机器人控制权，未请求 SDK 租约。"
+    },
+    "service_advertisement_source": "g1_console/assets/safety_evidence_sources/service_advertisement_20261022_v32.json"
+  },
+  "service_advertisement": {
+    "schema_version": 1,
+    "current": false,
+    "execution_allowed": false,
+    "boot_id": "aed898cb-acfd-44a2-8e9c-50f1f00269aa",
+    "release": "57ec2fb35096",
+    "run_id": "3ea9bcdeed01",
+    "topic": "rt/servicestate",
+    "received_at_utc": "2026-10-22T04:25:35.964949+00:00",
+    "timestamp_basis": "local_receive_time",
+    "frames": 1,
+    "raw_frame_sha256": "c31dde1408172e046585859481d0ff67c2a874bacbb461f2c7ebbd813245b4c6",
+    "raw_frame_retained": false,
+    "extraction": "strict JSON explicit name/version object fields; original JSON field path retained",
+    "rows": [
+      {
+        "name": "ai_sport",
+        "version": "8.7.5.212",
+        "path": "$[0]",
+        "binding": "object_fields"
+      },
+      {
+        "name": "bashrunner",
+        "version": "1.1.1.2",
+        "path": "$[4]",
+        "binding": "object_fields"
+      },
+      {
+        "name": "basic_service",
+        "version": "3.0.0.18",
+        "path": "$[5]",
+        "binding": "object_fields"
+      },
+      {
+        "name": "battery_guard",
+        "version": "1.0.0.9",
+        "path": "$[6]",
+        "binding": "object_fields"
+      },
+      {
+        "name": "chat_go",
+        "version": "1.9.5.26",
+        "path": "$[7]",
+        "binding": "object_fields"
+      },
+      {
+        "name": "emergency_stop",
+        "version": "1.0.0.4",
+        "path": "$[10]",
+        "binding": "object_fields"
+      },
+      {
+        "name": "g1_arm_example",
+        "version": "2.0.2.5",
+        "path": "$[11]",
+        "binding": "object_fields"
+      },
+      {
+        "name": "lidar_driver",
+        "version": "1.0.0.12",
+        "path": "$[12]",
+        "binding": "object_fields"
+      },
+      {
+        "name": "log_system",
+        "version": "2.0.0.11",
+        "path": "$[13]",
+        "binding": "object_fields"
+      },
+      {
+        "name": "motion_switcher",
+        "version": "1.0.0.1",
+        "path": "$[14]",
+        "binding": "object_fields"
+      },
+      {
+        "name": "net_switcher",
+        "version": "1.0.2.1",
+        "path": "$[15]",
+        "binding": "object_fields"
+      },
+      {
+        "name": "robot_state",
+        "version": "3.0.0.8",
+        "path": "$[18]",
+        "binding": "object_fields"
+      },
+      {
+        "name": "robot_type_service",
+        "version": "1.0.2.4",
+        "path": "$[19]",
+        "binding": "object_fields"
+      },
+      {
+        "name": "state_estimator",
+        "version": "2.0.0.25",
+        "path": "$[20]",
+        "binding": "object_fields"
+      },
+      {
+        "name": "unistore",
+        "version": "1.0.1.20",
+        "path": "$[21]",
+        "binding": "object_fields"
+      },
+      {
+        "name": "unitree_slam",
+        "version": "1.0.2.9",
+        "path": "$[22]",
+        "binding": "object_fields"
+      },
+      {
+        "name": "video_hub_pc4",
+        "version": "1.0.1.1",
+        "path": "$[23]",
+        "binding": "object_fields"
+      },
+      {
+        "name": "vui_service",
+        "version": "2.1.0.47",
+        "path": "$[24]",
+        "binding": "object_fields"
+      },
+      {
+        "name": "webrtc_bridge",
+        "version": "1.1.2.2",
+        "path": "$[25]",
+        "binding": "object_fields"
+      }
+    ],
+    "physical_publisher_verified": false,
+    "running_build_verified": false,
+    "device_motion_firmware": null,
+    "exact_7301_predicate": null,
+    "motion_writes": 0,
+    "lease_requests": 0,
+    "manual_branch_candidate": "23_gt_8_6",
+    "manual_branch_selected": null,
+    "conclusion": "本次实际收到的服务公告明确绑定 ai_sport=8.7.5.212。它大于8.6.0.0，可作为23自由度新版手册候选；未核验公告与正在应答的 humanoid 可执行文件、当前运行构建及标定的对应关系，不能填作已核定运动固件或解锁动作。",
+    "limitations": [
+      "接收时间不是安装时间，也不是传感器时间。",
+      "先前120秒窗口为0帧，本条来自其后的控制台持续监听，不改写先前采样结果。",
+      "控制台未保存该帧的 publication_handle；先前发现的 robot_state_service 发布者不能自动归属于该帧。",
+      "原始载荷不落盘，只存严格提取的名称、版本、路径及载荷SHA256；不能从此证据重建完整载荷。"
+    ]
+  },
+  "publisher_evidence_source": "g1_console/assets/safety_evidence_sources/service_publisher_20261022_v33.json",
+  "motor_test_contract": {
+    "scope": "single_damping_test",
+    "mapping": {
+      "method": "SetFsmId",
+      "api_id": 7101,
+      "parameter": {
+        "data": 1
+      },
+      "source_fsm": 0,
+      "target_fsm": 1
+    },
+    "purpose": "验证官方被动阻尼模式的实机写入和状态回读；不设置关节目标，不证明承重或站稳",
+    "max_attempts": 1,
+    "durable_receipt": "project state/damping-test.json; persists across console restart; never replay",
+    "autonomous_rising": false,
+    "device_result": {
+      "current": false,
+      "sent_at_utc": "2026-10-22T05:26:06.280767+00:00",
+      "motion_writes": 1,
+      "request_id": "bfabc9b4-50e3-483c-ba97-f6c78f7151cb",
+      "mapping": {
+        "method": "SetFsmId",
+        "api_id": 7101,
+        "parameter": {
+          "data": 1
+        }
+      },
+      "sdk_code": 3104,
+      "acknowledgement": "接收超时；不重发，原始凭据保持 outcome_unknown",
+      "observed_attempt": {
+        "at": 1792646766.2807672,
+        "run_id": "f2e3f22f1215",
+        "status": "outcome_unknown",
+        "target_fsm": 1,
+        "source_fsm": 0,
+        "sdk_code": 3104
+      },
+      "run_id": "f2e3f22f1215",
+      "boot_id": "aed898cb-acfd-44a2-8e9c-50f1f00269aa",
+      "summary": "一次 SetFsmId(1) 后，GetFsmId 与 HG sport 状态均从 FSM 0 变为 1；7301 未阻断本次阻尼状态切换。",
+      "dual_readback": {
+        "received_at_utc": "2026-10-22T05:26:07.033691+00:00",
+        "fsm_id": {
+          "source": "sport / 7001",
+          "type": "official JSON response",
+          "current": true,
+          "age_ms": 420,
+          "ttl_ms": 1500,
+          "raw": {
+            "data": 1
+          },
+          "code": 0,
+          "received_at": 1792646766.620478,
+          "received_monotonic": 8140.653033534,
+          "samples": 360,
+          "request_ms": 1.51,
+          "diagnostics": {
+            "total": {
+              "attempts": 360,
+              "successes": 360,
+              "timeouts": 0,
+              "errors": 0
+            },
+            "window_s": 60,
+            "attempts": 118,
+            "successes": 118,
+            "timeouts": 0,
+            "errors": 0
+          },
+          "transport": "official_getters_isolated_polled",
+          "physical_publisher_verified": false,
+          "hardware_health_verified": false,
+          "timestamp_basis": "worker_local_receive_time",
+          "sensor_timestamp": null
+        },
+        "sport": {
+          "source": "rt/lf/sportmodestate",
+          "type": "unitree_hg::msg::dds_::SportModeState_",
+          "current": true,
+          "age_ms": 156,
+          "ttl_ms": 1500,
+          "received_at": 1792646766.8855257,
+          "samples": 967,
+          "raw": {
+            "fsm_id": 1,
+            "fsm_mode": 0,
+            "task_id": 4,
+            "task_time": 0.0
+          },
+          "code": 0,
+          "physical_publisher_verified": false,
+          "hardware_health_verified": false,
+          "timestamp_basis": "local_receive_time",
+          "sensor_timestamp": null
+        }
+      },
+      "transitions": [
+        {
+          "received_at_utc": "2026-10-22T05:25:51.206038+00:00",
+          "fsm_id": 0
+        },
+        {
+          "received_at_utc": "2026-10-22T05:26:07.033691+00:00",
+          "fsm_id": 1
+        }
+      ],
+      "queries_before": [
+        {
+          "at": 1792646745.945618,
+          "operation": "get_fsm",
+          "result": {
+            "status": "accepted",
+            "data": 0,
+            "event_id": "03e4a8f13e5945659456f9415854fa28",
+            "message": "已读取官方返回值"
+          }
+        },
+        {
+          "at": 1792646746.013591,
+          "operation": "get_fsm_mode",
+          "result": {
+            "status": "accepted",
+            "data": 0,
+            "event_id": "c4b8e993acd74ed0a30c07937b64d741",
+            "message": "已读取官方返回值"
+          }
+        },
+        {
+          "at": 1792646746.128051,
+          "operation": "get_balance",
+          "result": {
+            "error": {
+              "code": "SDK_REJECTED",
+              "message": "官方服务返回 7301：LocoState 不可用；模式/高度/相位保持未知，忽略返回中的占位零值。不会自动切换模式",
+              "sdk_code": 7301
+            },
+            "request_id": "c257e4e0b8c94f0bbfd3ea1feb7d7609"
+          }
+        },
+        {
+          "at": 1792646746.238934,
+          "operation": "get_stand_height",
+          "result": {
+            "error": {
+              "code": "SDK_REJECTED",
+              "message": "官方服务返回 7301：LocoState 不可用；模式/高度/相位保持未知，忽略返回中的占位零值。不会自动切换模式",
+              "sdk_code": 7301
+            },
+            "request_id": "772f77e4475d44c58070de7b71506594"
+          }
+        }
+      ],
+      "queries_after": [
+        {
+          "at": 1792646771.819227,
+          "operation": "get_fsm",
+          "result": {
+            "status": "accepted",
+            "data": 1,
+            "event_id": "9f7e254b8e3a40d193e4306cf4f683da",
+            "message": "已读取官方返回值"
+          }
+        },
+        {
+          "at": 1792646772.0439181,
+          "operation": "get_fsm_mode",
+          "result": {
+            "status": "accepted",
+            "data": 0,
+            "event_id": "7fee23dc364340389462425aa4df8daf",
+            "message": "已读取官方返回值"
+          }
+        },
+        {
+          "at": 1792646772.177869,
+          "operation": "get_balance",
+          "result": {
+            "error": {
+              "code": "SDK_REJECTED",
+              "message": "官方服务返回 7301：LocoState 不可用；模式/高度/相位保持未知，忽略返回中的占位零值。不会自动切换模式",
+              "sdk_code": 7301
+            },
+            "request_id": "0bf2720ccd4744439789908591b4df42"
+          }
+        },
+        {
+          "at": 1792646772.322561,
+          "operation": "get_stand_height",
+          "result": {
+            "error": {
+              "code": "SDK_REJECTED",
+              "message": "官方服务返回 7301：LocoState 不可用；模式/高度/相位保持未知，忽略返回中的占位零值。不会自动切换模式",
+              "sdk_code": 7301
+            },
+            "request_id": "bd76644ad5404c4ea25d12797e3609f8"
+          }
+        }
+      ],
+      "trace": {
+        "samples": 792,
+        "http_errors": 0,
+        "duration_s": 89.96784210205078,
+        "start_utc": "2026-10-22T05:25:51.206038+00:00",
+        "end_utc": "2026-10-22T05:27:21.173880+00:00",
+        "max_abs_dq_rad_s": 1.2854759693145752,
+        "max_abs_q_delta_rad": 0.4084463119506836,
+        "max_motion_joint": "左肘关节",
+        "peaks": {
+          "dq": {
+            "value": 1.2854759693145752,
+            "received_at_utc": "2026-10-22T05:27:01.374355+00:00",
+            "joint_index": 18,
+            "joint_label": "左肘关节"
+          },
+          "q_delta": {
+            "value": 0.4084463119506836,
+            "received_at_utc": "2026-10-22T05:27:01.578652+00:00",
+            "joint_index": 18,
+            "joint_label": "左肘关节"
+          }
+        },
+        "raw_sha256": "b5af074259c4ebc04d3f50a51a1d967cb5c24fb4dc064f150c6b5fc941d437f9",
+        "compressed_path": "doc/evidence/damping_test_20261022/trace.jsonl.gz"
+      },
+      "support_verified": false,
+      "motion_authority_verified": false,
+      "device_motion_firmware": null,
+      "exact_7301_predicate": null,
+      "execution_allowed": false,
+      "files": [
+        {
+          "path": "doc/evidence/damping_test_20261022/after_camera.jpg",
+          "sha256": "77d8c9aeff1c8c4c5d2ac84737553ced8092258fe00a0871d652be32d99e73e7",
+          "bytes": 40795
+        },
+        {
+          "path": "doc/evidence/damping_test_20261022/after_camera.json",
+          "sha256": "f72a83b83021d8c85a2ef5c4e94c3739bc57d3a9f862761c31297f5cd419d503",
+          "bytes": 828
+        },
+        {
+          "path": "doc/evidence/damping_test_20261022/after_queries.json",
+          "sha256": "7c8ae63906874219d52f596f9b9e2aecc1c1c65cf00be47b920f302045804fdd",
+          "bytes": 1261
+        },
+        {
+          "path": "doc/evidence/damping_test_20261022/before_camera.jpg",
+          "sha256": "fd767bf6eed94af16fb19c5679d328d53699d0e42cc6626df8513d2c824bb56d",
+          "bytes": 40584
+        },
+        {
+          "path": "doc/evidence/damping_test_20261022/before_camera.json",
+          "sha256": "529427c8ad8f6e21aad32728d0efac1e9d16be64ff9c2eed49068db99ebff212",
+          "bytes": 826
+        },
+        {
+          "path": "doc/evidence/damping_test_20261022/before_queries.json",
+          "sha256": "b1199ac48609ac6df3fdd2fc5c41d6c6abc016c9051794b03deacee21cc33956",
+          "bytes": 1260
+        },
+        {
+          "path": "doc/evidence/damping_test_20261022/observed_attempt.json",
+          "sha256": "7c432eba2ba464063b9330019d7dbb94078fa6a6cbf2d09bc4b390bf06a2a3b4",
+          "bytes": 148
+        },
+        {
+          "path": "doc/evidence/damping_test_20261022/trace.jsonl.gz",
+          "sha256": "20809acd5901ffe46c57187b05e54be70f175831e507d930c506c48fdcc4b0d7",
+          "bytes": 649938
+        }
+      ],
+      "limits": [
+        "这是一次历史模式测试，不是起身、姿态保持或独立平衡验证。",
+        "关节最大变化出现在左肘；原因未核定，不能将整个窗口描述为无运动。",
+        "相机看不到脚底与背部接触面；双脚承重和外部支撑未知。",
+        "GetFsmMode=0 是另一字段，不与 FSM ID=1 直接比较。",
+        "SDK 3104 不等于未执行；禁止据此自动重试。",
+        "GetBalanceMode / GetStandHeight 在前后均为 7301，未使用占位值。",
+        "电机 Kp/Kd、实机标定和版本仍未取得，实际参数与防摔边界不补默认值。"
+      ]
+    },
+    "unknowns": [
+      "足底接触与载荷",
+      "外部支撑",
+      "被动阻尼的实际关节增益",
+      "起身与站立的本机固件条件"
+    ]
+  },
+  "firmware_profile_conflict": {
+    "device_build": null,
+    "automatic_profile_selection": false,
+    "unitree_sdk": {
+      "source": "https://github.com/unitreerobotics/unitree_sdk2_python/blob/master/unitree_sdk2py/g1/loco/g1_loco_client.py",
+      "start_fsm": 500,
+      "damp_fsm": 1,
+      "stand_up_fsm": 4,
+      "squat_to_stand_fsm": 706,
+      "lie_to_stand_fsm": 702
+    },
+    "nvidia_vendor_reference": {
+      "source": "https://nvidia-isaac-ros.github.io/v/release-4.5/repositories_and_packages/isaac_ros_robots/unitree_g1_bridge/index.html",
+      "scope": "NVIDIA official bridge reference; 23 DOF and this running firmware not verified",
+      "reported_1_5_start_fsm": 200,
+      "reported_sequence": [
+        1,
+        4,
+        200
+      ]
+    },
+    "meaning": "版本分支存在 200/500 差异；App v1.5.6 和 ai_sport 公告均不能独立选定分支，不试发这些站立/行走状态号。阻尼 FSM1 在两份实现中一致。"
+  },
+  "motion_write_scope": "prior_readonly_research_only; excludes separately recorded motor_test_contract.device_result",
+  "official_manual_source": "g1_console/assets/safety_evidence_sources/official_remote_manual_20261022_v34.json",
+  "motor_test_evidence_source": "g1_console/assets/safety_evidence_sources/damping_device_test_20261022_v34.json",
+  "official_manual": {
+    "checked_at_utc": "2026-10-22T05:33:00+00:00",
+    "edition": "2026-04-07",
+    "branch_condition": "23 DOF，运动控制版本 > 8.6.0.0",
+    "branch_selected": null,
+    "catalog_url": "https://support.unitree.com/home/en/G1_developer/remote_control",
+    "catalog_last_updated_display": "2026-06-25 15:06:42",
+    "catalog_timezone": null,
+    "pdf_url": "https://oss-global-cdn.unitree.com/static/22972694fe684e1c89c9832f75d0938f.pdf",
+    "pdf_path": "doc/official/G1_REMOTE_CONTROL_23DOF_20260407.pdf",
+    "pdf_sha256": "b50e7a6382f7069461c047825771d99a58ca387113f9b17667172427fc44d569",
+    "pages_reviewed": [
+      1,
+      2
+    ],
+    "key_glyph_review": "PDF 第 1 页渲染后逐项视觉核对；文本抽取不包含按键图标",
+    "meaning": "官方目录当前列出的对应版本手册已归档，按键与时长已核对。",
+    "scope": "按键是遥控器协议的操作说明，不能直接当作 SDK 调用参数；资料学习不会新增电机写入权限。",
+    "controls": [
+      {
+        "id": "zero",
+        "name": "零力矩",
+        "keys": "L2 + Y",
+        "press": "短按",
+        "sdk": "ZeroTorque → FSM 0",
+        "verified": "接口已核对，本轮未执行；无主动支撑"
+      },
+      {
+        "id": "damp",
+        "name": "① 阻尼",
+        "keys": "L2 + B",
+        "press": "短按",
+        "sdk": "SetFsmId(1)",
+        "verified": "本轮一次实测后双路读到 FSM 1；被动阻尼不等于姿态保持"
+      },
+      {
+        "id": "locked",
+        "name": "② 锁定站立",
+        "keys": "L2 + ↑",
+        "press": "短按",
+        "sdk": "C++ StandUp → FSM 4（候选对应）",
+        "verified": "按键与 SDK 的本机等价性未核定，保持锁定"
+      },
+      {
+        "id": "lie",
+        "name": "⑤ 躺 → 站",
+        "keys": "L2 + X",
+        "press": "短按",
+        "sdk": "Lie2StandUp → FSM 702",
+        "verified": "本机进入条件未核定，不能套用于坐地"
+      },
+      {
+        "id": "seat",
+        "name": "④ 落座",
+        "keys": "L2 + ←",
+        "press": "长按 2 秒",
+        "sdk": "Sit → FSM 3",
+        "verified": "本机座椅条件未核定，保持锁定"
+      },
+      {
+        "id": "squat",
+        "name": "⑥ 蹲 ↔ 站",
+        "keys": "L2 + A",
+        "press": "长按 2 秒",
+        "sdk": "Squat2StandUp / StandUp2Squat → FSM 706",
+        "verified": "坐地不自动等于蹲姿；本机适用性未知"
+      },
+      {
+        "id": "adaptive",
+        "name": "⑩ 自适应起身",
+        "keys": "R1 + R2 + X",
+        "press": "短按",
+        "sdk": "公开 SDK 对应入口尚未核定",
+        "verified": "不猜测 FSM ID，不发送遥控按键模拟"
+      },
+      {
+        "id": "run",
+        "name": "③ 走跑运控",
+        "keys": "R2 + A",
+        "press": "长按 2 秒",
+        "sdk": "Python Start → FSM 500；未核定按键等价性",
+        "verified": "存在版本分支差异；本机行走切换保持锁定"
+      },
+      {
+        "id": "regular",
+        "name": "⑦ 常规运控",
+        "keys": "R1 + X",
+        "press": "长按 2 秒",
+        "sdk": "SDK 对应模式未核定",
+        "verified": "不能用 SetBalanceMode 直接替代此按键"
+      },
+      {
+        "id": "climb",
+        "name": "⑧ 越障运控",
+        "keys": "R2 + B",
+        "press": "长按 2 秒",
+        "sdk": "SDK 对应模式未核定",
+        "verified": "不能推导为楼梯支持"
+      },
+      {
+        "id": "dance",
+        "name": "⑨ 舞蹈运控",
+        "keys": "R1 + B",
+        "press": "该行未标注短按 / 长按符号",
+        "sdk": "SDK 对应入口未核定",
+        "verified": "保持锁定；单独舞蹈子项需满足手册净空要求"
+      }
+    ],
+    "routes": [
+      {
+        "start": "躺倒开机",
+        "steps": "开机 → ① → ⑩ → 演示 → ⑥ → 关机",
+        "condition": "需确认躺姿起点和自适应起身的本机支持；不将 ⑩ 替换成 ⑤"
+      },
+      {
+        "start": "蹲姿开机",
+        "steps": "开机 → ① → ⑥ → 演示 → ⑥ → 关机",
+        "condition": "需确认蹲姿；双膝深度弯曲不足以证明起点符合"
+      },
+      {
+        "start": "座椅开机（推荐）",
+        "steps": "开机 → ① → ② → ③ → 演示 → ④ → 关机",
+        "condition": "② → ③ 需要人工扶直站立；靠柜坐地未被手册明确覆盖"
+      }
+    ],
+    "protections": [
+      {
+        "name": "运控中阻尼保护",
+        "operation": "①（L2 + B）长按 5 秒",
+        "meaning": "进入阻尼保护，不能视作保持站立或硬件断电急停"
+      },
+      {
+        "name": "中断舞蹈",
+        "operation": "舞蹈或上肢动作时双击 START",
+        "meaning": "手册声明中断舞蹈；不是通用停止行走或硬件断电"
+      },
+      {
+        "name": "软件停止行走",
+        "operation": "SDK StopMove / 零速度",
+        "meaning": "来自 SDK；只停止行走速度请求，不代替上述保护或独立实体急停"
+      }
+    ],
+    "unknowns": [
+      "本机运行中的 humanoid 构建尚未核验；ai_sport 8.7.5.212 是服务公告线索。",
+      "7301 的具体内部触发谓词、平衡就绪和足底载荷仍未知。",
+      "历史报告的靠柜坐地到安全站立的完整官方路线、速度参数和 SDK 等价映射未核定。"
+    ]
+  },
+  "reboot_readonly_audit_source": "g1_console/assets/safety_evidence_sources/reboot_loco_readonly_20261022_v35.json",
+  "installed_sdk_audit_source": "g1_console/assets/safety_evidence_sources/installed_loco_sdk_20261022_v36.json"
+}

@@ -1,0 +1,286 @@
+{
+  "verified_at_utc": "2026-10-21T03:25:51.887228+00:00",
+  "release": "5ead91113d49",
+  "manifest_files": 411,
+  "foundation_id": "53bab1b1a090b434e176932c901c4f5838513d74a58519b16e8e9f89517d7457",
+  "schema_version": 9,
+  "read_only": true,
+  "connected": true,
+  "mode": "robot",
+  "run_id": "ef8002d622a6",
+  "joints": 23,
+  "telemetry_age_ms": 34,
+  "owner": null,
+  "navigation": "idle",
+  "command_accepted": 0,
+  "camera": {
+    "backend": "unitree",
+    "status": "retrying",
+    "error": "SDK_3102",
+    "source": null,
+    "sequence": -1,
+    "age_ms": null
+  },
+  "insight": {
+    "enabled": false,
+    "worker_online": true,
+    "model": "gpt-5.6-sol",
+    "error": null,
+    "status": "paused",
+    "report": null,
+    "report_age_s": null,
+    "current": false,
+    "completed": 0,
+    "report_ttl_s": 120
+  },
+  "new_motor_configuration_values": 0,
+  "actual_config_unknowns": 253,
+  "configuration_analysis": {
+    "megaflow": "decoded_inventory_only",
+    "master": "container_identified_payload_unknown",
+    "motor_configuration_values_obtained": 0,
+    "private_materials_in_release": false,
+    "declared_plugins": [
+      {
+        "name": "G1 EDU通用动作控制插件",
+        "version": "1.0.16.20251127",
+        "filename": "g1edu_motion.zip",
+        "installed_verified": false,
+        "loaded_verified": false,
+        "execution_allowed": false
+      },
+      {
+        "name": "G1 EDU全身舞蹈插件",
+        "version": "1.0.3.20251128",
+        "filename": "g1edu_dance.zip",
+        "installed_verified": false,
+        "loaded_verified": false,
+        "execution_allowed": false
+      }
+    ]
+  },
+  "service_audit": {
+    "processes": 4,
+    "files": 41,
+    "inventory": 90,
+    "current": false,
+    "new_motor_configuration_values": 0
+  },
+  "capability_catalog": {
+    "methods_and_overloads": 76,
+    "source_files": 20,
+    "python_methods": 32,
+    "cpp_methods": 44,
+    "agv_methods_hardware_unconfirmed": 2,
+    "unwrapped_constants": 8,
+    "execution_allowed": false
+  },
+  "historical_getter_results": [
+    {
+      "method": "GetFsmId",
+      "api_id": 7001,
+      "code": 0
+    },
+    {
+      "method": "GetFsmMode",
+      "api_id": 7002,
+      "code": 0
+    },
+    {
+      "method": "GetBalanceMode",
+      "api_id": 7003,
+      "code": 7301
+    },
+    {
+      "method": "GetSwingHeight",
+      "api_id": 7004,
+      "code": 7301
+    },
+    {
+      "method": "GetStandHeight",
+      "api_id": 7005,
+      "code": 7301
+    },
+    {
+      "method": "GetActionList",
+      "api_id": 7107,
+      "code": 0
+    },
+    {
+      "method": "GetVolume",
+      "api_id": 1005,
+      "code": 0
+    }
+  ],
+  "runtime": {
+    "release": "5ead91113d49",
+    "manifest_files": 411,
+    "console_pid": 14485,
+    "console_cwd": "/home/unitree/workspace/g1-body-console/releases/5ead91113d49",
+    "console_cmdline": "/home/unitree/workspace/g1-body-console/.venv/bin/python -m g1_console --read-only",
+    "boot_id": "7a6791dc-f512-4b45-aca3-44fbde855e25",
+    "official_processes_unchanged": [
+      {
+        "pid": 1296,
+        "start_ticks": 2242,
+        "argv": [
+          "/unitree/module/master_service/master_service"
+        ]
+      },
+      {
+        "pid": 1298,
+        "start_ticks": 2242,
+        "argv": [
+          "/unitree/ota/pipe/ota_pipe_service"
+        ]
+      },
+      {
+        "pid": 2557,
+        "start_ticks": 2791,
+        "argv": [
+          "/unitree/module/video_hub_pc4/videohub_pc4"
+        ]
+      },
+      {
+        "pid": 2676,
+        "start_ticks": 3210,
+        "argv": [
+          "/home/unitree/megaflow_sdk/ws//bin/MegaFlowRuntimeDaemon",
+          "-c",
+          "/home/unitree/megaflow_sdk/ws//bin/config.bin",
+          "-w",
+          "/home/unitree/megaflow_sdk/ws/",
+          "-d",
+          "127.0.0.1:8899",
+          "-i",
+          "-e",
+          "/home/unitree/megaflow_sdk/ws//dep/",
+          "-l",
+          "0"
+        ]
+      }
+    ],
+    "official_source_files_reverified": [
+      {
+        "path": "/unitree/module/master_service/master_service.json",
+        "bytes": 468,
+        "sha256": "31eae39936576504c40be767bd93cd34b7489154eca989e5e5c2781b05e3d977"
+      },
+      {
+        "path": "/home/unitree/megaflow_sdk/ws/bin/config.bin",
+        "bytes": 14640,
+        "sha256": "fd69673a007839f4a33ba1507fe043f6dbcc373bae703ecaa58eea54e61e9e6f"
+      },
+      {
+        "path": "/unitree/module/master_service/master_service",
+        "bytes": 9083232,
+        "sha256": "380e34de9c2def2692c0bf1b73e969d3167c8270f2ed5f974bb01abd4e96f24e"
+      },
+      {
+        "path": "/home/unitree/megaflow_sdk/ws/bin/MegaFlowRuntimeDaemon",
+        "bytes": 21448952,
+        "sha256": "3670595470afb44f037e083200ca33bc8905dfe06a2650399875c3c6fa501473"
+      }
+    ],
+    "current_run_command_accepted": 0
+  },
+  "observer_pid": 34853,
+  "checks": {
+    "pytest": "36 passed (loader search, FMX, opaque configuration, foundation, service capabilities)",
+    "frontend": "npm run build passed; existing 3D chunk warning",
+    "remote_manifest": "411 files SHA256 reverified after launch",
+    "pip": "no broken requirements",
+    "remote_foundation_equals_local": true,
+    "network_configuration_changes": false,
+    "quantumult_x_touched": false,
+    "browser": "Existing Mac console tab reloaded; v9 foundation and expanded Mixer / Gen panel visible, versions and cache mismatch rendered correctly."
+  },
+  "notes": [
+    "Official process PID, argv and start_ticks unchanged since audit; same boot ID.",
+    "Service logs and getter values are historical evidence, not permanent live state.",
+    "No motor values were inferred from opaque files, SDK defaults, project limits or example gains.",
+    "No lease requests, state writes, LowCmd, calibration, sudo, official service restarts or private RPC guessing.",
+    "Only the project read-only console restarted; Mac observer remained paused and was not restarted.",
+    "Two libraries exceeded the bounded scan size and /proc/1296/maps was not readable; no runtime implementation or whole-disk absence was proven."
+  ],
+  "screenshots": [
+    {
+      "path": "doc/screenshots/g1-fmx-loader-search-v9.jpg",
+      "bytes": 44571,
+      "sha256": "3735eb4224d3d888eff39249288e2744ada3a6c3a80a54724b59e51e93f8bcb7"
+    }
+  ],
+  "fmx_analysis": {
+    "payload_decoded": false,
+    "motor_configuration_present": null,
+    "motor_configuration_values_obtained": 0,
+    "file_bytes": 468,
+    "offset8_u32_le": 448,
+    "header_size_verified": null,
+    "protected_loader_stubs": 5,
+    "bounded_elf_search": 7,
+    "hypotheses_tested": 16,
+    "complete_json_count": 0,
+    "receipt_and_inputs_verified": true,
+    "private_materials_in_release": false
+  },
+  "fmx_loader_review": {
+    "payload_decoded": false,
+    "motor_configuration_present": null,
+    "motor_configuration_values_obtained": 0,
+    "module_versions": {
+      "master_service_pc4": "1.0.0.2",
+      "unitree_patch_pc4": "1.0.0.6",
+      "video_hub_pc4": "1.0.1.1"
+    },
+    "manifest_file_list_proves_hash": false,
+    "all_manifest_files_present_verified": false,
+    "manifest_files_reverified": [
+      {
+        "path": "/unitree/var/data/ota_update/ota_pipe/ota_pipe_service",
+        "status": "FileNotFoundError"
+      },
+      {
+        "path": "/unitree/robot/pkg/module/master_service_pc4/module.json",
+        "status": "read",
+        "bytes": 2194,
+        "sha256": "ecfa15fd170078b6bf89cc02f2becf4672b8c6f3566607bdfbe2717424857771"
+      },
+      {
+        "path": "/unitree/robot/pkg/module/unitree_patch_pc4/module.json",
+        "status": "read",
+        "bytes": 2880,
+        "sha256": "df22b0309ebae1b78380473a297eca6d21fd1311d725a1a1c529e7d5df0572a0"
+      },
+      {
+        "path": "/unitree/robot/pkg/module/video_hub_pc4/module.json",
+        "status": "read",
+        "bytes": 1913,
+        "sha256": "e59171ecf2b3a3ce4101cc934fbe7ee775583874a2938cdbd38b32e304f35844"
+      },
+      {
+        "path": "/unitree/robot/pkg/version/version.json",
+        "status": "read",
+        "bytes": 160,
+        "sha256": "b5d64c6e23e1a701172010a90ee8b17c83107c6560e9abb459db246b5f85842c"
+      }
+    ],
+    "search_elfs": 62,
+    "search_static_archives": 10,
+    "search_other_ar": 1,
+    "protected_ota_entries": 3,
+    "cached_patch_matches_installed": false,
+    "official_search_totals": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "receipt_and_inputs_verified": true,
+    "motor_firmware_version": null,
+    "vendor_program_executions": 0,
+    "rpc_calls": 0,
+    "private_materials_in_release": false
+  },
+  "browser_verified_at_utc": "2026-10-21T03:26:41.576854+00:00"
+}

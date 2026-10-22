@@ -1,0 +1,513 @@
+{
+  "schema_version": 1,
+  "current": false,
+  "checked_at_utc": "2026-10-21T06:14:00.189197+00:00",
+  "conclusion": "新增本次开机模式接收链路对照与只读起身知识；双膝显著屈曲，世界姿势/脚底承重/是否站稳/具体能力执行仍未知",
+  "motor_configuration_values_obtained": 0,
+  "command_writes": 0,
+  "configuration_calls": 0,
+  "calibration_calls": 0,
+  "lease_requests": 0,
+  "execution_allowed": false,
+  "validated_action_envelopes": [],
+  "sources": [
+    {
+      "path": "g1_console/assets/safety_evidence_sources/camera_recovery_20261021.json",
+      "sha256": "23b3657a8b89a32d3c078c9a316dbe2b80303e61c02e9c48ac1461bc1448b404"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/dds_reads_20261021.json",
+      "sha256": "b0ae677d8150d107c570eff6f91747a28968cc2e716828fa7a27aa8ba16569b7"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/official_getters_20261021.json",
+      "sha256": "33f246d9134c3e6cffe48524acd63d4ba98a3c6ce93cca28a0d0b48a8e465827"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/paired_observation_20261021.json",
+      "sha256": "0bdc99ed649177afe18b5b1d9e07ff5f4d900cc6ecaca9f6bb13d4d9ca7b5611"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/SportModeState_.hpp",
+      "sha256": "85dda303b93504204693cfd456e977d3a9e2f07d74c06609929f4f156cf08858",
+      "url": "https://github.com/unitreerobotics/unitree_sdk2/blob/d1abf001220d3e5f59e00a0c4aaa595e00089a4a/include/unitree/idl/hg/SportModeState_.hpp",
+      "commit": "d1abf001220d3e5f59e00a0c4aaa595e00089a4a"
+    },
+    {
+      "path": "externals/unitree_sdk2_python/unitree_sdk2py/idl/unitree_hg/msg/dds_/_BmsState_.py",
+      "sha256": "115f2d1b43e993ccda8ad7572ec4e6213474fb4536a6a17a5413eb144ca52423"
+    },
+    {
+      "path": "externals/unitree_sdk2_python/unitree_sdk2py/idl/unitree_hg/msg/dds_/_MainBoardState_.py",
+      "sha256": "6c181057c869c9bef8daa53ab2e396c2f48226e9a8be4e7e6da2b88747d122fd"
+    },
+    {
+      "path": "externals/unitree_sdk2_python/unitree_sdk2py/comm/motion_switcher/motion_switcher_client.py",
+      "sha256": "133d78f6619f6e32d971b40020868618f10db0fd191731085a4b08615448b195"
+    },
+    {
+      "path": "externals/unitree_sdk2_python/unitree_sdk2py/rpc/internal.py",
+      "sha256": "38896942088a7b0d03e3d9e5fa06ef3aee81e8ec6d52e0a9a640e35aaf955343"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/camera_transport_20261021.json",
+      "sha256": "0ba200b5c30da0a9951dc13089a5f3521bc83fe35603cd33bb90506be452ba26"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/paired_observation_20261021_v13.json",
+      "sha256": "5669e6d4adc1985c73e5651e5c433fdd978113800d3b0f5e0f7aa49f2b175c58"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/dds_passive_20261021_v14.json",
+      "sha256": "03c15dff23e943321d98e4cce68f1680dab4b187192768bdb7a0742992a81fa7"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/odom_passive_20261021_v14.json",
+      "sha256": "2fab69b4b3d3212635f6f155344efac47523f0425955744002dc09d73837571c"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/official_getters_20261021_v14.json",
+      "sha256": "c6c4833f1603b71f55324462b7aa0acb59ec577b3e2d22c3b9f865113406c0f4"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/g1_ankle_swing_example.cpp",
+      "sha256": "9394824751ee4f74d252546fe4f3c20145f9148becfbb9eeb53cbeef449c6b8b",
+      "commit": "d1abf001220d3e5f59e00a0c4aaa595e00089a4a",
+      "url": "https://github.com/unitreerobotics/unitree_sdk2/blob/d1abf001220d3e5f59e00a0c4aaa595e00089a4a/example/g1/low_level/g1_ankle_swing_example.cpp"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/IMUState_.hpp",
+      "sha256": "0b078db5401a35c2421190adb98c0a7e94472ee798b20aa4d1a345513dc88b1b",
+      "commit": "d1abf001220d3e5f59e00a0c4aaa595e00089a4a",
+      "url": "https://github.com/unitreerobotics/unitree_sdk2/blob/d1abf001220d3e5f59e00a0c4aaa595e00089a4a/include/unitree/idl/hg/IMUState_.hpp"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/Odometry_.hpp",
+      "sha256": "83b3f0dfd4ae724a3d2967541a7389b2183a4ddfcadf0133336cbfa2292d2288",
+      "commit": "d1abf001220d3e5f59e00a0c4aaa595e00089a4a",
+      "url": "https://github.com/unitreerobotics/unitree_sdk2/blob/d1abf001220d3e5f59e00a0c4aaa595e00089a4a/include/unitree/idl/ros2/Odometry_.hpp"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/g1_loco_client.hpp",
+      "sha256": "d9aabe78918312c2ec60c5df94653e81319eb6730cc1479372a09849d99cd361",
+      "commit": "d1abf001220d3e5f59e00a0c4aaa595e00089a4a",
+      "url": "https://github.com/unitreerobotics/unitree_sdk2/blob/d1abf001220d3e5f59e00a0c4aaa595e00089a4a/include/unitree/robot/g1/loco/g1_loco_client.hpp"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/HandState_.hpp",
+      "sha256": "2d45978c10533a65c84090b533e332536129395cf7892c6a360c5724676429dd",
+      "commit": "d1abf001220d3e5f59e00a0c4aaa595e00089a4a",
+      "url": "https://github.com/unitreerobotics/unitree_sdk2/blob/d1abf001220d3e5f59e00a0c4aaa595e00089a4a/include/unitree/idl/hg/HandState_.hpp"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/PressSensorState_.hpp",
+      "sha256": "087890d59d907dfda6d2f713ae866c48c7c543a5352b3f6fcad1149ec7f452e0",
+      "commit": "d1abf001220d3e5f59e00a0c4aaa595e00089a4a",
+      "url": "https://github.com/unitreerobotics/unitree_sdk2/blob/d1abf001220d3e5f59e00a0c4aaa595e00089a4a/include/unitree/idl/hg/PressSensorState_.hpp"
+    },
+    {
+      "path": "externals/unitree_sdk2_python/unitree_sdk2py/idl/nav_msgs/msg/dds_/_Odometry_.py",
+      "sha256": "b00c39e39d9066ecd9b9fb4ad774f1cf2d9772e209b42a417634299eb7c44c77",
+      "commit": "814556d15970dd2ecf1c9984e845ca02ab07e206"
+    },
+    {
+      "path": "externals/unitree_sdk2_python/unitree_sdk2py/idl/unitree_hg/msg/dds_/_IMUState_.py",
+      "sha256": "f41533674e588ed3c4613f95a553bb5ee99b6356084208d7d25ee90897871497",
+      "commit": "814556d15970dd2ecf1c9984e845ca02ab07e206"
+    },
+    {
+      "path": "externals/unitree_sdk2_python/unitree_sdk2py/idl/unitree_go/msg/dds_/_SportModeState_.py",
+      "sha256": "8f05eea51a6822727a14572e656bb59a84a899ac264c96c8c7104d2acccf5909",
+      "commit": "814556d15970dd2ecf1c9984e845ca02ab07e206"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/paired_observation_20261021_v14.json",
+      "sha256": "4726af8fb230cf0ef66e90602790db385ed235b6a39fedafe4f62338a30e634c"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/posture_interfaces_20261021_v14.json",
+      "sha256": "3cf7097394dcdcf0d713e1e8139a5f199cf4ef37f6f981787b079fb7ae3381a8"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/g1_loco_error.hpp",
+      "sha256": "8b33d73f9857d1581c11b362d2705f031020a084db12b00cadfaac0255f46579",
+      "commit": "d1abf001220d3e5f59e00a0c4aaa595e00089a4a",
+      "url": "https://github.com/unitreerobotics/unitree_sdk2/blob/d1abf001220d3e5f59e00a0c4aaa595e00089a4a/include/unitree/robot/g1/loco/g1_loco_error.hpp"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/mode_transport_without_console_20261021_v15.json",
+      "sha256": "f059b75bfc885ea638acf885fc3092f458f23ab7ca31425ce7b8e50e8fca2bb9"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/mode_transport_with_console_20261021_v15.json",
+      "sha256": "0e084db904f683f829eb1214fe0569309d8856fed7700b987a8850e4a7d3f67c"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/mode_console_baseline_20261021_v15.json",
+      "sha256": "7fbb1241e9a49cf02592d29cf2150c2033b63d8a1eee158a41bba78fef3baba1"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/support_newboot_20261021_v15.json",
+      "sha256": "c726b32e3585aeb355dfa7b7d227af8c59cfe75a732c716497ee2476340f6139"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/official_processes_20261021_v15.json",
+      "sha256": "c77e599c5ca1f61851654b73a2088a50fb66d3f43ffb1701a0ba74d45721ef25"
+    }
+  ],
+  "visual_observation": {
+    "current": false,
+    "execution_allowed": false,
+    "observed_at": 1792558604.542937,
+    "image_sha256": "9143f78a1b77bbda21152b9b73979a8d16a2aa20c2538544f748cbb9438f7505",
+    "camera_source": "unitree-videohub-d3c75447aed0",
+    "camera_sequence": 1179,
+    "body_run": "7f5cc2158784",
+    "body_tick": 11896666,
+    "timestamp_basis": "相机请求与本机接收时间；没有曝光时间，非硬件同步",
+    "scene_facts": [
+      "可见瓷砖地面、拼缝、带轮椅脚及穿拖鞋人员的腿脚",
+      "机器人双脚和全部承重点未完整进入画面；人员脚部不当作机器人足部"
+    ],
+    "body_findings": [
+      "同期主反馈：双膝 161.03° / 160.01°，主 IMU 横滚 7.83°、俯仰 -3.53°",
+      "FSM=0、HG fsm_id=0/fsm_mode=0/task_id=4/task_time=0；之后专用 GetFsmMode 回读 0、CheckMode form=0/name=ai，具体能力执行未确认",
+      "躯干 IMU 和骨盆/躯干里程计在后续独立窗口读到，不与本张照片宣称硬件同步",
+      "站/坐/卧、左脚/右脚接触与载荷、外部支撑均保持未知"
+    ],
+    "limitations": [
+      "相机请求时间不等于曝光时间；照片及各接口为相邻/分段只读采样",
+      "task_id=4/task_time=0 无可信具体动作映射；FSM=0 不证明实际电机力矩为零",
+      "里程计高度与四路 foot_force 不作为 G1 双脚承重证据",
+      "此为带时间戳的历史记录，不随实时状态更新，不授予权限"
+    ]
+  },
+  "areas": [
+    {
+      "id": "support",
+      "name": "足底接触与承重",
+      "status": "partial",
+      "acquired": "完整关节形态和 RGB 可读；未取得经核定的左右脚接触/载荷，画面未覆盖机器人双脚；本次开机只读发现 136 个发布端点，仍无已验证左右脚接触/承重源；GO 四路零足力不作 G1 证据",
+      "missing": "可信接触/载荷通道、支撑对象与双脚现场证据",
+      "safety_verified": false
+    },
+    {
+      "id": "balance",
+      "name": "动态平衡裕量",
+      "status": "partial",
+      "acquired": "主 IMU、躯干 IMU、关节反馈、骨盆/躯干里程计和 HG 模式/任务；里程计地面关系及精度未核定",
+      "missing": "校准全身状态、质心与支撑关系、动态裕量",
+      "safety_verified": false
+    },
+    {
+      "id": "terrain",
+      "name": "现场地面与净空",
+      "status": "partial",
+      "acquired": "连续官方 RGB 可读，见瓷砖、椅脚及人员；未取得尺度、接触、全身净空证据",
+      "missing": "深度尺度、全身净空、摩擦、坡度、跌落边缘",
+      "safety_verified": false
+    },
+    {
+      "id": "calibration",
+      "name": "实机限值与标定",
+      "status": "partial",
+      "acquired": "已核对官方定义和本机历史来源；新增配置值 0 项",
+      "missing": "匹配固件的逐电机限值、零位、增益、降额资料",
+      "safety_verified": false
+    },
+    {
+      "id": "health",
+      "name": "驱动健康与电池余量",
+      "status": "partial",
+      "acquired": "已收到 HG BMS / MainBoardState 原始消息",
+      "missing": "物理发布者、单位/通道、故障位与降额规则",
+      "safety_verified": false
+    },
+    {
+      "id": "recovery",
+      "name": "保护与失联处置",
+      "status": "partial",
+      "acquired": "CheckMode 返回 form=0,name=ai；只读状态，不验证保护行为",
+      "missing": "官方控制健康、现场防跌落、急停与失联处置证据",
+      "safety_verified": false
+    },
+    {
+      "id": "action_contract",
+      "name": "能力全过程边界",
+      "status": "partial",
+      "acquired": "HG fsm/task、GetFsmId、GetFsmMode 和 CheckMode 原始反馈；arm/action/state 窗口无消息，具体动作执行语义仍未核定；记录固定官方 SDK 起身入口差异与慢速参数缺口；本机适用性未核定，不执行动作",
+      "missing": "任务状态语义与具体动作全过程进入/退出/中断/恢复契约",
+      "safety_verified": false
+    }
+  ],
+  "rules": [
+    "实机 BMS 原始整数不自动转换单位；数组中的零值不当作有效或无故障",
+    "发布者物理身份、消息认证和采样时间未验证；到达时间只是接收新鲜度",
+    "官方 HG SportModeState_ 只有 fsm_id/fsm_mode/task_id/task_time，无足底力字段；不借用 Go2 消息布局",
+    "任务编号和计时不等于具体能力执行或完成；不作默认映射",
+    "历史观察持久保存，当前状态重连后重新只读获取；过期数据不能恢复为当前证据",
+    "模式 getter 按原始接收时间计算时效；超时/错误/进程退出或停滞撤回，不续期历史成功值",
+    "静止、直腿、RGB 可读和模式编号一致不能单独确认站稳；起身速度与持续时间未知时不用默认值"
+  ],
+  "camera_transport": {
+    "current": false,
+    "measurement": {
+      "start_at": "2026-10-21T04:48:31.118297+00:00",
+      "end_at": "2026-10-21T04:51:31.118947+00:00",
+      "sample_count": 181,
+      "live_samples": 181,
+      "state_samples_with_error": 0,
+      "attempts": 899,
+      "successes": 899,
+      "timeouts": 0,
+      "max_camera_age_ms": 309,
+      "max_body_age_ms": 54,
+      "mac_image_samples": 37,
+      "mac_image_successes": 37,
+      "mac_image_unique_hashes": 37,
+      "raw_source_sha256": "4080f0592e6731cc9a0294cc2b9bcc8aa2a8173b83ba5f271fa9d0f3234a510a"
+    },
+    "source": "g1_console/assets/safety_evidence_sources/camera_transport_20261021.json",
+    "transport": "official_api_1001_isolated_polled",
+    "conclusion": "被动响应、独立进程对照及集成复测支持本项目进程接收链路干扰；未证明具体 GIL、CycloneDDS 原生调度或 SDK 缺陷是唯一根因",
+    "execution_allowed": false
+  },
+  "posture_interface_audit": {
+    "current": false,
+    "checked_at_utc": "2026-10-21T05:02:02.514041+00:00",
+    "command_writes": 0,
+    "execution_allowed": false,
+    "motor_configuration_values_obtained": 0,
+    "boot_id": "7a6791dc-f512-4b45-aca3-44fbde855e25",
+    "dds_discovery_counts": {
+      "publications": 138,
+      "subscriptions": 167
+    },
+    "discovery_seconds": 10,
+    "receive_window_seconds": 20,
+    "counts_meaning": "轮询 reader 的有效消息数量；存在抽取与队列丢弃，不是发布频率",
+    "read_only_interfaces": [
+      {
+        "topic": "rt/secondary_imu",
+        "type": "unitree_hg::msg::dds_::IMUState_",
+        "matching_type": true,
+        "samples": 384,
+        "last_received_at": 1792558834.9607427,
+        "live_console_subscription": true,
+        "physical_publisher_verified": false
+      },
+      {
+        "topic": "rt/state_estimator/odom_pelvis",
+        "type": "nav_msgs::msg::dds_::Odometry_",
+        "matching_type": true,
+        "samples": 384,
+        "last_received_at": 1792558834.9599125,
+        "live_console_subscription": true,
+        "physical_publisher_verified": false
+      },
+      {
+        "topic": "rt/state_estimator/odom_torso",
+        "type": "nav_msgs::msg::dds_::Odometry_",
+        "matching_type": true,
+        "samples": 384,
+        "last_received_at": 1792558834.9601796,
+        "live_console_subscription": true,
+        "physical_publisher_verified": false
+      },
+      {
+        "topic": "rt/state_estimator/fusion_odom",
+        "type": "nav_msgs::msg::dds_::Odometry_",
+        "matching_type": true,
+        "samples": 0,
+        "last_received_at": null,
+        "live_console_subscription": false,
+        "physical_publisher_verified": false
+      },
+      {
+        "topic": "rt/state_estimator/fusion_odom_torso",
+        "type": "nav_msgs::msg::dds_::Odometry_",
+        "matching_type": true,
+        "samples": 0,
+        "last_received_at": null,
+        "live_console_subscription": false,
+        "physical_publisher_verified": false
+      },
+      {
+        "topic": "rt/odommodestate",
+        "type": "unitree_go::msg::dds_::SportModeState_",
+        "matching_type": true,
+        "samples": 383,
+        "last_received_at": 1792558834.9604864,
+        "live_console_subscription": false,
+        "physical_publisher_verified": false
+      },
+      {
+        "topic": "rt/arm/action/state",
+        "type": "std_msgs::msg::dds_::String_",
+        "matching_type": true,
+        "samples": 0,
+        "last_received_at": null,
+        "live_console_subscription": true,
+        "physical_publisher_verified": false
+      },
+      {
+        "topic": "rt/selftest",
+        "type": "std_msgs::msg::dds_::String_",
+        "matching_type": true,
+        "samples": 0,
+        "last_received_at": null,
+        "live_console_subscription": true,
+        "physical_publisher_verified": false
+      }
+    ],
+    "official_getters": [
+      {
+        "method": "GetFsmId",
+        "api_id": 7001,
+        "code": 0,
+        "payload": {
+          "data": 0
+        },
+        "received_at": 1792558744.3000731
+      },
+      {
+        "method": "GetFsmMode",
+        "api_id": 7002,
+        "code": 0,
+        "payload": {
+          "data": 0
+        },
+        "received_at": 1792558744.300826
+      },
+      {
+        "method": "GetBalanceMode",
+        "api_id": 7003,
+        "code": 7301,
+        "payload": null,
+        "received_at": 1792558744.3014674,
+        "error_symbol": "UT_ROBOT_LOCO_ERR_LOCOSTATE_NOT_AVAILABLE"
+      },
+      {
+        "method": "GetSwingHeight",
+        "api_id": 7004,
+        "code": 7301,
+        "payload": null,
+        "received_at": 1792558744.302081,
+        "error_symbol": "UT_ROBOT_LOCO_ERR_LOCOSTATE_NOT_AVAILABLE"
+      },
+      {
+        "method": "GetStandHeight",
+        "api_id": 7005,
+        "code": 7301,
+        "payload": null,
+        "received_at": 1792558744.3027868,
+        "error_symbol": "UT_ROBOT_LOCO_ERR_LOCOSTATE_NOT_AVAILABLE"
+      },
+      {
+        "method": "CheckMode",
+        "api_id": 1001,
+        "service": "motion_switcher",
+        "code": 0,
+        "payload": {
+          "form": "0",
+          "name": "ai"
+        },
+        "received_at": 1792558745.0158062
+      }
+    ],
+    "foot_contact": null,
+    "left_load_n": null,
+    "right_load_n": null,
+    "ground_height_reference": null,
+    "whole_body_pose": "unknown",
+    "active_capability_id": null,
+    "activity_verified": false,
+    "limitations": [
+      "当前 HG LowState 和 SportModeState 定义没有足底接触/载荷字段",
+      "rt/odommodestate 实机声明 GO 类型，匹配类型后只读获取；四路 foot_force=[0,0,0,0] 的 G1 语义和有效性未核定，不映射为左右脚，不把零解释为无承重",
+      "骨盆/躯干里程计 header.frame_id=odom；原点与现场地面的关系未知，位置 z 不作为离地高度；全零协方差不证明估计无误差",
+      "躯干 IMU 与主 IMU 仅分别保存回报朝向，未校准安装外参，不融合为世界姿势",
+      "GetBalanceMode/GetSwingHeight/GetStandHeight 回码 7301（官方 LocoState not available）保持未知；未为读取而切换控制模式",
+      "GetPhase 已弃用；GetMimicMotion 复用动作 API 且有模式前提，本次不调用",
+      "没有收到 arm/action/state 或 selftest 不证明空闲、正常或无故障",
+      "未发现匹配公开协议的 G1 足底负载查询；发现范围不等于硬件不存在或协议绝对不存在"
+    ],
+    "official_error_definitions": {
+      "7301": {
+        "symbol": "UT_ROBOT_LOCO_ERR_LOCOSTATE_NOT_AVAILABLE",
+        "message": "LocoState not available.",
+        "meaning": "运动状态数据不可用；不推断原因，不补默认高度或平衡模式"
+      }
+    }
+  },
+  "mode_readback_audit": {
+    "current": false,
+    "checked_at_utc": "2026-10-21T06:14:00.189197+00:00",
+    "boot_id": "b33a7dc5-2617-44cd-b353-041bab1c204f",
+    "command_writes": 0,
+    "lease_requests": 0,
+    "execution_allowed": false,
+    "transport_comparison": [
+      {
+        "console_running": false,
+        "source": {
+          "path": "g1_console/assets/safety_evidence_sources/mode_transport_without_console_20261021_v15.json",
+          "sha256": "f059b75bfc885ea638acf885fc3092f458f23ab7ca31425ce7b8e50e8fca2bb9"
+        },
+        "duration_s": 60.01,
+        "actual_getter_attempts": 60,
+        "successes": 60,
+        "unmatched_passive_requests": 0
+      },
+      {
+        "console_running": true,
+        "source": {
+          "path": "g1_console/assets/safety_evidence_sources/mode_transport_with_console_20261021_v15.json",
+          "sha256": "0e084db904f683f829eb1214fe0569309d8856fed7700b987a8850e4a7d3f67c"
+        },
+        "duration_s": 60.007,
+        "actual_getter_attempts": 60,
+        "successes": 60,
+        "unmatched_passive_requests": 0
+      }
+    ],
+    "baseline": {
+      "source": {
+        "path": "g1_console/assets/safety_evidence_sources/mode_console_baseline_20261021_v15.json",
+        "sha256": "7fbb1241e9a49cf02592d29cf2150c2033b63d8a1eee158a41bba78fef3baba1"
+      },
+      "state_snapshots": 61,
+      "withdrawn": {
+        "motion_mode": 18,
+        "fsm_mode": 11
+      },
+      "counts_meaning": "1 Hz state snapshots, not RPC attempts; baseline before receive-path fix"
+    },
+    "finding": "Independent fixed polled getters succeeded 60/60 both with and without console; all observed matching requests had official replies. Console snapshots still withdrew 3104. This supports isolating the console receive path; it does not identify a unique SDK/GIL/queue micro-cause or prove continuous firmware health.",
+    "implementation": "Fresh spawned process, polled response channels, fixed sport 7001/7002 and motion_switcher 1001 only, request ID+API correlation, no lease, 0.7 s timeout, original receive timestamp, 1.5/6 s TTL, error/exit/stall withdrawal, actual RPC counters",
+    "firmware_error_rule": "7301 and timeouts never become numeric defaults or authorization to change state",
+    "foot_evidence": {
+      "source": {
+        "path": "g1_console/assets/safety_evidence_sources/support_newboot_20261021_v15.json",
+        "sha256": "c726b32e3585aeb355dfa7b7d227af8c59cfe75a732c716497ee2476340f6139"
+      },
+      "publications_observed": 136,
+      "contact_verified": null,
+      "left_load_n": null,
+      "right_load_n": null,
+      "explanation": "No verified G1 foot source in bounded discovery. GO rt/odommodestate has four zero force entries, unverified for G1; HG sport has no foot field. 7003/7004/7005 returned 7301 on this boot."
+    },
+    "standing_learning": {
+      "already_standing": null,
+      "selected_transition": null,
+      "speed_parameter": null,
+      "duration_s": null,
+      "trajectory": null,
+      "explanation": "Knowledge of fixed official wrappers and physical evidence requirements only; firmware applicability and standing validator unverified. No test action."
+    },
+    "official_process_identity_source": {
+      "path": "g1_console/assets/safety_evidence_sources/official_processes_20261021_v15.json",
+      "sha256": "c77e599c5ca1f61851654b73a2088a50fb66d3f43ffb1701a0ba74d45721ef25"
+    }
+  }
+}

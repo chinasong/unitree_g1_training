@@ -1,0 +1,1052 @@
+{
+  "checked_at_asia_shanghai": "2026-10-22T11:30:00.853202+08:00",
+  "status": "read_only_remote_verified_motion_not_tested",
+  "route": "Mac 127.0.0.1:18765 -> pinned SSH <ORIN_IP> -> Orin 127.0.0.1:8765",
+  "remote_active_release": "953b51275852",
+  "boot_id": "aed898cb-acfd-44a2-8e9c-50f1f00269aa",
+  "new_local_session_recovery_frontend_deployed": false,
+  "automated_live_queries": {
+    "operations": 13,
+    "rounds": 2,
+    "requests": 26,
+    "http_200": 16,
+    "http_502_sdk_7301": 8,
+    "http_502_sdk_3203": 2,
+    "sdk_3104": 0,
+    "automatic_retries": false,
+    "results": [
+      {
+        "round": 1,
+        "operation": "get_actions",
+        "duration_ms": 105,
+        "http_status": 200,
+        "body": {
+          "status": "accepted",
+          "data": [
+            [
+              {
+                "id": 99,
+                "name": "release_arm"
+              },
+              {
+                "fsm": [
+                  500,
+                  501
+                ],
+                "id": 1,
+                "name": "turn_back_wave"
+              },
+              {
+                "id": 11,
+                "name": "blow_kiss_with_both_hands"
+              },
+              {
+                "id": 12,
+                "name": "blow_kiss_with_left_hand"
+              },
+              {
+                "id": 13,
+                "name": "blow_kiss_with_right_hand"
+              },
+              {
+                "id": 15,
+                "name": "both_hands_up"
+              },
+              {
+                "id": 17,
+                "name": "clamp"
+              },
+              {
+                "id": 18,
+                "name": "high_five"
+              },
+              {
+                "id": 19,
+                "name": "hug"
+              },
+              {
+                "id": 22,
+                "name": "refuse"
+              },
+              {
+                "id": 23,
+                "name": "right_hand_up"
+              },
+              {
+                "id": 24,
+                "name": "ultraman_ray"
+              },
+              {
+                "id": 25,
+                "name": "wave_under_head"
+              },
+              {
+                "id": 26,
+                "name": "wave_above_head"
+              },
+              {
+                "id": 27,
+                "name": "shake_hand"
+              },
+              {
+                "id": 31,
+                "mode_machine": [
+                  4
+                ],
+                "name": "extend_right_arm_forward"
+              },
+              {
+                "id": 32,
+                "mode_machine": [
+                  4
+                ],
+                "name": "right_hand_on_mouth"
+              },
+              {
+                "id": 33,
+                "name": "right_hand_on_heart"
+              },
+              {
+                "id": 34,
+                "name": "both_hands_up_deviate_right"
+              },
+              {
+                "id": 35,
+                "mode_machine": [
+                  4
+                ],
+                "name": "emphasize"
+              }
+            ],
+            [
+              {
+                "name": "Waist_Drum_Dance",
+                "time": 9.5
+              },
+              {
+                "name": "Scratch_head",
+                "time": 8.1
+              },
+              {
+                "name": "Spin_discs",
+                "time": 6.9
+              },
+              {
+                "name": "Throw_money",
+                "time": 8.1
+              }
+            ]
+          ],
+          "event_id": "ef821bf335eb4d28b50c0a6762326f41",
+          "message": "已读取官方返回值"
+        }
+      },
+      {
+        "round": 1,
+        "operation": "get_balance",
+        "duration_ms": 66,
+        "http_status": 502,
+        "body": {
+          "error": {
+            "code": "SDK_REJECTED",
+            "message": "官方服务返回 7301：LocoState 不可用；模式/高度/相位保持未知，忽略返回中的占位零值。不会自动切换模式",
+            "sdk_code": 7301
+          },
+          "request_id": "20487c459b0b4f3b8ee488e93b2bfb90"
+        }
+      },
+      {
+        "round": 1,
+        "operation": "get_fsm",
+        "duration_ms": 72,
+        "http_status": 200,
+        "body": {
+          "status": "accepted",
+          "data": 0,
+          "event_id": "40dceb73c4bf4543a6ec290185523210",
+          "message": "已读取官方返回值"
+        }
+      },
+      {
+        "round": 1,
+        "operation": "get_fsm_mode",
+        "duration_ms": 41,
+        "http_status": 200,
+        "body": {
+          "status": "accepted",
+          "data": 0,
+          "event_id": "884279b48f7a445b9afba8ed55611ed1",
+          "message": "已读取官方返回值"
+        }
+      },
+      {
+        "round": 1,
+        "operation": "get_loco_api_version",
+        "duration_ms": 86,
+        "http_status": 200,
+        "body": {
+          "status": "accepted",
+          "data": {
+            "service": "sport",
+            "api_version": "1.0.0.0",
+            "firmware_version": null
+          },
+          "event_id": "e9cebb57f8c24589ba154a74b6ee4354",
+          "message": "已读取官方返回值"
+        }
+      },
+      {
+        "round": 1,
+        "operation": "get_motion_api_version",
+        "duration_ms": 91,
+        "http_status": 200,
+        "body": {
+          "status": "accepted",
+          "data": {
+            "service": "motion_switcher",
+            "api_version": "1.0.0.1",
+            "firmware_version": null
+          },
+          "event_id": "3ca435b489274a298527101a895bb42a",
+          "message": "已读取官方返回值"
+        }
+      },
+      {
+        "round": 1,
+        "operation": "get_phase",
+        "duration_ms": 53,
+        "http_status": 502,
+        "body": {
+          "error": {
+            "code": "SDK_REJECTED",
+            "message": "官方服务返回 7301：LocoState 不可用；模式/高度/相位保持未知，忽略返回中的占位零值。不会自动切换模式",
+            "sdk_code": 7301
+          },
+          "request_id": "d70166282887441dadd87b05f0b46f7c"
+        }
+      },
+      {
+        "round": 1,
+        "operation": "get_services",
+        "duration_ms": 87,
+        "http_status": 200,
+        "body": {
+          "status": "accepted",
+          "data": [
+            {
+              "name": "ai_sport",
+              "status": 0,
+              "protect": 0
+            },
+            {
+              "name": "audio_player_service",
+              "status": 0,
+              "protect": 0
+            },
+            {
+              "name": "auto_test_arm",
+              "status": 1,
+              "protect": 0
+            },
+            {
+              "name": "auto_test_low",
+              "status": 1,
+              "protect": 0
+            },
+            {
+              "name": "bashrunner",
+              "status": 0,
+              "protect": 0
+            },
+            {
+              "name": "basic_service",
+              "status": 0,
+              "protect": 1
+            },
+            {
+              "name": "battery_guard",
+              "status": 0,
+              "protect": 0
+            },
+            {
+              "name": "chat_go",
+              "status": 0,
+              "protect": 0
+            },
+            {
+              "name": "dex3_service_l",
+              "status": 0,
+              "protect": 0
+            },
+            {
+              "name": "dex3_service_r",
+              "status": 0,
+              "protect": 0
+            },
+            {
+              "name": "emergency_stop",
+              "status": 0,
+              "protect": 0
+            },
+            {
+              "name": "g1_arm_example",
+              "status": 0,
+              "protect": 0
+            },
+            {
+              "name": "lidar_driver",
+              "status": 1,
+              "protect": 0
+            },
+            {
+              "name": "log_system",
+              "status": 0,
+              "protect": 0
+            },
+            {
+              "name": "motion_switcher",
+              "status": 0,
+              "protect": 0
+            },
+            {
+              "name": "net_switcher",
+              "status": 0,
+              "protect": 0
+            },
+            {
+              "name": "ota_box",
+              "status": 1,
+              "protect": 0
+            },
+            {
+              "name": "ota_pipe",
+              "status": 0,
+              "protect": 0
+            },
+            {
+              "name": "robot_state",
+              "status": 0,
+              "protect": 1
+            },
+            {
+              "name": "robot_type_service",
+              "status": 0,
+              "protect": 0
+            },
+            {
+              "name": "state_estimator",
+              "status": 0,
+              "protect": 0
+            },
+            {
+              "name": "unistore",
+              "status": 0,
+              "protect": 0
+            },
+            {
+              "name": "unitree_slam",
+              "status": 1,
+              "protect": 0
+            },
+            {
+              "name": "video_hub_pc4",
+              "status": 0,
+              "protect": 0
+            },
+            {
+              "name": "vui_service",
+              "status": 0,
+              "protect": 0
+            },
+            {
+              "name": "webrtc_bridge",
+              "status": 0,
+              "protect": 1
+            },
+            {
+              "name": "webrtc_multicast_responder",
+              "status": 0,
+              "protect": 0
+            },
+            {
+              "name": "webrtc_signal_server",
+              "status": 0,
+              "protect": 1
+            }
+          ],
+          "event_id": "3aec249afffb42eb8ca4163793c19fe1",
+          "message": "已读取官方返回值"
+        }
+      },
+      {
+        "round": 1,
+        "operation": "get_stand_height",
+        "duration_ms": 77,
+        "http_status": 502,
+        "body": {
+          "error": {
+            "code": "SDK_REJECTED",
+            "message": "官方服务返回 7301：LocoState 不可用；模式/高度/相位保持未知，忽略返回中的占位零值。不会自动切换模式",
+            "sdk_code": 7301
+          },
+          "request_id": "0033f3a89e854e1cbbd4b55d75e1f2f9"
+        }
+      },
+      {
+        "round": 1,
+        "operation": "get_state_api_version",
+        "duration_ms": 69,
+        "http_status": 200,
+        "body": {
+          "status": "accepted",
+          "data": {
+            "service": "robot_state",
+            "api_version": "1.0.0.2",
+            "firmware_version": null
+          },
+          "event_id": "376a3f87d4f4443eac2eb798acb85485",
+          "message": "已读取官方返回值"
+        }
+      },
+      {
+        "round": 1,
+        "operation": "get_swing_height",
+        "duration_ms": 61,
+        "http_status": 502,
+        "body": {
+          "error": {
+            "code": "SDK_REJECTED",
+            "message": "官方服务返回 7301：LocoState 不可用；模式/高度/相位保持未知，忽略返回中的占位零值。不会自动切换模式",
+            "sdk_code": 7301
+          },
+          "request_id": "4781bdf21ac74505a4f01d8394c0db0c"
+        }
+      },
+      {
+        "round": 1,
+        "operation": "get_versions",
+        "duration_ms": 83,
+        "http_status": 502,
+        "body": {
+          "error": {
+            "code": "SDK_REJECTED",
+            "message": "官方服务返回 3203：不支持此 API；未取得有效值",
+            "sdk_code": 3203
+          },
+          "request_id": "544c898f6f594a22bf42fbf4633157a9"
+        }
+      },
+      {
+        "round": 1,
+        "operation": "get_volume",
+        "duration_ms": 58,
+        "http_status": 200,
+        "body": {
+          "status": "accepted",
+          "data": {
+            "volume": 41
+          },
+          "event_id": "7b3dba572575461098d37e36f18cd9c0",
+          "message": "已读取官方返回值"
+        }
+      },
+      {
+        "round": 2,
+        "operation": "get_actions",
+        "duration_ms": 91,
+        "http_status": 200,
+        "body": {
+          "status": "accepted",
+          "data": [
+            [
+              {
+                "id": 99,
+                "name": "release_arm"
+              },
+              {
+                "fsm": [
+                  500,
+                  501
+                ],
+                "id": 1,
+                "name": "turn_back_wave"
+              },
+              {
+                "id": 11,
+                "name": "blow_kiss_with_both_hands"
+              },
+              {
+                "id": 12,
+                "name": "blow_kiss_with_left_hand"
+              },
+              {
+                "id": 13,
+                "name": "blow_kiss_with_right_hand"
+              },
+              {
+                "id": 15,
+                "name": "both_hands_up"
+              },
+              {
+                "id": 17,
+                "name": "clamp"
+              },
+              {
+                "id": 18,
+                "name": "high_five"
+              },
+              {
+                "id": 19,
+                "name": "hug"
+              },
+              {
+                "id": 22,
+                "name": "refuse"
+              },
+              {
+                "id": 23,
+                "name": "right_hand_up"
+              },
+              {
+                "id": 24,
+                "name": "ultraman_ray"
+              },
+              {
+                "id": 25,
+                "name": "wave_under_head"
+              },
+              {
+                "id": 26,
+                "name": "wave_above_head"
+              },
+              {
+                "id": 27,
+                "name": "shake_hand"
+              },
+              {
+                "id": 31,
+                "mode_machine": [
+                  4
+                ],
+                "name": "extend_right_arm_forward"
+              },
+              {
+                "id": 32,
+                "mode_machine": [
+                  4
+                ],
+                "name": "right_hand_on_mouth"
+              },
+              {
+                "id": 33,
+                "name": "right_hand_on_heart"
+              },
+              {
+                "id": 34,
+                "name": "both_hands_up_deviate_right"
+              },
+              {
+                "id": 35,
+                "mode_machine": [
+                  4
+                ],
+                "name": "emphasize"
+              }
+            ],
+            [
+              {
+                "name": "Waist_Drum_Dance",
+                "time": 9.5
+              },
+              {
+                "name": "Scratch_head",
+                "time": 8.1
+              },
+              {
+                "name": "Spin_discs",
+                "time": 6.9
+              },
+              {
+                "name": "Throw_money",
+                "time": 8.1
+              }
+            ]
+          ],
+          "event_id": "bae9129f401548b6a5b93ca433e38a42",
+          "message": "已读取官方返回值"
+        }
+      },
+      {
+        "round": 2,
+        "operation": "get_balance",
+        "duration_ms": 80,
+        "http_status": 502,
+        "body": {
+          "error": {
+            "code": "SDK_REJECTED",
+            "message": "官方服务返回 7301：LocoState 不可用；模式/高度/相位保持未知，忽略返回中的占位零值。不会自动切换模式",
+            "sdk_code": 7301
+          },
+          "request_id": "1d601240e16b4454881381862d5f4e87"
+        }
+      },
+      {
+        "round": 2,
+        "operation": "get_fsm",
+        "duration_ms": 49,
+        "http_status": 200,
+        "body": {
+          "status": "accepted",
+          "data": 0,
+          "event_id": "08f01c8313a14a0dbbcc1c020ee889de",
+          "message": "已读取官方返回值"
+        }
+      },
+      {
+        "round": 2,
+        "operation": "get_fsm_mode",
+        "duration_ms": 70,
+        "http_status": 200,
+        "body": {
+          "status": "accepted",
+          "data": 0,
+          "event_id": "c9a527181fa243dca3aec49ab7218fec",
+          "message": "已读取官方返回值"
+        }
+      },
+      {
+        "round": 2,
+        "operation": "get_loco_api_version",
+        "duration_ms": 71,
+        "http_status": 200,
+        "body": {
+          "status": "accepted",
+          "data": {
+            "service": "sport",
+            "api_version": "1.0.0.0",
+            "firmware_version": null
+          },
+          "event_id": "f77a919c81d44df6b2315771f885bdf2",
+          "message": "已读取官方返回值"
+        }
+      },
+      {
+        "round": 2,
+        "operation": "get_motion_api_version",
+        "duration_ms": 102,
+        "http_status": 200,
+        "body": {
+          "status": "accepted",
+          "data": {
+            "service": "motion_switcher",
+            "api_version": "1.0.0.1",
+            "firmware_version": null
+          },
+          "event_id": "f169f7cf95aa40c1bdd7c7869a5b3c18",
+          "message": "已读取官方返回值"
+        }
+      },
+      {
+        "round": 2,
+        "operation": "get_phase",
+        "duration_ms": 94,
+        "http_status": 502,
+        "body": {
+          "error": {
+            "code": "SDK_REJECTED",
+            "message": "官方服务返回 7301：LocoState 不可用；模式/高度/相位保持未知，忽略返回中的占位零值。不会自动切换模式",
+            "sdk_code": 7301
+          },
+          "request_id": "f4dc4cc7a7dd48d79fda8a94ef6595c5"
+        }
+      },
+      {
+        "round": 2,
+        "operation": "get_services",
+        "duration_ms": 85,
+        "http_status": 200,
+        "body": {
+          "status": "accepted",
+          "data": [
+            {
+              "name": "ai_sport",
+              "status": 0,
+              "protect": 0
+            },
+            {
+              "name": "audio_player_service",
+              "status": 0,
+              "protect": 0
+            },
+            {
+              "name": "auto_test_arm",
+              "status": 1,
+              "protect": 0
+            },
+            {
+              "name": "auto_test_low",
+              "status": 1,
+              "protect": 0
+            },
+            {
+              "name": "bashrunner",
+              "status": 0,
+              "protect": 0
+            },
+            {
+              "name": "basic_service",
+              "status": 0,
+              "protect": 1
+            },
+            {
+              "name": "battery_guard",
+              "status": 0,
+              "protect": 0
+            },
+            {
+              "name": "chat_go",
+              "status": 0,
+              "protect": 0
+            },
+            {
+              "name": "dex3_service_l",
+              "status": 0,
+              "protect": 0
+            },
+            {
+              "name": "dex3_service_r",
+              "status": 0,
+              "protect": 0
+            },
+            {
+              "name": "emergency_stop",
+              "status": 0,
+              "protect": 0
+            },
+            {
+              "name": "g1_arm_example",
+              "status": 0,
+              "protect": 0
+            },
+            {
+              "name": "lidar_driver",
+              "status": 1,
+              "protect": 0
+            },
+            {
+              "name": "log_system",
+              "status": 0,
+              "protect": 0
+            },
+            {
+              "name": "motion_switcher",
+              "status": 0,
+              "protect": 0
+            },
+            {
+              "name": "net_switcher",
+              "status": 0,
+              "protect": 0
+            },
+            {
+              "name": "ota_box",
+              "status": 1,
+              "protect": 0
+            },
+            {
+              "name": "ota_pipe",
+              "status": 0,
+              "protect": 0
+            },
+            {
+              "name": "robot_state",
+              "status": 0,
+              "protect": 1
+            },
+            {
+              "name": "robot_type_service",
+              "status": 0,
+              "protect": 0
+            },
+            {
+              "name": "state_estimator",
+              "status": 0,
+              "protect": 0
+            },
+            {
+              "name": "unistore",
+              "status": 0,
+              "protect": 0
+            },
+            {
+              "name": "unitree_slam",
+              "status": 1,
+              "protect": 0
+            },
+            {
+              "name": "video_hub_pc4",
+              "status": 0,
+              "protect": 0
+            },
+            {
+              "name": "vui_service",
+              "status": 0,
+              "protect": 0
+            },
+            {
+              "name": "webrtc_bridge",
+              "status": 0,
+              "protect": 1
+            },
+            {
+              "name": "webrtc_multicast_responder",
+              "status": 0,
+              "protect": 0
+            },
+            {
+              "name": "webrtc_signal_server",
+              "status": 0,
+              "protect": 1
+            }
+          ],
+          "event_id": "4bd2a637e8e24dabb0a47bf14afe4ea2",
+          "message": "已读取官方返回值"
+        }
+      },
+      {
+        "round": 2,
+        "operation": "get_stand_height",
+        "duration_ms": 86,
+        "http_status": 502,
+        "body": {
+          "error": {
+            "code": "SDK_REJECTED",
+            "message": "官方服务返回 7301：LocoState 不可用；模式/高度/相位保持未知，忽略返回中的占位零值。不会自动切换模式",
+            "sdk_code": 7301
+          },
+          "request_id": "6dda940fbd7d43cc843cb71373c700e7"
+        }
+      },
+      {
+        "round": 2,
+        "operation": "get_state_api_version",
+        "duration_ms": 60,
+        "http_status": 200,
+        "body": {
+          "status": "accepted",
+          "data": {
+            "service": "robot_state",
+            "api_version": "1.0.0.2",
+            "firmware_version": null
+          },
+          "event_id": "d711a842853d4ad6a65e95966920f83c",
+          "message": "已读取官方返回值"
+        }
+      },
+      {
+        "round": 2,
+        "operation": "get_swing_height",
+        "duration_ms": 79,
+        "http_status": 502,
+        "body": {
+          "error": {
+            "code": "SDK_REJECTED",
+            "message": "官方服务返回 7301：LocoState 不可用；模式/高度/相位保持未知，忽略返回中的占位零值。不会自动切换模式",
+            "sdk_code": 7301
+          },
+          "request_id": "3c4f09ce23404bf380c9fd49795dd259"
+        }
+      },
+      {
+        "round": 2,
+        "operation": "get_versions",
+        "duration_ms": 86,
+        "http_status": 502,
+        "body": {
+          "error": {
+            "code": "SDK_REJECTED",
+            "message": "官方服务返回 3203：不支持此 API；未取得有效值",
+            "sdk_code": 3203
+          },
+          "request_id": "c5714cf662134b28b35991406510423a"
+        }
+      },
+      {
+        "round": 2,
+        "operation": "get_volume",
+        "duration_ms": 96,
+        "http_status": 200,
+        "body": {
+          "status": "accepted",
+          "data": {
+            "volume": 41
+          },
+          "event_id": "72adddb6c7454337af278da4bea68ece",
+          "message": "已读取官方返回值"
+        }
+      }
+    ]
+  },
+  "guard_before": {
+    "run_id": "d201e239ee56",
+    "read_only": true,
+    "connected": true,
+    "owner": null,
+    "manual_remote_enabled": false,
+    "manual_remote_armed": false,
+    "joint_count": 23,
+    "tick": 1194353,
+    "fsm": 0,
+    "camera_sequence": 5562,
+    "camera_age_ms": 299
+  },
+  "guard_after": {
+    "run_id": "d201e239ee56",
+    "read_only": true,
+    "connected": true,
+    "owner": null,
+    "manual_remote_enabled": false,
+    "manual_remote_armed": false,
+    "joint_count": 23,
+    "tick": 1196473,
+    "fsm": 0,
+    "camera_sequence": 5573,
+    "camera_age_ms": 230
+  },
+  "camera": {
+    "backend": "unitree",
+    "status": "live",
+    "error": null,
+    "diagnostics": {
+      "transport": "official_api_1001_isolated_polled",
+      "window_s": 60,
+      "attempts": 300,
+      "successes": 300,
+      "timeouts": 0,
+      "errors": 0,
+      "total_attempts": 5574,
+      "total_successes": 5574,
+      "total_timeouts": 0
+    },
+    "source": "unitree-videohub-f98551f57140",
+    "sequence": 5574,
+    "age_ms": 122,
+    "request_started_at": 1792639800.8185778,
+    "received_at": 1792639800.855579,
+    "width": 960,
+    "height": 540,
+    "source_width": 1920,
+    "source_height": 1080,
+    "request_ms": 37,
+    "timestamp_basis": "request_started_at",
+    "sensor_timestamp": null
+  },
+  "gui_checks": [
+    {
+      "at": "2026-10-22T11:27:34+08:00",
+      "operation": "get_fsm",
+      "result": 0
+    },
+    {
+      "at": "2026-10-22T11:30:32+08:00",
+      "operation": "get_balance",
+      "sdk_code": 7301,
+      "value": null
+    },
+    {
+      "at": "2026-10-22T11:30:36+08:00",
+      "operation": "get_versions",
+      "sdk_code": 3203,
+      "value": null
+    },
+    {
+      "at": "2026-10-22T11:33:30+08:00",
+      "operation": "get_fsm",
+      "result": 0
+    }
+  ],
+  "screenshots": [
+    "screenshots/g1-readonly-remote-20261022.png",
+    "screenshots/g1-readonly-remote-overview-20261022.png"
+  ],
+  "local_tests": {
+    "python_targeted": {
+      "passed": 78,
+      "files": [
+        "tests/test_g1_remote_operations.py",
+        "tests/test_g1_manual_remote.py",
+        "tests/test_g1_reboot_connection.py"
+      ]
+    },
+    "python_read_only_boundary": {
+      "passed": 2,
+      "tests": [
+        "tests/test_g1_console.py::test_read_only_rejects_every_write_at_service_and_sdk_boundary",
+        "tests/test_g1_console.py::test_read_only_http_and_real_adapter_lifecycle_never_send_motion"
+      ]
+    },
+    "frontend": {
+      "passed": 11,
+      "command": "node --test console/web/tests/*.test.mjs"
+    },
+    "warnings": [
+      "Starlette/httpx TestClient deprecation"
+    ],
+    "initial_sandbox_socket_failures": "4 loopback bind failures due to environment; same full targeted suite rerun with network permission passed 78"
+  },
+  "limits": [
+    "SDK API versions do not establish ai_sport firmware version",
+    "7301 fields remain unknown; 3203 package version remains unknown",
+    "FSM 0 ZeroTorque label does not establish independent standing",
+    "motion, posture mode changes, balancing, accessory writes, deadman operation on actual robot not tested",
+    "no owner acquired, armed state enabled, motion/write request or automatic mode change",
+    "one reboot automatic recovery observed; two consecutive full reboot acceptance incomplete"
+  ],
+  "quantumult_x_touched": false,
+  "system_configuration_changed": false,
+  "raw_evidence_private": {
+    "path": ".g1-deploy/research/reboot-network-20261022/remote-queries-live.private.json",
+    "sha256": "3784e48a2adc445def13a4125ff7f567739b165d049c6166e29c63b066bf00d1"
+  },
+  "final_readonly_state": {
+    "checked_at_asia_shanghai": "2026-10-22T11:36:33.360540+08:00",
+    "connected": true,
+    "read_only": true,
+    "run_id": "d201e239ee56",
+    "owner": null,
+    "manual_remote_enabled": false,
+    "manual_remote_armed": false,
+    "telemetry_age_ms": 28,
+    "joint_count": 23,
+    "tick": 1588999,
+    "fsm": 0,
+    "camera": {
+      "backend": "unitree",
+      "status": "live",
+      "error": null,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 7532,
+        "total_successes": 7531,
+        "total_timeouts": 0
+      },
+      "source": "unitree-videohub-f98551f57140",
+      "sequence": 7530,
+      "age_ms": 297,
+      "request_started_at": 1792640193.0992203,
+      "received_at": 1792640193.1263273,
+      "width": 960,
+      "height": 540,
+      "source_width": 1920,
+      "source_height": 1080,
+      "request_ms": 27,
+      "timestamp_basis": "request_started_at",
+      "sensor_timestamp": null
+    }
+  }
+}

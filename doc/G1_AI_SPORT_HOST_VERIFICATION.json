@@ -1,0 +1,93 @@
+{
+  "verified_at_utc": "2026-10-21T13:22:51.113737+00:00",
+  "release": "1ff38c7cee16",
+  "run_id": "c599168b4781",
+  "foundation_schema": 24,
+  "foundation_id": "742d9210f46f9a15c08f8011b1cf38d3074381af5ee0a1bddc576ee7e5e7ab51",
+  "actual_unknown_fields": 253,
+  "device_motion_firmware": null,
+  "exact_7301_predicate": null,
+  "balance_ready": null,
+  "execution_allowed": false,
+  "paired_dds_queries": 10,
+  "raw_rtps_header_count": 240,
+  "observed_network_sender_ips": [
+    "192.168.123.161"
+  ],
+  "physical_board_and_executable_identity_verified": false,
+  "new_run_queries": 9,
+  "new_run_query_status_counts": {
+    "read_unavailable": 6,
+    "read_result": 3
+  },
+  "new_run_query_sdk_code_counts": {
+    "7301": 5,
+    "3203": 1,
+    "0": 3
+  },
+  "new_run_3104_count": 0,
+  "control_owner": null,
+  "manual_armed": false,
+  "navigation_status": "idle",
+  "robot_motion_writes_sent": 0,
+  "robot_mode_switches_sent": 0,
+  "robot_service_switches_sent": 0,
+  "robot_report_frequency_writes_sent": 0,
+  "robot_configuration_writes_sent": 0,
+  "quantumult_x_touched": false,
+  "official_processes_unchanged": true,
+  "manifest_files_verified": 482,
+  "all_release_sha256_match": true,
+  "python_tests_passed": 248,
+  "node_tests_passed": 7,
+  "typescript_vite_build_passed": true,
+  "validation_basis": "Full Python and Node suites and build ran after final source edits before deployment; runtime evidence and screenshots captured after deployment. Documentation added after release verification.",
+  "known_warnings": [
+    "Existing httpx deprecation warning",
+    "Existing BodyView chunk size warning",
+    "One historical malformed events.jsonl line; history preserved"
+  ],
+  "latest_state_at_utc": "2026-10-21T13:21:17.799940+00:00",
+  "body_joints": 23,
+  "fsm": 0,
+  "camera": {
+    "backend": "unitree",
+    "status": "live",
+    "error": null,
+    "diagnostics": {
+      "transport": "official_api_1001_isolated_polled",
+      "window_s": 60,
+      "attempts": 300,
+      "successes": 300,
+      "timeouts": 0,
+      "errors": 0,
+      "total_attempts": 1133,
+      "total_successes": 1133,
+      "total_timeouts": 0
+    },
+    "source": "unitree-videohub-abdb28988236",
+    "sequence": 1133,
+    "age_ms": 101,
+    "request_started_at": 1792588877.6703267,
+    "received_at": 1792588877.6909575,
+    "width": 960,
+    "height": 540,
+    "source_width": 1920,
+    "source_height": 1080,
+    "request_ms": 21,
+    "timestamp_basis": "request_started_at",
+    "sensor_timestamp": null
+  },
+  "source_sha256": {
+    "g1_console/assets/safety_evidence_sources/sport_host_20261021_v28.json": "24ba4303c86bf7070b61896b566ca785fb84921e43abbe6c0c235279887c74b5",
+    "g1_console/assets/safety_evidence_sources/sport_service_contract_20261021_v28.json": "66b39c7d551fdfc8ea02b9dfb1f7868622e9e0399662738a7f82d8f9eea9e46a",
+    "g1_console/assets/g1_motion_control_review.json": "c00bad08e8448c1a2868f069694056029df34bdd19ac9996f410b92b53fb6e20",
+    "g1_console/assets/g1_motor_knowledge.json": "83f2c81350a98b04b789d5ed5b947f267665767f1f33cd4e8850bbec33abf52d",
+    "doc/G1_AI_SPORT_HOST_ORIN.json": "529cd9df40b3b04b6bde5ac17a32ae51952ae5d3b6da476c4ead199a233f6714",
+    "doc/G1_AI_SPORT_HOST_QUERY_VERIFICATION.json": "7b2000d4168265216ddf263f40de9ed69a582be6e491448f978b0bbe860b59d4",
+    "doc/G1_AI_SPORT_HOST_FINAL_STATE.json": "0e9075e72583ecccd14876215d45bd3c597e6238ef3b21a9916c7c0bbeec88ef",
+    "doc/screenshots/g1-ai-sport-7301-20261021.png": "07389b3371466f950c8967d4b066948dc7d2768677a70d9ecfb4b0e6d0a8b75d",
+    "doc/screenshots/g1-service-readback-20261021.png": "8212c7fb1a9ccbe7735336be7e11fe6fe7f59d5ab226052069bfa06126f885f8",
+    "doc/G1_AI_SPORT_HOST_DIAGNOSIS.md": "316de44f0525d54e615225e6eb38f9cf76f461d566f1ba2f0f876a93dd810721"
+  }
+}

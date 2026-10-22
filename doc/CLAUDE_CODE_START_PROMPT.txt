@@ -1,0 +1,13 @@
+请接手 .。
+
+先读项目根目录 CLAUDE.md，再读 doc/CLAUDE_CODE_HANDOFF_20261022.md 与 doc/evidence/claude_handoff_20261022.json。文件总清单和 SHA256 在 doc/evidence/claude_handoff_inventory_20261022.json。
+
+这是 G1 EDU 23 自由度、无手、带 Orin 的机器人工作台。目标是复用官方能力学习并调试任务策略，不训练运动模型。大量工作台实现未提交 Git，不要 reset/clean，也不要只从 origin 重建。
+
+交接时 Orin 为 unitree@<ORIN_IP>，Mac 工作台 18766 → SSH 桥 18765 → Orin 8765，发布 da5d189707fa。先复用并只读核验当前身份、部署、身体反馈、相机、控制范围与已使用的单次阻尼凭据，不自动执行动作。Quantumult X 不动，Orin 系统网络保持原状。
+
+本地包 03034ef80b29 尚未部署，有 5 个 Python 文件与运行版不同；交接文档列有差异，当前本地定向测试 139 passed。不要将本地构建产物当成已经运行的版本。
+
+下一重点是 7301/LocoState：先读 scripts/audit_g1_installed_loco.py 和 g1_console/assets/safety_evidence_sources/installed_loco_sdk_20261022_v36.json，避免重复猜 SDK 漏初始化。ai_sport 8.7.5.212 只确认服务广告，实际运动固件及私有 LocoState 就绪条件仍未知。起身、姿态保持、独立平衡和行走没有实机验收；不能删除门控或单次凭据来试探。未知参数保持 null，模型/示例值不得充当实机值。
+
+请先核对现场连接与状态，给出当前证据和明确的下一项可验证假设，再继续完善软件遥控器。区分代码、部署、接口接受和动作完成，按实际证据报告。

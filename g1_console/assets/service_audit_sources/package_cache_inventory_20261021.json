@@ -1,0 +1,535 @@
+{
+  "current": false,
+  "started_at_utc": "2026-10-21T03:54:37.347720+00:00",
+  "read_only": true,
+  "roots": [
+    "/unitree/ota",
+    "/unitree/robot/pkg",
+    "/unitree/var/data",
+    "/opt/ota_package",
+    "/var/cache/apt/archives"
+  ],
+  "max_files": 3000,
+  "max_depth": 16,
+  "max_file_bytes": 134217728,
+  "files": [
+    {
+      "path": "/unitree/ota/backup/module/unitree_patch_pc4/1.0.0.6/module.json",
+      "bytes": 1986
+    },
+    {
+      "path": "/unitree/ota/backup/module/unitree_patch_pc4/1.0.0.6/module/unitree_patch_pc4/file/etc/ld.so.conf.d/unitree.conf",
+      "bytes": 30
+    },
+    {
+      "path": "/unitree/ota/backup/module/unitree_patch_pc4/1.0.0.6/module/unitree_patch_pc4/file/root/.asoundrc",
+      "bytes": 40
+    },
+    {
+      "path": "/unitree/ota/backup/module/unitree_patch_pc4/1.0.0.6/module/unitree_patch_pc4/file/unitree/bin/json_checker",
+      "bytes": 98192
+    },
+    {
+      "path": "/unitree/ota/backup/module/unitree_patch_pc4/1.0.0.6/module/unitree_patch_pc4/file/unitree/etc/master_service/conflict",
+      "bytes": 3
+    },
+    {
+      "path": "/unitree/ota/backup/module/unitree_patch_pc4/1.0.0.6/module/unitree_patch_pc4/file/unitree/etc/master_service/forbid",
+      "bytes": 0
+    },
+    {
+      "path": "/unitree/ota/backup/module/unitree_patch_pc4/1.0.0.6/module/unitree_patch_pc4/file/unitree/etc/master_service/init",
+      "bytes": 52
+    },
+    {
+      "path": "/unitree/ota/backup/module/unitree_patch_pc4/1.0.0.6/module/unitree_patch_pc4/file/unitree/etc/master_service/manual",
+      "bytes": 3
+    },
+    {
+      "path": "/unitree/ota/backup/module/unitree_patch_pc4/1.0.0.6/module/unitree_patch_pc4/file/unitree/etc/master_service/once",
+      "bytes": 52
+    },
+    {
+      "path": "/unitree/ota/backup/module/unitree_patch_pc4/1.0.0.6/module/unitree_patch_pc4/file/unitree/etc/master_service/path",
+      "bytes": 3
+    },
+    {
+      "path": "/unitree/ota/backup/module/unitree_patch_pc4/1.0.0.6/module/unitree_patch_pc4/file/unitree/etc/master_service/plan",
+      "bytes": 3
+    },
+    {
+      "path": "/unitree/ota/backup/module/unitree_patch_pc4/1.0.0.6/module/unitree_patch_pc4/file/unitree/etc/master_service/prio",
+      "bytes": 3
+    },
+    {
+      "path": "/unitree/ota/backup/module/unitree_patch_pc4/1.0.0.6/module/unitree_patch_pc4/file/unitree/etc/master_service/protect",
+      "bytes": 21
+    },
+    {
+      "path": "/unitree/ota/backup/module/unitree_patch_pc4/1.0.0.6/module/unitree_patch_pc4/file/unitree/etc/master_service/cmd/am-init",
+      "bytes": 72
+    },
+    {
+      "path": "/unitree/ota/backup/module/unitree_patch_pc4/1.0.0.6/module/unitree_patch_pc4/file/unitree/etc/master_service/cmd/core-init",
+      "bytes": 93
+    },
+    {
+      "path": "/unitree/ota/backup/module/unitree_patch_pc4/1.0.0.6/module/unitree_patch_pc4/file/unitree/etc/master_service/cmd/ota-pipe",
+      "bytes": 236
+    },
+    {
+      "path": "/unitree/ota/backup/module/unitree_patch_pc4/1.0.0.6/module/unitree_patch_pc4/file/unitree/etc/master_service/cmd/ota-update",
+      "bytes": 199
+    },
+    {
+      "path": "/unitree/ota/backup/module/unitree_patch_pc4/1.0.0.6/module/unitree_patch_pc4/file/unitree/etc/master_service/cmd/pd-init",
+      "bytes": 218
+    },
+    {
+      "path": "/unitree/ota/backup/module/unitree_patch_pc4/1.0.0.6/module/unitree_patch_pc4/file/unitree/etc/ota_pipe/ota_pipe_hosts.json",
+      "bytes": 48
+    },
+    {
+      "path": "/unitree/ota/backup/module/unitree_patch_pc4/1.0.0.6/module/unitree_patch_pc4/file/unitree/sbin/mscli",
+      "bytes": 5951720
+    },
+    {
+      "path": "/unitree/ota/backup/module/unitree_patch_pc4/1.0.0.6/module/unitree_patch_pc4/file/unitree/sbin/ota_pipe_cli",
+      "bytes": 6078920
+    },
+    {
+      "path": "/unitree/ota/backup/module/unitree_patch_pc4/1.0.0.6/module/unitree_patch_pc4/file/unitree/sbin/start-stop-daemon",
+      "bytes": 127936
+    },
+    {
+      "path": "/unitree/ota/backup/module/unitree_patch_pc4/1.0.0.6/module/unitree_patch_pc4/file/unitree/var/data/ota_update/ota_update.sh",
+      "bytes": 4103
+    },
+    {
+      "path": "/unitree/ota/backup/module/video_hub_pc4/1.0.1.1/module.json",
+      "bytes": 280
+    },
+    {
+      "path": "/unitree/ota/pipe/default_logconf.json",
+      "bytes": 442
+    },
+    {
+      "path": "/unitree/ota/pipe/ota_pipe_service",
+      "bytes": 9213664
+    },
+    {
+      "path": "/unitree/ota/pipe/ota_pipe_service.json",
+      "bytes": 373
+    },
+    {
+      "path": "/unitree/ota/pipe/version",
+      "bytes": 8
+    },
+    {
+      "path": "/unitree/ota/update/1.5.3/package_1.5.3.8_G1_Edu+_upk/module/unitree_patch_pc4/1.0.0.6/file/unitree_patch_pc4_1.0.0.6.upk",
+      "bytes": 21731956
+    },
+    {
+      "path": "/unitree/ota/update/module/unitree_patch_pc4/1.0.0.2/g1plus@unitree_patch_pc4_1.0.0.2.upk",
+      "bytes": 21509748
+    },
+    {
+      "path": "/unitree/ota/update/module/video_hub_pc4/1.0.1.1/video_hub_pc4_1.0.1.1.upk",
+      "bytes": 75892
+    },
+    {
+      "path": "/unitree/robot/pkg/module/master_service_pc4/module.json",
+      "bytes": 2194
+    },
+    {
+      "path": "/unitree/robot/pkg/module/unitree_patch_pc4/module.json",
+      "bytes": 2880
+    },
+    {
+      "path": "/unitree/robot/pkg/module/video_hub_pc4/module.json",
+      "bytes": 1913
+    },
+    {
+      "path": "/unitree/robot/pkg/version/version.json",
+      "bytes": 160
+    },
+    {
+      "path": "/unitree/var/data/chrony/chrony_3.5-6ubuntu6.2_arm64.deb",
+      "bytes": 212496
+    },
+    {
+      "path": "/unitree/var/data/chrony/chrony_setup.sh",
+      "bytes": 1629
+    },
+    {
+      "path": "/unitree/var/data/ota_update/ota_update.sh",
+      "bytes": 4103
+    },
+    {
+      "path": "/opt/ota_package/t19x/BOOTAA64.efi",
+      "bytes": 73728
+    },
+    {
+      "path": "/opt/ota_package/t19x/TEGRA_BL.Cap",
+      "bytes": 35671250
+    },
+    {
+      "path": "/opt/ota_package/t19x/bl_only_payload",
+      "bytes": 35668333
+    },
+    {
+      "path": "/opt/ota_package/t19x/kernel_only_payload",
+      "bytes": 50297634
+    },
+    {
+      "path": "/opt/ota_package/t23x/BOOTAA64.efi",
+      "bytes": 73728
+    },
+    {
+      "path": "/opt/ota_package/t23x/TEGRA_BL.Cap",
+      "bytes": 59666744
+    },
+    {
+      "path": "/opt/ota_package/t23x/TEGRA_BL_3701_000.Cap",
+      "bytes": 16512135
+    },
+    {
+      "path": "/opt/ota_package/t23x/bl_only_payload",
+      "bytes": 59663827
+    },
+    {
+      "path": "/opt/ota_package/t23x/bl_only_payload_3701_000",
+      "bytes": 16509218
+    },
+    {
+      "path": "/opt/ota_package/t23x/kernel_only_payload",
+      "bytes": 46305421
+    },
+    {
+      "path": "/opt/ota_package/t23x/kernel_only_payload_3701_000",
+      "bytes": 43907627
+    },
+    {
+      "path": "/opt/ota_package/t23x/xusb_t234_prod.bin",
+      "bytes": 156160
+    },
+    {
+      "path": "/var/cache/apt/archives/lock",
+      "bytes": 0
+    }
+  ],
+  "packages": [
+    {
+      "path": "/unitree/ota/update/1.5.3/package_1.5.3.8_G1_Edu+_upk/module/unitree_patch_pc4/1.0.0.6/file/unitree_patch_pc4_1.0.0.6.upk",
+      "bytes": 21731956,
+      "sha256": "f9028b6539963d88076b470e5348005dabfd3589cd0e1616ef4fe91be60bf16e",
+      "unchanged_during_read": true,
+      "magic_hex": "5554504b00010000",
+      "format": "UTPK opaque",
+      "payload_decoded": false,
+      "members": [],
+      "truncated": false
+    },
+    {
+      "path": "/unitree/ota/update/module/unitree_patch_pc4/1.0.0.2/g1plus@unitree_patch_pc4_1.0.0.2.upk",
+      "bytes": 21509748,
+      "sha256": "fd20c663d203e526ad13eaff5c2fec780961e69a05d5911e9afafd3544dbc8fe",
+      "unchanged_during_read": true,
+      "magic_hex": "5554504b00010000",
+      "format": "UTPK opaque",
+      "payload_decoded": false,
+      "members": [],
+      "truncated": false
+    },
+    {
+      "path": "/unitree/ota/update/module/video_hub_pc4/1.0.1.1/video_hub_pc4_1.0.1.1.upk",
+      "bytes": 75892,
+      "sha256": "ac276e9f575aa2a3b4070ca5a1a2e8103e835cac42e01abf4275fe28d86e61e1",
+      "unchanged_during_read": true,
+      "magic_hex": "5554504b00010000",
+      "format": "UTPK opaque",
+      "payload_decoded": false,
+      "members": [],
+      "truncated": false
+    },
+    {
+      "path": "/unitree/var/data/chrony/chrony_3.5-6ubuntu6.2_arm64.deb",
+      "bytes": 212496,
+      "sha256": "5558692a69cfa19ebcfbeb9e266ff401585c10385d0d7bfa61c2a16cb7101c09",
+      "unchanged_during_read": true,
+      "magic_hex": "213c617263683e0a",
+      "format": "Debian archive",
+      "payload_decoded": false,
+      "members": [
+        "drwxr-xr-x root/root         0 2020-08-25 22:47 ./",
+        "drwxr-xr-x root/root         0 2020-08-25 22:47 ./etc/",
+        "drwxr-xr-x root/root         0 2020-08-25 22:47 ./etc/NetworkManager/",
+        "drwxr-xr-x root/root         0 2020-08-25 22:47 ./etc/NetworkManager/dispatcher.d/",
+        "-rwxr-xr-x root/root       428 2020-08-25 22:47 ./etc/NetworkManager/dispatcher.d/20-chrony",
+        "drwxr-xr-x root/root         0 2020-08-25 22:47 ./etc/apparmor.d/",
+        "drwxr-xr-x root/root         0 2020-08-25 22:47 ./etc/apparmor.d/force-complain/",
+        "-rw-r--r-- root/root      1881 2020-04-20 21:53 ./etc/apparmor.d/usr.sbin.chronyd",
+        "drwxr-xr-x root/root         0 2020-08-25 22:47 ./etc/chrony/",
+        "drwxr-xr-x root/root         0 2020-08-25 22:47 ./etc/default/",
+        "-rw-r--r-- root/root       413 2020-05-20 15:57 ./etc/default/chrony",
+        "drwxr-xr-x root/root         0 2020-08-25 22:47 ./etc/dhcp/",
+        "drwxr-xr-x root/root         0 2020-08-25 22:47 ./etc/dhcp/dhclient-exit-hooks.d/",
+        "-rw-r--r-- root/root       542 2020-04-20 21:53 ./etc/dhcp/dhclient-exit-hooks.d/chrony",
+        "drwxr-xr-x root/root         0 2020-08-25 22:47 ./etc/init.d/",
+        "-rwxr-xr-x root/root      2054 2020-04-01 22:24 ./etc/init.d/chrony",
+        "drwxr-xr-x root/root         0 2020-08-25 22:47 ./etc/logrotate.d/",
+        "-rw-r--r-- root/root       160 2020-08-25 22:47 ./etc/logrotate.d/chrony",
+        "drwxr-xr-x root/root         0 2020-08-25 22:47 ./etc/network/",
+        "drwxr-xr-x root/root         0 2020-08-25 22:47 ./etc/network/if-post-down.d/",
+        "-rwxr-xr-x root/root       138 2020-04-20 21:53 ./etc/network/if-post-down.d/chrony",
+        "drwxr-xr-x root/root         0 2020-08-25 22:47 ./etc/network/if-up.d/",
+        "-rwxr-xr-x root/root       138 2020-04-20 21:53 ./etc/network/if-up.d/chrony",
+        "drwxr-xr-x root/root         0 2020-08-25 22:47 ./etc/ppp/",
+        "drwxr-xr-x root/root         0 2020-08-25 22:47 ./etc/ppp/ip-down.d/",
+        "-rwxr-xr-x root/root       409 2020-04-20 21:53 ./etc/ppp/ip-down.d/chrony",
+        "drwxr-xr-x root/root         0 2020-08-25 22:47 ./etc/ppp/ip-up.d/",
+        "-rwxr-xr-x root/root       395 2020-04-20 21:53 ./etc/ppp/ip-up.d/chrony",
+        "drwxr-xr-x root/root         0 2020-08-25 22:47 ./lib/",
+        "drwxr-xr-x root/root         0 2020-08-25 22:47 ./lib/systemd/",
+        "drwxr-xr-x root/root         0 2020-08-25 22:47 ./lib/systemd/system/",
+        "-rw-r--r-- root/root       397 2020-04-01 22:24 ./lib/systemd/system/chrony-dnssrv@.service",
+        "-rw-r--r-- root/root       138 2020-04-01 22:24 ./lib/systemd/system/chrony-dnssrv@.timer",
+        "-rw-r--r-- root/root       615 2020-05-20 15:57 ./lib/systemd/system/chrony.service",
+        "drwxr-xr-x root/root         0 2020-08-25 22:47 ./usr/",
+        "drwxr-xr-x root/root         0 2020-08-25 22:47 ./usr/bin/",
+        "-rwxr-xr-x root/root     84992 2020-08-25 22:47 ./usr/bin/chronyc",
+        "drwxr-xr-x root/root         0 2020-08-25 22:47 ./usr/lib/",
+        "drwxr-xr-x root/root         0 2020-08-25 22:47 ./usr/lib/chrony/",
+        "-rwxr-xr-x root/root      6647 2020-04-20 21:53 ./usr/lib/chrony/chrony-helper",
+        "drwxr-xr-x root/root         0 2020-08-25 22:47 ./usr/lib/networkd-dispatcher/",
+        "drwxr-xr-x root/root         0 2020-08-25 22:47 ./usr/lib/networkd-dispatcher/off.d/",
+        "drwxr-xr-x root/root         0 2020-08-25 22:47 ./usr/lib/networkd-dispatcher/routable.d/",
+        "drwxr-xr-x root/root         0 2020-08-25 22:47 ./usr/lib/systemd/",
+        "drwxr-xr-x root/root         0 2020-08-25 22:47 ./usr/lib/systemd/ntp-units.d/",
+        "-rw-r--r-- root/root        15 2020-04-20 21:53 ./usr/lib/systemd/ntp-units.d/50-chrony.list",
+        "drwxr-xr-x root/root         0 2020-08-25 22:47 ./usr/lib/systemd/scripts/",
+        "-rwxr-xr-x root/root      1903 2020-05-20 15:57 ./usr/lib/systemd/scripts/chronyd-starter.sh",
+        "drwxr-xr-x root/root         0 2020-08-25 22:47 ./usr/sbin/",
+        "-rwxr-xr-x root/root    224000 2020-08-25 22:47 ./usr/sbin/chronyd",
+        "drwxr-xr-x root/root         0 2020-08-25 22:47 ./usr/share/",
+        "drwxr-xr-x root/root         0 2020-08-25 22:47 ./usr/share/chrony/",
+        "-rw-r--r-- root/root      1768 2020-05-20 15:56 ./usr/share/chrony/chrony.conf",
+        "-rw-r----- root/root       481 2020-08-25 22:47 ./usr/share/chrony/chrony.keys",
+        "drwxr-xr-x root/root         0 2020-08-25 22:47 ./usr/share/doc/",
+        "drwxr-xr-x root/root         0 2020-08-25 22:47 ./usr/share/doc/chrony/",
+        "-rw-r--r-- root/root      8564 2019-05-14 19:00 ./usr/share/doc/chrony/FAQ.gz",
+        "-rw-r--r-- root/root      1468 2020-04-20 21:53 ./usr/share/doc/chrony/NEWS.Debian.gz",
+        "-rw-r--r-- root/root     11082 2019-05-10 18:22 ./usr/share/doc/chrony/NEWS.gz",
+        "-rw-r--r-- root/root      1386 2020-04-20 21:53 ./usr/share/doc/chrony/README.Debian",
+        "-rw-r--r-- root/root      3123 2020-05-20 16:16 ./usr/share/doc/chrony/README.container",
+        "-rw-r--r-- root/root      3080 2019-05-10 18:22 ./usr/share/doc/chrony/README.gz",
+        "-rw-r--r-- root/root      2539 2020-08-25 22:47 ./usr/share/doc/chrony/changelog.Debian.gz",
+        "-rw-r--r-- root/root      5558 2020-04-20 21:53 ./usr/share/doc/chrony/copyright",
+        "drwxr-xr-x root/root         0 2020-08-25 22:47 ./usr/share/lintian/",
+        "drwxr-xr-x root/root         0 2020-08-25 22:47 ./usr/share/lintian/overrides/",
+        "-rw-r--r-- root/root       460 2020-04-20 21:53 ./usr/share/lintian/overrides/chrony",
+        "drwxr-xr-x root/root         0 2020-08-25 22:47 ./usr/share/man/",
+        "drwxr-xr-x root/root         0 2020-08-25 22:47 ./usr/share/man/man1/",
+        "-rw-r--r-- root/root     15325 2020-08-25 22:47 ./usr/share/man/man1/chronyc.1.gz",
+        "drwxr-xr-x root/root         0 2020-08-25 22:47 ./usr/share/man/man5/",
+        "-rw-r--r-- root/root     34522 2020-08-25 22:47 ./usr/share/man/man5/chrony.conf.5.gz",
+        "drwxr-xr-x root/root         0 2020-08-25 22:47 ./usr/share/man/man8/",
+        "-rw-r--r-- root/root      3040 2020-08-25 22:47 ./usr/share/man/man8/chronyd.8.gz",
+        "drwxr-xr-x root/root         0 2020-08-25 22:47 ./var/",
+        "drwxr-xr-x root/root         0 2020-08-25 22:47 ./var/lib/",
+        "drwxr-xr-x root/root         0 2020-08-25 22:47 ./var/lib/chrony/",
+        "drwxr-xr-x root/root         0 2020-08-25 22:47 ./var/log/",
+        "drwxr-xr-x root/root         0 2020-08-25 22:47 ./var/log/chrony/",
+        "lrwxrwxrwx root/root         0 2020-08-25 22:47 ./usr/lib/networkd-dispatcher/off.d/chrony -> /etc/NetworkManager/dispatcher.d/20-chrony",
+        "lrwxrwxrwx root/root         0 2020-08-25 22:47 ./usr/lib/networkd-dispatcher/routable.d/chrony -> /etc/NetworkManager/dispatcher.d/20-chrony"
+      ],
+      "truncated": false,
+      "metadata": "Package: chrony\nVersion: 3.5-6ubuntu6.2\nArchitecture: arm64\n"
+    }
+  ],
+  "binaries": [
+    {
+      "path": "/unitree/ota/backup/module/unitree_patch_pc4/1.0.0.6/module/unitree_patch_pc4/file/unitree/bin/json_checker",
+      "bytes": 98192,
+      "sha256": "4adfa6d4d2a0cad90b905c4fa1f3f1b1c31c2490c69b4fcc43f5798419bece0e",
+      "unchanged_during_read": true,
+      "mixer_fmx_symbols": [],
+      "implementation_match_confirmed": false
+    },
+    {
+      "path": "/unitree/ota/backup/module/unitree_patch_pc4/1.0.0.6/module/unitree_patch_pc4/file/unitree/sbin/mscli",
+      "bytes": 5951720,
+      "sha256": "284aa30350e6afc988285e2efe62e36dc6209006ae14bc6b8d0575cdbbccf8e5",
+      "unchanged_during_read": true,
+      "mixer_fmx_symbols": [],
+      "implementation_match_confirmed": false
+    },
+    {
+      "path": "/unitree/ota/backup/module/unitree_patch_pc4/1.0.0.6/module/unitree_patch_pc4/file/unitree/sbin/ota_pipe_cli",
+      "bytes": 6078920,
+      "sha256": "bbaff3c92449f46d4e5a2c1cef6f990eaadaf6e89139967cb5f8f5f59a275c8d",
+      "unchanged_during_read": true,
+      "mixer_fmx_symbols": [],
+      "implementation_match_confirmed": false
+    },
+    {
+      "path": "/unitree/ota/backup/module/unitree_patch_pc4/1.0.0.6/module/unitree_patch_pc4/file/unitree/sbin/start-stop-daemon",
+      "bytes": 127936,
+      "sha256": "540cfdec2d61f2bdc8018b49a86652a959a060a4d2c1af93089c464166ca8875",
+      "unchanged_during_read": true,
+      "mixer_fmx_symbols": [],
+      "implementation_match_confirmed": false
+    },
+    {
+      "path": "/unitree/ota/pipe/ota_pipe_service",
+      "bytes": 9213664,
+      "sha256": "fcca57b1f2c67af0123235cbbdd17f8f5a444a64d105a928b683cd5074be60e7",
+      "unchanged_during_read": true,
+      "mixer_fmx_symbols": [],
+      "implementation_match_confirmed": false
+    }
+  ],
+  "manifests": [
+    {
+      "path": "/unitree/ota/backup/module/unitree_patch_pc4/1.0.0.6/module.json",
+      "bytes": 1986,
+      "sha256": "5bf6e4e296b895da188b2be30d612e9c6ffd88d37ae1001e1d375ce76f6a0cd8",
+      "unchanged_during_read": true,
+      "identity": {}
+    },
+    {
+      "path": "/unitree/ota/backup/module/video_hub_pc4/1.0.1.1/module.json",
+      "bytes": 280,
+      "sha256": "500d389913515400f66e23424cd06aa1373cf3e01e3c614f7e41bf86a98a5be1",
+      "unchanged_during_read": true,
+      "identity": {}
+    },
+    {
+      "path": "/unitree/robot/pkg/module/master_service_pc4/module.json",
+      "bytes": 2194,
+      "sha256": "ecfa15fd170078b6bf89cc02f2becf4672b8c6f3566607bdfbe2717424857771",
+      "unchanged_during_read": true,
+      "identity": {}
+    },
+    {
+      "path": "/unitree/robot/pkg/module/unitree_patch_pc4/module.json",
+      "bytes": 2880,
+      "sha256": "df22b0309ebae1b78380473a297eca6d21fd1311d725a1a1c529e7d5df0572a0",
+      "unchanged_during_read": true,
+      "identity": {}
+    },
+    {
+      "path": "/unitree/robot/pkg/module/video_hub_pc4/module.json",
+      "bytes": 1913,
+      "sha256": "e59171ecf2b3a3ce4101cc934fbe7ee775583874a2938cdbd38b32e304f35844",
+      "unchanged_during_read": true,
+      "identity": {}
+    }
+  ],
+  "text_candidates": [
+    {
+      "path": "/unitree/ota/backup/module/unitree_patch_pc4/1.0.0.6/module.json",
+      "bytes": 1986,
+      "sha256": "5bf6e4e296b895da188b2be30d612e9c6ffd88d37ae1001e1d375ce76f6a0cd8",
+      "unchanged_during_read": true,
+      "tokens": {
+        "master_service": 14
+      },
+      "interpretation": "token occurrence only; no implementation or motor value confirmed"
+    },
+    {
+      "path": "/unitree/robot/pkg/module/master_service_pc4/module.json",
+      "bytes": 2194,
+      "sha256": "ecfa15fd170078b6bf89cc02f2becf4672b8c6f3566607bdfbe2717424857771",
+      "unchanged_during_read": true,
+      "tokens": {
+        "master_service": 12
+      },
+      "interpretation": "token occurrence only; no implementation or motor value confirmed"
+    },
+    {
+      "path": "/unitree/robot/pkg/module/unitree_patch_pc4/module.json",
+      "bytes": 2880,
+      "sha256": "df22b0309ebae1b78380473a297eca6d21fd1311d725a1a1c529e7d5df0572a0",
+      "unchanged_during_read": true,
+      "tokens": {
+        "master_service": 14
+      },
+      "interpretation": "token occurrence only; no implementation or motor value confirmed"
+    },
+    {
+      "path": "/unitree/robot/pkg/module/video_hub_pc4/module.json",
+      "bytes": 1913,
+      "sha256": "e59171ecf2b3a3ce4101cc934fbe7ee775583874a2938cdbd38b32e304f35844",
+      "unchanged_during_read": true,
+      "tokens": {
+        "master_service": 1
+      },
+      "interpretation": "token occurrence only; no implementation or motor value confirmed"
+    },
+    {
+      "path": "/unitree/robot/pkg/version/version.json",
+      "bytes": 160,
+      "sha256": "b5d64c6e23e1a701172010a90ee8b17c83107c6560e9abb459db246b5f85842c",
+      "unchanged_during_read": true,
+      "tokens": {
+        "master_service": 1
+      },
+      "interpretation": "token occurrence only; no implementation or motor value confirmed"
+    }
+  ],
+  "errors": [
+    {
+      "path": "/var/cache/apt/archives/lock",
+      "error": "PermissionError"
+    },
+    {
+      "path": "/var/cache/apt/archives/partial",
+      "error": "PermissionError"
+    }
+  ],
+  "missing_roots": [],
+  "vendor_program_executions": 0,
+  "command_writes": 0,
+  "rpc_calls": 0,
+  "configuration_calls": 0,
+  "calibration_calls": 0,
+  "motor_configuration_values_obtained": 0,
+  "runtime_memory_reads": 0,
+  "boot_id": "7a6791dc-f512-4b45-aca3-44fbde855e25",
+  "identity_before": [
+    {
+      "path": "/unitree/module/master_service/master_service",
+      "bytes": 9083232,
+      "sha256": "380e34de9c2def2692c0bf1b73e969d3167c8270f2ed5f974bb01abd4e96f24e",
+      "unchanged_during_read": true
+    },
+    {
+      "path": "/unitree/module/master_service/master_service.json",
+      "bytes": 468,
+      "sha256": "31eae39936576504c40be767bd93cd34b7489154eca989e5e5c2781b05e3d977",
+      "unchanged_during_read": true
+    }
+  ],
+  "installed_relevant_packages": [
+    "nvidia-l4t-bootloader\t35.3.1-20230319081403\tarm64",
+    "nvidia-l4t-core\t35.3.1-20230319081403\tarm64",
+    "nvidia-l4t-kernel\t5.10.104-tegra-35.3.1-20230319081403\tarm64"
+  ],
+  "identity_after": [
+    {
+      "path": "/unitree/module/master_service/master_service",
+      "bytes": 9083232,
+      "sha256": "380e34de9c2def2692c0bf1b73e969d3167c8270f2ed5f974bb01abd4e96f24e",
+      "unchanged_during_read": true
+    },
+    {
+      "path": "/unitree/module/master_service/master_service.json",
+      "bytes": 468,
+      "sha256": "31eae39936576504c40be767bd93cd34b7489154eca989e5e5c2781b05e3d977",
+      "unchanged_during_read": true
+    }
+  ],
+  "completed_at_utc": "2026-10-21T03:54:37.895737+00:00",
+  "received_at_utc": "2026-10-21T03:54:37.818672+00:00"
+}

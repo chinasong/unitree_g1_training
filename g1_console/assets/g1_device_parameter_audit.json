@@ -1,0 +1,149 @@
+{
+  "checked_at_utc": "2026-10-20T16:48:20.289259+00:00",
+  "method": "SSH file reads only; no vendor executables invoked",
+  "files": [
+    {
+      "path": "/unitree/robot/pkg/version/version.json",
+      "sha256": "b5d64c6e23e1a701172010a90ee8b17c83107c6560e9abb459db246b5f85842c",
+      "bytes": 160,
+      "top_level_keys": [
+        "Module",
+        "Package"
+      ],
+      "version_fields": {}
+    },
+    {
+      "path": "/unitree/robot/pkg/module/master_service_pc4/module.json",
+      "sha256": "ecfa15fd170078b6bf89cc02f2becf4672b8c6f3566607bdfbe2717424857771",
+      "bytes": 2194,
+      "top_level_keys": [
+        "Commit",
+        "FileList",
+        "Install",
+        "Method",
+        "Name",
+        "Remove",
+        "Time",
+        "Type",
+        "Version"
+      ],
+      "version_fields": {
+        "Name": "master_service_pc4",
+        "Version": "1.0.0.2"
+      }
+    },
+    {
+      "path": "/unitree/robot/pkg/module/video_hub_pc4/module.json",
+      "sha256": "e59171ecf2b3a3ce4101cc934fbe7ee775583874a2938cdbd38b32e304f35844",
+      "bytes": 1913,
+      "top_level_keys": [
+        "Commit",
+        "FileList",
+        "Install",
+        "Method",
+        "Name",
+        "Remove",
+        "Time",
+        "Type",
+        "Version"
+      ],
+      "version_fields": {
+        "Name": "video_hub_pc4",
+        "Version": "1.0.1.1"
+      }
+    },
+    {
+      "path": "/unitree/module/master_service/master_service.json",
+      "sha256": "31eae39936576504c40be767bd93cd34b7489154eca989e5e5c2781b05e3d977",
+      "bytes": 468,
+      "parse_error": "UnicodeDecodeError"
+    }
+  ],
+  "directories": {
+    "/unitree/module": [
+      "master_service",
+      "video_hub_pc4"
+    ],
+    "/unitree/module/video_hub_pc4": [
+      "cyclonedds.xml",
+      "videohub_pc4"
+    ],
+    "/unitree/robot": [
+      "pkg"
+    ],
+    "/home/unitree/unitree_sdk2/include/unitree/robot/g1": [
+      "audio",
+      "arm",
+      "loco"
+    ],
+    "/home/unitree/unitree_sdk2-main/include/unitree/robot/g1": "FileNotFoundError"
+  },
+  "additional_inspection": {
+    "/unitree/robot/pkg/version/version.json": {
+      "encoding": "utf-8-sig",
+      "keys": [
+        "Module",
+        "Package"
+      ],
+      "module_versions": {
+        "Module": {
+          "master_service_pc4": "1.0.0.2",
+          "unitree_patch_pc4": "1.0.0.6",
+          "video_hub_pc4": "1.0.1.1"
+        },
+        "Package": ""
+      }
+    },
+    "motor_configuration_search": {
+      "roots": [
+        "/unitree",
+        "/opt/ota_package"
+      ],
+      "max_depth": 8,
+      "scanned_file_names": 73,
+      "hits": [],
+      "unreadable_directories": [],
+      "limit_reached": false
+    }
+  },
+  "telemetry_snapshot": {
+    "at": 1792514942.6737108,
+    "run_id": "dd88dde28b44",
+    "mode": "robot",
+    "connected": true,
+    "read_only": true,
+    "telemetry_age_ms": 33,
+    "mode_machine": 4,
+    "mode_pr": 0,
+    "version_raw": [
+      0,
+      0
+    ],
+    "joint_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      15,
+      16,
+      17,
+      18,
+      19,
+      22,
+      23,
+      24,
+      25,
+      26
+    ],
+    "control_owner": null
+  }
+}

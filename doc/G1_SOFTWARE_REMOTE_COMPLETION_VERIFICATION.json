@@ -1,0 +1,120 @@
+{
+  "date": "2026-10-21",
+  "timezone": "Asia/Shanghai",
+  "scope": "Complete the registered software remote controls; no physical action validation",
+  "release": "7e95a6e5a046",
+  "manifest_file_count": 474,
+  "all_release_sha256_match": true,
+  "mac_console_url": "http://127.0.0.1:18765/",
+  "capability_entries": {
+    "total": 53,
+    "mode_and_standing": 14,
+    "arm_tasks": 22,
+    "audio_and_lighting": 5,
+    "read_queries": 8,
+    "advanced_control": 2,
+    "drive_and_stop": 2,
+    "count_is_not_unique_physical_actions": true
+  },
+  "software_features": [
+    "All registered capability entries exposed with parameter and guard inspection",
+    "Strict integer inputs and enum/range validation",
+    "TTS speaker, RGB picker, fixed application PCM playback and stop",
+    "Raw 16kHz mono S16LE PCM limited to 48000 even bytes; WAV header rejected",
+    "50/100/200 percent project preset speed scaling",
+    "Hold/release keyboard and pointer drive with response-bound renewal",
+    "Search and five operation groups",
+    "60-entry command/readback history with request ID and raw replies",
+    "SDK acknowledgement separated from observed FSM and physical completion",
+    "Failed request IDs deduplicated including concurrent SDK 3104 results",
+    "No automatic retry for uncertain execution"
+  ],
+  "validation": {
+    "python": {
+      "command": ".venv/bin/python -m pytest tests -q",
+      "passed": 187,
+      "warnings": "One existing Starlette/httpx deprecation",
+      "scope": "Console tests; not legacy research scripts collected by repository-root pytest"
+    },
+    "node": {
+      "command": "node --test tests/*.test.mjs",
+      "passed": 5
+    },
+    "frontend_build": {
+      "command": "npm run build",
+      "cwd": "console/web",
+      "passed": true,
+      "warnings": "Existing BodyView 3D chunk exceeds 500 kB"
+    },
+    "demo_browser": {
+      "volume_write_then_read": 37,
+      "slow_speed_preset": {
+        "vx_m_s": 0.075,
+        "vy_m_s": 0.05,
+        "yaw_rad_s": 0.1
+      },
+      "forms_checked": ["swing_height", "tts", "play_pcm"],
+      "locked_submit_stays_disabled": true,
+      "synthetic_data_not_robot_parameters": true
+    },
+    "actual_orin_browser": {
+      "groups_and_query_cards_verified": true,
+      "unarmed_and_no_owner_verified": true,
+      "query_history_verified": true,
+      "camera_last_60_seconds": {
+        "successful_frames": 300,
+        "attempts": 300,
+        "timeouts": 0,
+        "is_balance_or_motion_safety_evidence": false
+      },
+      "screenshot": "screenshots/g1-software-remote-complete-20261021.png"
+    }
+  },
+  "actual_robot_read_results": {
+    "successful_queries": 4,
+    "unavailable_queries": 4,
+    "get_fsm": 0,
+    "get_fsm_mode": 0,
+    "get_actions": {"numeric_id_entries": 20, "named_entries": 4},
+    "get_volume": 41,
+    "get_balance": {"sdk_code": 3104, "value": null},
+    "get_swing_height": {"sdk_code": 7301, "value": null},
+    "get_stand_height": {"sdk_code": 3104, "value": null},
+    "get_phase": {"sdk_code": 7301, "value": null},
+    "errors_not_converted_to_defaults": true
+  },
+  "actual_robot_boundary": {
+    "manual_remote_service_enabled": true,
+    "force_readonly_service": false,
+    "control_owner": null,
+    "manual_armed": false,
+    "physical_writes_sent": 0,
+    "motion_actions_or_mode_changes_sent": 0,
+    "audio_or_lighting_writes_sent": 0,
+    "low_level_motor_commands_sent": 0,
+    "official_process_identities_unchanged": 4,
+    "boot_id_unchanged": true,
+    "quantumult_x_modified": false,
+    "foundation_version": 21,
+    "actual_motor_unknown_fields": 253,
+    "autonomous_execution_allowed": false,
+    "loopback_only_on_orin": true,
+    "mac_access_via_existing_ssh_forward": true
+  },
+  "remaining_limits": [
+    "Motion firmware version and suitable rise-from-cabinet-supported-floor-sitting route remain unknown",
+    "Unverified posture/mode/standing writes remain blocked at backend dispatch",
+    "Unmapped firmware action names and new firmware mappings remain blocked",
+    "No physical motion, balance, damping protection or emergency-stop equivalence validation",
+    "Foot, seat and cabinet loads remain unknown; no no-fall guarantee",
+    "SDK ACK or target FSM observation does not prove a physical action completed"
+  ],
+  "evidence": [
+    "G1_SOFTWARE_REMOTE_COMPLETION_ORIN.json",
+    "G1_SOFTWARE_REMOTE_QUERY_VERIFICATION.json"
+  ],
+  "official_sources": [
+    "https://github.com/unitreerobotics/unitree_sdk2/blob/69c04316d81ac244c314e730106e24787b3e61b8/include/unitree/robot/g1/loco/g1_loco_client.hpp",
+    "https://github.com/unitreerobotics/unitree_sdk2/blob/69c04316d81ac244c314e730106e24787b3e61b8/include/unitree/robot/g1/loco/g1_loco_error.hpp"
+  ]
+}

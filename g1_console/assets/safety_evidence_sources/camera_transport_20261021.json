@@ -1,0 +1,7600 @@
+{
+  "schema_version": 1,
+  "current": false,
+  "checked_at_utc": "2026-10-21T04:51:49.405715+00:00",
+  "measurement_only": true,
+  "execution_allowed": false,
+  "command_writes": 0,
+  "configuration_calls": 0,
+  "calibration_calls": 0,
+  "lease_requests": 0,
+  "root_cause_scope": "被动响应、独立进程对照及集成复测支持本项目进程接收链路干扰；未证明具体 GIL、CycloneDDS 原生调度或 SDK 缺陷是唯一根因",
+  "protocol": {
+    "api_id": 1001,
+    "method": "GetImageSample",
+    "lease_id": 0,
+    "request_topic": "rt/api/videohub/request",
+    "response_topic": "rt/api/videohub/response",
+    "sdk_commit": "814556d15970dd2ecf1c9984e845ca02ab07e206",
+    "deadline_ms": 700,
+    "one_in_flight": true,
+    "response_id_and_api_checked": true
+  },
+  "implementation": {
+    "receiver": "ReadOnlyVideoClient",
+    "process": "spawn / IsolatedCamera",
+    "transport": "official_api_1001_isolated_polled",
+    "camera_reconfigured": false,
+    "official_service_restarted": false,
+    "quantumult_changed": false
+  },
+  "baseline": {
+    "sample_count": 61,
+    "live_samples": 3,
+    "stale_samples": 58,
+    "sdk3104_samples": 58,
+    "raw_source_sha256": "b34a3bb81accc2deb67974ae85ffed5519de1bff03adfd33c10426672c29345f"
+  },
+  "passive": {
+    "window_s": 30,
+    "requests": 43,
+    "matched_responses": 43,
+    "successes": 43,
+    "timing_basis": "探针轮询到达时间，不是请求网络延迟",
+    "rows": [
+      {
+        "type": "request",
+        "at_ns": 10945953274981,
+        "id": 10945943328422,
+        "api": 1001,
+        "binary_len": 0
+      },
+      {
+        "type": "response",
+        "at_ns": 10945956856335,
+        "id": 10945943328422,
+        "api": 1001,
+        "binary_len": 146877,
+        "code": 0
+      },
+      {
+        "type": "request",
+        "at_ns": 10947453137069,
+        "id": 10947444950289,
+        "api": 1001,
+        "binary_len": 0
+      },
+      {
+        "type": "response",
+        "at_ns": 10947457556631,
+        "id": 10947444950289,
+        "api": 1001,
+        "binary_len": 146213,
+        "code": 0
+      },
+      {
+        "type": "request",
+        "at_ns": 10948951318384,
+        "id": 10948947869292,
+        "api": 1001,
+        "binary_len": 0
+      },
+      {
+        "type": "response",
+        "at_ns": 10948953412865,
+        "id": 10948947869292,
+        "api": 1001,
+        "binary_len": 146531,
+        "code": 0
+      },
+      {
+        "type": "request",
+        "at_ns": 10950460177583,
+        "id": 10950450046025,
+        "api": 1001,
+        "binary_len": 0
+      },
+      {
+        "type": "response",
+        "at_ns": 10950464808609,
+        "id": 10950450046025,
+        "api": 1001,
+        "binary_len": 146402,
+        "code": 0
+      },
+      {
+        "type": "request",
+        "at_ns": 10951960668619,
+        "id": 10951951464425,
+        "api": 1001,
+        "binary_len": 0
+      },
+      {
+        "type": "response",
+        "at_ns": 10951963114826,
+        "id": 10951951464425,
+        "api": 1001,
+        "binary_len": 146486,
+        "code": 0
+      },
+      {
+        "type": "request",
+        "at_ns": 10953458536739,
+        "id": 10953453343803,
+        "api": 1001,
+        "binary_len": 0
+      },
+      {
+        "type": "response",
+        "at_ns": 10953460566289,
+        "id": 10953453343803,
+        "api": 1001,
+        "binary_len": 146457,
+        "code": 0
+      },
+      {
+        "type": "request",
+        "at_ns": 10953662813214,
+        "id": 10953653981290,
+        "api": 1001,
+        "binary_len": 0
+      },
+      {
+        "type": "response",
+        "at_ns": 10953664866605,
+        "id": 10953653981290,
+        "api": 1001,
+        "binary_len": 146389,
+        "code": 0
+      },
+      {
+        "type": "request",
+        "at_ns": 10953856960051,
+        "id": 10953854933221,
+        "api": 1001,
+        "binary_len": 0
+      },
+      {
+        "type": "response",
+        "at_ns": 10953858946112,
+        "id": 10953854933221,
+        "api": 1001,
+        "binary_len": 146142,
+        "code": 0
+      },
+      {
+        "type": "request",
+        "at_ns": 10954061161164,
+        "id": 10954055447664,
+        "api": 1001,
+        "binary_len": 0
+      },
+      {
+        "type": "response",
+        "at_ns": 10954063191162,
+        "id": 10954055447664,
+        "api": 1001,
+        "binary_len": 146393,
+        "code": 0
+      },
+      {
+        "type": "request",
+        "at_ns": 10954265429287,
+        "id": 10954256366954,
+        "api": 1001,
+        "binary_len": 0
+      },
+      {
+        "type": "response",
+        "at_ns": 10954267453109,
+        "id": 10954256366954,
+        "api": 1001,
+        "binary_len": 146515,
+        "code": 0
+      },
+      {
+        "type": "request",
+        "at_ns": 10954459699169,
+        "id": 10954457111197,
+        "api": 1001,
+        "binary_len": 0
+      },
+      {
+        "type": "response",
+        "at_ns": 10954461745167,
+        "id": 10954457111197,
+        "api": 1001,
+        "binary_len": 146169,
+        "code": 0
+      },
+      {
+        "type": "request",
+        "at_ns": 10954664315401,
+        "id": 10954657513347,
+        "api": 1001,
+        "binary_len": 0
+      },
+      {
+        "type": "response",
+        "at_ns": 10954666505789,
+        "id": 10954657513347,
+        "api": 1001,
+        "binary_len": 146508,
+        "code": 0
+      },
+      {
+        "type": "request",
+        "at_ns": 10954868802732,
+        "id": 10954858350650,
+        "api": 1001,
+        "binary_len": 0
+      },
+      {
+        "type": "response",
+        "at_ns": 10954871516021,
+        "id": 10954858350650,
+        "api": 1001,
+        "binary_len": 146215,
+        "code": 0
+      },
+      {
+        "type": "request",
+        "at_ns": 10955064875916,
+        "id": 10955059217362,
+        "api": 1001,
+        "binary_len": 0
+      },
+      {
+        "type": "response",
+        "at_ns": 10955069478589,
+        "id": 10955059217362,
+        "api": 1001,
+        "binary_len": 146434,
+        "code": 0
+      },
+      {
+        "type": "request",
+        "at_ns": 10955261935537,
+        "id": 10955260248720,
+        "api": 1001,
+        "binary_len": 0
+      },
+      {
+        "type": "response",
+        "at_ns": 10955263895421,
+        "id": 10955260248720,
+        "api": 1001,
+        "binary_len": 146348,
+        "code": 0
+      },
+      {
+        "type": "request",
+        "at_ns": 10955467283958,
+        "id": 10955461011300,
+        "api": 1001,
+        "binary_len": 0
+      },
+      {
+        "type": "response",
+        "at_ns": 10955471871782,
+        "id": 10955461011300,
+        "api": 1001,
+        "binary_len": 146158,
+        "code": 0
+      },
+      {
+        "type": "request",
+        "at_ns": 10955665306880,
+        "id": 10955661107742,
+        "api": 1001,
+        "binary_len": 0
+      },
+      {
+        "type": "response",
+        "at_ns": 10955669861583,
+        "id": 10955661107742,
+        "api": 1001,
+        "binary_len": 146323,
+        "code": 0
+      },
+      {
+        "type": "request",
+        "at_ns": 10955873221031,
+        "id": 10955861594440,
+        "api": 1001,
+        "binary_len": 0
+      },
+      {
+        "type": "response",
+        "at_ns": 10955877768791,
+        "id": 10955861594440,
+        "api": 1001,
+        "binary_len": 146430,
+        "code": 0
+      },
+      {
+        "type": "request",
+        "at_ns": 10956071061291,
+        "id": 10956062473280,
+        "api": 1001,
+        "binary_len": 0
+      },
+      {
+        "type": "response",
+        "at_ns": 10956075656316,
+        "id": 10956062473280,
+        "api": 1001,
+        "binary_len": 146394,
+        "code": 0
+      },
+      {
+        "type": "request",
+        "at_ns": 10956268966257,
+        "id": 10956263134864,
+        "api": 1001,
+        "binary_len": 0
+      },
+      {
+        "type": "response",
+        "at_ns": 10956273589603,
+        "id": 10956263134864,
+        "api": 1001,
+        "binary_len": 146298,
+        "code": 0
+      },
+      {
+        "type": "request",
+        "at_ns": 10956466783411,
+        "id": 10956463962919,
+        "api": 1001,
+        "binary_len": 0
+      },
+      {
+        "type": "response",
+        "at_ns": 10956471356419,
+        "id": 10956463962919,
+        "api": 1001,
+        "binary_len": 145999,
+        "code": 0
+      },
+      {
+        "type": "request",
+        "at_ns": 10956675313810,
+        "id": 10956664601814,
+        "api": 1001,
+        "binary_len": 0
+      },
+      {
+        "type": "response",
+        "at_ns": 10956680803398,
+        "id": 10956664601814,
+        "api": 1001,
+        "binary_len": 146219,
+        "code": 0
+      },
+      {
+        "type": "request",
+        "at_ns": 10956874795541,
+        "id": 10956865405131,
+        "api": 1001,
+        "binary_len": 0
+      },
+      {
+        "type": "response",
+        "at_ns": 10956880116130,
+        "id": 10956865405131,
+        "api": 1001,
+        "binary_len": 146443,
+        "code": 0
+      },
+      {
+        "type": "request",
+        "at_ns": 10957073480057,
+        "id": 10957065940951,
+        "api": 1001,
+        "binary_len": 0
+      },
+      {
+        "type": "response",
+        "at_ns": 10957078092747,
+        "id": 10957065940951,
+        "api": 1001,
+        "binary_len": 146340,
+        "code": 0
+      },
+      {
+        "type": "request",
+        "at_ns": 10957271957845,
+        "id": 10957266578630,
+        "api": 1001,
+        "binary_len": 0
+      },
+      {
+        "type": "response",
+        "at_ns": 10957277806998,
+        "id": 10957266578630,
+        "api": 1001,
+        "binary_len": 146242,
+        "code": 0
+      },
+      {
+        "type": "request",
+        "at_ns": 10957482190262,
+        "id": 10957470338861,
+        "api": 1001,
+        "binary_len": 0
+      },
+      {
+        "type": "response",
+        "at_ns": 10957485563448,
+        "id": 10957470338861,
+        "api": 1001,
+        "binary_len": 146499,
+        "code": 0
+      },
+      {
+        "type": "request",
+        "at_ns": 10957678636931,
+        "id": 10957670727283,
+        "api": 1001,
+        "binary_len": 0
+      },
+      {
+        "type": "response",
+        "at_ns": 10957681847615,
+        "id": 10957670727283,
+        "api": 1001,
+        "binary_len": 146281,
+        "code": 0
+      },
+      {
+        "type": "request",
+        "at_ns": 10957874631680,
+        "id": 10957872279877,
+        "api": 1001,
+        "binary_len": 0
+      },
+      {
+        "type": "response",
+        "at_ns": 10957876788147,
+        "id": 10957872279877,
+        "api": 1001,
+        "binary_len": 146484,
+        "code": 0
+      },
+      {
+        "type": "request",
+        "at_ns": 10958079434703,
+        "id": 10958072978551,
+        "api": 1001,
+        "binary_len": 0
+      },
+      {
+        "type": "response",
+        "at_ns": 10958081913519,
+        "id": 10958072978551,
+        "api": 1001,
+        "binary_len": 146471,
+        "code": 0
+      },
+      {
+        "type": "request",
+        "at_ns": 10958284386373,
+        "id": 10958273968883,
+        "api": 1001,
+        "binary_len": 0
+      },
+      {
+        "type": "response",
+        "at_ns": 10958286383282,
+        "id": 10958273968883,
+        "api": 1001,
+        "binary_len": 146218,
+        "code": 0
+      },
+      {
+        "type": "request",
+        "at_ns": 10958478654558,
+        "id": 10958474810186,
+        "api": 1001,
+        "binary_len": 0
+      },
+      {
+        "type": "response",
+        "at_ns": 10958480701869,
+        "id": 10958474810186,
+        "api": 1001,
+        "binary_len": 146259,
+        "code": 0
+      },
+      {
+        "type": "request",
+        "at_ns": 10958683075039,
+        "id": 10958676529411,
+        "api": 1001,
+        "binary_len": 0
+      },
+      {
+        "type": "response",
+        "at_ns": 10958685154799,
+        "id": 10958676529411,
+        "api": 1001,
+        "binary_len": 146203,
+        "code": 0
+      },
+      {
+        "type": "request",
+        "at_ns": 10960187675930,
+        "id": 10960178619005,
+        "api": 1001,
+        "binary_len": 0
+      },
+      {
+        "type": "response",
+        "at_ns": 10960189727497,
+        "id": 10960178619005,
+        "api": 1001,
+        "binary_len": 146325,
+        "code": 0
+      },
+      {
+        "type": "request",
+        "at_ns": 10961684727762,
+        "id": 10961680798203,
+        "api": 1001,
+        "binary_len": 0
+      },
+      {
+        "type": "response",
+        "at_ns": 10961686849412,
+        "id": 10961680798203,
+        "api": 1001,
+        "binary_len": 146034,
+        "code": 0
+      },
+      {
+        "type": "request",
+        "at_ns": 10963189740092,
+        "id": 10963183009977,
+        "api": 1001,
+        "binary_len": 0
+      },
+      {
+        "type": "response",
+        "at_ns": 10963191763594,
+        "id": 10963183009977,
+        "api": 1001,
+        "binary_len": 146454,
+        "code": 0
+      },
+      {
+        "type": "request",
+        "at_ns": 10964687413585,
+        "id": 10964685090583,
+        "api": 1001,
+        "binary_len": 0
+      },
+      {
+        "type": "response",
+        "at_ns": 10964689520834,
+        "id": 10964685090583,
+        "api": 1001,
+        "binary_len": 146252,
+        "code": 0
+      },
+      {
+        "type": "request",
+        "at_ns": 10966193648899,
+        "id": 10966186855453,
+        "api": 1001,
+        "binary_len": 0
+      },
+      {
+        "type": "response",
+        "at_ns": 10966196260103,
+        "id": 10966186855453,
+        "api": 1001,
+        "binary_len": 146125,
+        "code": 0
+      },
+      {
+        "type": "request",
+        "at_ns": 10967700251299,
+        "id": 10967689116822,
+        "api": 1001,
+        "binary_len": 0
+      },
+      {
+        "type": "response",
+        "at_ns": 10967702842822,
+        "id": 10967689116822,
+        "api": 1001,
+        "binary_len": 146324,
+        "code": 0
+      },
+      {
+        "type": "request",
+        "at_ns": 10969195769304,
+        "id": 10969191961254,
+        "api": 1001,
+        "binary_len": 0
+      },
+      {
+        "type": "response",
+        "at_ns": 10969197812999,
+        "id": 10969191961254,
+        "api": 1001,
+        "binary_len": 146212,
+        "code": 0
+      },
+      {
+        "type": "request",
+        "at_ns": 10970700407917,
+        "id": 10970695583987,
+        "api": 1001,
+        "binary_len": 0
+      },
+      {
+        "type": "response",
+        "at_ns": 10970702508062,
+        "id": 10970695583987,
+        "api": 1001,
+        "binary_len": 146587,
+        "code": 0
+      },
+      {
+        "type": "request",
+        "at_ns": 10972208304927,
+        "id": 10972197711399,
+        "api": 1001,
+        "binary_len": 0
+      },
+      {
+        "type": "response",
+        "at_ns": 10972212876655,
+        "id": 10972197711399,
+        "api": 1001,
+        "binary_len": 146392,
+        "code": 0
+      },
+      {
+        "type": "request",
+        "at_ns": 10973709270982,
+        "id": 10973699762680,
+        "api": 1001,
+        "binary_len": 0
+      },
+      {
+        "type": "response",
+        "at_ns": 10973711296852,
+        "id": 10973699762680,
+        "api": 1001,
+        "binary_len": 146480,
+        "code": 0
+      },
+      {
+        "type": "request",
+        "at_ns": 10975203507562,
+        "id": 10975201651394,
+        "api": 1001,
+        "binary_len": 0
+      },
+      {
+        "type": "response",
+        "at_ns": 10975205576346,
+        "id": 10975201651394,
+        "api": 1001,
+        "binary_len": 146470,
+        "code": 0
+      }
+    ]
+  },
+  "same_process_polled": {
+    "start_at": "2026-10-21T04:44:58.061509+00:00",
+    "end_at": "2026-10-21T04:47:58.056045+00:00",
+    "sample_count": 181,
+    "live_samples": 105,
+    "state_samples_with_error": 81,
+    "attempts": 487,
+    "successes": 424,
+    "timeouts": 63,
+    "max_camera_age_ms": 12019,
+    "max_body_age_ms": 55,
+    "mac_image_samples": 37,
+    "mac_image_successes": 20,
+    "mac_image_unique_hashes": 20,
+    "raw_source_sha256": "b45c5e0c1afcc916c5a138b7227a117a95c5593d2938af9bb7ec4e424250c330"
+  },
+  "isolated_probe": {
+    "window_s": 60.030602099001044,
+    "attempts": 300,
+    "successes": 300,
+    "max_request_ms": 21.1,
+    "rows": [
+      {
+        "elapsed": 0.0,
+        "code": 0,
+        "bytes": 147568,
+        "request_ms": 5.8
+      },
+      {
+        "elapsed": 0.2,
+        "code": 0,
+        "bytes": 147356,
+        "request_ms": 4.5
+      },
+      {
+        "elapsed": 0.4,
+        "code": 0,
+        "bytes": 147343,
+        "request_ms": 4.3
+      },
+      {
+        "elapsed": 0.6,
+        "code": 0,
+        "bytes": 147464,
+        "request_ms": 4.0
+      },
+      {
+        "elapsed": 0.8,
+        "code": 0,
+        "bytes": 147394,
+        "request_ms": 3.9
+      },
+      {
+        "elapsed": 1.0,
+        "code": 0,
+        "bytes": 147631,
+        "request_ms": 4.0
+      },
+      {
+        "elapsed": 1.201,
+        "code": 0,
+        "bytes": 147234,
+        "request_ms": 4.2
+      },
+      {
+        "elapsed": 1.401,
+        "code": 0,
+        "bytes": 147619,
+        "request_ms": 4.0
+      },
+      {
+        "elapsed": 1.601,
+        "code": 0,
+        "bytes": 147529,
+        "request_ms": 4.0
+      },
+      {
+        "elapsed": 1.801,
+        "code": 0,
+        "bytes": 147348,
+        "request_ms": 4.2
+      },
+      {
+        "elapsed": 2.001,
+        "code": 0,
+        "bytes": 147359,
+        "request_ms": 4.3
+      },
+      {
+        "elapsed": 2.201,
+        "code": 0,
+        "bytes": 147429,
+        "request_ms": 4.2
+      },
+      {
+        "elapsed": 2.401,
+        "code": 0,
+        "bytes": 147506,
+        "request_ms": 4.2
+      },
+      {
+        "elapsed": 2.601,
+        "code": 0,
+        "bytes": 147516,
+        "request_ms": 5.2
+      },
+      {
+        "elapsed": 2.801,
+        "code": 0,
+        "bytes": 147590,
+        "request_ms": 3.6
+      },
+      {
+        "elapsed": 3.001,
+        "code": 0,
+        "bytes": 147427,
+        "request_ms": 3.2
+      },
+      {
+        "elapsed": 3.201,
+        "code": 0,
+        "bytes": 147421,
+        "request_ms": 3.4
+      },
+      {
+        "elapsed": 3.401,
+        "code": 0,
+        "bytes": 147757,
+        "request_ms": 3.2
+      },
+      {
+        "elapsed": 3.602,
+        "code": 0,
+        "bytes": 147347,
+        "request_ms": 6.2
+      },
+      {
+        "elapsed": 3.802,
+        "code": 0,
+        "bytes": 147389,
+        "request_ms": 6.6
+      },
+      {
+        "elapsed": 4.002,
+        "code": 0,
+        "bytes": 147442,
+        "request_ms": 4.1
+      },
+      {
+        "elapsed": 4.202,
+        "code": 0,
+        "bytes": 147141,
+        "request_ms": 8.7
+      },
+      {
+        "elapsed": 4.402,
+        "code": 0,
+        "bytes": 147407,
+        "request_ms": 4.7
+      },
+      {
+        "elapsed": 4.602,
+        "code": 0,
+        "bytes": 147325,
+        "request_ms": 3.6
+      },
+      {
+        "elapsed": 4.802,
+        "code": 0,
+        "bytes": 147453,
+        "request_ms": 6.4
+      },
+      {
+        "elapsed": 5.002,
+        "code": 0,
+        "bytes": 147573,
+        "request_ms": 5.8
+      },
+      {
+        "elapsed": 5.202,
+        "code": 0,
+        "bytes": 147515,
+        "request_ms": 5.9
+      },
+      {
+        "elapsed": 5.402,
+        "code": 0,
+        "bytes": 147190,
+        "request_ms": 5.1
+      },
+      {
+        "elapsed": 5.603,
+        "code": 0,
+        "bytes": 147509,
+        "request_ms": 6.0
+      },
+      {
+        "elapsed": 5.803,
+        "code": 0,
+        "bytes": 147505,
+        "request_ms": 5.9
+      },
+      {
+        "elapsed": 6.003,
+        "code": 0,
+        "bytes": 147663,
+        "request_ms": 8.7
+      },
+      {
+        "elapsed": 6.203,
+        "code": 0,
+        "bytes": 147569,
+        "request_ms": 8.5
+      },
+      {
+        "elapsed": 6.403,
+        "code": 0,
+        "bytes": 147318,
+        "request_ms": 8.7
+      },
+      {
+        "elapsed": 6.603,
+        "code": 0,
+        "bytes": 147619,
+        "request_ms": 8.9
+      },
+      {
+        "elapsed": 6.803,
+        "code": 0,
+        "bytes": 147684,
+        "request_ms": 8.6
+      },
+      {
+        "elapsed": 7.003,
+        "code": 0,
+        "bytes": 147262,
+        "request_ms": 8.6
+      },
+      {
+        "elapsed": 7.203,
+        "code": 0,
+        "bytes": 147795,
+        "request_ms": 4.2
+      },
+      {
+        "elapsed": 7.403,
+        "code": 0,
+        "bytes": 147645,
+        "request_ms": 8.0
+      },
+      {
+        "elapsed": 7.604,
+        "code": 0,
+        "bytes": 147447,
+        "request_ms": 8.1
+      },
+      {
+        "elapsed": 7.804,
+        "code": 0,
+        "bytes": 147306,
+        "request_ms": 8.1
+      },
+      {
+        "elapsed": 8.004,
+        "code": 0,
+        "bytes": 147518,
+        "request_ms": 6.1
+      },
+      {
+        "elapsed": 8.204,
+        "code": 0,
+        "bytes": 147412,
+        "request_ms": 4.8
+      },
+      {
+        "elapsed": 8.404,
+        "code": 0,
+        "bytes": 147332,
+        "request_ms": 8.8
+      },
+      {
+        "elapsed": 8.604,
+        "code": 0,
+        "bytes": 147339,
+        "request_ms": 8.5
+      },
+      {
+        "elapsed": 8.804,
+        "code": 0,
+        "bytes": 147510,
+        "request_ms": 9.3
+      },
+      {
+        "elapsed": 9.004,
+        "code": 0,
+        "bytes": 147416,
+        "request_ms": 4.1
+      },
+      {
+        "elapsed": 9.204,
+        "code": 0,
+        "bytes": 147391,
+        "request_ms": 9.3
+      },
+      {
+        "elapsed": 9.404,
+        "code": 0,
+        "bytes": 147369,
+        "request_ms": 10.2
+      },
+      {
+        "elapsed": 9.605,
+        "code": 0,
+        "bytes": 147624,
+        "request_ms": 6.2
+      },
+      {
+        "elapsed": 9.805,
+        "code": 0,
+        "bytes": 147446,
+        "request_ms": 8.1
+      },
+      {
+        "elapsed": 10.005,
+        "code": 0,
+        "bytes": 147433,
+        "request_ms": 8.1
+      },
+      {
+        "elapsed": 10.205,
+        "code": 0,
+        "bytes": 147379,
+        "request_ms": 4.0
+      },
+      {
+        "elapsed": 10.405,
+        "code": 0,
+        "bytes": 147529,
+        "request_ms": 3.9
+      },
+      {
+        "elapsed": 10.605,
+        "code": 0,
+        "bytes": 147752,
+        "request_ms": 4.8
+      },
+      {
+        "elapsed": 10.805,
+        "code": 0,
+        "bytes": 147575,
+        "request_ms": 4.3
+      },
+      {
+        "elapsed": 11.005,
+        "code": 0,
+        "bytes": 147601,
+        "request_ms": 5.8
+      },
+      {
+        "elapsed": 11.205,
+        "code": 0,
+        "bytes": 147392,
+        "request_ms": 4.7
+      },
+      {
+        "elapsed": 11.405,
+        "code": 0,
+        "bytes": 147656,
+        "request_ms": 6.5
+      },
+      {
+        "elapsed": 11.605,
+        "code": 0,
+        "bytes": 147332,
+        "request_ms": 5.9
+      },
+      {
+        "elapsed": 11.806,
+        "code": 0,
+        "bytes": 147641,
+        "request_ms": 4.9
+      },
+      {
+        "elapsed": 12.006,
+        "code": 0,
+        "bytes": 147606,
+        "request_ms": 8.6
+      },
+      {
+        "elapsed": 12.206,
+        "code": 0,
+        "bytes": 147389,
+        "request_ms": 8.7
+      },
+      {
+        "elapsed": 12.406,
+        "code": 0,
+        "bytes": 147132,
+        "request_ms": 8.8
+      },
+      {
+        "elapsed": 12.606,
+        "code": 0,
+        "bytes": 147401,
+        "request_ms": 8.5
+      },
+      {
+        "elapsed": 12.806,
+        "code": 0,
+        "bytes": 147433,
+        "request_ms": 9.2
+      },
+      {
+        "elapsed": 13.006,
+        "code": 0,
+        "bytes": 147308,
+        "request_ms": 4.2
+      },
+      {
+        "elapsed": 13.206,
+        "code": 0,
+        "bytes": 147410,
+        "request_ms": 8.8
+      },
+      {
+        "elapsed": 13.406,
+        "code": 0,
+        "bytes": 147540,
+        "request_ms": 8.7
+      },
+      {
+        "elapsed": 13.606,
+        "code": 0,
+        "bytes": 147455,
+        "request_ms": 5.2
+      },
+      {
+        "elapsed": 13.807,
+        "code": 0,
+        "bytes": 147526,
+        "request_ms": 3.4
+      },
+      {
+        "elapsed": 14.007,
+        "code": 0,
+        "bytes": 147508,
+        "request_ms": 4.9
+      },
+      {
+        "elapsed": 14.207,
+        "code": 0,
+        "bytes": 147504,
+        "request_ms": 3.9
+      },
+      {
+        "elapsed": 14.407,
+        "code": 0,
+        "bytes": 147357,
+        "request_ms": 7.1
+      },
+      {
+        "elapsed": 14.607,
+        "code": 0,
+        "bytes": 147461,
+        "request_ms": 8.5
+      },
+      {
+        "elapsed": 14.807,
+        "code": 0,
+        "bytes": 147458,
+        "request_ms": 5.6
+      },
+      {
+        "elapsed": 15.007,
+        "code": 0,
+        "bytes": 147733,
+        "request_ms": 4.7
+      },
+      {
+        "elapsed": 15.207,
+        "code": 0,
+        "bytes": 147449,
+        "request_ms": 8.7
+      },
+      {
+        "elapsed": 15.407,
+        "code": 0,
+        "bytes": 147419,
+        "request_ms": 8.7
+      },
+      {
+        "elapsed": 15.607,
+        "code": 0,
+        "bytes": 147392,
+        "request_ms": 4.4
+      },
+      {
+        "elapsed": 15.808,
+        "code": 0,
+        "bytes": 147108,
+        "request_ms": 4.5
+      },
+      {
+        "elapsed": 16.008,
+        "code": 0,
+        "bytes": 147575,
+        "request_ms": 9.5
+      },
+      {
+        "elapsed": 16.208,
+        "code": 0,
+        "bytes": 147501,
+        "request_ms": 8.7
+      },
+      {
+        "elapsed": 16.408,
+        "code": 0,
+        "bytes": 147359,
+        "request_ms": 3.9
+      },
+      {
+        "elapsed": 16.608,
+        "code": 0,
+        "bytes": 147463,
+        "request_ms": 3.3
+      },
+      {
+        "elapsed": 16.808,
+        "code": 0,
+        "bytes": 147339,
+        "request_ms": 3.1
+      },
+      {
+        "elapsed": 17.008,
+        "code": 0,
+        "bytes": 147120,
+        "request_ms": 3.3
+      },
+      {
+        "elapsed": 17.208,
+        "code": 0,
+        "bytes": 147749,
+        "request_ms": 3.6
+      },
+      {
+        "elapsed": 17.408,
+        "code": 0,
+        "bytes": 147499,
+        "request_ms": 6.2
+      },
+      {
+        "elapsed": 17.608,
+        "code": 0,
+        "bytes": 147095,
+        "request_ms": 3.3
+      },
+      {
+        "elapsed": 17.808,
+        "code": 0,
+        "bytes": 147021,
+        "request_ms": 11.0
+      },
+      {
+        "elapsed": 18.009,
+        "code": 0,
+        "bytes": 147433,
+        "request_ms": 4.1
+      },
+      {
+        "elapsed": 18.209,
+        "code": 0,
+        "bytes": 147665,
+        "request_ms": 4.6
+      },
+      {
+        "elapsed": 18.409,
+        "code": 0,
+        "bytes": 147378,
+        "request_ms": 4.2
+      },
+      {
+        "elapsed": 18.609,
+        "code": 0,
+        "bytes": 147664,
+        "request_ms": 3.1
+      },
+      {
+        "elapsed": 18.809,
+        "code": 0,
+        "bytes": 147422,
+        "request_ms": 3.3
+      },
+      {
+        "elapsed": 19.009,
+        "code": 0,
+        "bytes": 147443,
+        "request_ms": 3.3
+      },
+      {
+        "elapsed": 19.209,
+        "code": 0,
+        "bytes": 147330,
+        "request_ms": 4.0
+      },
+      {
+        "elapsed": 19.409,
+        "code": 0,
+        "bytes": 147219,
+        "request_ms": 3.1
+      },
+      {
+        "elapsed": 19.609,
+        "code": 0,
+        "bytes": 147395,
+        "request_ms": 3.4
+      },
+      {
+        "elapsed": 19.809,
+        "code": 0,
+        "bytes": 147510,
+        "request_ms": 3.5
+      },
+      {
+        "elapsed": 20.009,
+        "code": 0,
+        "bytes": 147059,
+        "request_ms": 10.2
+      },
+      {
+        "elapsed": 20.209,
+        "code": 0,
+        "bytes": 147063,
+        "request_ms": 4.3
+      },
+      {
+        "elapsed": 20.41,
+        "code": 0,
+        "bytes": 147432,
+        "request_ms": 4.2
+      },
+      {
+        "elapsed": 20.61,
+        "code": 0,
+        "bytes": 147426,
+        "request_ms": 4.1
+      },
+      {
+        "elapsed": 20.81,
+        "code": 0,
+        "bytes": 147452,
+        "request_ms": 4.4
+      },
+      {
+        "elapsed": 21.01,
+        "code": 0,
+        "bytes": 147424,
+        "request_ms": 10.4
+      },
+      {
+        "elapsed": 21.21,
+        "code": 0,
+        "bytes": 147182,
+        "request_ms": 5.3
+      },
+      {
+        "elapsed": 21.41,
+        "code": 0,
+        "bytes": 147436,
+        "request_ms": 4.2
+      },
+      {
+        "elapsed": 21.61,
+        "code": 0,
+        "bytes": 147776,
+        "request_ms": 3.4
+      },
+      {
+        "elapsed": 21.81,
+        "code": 0,
+        "bytes": 147467,
+        "request_ms": 3.3
+      },
+      {
+        "elapsed": 22.01,
+        "code": 0,
+        "bytes": 147614,
+        "request_ms": 6.9
+      },
+      {
+        "elapsed": 22.21,
+        "code": 0,
+        "bytes": 147294,
+        "request_ms": 6.2
+      },
+      {
+        "elapsed": 22.41,
+        "code": 0,
+        "bytes": 147413,
+        "request_ms": 3.2
+      },
+      {
+        "elapsed": 22.611,
+        "code": 0,
+        "bytes": 147093,
+        "request_ms": 3.3
+      },
+      {
+        "elapsed": 22.811,
+        "code": 0,
+        "bytes": 147323,
+        "request_ms": 4.6
+      },
+      {
+        "elapsed": 23.011,
+        "code": 0,
+        "bytes": 147680,
+        "request_ms": 4.4
+      },
+      {
+        "elapsed": 23.211,
+        "code": 0,
+        "bytes": 147237,
+        "request_ms": 4.7
+      },
+      {
+        "elapsed": 23.411,
+        "code": 0,
+        "bytes": 147375,
+        "request_ms": 4.6
+      },
+      {
+        "elapsed": 23.611,
+        "code": 0,
+        "bytes": 147441,
+        "request_ms": 3.3
+      },
+      {
+        "elapsed": 23.811,
+        "code": 0,
+        "bytes": 147403,
+        "request_ms": 3.2
+      },
+      {
+        "elapsed": 24.011,
+        "code": 0,
+        "bytes": 147414,
+        "request_ms": 3.1
+      },
+      {
+        "elapsed": 24.211,
+        "code": 0,
+        "bytes": 147253,
+        "request_ms": 3.8
+      },
+      {
+        "elapsed": 24.411,
+        "code": 0,
+        "bytes": 147421,
+        "request_ms": 9.5
+      },
+      {
+        "elapsed": 24.611,
+        "code": 0,
+        "bytes": 147247,
+        "request_ms": 5.5
+      },
+      {
+        "elapsed": 24.811,
+        "code": 0,
+        "bytes": 147238,
+        "request_ms": 10.1
+      },
+      {
+        "elapsed": 25.012,
+        "code": 0,
+        "bytes": 147307,
+        "request_ms": 4.1
+      },
+      {
+        "elapsed": 25.212,
+        "code": 0,
+        "bytes": 147409,
+        "request_ms": 5.2
+      },
+      {
+        "elapsed": 25.412,
+        "code": 0,
+        "bytes": 147349,
+        "request_ms": 4.3
+      },
+      {
+        "elapsed": 25.612,
+        "code": 0,
+        "bytes": 147254,
+        "request_ms": 2.9
+      },
+      {
+        "elapsed": 25.812,
+        "code": 0,
+        "bytes": 147227,
+        "request_ms": 3.0
+      },
+      {
+        "elapsed": 26.012,
+        "code": 0,
+        "bytes": 147338,
+        "request_ms": 3.3
+      },
+      {
+        "elapsed": 26.212,
+        "code": 0,
+        "bytes": 147536,
+        "request_ms": 4.1
+      },
+      {
+        "elapsed": 26.412,
+        "code": 0,
+        "bytes": 147382,
+        "request_ms": 3.2
+      },
+      {
+        "elapsed": 26.612,
+        "code": 0,
+        "bytes": 147154,
+        "request_ms": 6.5
+      },
+      {
+        "elapsed": 26.812,
+        "code": 0,
+        "bytes": 147789,
+        "request_ms": 18.8
+      },
+      {
+        "elapsed": 27.012,
+        "code": 0,
+        "bytes": 147274,
+        "request_ms": 13.2
+      },
+      {
+        "elapsed": 27.213,
+        "code": 0,
+        "bytes": 147586,
+        "request_ms": 12.9
+      },
+      {
+        "elapsed": 27.413,
+        "code": 0,
+        "bytes": 147526,
+        "request_ms": 15.2
+      },
+      {
+        "elapsed": 27.613,
+        "code": 0,
+        "bytes": 147303,
+        "request_ms": 4.5
+      },
+      {
+        "elapsed": 27.813,
+        "code": 0,
+        "bytes": 147545,
+        "request_ms": 3.8
+      },
+      {
+        "elapsed": 28.013,
+        "code": 0,
+        "bytes": 147117,
+        "request_ms": 3.1
+      },
+      {
+        "elapsed": 28.213,
+        "code": 0,
+        "bytes": 147312,
+        "request_ms": 6.9
+      },
+      {
+        "elapsed": 28.413,
+        "code": 0,
+        "bytes": 147262,
+        "request_ms": 6.1
+      },
+      {
+        "elapsed": 28.613,
+        "code": 0,
+        "bytes": 147743,
+        "request_ms": 6.4
+      },
+      {
+        "elapsed": 28.813,
+        "code": 0,
+        "bytes": 147492,
+        "request_ms": 3.5
+      },
+      {
+        "elapsed": 29.013,
+        "code": 0,
+        "bytes": 147437,
+        "request_ms": 8.1
+      },
+      {
+        "elapsed": 29.213,
+        "code": 0,
+        "bytes": 147178,
+        "request_ms": 5.1
+      },
+      {
+        "elapsed": 29.414,
+        "code": 0,
+        "bytes": 147344,
+        "request_ms": 4.2
+      },
+      {
+        "elapsed": 29.614,
+        "code": 0,
+        "bytes": 147327,
+        "request_ms": 4.2
+      },
+      {
+        "elapsed": 29.814,
+        "code": 0,
+        "bytes": 147586,
+        "request_ms": 8.8
+      },
+      {
+        "elapsed": 30.014,
+        "code": 0,
+        "bytes": 147353,
+        "request_ms": 13.9
+      },
+      {
+        "elapsed": 30.214,
+        "code": 0,
+        "bytes": 147043,
+        "request_ms": 4.9
+      },
+      {
+        "elapsed": 30.414,
+        "code": 0,
+        "bytes": 147313,
+        "request_ms": 2.9
+      },
+      {
+        "elapsed": 30.614,
+        "code": 0,
+        "bytes": 147520,
+        "request_ms": 5.6
+      },
+      {
+        "elapsed": 30.814,
+        "code": 0,
+        "bytes": 147302,
+        "request_ms": 3.3
+      },
+      {
+        "elapsed": 31.014,
+        "code": 0,
+        "bytes": 147244,
+        "request_ms": 3.1
+      },
+      {
+        "elapsed": 31.214,
+        "code": 0,
+        "bytes": 147289,
+        "request_ms": 4.3
+      },
+      {
+        "elapsed": 31.415,
+        "code": 0,
+        "bytes": 147517,
+        "request_ms": 9.6
+      },
+      {
+        "elapsed": 31.615,
+        "code": 0,
+        "bytes": 147282,
+        "request_ms": 3.2
+      },
+      {
+        "elapsed": 31.815,
+        "code": 0,
+        "bytes": 147382,
+        "request_ms": 3.1
+      },
+      {
+        "elapsed": 32.015,
+        "code": 0,
+        "bytes": 147410,
+        "request_ms": 11.3
+      },
+      {
+        "elapsed": 32.215,
+        "code": 0,
+        "bytes": 147479,
+        "request_ms": 6.4
+      },
+      {
+        "elapsed": 32.415,
+        "code": 0,
+        "bytes": 147679,
+        "request_ms": 6.9
+      },
+      {
+        "elapsed": 32.615,
+        "code": 0,
+        "bytes": 147089,
+        "request_ms": 3.5
+      },
+      {
+        "elapsed": 32.815,
+        "code": 0,
+        "bytes": 147204,
+        "request_ms": 8.0
+      },
+      {
+        "elapsed": 33.015,
+        "code": 0,
+        "bytes": 147336,
+        "request_ms": 13.1
+      },
+      {
+        "elapsed": 33.215,
+        "code": 0,
+        "bytes": 147353,
+        "request_ms": 4.8
+      },
+      {
+        "elapsed": 33.415,
+        "code": 0,
+        "bytes": 147442,
+        "request_ms": 4.6
+      },
+      {
+        "elapsed": 33.616,
+        "code": 0,
+        "bytes": 147207,
+        "request_ms": 14.6
+      },
+      {
+        "elapsed": 33.816,
+        "code": 0,
+        "bytes": 147357,
+        "request_ms": 13.2
+      },
+      {
+        "elapsed": 34.016,
+        "code": 0,
+        "bytes": 147467,
+        "request_ms": 10.1
+      },
+      {
+        "elapsed": 34.216,
+        "code": 0,
+        "bytes": 147442,
+        "request_ms": 4.2
+      },
+      {
+        "elapsed": 34.416,
+        "code": 0,
+        "bytes": 147136,
+        "request_ms": 8.7
+      },
+      {
+        "elapsed": 34.616,
+        "code": 0,
+        "bytes": 147327,
+        "request_ms": 9.4
+      },
+      {
+        "elapsed": 34.816,
+        "code": 0,
+        "bytes": 147322,
+        "request_ms": 3.3
+      },
+      {
+        "elapsed": 35.016,
+        "code": 0,
+        "bytes": 147072,
+        "request_ms": 12.8
+      },
+      {
+        "elapsed": 35.216,
+        "code": 0,
+        "bytes": 147240,
+        "request_ms": 4.2
+      },
+      {
+        "elapsed": 35.416,
+        "code": 0,
+        "bytes": 147240,
+        "request_ms": 4.8
+      },
+      {
+        "elapsed": 35.616,
+        "code": 0,
+        "bytes": 147345,
+        "request_ms": 5.6
+      },
+      {
+        "elapsed": 35.817,
+        "code": 0,
+        "bytes": 147375,
+        "request_ms": 5.6
+      },
+      {
+        "elapsed": 36.017,
+        "code": 0,
+        "bytes": 147486,
+        "request_ms": 5.5
+      },
+      {
+        "elapsed": 36.217,
+        "code": 0,
+        "bytes": 147282,
+        "request_ms": 4.6
+      },
+      {
+        "elapsed": 36.417,
+        "code": 0,
+        "bytes": 147624,
+        "request_ms": 8.0
+      },
+      {
+        "elapsed": 36.617,
+        "code": 0,
+        "bytes": 147447,
+        "request_ms": 7.6
+      },
+      {
+        "elapsed": 36.817,
+        "code": 0,
+        "bytes": 147385,
+        "request_ms": 13.3
+      },
+      {
+        "elapsed": 37.017,
+        "code": 0,
+        "bytes": 147334,
+        "request_ms": 15.1
+      },
+      {
+        "elapsed": 37.217,
+        "code": 0,
+        "bytes": 147231,
+        "request_ms": 5.2
+      },
+      {
+        "elapsed": 37.417,
+        "code": 0,
+        "bytes": 147223,
+        "request_ms": 5.1
+      },
+      {
+        "elapsed": 37.617,
+        "code": 0,
+        "bytes": 147450,
+        "request_ms": 5.6
+      },
+      {
+        "elapsed": 37.818,
+        "code": 0,
+        "bytes": 147659,
+        "request_ms": 8.0
+      },
+      {
+        "elapsed": 38.018,
+        "code": 0,
+        "bytes": 147383,
+        "request_ms": 13.6
+      },
+      {
+        "elapsed": 38.218,
+        "code": 0,
+        "bytes": 147470,
+        "request_ms": 4.0
+      },
+      {
+        "elapsed": 38.418,
+        "code": 0,
+        "bytes": 147230,
+        "request_ms": 10.3
+      },
+      {
+        "elapsed": 38.618,
+        "code": 0,
+        "bytes": 147517,
+        "request_ms": 5.6
+      },
+      {
+        "elapsed": 38.818,
+        "code": 0,
+        "bytes": 147616,
+        "request_ms": 11.2
+      },
+      {
+        "elapsed": 39.018,
+        "code": 0,
+        "bytes": 147336,
+        "request_ms": 5.2
+      },
+      {
+        "elapsed": 39.218,
+        "code": 0,
+        "bytes": 147321,
+        "request_ms": 9.3
+      },
+      {
+        "elapsed": 39.418,
+        "code": 0,
+        "bytes": 147302,
+        "request_ms": 11.4
+      },
+      {
+        "elapsed": 39.618,
+        "code": 0,
+        "bytes": 147378,
+        "request_ms": 4.1
+      },
+      {
+        "elapsed": 39.819,
+        "code": 0,
+        "bytes": 146915,
+        "request_ms": 11.7
+      },
+      {
+        "elapsed": 40.019,
+        "code": 0,
+        "bytes": 147433,
+        "request_ms": 5.2
+      },
+      {
+        "elapsed": 40.219,
+        "code": 0,
+        "bytes": 147393,
+        "request_ms": 15.6
+      },
+      {
+        "elapsed": 40.419,
+        "code": 0,
+        "bytes": 147427,
+        "request_ms": 6.2
+      },
+      {
+        "elapsed": 40.619,
+        "code": 0,
+        "bytes": 147277,
+        "request_ms": 9.7
+      },
+      {
+        "elapsed": 40.819,
+        "code": 0,
+        "bytes": 147202,
+        "request_ms": 12.6
+      },
+      {
+        "elapsed": 41.019,
+        "code": 0,
+        "bytes": 147293,
+        "request_ms": 5.8
+      },
+      {
+        "elapsed": 41.22,
+        "code": 0,
+        "bytes": 147371,
+        "request_ms": 5.4
+      },
+      {
+        "elapsed": 41.42,
+        "code": 0,
+        "bytes": 147212,
+        "request_ms": 12.9
+      },
+      {
+        "elapsed": 41.621,
+        "code": 0,
+        "bytes": 147096,
+        "request_ms": 11.6
+      },
+      {
+        "elapsed": 41.821,
+        "code": 0,
+        "bytes": 147251,
+        "request_ms": 9.5
+      },
+      {
+        "elapsed": 42.021,
+        "code": 0,
+        "bytes": 147420,
+        "request_ms": 4.3
+      },
+      {
+        "elapsed": 42.221,
+        "code": 0,
+        "bytes": 147079,
+        "request_ms": 16.0
+      },
+      {
+        "elapsed": 42.421,
+        "code": 0,
+        "bytes": 147113,
+        "request_ms": 11.7
+      },
+      {
+        "elapsed": 42.621,
+        "code": 0,
+        "bytes": 147239,
+        "request_ms": 4.4
+      },
+      {
+        "elapsed": 42.821,
+        "code": 0,
+        "bytes": 147188,
+        "request_ms": 8.9
+      },
+      {
+        "elapsed": 43.021,
+        "code": 0,
+        "bytes": 147701,
+        "request_ms": 8.6
+      },
+      {
+        "elapsed": 43.221,
+        "code": 0,
+        "bytes": 147044,
+        "request_ms": 8.7
+      },
+      {
+        "elapsed": 43.421,
+        "code": 0,
+        "bytes": 147254,
+        "request_ms": 6.3
+      },
+      {
+        "elapsed": 43.622,
+        "code": 0,
+        "bytes": 147216,
+        "request_ms": 4.1
+      },
+      {
+        "elapsed": 43.822,
+        "code": 0,
+        "bytes": 147413,
+        "request_ms": 4.7
+      },
+      {
+        "elapsed": 44.022,
+        "code": 0,
+        "bytes": 147395,
+        "request_ms": 21.1
+      },
+      {
+        "elapsed": 44.222,
+        "code": 0,
+        "bytes": 147458,
+        "request_ms": 8.9
+      },
+      {
+        "elapsed": 44.422,
+        "code": 0,
+        "bytes": 147256,
+        "request_ms": 9.2
+      },
+      {
+        "elapsed": 44.622,
+        "code": 0,
+        "bytes": 147396,
+        "request_ms": 5.6
+      },
+      {
+        "elapsed": 44.822,
+        "code": 0,
+        "bytes": 147399,
+        "request_ms": 3.8
+      },
+      {
+        "elapsed": 45.022,
+        "code": 0,
+        "bytes": 147716,
+        "request_ms": 4.1
+      },
+      {
+        "elapsed": 45.222,
+        "code": 0,
+        "bytes": 147510,
+        "request_ms": 4.2
+      },
+      {
+        "elapsed": 45.422,
+        "code": 0,
+        "bytes": 147434,
+        "request_ms": 4.7
+      },
+      {
+        "elapsed": 45.622,
+        "code": 0,
+        "bytes": 147419,
+        "request_ms": 5.1
+      },
+      {
+        "elapsed": 45.823,
+        "code": 0,
+        "bytes": 147026,
+        "request_ms": 3.5
+      },
+      {
+        "elapsed": 46.023,
+        "code": 0,
+        "bytes": 147365,
+        "request_ms": 4.0
+      },
+      {
+        "elapsed": 46.223,
+        "code": 0,
+        "bytes": 147486,
+        "request_ms": 6.8
+      },
+      {
+        "elapsed": 46.423,
+        "code": 0,
+        "bytes": 147415,
+        "request_ms": 6.3
+      },
+      {
+        "elapsed": 46.623,
+        "code": 0,
+        "bytes": 147474,
+        "request_ms": 3.8
+      },
+      {
+        "elapsed": 46.823,
+        "code": 0,
+        "bytes": 147128,
+        "request_ms": 3.5
+      },
+      {
+        "elapsed": 47.023,
+        "code": 0,
+        "bytes": 147138,
+        "request_ms": 4.6
+      },
+      {
+        "elapsed": 47.223,
+        "code": 0,
+        "bytes": 147236,
+        "request_ms": 6.2
+      },
+      {
+        "elapsed": 47.423,
+        "code": 0,
+        "bytes": 147097,
+        "request_ms": 8.9
+      },
+      {
+        "elapsed": 47.623,
+        "code": 0,
+        "bytes": 147349,
+        "request_ms": 9.4
+      },
+      {
+        "elapsed": 47.824,
+        "code": 0,
+        "bytes": 147215,
+        "request_ms": 8.0
+      },
+      {
+        "elapsed": 48.024,
+        "code": 0,
+        "bytes": 147357,
+        "request_ms": 13.4
+      },
+      {
+        "elapsed": 48.224,
+        "code": 0,
+        "bytes": 147271,
+        "request_ms": 4.9
+      },
+      {
+        "elapsed": 48.424,
+        "code": 0,
+        "bytes": 147524,
+        "request_ms": 4.0
+      },
+      {
+        "elapsed": 48.624,
+        "code": 0,
+        "bytes": 147302,
+        "request_ms": 2.9
+      },
+      {
+        "elapsed": 48.824,
+        "code": 0,
+        "bytes": 147260,
+        "request_ms": 5.3
+      },
+      {
+        "elapsed": 49.024,
+        "code": 0,
+        "bytes": 147455,
+        "request_ms": 6.5
+      },
+      {
+        "elapsed": 49.224,
+        "code": 0,
+        "bytes": 147328,
+        "request_ms": 4.7
+      },
+      {
+        "elapsed": 49.424,
+        "code": 0,
+        "bytes": 147308,
+        "request_ms": 5.7
+      },
+      {
+        "elapsed": 49.624,
+        "code": 0,
+        "bytes": 147281,
+        "request_ms": 7.5
+      },
+      {
+        "elapsed": 49.824,
+        "code": 0,
+        "bytes": 147018,
+        "request_ms": 14.1
+      },
+      {
+        "elapsed": 50.025,
+        "code": 0,
+        "bytes": 147519,
+        "request_ms": 11.5
+      },
+      {
+        "elapsed": 50.225,
+        "code": 0,
+        "bytes": 147426,
+        "request_ms": 5.4
+      },
+      {
+        "elapsed": 50.425,
+        "code": 0,
+        "bytes": 147306,
+        "request_ms": 12.3
+      },
+      {
+        "elapsed": 50.625,
+        "code": 0,
+        "bytes": 147287,
+        "request_ms": 3.0
+      },
+      {
+        "elapsed": 50.825,
+        "code": 0,
+        "bytes": 147299,
+        "request_ms": 6.1
+      },
+      {
+        "elapsed": 51.025,
+        "code": 0,
+        "bytes": 147389,
+        "request_ms": 10.7
+      },
+      {
+        "elapsed": 51.225,
+        "code": 0,
+        "bytes": 147347,
+        "request_ms": 4.7
+      },
+      {
+        "elapsed": 51.425,
+        "code": 0,
+        "bytes": 147303,
+        "request_ms": 3.3
+      },
+      {
+        "elapsed": 51.625,
+        "code": 0,
+        "bytes": 147243,
+        "request_ms": 4.2
+      },
+      {
+        "elapsed": 51.825,
+        "code": 0,
+        "bytes": 147337,
+        "request_ms": 5.7
+      },
+      {
+        "elapsed": 52.026,
+        "code": 0,
+        "bytes": 147123,
+        "request_ms": 4.2
+      },
+      {
+        "elapsed": 52.226,
+        "code": 0,
+        "bytes": 147238,
+        "request_ms": 4.6
+      },
+      {
+        "elapsed": 52.426,
+        "code": 0,
+        "bytes": 147342,
+        "request_ms": 6.2
+      },
+      {
+        "elapsed": 52.626,
+        "code": 0,
+        "bytes": 147315,
+        "request_ms": 4.1
+      },
+      {
+        "elapsed": 52.826,
+        "code": 0,
+        "bytes": 147325,
+        "request_ms": 4.2
+      },
+      {
+        "elapsed": 53.026,
+        "code": 0,
+        "bytes": 147449,
+        "request_ms": 3.7
+      },
+      {
+        "elapsed": 53.226,
+        "code": 0,
+        "bytes": 147328,
+        "request_ms": 4.4
+      },
+      {
+        "elapsed": 53.426,
+        "code": 0,
+        "bytes": 147423,
+        "request_ms": 9.0
+      },
+      {
+        "elapsed": 53.626,
+        "code": 0,
+        "bytes": 147720,
+        "request_ms": 5.0
+      },
+      {
+        "elapsed": 53.826,
+        "code": 0,
+        "bytes": 147628,
+        "request_ms": 3.5
+      },
+      {
+        "elapsed": 54.026,
+        "code": 0,
+        "bytes": 147414,
+        "request_ms": 3.5
+      },
+      {
+        "elapsed": 54.227,
+        "code": 0,
+        "bytes": 147330,
+        "request_ms": 9.5
+      },
+      {
+        "elapsed": 54.427,
+        "code": 0,
+        "bytes": 147394,
+        "request_ms": 8.8
+      },
+      {
+        "elapsed": 54.627,
+        "code": 0,
+        "bytes": 147451,
+        "request_ms": 3.6
+      },
+      {
+        "elapsed": 54.827,
+        "code": 0,
+        "bytes": 147225,
+        "request_ms": 5.6
+      },
+      {
+        "elapsed": 55.027,
+        "code": 0,
+        "bytes": 147209,
+        "request_ms": 3.3
+      },
+      {
+        "elapsed": 55.227,
+        "code": 0,
+        "bytes": 147515,
+        "request_ms": 5.2
+      },
+      {
+        "elapsed": 55.427,
+        "code": 0,
+        "bytes": 147491,
+        "request_ms": 5.5
+      },
+      {
+        "elapsed": 55.627,
+        "code": 0,
+        "bytes": 147412,
+        "request_ms": 5.6
+      },
+      {
+        "elapsed": 55.827,
+        "code": 0,
+        "bytes": 147116,
+        "request_ms": 8.2
+      },
+      {
+        "elapsed": 56.027,
+        "code": 0,
+        "bytes": 147180,
+        "request_ms": 8.8
+      },
+      {
+        "elapsed": 56.228,
+        "code": 0,
+        "bytes": 147574,
+        "request_ms": 8.6
+      },
+      {
+        "elapsed": 56.428,
+        "code": 0,
+        "bytes": 147252,
+        "request_ms": 9.6
+      },
+      {
+        "elapsed": 56.628,
+        "code": 0,
+        "bytes": 147300,
+        "request_ms": 8.0
+      },
+      {
+        "elapsed": 56.828,
+        "code": 0,
+        "bytes": 147359,
+        "request_ms": 14.5
+      },
+      {
+        "elapsed": 57.028,
+        "code": 0,
+        "bytes": 147471,
+        "request_ms": 14.0
+      },
+      {
+        "elapsed": 57.228,
+        "code": 0,
+        "bytes": 147097,
+        "request_ms": 4.7
+      },
+      {
+        "elapsed": 57.428,
+        "code": 0,
+        "bytes": 147494,
+        "request_ms": 7.3
+      },
+      {
+        "elapsed": 57.628,
+        "code": 0,
+        "bytes": 147389,
+        "request_ms": 4.4
+      },
+      {
+        "elapsed": 57.828,
+        "code": 0,
+        "bytes": 147259,
+        "request_ms": 4.0
+      },
+      {
+        "elapsed": 58.028,
+        "code": 0,
+        "bytes": 147447,
+        "request_ms": 6.3
+      },
+      {
+        "elapsed": 58.228,
+        "code": 0,
+        "bytes": 147257,
+        "request_ms": 3.9
+      },
+      {
+        "elapsed": 58.429,
+        "code": 0,
+        "bytes": 147600,
+        "request_ms": 3.5
+      },
+      {
+        "elapsed": 58.629,
+        "code": 0,
+        "bytes": 147578,
+        "request_ms": 5.5
+      },
+      {
+        "elapsed": 58.829,
+        "code": 0,
+        "bytes": 147459,
+        "request_ms": 6.3
+      },
+      {
+        "elapsed": 59.029,
+        "code": 0,
+        "bytes": 147102,
+        "request_ms": 8.8
+      },
+      {
+        "elapsed": 59.229,
+        "code": 0,
+        "bytes": 147652,
+        "request_ms": 4.1
+      },
+      {
+        "elapsed": 59.429,
+        "code": 0,
+        "bytes": 147395,
+        "request_ms": 3.9
+      },
+      {
+        "elapsed": 59.629,
+        "code": 0,
+        "bytes": 147185,
+        "request_ms": 4.1
+      },
+      {
+        "elapsed": 59.829,
+        "code": 0,
+        "bytes": 147368,
+        "request_ms": 4.0
+      }
+    ]
+  },
+  "integrated_isolated": {
+    "start_at": "2026-10-21T04:48:31.118297+00:00",
+    "end_at": "2026-10-21T04:51:31.118947+00:00",
+    "sample_count": 181,
+    "live_samples": 181,
+    "state_samples_with_error": 0,
+    "attempts": 899,
+    "successes": 899,
+    "timeouts": 0,
+    "max_camera_age_ms": 309,
+    "max_body_age_ms": 54,
+    "mac_image_samples": 37,
+    "mac_image_successes": 37,
+    "mac_image_unique_hashes": 37,
+    "raw_source_sha256": "4080f0592e6731cc9a0294cc2b9bcc8aa2a8173b83ba5f271fa9d0f3234a510a"
+  },
+  "integrated_samples": [
+    {
+      "at": "2026-10-21T04:48:31.118297+00:00",
+      "elapsed": 0.0,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 140,
+      "sequence": 15,
+      "request_ms": 25,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 3.2,
+        "attempts": 15,
+        "successes": 15,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 15,
+        "total_successes": 15,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 34
+    },
+    {
+      "at": "2026-10-21T04:48:32.118823+00:00",
+      "elapsed": 1.007,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 142,
+      "sequence": 20,
+      "request_ms": 23,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 4.2,
+        "attempts": 20,
+        "successes": 20,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 20,
+        "total_successes": 20,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 2
+    },
+    {
+      "at": "2026-10-21T04:48:33.118238+00:00",
+      "elapsed": 2.004,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 137,
+      "sequence": 25,
+      "request_ms": 23,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 5.2,
+        "attempts": 25,
+        "successes": 25,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 25,
+        "total_successes": 25,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 15
+    },
+    {
+      "at": "2026-10-21T04:48:34.111177+00:00",
+      "elapsed": 3.001,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 133,
+      "sequence": 30,
+      "request_ms": 33,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 6.2,
+        "attempts": 30,
+        "successes": 30,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 30,
+        "total_successes": 30,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 28
+    },
+    {
+      "at": "2026-10-21T04:48:35.139455+00:00",
+      "elapsed": 4.008,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 147,
+      "sequence": 35,
+      "request_ms": 36,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 7.2,
+        "attempts": 35,
+        "successes": 35,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 35,
+        "total_successes": 35,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 8
+    },
+    {
+      "at": "2026-10-21T04:48:36.124743+00:00",
+      "elapsed": 5.007,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 141,
+      "sequence": 40,
+      "request_ms": 22,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 8.2,
+        "attempts": 40,
+        "successes": 40,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 40,
+        "total_successes": 40,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 13
+    },
+    {
+      "at": "2026-10-21T04:48:37.126541+00:00",
+      "elapsed": 6.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 141,
+      "sequence": 45,
+      "request_ms": 22,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 9.2,
+        "attempts": 45,
+        "successes": 45,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 45,
+        "total_successes": 45,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 32
+    },
+    {
+      "at": "2026-10-21T04:48:38.126524+00:00",
+      "elapsed": 7.008,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 140,
+      "sequence": 50,
+      "request_ms": 28,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 10.2,
+        "attempts": 50,
+        "successes": 50,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 50,
+        "total_successes": 50,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 40
+    },
+    {
+      "at": "2026-10-21T04:48:39.151113+00:00",
+      "elapsed": 8.008,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 151,
+      "sequence": 55,
+      "request_ms": 24,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 11.2,
+        "attempts": 55,
+        "successes": 55,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 55,
+        "total_successes": 55,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 5
+    },
+    {
+      "at": "2026-10-21T04:48:40.143773+00:00",
+      "elapsed": 9.003,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 138,
+      "sequence": 60,
+      "request_ms": 32,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 12.2,
+        "attempts": 60,
+        "successes": 60,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 60,
+        "total_successes": 60,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 46
+    },
+    {
+      "at": "2026-10-21T04:48:41.128703+00:00",
+      "elapsed": 10.004,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 143,
+      "sequence": 65,
+      "request_ms": 34,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 13.2,
+        "attempts": 65,
+        "successes": 65,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 65,
+        "total_successes": 65,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 22
+    },
+    {
+      "at": "2026-10-21T04:48:42.129749+00:00",
+      "elapsed": 11.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 141,
+      "sequence": 70,
+      "request_ms": 21,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 14.2,
+        "attempts": 70,
+        "successes": 70,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 70,
+        "total_successes": 70,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 42
+    },
+    {
+      "at": "2026-10-21T04:48:43.127994+00:00",
+      "elapsed": 12.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 139,
+      "sequence": 75,
+      "request_ms": 22,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 15.2,
+        "attempts": 75,
+        "successes": 75,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 75,
+        "total_successes": 75,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 47
+    },
+    {
+      "at": "2026-10-21T04:48:44.117951+00:00",
+      "elapsed": 13.001,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 128,
+      "sequence": 80,
+      "request_ms": 23,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 16.2,
+        "attempts": 80,
+        "successes": 80,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 80,
+        "total_successes": 80,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 44
+    },
+    {
+      "at": "2026-10-21T04:48:45.124411+00:00",
+      "elapsed": 14.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 138,
+      "sequence": 85,
+      "request_ms": 25,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 17.2,
+        "attempts": 85,
+        "successes": 85,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 85,
+        "total_successes": 85,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 11
+    },
+    {
+      "at": "2026-10-21T04:48:46.128372+00:00",
+      "elapsed": 15.008,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 140,
+      "sequence": 90,
+      "request_ms": 31,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 18.2,
+        "attempts": 90,
+        "successes": 90,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 90,
+        "total_successes": 90,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 34
+    },
+    {
+      "at": "2026-10-21T04:48:47.121931+00:00",
+      "elapsed": 16.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 134,
+      "sequence": 95,
+      "request_ms": 30,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 19.2,
+        "attempts": 95,
+        "successes": 95,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 95,
+        "total_successes": 95,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 44
+    },
+    {
+      "at": "2026-10-21T04:48:48.114668+00:00",
+      "elapsed": 17.001,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 126,
+      "sequence": 100,
+      "request_ms": 23,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 20.2,
+        "attempts": 100,
+        "successes": 100,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 100,
+        "total_successes": 100,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 42
+    },
+    {
+      "at": "2026-10-21T04:48:49.118815+00:00",
+      "elapsed": 18.002,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 129,
+      "sequence": 105,
+      "request_ms": 31,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 21.2,
+        "attempts": 105,
+        "successes": 105,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 105,
+        "total_successes": 105,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 3
+    },
+    {
+      "at": "2026-10-21T04:48:50.136145+00:00",
+      "elapsed": 19.007,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 138,
+      "sequence": 110,
+      "request_ms": 24,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 22.2,
+        "attempts": 110,
+        "successes": 110,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 110,
+        "total_successes": 110,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 26
+    },
+    {
+      "at": "2026-10-21T04:48:51.155556+00:00",
+      "elapsed": 20.008,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 142,
+      "sequence": 115,
+      "request_ms": 20,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 23.2,
+        "attempts": 115,
+        "successes": 115,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 115,
+        "total_successes": 115,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 42
+    },
+    {
+      "at": "2026-10-21T04:48:52.121595+00:00",
+      "elapsed": 21.005,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 128,
+      "sequence": 120,
+      "request_ms": 33,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 24.2,
+        "attempts": 120,
+        "successes": 120,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 120,
+        "total_successes": 120,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 16
+    },
+    {
+      "at": "2026-10-21T04:48:53.125974+00:00",
+      "elapsed": 22.008,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 129,
+      "sequence": 125,
+      "request_ms": 31,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 25.2,
+        "attempts": 125,
+        "successes": 125,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 125,
+        "total_successes": 125,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 39
+    },
+    {
+      "at": "2026-10-21T04:48:54.117748+00:00",
+      "elapsed": 23.001,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 123,
+      "sequence": 130,
+      "request_ms": 24,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 26.2,
+        "attempts": 130,
+        "successes": 130,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 130,
+        "total_successes": 130,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 42
+    },
+    {
+      "at": "2026-10-21T04:48:55.150215+00:00",
+      "elapsed": 24.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 140,
+      "sequence": 135,
+      "request_ms": 23,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 27.2,
+        "attempts": 135,
+        "successes": 135,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 135,
+        "total_successes": 135,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 7
+    },
+    {
+      "at": "2026-10-21T04:48:56.126603+00:00",
+      "elapsed": 25.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 128,
+      "sequence": 140,
+      "request_ms": 20,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 28.2,
+        "attempts": 140,
+        "successes": 140,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 140,
+        "total_successes": 140,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 12
+    },
+    {
+      "at": "2026-10-21T04:48:57.125315+00:00",
+      "elapsed": 26.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 130,
+      "sequence": 145,
+      "request_ms": 20,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 29.2,
+        "attempts": 145,
+        "successes": 145,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 145,
+        "total_successes": 145,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 29
+    },
+    {
+      "at": "2026-10-21T04:48:58.114877+00:00",
+      "elapsed": 27.001,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 120,
+      "sequence": 150,
+      "request_ms": 23,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 30.2,
+        "attempts": 150,
+        "successes": 150,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 150,
+        "total_successes": 150,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 29
+    },
+    {
+      "at": "2026-10-21T04:48:59.132619+00:00",
+      "elapsed": 28.007,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 129,
+      "sequence": 155,
+      "request_ms": 33,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 31.2,
+        "attempts": 155,
+        "successes": 155,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 155,
+        "total_successes": 155,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 4
+    },
+    {
+      "at": "2026-10-21T04:49:00.125869+00:00",
+      "elapsed": 29.004,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 126,
+      "sequence": 160,
+      "request_ms": 22,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 32.2,
+        "attempts": 160,
+        "successes": 160,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 160,
+        "total_successes": 160,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 18
+    },
+    {
+      "at": "2026-10-21T04:49:01.119536+00:00",
+      "elapsed": 30.001,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 121,
+      "sequence": 165,
+      "request_ms": 20,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 33.2,
+        "attempts": 165,
+        "successes": 165,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 165,
+        "total_successes": 165,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 34
+    },
+    {
+      "at": "2026-10-21T04:49:02.165090+00:00",
+      "elapsed": 31.009,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 134,
+      "sequence": 170,
+      "request_ms": 28,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 34.2,
+        "attempts": 170,
+        "successes": 170,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 170,
+        "total_successes": 170,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 54
+    },
+    {
+      "at": "2026-10-21T04:49:03.160429+00:00",
+      "elapsed": 32.009,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 133,
+      "sequence": 175,
+      "request_ms": 33,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 35.2,
+        "attempts": 175,
+        "successes": 175,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 175,
+        "total_successes": 175,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 46
+    },
+    {
+      "at": "2026-10-21T04:49:04.128303+00:00",
+      "elapsed": 33.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 125,
+      "sequence": 180,
+      "request_ms": 35,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 36.2,
+        "attempts": 180,
+        "successes": 180,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 180,
+        "total_successes": 180,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 9
+    },
+    {
+      "at": "2026-10-21T04:49:05.130952+00:00",
+      "elapsed": 34.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 127,
+      "sequence": 185,
+      "request_ms": 30,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 37.2,
+        "attempts": 185,
+        "successes": 185,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 185,
+        "total_successes": 185,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 33
+    },
+    {
+      "at": "2026-10-21T04:49:06.130215+00:00",
+      "elapsed": 35.002,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 120,
+      "sequence": 190,
+      "request_ms": 23,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 38.2,
+        "attempts": 190,
+        "successes": 190,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 190,
+        "total_successes": 190,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 44
+    },
+    {
+      "at": "2026-10-21T04:49:07.124263+00:00",
+      "elapsed": 36.008,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 122,
+      "sequence": 195,
+      "request_ms": 23,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 39.2,
+        "attempts": 195,
+        "successes": 195,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 195,
+        "total_successes": 195,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 45
+    },
+    {
+      "at": "2026-10-21T04:49:08.124472+00:00",
+      "elapsed": 37.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 122,
+      "sequence": 200,
+      "request_ms": 23,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 40.2,
+        "attempts": 200,
+        "successes": 200,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 200,
+        "total_successes": 200,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 2
+    },
+    {
+      "at": "2026-10-21T04:49:09.142588+00:00",
+      "elapsed": 38.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 127,
+      "sequence": 205,
+      "request_ms": 32,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 41.2,
+        "attempts": 205,
+        "successes": 205,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 205,
+        "total_successes": 205,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 29
+    },
+    {
+      "at": "2026-10-21T04:49:10.225854+00:00",
+      "elapsed": 39.0,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 147,
+      "sequence": 210,
+      "request_ms": 32,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 42.2,
+        "attempts": 210,
+        "successes": 210,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 210,
+        "total_successes": 210,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 7
+    },
+    {
+      "at": "2026-10-21T04:49:11.124393+00:00",
+      "elapsed": 40.008,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 121,
+      "sequence": 215,
+      "request_ms": 31,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 43.2,
+        "attempts": 215,
+        "successes": 215,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 215,
+        "total_successes": 215,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 5
+    },
+    {
+      "at": "2026-10-21T04:49:12.125765+00:00",
+      "elapsed": 41.007,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 119,
+      "sequence": 220,
+      "request_ms": 25,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 44.2,
+        "attempts": 220,
+        "successes": 220,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 220,
+        "total_successes": 220,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 23
+    },
+    {
+      "at": "2026-10-21T04:49:13.179240+00:00",
+      "elapsed": 42.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 168,
+      "sequence": 225,
+      "request_ms": 21,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 45.2,
+        "attempts": 225,
+        "successes": 225,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 225,
+        "total_successes": 225,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 41
+    },
+    {
+      "at": "2026-10-21T04:49:14.132404+00:00",
+      "elapsed": 43.008,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 122,
+      "sequence": 230,
+      "request_ms": 22,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 46.2,
+        "attempts": 230,
+        "successes": 230,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 230,
+        "total_successes": 230,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 5
+    },
+    {
+      "at": "2026-10-21T04:49:15.153322+00:00",
+      "elapsed": 44.006,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 124,
+      "sequence": 235,
+      "request_ms": 22,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 47.2,
+        "attempts": 235,
+        "successes": 235,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 235,
+        "total_successes": 235,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 19
+    },
+    {
+      "at": "2026-10-21T04:49:16.165277+00:00",
+      "elapsed": 45.008,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 130,
+      "sequence": 240,
+      "request_ms": 34,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 48.2,
+        "attempts": 240,
+        "successes": 240,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 240,
+        "total_successes": 240,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 29
+    },
+    {
+      "at": "2026-10-21T04:49:17.131162+00:00",
+      "elapsed": 46.004,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 121,
+      "sequence": 245,
+      "request_ms": 21,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 49.2,
+        "attempts": 245,
+        "successes": 245,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 245,
+        "total_successes": 245,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 17
+    },
+    {
+      "at": "2026-10-21T04:49:18.137450+00:00",
+      "elapsed": 47.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 117,
+      "sequence": 250,
+      "request_ms": 22,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 50.2,
+        "attempts": 250,
+        "successes": 250,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 250,
+        "total_successes": 250,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 29
+    },
+    {
+      "at": "2026-10-21T04:49:19.126081+00:00",
+      "elapsed": 48.008,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 114,
+      "sequence": 255,
+      "request_ms": 24,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 51.2,
+        "attempts": 255,
+        "successes": 255,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 255,
+        "total_successes": 255,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 46
+    },
+    {
+      "at": "2026-10-21T04:49:20.126321+00:00",
+      "elapsed": 49.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 114,
+      "sequence": 260,
+      "request_ms": 23,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 52.2,
+        "attempts": 260,
+        "successes": 260,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 260,
+        "total_successes": 260,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 49
+    },
+    {
+      "at": "2026-10-21T04:49:21.122897+00:00",
+      "elapsed": 50.004,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 110,
+      "sequence": 265,
+      "request_ms": 22,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 53.2,
+        "attempts": 265,
+        "successes": 265,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 265,
+        "total_successes": 265,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 38
+    },
+    {
+      "at": "2026-10-21T04:49:22.132155+00:00",
+      "elapsed": 51.002,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 111,
+      "sequence": 270,
+      "request_ms": 21,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 54.2,
+        "attempts": 270,
+        "successes": 270,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 270,
+        "total_successes": 270,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 45
+    },
+    {
+      "at": "2026-10-21T04:49:23.119648+00:00",
+      "elapsed": 52.007,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 110,
+      "sequence": 275,
+      "request_ms": 24,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 55.2,
+        "attempts": 275,
+        "successes": 275,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 275,
+        "total_successes": 275,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 46
+    },
+    {
+      "at": "2026-10-21T04:49:24.127149+00:00",
+      "elapsed": 53.008,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 112,
+      "sequence": 280,
+      "request_ms": 38,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 56.2,
+        "attempts": 280,
+        "successes": 280,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 280,
+        "total_successes": 280,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 5
+    },
+    {
+      "at": "2026-10-21T04:49:25.134953+00:00",
+      "elapsed": 54.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 117,
+      "sequence": 285,
+      "request_ms": 23,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 57.2,
+        "attempts": 285,
+        "successes": 285,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 285,
+        "total_successes": 285,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 30
+    },
+    {
+      "at": "2026-10-21T04:49:26.124546+00:00",
+      "elapsed": 55.005,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 108,
+      "sequence": 290,
+      "request_ms": 37,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 58.3,
+        "attempts": 290,
+        "successes": 290,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 290,
+        "total_successes": 290,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 37
+    },
+    {
+      "at": "2026-10-21T04:49:27.128887+00:00",
+      "elapsed": 56.004,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 111,
+      "sequence": 295,
+      "request_ms": 24,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 59.2,
+        "attempts": 295,
+        "successes": 295,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 295,
+        "total_successes": 295,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 51
+    },
+    {
+      "at": "2026-10-21T04:49:28.149362+00:00",
+      "elapsed": 57.008,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 110,
+      "sequence": 300,
+      "request_ms": 20,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 300,
+        "total_successes": 300,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 40
+    },
+    {
+      "at": "2026-10-21T04:49:29.124917+00:00",
+      "elapsed": 58.008,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 107,
+      "sequence": 305,
+      "request_ms": 23,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 305,
+        "total_successes": 305,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 38
+    },
+    {
+      "at": "2026-10-21T04:49:30.142112+00:00",
+      "elapsed": 59.009,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 118,
+      "sequence": 310,
+      "request_ms": 31,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 310,
+        "total_successes": 310,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 14
+    },
+    {
+      "at": "2026-10-21T04:49:31.136526+00:00",
+      "elapsed": 60.009,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 110,
+      "sequence": 315,
+      "request_ms": 22,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 315,
+        "total_successes": 315,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 22
+    },
+    {
+      "at": "2026-10-21T04:49:32.126662+00:00",
+      "elapsed": 61.0,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 103,
+      "sequence": 320,
+      "request_ms": 21,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 320,
+        "total_successes": 320,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 34
+    },
+    {
+      "at": "2026-10-21T04:49:33.130984+00:00",
+      "elapsed": 62.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 110,
+      "sequence": 325,
+      "request_ms": 35,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 325,
+        "total_successes": 325,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 4
+    },
+    {
+      "at": "2026-10-21T04:49:34.125624+00:00",
+      "elapsed": 63.008,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 104,
+      "sequence": 330,
+      "request_ms": 21,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 330,
+        "total_successes": 330,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 15
+    },
+    {
+      "at": "2026-10-21T04:49:35.133059+00:00",
+      "elapsed": 64.007,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 107,
+      "sequence": 335,
+      "request_ms": 24,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 335,
+        "total_successes": 335,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 36
+    },
+    {
+      "at": "2026-10-21T04:49:36.127361+00:00",
+      "elapsed": 65.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 106,
+      "sequence": 340,
+      "request_ms": 21,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 340,
+        "total_successes": 340,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 50
+    },
+    {
+      "at": "2026-10-21T04:49:37.134340+00:00",
+      "elapsed": 66.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 109,
+      "sequence": 345,
+      "request_ms": 23,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 345,
+        "total_successes": 345,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 48
+    },
+    {
+      "at": "2026-10-21T04:49:38.135634+00:00",
+      "elapsed": 67.007,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 110,
+      "sequence": 350,
+      "request_ms": 24,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 350,
+        "total_successes": 350,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 44
+    },
+    {
+      "at": "2026-10-21T04:49:39.145079+00:00",
+      "elapsed": 68.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 114,
+      "sequence": 355,
+      "request_ms": 22,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 355,
+        "total_successes": 355,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 47
+    },
+    {
+      "at": "2026-10-21T04:49:40.136506+00:00",
+      "elapsed": 69.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 111,
+      "sequence": 360,
+      "request_ms": 28,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 360,
+        "total_successes": 360,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 39
+    },
+    {
+      "at": "2026-10-21T04:49:41.164346+00:00",
+      "elapsed": 70.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 117,
+      "sequence": 365,
+      "request_ms": 34,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 365,
+        "total_successes": 365,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 47
+    },
+    {
+      "at": "2026-10-21T04:49:42.162733+00:00",
+      "elapsed": 71.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 119,
+      "sequence": 370,
+      "request_ms": 24,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 370,
+        "total_successes": 370,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 24
+    },
+    {
+      "at": "2026-10-21T04:49:43.126313+00:00",
+      "elapsed": 72.008,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 98,
+      "sequence": 375,
+      "request_ms": 36,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 375,
+        "total_successes": 375,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 15
+    },
+    {
+      "at": "2026-10-21T04:49:44.134825+00:00",
+      "elapsed": 73.007,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 100,
+      "sequence": 380,
+      "request_ms": 24,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 380,
+        "total_successes": 380,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 35
+    },
+    {
+      "at": "2026-10-21T04:49:45.158447+00:00",
+      "elapsed": 74.004,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 106,
+      "sequence": 385,
+      "request_ms": 21,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 385,
+        "total_successes": 385,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 43
+    },
+    {
+      "at": "2026-10-21T04:49:46.133144+00:00",
+      "elapsed": 75.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 102,
+      "sequence": 390,
+      "request_ms": 23,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 390,
+        "total_successes": 390,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 16
+    },
+    {
+      "at": "2026-10-21T04:49:47.160750+00:00",
+      "elapsed": 76.004,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 104,
+      "sequence": 395,
+      "request_ms": 32,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 395,
+        "total_successes": 395,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 18
+    },
+    {
+      "at": "2026-10-21T04:49:48.143425+00:00",
+      "elapsed": 77.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 105,
+      "sequence": 400,
+      "request_ms": 27,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 400,
+        "total_successes": 400,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 30
+    },
+    {
+      "at": "2026-10-21T04:49:49.139597+00:00",
+      "elapsed": 78.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 99,
+      "sequence": 405,
+      "request_ms": 24,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 405,
+        "total_successes": 405,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 39
+    },
+    {
+      "at": "2026-10-21T04:49:50.116862+00:00",
+      "elapsed": 79.001,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 289,
+      "sequence": 409,
+      "request_ms": 23,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 410,
+        "total_successes": 410,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 38
+    },
+    {
+      "at": "2026-10-21T04:49:51.125768+00:00",
+      "elapsed": 80.008,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 94,
+      "sequence": 415,
+      "request_ms": 43,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 415,
+        "total_successes": 415,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 2
+    },
+    {
+      "at": "2026-10-21T04:49:52.120168+00:00",
+      "elapsed": 81.0,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 86,
+      "sequence": 420,
+      "request_ms": 31,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 420,
+        "total_successes": 420,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 8
+    },
+    {
+      "at": "2026-10-21T04:49:53.127105+00:00",
+      "elapsed": 82.007,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 94,
+      "sequence": 425,
+      "request_ms": 21,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 425,
+        "total_successes": 425,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 21
+    },
+    {
+      "at": "2026-10-21T04:49:54.137263+00:00",
+      "elapsed": 83.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 95,
+      "sequence": 430,
+      "request_ms": 22,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 430,
+        "total_successes": 430,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 28
+    },
+    {
+      "at": "2026-10-21T04:49:55.134996+00:00",
+      "elapsed": 84.008,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 100,
+      "sequence": 435,
+      "request_ms": 32,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 435,
+        "total_successes": 435,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 41
+    },
+    {
+      "at": "2026-10-21T04:49:56.128032+00:00",
+      "elapsed": 85.007,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 297,
+      "sequence": 439,
+      "request_ms": 26,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 440,
+        "total_successes": 440,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 43
+    },
+    {
+      "at": "2026-10-21T04:49:57.121911+00:00",
+      "elapsed": 86.0,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 282,
+      "sequence": 444,
+      "request_ms": 21,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 445,
+        "total_successes": 445,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 38
+    },
+    {
+      "at": "2026-10-21T04:49:58.125041+00:00",
+      "elapsed": 87.004,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 289,
+      "sequence": 449,
+      "request_ms": 20,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 450,
+        "total_successes": 450,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 35
+    },
+    {
+      "at": "2026-10-21T04:49:59.147596+00:00",
+      "elapsed": 88.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 301,
+      "sequence": 454,
+      "request_ms": 32,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 455,
+        "total_successes": 455,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 50
+    },
+    {
+      "at": "2026-10-21T04:50:00.125838+00:00",
+      "elapsed": 89.007,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 87,
+      "sequence": 460,
+      "request_ms": 36,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 460,
+        "total_successes": 460,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 17
+    },
+    {
+      "at": "2026-10-21T04:50:01.148088+00:00",
+      "elapsed": 90.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 98,
+      "sequence": 465,
+      "request_ms": 22,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 465,
+        "total_successes": 465,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 24
+    },
+    {
+      "at": "2026-10-21T04:50:02.132208+00:00",
+      "elapsed": 91.0,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 83,
+      "sequence": 470,
+      "request_ms": 24,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 470,
+        "total_successes": 470,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 11
+    },
+    {
+      "at": "2026-10-21T04:50:03.129625+00:00",
+      "elapsed": 92.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 89,
+      "sequence": 475,
+      "request_ms": 27,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 475,
+        "total_successes": 475,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 30
+    },
+    {
+      "at": "2026-10-21T04:50:04.131311+00:00",
+      "elapsed": 93.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 91,
+      "sequence": 480,
+      "request_ms": 22,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 480,
+        "total_successes": 480,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 47
+    },
+    {
+      "at": "2026-10-21T04:50:05.129795+00:00",
+      "elapsed": 94.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 292,
+      "sequence": 484,
+      "request_ms": 24,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 485,
+        "total_successes": 485,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 50
+    },
+    {
+      "at": "2026-10-21T04:50:06.123896+00:00",
+      "elapsed": 95.0,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 76,
+      "sequence": 490,
+      "request_ms": 23,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 490,
+        "total_successes": 490,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 24
+    },
+    {
+      "at": "2026-10-21T04:50:07.149482+00:00",
+      "elapsed": 96.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 293,
+      "sequence": 494,
+      "request_ms": 31,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 495,
+        "total_successes": 495,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 49
+    },
+    {
+      "at": "2026-10-21T04:50:08.121170+00:00",
+      "elapsed": 97.007,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 81,
+      "sequence": 500,
+      "request_ms": 22,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 500,
+        "total_successes": 500,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 15
+    },
+    {
+      "at": "2026-10-21T04:50:09.135716+00:00",
+      "elapsed": 98.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 87,
+      "sequence": 505,
+      "request_ms": 21,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 505,
+        "total_successes": 505,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 34
+    },
+    {
+      "at": "2026-10-21T04:50:10.133635+00:00",
+      "elapsed": 99.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 89,
+      "sequence": 510,
+      "request_ms": 21,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 510,
+        "total_successes": 510,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 44
+    },
+    {
+      "at": "2026-10-21T04:50:11.124838+00:00",
+      "elapsed": 100.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 82,
+      "sequence": 515,
+      "request_ms": 21,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 515,
+        "total_successes": 515,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 44
+    },
+    {
+      "at": "2026-10-21T04:50:12.146004+00:00",
+      "elapsed": 101.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 93,
+      "sequence": 520,
+      "request_ms": 26,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 520,
+        "total_successes": 520,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 6
+    },
+    {
+      "at": "2026-10-21T04:50:13.124942+00:00",
+      "elapsed": 102.0,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 77,
+      "sequence": 525,
+      "request_ms": 21,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 525,
+        "total_successes": 525,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 13
+    },
+    {
+      "at": "2026-10-21T04:50:14.129774+00:00",
+      "elapsed": 103.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 82,
+      "sequence": 530,
+      "request_ms": 20,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 530,
+        "total_successes": 530,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 35
+    },
+    {
+      "at": "2026-10-21T04:50:15.124581+00:00",
+      "elapsed": 104.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 278,
+      "sequence": 534,
+      "request_ms": 22,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 535,
+        "total_successes": 535,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 49
+    },
+    {
+      "at": "2026-10-21T04:50:16.124501+00:00",
+      "elapsed": 105.009,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 280,
+      "sequence": 539,
+      "request_ms": 21,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 540,
+        "total_successes": 540,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 51
+    },
+    {
+      "at": "2026-10-21T04:50:17.131497+00:00",
+      "elapsed": 106.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 280,
+      "sequence": 544,
+      "request_ms": 23,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 545,
+        "total_successes": 545,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 50
+    },
+    {
+      "at": "2026-10-21T04:50:18.117657+00:00",
+      "elapsed": 107.0,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 268,
+      "sequence": 549,
+      "request_ms": 19,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 550,
+        "total_successes": 550,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 39
+    },
+    {
+      "at": "2026-10-21T04:50:19.132970+00:00",
+      "elapsed": 108.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 83,
+      "sequence": 555,
+      "request_ms": 39,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 555,
+        "total_successes": 555,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 14
+    },
+    {
+      "at": "2026-10-21T04:50:20.116030+00:00",
+      "elapsed": 109.0,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 69,
+      "sequence": 560,
+      "request_ms": 22,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 560,
+        "total_successes": 560,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 17
+    },
+    {
+      "at": "2026-10-21T04:50:21.116003+00:00",
+      "elapsed": 110.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 277,
+      "sequence": 564,
+      "request_ms": 19,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 565,
+        "total_successes": 565,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 40
+    },
+    {
+      "at": "2026-10-21T04:50:22.126599+00:00",
+      "elapsed": 111.007,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 271,
+      "sequence": 569,
+      "request_ms": 31,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 570,
+        "total_successes": 570,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 44
+    },
+    {
+      "at": "2026-10-21T04:50:23.159228+00:00",
+      "elapsed": 112.006,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 109,
+      "sequence": 575,
+      "request_ms": 36,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 575,
+        "total_successes": 575,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 43
+    },
+    {
+      "at": "2026-10-21T04:50:24.121939+00:00",
+      "elapsed": 113.002,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 82,
+      "sequence": 580,
+      "request_ms": 34,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 580,
+        "total_successes": 580,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 9
+    },
+    {
+      "at": "2026-10-21T04:50:25.121134+00:00",
+      "elapsed": 114.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 275,
+      "sequence": 584,
+      "request_ms": 33,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 585,
+        "total_successes": 585,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 53
+    },
+    {
+      "at": "2026-10-21T04:50:26.113941+00:00",
+      "elapsed": 115.006,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 271,
+      "sequence": 589,
+      "request_ms": 36,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 590,
+        "total_successes": 590,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 37
+    },
+    {
+      "at": "2026-10-21T04:50:27.133352+00:00",
+      "elapsed": 116.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 273,
+      "sequence": 594,
+      "request_ms": 31,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 595,
+        "total_successes": 595,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 41
+    },
+    {
+      "at": "2026-10-21T04:50:28.113213+00:00",
+      "elapsed": 117.002,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 62,
+      "sequence": 600,
+      "request_ms": 39,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 600,
+        "total_successes": 600,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 4
+    },
+    {
+      "at": "2026-10-21T04:50:29.160964+00:00",
+      "elapsed": 118.002,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 86,
+      "sequence": 605,
+      "request_ms": 24,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 605,
+        "total_successes": 605,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 14
+    },
+    {
+      "at": "2026-10-21T04:50:30.155798+00:00",
+      "elapsed": 119.001,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 67,
+      "sequence": 610,
+      "request_ms": 32,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 610,
+        "total_successes": 610,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 13
+    },
+    {
+      "at": "2026-10-21T04:50:31.119541+00:00",
+      "elapsed": 120.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 269,
+      "sequence": 614,
+      "request_ms": 34,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 615,
+        "total_successes": 615,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 39
+    },
+    {
+      "at": "2026-10-21T04:50:32.113864+00:00",
+      "elapsed": 121.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 67,
+      "sequence": 620,
+      "request_ms": 20,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 620,
+        "total_successes": 620,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 28
+    },
+    {
+      "at": "2026-10-21T04:50:33.130181+00:00",
+      "elapsed": 122.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 267,
+      "sequence": 624,
+      "request_ms": 30,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 625,
+        "total_successes": 625,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 25
+    },
+    {
+      "at": "2026-10-21T04:50:34.117676+00:00",
+      "elapsed": 123.006,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 68,
+      "sequence": 630,
+      "request_ms": 23,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 630,
+        "total_successes": 630,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 16
+    },
+    {
+      "at": "2026-10-21T04:50:35.129091+00:00",
+      "elapsed": 124.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 69,
+      "sequence": 635,
+      "request_ms": 20,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 635,
+        "total_successes": 635,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 6
+    },
+    {
+      "at": "2026-10-21T04:50:36.127994+00:00",
+      "elapsed": 125.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 74,
+      "sequence": 640,
+      "request_ms": 36,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 640,
+        "total_successes": 640,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 3
+    },
+    {
+      "at": "2026-10-21T04:50:37.117231+00:00",
+      "elapsed": 126.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 266,
+      "sequence": 644,
+      "request_ms": 33,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 645,
+        "total_successes": 645,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 42
+    },
+    {
+      "at": "2026-10-21T04:50:38.118878+00:00",
+      "elapsed": 127.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 264,
+      "sequence": 649,
+      "request_ms": 37,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 650,
+        "total_successes": 650,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 34
+    },
+    {
+      "at": "2026-10-21T04:50:39.110164+00:00",
+      "elapsed": 128.004,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 258,
+      "sequence": 654,
+      "request_ms": 24,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 655,
+        "total_successes": 655,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 19
+    },
+    {
+      "at": "2026-10-21T04:50:40.116590+00:00",
+      "elapsed": 129.0,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 262,
+      "sequence": 659,
+      "request_ms": 31,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 660,
+        "total_successes": 660,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 20
+    },
+    {
+      "at": "2026-10-21T04:50:41.119855+00:00",
+      "elapsed": 130.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 268,
+      "sequence": 664,
+      "request_ms": 43,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 665,
+        "total_successes": 665,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 15
+    },
+    {
+      "at": "2026-10-21T04:50:42.121177+00:00",
+      "elapsed": 131.009,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 65,
+      "sequence": 670,
+      "request_ms": 39,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 670,
+        "total_successes": 670,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 4
+    },
+    {
+      "at": "2026-10-21T04:50:43.132533+00:00",
+      "elapsed": 132.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 73,
+      "sequence": 675,
+      "request_ms": 29,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 675,
+        "total_successes": 675,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 2
+    },
+    {
+      "at": "2026-10-21T04:50:44.115867+00:00",
+      "elapsed": 133.009,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 260,
+      "sequence": 679,
+      "request_ms": 23,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 680,
+        "total_successes": 680,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 43
+    },
+    {
+      "at": "2026-10-21T04:50:45.125766+00:00",
+      "elapsed": 134.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 270,
+      "sequence": 684,
+      "request_ms": 20,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 685,
+        "total_successes": 685,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 37
+    },
+    {
+      "at": "2026-10-21T04:50:46.118648+00:00",
+      "elapsed": 135.005,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 60,
+      "sequence": 690,
+      "request_ms": 24,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 690,
+        "total_successes": 690,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 15
+    },
+    {
+      "at": "2026-10-21T04:50:47.117666+00:00",
+      "elapsed": 136.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 59,
+      "sequence": 695,
+      "request_ms": 22,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 695,
+        "total_successes": 695,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 16
+    },
+    {
+      "at": "2026-10-21T04:50:48.116352+00:00",
+      "elapsed": 137.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 58,
+      "sequence": 700,
+      "request_ms": 24,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 700,
+        "total_successes": 700,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 11
+    },
+    {
+      "at": "2026-10-21T04:50:49.118551+00:00",
+      "elapsed": 138.002,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 260,
+      "sequence": 704,
+      "request_ms": 33,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 705,
+        "total_successes": 705,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 6
+    },
+    {
+      "at": "2026-10-21T04:50:50.132086+00:00",
+      "elapsed": 139.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 67,
+      "sequence": 710,
+      "request_ms": 30,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 710,
+        "total_successes": 710,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 2
+    },
+    {
+      "at": "2026-10-21T04:50:51.125770+00:00",
+      "elapsed": 140.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 263,
+      "sequence": 714,
+      "request_ms": 38,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 714,
+        "total_successes": 714,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 48
+    },
+    {
+      "at": "2026-10-21T04:50:52.113214+00:00",
+      "elapsed": 141.002,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 247,
+      "sequence": 719,
+      "request_ms": 28,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 720,
+        "total_successes": 720,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 23
+    },
+    {
+      "at": "2026-10-21T04:50:53.114529+00:00",
+      "elapsed": 142.009,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 252,
+      "sequence": 724,
+      "request_ms": 35,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 725,
+        "total_successes": 725,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 23
+    },
+    {
+      "at": "2026-10-21T04:50:54.116573+00:00",
+      "elapsed": 143.007,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 250,
+      "sequence": 729,
+      "request_ms": 21,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 730,
+        "total_successes": 730,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 18
+    },
+    {
+      "at": "2026-10-21T04:50:55.116502+00:00",
+      "elapsed": 144.008,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 252,
+      "sequence": 734,
+      "request_ms": 22,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 735,
+        "total_successes": 735,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 9
+    },
+    {
+      "at": "2026-10-21T04:50:56.115115+00:00",
+      "elapsed": 145.007,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 249,
+      "sequence": 739,
+      "request_ms": 29,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 739,
+        "total_successes": 739,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 51
+    },
+    {
+      "at": "2026-10-21T04:50:57.127867+00:00",
+      "elapsed": 146.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 61,
+      "sequence": 745,
+      "request_ms": 28,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 745,
+        "total_successes": 745,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 2
+    },
+    {
+      "at": "2026-10-21T04:50:58.120768+00:00",
+      "elapsed": 147.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 253,
+      "sequence": 749,
+      "request_ms": 20,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 750,
+        "total_successes": 750,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 45
+    },
+    {
+      "at": "2026-10-21T04:50:59.109499+00:00",
+      "elapsed": 148.0,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 243,
+      "sequence": 754,
+      "request_ms": 35,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 754,
+        "total_successes": 754,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 22
+    },
+    {
+      "at": "2026-10-21T04:51:00.107884+00:00",
+      "elapsed": 149.0,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 240,
+      "sequence": 759,
+      "request_ms": 23,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 759,
+        "total_successes": 759,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 4
+    },
+    {
+      "at": "2026-10-21T04:51:01.117342+00:00",
+      "elapsed": 150.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 248,
+      "sequence": 764,
+      "request_ms": 20,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 765,
+        "total_successes": 765,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 13
+    },
+    {
+      "at": "2026-10-21T04:51:02.108430+00:00",
+      "elapsed": 151.0,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 238,
+      "sequence": 769,
+      "request_ms": 32,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 769,
+        "total_successes": 769,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 45
+    },
+    {
+      "at": "2026-10-21T04:51:03.117510+00:00",
+      "elapsed": 152.005,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 245,
+      "sequence": 774,
+      "request_ms": 22,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 774,
+        "total_successes": 774,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 39
+    },
+    {
+      "at": "2026-10-21T04:51:04.133985+00:00",
+      "elapsed": 153.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 249,
+      "sequence": 779,
+      "request_ms": 37,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 780,
+        "total_successes": 780,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 18
+    },
+    {
+      "at": "2026-10-21T04:51:05.117748+00:00",
+      "elapsed": 154.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 248,
+      "sequence": 784,
+      "request_ms": 20,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 784,
+        "total_successes": 784,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 54
+    },
+    {
+      "at": "2026-10-21T04:51:06.116844+00:00",
+      "elapsed": 155.009,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 245,
+      "sequence": 789,
+      "request_ms": 21,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 790,
+        "total_successes": 790,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 45
+    },
+    {
+      "at": "2026-10-21T04:51:07.131525+00:00",
+      "elapsed": 156.004,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 246,
+      "sequence": 794,
+      "request_ms": 35,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 795,
+        "total_successes": 795,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 41
+    },
+    {
+      "at": "2026-10-21T04:51:08.118737+00:00",
+      "elapsed": 157.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 247,
+      "sequence": 799,
+      "request_ms": 42,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 800,
+        "total_successes": 800,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 19
+    },
+    {
+      "at": "2026-10-21T04:51:09.112430+00:00",
+      "elapsed": 158.002,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 236,
+      "sequence": 804,
+      "request_ms": 25,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 804,
+        "total_successes": 804,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 52
+    },
+    {
+      "at": "2026-10-21T04:51:10.120765+00:00",
+      "elapsed": 159.001,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 235,
+      "sequence": 809,
+      "request_ms": 32,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 809,
+        "total_successes": 809,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 41
+    },
+    {
+      "at": "2026-10-21T04:51:11.121698+00:00",
+      "elapsed": 160.008,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 243,
+      "sequence": 814,
+      "request_ms": 42,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 814,
+        "total_successes": 814,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 23
+    },
+    {
+      "at": "2026-10-21T04:51:12.123110+00:00",
+      "elapsed": 161.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 246,
+      "sequence": 819,
+      "request_ms": 31,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 819,
+        "total_successes": 819,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 23
+    },
+    {
+      "at": "2026-10-21T04:51:13.124909+00:00",
+      "elapsed": 162.002,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 44,
+      "sequence": 825,
+      "request_ms": 24,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 825,
+        "total_successes": 825,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 6
+    },
+    {
+      "at": "2026-10-21T04:51:14.204168+00:00",
+      "elapsed": 163.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 309,
+      "sequence": 829,
+      "request_ms": 35,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 829,
+        "total_successes": 829,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 7
+    },
+    {
+      "at": "2026-10-21T04:51:15.113520+00:00",
+      "elapsed": 164.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 239,
+      "sequence": 834,
+      "request_ms": 24,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 834,
+        "total_successes": 834,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 43
+    },
+    {
+      "at": "2026-10-21T04:51:16.133059+00:00",
+      "elapsed": 165.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 240,
+      "sequence": 839,
+      "request_ms": 29,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 840,
+        "total_successes": 840,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 44
+    },
+    {
+      "at": "2026-10-21T04:51:17.117160+00:00",
+      "elapsed": 166.01,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 239,
+      "sequence": 844,
+      "request_ms": 22,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 844,
+        "total_successes": 844,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 14
+    },
+    {
+      "at": "2026-10-21T04:51:18.112991+00:00",
+      "elapsed": 167.005,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 235,
+      "sequence": 849,
+      "request_ms": 24,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 849,
+        "total_successes": 849,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 52
+    },
+    {
+      "at": "2026-10-21T04:51:19.127143+00:00",
+      "elapsed": 168.009,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 246,
+      "sequence": 854,
+      "request_ms": 34,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 854,
+        "total_successes": 854,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 1
+    },
+    {
+      "at": "2026-10-21T04:51:20.127600+00:00",
+      "elapsed": 169.007,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 245,
+      "sequence": 859,
+      "request_ms": 27,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 860,
+        "total_successes": 860,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 52
+    },
+    {
+      "at": "2026-10-21T04:51:21.119575+00:00",
+      "elapsed": 170.001,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 230,
+      "sequence": 864,
+      "request_ms": 22,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 864,
+        "total_successes": 864,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 18
+    },
+    {
+      "at": "2026-10-21T04:51:22.117345+00:00",
+      "elapsed": 171.009,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 234,
+      "sequence": 869,
+      "request_ms": 35,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 869,
+        "total_successes": 869,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 17
+    },
+    {
+      "at": "2026-10-21T04:51:23.110388+00:00",
+      "elapsed": 172.001,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 228,
+      "sequence": 874,
+      "request_ms": 23,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 874,
+        "total_successes": 874,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 8
+    },
+    {
+      "at": "2026-10-21T04:51:24.117017+00:00",
+      "elapsed": 173.009,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 233,
+      "sequence": 879,
+      "request_ms": 36,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 879,
+        "total_successes": 879,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 5
+    },
+    {
+      "at": "2026-10-21T04:51:25.110881+00:00",
+      "elapsed": 174.002,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 225,
+      "sequence": 884,
+      "request_ms": 36,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 884,
+        "total_successes": 884,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 41
+    },
+    {
+      "at": "2026-10-21T04:51:26.133752+00:00",
+      "elapsed": 175.009,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 50,
+      "sequence": 890,
+      "request_ms": 24,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 890,
+        "total_successes": 890,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 5
+    },
+    {
+      "at": "2026-10-21T04:51:27.112991+00:00",
+      "elapsed": 176.006,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 228,
+      "sequence": 894,
+      "request_ms": 20,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 894,
+        "total_successes": 894,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 34
+    },
+    {
+      "at": "2026-10-21T04:51:28.113833+00:00",
+      "elapsed": 177.002,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 227,
+      "sequence": 899,
+      "request_ms": 24,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 899,
+        "total_successes": 899,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 22
+    },
+    {
+      "at": "2026-10-21T04:51:29.118780+00:00",
+      "elapsed": 178.008,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 230,
+      "sequence": 904,
+      "request_ms": 35,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 904,
+        "total_successes": 904,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 18
+    },
+    {
+      "at": "2026-10-21T04:51:30.119331+00:00",
+      "elapsed": 179.002,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 228,
+      "sequence": 909,
+      "request_ms": 23,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 909,
+        "total_successes": 909,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 9
+    },
+    {
+      "at": "2026-10-21T04:51:31.118947+00:00",
+      "elapsed": 180.009,
+      "status": "live",
+      "error": null,
+      "camera_age_ms": 228,
+      "sequence": 914,
+      "request_ms": 36,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 914,
+        "total_successes": 914,
+        "total_timeouts": 0
+      },
+      "body_age_ms": 5
+    }
+  ],
+  "mac_images": [
+    {
+      "at": "2026-10-21T04:48:31.118297+00:00",
+      "age_ms": 194,
+      "sha256": "9d28f94b7efe39302f9c1292c5086cb4469e6b5578a7ae6a8ca342b6cac48533",
+      "bytes": 36549,
+      "metadata": {
+        "backend": "unitree",
+        "status": "live",
+        "error": null,
+        "diagnostics": {
+          "transport": "official_api_1001_isolated_polled",
+          "window_s": 3.2,
+          "attempts": 15,
+          "successes": 15,
+          "timeouts": 0,
+          "errors": 0,
+          "total_attempts": 15,
+          "total_successes": 15,
+          "total_timeouts": 0
+        },
+        "source": "unitree-videohub-88dcbc659a19",
+        "sequence": 15,
+        "age_ms": 194,
+        "request_started_at": 1792558111.049231,
+        "received_at": 1792558111.0742095,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 25,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      }
+    },
+    {
+      "at": "2026-10-21T04:48:36.124743+00:00",
+      "age_ms": 199,
+      "sha256": "40033c7d3dfa3963e84eef74bedd8b8b6445cd66b0a2de622cd401f08c4bab01",
+      "bytes": 36468,
+      "metadata": {
+        "backend": "unitree",
+        "status": "live",
+        "error": null,
+        "diagnostics": {
+          "transport": "official_api_1001_isolated_polled",
+          "window_s": 8.2,
+          "attempts": 40,
+          "successes": 40,
+          "timeouts": 0,
+          "errors": 0,
+          "total_attempts": 40,
+          "total_successes": 40,
+          "total_timeouts": 0
+        },
+        "source": "unitree-videohub-88dcbc659a19",
+        "sequence": 40,
+        "age_ms": 199,
+        "request_started_at": 1792558116.0522459,
+        "received_at": 1792558116.07464,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 22,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      }
+    },
+    {
+      "at": "2026-10-21T04:48:41.128703+00:00",
+      "age_ms": 197,
+      "sha256": "4718ba59de4d35f8476ab649a91b3c0c8dea5c3e0dd79a93c9a78ff62d859584",
+      "bytes": 36568,
+      "metadata": {
+        "backend": "unitree",
+        "status": "live",
+        "error": null,
+        "diagnostics": {
+          "transport": "official_api_1001_isolated_polled",
+          "window_s": 13.2,
+          "attempts": 65,
+          "successes": 65,
+          "timeouts": 0,
+          "errors": 0,
+          "total_attempts": 65,
+          "total_successes": 65,
+          "total_timeouts": 0
+        },
+        "source": "unitree-videohub-88dcbc659a19",
+        "sequence": 65,
+        "age_ms": 197,
+        "request_started_at": 1792558121.055361,
+        "received_at": 1792558121.0892253,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 34,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      }
+    },
+    {
+      "at": "2026-10-21T04:48:46.128372+00:00",
+      "age_ms": 192,
+      "sha256": "04049ea27bde1d96e394f804a4b1f6a09c7febf686f371432e66c13a26deb3a1",
+      "bytes": 36718,
+      "metadata": {
+        "backend": "unitree",
+        "status": "live",
+        "error": null,
+        "diagnostics": {
+          "transport": "official_api_1001_isolated_polled",
+          "window_s": 18.2,
+          "attempts": 90,
+          "successes": 90,
+          "timeouts": 0,
+          "errors": 0,
+          "total_attempts": 90,
+          "total_successes": 90,
+          "total_timeouts": 0
+        },
+        "source": "unitree-videohub-88dcbc659a19",
+        "sequence": 90,
+        "age_ms": 192,
+        "request_started_at": 1792558126.058818,
+        "received_at": 1792558126.0897982,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 31,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      }
+    },
+    {
+      "at": "2026-10-21T04:48:51.155556+00:00",
+      "age_ms": 220,
+      "sha256": "8aef51d7f19c9ec3459d3a75c8b105c9dff09e2ccb2bd3de588ebe916b3b11ba",
+      "bytes": 36681,
+      "metadata": {
+        "backend": "unitree",
+        "status": "live",
+        "error": null,
+        "diagnostics": {
+          "transport": "official_api_1001_isolated_polled",
+          "window_s": 23.2,
+          "attempts": 115,
+          "successes": 115,
+          "timeouts": 0,
+          "errors": 0,
+          "total_attempts": 115,
+          "total_successes": 115,
+          "total_timeouts": 0
+        },
+        "source": "unitree-videohub-88dcbc659a19",
+        "sequence": 115,
+        "age_ms": 220,
+        "request_started_at": 1792558131.0620053,
+        "received_at": 1792558131.082301,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 20,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      }
+    },
+    {
+      "at": "2026-10-21T04:48:56.126603+00:00",
+      "age_ms": 187,
+      "sha256": "7a1a01f4a8b9784fb00881abaacf43c9b21e10b0e46616462cbb37a83acd6130",
+      "bytes": 36607,
+      "metadata": {
+        "backend": "unitree",
+        "status": "live",
+        "error": null,
+        "diagnostics": {
+          "transport": "official_api_1001_isolated_polled",
+          "window_s": 28.2,
+          "attempts": 140,
+          "successes": 140,
+          "timeouts": 0,
+          "errors": 0,
+          "total_attempts": 140,
+          "total_successes": 140,
+          "total_timeouts": 0
+        },
+        "source": "unitree-videohub-88dcbc659a19",
+        "sequence": 140,
+        "age_ms": 187,
+        "request_started_at": 1792558136.0654,
+        "received_at": 1792558136.0852,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 20,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      }
+    },
+    {
+      "at": "2026-10-21T04:49:01.119536+00:00",
+      "age_ms": 175,
+      "sha256": "74bb5864ccc83c8c90c201d4d46cc98a7185e637caeb60b4f8604608c24e0b91",
+      "bytes": 36500,
+      "metadata": {
+        "backend": "unitree",
+        "status": "live",
+        "error": null,
+        "diagnostics": {
+          "transport": "official_api_1001_isolated_polled",
+          "window_s": 33.2,
+          "attempts": 165,
+          "successes": 165,
+          "timeouts": 0,
+          "errors": 0,
+          "total_attempts": 165,
+          "total_successes": 165,
+          "total_timeouts": 0
+        },
+        "source": "unitree-videohub-88dcbc659a19",
+        "sequence": 165,
+        "age_ms": 175,
+        "request_started_at": 1792558141.068281,
+        "received_at": 1792558141.0882354,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 20,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      }
+    },
+    {
+      "at": "2026-10-21T04:49:06.130215+00:00",
+      "age_ms": 185,
+      "sha256": "3321427238fed892d4f2b161645b9495fdc02edaacbe3bdfa04579c076b14c55",
+      "bytes": 36448,
+      "metadata": {
+        "backend": "unitree",
+        "status": "live",
+        "error": null,
+        "diagnostics": {
+          "transport": "official_api_1001_isolated_polled",
+          "window_s": 38.2,
+          "attempts": 190,
+          "successes": 190,
+          "timeouts": 0,
+          "errors": 0,
+          "total_attempts": 190,
+          "total_successes": 190,
+          "total_timeouts": 0
+        },
+        "source": "unitree-videohub-88dcbc659a19",
+        "sequence": 190,
+        "age_ms": 185,
+        "request_started_at": 1792558146.0716822,
+        "received_at": 1792558146.094556,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 23,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      }
+    },
+    {
+      "at": "2026-10-21T04:49:11.124393+00:00",
+      "age_ms": 174,
+      "sha256": "1ec44195456be0e9fbfa6daa21696ee15638be6dee63c9f204478cc7f0631d3e",
+      "bytes": 36487,
+      "metadata": {
+        "backend": "unitree",
+        "status": "live",
+        "error": null,
+        "diagnostics": {
+          "transport": "official_api_1001_isolated_polled",
+          "window_s": 43.2,
+          "attempts": 215,
+          "successes": 215,
+          "timeouts": 0,
+          "errors": 0,
+          "total_attempts": 215,
+          "total_successes": 215,
+          "total_timeouts": 0
+        },
+        "source": "unitree-videohub-88dcbc659a19",
+        "sequence": 215,
+        "age_ms": 174,
+        "request_started_at": 1792558151.0748813,
+        "received_at": 1792558151.10576,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 31,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      }
+    },
+    {
+      "at": "2026-10-21T04:49:16.165277+00:00",
+      "age_ms": 212,
+      "sha256": "2a33d55f854cd596288080280ca517a97057251c537de7085272ebb10e70776d",
+      "bytes": 36477,
+      "metadata": {
+        "backend": "unitree",
+        "status": "live",
+        "error": null,
+        "diagnostics": {
+          "transport": "official_api_1001_isolated_polled",
+          "window_s": 48.2,
+          "attempts": 240,
+          "successes": 240,
+          "timeouts": 0,
+          "errors": 0,
+          "total_attempts": 240,
+          "total_successes": 240,
+          "total_timeouts": 0
+        },
+        "source": "unitree-videohub-88dcbc659a19",
+        "sequence": 240,
+        "age_ms": 212,
+        "request_started_at": 1792558156.0780118,
+        "received_at": 1792558156.1121414,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 34,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      }
+    },
+    {
+      "at": "2026-10-21T04:49:21.122897+00:00",
+      "age_ms": 165,
+      "sha256": "48a952aad462a9cbdfca3259084abb6fd082eaea2dd5ec6f3af606f2c28c6c34",
+      "bytes": 36433,
+      "metadata": {
+        "backend": "unitree",
+        "status": "live",
+        "error": null,
+        "diagnostics": {
+          "transport": "official_api_1001_isolated_polled",
+          "window_s": 53.2,
+          "attempts": 265,
+          "successes": 265,
+          "timeouts": 0,
+          "errors": 0,
+          "total_attempts": 265,
+          "total_successes": 265,
+          "total_timeouts": 0
+        },
+        "source": "unitree-videohub-88dcbc659a19",
+        "sequence": 265,
+        "age_ms": 165,
+        "request_started_at": 1792558161.0812473,
+        "received_at": 1792558161.103273,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 22,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      }
+    },
+    {
+      "at": "2026-10-21T04:49:26.124546+00:00",
+      "age_ms": 167,
+      "sha256": "594f448193967de9da1fb9bc595bc52a95d28fe798ac2fde9e7a6b6fa9cd3498",
+      "bytes": 36571,
+      "metadata": {
+        "backend": "unitree",
+        "status": "live",
+        "error": null,
+        "diagnostics": {
+          "transport": "official_api_1001_isolated_polled",
+          "window_s": 58.3,
+          "attempts": 290,
+          "successes": 290,
+          "timeouts": 0,
+          "errors": 0,
+          "total_attempts": 290,
+          "total_successes": 290,
+          "total_timeouts": 0
+        },
+        "source": "unitree-videohub-88dcbc659a19",
+        "sequence": 290,
+        "age_ms": 167,
+        "request_started_at": 1792558166.0844734,
+        "received_at": 1792558166.1213467,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 37,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      }
+    },
+    {
+      "at": "2026-10-21T04:49:31.136526+00:00",
+      "age_ms": 173,
+      "sha256": "876d46f8d11d08939ad3657ed610694d77a987a1d887fb4c8339788b4d23613d",
+      "bytes": 36438,
+      "metadata": {
+        "backend": "unitree",
+        "status": "live",
+        "error": null,
+        "diagnostics": {
+          "transport": "official_api_1001_isolated_polled",
+          "window_s": 60,
+          "attempts": 300,
+          "successes": 300,
+          "timeouts": 0,
+          "errors": 0,
+          "total_attempts": 315,
+          "total_successes": 315,
+          "total_timeouts": 0
+        },
+        "source": "unitree-videohub-88dcbc659a19",
+        "sequence": 315,
+        "age_ms": 173,
+        "request_started_at": 1792558171.0874858,
+        "received_at": 1792558171.1097784,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 22,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      }
+    },
+    {
+      "at": "2026-10-21T04:49:36.127361+00:00",
+      "age_ms": 162,
+      "sha256": "1b6a13ee60796992579a6dec4292ec07135d806a261c17df3d342a9f48aaf0cd",
+      "bytes": 36572,
+      "metadata": {
+        "backend": "unitree",
+        "status": "live",
+        "error": null,
+        "diagnostics": {
+          "transport": "official_api_1001_isolated_polled",
+          "window_s": 60,
+          "attempts": 300,
+          "successes": 300,
+          "timeouts": 0,
+          "errors": 0,
+          "total_attempts": 340,
+          "total_successes": 340,
+          "total_timeouts": 0
+        },
+        "source": "unitree-videohub-88dcbc659a19",
+        "sequence": 340,
+        "age_ms": 162,
+        "request_started_at": 1792558176.0902498,
+        "received_at": 1792558176.1114638,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 21,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      }
+    },
+    {
+      "at": "2026-10-21T04:49:41.164346+00:00",
+      "age_ms": 201,
+      "sha256": "2842f40ae1929dc621f436e6d90103c48ede7b516f8381ad19b1baeadac12b9b",
+      "bytes": 36535,
+      "metadata": {
+        "backend": "unitree",
+        "status": "live",
+        "error": null,
+        "diagnostics": {
+          "transport": "official_api_1001_isolated_polled",
+          "window_s": 60,
+          "attempts": 300,
+          "successes": 300,
+          "timeouts": 0,
+          "errors": 0,
+          "total_attempts": 365,
+          "total_successes": 365,
+          "total_timeouts": 0
+        },
+        "source": "unitree-videohub-88dcbc659a19",
+        "sequence": 365,
+        "age_ms": 201,
+        "request_started_at": 1792558181.0931454,
+        "received_at": 1792558181.1269765,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 34,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      }
+    },
+    {
+      "at": "2026-10-21T04:49:46.133144+00:00",
+      "age_ms": 160,
+      "sha256": "4a0989a7eea365686766fa745d1f51ce752abd6f487e93fa749e0352f6a709ae",
+      "bytes": 36528,
+      "metadata": {
+        "backend": "unitree",
+        "status": "live",
+        "error": null,
+        "diagnostics": {
+          "transport": "official_api_1001_isolated_polled",
+          "window_s": 60,
+          "attempts": 300,
+          "successes": 300,
+          "timeouts": 0,
+          "errors": 0,
+          "total_attempts": 390,
+          "total_successes": 390,
+          "total_timeouts": 0
+        },
+        "source": "unitree-videohub-88dcbc659a19",
+        "sequence": 390,
+        "age_ms": 160,
+        "request_started_at": 1792558186.0970302,
+        "received_at": 1792558186.1200428,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 23,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      }
+    },
+    {
+      "at": "2026-10-21T04:49:51.125768+00:00",
+      "age_ms": 150,
+      "sha256": "bb3ad0ab490cc778183c9ff80fb806d65a542773c8de4242c3a28b19995a77ae",
+      "bytes": 36495,
+      "metadata": {
+        "backend": "unitree",
+        "status": "live",
+        "error": null,
+        "diagnostics": {
+          "transport": "official_api_1001_isolated_polled",
+          "window_s": 60,
+          "attempts": 300,
+          "successes": 300,
+          "timeouts": 0,
+          "errors": 0,
+          "total_attempts": 415,
+          "total_successes": 415,
+          "total_timeouts": 0
+        },
+        "source": "unitree-videohub-88dcbc659a19",
+        "sequence": 415,
+        "age_ms": 150,
+        "request_started_at": 1792558191.100376,
+        "received_at": 1792558191.1435313,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 43,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      }
+    },
+    {
+      "at": "2026-10-21T04:49:56.128032+00:00",
+      "age_ms": 149,
+      "sha256": "6a9c25b30b3e6c027e849c3b97a33104b189dd7f0f693a7d9175ef5cd02fecb5",
+      "bytes": 36585,
+      "metadata": {
+        "backend": "unitree",
+        "status": "live",
+        "error": null,
+        "diagnostics": {
+          "transport": "official_api_1001_isolated_polled",
+          "window_s": 60,
+          "attempts": 300,
+          "successes": 300,
+          "timeouts": 0,
+          "errors": 0,
+          "total_attempts": 440,
+          "total_successes": 440,
+          "total_timeouts": 0
+        },
+        "source": "unitree-videohub-88dcbc659a19",
+        "sequence": 440,
+        "age_ms": 149,
+        "request_started_at": 1792558196.1035235,
+        "received_at": 1792558196.138459,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 35,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      }
+    },
+    {
+      "at": "2026-10-21T04:50:01.148088+00:00",
+      "age_ms": 165,
+      "sha256": "3d3ea841bea33a2eb46c80c34b3f38285203f577ab83e04c5374e8ae1fbabba9",
+      "bytes": 36509,
+      "metadata": {
+        "backend": "unitree",
+        "status": "live",
+        "error": null,
+        "diagnostics": {
+          "transport": "official_api_1001_isolated_polled",
+          "window_s": 60,
+          "attempts": 300,
+          "successes": 300,
+          "timeouts": 0,
+          "errors": 0,
+          "total_attempts": 465,
+          "total_successes": 465,
+          "total_timeouts": 0
+        },
+        "source": "unitree-videohub-88dcbc659a19",
+        "sequence": 465,
+        "age_ms": 165,
+        "request_started_at": 1792558201.1066194,
+        "received_at": 1792558201.128542,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 22,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      }
+    },
+    {
+      "at": "2026-10-21T04:50:06.123896+00:00",
+      "age_ms": 141,
+      "sha256": "231037e5e4b3caf8de9bfc3bc68ab89e87cfa35c4d8e0595d2eb0f072fc3f323",
+      "bytes": 36503,
+      "metadata": {
+        "backend": "unitree",
+        "status": "live",
+        "error": null,
+        "diagnostics": {
+          "transport": "official_api_1001_isolated_polled",
+          "window_s": 60,
+          "attempts": 300,
+          "successes": 300,
+          "timeouts": 0,
+          "errors": 0,
+          "total_attempts": 490,
+          "total_successes": 490,
+          "total_timeouts": 0
+        },
+        "source": "unitree-videohub-88dcbc659a19",
+        "sequence": 490,
+        "age_ms": 141,
+        "request_started_at": 1792558206.109961,
+        "received_at": 1792558206.1326926,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 23,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      }
+    },
+    {
+      "at": "2026-10-21T04:50:11.124838+00:00",
+      "age_ms": 136,
+      "sha256": "12a812a087cead2ca77013abb0237ca7275a90e4a37590a70ef5d39c050e4d9e",
+      "bytes": 35516,
+      "metadata": {
+        "backend": "unitree",
+        "status": "live",
+        "error": null,
+        "diagnostics": {
+          "transport": "official_api_1001_isolated_polled",
+          "window_s": 60,
+          "attempts": 300,
+          "successes": 300,
+          "timeouts": 0,
+          "errors": 0,
+          "total_attempts": 515,
+          "total_successes": 515,
+          "total_timeouts": 0
+        },
+        "source": "unitree-videohub-88dcbc659a19",
+        "sequence": 515,
+        "age_ms": 136,
+        "request_started_at": 1792558211.113206,
+        "received_at": 1792558211.1344724,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 21,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      }
+    },
+    {
+      "at": "2026-10-21T04:50:16.124501+00:00",
+      "age_ms": 133,
+      "sha256": "cacb7dd4b2bc714766d7bd5128e76cb4c43da0ee87cbedf60d4b86d679d90661",
+      "bytes": 33070,
+      "metadata": {
+        "backend": "unitree",
+        "status": "live",
+        "error": null,
+        "diagnostics": {
+          "transport": "official_api_1001_isolated_polled",
+          "window_s": 60,
+          "attempts": 300,
+          "successes": 300,
+          "timeouts": 0,
+          "errors": 0,
+          "total_attempts": 540,
+          "total_successes": 540,
+          "total_timeouts": 0
+        },
+        "source": "unitree-videohub-88dcbc659a19",
+        "sequence": 540,
+        "age_ms": 133,
+        "request_started_at": 1792558216.1162882,
+        "received_at": 1792558216.1418767,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 26,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      }
+    },
+    {
+      "at": "2026-10-21T04:50:21.116003+00:00",
+      "age_ms": 129,
+      "sha256": "0502c411ba971be2b6cb27b11771de7f069a7fb0d1edcd635d3179d6648762b6",
+      "bytes": 32962,
+      "metadata": {
+        "backend": "unitree",
+        "status": "live",
+        "error": null,
+        "diagnostics": {
+          "transport": "official_api_1001_isolated_polled",
+          "window_s": 60,
+          "attempts": 300,
+          "successes": 300,
+          "timeouts": 0,
+          "errors": 0,
+          "total_attempts": 565,
+          "total_successes": 565,
+          "total_timeouts": 0
+        },
+        "source": "unitree-videohub-88dcbc659a19",
+        "sequence": 565,
+        "age_ms": 129,
+        "request_started_at": 1792558221.1194718,
+        "received_at": 1792558221.145858,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 26,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      }
+    },
+    {
+      "at": "2026-10-21T04:50:26.113941+00:00",
+      "age_ms": 116,
+      "sha256": "0b90081a67a64de5ffae10118f8a7ac11be208942363d1e4a04e55063152ccdc",
+      "bytes": 32916,
+      "metadata": {
+        "backend": "unitree",
+        "status": "live",
+        "error": null,
+        "diagnostics": {
+          "transport": "official_api_1001_isolated_polled",
+          "window_s": 60,
+          "attempts": 300,
+          "successes": 300,
+          "timeouts": 0,
+          "errors": 0,
+          "total_attempts": 590,
+          "total_successes": 590,
+          "total_timeouts": 0
+        },
+        "source": "unitree-videohub-88dcbc659a19",
+        "sequence": 590,
+        "age_ms": 116,
+        "request_started_at": 1792558226.1231663,
+        "received_at": 1792558226.157838,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 35,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      }
+    },
+    {
+      "at": "2026-10-21T04:50:31.119541+00:00",
+      "age_ms": 118,
+      "sha256": "389ade472be5b22336d8ffd271692e42d8f2c41ace53c9b1f8b5eeb635ced11b",
+      "bytes": 32863,
+      "metadata": {
+        "backend": "unitree",
+        "status": "live",
+        "error": null,
+        "diagnostics": {
+          "transport": "official_api_1001_isolated_polled",
+          "window_s": 60,
+          "attempts": 300,
+          "successes": 300,
+          "timeouts": 0,
+          "errors": 0,
+          "total_attempts": 615,
+          "total_successes": 615,
+          "total_timeouts": 0
+        },
+        "source": "unitree-videohub-88dcbc659a19",
+        "sequence": 615,
+        "age_ms": 118,
+        "request_started_at": 1792558231.1264477,
+        "received_at": 1792558231.1579456,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 32,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      }
+    },
+    {
+      "at": "2026-10-21T04:50:36.127994+00:00",
+      "age_ms": 124,
+      "sha256": "5bc0fbdbd00fa6585d3bc12b5b3fcdd450ce91b31aa16bfb574ab9d5f066bd9c",
+      "bytes": 32942,
+      "metadata": {
+        "backend": "unitree",
+        "status": "live",
+        "error": null,
+        "diagnostics": {
+          "transport": "official_api_1001_isolated_polled",
+          "window_s": 60,
+          "attempts": 300,
+          "successes": 300,
+          "timeouts": 0,
+          "errors": 0,
+          "total_attempts": 640,
+          "total_successes": 640,
+          "total_timeouts": 0
+        },
+        "source": "unitree-videohub-88dcbc659a19",
+        "sequence": 640,
+        "age_ms": 124,
+        "request_started_at": 1792558236.129814,
+        "received_at": 1792558236.1655793,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 36,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      }
+    },
+    {
+      "at": "2026-10-21T04:50:41.119855+00:00",
+      "age_ms": 116,
+      "sha256": "858aa7aada9d24649a406b70618781e920f278ac8af9f97067fdcf145a4fb23f",
+      "bytes": 32815,
+      "metadata": {
+        "backend": "unitree",
+        "status": "live",
+        "error": null,
+        "diagnostics": {
+          "transport": "official_api_1001_isolated_polled",
+          "window_s": 60,
+          "attempts": 300,
+          "successes": 300,
+          "timeouts": 0,
+          "errors": 0,
+          "total_attempts": 665,
+          "total_successes": 665,
+          "total_timeouts": 0
+        },
+        "source": "unitree-videohub-88dcbc659a19",
+        "sequence": 665,
+        "age_ms": 116,
+        "request_started_at": 1792558241.1333,
+        "received_at": 1792558241.1666176,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 33,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      }
+    },
+    {
+      "at": "2026-10-21T04:50:46.118648+00:00",
+      "age_ms": 107,
+      "sha256": "20ffbf3f4aa793cd6567374b3e7428f6e1601be1dd8546396ed1383a8fac833d",
+      "bytes": 32816,
+      "metadata": {
+        "backend": "unitree",
+        "status": "live",
+        "error": null,
+        "diagnostics": {
+          "transport": "official_api_1001_isolated_polled",
+          "window_s": 60,
+          "attempts": 300,
+          "successes": 300,
+          "timeouts": 0,
+          "errors": 0,
+          "total_attempts": 690,
+          "total_successes": 690,
+          "total_timeouts": 0
+        },
+        "source": "unitree-videohub-88dcbc659a19",
+        "sequence": 690,
+        "age_ms": 107,
+        "request_started_at": 1792558246.1366632,
+        "received_at": 1792558246.160724,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 24,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      }
+    },
+    {
+      "at": "2026-10-21T04:50:51.125770+00:00",
+      "age_ms": 124,
+      "sha256": "370b8f09b8862e43413aa0996bd74d3bd29df80b06144cd07f9e2c0af24a7ece",
+      "bytes": 32900,
+      "metadata": {
+        "backend": "unitree",
+        "status": "live",
+        "error": null,
+        "diagnostics": {
+          "transport": "official_api_1001_isolated_polled",
+          "window_s": 60,
+          "attempts": 300,
+          "successes": 300,
+          "timeouts": 0,
+          "errors": 0,
+          "total_attempts": 715,
+          "total_successes": 715,
+          "total_timeouts": 0
+        },
+        "source": "unitree-videohub-88dcbc659a19",
+        "sequence": 715,
+        "age_ms": 124,
+        "request_started_at": 1792558251.1400387,
+        "received_at": 1792558251.1799996,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 40,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      }
+    },
+    {
+      "at": "2026-10-21T04:50:56.115115+00:00",
+      "age_ms": 102,
+      "sha256": "62375c085992f7d429d826b5f4cfe4e71930b338da3769b04f5d834180d47446",
+      "bytes": 32902,
+      "metadata": {
+        "backend": "unitree",
+        "status": "live",
+        "error": null,
+        "diagnostics": {
+          "transport": "official_api_1001_isolated_polled",
+          "window_s": 60,
+          "attempts": 300,
+          "successes": 300,
+          "timeouts": 0,
+          "errors": 0,
+          "total_attempts": 740,
+          "total_successes": 740,
+          "total_timeouts": 0
+        },
+        "source": "unitree-videohub-88dcbc659a19",
+        "sequence": 740,
+        "age_ms": 102,
+        "request_started_at": 1792558256.1435635,
+        "received_at": 1792558256.1847022,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 41,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      }
+    },
+    {
+      "at": "2026-10-21T04:51:01.117342+00:00",
+      "age_ms": 103,
+      "sha256": "97f99269a2a3a003c10e33d35d7f00a1c6212a4ac6d7be04ee52861aff33f000",
+      "bytes": 32861,
+      "metadata": {
+        "backend": "unitree",
+        "status": "live",
+        "error": null,
+        "diagnostics": {
+          "transport": "official_api_1001_isolated_polled",
+          "window_s": 60,
+          "attempts": 300,
+          "successes": 300,
+          "timeouts": 0,
+          "errors": 0,
+          "total_attempts": 765,
+          "total_successes": 765,
+          "total_timeouts": 0
+        },
+        "source": "unitree-videohub-88dcbc659a19",
+        "sequence": 765,
+        "age_ms": 103,
+        "request_started_at": 1792558261.1469471,
+        "received_at": 1792558261.179807,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 33,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      }
+    },
+    {
+      "at": "2026-10-21T04:51:06.116844+00:00",
+      "age_ms": 90,
+      "sha256": "6585736d3bda6400822cdc635ee6a50953c911c5abcb2de765ac32b257a0b84a",
+      "bytes": 32910,
+      "metadata": {
+        "backend": "unitree",
+        "status": "live",
+        "error": null,
+        "diagnostics": {
+          "transport": "official_api_1001_isolated_polled",
+          "window_s": 60,
+          "attempts": 300,
+          "successes": 300,
+          "timeouts": 0,
+          "errors": 0,
+          "total_attempts": 790,
+          "total_successes": 790,
+          "total_timeouts": 0
+        },
+        "source": "unitree-videohub-88dcbc659a19",
+        "sequence": 790,
+        "age_ms": 90,
+        "request_started_at": 1792558266.150183,
+        "received_at": 1792558266.1701736,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 20,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      }
+    },
+    {
+      "at": "2026-10-21T04:51:11.121698+00:00",
+      "age_ms": 91,
+      "sha256": "912bce0c02c4ce29df0de1f152c20ba954ac5e10a18aceedcdfcbd2d3e3e22e5",
+      "bytes": 32755,
+      "metadata": {
+        "backend": "unitree",
+        "status": "live",
+        "error": null,
+        "diagnostics": {
+          "transport": "official_api_1001_isolated_polled",
+          "window_s": 60,
+          "attempts": 300,
+          "successes": 300,
+          "timeouts": 0,
+          "errors": 0,
+          "total_attempts": 815,
+          "total_successes": 815,
+          "total_timeouts": 0
+        },
+        "source": "unitree-videohub-88dcbc659a19",
+        "sequence": 815,
+        "age_ms": 91,
+        "request_started_at": 1792558271.1535113,
+        "received_at": 1792558271.1883292,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 35,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      }
+    },
+    {
+      "at": "2026-10-21T04:51:16.133059+00:00",
+      "age_ms": 102,
+      "sha256": "c8e5eb514a4cf30e73e8c8955ee042bc62aa48cdb29d72d7bbaf3fefd90b2f19",
+      "bytes": 32874,
+      "metadata": {
+        "backend": "unitree",
+        "status": "live",
+        "error": null,
+        "diagnostics": {
+          "transport": "official_api_1001_isolated_polled",
+          "window_s": 60,
+          "attempts": 300,
+          "successes": 300,
+          "timeouts": 0,
+          "errors": 0,
+          "total_attempts": 840,
+          "total_successes": 840,
+          "total_timeouts": 0
+        },
+        "source": "unitree-videohub-88dcbc659a19",
+        "sequence": 840,
+        "age_ms": 102,
+        "request_started_at": 1792558276.1566849,
+        "received_at": 1792558276.1785784,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 22,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      }
+    },
+    {
+      "at": "2026-10-21T04:51:21.119575+00:00",
+      "age_ms": 99,
+      "sha256": "cbac3bf7bdc61d9acfe79848fbec9d3ffec0a03409a39b43d4eda189040770af",
+      "bytes": 32870,
+      "metadata": {
+        "backend": "unitree",
+        "status": "live",
+        "error": null,
+        "diagnostics": {
+          "transport": "official_api_1001_isolated_polled",
+          "window_s": 60,
+          "attempts": 300,
+          "successes": 300,
+          "timeouts": 0,
+          "errors": 0,
+          "total_attempts": 865,
+          "total_successes": 865,
+          "total_timeouts": 0
+        },
+        "source": "unitree-videohub-88dcbc659a19",
+        "sequence": 865,
+        "age_ms": 99,
+        "request_started_at": 1792558281.159768,
+        "received_at": 1792558281.1853805,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 26,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      }
+    },
+    {
+      "at": "2026-10-21T04:51:26.133752+00:00",
+      "age_ms": 98,
+      "sha256": "0687c400970da2339c6b1f23c8fc8f885af9f990f32e733af6b6cda4bb0b246b",
+      "bytes": 33059,
+      "metadata": {
+        "backend": "unitree",
+        "status": "live",
+        "error": null,
+        "diagnostics": {
+          "transport": "official_api_1001_isolated_polled",
+          "window_s": 60,
+          "attempts": 300,
+          "successes": 300,
+          "timeouts": 0,
+          "errors": 0,
+          "total_attempts": 890,
+          "total_successes": 890,
+          "total_timeouts": 0
+        },
+        "source": "unitree-videohub-88dcbc659a19",
+        "sequence": 890,
+        "age_ms": 98,
+        "request_started_at": 1792558286.163188,
+        "received_at": 1792558286.1869664,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 24,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      }
+    },
+    {
+      "at": "2026-10-21T04:51:31.118947+00:00",
+      "age_ms": 79,
+      "sha256": "efcbed0290d5ec0ef993d99503e52fc74a1ba4c9262a1f971288ac049b97a705",
+      "bytes": 33005,
+      "metadata": {
+        "backend": "unitree",
+        "status": "live",
+        "error": null,
+        "diagnostics": {
+          "transport": "official_api_1001_isolated_polled",
+          "window_s": 60,
+          "attempts": 300,
+          "successes": 300,
+          "timeouts": 0,
+          "errors": 0,
+          "total_attempts": 915,
+          "total_successes": 915,
+          "total_timeouts": 0
+        },
+        "source": "unitree-videohub-88dcbc659a19",
+        "sequence": 915,
+        "age_ms": 79,
+        "request_started_at": 1792558291.1661522,
+        "received_at": 1792558291.2011492,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 35,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      }
+    }
+  ],
+  "limitations": [
+    "仅证明本次三分钟测量窗口，非长期无故障保证",
+    "相机没有曝光时间；请求帧龄不等于曝光延迟",
+    "相机接收稳定不证明支撑、平衡、标定或官方能力执行状态"
+  ]
+}

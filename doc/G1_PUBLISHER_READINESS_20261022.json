@@ -1,0 +1,581 @@
+{
+  "checked_at_utc": "2026-10-22T04:51:31.450219+00:00",
+  "scope": "Read-only robot investigation, project console deployment and request preflight; no physical command dispatched.",
+  "robot": "G1 EDU 23 DOF + Orin; app identifies G1 EDU+",
+  "source_files": [
+    {
+      "path": "g1_console/assets/safety_evidence_sources/service_publisher_20261022_v33.json",
+      "sha256": "dbfde31168bda86ddc701c1b9ac4df01ee9b7726a5027d8c6a6ae84c9a0d5a6d"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/loco_compatibility_followup_20261022_v33.json",
+      "sha256": "d67b9a2371ca24dc1c525b9670c204166b8800485fcb0b0508d5896f75abc03f"
+    }
+  ],
+  "publisher_review": {
+    "current": false,
+    "checked_at_utc": "2026-10-22T04:38:55.318059+00:00",
+    "completed_at_utc": "2026-10-22T04:44:25.631571+00:00",
+    "duration_s": 330.213,
+    "boot_id": "aed898cb-acfd-44a2-8e9c-50f1f00269aa",
+    "advertisements": [
+      {
+        "topic": "rt/servicestate",
+        "participant_key": "0110f79d-eb98-80fc-6dea-face000001c1",
+        "source_ip": "192.168.123.161",
+        "self_reported": {
+          "__Hostname": "Unitree",
+          "__Pid": "3113",
+          "__ProcessName": "robot_state_service"
+        },
+        "received_at_utc": "2026-10-22T04:40:35.826277+00:00",
+        "rows": [
+          {
+            "name": "ai_sport",
+            "version": "8.7.5.212",
+            "path": "$[0]",
+            "binding": "object_fields"
+          },
+          {
+            "name": "bashrunner",
+            "version": "1.1.1.2",
+            "path": "$[4]",
+            "binding": "object_fields"
+          },
+          {
+            "name": "basic_service",
+            "version": "3.0.0.18",
+            "path": "$[5]",
+            "binding": "object_fields"
+          },
+          {
+            "name": "battery_guard",
+            "version": "1.0.0.9",
+            "path": "$[6]",
+            "binding": "object_fields"
+          },
+          {
+            "name": "chat_go",
+            "version": "1.9.5.26",
+            "path": "$[7]",
+            "binding": "object_fields"
+          },
+          {
+            "name": "emergency_stop",
+            "version": "1.0.0.4",
+            "path": "$[10]",
+            "binding": "object_fields"
+          },
+          {
+            "name": "g1_arm_example",
+            "version": "2.0.2.5",
+            "path": "$[11]",
+            "binding": "object_fields"
+          },
+          {
+            "name": "lidar_driver",
+            "version": "1.0.0.12",
+            "path": "$[12]",
+            "binding": "object_fields"
+          },
+          {
+            "name": "log_system",
+            "version": "2.0.0.11",
+            "path": "$[13]",
+            "binding": "object_fields"
+          },
+          {
+            "name": "motion_switcher",
+            "version": "1.0.0.1",
+            "path": "$[14]",
+            "binding": "object_fields"
+          },
+          {
+            "name": "net_switcher",
+            "version": "1.0.2.1",
+            "path": "$[15]",
+            "binding": "object_fields"
+          },
+          {
+            "name": "robot_state",
+            "version": "3.0.0.8",
+            "path": "$[18]",
+            "binding": "object_fields"
+          },
+          {
+            "name": "robot_type_service",
+            "version": "1.0.2.4",
+            "path": "$[19]",
+            "binding": "object_fields"
+          },
+          {
+            "name": "state_estimator",
+            "version": "2.0.0.25",
+            "path": "$[20]",
+            "binding": "object_fields"
+          },
+          {
+            "name": "unistore",
+            "version": "1.0.1.20",
+            "path": "$[21]",
+            "binding": "object_fields"
+          },
+          {
+            "name": "unitree_slam",
+            "version": "1.0.2.9",
+            "path": "$[22]",
+            "binding": "object_fields"
+          },
+          {
+            "name": "video_hub_pc4",
+            "version": "1.0.1.1",
+            "path": "$[23]",
+            "binding": "object_fields"
+          },
+          {
+            "name": "vui_service",
+            "version": "2.1.0.47",
+            "path": "$[24]",
+            "binding": "object_fields"
+          },
+          {
+            "name": "webrtc_bridge",
+            "version": "1.1.2.2",
+            "path": "$[25]",
+            "binding": "object_fields"
+          }
+        ],
+        "sha256": "c31dde1408172e046585859481d0ff67c2a874bacbb461f2c7ebbd813245b4c6"
+      }
+    ],
+    "queries": [
+      {
+        "topic": "rt/api/sport/response",
+        "participant_key": "0110652f-d08a-5632-cfa3-319f000001c1",
+        "source_ip": "192.168.123.161",
+        "self_reported": {
+          "__Hostname": "Unitree",
+          "__Pid": "3359",
+          "__ProcessName": "humanoid"
+        },
+        "service": "sport",
+        "phase": "initial",
+        "api_id": 7001,
+        "code": 0,
+        "data": "{\"data\":0}",
+        "elapsed_ms": 22.128
+      },
+      {
+        "topic": "rt/api/sport/response",
+        "participant_key": "0110652f-d08a-5632-cfa3-319f000001c1",
+        "source_ip": "192.168.123.161",
+        "self_reported": {
+          "__Hostname": "Unitree",
+          "__Pid": "3359",
+          "__ProcessName": "humanoid"
+        },
+        "service": "sport",
+        "phase": "initial",
+        "api_id": 7002,
+        "code": 0,
+        "data": "{\"data\":0}",
+        "elapsed_ms": 6.054
+      },
+      {
+        "topic": "rt/api/sport/response",
+        "participant_key": "0110652f-d08a-5632-cfa3-319f000001c1",
+        "source_ip": "192.168.123.161",
+        "self_reported": {
+          "__Hostname": "Unitree",
+          "__Pid": "3359",
+          "__ProcessName": "humanoid"
+        },
+        "service": "sport",
+        "phase": "initial",
+        "api_id": 7003,
+        "code": 7301,
+        "data": null,
+        "elapsed_ms": 6.744
+      },
+      {
+        "topic": "rt/api/sport/response",
+        "participant_key": "0110652f-d08a-5632-cfa3-319f000001c1",
+        "source_ip": "192.168.123.161",
+        "self_reported": {
+          "__Hostname": "Unitree",
+          "__Pid": "3359",
+          "__ProcessName": "humanoid"
+        },
+        "service": "sport",
+        "phase": "initial",
+        "api_id": 7005,
+        "code": 7301,
+        "data": null,
+        "elapsed_ms": 5.607
+      },
+      {
+        "topic": "rt/api/motion_switcher/response",
+        "participant_key": "0110d259-4b8f-09f8-3fdd-8586000001c1",
+        "source_ip": "192.168.123.161",
+        "self_reported": {
+          "__Hostname": "Unitree",
+          "__Pid": "3009",
+          "__ProcessName": "motion_switcher_service"
+        },
+        "service": "motion_switcher",
+        "phase": "initial",
+        "api_id": 1005,
+        "code": 0,
+        "data": "{\"silent\":false}",
+        "elapsed_ms": 5.67
+      },
+      {
+        "topic": "rt/api/sport/response",
+        "participant_key": "0110652f-d08a-5632-cfa3-319f000001c1",
+        "source_ip": "192.168.123.161",
+        "self_reported": {
+          "__Hostname": "Unitree",
+          "__Pid": "3359",
+          "__ProcessName": "humanoid"
+        },
+        "service": "sport",
+        "phase": "after_service_advertisement",
+        "api_id": 7001,
+        "code": 0,
+        "data": "{\"data\":0}",
+        "elapsed_ms": 6.466
+      },
+      {
+        "topic": "rt/api/sport/response",
+        "participant_key": "0110652f-d08a-5632-cfa3-319f000001c1",
+        "source_ip": "192.168.123.161",
+        "self_reported": {
+          "__Hostname": "Unitree",
+          "__Pid": "3359",
+          "__ProcessName": "humanoid"
+        },
+        "service": "sport",
+        "phase": "after_service_advertisement",
+        "api_id": 7002,
+        "code": 0,
+        "data": "{\"data\":0}",
+        "elapsed_ms": 5.638
+      },
+      {
+        "topic": "rt/api/sport/response",
+        "participant_key": "0110652f-d08a-5632-cfa3-319f000001c1",
+        "source_ip": "192.168.123.161",
+        "self_reported": {
+          "__Hostname": "Unitree",
+          "__Pid": "3359",
+          "__ProcessName": "humanoid"
+        },
+        "service": "sport",
+        "phase": "after_service_advertisement",
+        "api_id": 7003,
+        "code": 7301,
+        "data": null,
+        "elapsed_ms": 5.727
+      },
+      {
+        "topic": "rt/api/sport/response",
+        "participant_key": "0110652f-d08a-5632-cfa3-319f000001c1",
+        "source_ip": "192.168.123.161",
+        "self_reported": {
+          "__Hostname": "Unitree",
+          "__Pid": "3359",
+          "__ProcessName": "humanoid"
+        },
+        "service": "sport",
+        "phase": "after_service_advertisement",
+        "api_id": 7005,
+        "code": 7301,
+        "data": null,
+        "elapsed_ms": 5.63
+      },
+      {
+        "topic": "rt/api/motion_switcher/response",
+        "participant_key": "0110d259-4b8f-09f8-3fdd-8586000001c1",
+        "source_ip": "192.168.123.161",
+        "self_reported": {
+          "__Hostname": "Unitree",
+          "__Pid": "3009",
+          "__ProcessName": "motion_switcher_service"
+        },
+        "service": "motion_switcher",
+        "phase": "after_service_advertisement",
+        "api_id": 1005,
+        "code": 0,
+        "data": "{\"silent\":false}",
+        "elapsed_ms": 5.663
+      }
+    ],
+    "states": [
+      {
+        "topic": "rt/lf/sportmodestate",
+        "participant_key": "0110652f-1c41-3ebe-17ac-0939000001c1",
+        "source_ip": "192.168.123.161",
+        "self_reported": {
+          "__Hostname": "Unitree",
+          "__Pid": "3359",
+          "__ProcessName": "humanoid"
+        },
+        "samples": 4930,
+        "values": [
+          {
+            "fsm_id": 0,
+            "fsm_mode": 0,
+            "task_id": 4,
+            "task_time": 0.0
+          }
+        ]
+      }
+    ],
+    "device_motion_firmware": null,
+    "exact_7301_predicate": null,
+    "motion_authority_verified": false,
+    "execution_allowed": false,
+    "summary": "版本公告已配对到运动板的 robot_state_service；运动查询和 HG 状态流配对到 humanoid。公告来源与运动程序不同，不能据此确认运行构建。",
+    "readiness": "公告前后 GetFsmId/GetFsmMode 均为 0，GetBalanceMode/GetStandHeight 均为 7301；GetSilent=false，状态流持续发布。这些条件仍不足以证明内部 LocoState 或动作控制已就绪。",
+    "limits": [
+      "进程名、PID 和主机名为 DDS 自报；源 IP 是同 GUID 前缀的 RTPS 报文来源，不是二进制签名。",
+      "没有读取 humanoid 可执行文件版本、申请 SDK 运动租约或测试动作接受。",
+      "task_id=4 的本机语义未核定，不能当作已在执行 StandUp 或已站稳。"
+    ]
+  },
+  "foundation": {
+    "schema_version": 26,
+    "foundation_id": "be38e7769a8f44eb6e2a271b2e5b62900eca772ad211e4725304861a084a7839",
+    "actual_motor_config_unknown_fields": 253,
+    "device_motion_firmware": null,
+    "exact_7301_predicate": null,
+    "motion_authority_verified": false,
+    "execution_allowed": false
+  },
+  "deployment": {
+    "release": "5e60ab48bcfa",
+    "previous_release": "480895668ddf",
+    "files_verified": 491,
+    "pid": 11415,
+    "run_id": "d228a46f6764",
+    "official_processes_unchanged": true,
+    "official_processes": [
+      {
+        "pid": 1349,
+        "executable": "/unitree/ota/pipe/ota_pipe_service",
+        "start_ticks": 2004
+      },
+      {
+        "pid": 1350,
+        "executable": "/unitree/module/master_service/master_service",
+        "start_ticks": 2004
+      },
+      {
+        "pid": 2777,
+        "executable": "/home/unitree/megaflow_sdk/ws//bin/MegaFlowRuntimeDaemon",
+        "start_ticks": 2975
+      },
+      {
+        "pid": 9659,
+        "executable": "/unitree/module/video_hub_pc4/videohub_pc4",
+        "start_ticks": 437519
+      }
+    ],
+    "verify_only": true,
+    "owner": null,
+    "armed": false,
+    "motion_writes": 0,
+    "network_configuration_changes": 0,
+    "boot_id": "aed898cb-acfd-44a2-8e9c-50f1f00269aa"
+  },
+  "verification": {
+    "python_targeted_passed": 103,
+    "python_files": [
+      "test_g1_publisher_evidence.py",
+      "test_g1_motion_control_review.py",
+      "test_g1_foundation.py",
+      "test_g1_remote_verification.py",
+      "test_g1_manual_remote.py",
+      "test_g1_remote_operations.py"
+    ],
+    "typescript_build": "passed",
+    "vite_build": "passed; existing chunk-size warning",
+    "browser_url": "http://127.0.0.1:18766/",
+    "browser_queries": [
+      {
+        "request_id": "942a147c-3434-4a41-bdf3-28453f8ed131",
+        "capability": "get_versions",
+        "label": "读取官方包版本",
+        "at": 1792644483.5910823,
+        "updated_at": 1792644483.5910828,
+        "mode": "robot",
+        "status": "read_unavailable",
+        "message": "官方服务返回 3203：不支持此 API；未取得有效值",
+        "error_code": "SDK_REJECTED",
+        "sdk_code": 3203
+      },
+      {
+        "request_id": "d029fa1c-59c8-489d-8069-594754940a44",
+        "capability": "get_balance",
+        "label": "读取平衡模式",
+        "at": 1792644478.92918,
+        "updated_at": 1792644478.9291801,
+        "mode": "robot",
+        "status": "read_unavailable",
+        "message": "官方服务返回 7301：LocoState 不可用；模式/高度/相位保持未知，忽略返回中的占位零值。不会自动切换模式",
+        "error_code": "SDK_REJECTED",
+        "sdk_code": 7301
+      },
+      {
+        "request_id": "7b8f5f9f-e151-4aac-ab22-692e9ca7c52e",
+        "capability": "get_silent",
+        "label": "读取模式服务 silent 标志",
+        "at": 1792644406.3489163,
+        "updated_at": 1792644406.3489163,
+        "mode": "robot",
+        "status": "read_result",
+        "message": "已读取官方返回值",
+        "data": {
+          "silent": false
+        }
+      }
+    ],
+    "browser_preflights": [
+      {
+        "capability": "balance",
+        "label": "平衡模式",
+        "at": 1792644509.2751043,
+        "run_id": "d228a46f6764",
+        "dispatched": false,
+        "params_valid": true,
+        "request": {
+          "service": "sport",
+          "method": "SetBalanceMode",
+          "api_id": 7102,
+          "parameter": {
+            "data": 0
+          },
+          "sdk_commit": "814556d15970dd2ecf1c9984e845ca02ab07e206"
+        },
+        "telemetry_tick": 5904911,
+        "current_fsm": 0,
+        "execution_gate": {
+          "allowed": false,
+          "code": "VERIFICATION_ONLY",
+          "message": "人工遥控接口验证阶段：可取得控制权和核对参数，禁止全部实机动作、声光和模式切换"
+        },
+        "firmware_acceptance": "unknown",
+        "physical_result": "not_tested",
+        "conditions": [
+          "SDK 请求映射已核对，不代表本机固件接受该写接口",
+          "最近人工报告坐地靠柜，未经本次传感器独立确认；足底与柜体承重数值未知",
+          "起身、姿态保持和平衡切换的本机姿势前提与运动固件版本仍待确认"
+        ]
+      },
+      {
+        "capability": "prepare",
+        "label": "站立预备 / 姿态保持",
+        "at": 1792644500.06233,
+        "run_id": "d228a46f6764",
+        "dispatched": false,
+        "params_valid": true,
+        "request": {
+          "service": "sport",
+          "method": "SetFsmId",
+          "api_id": 7101,
+          "parameter": {
+            "data": 4
+          },
+          "sdk_commit": "814556d15970dd2ecf1c9984e845ca02ab07e206"
+        },
+        "telemetry_tick": 5895680,
+        "current_fsm": 0,
+        "execution_gate": {
+          "allowed": false,
+          "code": "VERIFICATION_ONLY",
+          "message": "人工遥控接口验证阶段：可取得控制权和核对参数，禁止全部实机动作、声光和模式切换"
+        },
+        "firmware_acceptance": "unknown",
+        "physical_result": "not_tested",
+        "conditions": [
+          "SDK 请求映射已核对，不代表本机固件接受该写接口",
+          "最近人工报告坐地靠柜，未经本次传感器独立确认；足底与柜体承重数值未知",
+          "起身、姿态保持和平衡切换的本机姿势前提与运动固件版本仍待确认"
+        ]
+      },
+      {
+        "capability": "squat_to_stand",
+        "label": "蹲姿起立",
+        "at": 1792644492.103221,
+        "run_id": "d228a46f6764",
+        "dispatched": false,
+        "params_valid": true,
+        "request": {
+          "service": "sport",
+          "method": "SetFsmId",
+          "api_id": 7101,
+          "parameter": {
+            "data": 706
+          },
+          "sdk_commit": "814556d15970dd2ecf1c9984e845ca02ab07e206"
+        },
+        "telemetry_tick": 5887707,
+        "current_fsm": 0,
+        "execution_gate": {
+          "allowed": false,
+          "code": "VERIFICATION_ONLY",
+          "message": "人工遥控接口验证阶段：可取得控制权和核对参数，禁止全部实机动作、声光和模式切换"
+        },
+        "firmware_acceptance": "unknown",
+        "physical_result": "not_tested",
+        "conditions": [
+          "SDK 请求映射已核对，不代表本机固件接受该写接口",
+          "最近人工报告坐地靠柜，未经本次传感器独立确认；足底与柜体承重数值未知",
+          "起身、姿态保持和平衡切换的本机姿势前提与运动固件版本仍待确认"
+        ]
+      }
+    ],
+    "browser_window_lease": "acquired, heartbeat observed, released; project scope only",
+    "screenshot": "doc/screenshots/g1-publisher-readiness-20261022.png",
+    "mode_conditions_screenshot": "doc/screenshots/g1-mode-conditions-20261022.png"
+  },
+  "final_state": {
+    "at": 1792644691.450219,
+    "run_id": "d228a46f6764",
+    "connected": true,
+    "telemetry_age_ms": 22,
+    "joints": 23,
+    "control": {
+      "owner": null,
+      "expires_in": 0,
+      "floor_verified": false
+    },
+    "manual_remote": {
+      "enabled": true,
+      "armed": false,
+      "verify_only": true,
+      "owner": null,
+      "robot_authority_verified": false
+    },
+    "navigation": "idle"
+  },
+  "motion_writes": 0,
+  "sdk_lease_requests": 0,
+  "network_configuration_changes": 0,
+  "quantumult_x_operations": 0,
+  "robot_reboots": 0,
+  "not_verified": [
+    "humanoid running build",
+    "server-side 7301 readiness predicate",
+    "robot motion authority",
+    "official entry from cabinet-supported floor sitting",
+    "foot/cabinet/floor load distribution",
+    "physical execution or fall-free envelope"
+  ],
+  "support_questions_not_sent": [
+    "Which read-only API identifies the running humanoid build and its mapping to advertised ai_sport 8.7.5.212?",
+    "Which server conditions make LocoState available when HG sportmodestate is publishing, FSM/mode=0 and silent=false?",
+    "For this G1 EDU 23 DOF build, are FSM 4/702/706 and API 7102 data=0 applicable, and how does AdaptRise map to SDK?",
+    "Which starting postures, support conditions, completion feedback, duration controls and abort protections are officially supported?"
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "current": false,
+  "started_at_utc": "2026-10-21T07:07:57.317794+00:00",
+  "completed_at_utc": "2026-10-21T07:08:18.254317+00:00",
+  "samples": 21,
+  "images": [
+    {
+      "at_utc": "2026-10-21T07:07:57.317794+00:00",
+      "path": ".g1-deploy/research/cabinet-applicability-20261021/frame-00.jpg",
+      "sha256": "8a1e6b9508fdcfa556123054d06a48b312057d3d1b1ab659d7c694f220025310",
+      "age_ms": 133,
+      "metadata": {
+        "backend": "unitree",
+        "status": "live",
+        "error": null,
+        "diagnostics": {
+          "transport": "official_api_1001_isolated_polled",
+          "window_s": 60,
+          "attempts": 300,
+          "successes": 300,
+          "timeouts": 0,
+          "errors": 0,
+          "total_attempts": 2330,
+          "total_successes": 2330,
+          "total_timeouts": 0
+        },
+        "source": "unitree-videohub-f4e68b89248d",
+        "sequence": 2330,
+        "age_ms": 133,
+        "request_started_at": 1792566477.3322487,
+        "received_at": 1792566477.3692956,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 37,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      },
+      "state_sample": 0
+    },
+    {
+      "at_utc": "2026-10-21T07:08:07.364314+00:00",
+      "path": ".g1-deploy/research/cabinet-applicability-20261021/frame-10.jpg",
+      "sha256": "f8aafa0a7d937a8a3b97fd2d43cd248be5b31be837ec3685e3e50e66bdee9a86",
+      "age_ms": 180,
+      "metadata": {
+        "backend": "unitree",
+        "status": "live",
+        "error": null,
+        "diagnostics": {
+          "transport": "official_api_1001_isolated_polled",
+          "window_s": 60,
+          "attempts": 300,
+          "successes": 300,
+          "timeouts": 0,
+          "errors": 0,
+          "total_attempts": 2380,
+          "total_successes": 2380,
+          "total_timeouts": 0
+        },
+        "source": "unitree-videohub-f4e68b89248d",
+        "sequence": 2380,
+        "age_ms": 180,
+        "request_started_at": 1792566487.3393855,
+        "received_at": 1792566487.369339,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 30,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      },
+      "state_sample": 10
+    },
+    {
+      "at_utc": "2026-10-21T07:08:17.318365+00:00",
+      "path": ".g1-deploy/research/cabinet-applicability-20261021/frame-20.jpg",
+      "sha256": "fbf3210912c7481952d40ce791c8f83040a12238295cd78de3a1a558bb4b6bc8",
+      "age_ms": 138,
+      "metadata": {
+        "backend": "unitree",
+        "status": "live",
+        "error": null,
+        "diagnostics": {
+          "transport": "official_api_1001_isolated_polled",
+          "window_s": 60,
+          "attempts": 300,
+          "successes": 300,
+          "timeouts": 0,
+          "errors": 0,
+          "total_attempts": 2430,
+          "total_successes": 2430,
+          "total_timeouts": 0
+        },
+        "source": "unitree-videohub-f4e68b89248d",
+        "sequence": 2430,
+        "age_ms": 138,
+        "request_started_at": 1792566497.3461041,
+        "received_at": 1792566497.3657217,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 20,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      },
+      "state_sample": 20
+    }
+  ],
+  "max_telemetry_age_ms": 46,
+  "first_mode": {
+    "fsm": 0,
+    "sdk_label": "SDK ZeroTorque 对应状态 ID",
+    "active_capability_id": null,
+    "feedback_consistency": "matched",
+    "activity_verified": false,
+    "detail": "FSM 只表明服务回读的状态 ID；未取得具体能力执行中/完成的可信反馈。ZeroTorque ID 也不证明每个电机实际力矩为零"
+  },
+  "last_mode": {
+    "fsm": 0,
+    "sdk_label": "SDK ZeroTorque 对应状态 ID",
+    "active_capability_id": null,
+    "feedback_consistency": "matched",
+    "activity_verified": false,
+    "detail": "FSM 只表明服务回读的状态 ID；未取得具体能力执行中/完成的可信反馈。ZeroTorque ID 也不证明每个电机实际力矩为零"
+  },
+  "last_posture": {
+    "description": "双膝显著屈曲",
+    "knee_deg": [
+      160.54541327146893,
+      160.51757342041196
+    ],
+    "imu_rpy_deg": [
+      7.849255101725946,
+      -3.5454634729114667,
+      -3.110589597324986
+    ],
+    "secondary_imu_rpy_deg": [
+      3.8714050093029413,
+      -6.9445013503962,
+      -0.8639324854249301
+    ],
+    "whole_body_pose": "unknown",
+    "support": "unknown",
+    "feet": {
+      "left": {
+        "contact": null,
+        "load_n": null
+      },
+      "right": {
+        "contact": null,
+        "load_n": null
+      }
+    },
+    "detail": "双膝 >90° 仅为形态描述规则；未确定站/坐/卧、身体离地高度或接触对象。三维模型按关节角度显示，不表示世界中的支撑姿势"
+  },
+  "paired_observation_sha256": "58f1c3d35188067bd06ec64bb851ff27e590d7ed8215f4f216efc1180f728107",
+  "command_writes": 0,
+  "lease_requests": 0,
+  "visual_review": {
+    "reviewer": "Codex image inspection",
+    "reviewed_image": {
+      "at_utc": "2026-10-21T07:07:57.317794+00:00",
+      "path": ".g1-deploy/research/cabinet-applicability-20261021/frame-00.jpg",
+      "sha256": "8a1e6b9508fdcfa556123054d06a48b312057d3d1b1ab659d7c694f220025310",
+      "age_ms": 133,
+      "metadata": {
+        "backend": "unitree",
+        "status": "live",
+        "error": null,
+        "diagnostics": {
+          "transport": "official_api_1001_isolated_polled",
+          "window_s": 60,
+          "attempts": 300,
+          "successes": 300,
+          "timeouts": 0,
+          "errors": 0,
+          "total_attempts": 2330,
+          "total_successes": 2330,
+          "total_timeouts": 0
+        },
+        "source": "unitree-videohub-f4e68b89248d",
+        "sequence": 2330,
+        "age_ms": 133,
+        "request_started_at": 1792566477.3322487,
+        "received_at": 1792566477.3692956,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 37,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      },
+      "state_sample": 0
+    },
+    "scene_facts": [
+      "近处瓷砖、家具底部、椅轮和人员鞋部可见"
+    ],
+    "limitations": [
+      "看不到自己的双脚脚底、全身及靠柜接触点",
+      "画面不能确认左右脚与柜体载荷；靠柜仍来自人工报告"
+    ]
+  }
+}

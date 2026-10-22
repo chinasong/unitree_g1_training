@@ -1,0 +1,324 @@
+{
+  "schema_version": 1,
+  "current": false,
+  "offline_only": true,
+  "checked_at_utc": "2026-10-21T03:22:43.221882+00:00",
+  "payload_decoded": false,
+  "motor_configuration_present": null,
+  "motor_configuration_values_obtained": 0,
+  "command_writes": 0,
+  "rpc_calls": 0,
+  "configuration_calls": 0,
+  "calibration_calls": 0,
+  "vendor_program_executions": 0,
+  "motor_firmware_version": null,
+  "module_identity": {
+    "authority": "本机 module.json 与 version.json 的一致声明；不是整机或电机固件版本",
+    "modules": [
+      {
+        "name": "master_service_pc4",
+        "declared_version": "1.0.0.2",
+        "declared_commit": "dc964a3354534a80881d92daaf18d421fafc7916",
+        "declared_build_time": "2025-02-28 10:35:54",
+        "file_list_count": 3,
+        "manifest_sha256": "ecfa15fd170078b6bf89cc02f2becf4672b8c6f3566607bdfbe2717424857771",
+        "manifest_path": "/unitree/robot/pkg/module/master_service_pc4/module.json",
+        "master_service_listed": true,
+        "source_commit_reproduced": false,
+        "motor_firmware_version_verified": false
+      },
+      {
+        "name": "unitree_patch_pc4",
+        "declared_version": "1.0.0.6",
+        "declared_commit": "81529bedcf0a4ada51747bca72b246a4f533e774",
+        "declared_build_time": "2026-04-04 22:43:53",
+        "file_list_count": 27,
+        "manifest_sha256": "df22b0309ebae1b78380473a297eca6d21fd1311d725a1a1c529e7d5df0572a0",
+        "manifest_path": "/unitree/robot/pkg/module/unitree_patch_pc4/module.json",
+        "master_service_listed": false,
+        "source_commit_reproduced": false,
+        "motor_firmware_version_verified": false
+      },
+      {
+        "name": "video_hub_pc4",
+        "declared_version": "1.0.1.1",
+        "declared_commit": "99fbcc2c6ffe93754701d45074493e216929f18f",
+        "declared_build_time": "2025-03-28 10:52:48",
+        "file_list_count": 3,
+        "manifest_sha256": "e59171ecf2b3a3ce4101cc934fbe7ee775583874a2938cdbd38b32e304f35844",
+        "manifest_path": "/unitree/robot/pkg/module/video_hub_pc4/module.json",
+        "master_service_listed": false,
+        "source_commit_reproduced": false,
+        "motor_firmware_version_verified": false
+      }
+    ],
+    "files": [
+      {
+        "path": "/unitree/module/master_service/master_service",
+        "bytes": 9083232,
+        "sha256": "380e34de9c2def2692c0bf1b73e969d3167c8270f2ed5f974bb01abd4e96f24e",
+        "manifest_size_matches": true,
+        "manifest_contains_hash": false
+      },
+      {
+        "path": "/unitree/module/master_service/master_service.json",
+        "bytes": 468,
+        "sha256": "31eae39936576504c40be767bd93cd34b7489154eca989e5e5c2781b05e3d977",
+        "manifest_size_matches": true,
+        "manifest_contains_hash": false
+      }
+    ],
+    "file_list_proves_content_hash": false,
+    "all_manifest_files_present_verified": false,
+    "manifest_file_recheck": {
+      "read_only": true,
+      "command_writes": 0,
+      "rpc_calls": 0,
+      "files": [
+        {
+          "path": "/unitree/var/data/ota_update/ota_pipe/ota_pipe_service",
+          "status": "FileNotFoundError"
+        },
+        {
+          "path": "/unitree/robot/pkg/module/master_service_pc4/module.json",
+          "status": "read",
+          "bytes": 2194,
+          "sha256": "ecfa15fd170078b6bf89cc02f2becf4672b8c6f3566607bdfbe2717424857771"
+        },
+        {
+          "path": "/unitree/robot/pkg/module/unitree_patch_pc4/module.json",
+          "status": "read",
+          "bytes": 2880,
+          "sha256": "df22b0309ebae1b78380473a297eca6d21fd1311d725a1a1c529e7d5df0572a0"
+        },
+        {
+          "path": "/unitree/robot/pkg/module/video_hub_pc4/module.json",
+          "status": "read",
+          "bytes": 1913,
+          "sha256": "e59171ecf2b3a3ce4101cc934fbe7ee775583874a2938cdbd38b32e304f35844"
+        },
+        {
+          "path": "/unitree/robot/pkg/version/version.json",
+          "status": "read",
+          "bytes": 160,
+          "sha256": "b5d64c6e23e1a701172010a90ee8b17c83107c6560e9abb459db246b5f85842c"
+        }
+      ],
+      "received_at_utc": "2026-10-21T03:22:43.221882+00:00"
+    },
+    "installed_source_implementation_found": false
+  },
+  "local_search": {
+    "roots": [
+      "/unitree/sbin",
+      "/unitree/bin",
+      "/unitree/etc",
+      "/unitree/ota",
+      "/unitree/robot/pkg",
+      "/unitree/var/data",
+      "/opt/ota_package",
+      "/usr/local/include/unitree",
+      "/usr/local/lib",
+      "/home/unitree/megaflow_sdk/ws/dep"
+    ],
+    "max_depth": 5,
+    "max_binary_bytes": 67108864,
+    "files_seen": 786,
+    "unique_elfs": 62,
+    "static_archives": 10,
+    "other_ar_containers": 1,
+    "without_defined_symbols": 18,
+    "duplicate_binaries": 50,
+    "mixer_symbol_matches": [],
+    "additional_fmx_files": [],
+    "errors": [
+      {
+        "path": "/usr/local/lib/libcryptopp.a",
+        "error": "binary size bound",
+        "bytes": 158103474
+      },
+      {
+        "path": "/usr/local/lib/librealsense2.so.2.50.0",
+        "error": "binary size bound",
+        "bytes": 161735304
+      },
+      {
+        "path": "/proc/1296/maps",
+        "error": "PermissionError"
+      }
+    ],
+    "source_matches": [
+      {
+        "path": "/usr/local/include/unitree/common/service/base/service_base.hpp",
+        "bytes": 2115,
+        "sha256": "d270b9b51ce078ddfd47a7e5a3ecd1a48d5a6be5356920e94e1e4e7e20660ff4",
+        "tokens": [
+          "ParseConfigContent"
+        ]
+      }
+    ],
+    "mapped_paths_obtained": false,
+    "scope": "此前 7 个服务 ELF 之外扩展的有界目录检查；nm 已定义符号检索，未证明无符号实现不存在"
+  },
+  "ota_package_entries": [
+    {
+      "name": "Package::Unpack",
+      "entry": "0x5e3a0",
+      "helper": "0x250ba8",
+      "target": "0xc22048",
+      "section_type": "SHT_NOBITS",
+      "file_backed": false
+    },
+    {
+      "name": "Package::InitHeader",
+      "entry": "0x227e00",
+      "helper": "0x250ba8",
+      "target": "0xc2389c",
+      "section_type": "SHT_NOBITS",
+      "file_backed": false
+    },
+    {
+      "name": "Package::UnpackFile",
+      "entry": "0x556098",
+      "helper": "0x250ba8",
+      "target": "0xc228e8",
+      "section_type": "SHT_NOBITS",
+      "file_backed": false
+    }
+  ],
+  "cached_packages": [
+    {
+      "name": "unitree_patch_pc4.upk",
+      "path": "/unitree/ota/update/module/unitree_patch_pc4/1.0.0.2/g1plus@unitree_patch_pc4_1.0.0.2.upk",
+      "bytes": 21509748,
+      "sha256": "fd20c663d203e526ad13eaff5c2fec780961e69a05d5911e9afafd3544dbc8fe",
+      "magic_hex": "5554504b00010000",
+      "cached_path_version": "1.0.0.2",
+      "installed_manifest_version": "1.0.0.6",
+      "path_version_matches_installed": false,
+      "payload_decoded": false,
+      "fmx_algorithm_equivalence_verified": false
+    },
+    {
+      "name": "video_hub_pc4.upk",
+      "path": "/unitree/ota/update/module/video_hub_pc4/1.0.1.1/video_hub_pc4_1.0.1.1.upk",
+      "bytes": 75892,
+      "sha256": "ac276e9f575aa2a3b4070ca5a1a2e8103e835cac42e01abf4275fe28d86e61e1",
+      "magic_hex": "5554504b00010000",
+      "cached_path_version": "1.0.1.1",
+      "installed_manifest_version": "1.0.1.1",
+      "path_version_matches_installed": true,
+      "payload_decoded": false,
+      "fmx_algorithm_equivalence_verified": false
+    }
+  ],
+  "official_code_search": {
+    "received_at_utc": "2026-10-21T03:16:13.874810+00:00",
+    "endpoint": "https://api.github.com/search/code",
+    "per_page": 100,
+    "queries": [
+      {
+        "query": "org:unitreerobotics Mixer",
+        "total_count": 0,
+        "incomplete_results": false,
+        "items": []
+      },
+      {
+        "query": "org:unitreerobotics FMX",
+        "total_count": 0,
+        "incomplete_results": false,
+        "items": []
+      },
+      {
+        "query": "org:unitreerobotics master_service",
+        "total_count": 0,
+        "incomplete_results": false,
+        "items": []
+      },
+      {
+        "query": "org:unitreerobotics UTPK",
+        "total_count": 1,
+        "incomplete_results": false,
+        "items": [
+          {
+            "path": "stm32/firmware/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h",
+            "url": "https://github.com/unitreerobotics/digital_servo/blob/75c1ed63579dc7bb759e2990bd4b804c11b57daf/stm32/firmware/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h",
+            "repository": "unitreerobotics/digital_servo"
+          }
+        ]
+      }
+    ],
+    "limitation": "GitHub indexed default-branch code search only; no match does not prove absence across history, private source, binaries or unindexed material."
+  },
+  "official_issue_lead": {
+    "url": "https://github.com/unitreerobotics/xr_teleoperate/issues/299",
+    "role": "官方仓库 issue 的服务管理路径线索，不是 FMX 规范或电机配置读取协议",
+    "commands_executed": false
+  },
+  "robot_recheck": {
+    "boot_id": "7a6791dc-f512-4b45-aca3-44fbde855e25",
+    "processes": [
+      {
+        "pid": 1296,
+        "argv": [
+          "/unitree/module/master_service/master_service"
+        ],
+        "start_ticks": 2242
+      },
+      {
+        "pid": 1298,
+        "argv": [
+          "/unitree/ota/pipe/ota_pipe_service"
+        ],
+        "start_ticks": 2242
+      },
+      {
+        "pid": 2557,
+        "argv": [
+          "/unitree/module/video_hub_pc4/videohub_pc4"
+        ],
+        "start_ticks": 2791
+      },
+      {
+        "pid": 2676,
+        "argv": [
+          "/home/unitree/megaflow_sdk/ws//bin/MegaFlowRuntimeDaemon",
+          "-c",
+          "/home/unitree/megaflow_sdk/ws//bin/config.bin",
+          "-w",
+          "/home/unitree/megaflow_sdk/ws/",
+          "-d",
+          "127.0.0.1:8899",
+          "-i",
+          "-e",
+          "/home/unitree/megaflow_sdk/ws//dep/",
+          "-l",
+          "0"
+        ],
+        "start_ticks": 3210
+      }
+    ],
+    "files": [
+      {
+        "path": "/unitree/module/master_service/master_service",
+        "bytes": 9083232,
+        "sha256": "380e34de9c2def2692c0bf1b73e969d3167c8270f2ed5f974bb01abd4e96f24e"
+      },
+      {
+        "path": "/unitree/module/master_service/master_service.json",
+        "bytes": 468,
+        "sha256": "31eae39936576504c40be767bd93cd34b7489154eca989e5e5c2781b05e3d977"
+      }
+    ]
+  },
+  "conclusion": "确认 master_service 模块清单版本 1.0.0.2；未找到与当前二进制匹配的完整 Mixer/Gen 或正式 FMX 说明，载荷及电机参数仍未知",
+  "limitations": [
+    "模块清单只给出文件大小，无文件哈希或签名；声明提交没有已取得的源码与可复现构建相互验证",
+    "补丁清单指向 /unitree/var/data/ota_update/ota_pipe/ota_pipe_service，但该路径不存在；清单不能证明文件均已安装",
+    "符号检索不能识别被剥离、改名、混淆或动态加载的实现；两份大库超过 64 MiB 上限未扫描",
+    "当前账号不能读取 master_service 的 /proc/maps；未提权或读取进程内存，DT_NEEDED 不能替代运行时模块清单",
+    "UTPK 只确认标记；没有解包、安装或执行。不能把 OTA 包算法当作 FMX 算法，也不能把缓存补丁当作当前版本",
+    "GitHub 结果限官方组织的索引默认分支，不覆盖历史、私有代码、二进制或未索引内容；未取得逐电机配置或标定"
+  ],
+  "required_material": "当前 master_service 文件指纹对应的官方 Mixer/Gen 源码或 FMX 格式、校验及只读导出说明；即使解出字段也须另核实实机适用性"
+}

@@ -1,0 +1,217 @@
+{
+  "checked_at_utc": "2026-10-21T01:57:54.965263+00:00",
+  "current": false,
+  "method": "Official DDS/RPC metadata getters through Orin eth0; no SSH to PC1",
+  "command_writes": 0,
+  "configuration_calls": 0,
+  "calibration_calls": 0,
+  "lease_requests": 0,
+  "motor_configuration_values_obtained": 0,
+  "versions": [
+    {
+      "service": "config",
+      "api_id": 1,
+      "code": 0,
+      "api_version": "1.0.0.1",
+      "physical_host_verified": false,
+      "meaning": "Service API version only; not motor firmware, configuration or calibration"
+    },
+    {
+      "service": "basic_demarcate",
+      "api_id": 1,
+      "code": 0,
+      "api_version": "1.0.0.1",
+      "physical_host_verified": false,
+      "meaning": "Service API version only; not motor firmware, configuration or calibration"
+    },
+    {
+      "service": "basic_softlimit",
+      "api_id": 1,
+      "code": 0,
+      "api_version": "1.0.0.1",
+      "physical_host_verified": false,
+      "meaning": "Service API version only; not motor firmware, configuration or calibration"
+    },
+    {
+      "service": "basic_taumax",
+      "api_id": 1,
+      "code": 0,
+      "api_version": "1.0.0.1",
+      "physical_host_verified": false,
+      "meaning": "Service API version only; not motor firmware, configuration or calibration"
+    },
+    {
+      "service": "robot_type_service",
+      "api_id": 1,
+      "code": 0,
+      "api_version": "1.0.0",
+      "physical_host_verified": false,
+      "meaning": "Service API version only; not motor firmware, configuration or calibration"
+    },
+    {
+      "service": "robot_state",
+      "api_id": 1,
+      "code": 0,
+      "api_version": "1.0.0.2",
+      "physical_host_verified": false,
+      "meaning": "Service API version only; not motor firmware, configuration or calibration"
+    }
+  ],
+  "robot_state": {
+    "services": {
+      "api_id": 1003,
+      "code": 0,
+      "entries": [
+        {
+          "name": "ai_sport",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "audio_player_service",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "auto_test_arm",
+          "status": 1,
+          "protect": 0
+        },
+        {
+          "name": "auto_test_low",
+          "status": 1,
+          "protect": 0
+        },
+        {
+          "name": "bashrunner",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "basic_service",
+          "status": 0,
+          "protect": 1
+        },
+        {
+          "name": "battery_guard",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "chat_go",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "dex3_service_l",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "dex3_service_r",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "emergency_stop",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "g1_arm_example",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "lidar_driver",
+          "status": 1,
+          "protect": 0
+        },
+        {
+          "name": "log_system",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "motion_switcher",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "net_switcher",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "ota_box",
+          "status": 1,
+          "protect": 0
+        },
+        {
+          "name": "ota_pipe",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "robot_state",
+          "status": 0,
+          "protect": 1
+        },
+        {
+          "name": "robot_type_service",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "state_estimator",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "unistore",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "unitree_slam",
+          "status": 1,
+          "protect": 0
+        },
+        {
+          "name": "video_hub_pc4",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "vui_service",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "webrtc_bridge",
+          "status": 0,
+          "protect": 1
+        },
+        {
+          "name": "webrtc_multicast_responder",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "webrtc_signal_server",
+          "status": 0,
+          "protect": 1
+        }
+      ]
+    },
+    "packages": {
+      "api_id": 1006,
+      "code": 3203,
+      "package_version": null,
+      "module_versions": null,
+      "meaning": "Package/module metadata only; physical host and motor firmware not verified"
+    }
+  },
+  "rpc_calls": 8,
+  "completed_at_utc": "2026-10-21T01:58:03.427674+00:00"
+}

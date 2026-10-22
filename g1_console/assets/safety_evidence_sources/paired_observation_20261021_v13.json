@@ -1,0 +1,1229 @@
+{
+  "current": false,
+  "mac_received_at": "2026-10-21T04:51:31.118947+00:00",
+  "image_sha256": "efcbed0290d5ec0ef993d99503e52fc74a1ba4c9262a1f971288ac049b97a705",
+  "image_path": "doc/screenshots/g1-camera-scene-v13.jpg",
+  "camera": {
+    "backend": "unitree",
+    "status": "live",
+    "error": null,
+    "diagnostics": {
+      "transport": "official_api_1001_isolated_polled",
+      "window_s": 60,
+      "attempts": 300,
+      "successes": 300,
+      "timeouts": 0,
+      "errors": 0,
+      "total_attempts": 915,
+      "total_successes": 915,
+      "total_timeouts": 0
+    },
+    "source": "unitree-videohub-88dcbc659a19",
+    "sequence": 915,
+    "age_ms": 79,
+    "request_started_at": 1792558291.1661522,
+    "received_at": 1792558291.2011492,
+    "width": 960,
+    "height": 540,
+    "source_width": 1920,
+    "source_height": 1080,
+    "request_ms": 35,
+    "timestamp_basis": "request_started_at",
+    "sensor_timestamp": null
+  },
+  "mac_camera_age_ms": 79,
+  "body_run": "de3c76541c30",
+  "body_received_at": 1792558291.194436,
+  "body_tick": 11583393,
+  "body_age_ms": 5,
+  "telemetry": {
+    "joints": [
+      {
+        "index": 0,
+        "q": 0.20121322572231293,
+        "dq": -0.018855789676308632,
+        "ddq": 0.0,
+        "tau": -0.1677911877632141,
+        "temperature": [
+          32,
+          32
+        ],
+        "voltage": 44.5,
+        "status": 0,
+        "mode": 1,
+        "sensor": [
+          0,
+          0
+        ],
+        "reserve": [
+          0,
+          1261,
+          4,
+          0
+        ]
+      },
+      {
+        "index": 1,
+        "q": 2.9618356227874756,
+        "dq": 0.0,
+        "ddq": 0.0,
+        "tau": -0.17578125,
+        "temperature": [
+          31,
+          31
+        ],
+        "voltage": 44.5,
+        "status": 0,
+        "mode": 1,
+        "sensor": [
+          0,
+          0
+        ],
+        "reserve": [
+          0,
+          1260,
+          4,
+          0
+        ]
+      },
+      {
+        "index": 2,
+        "q": -0.21643981337547302,
+        "dq": -0.020569952204823494,
+        "ddq": 0.0,
+        "tau": 0.11186079680919647,
+        "temperature": [
+          31,
+          31
+        ],
+        "voltage": 44.5,
+        "status": 0,
+        "mode": 1,
+        "sensor": [
+          0,
+          0
+        ],
+        "reserve": [
+          0,
+          1260,
+          4,
+          0
+        ]
+      },
+      {
+        "index": 3,
+        "q": 2.8105084896087646,
+        "dq": 0.020725786685943604,
+        "ddq": 0.0,
+        "tau": -0.17578125,
+        "temperature": [
+          33,
+          32
+        ],
+        "voltage": 44.5,
+        "status": 0,
+        "mode": 1,
+        "sensor": [
+          0,
+          0
+        ],
+        "reserve": [
+          0,
+          1260,
+          4,
+          0
+        ]
+      },
+      {
+        "index": 4,
+        "q": 0.14728325605392456,
+        "dq": -0.00154755893163383,
+        "ddq": 0.0,
+        "tau": 0.0026717265136539936,
+        "temperature": [
+          42,
+          41
+        ],
+        "voltage": 44.5,
+        "status": 0,
+        "mode": 1,
+        "sensor": [
+          0,
+          0
+        ],
+        "reserve": [
+          0,
+          1260,
+          4,
+          0
+        ]
+      },
+      {
+        "index": 5,
+        "q": -0.04506663233041763,
+        "dq": 0.0023215089458972216,
+        "ddq": 0.0,
+        "tau": -0.12211314588785172,
+        "temperature": [
+          41,
+          40
+        ],
+        "voltage": 44.5,
+        "status": 0,
+        "mode": 1,
+        "sensor": [
+          0,
+          0
+        ],
+        "reserve": [
+          0,
+          1260,
+          4,
+          0
+        ]
+      },
+      {
+        "index": 6,
+        "q": -1.5026510953903198,
+        "dq": 0.008570813573896885,
+        "ddq": 0.0,
+        "tau": 0.11186079680919647,
+        "temperature": [
+          32,
+          32
+        ],
+        "voltage": 44.5,
+        "status": 0,
+        "mode": 1,
+        "sensor": [
+          0,
+          0
+        ],
+        "reserve": [
+          0,
+          1261,
+          4,
+          0
+        ]
+      },
+      {
+        "index": 7,
+        "q": -1.046941876411438,
+        "dq": -0.00872664712369442,
+        "ddq": 0.0,
+        "tau": -0.263671875,
+        "temperature": [
+          32,
+          32
+        ],
+        "voltage": 44.0,
+        "status": 0,
+        "mode": 1,
+        "sensor": [
+          0,
+          0
+        ],
+        "reserve": [
+          0,
+          1260,
+          4,
+          0
+        ]
+      },
+      {
+        "index": 8,
+        "q": -1.1802277565002441,
+        "dq": 0.01714162714779377,
+        "ddq": 0.0,
+        "tau": 0.11186079680919647,
+        "temperature": [
+          32,
+          32
+        ],
+        "voltage": 44.5,
+        "status": 0,
+        "mode": 1,
+        "sensor": [
+          0,
+          0
+        ],
+        "reserve": [
+          0,
+          1260,
+          4,
+          0
+        ]
+      },
+      {
+        "index": 9,
+        "q": 2.7927825450897217,
+        "dq": -0.0010908308904618025,
+        "ddq": 0.0,
+        "tau": 0.17578125,
+        "temperature": [
+          32,
+          32
+        ],
+        "voltage": 44.5,
+        "status": 0,
+        "mode": 1,
+        "sensor": [
+          0,
+          0
+        ],
+        "reserve": [
+          0,
+          1260,
+          4,
+          0
+        ]
+      },
+      {
+        "index": 10,
+        "q": 0.5248897075653076,
+        "dq": 0.005376732442528009,
+        "ddq": 0.0,
+        "tau": 0.008708158507943153,
+        "temperature": [
+          40,
+          39
+        ],
+        "voltage": 44.5,
+        "status": 0,
+        "mode": 1,
+        "sensor": [
+          0,
+          0
+        ],
+        "reserve": [
+          0,
+          1260,
+          4,
+          0
+        ]
+      },
+      {
+        "index": 11,
+        "q": 0.0010369595838710666,
+        "dq": 0.0023261287715286016,
+        "ddq": 0.0,
+        "tau": -0.2262086570262909,
+        "temperature": [
+          41,
+          40
+        ],
+        "voltage": 44.5,
+        "status": 0,
+        "mode": 1,
+        "sensor": [
+          0,
+          0
+        ],
+        "reserve": [
+          0,
+          1260,
+          4,
+          0
+        ]
+      },
+      {
+        "index": 12,
+        "q": 0.7739310264587402,
+        "dq": -0.0017141626449301839,
+        "ddq": 0.0,
+        "tau": -0.11186079680919647,
+        "temperature": [
+          31,
+          31
+        ],
+        "voltage": 44.5,
+        "status": 0,
+        "mode": 1,
+        "sensor": [
+          0,
+          0
+        ],
+        "reserve": [
+          0,
+          1261,
+          4,
+          0
+        ]
+      },
+      {
+        "index": 15,
+        "q": 0.22639399766921997,
+        "dq": -0.0076699042692780495,
+        "ddq": 0.0,
+        "tau": -0.0625,
+        "temperature": [
+          45,
+          44
+        ],
+        "voltage": 44.5,
+        "status": 0,
+        "mode": 1,
+        "sensor": [
+          0,
+          0
+        ],
+        "reserve": [
+          0,
+          1261,
+          4,
+          0
+        ]
+      },
+      {
+        "index": 16,
+        "q": 0.1815250664949417,
+        "dq": -0.004601942375302315,
+        "ddq": 0.0,
+        "tau": -0.0625,
+        "temperature": [
+          45,
+          45
+        ],
+        "voltage": 44.5,
+        "status": 0,
+        "mode": 1,
+        "sensor": [
+          0,
+          0
+        ],
+        "reserve": [
+          0,
+          1261,
+          4,
+          0
+        ]
+      },
+      {
+        "index": 17,
+        "q": 1.6924242973327637,
+        "dq": -0.006135923322290182,
+        "ddq": 0.0,
+        "tau": 0.0625,
+        "temperature": [
+          44,
+          44
+        ],
+        "voltage": 44.5,
+        "status": 0,
+        "mode": 1,
+        "sensor": [
+          0,
+          0
+        ],
+        "reserve": [
+          0,
+          1260,
+          4,
+          0
+        ]
+      },
+      {
+        "index": 18,
+        "q": 1.082355260848999,
+        "dq": 0.003067961661145091,
+        "ddq": 0.0,
+        "tau": -0.0625,
+        "temperature": [
+          43,
+          43
+        ],
+        "voltage": 44.5,
+        "status": 0,
+        "mode": 1,
+        "sensor": [
+          0,
+          0
+        ],
+        "reserve": [
+          0,
+          1260,
+          4,
+          0
+        ]
+      },
+      {
+        "index": 19,
+        "q": 0.7613698244094849,
+        "dq": 0.012271846644580364,
+        "ddq": 0.0,
+        "tau": -0.0625,
+        "temperature": [
+          42,
+          41
+        ],
+        "voltage": 44.5,
+        "status": 0,
+        "mode": 1,
+        "sensor": [
+          0,
+          0
+        ],
+        "reserve": [
+          0,
+          1260,
+          4,
+          0
+        ]
+      },
+      {
+        "index": 22,
+        "q": 0.3233224153518677,
+        "dq": 0.003067961661145091,
+        "ddq": 0.0,
+        "tau": 0.0625,
+        "temperature": [
+          47,
+          46
+        ],
+        "voltage": 44.5,
+        "status": 0,
+        "mode": 1,
+        "sensor": [
+          0,
+          0
+        ],
+        "reserve": [
+          0,
+          1261,
+          4,
+          0
+        ]
+      },
+      {
+        "index": 23,
+        "q": 0.013050821609795094,
+        "dq": 0.0015339808305725455,
+        "ddq": 0.0,
+        "tau": 0.0,
+        "temperature": [
+          45,
+          45
+        ],
+        "voltage": 44.5,
+        "status": 0,
+        "mode": 1,
+        "sensor": [
+          0,
+          0
+        ],
+        "reserve": [
+          0,
+          1260,
+          4,
+          0
+        ]
+      },
+      {
+        "index": 24,
+        "q": -0.2910369038581848,
+        "dq": 0.003067961661145091,
+        "ddq": 0.0,
+        "tau": 0.0625,
+        "temperature": [
+          44,
+          44
+        ],
+        "voltage": 44.5,
+        "status": 0,
+        "mode": 1,
+        "sensor": [
+          0,
+          0
+        ],
+        "reserve": [
+          0,
+          1260,
+          4,
+          0
+        ]
+      },
+      {
+        "index": 25,
+        "q": 0.47595351934432983,
+        "dq": 0.006135923322290182,
+        "ddq": 0.0,
+        "tau": 0.0625,
+        "temperature": [
+          44,
+          43
+        ],
+        "voltage": 44.5,
+        "status": 0,
+        "mode": 1,
+        "sensor": [
+          0,
+          0
+        ],
+        "reserve": [
+          0,
+          1260,
+          4,
+          0
+        ]
+      },
+      {
+        "index": 26,
+        "q": -1.6423182487487793,
+        "dq": 0.004601942375302315,
+        "ddq": 0.0,
+        "tau": -0.0625,
+        "temperature": [
+          40,
+          39
+        ],
+        "voltage": 44.5,
+        "status": 0,
+        "mode": 1,
+        "sensor": [
+          0,
+          0
+        ],
+        "reserve": [
+          0,
+          1260,
+          4,
+          0
+        ]
+      }
+    ],
+    "imu": {
+      "rpy": [
+        0.1368931531906128,
+        -0.06106079742312431,
+        -0.04670052230358124
+      ],
+      "gyroscope": [
+        -0.0031957929022610188,
+        0.008522114716470242,
+        -0.004261057358235121
+      ],
+      "accelerometer": [
+        0.33937808871269226,
+        1.1303625106811523,
+        9.594164848327637
+      ],
+      "quaternion": [
+        -0.9969704151153564,
+        -0.06763158738613129,
+        0.03204198554158211,
+        0.021195435896515846
+      ],
+      "temperature": 80
+    },
+    "tick": 11583393,
+    "mode_pr": 0,
+    "mode_machine": 4,
+    "version": [
+      0,
+      0
+    ],
+    "fsm": 0,
+    "bad_packets": 0,
+    "safety_feedback": {
+      "sport": {
+        "source": "rt/lf/sportmodestate",
+        "type": "unitree_hg::msg::dds_::SportModeState_",
+        "current": true,
+        "age_ms": 25,
+        "ttl_ms": 1500,
+        "received_at": 1792558291.1621425,
+        "samples": 2693,
+        "raw": {
+          "fsm_id": 0,
+          "fsm_mode": 0,
+          "task_id": 4,
+          "task_time": 0.0
+        },
+        "code": 0,
+        "physical_publisher_verified": false,
+        "hardware_health_verified": false,
+        "timestamp_basis": "local_receive_time",
+        "sensor_timestamp": null
+      },
+      "bms": {
+        "source": "rt/lf/bmsstate",
+        "type": "unitree_hg::msg::dds_::BmsState_",
+        "current": true,
+        "age_ms": 32,
+        "ttl_ms": 1500,
+        "received_at": 1792558291.154568,
+        "samples": 3627,
+        "raw": {
+          "version_high": 1,
+          "version_low": 3,
+          "fn": 5,
+          "cell_vol": [
+            3421,
+            3420,
+            3419,
+            3421,
+            3419,
+            3424,
+            3416,
+            3423,
+            3420,
+            3415,
+            3415,
+            3416,
+            3419,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "bmsvoltage": [
+            44455,
+            44460,
+            0
+          ],
+          "current": -1648,
+          "soc": 22,
+          "soh": 92,
+          "temperature": [
+            35,
+            34,
+            32,
+            37,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cycle": 10,
+          "manufacturer_date": 22939,
+          "bmsstate": [
+            8,
+            8,
+            262144,
+            7,
+            0
+          ],
+          "reserve": [
+            0,
+            0,
+            0
+          ]
+        },
+        "code": 0,
+        "physical_publisher_verified": false,
+        "hardware_health_verified": false,
+        "timestamp_basis": "local_receive_time",
+        "sensor_timestamp": null
+      },
+      "mainboard": {
+        "source": "rt/lf/mainboardstate",
+        "type": "unitree_hg::msg::dds_::MainBoardState_",
+        "current": true,
+        "age_ms": 32,
+        "ttl_ms": 1500,
+        "received_at": 1792558291.1547563,
+        "samples": 3622,
+        "raw": {
+          "fan_state": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "temperature": [
+            48,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": [
+            44.24763488769531,
+            44.36366653442383,
+            1.25,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "state": [
+            32,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "code": 0,
+        "physical_publisher_verified": false,
+        "hardware_health_verified": false,
+        "timestamp_basis": "local_receive_time",
+        "sensor_timestamp": null
+      },
+      "arm_state": {
+        "source": "rt/arm/action/state",
+        "type": "std_msgs::msg::dds_::String_",
+        "current": false,
+        "age_ms": null,
+        "ttl_ms": 1500,
+        "received_at": null,
+        "samples": 0,
+        "raw": null,
+        "code": null,
+        "physical_publisher_verified": false,
+        "hardware_health_verified": false,
+        "timestamp_basis": "local_receive_time",
+        "sensor_timestamp": null
+      },
+      "selftest": {
+        "source": "rt/selftest",
+        "type": "std_msgs::msg::dds_::String_",
+        "current": false,
+        "age_ms": null,
+        "ttl_ms": 1500,
+        "received_at": null,
+        "samples": 0,
+        "raw": null,
+        "code": null,
+        "physical_publisher_verified": false,
+        "hardware_health_verified": false,
+        "timestamp_basis": "local_receive_time",
+        "sensor_timestamp": null
+      },
+      "motion_mode": {
+        "source": "motion_switcher.CheckMode / 1001",
+        "type": "official JSON response",
+        "current": true,
+        "age_ms": 2755,
+        "ttl_ms": 6000,
+        "received_at": 1792558288.431657,
+        "samples": 59,
+        "raw": {
+          "form": "0",
+          "name": "ai"
+        },
+        "code": 0,
+        "physical_publisher_verified": false,
+        "hardware_health_verified": false,
+        "timestamp_basis": "local_receive_time",
+        "sensor_timestamp": null
+      }
+    },
+    "fsm_age_ms": 1235
+  },
+  "body": {
+    "schema_version": 2,
+    "current": true,
+    "evidence_mode": "robot",
+    "feedback": {
+      "sport": {
+        "source": "rt/lf/sportmodestate",
+        "type": "unitree_hg::msg::dds_::SportModeState_",
+        "current": true,
+        "age_ms": 25,
+        "ttl_ms": 1500,
+        "received_at": 1792558291.1621425,
+        "samples": 2693,
+        "raw": {
+          "fsm_id": 0,
+          "fsm_mode": 0,
+          "task_id": 4,
+          "task_time": 0.0
+        },
+        "code": 0,
+        "physical_publisher_verified": false,
+        "hardware_health_verified": false,
+        "timestamp_basis": "local_receive_time",
+        "sensor_timestamp": null
+      },
+      "bms": {
+        "source": "rt/lf/bmsstate",
+        "type": "unitree_hg::msg::dds_::BmsState_",
+        "current": true,
+        "age_ms": 32,
+        "ttl_ms": 1500,
+        "received_at": 1792558291.154568,
+        "samples": 3627,
+        "raw": {
+          "version_high": 1,
+          "version_low": 3,
+          "fn": 5,
+          "cell_vol": [
+            3421,
+            3420,
+            3419,
+            3421,
+            3419,
+            3424,
+            3416,
+            3423,
+            3420,
+            3415,
+            3415,
+            3416,
+            3419,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "bmsvoltage": [
+            44455,
+            44460,
+            0
+          ],
+          "current": -1648,
+          "soc": 22,
+          "soh": 92,
+          "temperature": [
+            35,
+            34,
+            32,
+            37,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cycle": 10,
+          "manufacturer_date": 22939,
+          "bmsstate": [
+            8,
+            8,
+            262144,
+            7,
+            0
+          ],
+          "reserve": [
+            0,
+            0,
+            0
+          ]
+        },
+        "code": 0,
+        "physical_publisher_verified": false,
+        "hardware_health_verified": false,
+        "timestamp_basis": "local_receive_time",
+        "sensor_timestamp": null
+      },
+      "mainboard": {
+        "source": "rt/lf/mainboardstate",
+        "type": "unitree_hg::msg::dds_::MainBoardState_",
+        "current": true,
+        "age_ms": 32,
+        "ttl_ms": 1500,
+        "received_at": 1792558291.1547563,
+        "samples": 3622,
+        "raw": {
+          "fan_state": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "temperature": [
+            48,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": [
+            44.24763488769531,
+            44.36366653442383,
+            1.25,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "state": [
+            32,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "code": 0,
+        "physical_publisher_verified": false,
+        "hardware_health_verified": false,
+        "timestamp_basis": "local_receive_time",
+        "sensor_timestamp": null
+      },
+      "arm_state": {
+        "source": "rt/arm/action/state",
+        "type": "std_msgs::msg::dds_::String_",
+        "current": false,
+        "age_ms": null,
+        "ttl_ms": 1500,
+        "received_at": null,
+        "samples": 0,
+        "raw": null,
+        "code": null,
+        "physical_publisher_verified": false,
+        "hardware_health_verified": false,
+        "timestamp_basis": "local_receive_time",
+        "sensor_timestamp": null
+      },
+      "selftest": {
+        "source": "rt/selftest",
+        "type": "std_msgs::msg::dds_::String_",
+        "current": false,
+        "age_ms": null,
+        "ttl_ms": 1500,
+        "received_at": null,
+        "samples": 0,
+        "raw": null,
+        "code": null,
+        "physical_publisher_verified": false,
+        "hardware_health_verified": false,
+        "timestamp_basis": "local_receive_time",
+        "sensor_timestamp": null
+      },
+      "motion_mode": {
+        "source": "motion_switcher.CheckMode / 1001",
+        "type": "official JSON response",
+        "current": true,
+        "age_ms": 2755,
+        "ttl_ms": 6000,
+        "received_at": 1792558288.431657,
+        "samples": 59,
+        "raw": {
+          "form": "0",
+          "name": "ai"
+        },
+        "code": 0,
+        "physical_publisher_verified": false,
+        "hardware_health_verified": false,
+        "timestamp_basis": "local_receive_time",
+        "sensor_timestamp": null
+      }
+    },
+    "camera_evidence": {
+      "current": true,
+      "age_ms": 225,
+      "detail": "RGB 只确认可见环境；不自动判断足底载荷、地面摩擦和全身净空"
+    },
+    "control_mode": {
+      "fsm": 0,
+      "sdk_label": "SDK ZeroTorque 对应状态 ID",
+      "active_capability_id": null,
+      "activity_verified": false,
+      "detail": "FSM 只表明服务回读的状态 ID；未取得具体能力执行中/完成的可信反馈。ZeroTorque ID 也不证明每个电机实际力矩为零"
+    },
+    "posture": {
+      "description": "双膝显著屈曲",
+      "knee_deg": [
+        161.0302747402698,
+        160.0146529314456
+      ],
+      "imu_rpy_deg": [
+        7.843399922059953,
+        -3.4985259860483158,
+        -2.675742829051774
+      ],
+      "whole_body_pose": "unknown",
+      "support": "unknown",
+      "detail": "双膝 >90° 仅为形态描述规则；未确定站/坐/卧、身体离地高度或接触对象。三维模型按关节角度显示，不表示世界中的支撑姿势"
+    },
+    "observation_window": {
+      "samples": 227,
+      "seconds": 11.99,
+      "max_abs_dq_rad_s": 0.047996558248996735,
+      "max_joint_span_deg": 0.008240623233620384,
+      "certified_safe": false,
+      "learned_safe_range": null,
+      "detail": "短时被动观察，只描述已观测变化；不把未摔倒样本、最小/最大角度或零速度学习为安全边界"
+    },
+    "safety": {
+      "status": "unverified",
+      "execution_allowed": false,
+      "fall_free_guarantee": false,
+      "validated_action_envelopes": [],
+      "checks": [
+        {
+          "id": "real_feedback",
+          "name": "真实身体反馈",
+          "status": "matched",
+          "detail": "23 个关节位置、速度为新鲜实机反馈",
+          "source": "rt/lowstate + CRC / tick / 时效检查"
+        },
+        {
+          "id": "walking_fsm",
+          "name": "行走模式前提",
+          "status": "violated",
+          "detail": "FSM=0；500 只符合本项目行走前提，不能证明平衡或动作正在执行",
+          "source": "固定版本 SDK Start→500；仅适用于行走候选任务"
+        },
+        {
+          "id": "tilt_guard",
+          "name": "项目姿态拦截线",
+          "status": "matched",
+          "detail": "横滚/俯仰最大绝对值 7.84°；项目拦截线 0.35 rad，未核定为防摔范围",
+          "source": "本项目软件保护；不是厂商安全限值"
+        },
+        {
+          "id": "thermal_guard",
+          "name": "项目电机温度拦截线",
+          "status": "matched",
+          "detail": "最高 47°C；项目拦截线 70°C，实机热保护与降额未知",
+          "source": "本项目软件保护；不是厂商安全工作温度"
+        },
+        {
+          "id": "support",
+          "name": "足底接触与承重",
+          "status": "unknown",
+          "detail": "尚无可信足底接触、载荷、支撑面；不能判断脚是否落地或被外部支撑",
+          "source": "新鲜只读消息与固定版本官方定义；剩余条件仍需本机/现场证据",
+          "acquired": [
+            "完整关节反馈可描述屈曲形态；关节力矩不是足底载荷"
+          ],
+          "missing": "尚无可信足底接触、载荷、支撑面；不能判断脚是否落地或被外部支撑"
+        },
+        {
+          "id": "balance",
+          "name": "动态平衡裕量",
+          "status": "unknown",
+          "detail": "缺少全身位姿/速度、质心与支撑关系；IMU 平稳不证明下一步稳定",
+          "source": "新鲜只读消息与固定版本官方定义；剩余条件仍需本机/现场证据",
+          "acquired": [
+            "已取得机体 IMU 和关节速度；未取得可信质心/支撑关系"
+          ],
+          "missing": "缺少全身位姿/速度、质心与支撑关系；IMU 平稳不证明下一步稳定"
+        },
+        {
+          "id": "terrain",
+          "name": "现场地面与净空",
+          "status": "unknown",
+          "detail": "摩擦、坡度、台阶、地面断层和全身净空未核验；图像或二维地图单独不足",
+          "source": "新鲜只读消息与固定版本官方定义；剩余条件仍需本机/现场证据",
+          "acquired": [
+            "官方 RGB 实时画面，帧龄 225 ms；没有深度/接触证据"
+          ],
+          "missing": "摩擦、坡度、台阶、地面断层和全身净空未核验；图像或二维地图单独不足"
+        },
+        {
+          "id": "calibration",
+          "name": "实机电机限值与标定",
+          "status": "unknown",
+          "detail": "逐电机固件限值、零位、增益和转矩转速能力未知；URDF 与示例值不能替代",
+          "source": "新鲜只读消息与固定版本官方定义；剩余条件仍需本机/现场证据",
+          "acquired": [
+            "已绑定本机型号与坐标证据；253 个实机配置字段仍为空"
+          ],
+          "missing": "逐电机固件限值、零位、增益和转矩转速能力未知；URDF 与示例值不能替代"
+        },
+        {
+          "id": "health",
+          "name": "驱动健康与电池余量",
+          "status": "unknown",
+          "detail": "仍缺本固件故障位表、降额规则及 BMS 单位/通道与物理来源核验；原始 SOC 与状态码不作为健康或续航证明",
+          "source": "新鲜只读消息与固定版本官方定义；剩余条件仍需本机/现场证据",
+          "acquired": [
+            "bms 已收到匹配 HG 类型的原始消息，帧龄 32 ms；未核定单位/故障位与物理发布者",
+            "mainboard 已收到匹配 HG 类型的原始消息，帧龄 32 ms；未核定单位/故障位与物理发布者"
+          ],
+          "missing": "仍缺本固件故障位表、降额规则及 BMS 单位/通道与物理来源核验；原始 SOC 与状态码不作为健康或续航证明"
+        },
+        {
+          "id": "recovery",
+          "name": "保护与失联处置",
+          "status": "unknown",
+          "detail": "现场防跌落保护、官方平衡控制归属、急停和通信失效行为尚未验证；不自动发送卸力或模式切换",
+          "source": "新鲜只读消息与固定版本官方定义；剩余条件仍需本机/现场证据",
+          "acquired": [
+            "CheckMode 原始回读：{'form': '0', 'name': 'ai'}；仅为模式标识，不证明平衡控制健康"
+          ],
+          "missing": "现场防跌落保护、官方平衡控制归属、急停和通信失效行为尚未验证；不自动发送卸力或模式切换"
+        },
+        {
+          "id": "action_contract",
+          "name": "具体能力全过程边界",
+          "status": "unknown",
+          "detail": "每项能力的进入条件、执行过程、退出/打断和恢复条件均需单独核定；目录匹配不足以放行",
+          "source": "新鲜只读消息与固定版本官方定义；剩余条件仍需本机/现场证据",
+          "acquired": [
+            "HG 任务原始字段：{'fsm_id': 0, 'fsm_mode': 0, 'task_id': 4, 'task_time': 0.0}；任务编号和时间不能映射为已确认的具体动作"
+          ],
+          "missing": "每项能力的进入条件、执行过程、退出/打断和恢复条件均需单独核定；目录匹配不足以放行"
+        }
+      ],
+      "unknown_conditions": [
+        "足底接触与承重",
+        "动态平衡裕量",
+        "现场地面与净空",
+        "实机电机限值与标定",
+        "驱动健康与电池余量",
+        "保护与失联处置",
+        "具体能力全过程边界"
+      ],
+      "violated_conditions": [
+        "行走模式前提"
+      ],
+      "detail": "防摔动作边界尚未核定，真实运动锁定；通过个别拦截检查也不授予权限"
+    }
+  },
+  "alignment": "相邻 HTTP 读取，未硬件同步；相机无曝光时间戳",
+  "execution_allowed": false
+}

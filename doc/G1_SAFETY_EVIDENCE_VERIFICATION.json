@@ -1,0 +1,1326 @@
+{
+  "verified_at_utc": "2026-10-21T04:35:08.491478+00:00",
+  "snapshot_at": 1792557308.123875,
+  "release": "e03a6cc6208b",
+  "manifest_files": 426,
+  "foundation_id": "6f71c7ec19f483a078ec6b39a66c33cff21b843aeba98df48347dde41aae0e5d",
+  "schema_version": 12,
+  "read_only": true,
+  "connected": true,
+  "mode": "robot",
+  "run_id": "c36ae57cd976",
+  "telemetry_age_ms": 24,
+  "joints": 23,
+  "owner": null,
+  "navigation": "idle",
+  "command_accepted": 0,
+  "camera_window": [
+    {
+      "at": 1792557295.0877948,
+      "telemetry_age_ms": 51,
+      "camera": {
+        "backend": "unitree",
+        "status": "stale",
+        "error": "SDK_3104",
+        "source": "unitree-videohub-858a026537cd",
+        "sequence": 234,
+        "age_ms": 1374,
+        "request_started_at": 1792557293.7135563,
+        "received_at": 1792557293.769401,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 56,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      },
+      "evidence": {
+        "current": false,
+        "age_ms": null,
+        "detail": "RGB 只确认可见环境；不自动判断足底载荷、地面摩擦和全身净空"
+      }
+    },
+    {
+      "at": 1792557295.648632,
+      "telemetry_age_ms": 23,
+      "camera": {
+        "backend": "unitree",
+        "status": "stale",
+        "error": "SDK_3104",
+        "source": "unitree-videohub-858a026537cd",
+        "sequence": 234,
+        "age_ms": 1935,
+        "request_started_at": 1792557293.7135563,
+        "received_at": 1792557293.769401,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 56,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      },
+      "evidence": {
+        "current": false,
+        "age_ms": null,
+        "detail": "RGB 只确认可见环境；不自动判断足底载荷、地面摩擦和全身净空"
+      }
+    },
+    {
+      "at": 1792557296.2142103,
+      "telemetry_age_ms": 8,
+      "camera": {
+        "backend": "unitree",
+        "status": "stale",
+        "error": "SDK_3104",
+        "source": "unitree-videohub-858a026537cd",
+        "sequence": 234,
+        "age_ms": 2501,
+        "request_started_at": 1792557293.7135563,
+        "received_at": 1792557293.769401,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 56,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      },
+      "evidence": {
+        "current": false,
+        "age_ms": null,
+        "detail": "RGB 只确认可见环境；不自动判断足底载荷、地面摩擦和全身净空"
+      }
+    },
+    {
+      "at": 1792557296.7729237,
+      "telemetry_age_ms": 34,
+      "camera": {
+        "backend": "unitree",
+        "status": "stale",
+        "error": "SDK_3104",
+        "source": "unitree-videohub-858a026537cd",
+        "sequence": 234,
+        "age_ms": 3059,
+        "request_started_at": 1792557293.7135563,
+        "received_at": 1792557293.769401,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 56,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      },
+      "evidence": {
+        "current": false,
+        "age_ms": null,
+        "detail": "RGB 只确认可见环境；不自动判断足底载荷、地面摩擦和全身净空"
+      }
+    },
+    {
+      "at": 1792557297.3536885,
+      "telemetry_age_ms": 14,
+      "camera": {
+        "backend": "unitree",
+        "status": "stale",
+        "error": "SDK_3104",
+        "source": "unitree-videohub-858a026537cd",
+        "sequence": 234,
+        "age_ms": 3640,
+        "request_started_at": 1792557293.7135563,
+        "received_at": 1792557293.769401,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 56,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      },
+      "evidence": {
+        "current": false,
+        "age_ms": null,
+        "detail": "RGB 只确认可见环境；不自动判断足底载荷、地面摩擦和全身净空"
+      }
+    },
+    {
+      "at": 1792557297.9302132,
+      "telemetry_age_ms": 2,
+      "camera": {
+        "backend": "unitree",
+        "status": "stale",
+        "error": "SDK_3104",
+        "source": "unitree-videohub-858a026537cd",
+        "sequence": 234,
+        "age_ms": 4217,
+        "request_started_at": 1792557293.7135563,
+        "received_at": 1792557293.769401,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 56,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      },
+      "evidence": {
+        "current": false,
+        "age_ms": null,
+        "detail": "RGB 只确认可见环境；不自动判断足底载荷、地面摩擦和全身净空"
+      }
+    },
+    {
+      "at": 1792557298.5694132,
+      "telemetry_age_ms": 7,
+      "camera": {
+        "backend": "unitree",
+        "status": "stale",
+        "error": "SDK_3104",
+        "source": "unitree-videohub-858a026537cd",
+        "sequence": 234,
+        "age_ms": 4856,
+        "request_started_at": 1792557293.7135563,
+        "received_at": 1792557293.769401,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 56,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      },
+      "evidence": {
+        "current": false,
+        "age_ms": null,
+        "detail": "RGB 只确认可见环境；不自动判断足底载荷、地面摩擦和全身净空"
+      }
+    },
+    {
+      "at": 1792557299.1278272,
+      "telemetry_age_ms": 40,
+      "camera": {
+        "backend": "unitree",
+        "status": "stale",
+        "error": "SDK_3104",
+        "source": "unitree-videohub-858a026537cd",
+        "sequence": 234,
+        "age_ms": 5414,
+        "request_started_at": 1792557293.7135563,
+        "received_at": 1792557293.769401,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 56,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      },
+      "evidence": {
+        "current": false,
+        "age_ms": null,
+        "detail": "RGB 只确认可见环境；不自动判断足底载荷、地面摩擦和全身净空"
+      }
+    },
+    {
+      "at": 1792557299.6905675,
+      "telemetry_age_ms": 14,
+      "camera": {
+        "backend": "unitree",
+        "status": "stale",
+        "error": "SDK_3104",
+        "source": "unitree-videohub-858a026537cd",
+        "sequence": 234,
+        "age_ms": 5977,
+        "request_started_at": 1792557293.7135563,
+        "received_at": 1792557293.769401,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 56,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      },
+      "evidence": {
+        "current": false,
+        "age_ms": null,
+        "detail": "RGB 只确认可见环境；不自动判断足底载荷、地面摩擦和全身净空"
+      }
+    },
+    {
+      "at": 1792557300.2675412,
+      "telemetry_age_ms": 3,
+      "camera": {
+        "backend": "unitree",
+        "status": "stale",
+        "error": "SDK_3104",
+        "source": "unitree-videohub-858a026537cd",
+        "sequence": 234,
+        "age_ms": 6554,
+        "request_started_at": 1792557293.7135563,
+        "received_at": 1792557293.769401,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 56,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      },
+      "evidence": {
+        "current": false,
+        "age_ms": null,
+        "detail": "RGB 只确认可见环境；不自动判断足底载荷、地面摩擦和全身净空"
+      }
+    },
+    {
+      "at": 1792557300.8173025,
+      "telemetry_age_ms": 26,
+      "camera": {
+        "backend": "unitree",
+        "status": "stale",
+        "error": "SDK_3104",
+        "source": "unitree-videohub-858a026537cd",
+        "sequence": 234,
+        "age_ms": 7104,
+        "request_started_at": 1792557293.7135563,
+        "received_at": 1792557293.769401,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 56,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      },
+      "evidence": {
+        "current": false,
+        "age_ms": null,
+        "detail": "RGB 只确认可见环境；不自动判断足底载荷、地面摩擦和全身净空"
+      }
+    },
+    {
+      "at": 1792557301.4118335,
+      "telemetry_age_ms": 26,
+      "camera": {
+        "backend": "unitree",
+        "status": "stale",
+        "error": "SDK_3104",
+        "source": "unitree-videohub-858a026537cd",
+        "sequence": 234,
+        "age_ms": 7698,
+        "request_started_at": 1792557293.7135563,
+        "received_at": 1792557293.769401,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 56,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      },
+      "evidence": {
+        "current": false,
+        "age_ms": null,
+        "detail": "RGB 只确认可见环境；不自动判断足底载荷、地面摩擦和全身净空"
+      }
+    },
+    {
+      "at": 1792557301.9715536,
+      "telemetry_age_ms": 44,
+      "camera": {
+        "backend": "unitree",
+        "status": "stale",
+        "error": "SDK_3104",
+        "source": "unitree-videohub-858a026537cd",
+        "sequence": 234,
+        "age_ms": 8258,
+        "request_started_at": 1792557293.7135563,
+        "received_at": 1792557293.769401,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 56,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      },
+      "evidence": {
+        "current": false,
+        "age_ms": null,
+        "detail": "RGB 只确认可见环境；不自动判断足底载荷、地面摩擦和全身净空"
+      }
+    },
+    {
+      "at": 1792557302.5349753,
+      "telemetry_age_ms": 7,
+      "camera": {
+        "backend": "unitree",
+        "status": "stale",
+        "error": "SDK_3104",
+        "source": "unitree-videohub-858a026537cd",
+        "sequence": 234,
+        "age_ms": 8821,
+        "request_started_at": 1792557293.7135563,
+        "received_at": 1792557293.769401,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 56,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      },
+      "evidence": {
+        "current": false,
+        "age_ms": null,
+        "detail": "RGB 只确认可见环境；不自动判断足底载荷、地面摩擦和全身净空"
+      }
+    },
+    {
+      "at": 1792557303.0936897,
+      "telemetry_age_ms": 36,
+      "camera": {
+        "backend": "unitree",
+        "status": "stale",
+        "error": "SDK_3104",
+        "source": "unitree-videohub-858a026537cd",
+        "sequence": 234,
+        "age_ms": 9380,
+        "request_started_at": 1792557293.7135563,
+        "received_at": 1792557293.769401,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 56,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      },
+      "evidence": {
+        "current": false,
+        "age_ms": null,
+        "detail": "RGB 只确认可见环境；不自动判断足底载荷、地面摩擦和全身净空"
+      }
+    },
+    {
+      "at": 1792557303.645443,
+      "telemetry_age_ms": 9,
+      "camera": {
+        "backend": "unitree",
+        "status": "stale",
+        "error": "SDK_3104",
+        "source": "unitree-videohub-858a026537cd",
+        "sequence": 234,
+        "age_ms": 9932,
+        "request_started_at": 1792557293.7135563,
+        "received_at": 1792557293.769401,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 56,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      },
+      "evidence": {
+        "current": false,
+        "age_ms": null,
+        "detail": "RGB 只确认可见环境；不自动判断足底载荷、地面摩擦和全身净空"
+      }
+    },
+    {
+      "at": 1792557304.1987143,
+      "telemetry_age_ms": 32,
+      "camera": {
+        "backend": "unitree",
+        "status": "stale",
+        "error": "SDK_3104",
+        "source": "unitree-videohub-858a026537cd",
+        "sequence": 234,
+        "age_ms": 10485,
+        "request_started_at": 1792557293.7135563,
+        "received_at": 1792557293.769401,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 56,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      },
+      "evidence": {
+        "current": false,
+        "age_ms": null,
+        "detail": "RGB 只确认可见环境；不自动判断足底载荷、地面摩擦和全身净空"
+      }
+    },
+    {
+      "at": 1792557304.7600696,
+      "telemetry_age_ms": 2,
+      "camera": {
+        "backend": "unitree",
+        "status": "live",
+        "error": null,
+        "source": "unitree-videohub-858a026537cd",
+        "sequence": 236,
+        "age_ms": 119,
+        "request_started_at": 1792557304.6415179,
+        "received_at": 1792557304.6839342,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 42,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      },
+      "evidence": {
+        "current": true,
+        "age_ms": 116,
+        "detail": "RGB 只确认可见环境；不自动判断足底载荷、地面摩擦和全身净空"
+      }
+    },
+    {
+      "at": 1792557305.3182192,
+      "telemetry_age_ms": 35,
+      "camera": {
+        "backend": "unitree",
+        "status": "live",
+        "error": null,
+        "source": "unitree-videohub-858a026537cd",
+        "sequence": 236,
+        "age_ms": 677,
+        "request_started_at": 1792557304.6415179,
+        "received_at": 1792557304.6839342,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 42,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      },
+      "evidence": {
+        "current": true,
+        "age_ms": 673,
+        "detail": "RGB 只确认可见环境；不自动判断足底载荷、地面摩擦和全身净空"
+      }
+    },
+    {
+      "at": 1792557305.8692555,
+      "telemetry_age_ms": 4,
+      "camera": {
+        "backend": "unitree",
+        "status": "stale",
+        "error": "SDK_3104",
+        "source": "unitree-videohub-858a026537cd",
+        "sequence": 236,
+        "age_ms": 1228,
+        "request_started_at": 1792557304.6415179,
+        "received_at": 1792557304.6839342,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 42,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      },
+      "evidence": {
+        "current": false,
+        "age_ms": null,
+        "detail": "RGB 只确认可见环境；不自动判断足底载荷、地面摩擦和全身净空"
+      }
+    },
+    {
+      "at": 1792557306.4261413,
+      "telemetry_age_ms": 28,
+      "camera": {
+        "backend": "unitree",
+        "status": "stale",
+        "error": "SDK_3104",
+        "source": "unitree-videohub-858a026537cd",
+        "sequence": 236,
+        "age_ms": 1785,
+        "request_started_at": 1792557304.6415179,
+        "received_at": 1792557304.6839342,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 42,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      },
+      "evidence": {
+        "current": false,
+        "age_ms": null,
+        "detail": "RGB 只确认可见环境；不自动判断足底载荷、地面摩擦和全身净空"
+      }
+    },
+    {
+      "at": 1792557306.9976716,
+      "telemetry_age_ms": 16,
+      "camera": {
+        "backend": "unitree",
+        "status": "stale",
+        "error": "SDK_3104",
+        "source": "unitree-videohub-858a026537cd",
+        "sequence": 236,
+        "age_ms": 2356,
+        "request_started_at": 1792557304.6415179,
+        "received_at": 1792557304.6839342,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 42,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      },
+      "evidence": {
+        "current": false,
+        "age_ms": null,
+        "detail": "RGB 只确认可见环境；不自动判断足底载荷、地面摩擦和全身净空"
+      }
+    },
+    {
+      "at": 1792557307.55626,
+      "telemetry_age_ms": 40,
+      "camera": {
+        "backend": "unitree",
+        "status": "stale",
+        "error": "SDK_3104",
+        "source": "unitree-videohub-858a026537cd",
+        "sequence": 236,
+        "age_ms": 2915,
+        "request_started_at": 1792557304.6415179,
+        "received_at": 1792557304.6839342,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 42,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      },
+      "evidence": {
+        "current": false,
+        "age_ms": null,
+        "detail": "RGB 只确认可见环境；不自动判断足底载荷、地面摩擦和全身净空"
+      }
+    },
+    {
+      "at": 1792557308.123875,
+      "telemetry_age_ms": 24,
+      "camera": {
+        "backend": "unitree",
+        "status": "stale",
+        "error": "SDK_3104",
+        "source": "unitree-videohub-858a026537cd",
+        "sequence": 236,
+        "age_ms": 3482,
+        "request_started_at": 1792557304.6415179,
+        "received_at": 1792557304.6839342,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 42,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      },
+      "evidence": {
+        "current": false,
+        "age_ms": null,
+        "detail": "RGB 只确认可见环境；不自动判断足底载荷、地面摩擦和全身净空"
+      }
+    }
+  ],
+  "camera": {
+    "backend": "unitree",
+    "status": "stale",
+    "error": "SDK_3104",
+    "source": "unitree-videohub-858a026537cd",
+    "sequence": 236,
+    "age_ms": 3482,
+    "request_started_at": 1792557304.6415179,
+    "received_at": 1792557304.6839342,
+    "width": 960,
+    "height": 540,
+    "source_width": 1920,
+    "source_height": 1080,
+    "request_ms": 42,
+    "timestamp_basis": "request_started_at",
+    "sensor_timestamp": null
+  },
+  "insight": {
+    "enabled": false,
+    "worker_online": true,
+    "model": "gpt-5.6-sol",
+    "error": null,
+    "status": "paused",
+    "report": null,
+    "report_age_s": null,
+    "current": false,
+    "completed": 0,
+    "report_ttl_s": 120
+  },
+  "observer_pid": 34853,
+  "new_motor_configuration_values": 0,
+  "actual_config_unknowns": 253,
+  "state_learning": {
+    "schema_version": 2,
+    "current": true,
+    "evidence_mode": "robot",
+    "feedback": {
+      "sport": {
+        "source": "rt/lf/sportmodestate",
+        "type": "unitree_hg::msg::dds_::SportModeState_",
+        "current": true,
+        "age_ms": 54,
+        "ttl_ms": 1500,
+        "received_at": 1792557308.041299,
+        "samples": 2457,
+        "raw": {
+          "fsm_id": 0,
+          "fsm_mode": 0,
+          "task_id": 4,
+          "task_time": 0.0
+        },
+        "code": 0,
+        "physical_publisher_verified": false,
+        "hardware_health_verified": false,
+        "timestamp_basis": "local_receive_time",
+        "sensor_timestamp": null
+      },
+      "bms": {
+        "source": "rt/lf/bmsstate",
+        "type": "unitree_hg::msg::dds_::BmsState_",
+        "current": true,
+        "age_ms": 23,
+        "ttl_ms": 1500,
+        "received_at": 1792557308.0728114,
+        "samples": 3250,
+        "raw": {
+          "version_high": 1,
+          "version_low": 3,
+          "fn": 5,
+          "cell_vol": [
+            3501,
+            3501,
+            3500,
+            3502,
+            3500,
+            3503,
+            3501,
+            3502,
+            3502,
+            3499,
+            3501,
+            3499,
+            3499,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "bmsvoltage": [
+            45510,
+            45510,
+            0
+          ],
+          "current": -1685,
+          "soc": 31,
+          "soh": 92,
+          "temperature": [
+            35,
+            33,
+            31,
+            36,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cycle": 10,
+          "manufacturer_date": 22939,
+          "bmsstate": [
+            8,
+            8,
+            262144,
+            7,
+            0
+          ],
+          "reserve": [
+            0,
+            0,
+            0
+          ]
+        },
+        "code": 0,
+        "physical_publisher_verified": false,
+        "hardware_health_verified": false,
+        "timestamp_basis": "local_receive_time",
+        "sensor_timestamp": null
+      },
+      "mainboard": {
+        "source": "rt/lf/mainboardstate",
+        "type": "unitree_hg::msg::dds_::MainBoardState_",
+        "current": true,
+        "age_ms": 22,
+        "ttl_ms": 1500,
+        "received_at": 1792557308.0737956,
+        "samples": 3254,
+        "raw": {
+          "fan_state": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "temperature": [
+            48,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": [
+            45.29193878173828,
+            45.446651458740234,
+            1.3000000715255737,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "state": [
+            32,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "code": 0,
+        "physical_publisher_verified": false,
+        "hardware_health_verified": false,
+        "timestamp_basis": "local_receive_time",
+        "sensor_timestamp": null
+      },
+      "arm_state": {
+        "source": "rt/arm/action/state",
+        "type": "std_msgs::msg::dds_::String_",
+        "current": false,
+        "age_ms": null,
+        "ttl_ms": 1500,
+        "received_at": null,
+        "samples": 0,
+        "raw": null,
+        "code": null,
+        "physical_publisher_verified": false,
+        "hardware_health_verified": false,
+        "timestamp_basis": "local_receive_time",
+        "sensor_timestamp": null
+      },
+      "selftest": {
+        "source": "rt/selftest",
+        "type": "std_msgs::msg::dds_::String_",
+        "current": false,
+        "age_ms": null,
+        "ttl_ms": 1500,
+        "received_at": null,
+        "samples": 0,
+        "raw": null,
+        "code": null,
+        "physical_publisher_verified": false,
+        "hardware_health_verified": false,
+        "timestamp_basis": "local_receive_time",
+        "sensor_timestamp": null
+      },
+      "motion_mode": {
+        "source": "motion_switcher.CheckMode / 1001",
+        "type": "official JSON response",
+        "current": true,
+        "age_ms": 1476,
+        "ttl_ms": 6000,
+        "received_at": 1792557306.6194222,
+        "samples": 52,
+        "raw": {
+          "form": "0",
+          "name": "ai"
+        },
+        "code": 0,
+        "physical_publisher_verified": false,
+        "hardware_health_verified": false,
+        "timestamp_basis": "local_receive_time",
+        "sensor_timestamp": null
+      }
+    },
+    "camera_evidence": {
+      "current": false,
+      "age_ms": null,
+      "detail": "RGB 只确认可见环境；不自动判断足底载荷、地面摩擦和全身净空"
+    },
+    "historical_visual": {
+      "current": false,
+      "execution_allowed": false,
+      "observed_at": 1792556832.459405,
+      "image_sha256": "6859e0f520a57c6c4f7460841138174e6008343c29c7e47a869d77b82e44f4b2",
+      "camera_source": "unitree-videohub-dc9609b107f3",
+      "camera_sequence": 408,
+      "body_run": "1e3c534df0ca",
+      "body_tick": 10124696,
+      "timestamp_basis": "相机请求与本机接收时间；没有曝光时间，非硬件同步",
+      "scene_facts": [
+        "画面可见瓷砖地面及拼缝",
+        "画面左侧可见带轮椅脚，前方可见门扇，右下方可见拖鞋"
+      ],
+      "body_findings": [
+        "同期身体反馈：双膝约 161° / 160°，横滚约 7.8°、俯仰约 -3.5°",
+        "画面未完整显示机器人双脚与全部承重点；世界姿势和足底承重仍未知"
+      ],
+      "limitations": [
+        "不能仅凭 RGB 判断摩擦、地面坡度和跌落边缘",
+        "task_id=4 / task_time=0 不映射为已确认的执行动作",
+        "此为有时间戳的历史观察；不随实时画面继续更新，不授予权限"
+      ]
+    },
+    "control_mode": {
+      "fsm": 0,
+      "sdk_label": "SDK ZeroTorque 对应状态 ID",
+      "active_capability_id": null,
+      "activity_verified": false,
+      "detail": "FSM 只表明服务回读的状态 ID；未取得具体能力执行中/完成的可信反馈。ZeroTorque ID 也不证明每个电机实际力矩为零"
+    },
+    "posture": {
+      "description": "双膝显著屈曲",
+      "knee_deg": [
+        161.02978296664955,
+        160.0146529314456
+      ],
+      "imu_rpy_deg": [
+        7.849182530966014,
+        -3.5283666556452786,
+        -3.018361552962304
+      ],
+      "whole_body_pose": "unknown",
+      "support": "unknown",
+      "detail": "双膝 >90° 仅为形态描述规则；未确定站/坐/卧、身体离地高度或接触对象。三维模型按关节角度显示，不表示世界中的支撑姿势"
+    },
+    "observation_window": {
+      "samples": 224,
+      "seconds": 11.95,
+      "max_abs_dq_rad_s": 0.0497107207775116,
+      "max_joint_span_deg": 0.009613491256792946,
+      "certified_safe": false,
+      "learned_safe_range": null,
+      "detail": "短时被动观察，只描述已观测变化；不把未摔倒样本、最小/最大角度或零速度学习为安全边界"
+    },
+    "safety": {
+      "status": "unverified",
+      "execution_allowed": false,
+      "fall_free_guarantee": false,
+      "validated_action_envelopes": [],
+      "checks": [
+        {
+          "id": "real_feedback",
+          "name": "真实身体反馈",
+          "status": "matched",
+          "detail": "23 个关节位置、速度为新鲜实机反馈",
+          "source": "rt/lowstate + CRC / tick / 时效检查"
+        },
+        {
+          "id": "walking_fsm",
+          "name": "行走模式前提",
+          "status": "violated",
+          "detail": "FSM=0；500 只符合本项目行走前提，不能证明平衡或动作正在执行",
+          "source": "固定版本 SDK Start→500；仅适用于行走候选任务"
+        },
+        {
+          "id": "tilt_guard",
+          "name": "项目姿态拦截线",
+          "status": "matched",
+          "detail": "横滚/俯仰最大绝对值 7.85°；项目拦截线 0.35 rad，未核定为防摔范围",
+          "source": "本项目软件保护；不是厂商安全限值"
+        },
+        {
+          "id": "thermal_guard",
+          "name": "项目电机温度拦截线",
+          "status": "matched",
+          "detail": "最高 47°C；项目拦截线 70°C，实机热保护与降额未知",
+          "source": "本项目软件保护；不是厂商安全工作温度"
+        },
+        {
+          "id": "support",
+          "name": "足底接触与承重",
+          "status": "unknown",
+          "detail": "尚无可信足底接触、载荷、支撑面；不能判断脚是否落地或被外部支撑",
+          "source": "新鲜只读消息与固定版本官方定义；剩余条件仍需本机/现场证据",
+          "acquired": [
+            "完整关节反馈可描述屈曲形态；关节力矩不是足底载荷"
+          ],
+          "missing": "尚无可信足底接触、载荷、支撑面；不能判断脚是否落地或被外部支撑"
+        },
+        {
+          "id": "balance",
+          "name": "动态平衡裕量",
+          "status": "unknown",
+          "detail": "缺少全身位姿/速度、质心与支撑关系；IMU 平稳不证明下一步稳定",
+          "source": "新鲜只读消息与固定版本官方定义；剩余条件仍需本机/现场证据",
+          "acquired": [
+            "已取得机体 IMU 和关节速度；未取得可信质心/支撑关系"
+          ],
+          "missing": "缺少全身位姿/速度、质心与支撑关系；IMU 平稳不证明下一步稳定"
+        },
+        {
+          "id": "terrain",
+          "name": "现场地面与净空",
+          "status": "unknown",
+          "detail": "摩擦、坡度、台阶、地面断层和全身净空未核验；图像或二维地图单独不足",
+          "source": "新鲜只读消息与固定版本官方定义；剩余条件仍需本机/现场证据",
+          "acquired": [],
+          "missing": "摩擦、坡度、台阶、地面断层和全身净空未核验；图像或二维地图单独不足"
+        },
+        {
+          "id": "calibration",
+          "name": "实机电机限值与标定",
+          "status": "unknown",
+          "detail": "逐电机固件限值、零位、增益和转矩转速能力未知；URDF 与示例值不能替代",
+          "source": "新鲜只读消息与固定版本官方定义；剩余条件仍需本机/现场证据",
+          "acquired": [
+            "已绑定本机型号与坐标证据；253 个实机配置字段仍为空"
+          ],
+          "missing": "逐电机固件限值、零位、增益和转矩转速能力未知；URDF 与示例值不能替代"
+        },
+        {
+          "id": "health",
+          "name": "驱动健康与电池余量",
+          "status": "unknown",
+          "detail": "仍缺本固件故障位表、降额规则及 BMS 单位/通道与物理来源核验；原始 SOC 与状态码不作为健康或续航证明",
+          "source": "新鲜只读消息与固定版本官方定义；剩余条件仍需本机/现场证据",
+          "acquired": [
+            "bms 已收到匹配 HG 类型的原始消息，帧龄 23 ms；未核定单位/故障位与物理发布者",
+            "mainboard 已收到匹配 HG 类型的原始消息，帧龄 22 ms；未核定单位/故障位与物理发布者"
+          ],
+          "missing": "仍缺本固件故障位表、降额规则及 BMS 单位/通道与物理来源核验；原始 SOC 与状态码不作为健康或续航证明"
+        },
+        {
+          "id": "recovery",
+          "name": "保护与失联处置",
+          "status": "unknown",
+          "detail": "现场防跌落保护、官方平衡控制归属、急停和通信失效行为尚未验证；不自动发送卸力或模式切换",
+          "source": "新鲜只读消息与固定版本官方定义；剩余条件仍需本机/现场证据",
+          "acquired": [
+            "CheckMode 原始回读：{'form': '0', 'name': 'ai'}；仅为模式标识，不证明平衡控制健康"
+          ],
+          "missing": "现场防跌落保护、官方平衡控制归属、急停和通信失效行为尚未验证；不自动发送卸力或模式切换"
+        },
+        {
+          "id": "action_contract",
+          "name": "具体能力全过程边界",
+          "status": "unknown",
+          "detail": "每项能力的进入条件、执行过程、退出/打断和恢复条件均需单独核定；目录匹配不足以放行",
+          "source": "新鲜只读消息与固定版本官方定义；剩余条件仍需本机/现场证据",
+          "acquired": [
+            "HG 任务原始字段：{'fsm_id': 0, 'fsm_mode': 0, 'task_id': 4, 'task_time': 0.0}；任务编号和时间不能映射为已确认的具体动作"
+          ],
+          "missing": "每项能力的进入条件、执行过程、退出/打断和恢复条件均需单独核定；目录匹配不足以放行"
+        }
+      ],
+      "unknown_conditions": [
+        "足底接触与承重",
+        "动态平衡裕量",
+        "现场地面与净空",
+        "实机电机限值与标定",
+        "驱动健康与电池余量",
+        "保护与失联处置",
+        "具体能力全过程边界"
+      ],
+      "violated_conditions": [
+        "行走模式前提"
+      ],
+      "detail": "防摔动作边界尚未核定，真实运动锁定；通过个别拦截检查也不授予权限"
+    },
+    "task_suggestions": [
+      {
+        "title": "继续只读观察和补齐证据",
+        "allowed": true,
+        "kind": "read_only",
+        "detail": "记录状态变化、官方能力条件和缺失反馈；学习任务策略，不试探电机极限或训练新运动模型"
+      },
+      {
+        "title": "暂缓站起、行走、摆臂与姿势切换",
+        "allowed": false,
+        "kind": "motion",
+        "detail": "先核定支撑、健康、现场与该能力完整安全契约；不得由 Agent 或一项人工勾选自动放行"
+      }
+    ]
+  },
+  "runtime": {
+    "release": "e03a6cc6208b",
+    "manifest_files": 426,
+    "console_pid": 19671,
+    "console_cwd": "/home/unitree/workspace/g1-body-console/releases/e03a6cc6208b",
+    "console_cmdline": "/home/unitree/workspace/g1-body-console/.venv/bin/python -m g1_console --read-only",
+    "boot_id": "7a6791dc-f512-4b45-aca3-44fbde855e25",
+    "official_processes_unchanged": [
+      {
+        "pid": 1296,
+        "start_ticks": 2242,
+        "argv": [
+          "/unitree/module/master_service/master_service"
+        ]
+      },
+      {
+        "pid": 1298,
+        "start_ticks": 2242,
+        "argv": [
+          "/unitree/ota/pipe/ota_pipe_service"
+        ]
+      },
+      {
+        "pid": 2557,
+        "start_ticks": 2791,
+        "argv": [
+          "/unitree/module/video_hub_pc4/videohub_pc4"
+        ]
+      },
+      {
+        "pid": 2676,
+        "start_ticks": 3210,
+        "argv": [
+          "/home/unitree/megaflow_sdk/ws//bin/MegaFlowRuntimeDaemon",
+          "-c",
+          "/home/unitree/megaflow_sdk/ws//bin/config.bin",
+          "-w",
+          "/home/unitree/megaflow_sdk/ws/",
+          "-d",
+          "127.0.0.1:8899",
+          "-i",
+          "-e",
+          "/home/unitree/megaflow_sdk/ws//dep/",
+          "-l",
+          "0"
+        ]
+      }
+    ],
+    "current_run_command_accepted": 0,
+    "current_run_passive_observations": 6,
+    "latest_passive_observation": {
+      "id": "05d247468ee04f0bb51e411c5439f671",
+      "at": 1792557290.353122,
+      "run": "c36ae57cd976",
+      "kind": "state_observed",
+      "message": "只读身体状态已记录；不产生安全范围或动作权限",
+      "level": "info",
+      "current": false,
+      "foundation_id": "6f71c7ec19f483a078ec6b39a66c33cff21b843aeba98df48347dde41aae0e5d",
+      "tick": 10582528,
+      "telemetry_age_ms": 2,
+      "control_mode": {
+        "fsm": 0,
+        "sdk_label": "SDK ZeroTorque 对应状态 ID",
+        "active_capability_id": null,
+        "activity_verified": false,
+        "detail": "FSM 只表明服务回读的状态 ID；未取得具体能力执行中/完成的可信反馈。ZeroTorque ID 也不证明每个电机实际力矩为零"
+      },
+      "posture": {
+        "description": "双膝显著屈曲",
+        "knee_deg": [
+          161.02978296664955,
+          160.0146529314456
+        ],
+        "imu_rpy_deg": [
+          7.829564520122445,
+          -3.556065634050619,
+          -2.9378003254756497
+        ],
+        "whole_body_pose": "unknown",
+        "support": "unknown",
+        "detail": "双膝 >90° 仅为形态描述规则；未确定站/坐/卧、身体离地高度或接触对象。三维模型按关节角度显示，不表示世界中的支撑姿势"
+      },
+      "observation_window": {
+        "samples": 226,
+        "seconds": 11.96,
+        "max_abs_dq_rad_s": 0.06170986220240593,
+        "max_joint_span_deg": 0.010299925268379228,
+        "certified_safe": false,
+        "learned_safe_range": null,
+        "detail": "短时被动观察，只描述已观测变化；不把未摔倒样本、最小/最大角度或零速度学习为安全边界"
+      },
+      "safety_status": "unverified",
+      "execution_allowed": false
+    },
+    "camera_usb": [
+      {
+        "path": "2-2.3",
+        "vendor": "8086",
+        "product_id": "0b3a",
+        "product": "Intel(R) RealSense(TM) Depth Camera 435i"
+      }
+    ],
+    "video_nodes": [
+      "/dev/video0",
+      "/dev/video1",
+      "/dev/video2",
+      "/dev/video3",
+      "/dev/video4",
+      "/dev/video5"
+    ]
+  },
+  "checks": {
+    "pytest": "115 passed; 1 pre-existing Starlette dependency warning",
+    "frontend": "npm run build passed; existing 568.91 KB 3D chunk warning",
+    "remote_manifest": "426 file SHA256 verified after launch",
+    "pip": "no broken requirements",
+    "remote_foundation_equals_local": true,
+    "historical_records_grant_authority": false,
+    "quantumult_x_touched": false,
+    "network_configuration_changes": false,
+    "browser": {
+      "verified_at_utc": "2026-10-21T04:37:28.312Z",
+      "url": "http://127.0.0.1:18765/",
+      "real_camera_image_rendered": true,
+      "stale_camera_image_hidden": true,
+      "body_state_rendered": true,
+      "raw_feedback_rendered": true,
+      "seven_safety_areas_rendered": true,
+      "task_semantics_unknown_rendered": true,
+      "body_pose_and_support_unknown_rendered": true,
+      "motion_controls_locked": true,
+      "observer_paused": true,
+      "viewport_width": 738,
+      "document_width": 732,
+      "no_horizontal_overflow": true
+    }
+  },
+  "screenshots": [
+    {
+      "path": "doc/screenshots/g1-v12-body.jpg",
+      "mime_type": "image/jpeg",
+      "sha256": "ec170ece2a15f1f0224be5f78bf0209c20884c416f66163410bc57ec21599cb7"
+    },
+    {
+      "path": "doc/screenshots/g1-v12-camera-live.jpg",
+      "mime_type": "image/jpeg",
+      "sha256": "4829f0f0f52652bbdeb36075718e8b5d91edf69b4d004d77cf101320307afb43"
+    },
+    {
+      "path": "doc/screenshots/g1-v12-camera-timeout.jpg",
+      "mime_type": "image/jpeg",
+      "sha256": "6632927fe34eb805651a5ddf10f7fe99dab13f62ba81ccd954564f8fc4438cee"
+    },
+    {
+      "path": "doc/screenshots/g1-v12-safety.jpg",
+      "mime_type": "image/jpeg",
+      "sha256": "a9cc05d60a74fb65c291b5cdcb34a5027542ef37e4571ca6d92bbc40bf809731"
+    }
+  ],
+  "notes": [
+    "Only project read-only console restarted. Four official processes and paused Mac observer preserved.",
+    "No real actions, control leases, configuration, calibration, vendor execution, runtime memory reads, sudo or network changes.",
+    "Transport freshness is not physical publisher identity or sensor health. All seven safety areas remain unverified.",
+    "No inferred battery units, task ID semantics, world pose or support. 253 actual motor configuration fields remain null."
+  ],
+  "camera_runtime_receipt": {
+    "path": "doc/G1_CAMERA_RUNTIME_READONLY_20261021.json",
+    "sha256": "0164fc4613366f477141baeb6103f8ed22d1ebe8dd629c217b88287665534307"
+  },
+  "camera_window_summary": {
+    "samples": 24,
+    "duration_s": 13.036080121994019,
+    "status_counts": {
+      "stale": 22,
+      "live": 2
+    },
+    "error_counts": {
+      "SDK_3104": 22,
+      "none": 2
+    },
+    "interpretation": "Status snapshots, not SDK request success rate. Image transport remains intermittent; no claim of continuous availability."
+  },
+  "final_status": {
+    "at": 1792557476.2660196,
+    "read_only": true,
+    "mode": "robot",
+    "connected": true,
+    "telemetry_age_ms": 7,
+    "control_owner": null,
+    "camera": {
+      "backend": "unitree",
+      "status": "live",
+      "error": null,
+      "source": "unitree-videohub-858a026537cd",
+      "sequence": 925,
+      "age_ms": 220,
+      "request_started_at": 1792557476.046497,
+      "received_at": 1792557476.075262,
+      "width": 960,
+      "height": 540,
+      "source_width": 1920,
+      "source_height": 1080,
+      "request_ms": 29,
+      "timestamp_basis": "request_started_at",
+      "sensor_timestamp": null
+    },
+    "posture": {
+      "description": "双膝显著屈曲",
+      "knee_deg": [
+        161.02978296664955,
+        160.0146529314456
+      ],
+      "imu_rpy_deg": [
+        7.824999392435938,
+        -3.4890354381965833,
+        -3.2754246869990196
+      ],
+      "whole_body_pose": "unknown",
+      "support": "unknown",
+      "detail": "双膝 >90° 仅为形态描述规则；未确定站/坐/卧、身体离地高度或接触对象。三维模型按关节角度显示，不表示世界中的支撑姿势"
+    },
+    "control_mode": {
+      "fsm": 0,
+      "sdk_label": "SDK ZeroTorque 对应状态 ID",
+      "active_capability_id": null,
+      "activity_verified": false,
+      "detail": "FSM 只表明服务回读的状态 ID；未取得具体能力执行中/完成的可信反馈。ZeroTorque ID 也不证明每个电机实际力矩为零"
+    },
+    "safety": "unverified"
+  },
+  "completed_at_utc": "2026-10-21T04:37:56.222673+00:00"
+}

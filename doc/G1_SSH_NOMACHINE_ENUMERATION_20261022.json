@@ -1,0 +1,14 @@
+{
+  "at": "2026-10-22T10:58:12.786040+08:00",
+  "interface": "en0",
+  "scope": "<LAN_NET>/24",
+  "ports": [
+    22,
+    4000
+  ],
+  "exclude_local": "<MAC_IP>",
+  "open": [],
+  "elapsed_seconds": 7.24,
+  "authentication_attempts": 0,
+  "motion_requests": 0
+}

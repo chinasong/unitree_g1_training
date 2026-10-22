@@ -1,0 +1,148 @@
+{
+  "checked_at_utc": "2026-10-22T05:33:00+00:00",
+  "edition": "2026-04-07",
+  "branch_condition": "23 DOF，运动控制版本 > 8.6.0.0",
+  "branch_selected": null,
+  "catalog_url": "https://support.unitree.com/home/en/G1_developer/remote_control",
+  "catalog_last_updated_display": "2026-06-25 15:06:42",
+  "catalog_timezone": null,
+  "pdf_url": "https://oss-global-cdn.unitree.com/static/22972694fe684e1c89c9832f75d0938f.pdf",
+  "pdf_path": "doc/official/G1_REMOTE_CONTROL_23DOF_20260407.pdf",
+  "pdf_sha256": "b50e7a6382f7069461c047825771d99a58ca387113f9b17667172427fc44d569",
+  "pages_reviewed": [
+    1,
+    2
+  ],
+  "key_glyph_review": "PDF 第 1 页渲染后逐项视觉核对；文本抽取不包含按键图标",
+  "meaning": "官方目录当前列出的对应版本手册已归档，按键与时长已核对。",
+  "scope": "按键是遥控器协议的操作说明，不能直接当作 SDK 调用参数；资料学习不会新增电机写入权限。",
+  "controls": [
+    {
+      "id": "zero",
+      "name": "零力矩",
+      "keys": "L2 + Y",
+      "press": "短按",
+      "sdk": "ZeroTorque → FSM 0",
+      "verified": "接口已核对，本轮未执行；无主动支撑"
+    },
+    {
+      "id": "damp",
+      "name": "① 阻尼",
+      "keys": "L2 + B",
+      "press": "短按",
+      "sdk": "SetFsmId(1)",
+      "verified": "本轮一次实测后双路读到 FSM 1；被动阻尼不等于姿态保持"
+    },
+    {
+      "id": "locked",
+      "name": "② 锁定站立",
+      "keys": "L2 + ↑",
+      "press": "短按",
+      "sdk": "C++ StandUp → FSM 4（候选对应）",
+      "verified": "按键与 SDK 的本机等价性未核定，保持锁定"
+    },
+    {
+      "id": "lie",
+      "name": "⑤ 躺 → 站",
+      "keys": "L2 + X",
+      "press": "短按",
+      "sdk": "Lie2StandUp → FSM 702",
+      "verified": "本机进入条件未核定，不能套用于坐地"
+    },
+    {
+      "id": "seat",
+      "name": "④ 落座",
+      "keys": "L2 + ←",
+      "press": "长按 2 秒",
+      "sdk": "Sit → FSM 3",
+      "verified": "本机座椅条件未核定，保持锁定"
+    },
+    {
+      "id": "squat",
+      "name": "⑥ 蹲 ↔ 站",
+      "keys": "L2 + A",
+      "press": "长按 2 秒",
+      "sdk": "Squat2StandUp / StandUp2Squat → FSM 706",
+      "verified": "坐地不自动等于蹲姿；本机适用性未知"
+    },
+    {
+      "id": "adaptive",
+      "name": "⑩ 自适应起身",
+      "keys": "R1 + R2 + X",
+      "press": "短按",
+      "sdk": "公开 SDK 对应入口尚未核定",
+      "verified": "不猜测 FSM ID，不发送遥控按键模拟"
+    },
+    {
+      "id": "run",
+      "name": "③ 走跑运控",
+      "keys": "R2 + A",
+      "press": "长按 2 秒",
+      "sdk": "Python Start → FSM 500；未核定按键等价性",
+      "verified": "存在版本分支差异；本机行走切换保持锁定"
+    },
+    {
+      "id": "regular",
+      "name": "⑦ 常规运控",
+      "keys": "R1 + X",
+      "press": "长按 2 秒",
+      "sdk": "SDK 对应模式未核定",
+      "verified": "不能用 SetBalanceMode 直接替代此按键"
+    },
+    {
+      "id": "climb",
+      "name": "⑧ 越障运控",
+      "keys": "R2 + B",
+      "press": "长按 2 秒",
+      "sdk": "SDK 对应模式未核定",
+      "verified": "不能推导为楼梯支持"
+    },
+    {
+      "id": "dance",
+      "name": "⑨ 舞蹈运控",
+      "keys": "R1 + B",
+      "press": "该行未标注短按 / 长按符号",
+      "sdk": "SDK 对应入口未核定",
+      "verified": "保持锁定；单独舞蹈子项需满足手册净空要求"
+    }
+  ],
+  "routes": [
+    {
+      "start": "躺倒开机",
+      "steps": "开机 → ① → ⑩ → 演示 → ⑥ → 关机",
+      "condition": "需确认躺姿起点和自适应起身的本机支持；不将 ⑩ 替换成 ⑤"
+    },
+    {
+      "start": "蹲姿开机",
+      "steps": "开机 → ① → ⑥ → 演示 → ⑥ → 关机",
+      "condition": "需确认蹲姿；双膝深度弯曲不足以证明起点符合"
+    },
+    {
+      "start": "座椅开机（推荐）",
+      "steps": "开机 → ① → ② → ③ → 演示 → ④ → 关机",
+      "condition": "② → ③ 需要人工扶直站立；靠柜坐地未被手册明确覆盖"
+    }
+  ],
+  "protections": [
+    {
+      "name": "运控中阻尼保护",
+      "operation": "①（L2 + B）长按 5 秒",
+      "meaning": "进入阻尼保护，不能视作保持站立或硬件断电急停"
+    },
+    {
+      "name": "中断舞蹈",
+      "operation": "舞蹈或上肢动作时双击 START",
+      "meaning": "手册声明中断舞蹈；不是通用停止行走或硬件断电"
+    },
+    {
+      "name": "软件停止行走",
+      "operation": "SDK StopMove / 零速度",
+      "meaning": "来自 SDK；只停止行走速度请求，不代替上述保护或独立实体急停"
+    }
+  ],
+  "unknowns": [
+    "本机运行中的 humanoid 构建尚未核验；ai_sport 8.7.5.212 是服务公告线索。",
+    "7301 的具体内部触发谓词、平衡就绪和足底载荷仍未知。",
+    "历史报告的靠柜坐地到安全站立的完整官方路线、速度参数和 SDK 等价映射未核定。"
+  ]
+}

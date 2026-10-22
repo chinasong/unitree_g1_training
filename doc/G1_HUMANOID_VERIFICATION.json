@@ -1,0 +1,244 @@
+{
+  "verified_at_utc": "2026-10-21T14:23:12.874154+00:00",
+  "release": "953b51275852",
+  "run_id": "03174dd00ad5",
+  "foundation_version": 26,
+  "foundation_id": "b70ee76711b5e9d1f995614b6fbd16ed21ac6282c092a16ab74ed90a1e154df2",
+  "foundation_rebuild_identical": true,
+  "motion_review_schema": 8,
+  "actual_motor_configuration_unknown_fields": 253,
+  "source_sha256": {
+    "externals/unitree_sdk2_python/unitree_sdk2py/g1/loco/g1_loco_client.py": "5fbc07b30994676cd2f7994a2389b24e9b51e2c13dfde7e565bfd77898300ce2",
+    "g1_console/assets/capability_sources/g1_loco_client.hpp": "d9aabe78918312c2ec60c5df94653e81319eb6730cc1479372a09849d99cd361",
+    "g1_console/assets/safety_evidence_sources/ota_contract_inventory_20261021_v20.json": "997140b2e426f568275126a0e30e44f944822919bd5d2ebbce2bc808022c1ab2",
+    "g1_console/assets/safety_evidence_sources/ota_version_query_20261021_v20.json": "cf550f1c5b5036a010ece6afa33b1a6dadccfa1f3bbf51d92be9d6545753a19c",
+    "g1_console/assets/safety_evidence_sources/ota_diagnosis_20261021_v21.json": "8d58f24c6dbe382b9f400367ba32ec6035944d80f7b4cefdbdf6f6dbab901085",
+    "g1_console/assets/safety_evidence_sources/official_23dof_manual_review_20261021_v21.json": "6ecf8dd812d2da383d75fbaccbee049d3347e3b7bdc28b6e534586ceddcd95dc",
+    "scripts/audit_g1_ota_versions.py": "55460f50721e016c3749f1b4240136c492cb6b6be46afbd01c49235d1a3ac314",
+    "g1_console/assets/safety_evidence_sources/app_screenshots_20261021_v22.json": "37e80b1f2a6541478d594137728730840f1b2e643cd171d416309f03aea686fc",
+    "g1_console/assets/capability_sources/g1_loco_error.hpp": "8b33d73f9857d1581c11b362d2705f031020a084db12b00cadfaac0255f46579",
+    "g1_console/assets/safety_evidence_sources/loco_query_transport_20261021_v24.json": "61722b4aed8ee76a1a5da47c10ffc8da2c089add2fc838b0f432d201547c248b",
+    "g1_console/assets/safety_evidence_sources/firmware_polled_query_20261021_v24.json": "abf7475437d836cf2d198749368804e3f37c2fa7de3651c8b982d99f2f5c282c",
+    "g1_console/assets/interface_audit_sources/unitree_sdk2_python/unitree_sdk2py/b2/robot_state/robot_state_client.py": "bb1724f1d0a3d80e75aa88e754fea0594595bb5fa7e9b81266d773e72c69f4b6",
+    "g1_console/assets/safety_evidence_sources/query_path_followup_20261021_v24.json": "836e214659f0ec52f97282159347b28fe4fa3fc5e9b9565a86dbf2b9014b3dd2",
+    "g1_console/assets/safety_evidence_sources/loco_readiness_20261021_v27.json": "555d7f129b1eabfab91dfc6c216d6cfedd21d4af4e534f03b46a7dca851e70d6",
+    "g1_console/assets/safety_evidence_sources/loco_responders_20261021_v27.json": "6445bbc81e21616b3a1f8891789decce613ffecb101894ff5342914a74fb1134",
+    "g1_console/assets/safety_evidence_sources/loco_community_compatibility_20261021_v27.json": "e89dad54d900b177b0e26b610173ac977511b7986c18639d4251b7fdf454b3e5",
+    "externals/unitree_sdk2_python/unitree_sdk2py/rpc/internal.py": "38896942088a7b0d03e3d9e5fa06ef3aee81e8ec6d52e0a9a640e35aaf955343",
+    "externals/unitree_sdk2_python/unitree_sdk2py/rpc/client.py": "20840192dee42525b64ecc3a3e8d5ec5d1d7e122b7bfc4236c482cb2b0f6e186",
+    "g1_console/assets/safety_evidence_sources/sport_host_20261021_v29.json": "a15ceb26af8612563d5ec8c36fb8b4fed29babc8ea67d29beaed89430fc1801d",
+    "g1_console/assets/safety_evidence_sources/sport_service_contract_20261021_v28.json": "66b39c7d551fdfc8ea02b9dfb1f7868622e9e0399662738a7f82d8f9eea9e46a",
+    "scripts/audit_g1_sport_host.py": "8ff6f37f58757d56a493bc338af509c87d958e1d57edbe9752d6226ca6c054f4",
+    "scripts/g1_sport_evidence.py": "26c9ceb22beee2a7a0f3114fcc7881141b1fd4747aa4bbd4a554af7b94f5b35a",
+    "g1_console/assets/safety_evidence_sources/humanoid_state_20261021_v30.json": "a03e1f00d6f5a230d69b0eb268f1c72a7f405303c8c8ac2846b6d31092907838",
+    "g1_console/assets/safety_evidence_sources/humanoid_files_20261021_v30.json": "8728e9ac5719bbb7d33701d3673a2a18baf021a9a3a55f0b24fdd0209b903d9c",
+    "scripts/audit_g1_humanoid_discovery.py": "65e6a60eba2979378135cf875c56807cffec243806cc8c1bbab06dceb5e9a429",
+    "scripts/audit_g1_humanoid_files.py": "cc5068a3b8b496cee24f0d1d0cd572e005c06abe27201b840585380c60bb1f6d",
+    "scripts/g1_humanoid_evidence.py": "f24c012ab180cab69ffaa6169e017625162cbf7cbb18853f8b7b4cded64e64fe"
+  },
+  "source_sha256_all_match": true,
+  "manifest_file_count": 485,
+  "deployed_sha256_all_match": true,
+  "research_read_calls": 6,
+  "research_timeout_3104_count": 0,
+  "archived_simultaneous_queries": [
+    {
+      "api_id": 7001,
+      "code": 0,
+      "raw": "{\"data\":0}",
+      "elapsed_ms": 5.55,
+      "sent_at_receipt_clock_s": 1.055815
+    },
+    {
+      "api_id": 7003,
+      "code": 7301,
+      "raw": null,
+      "elapsed_ms": 5.5,
+      "sent_at_receipt_clock_s": 2.251261
+    }
+  ],
+  "archived_hg_channels": [
+    {
+      "topic": "rt/sportmodestate",
+      "participant_key": "01102018-55dd-5073-eeea-0b4b000001c1",
+      "samples": 1559,
+      "first_receipt_s": 0.01071,
+      "last_receipt_s": 16.013842,
+      "values": [
+        {
+          "fsm_id": 0,
+          "fsm_mode": 0,
+          "task_id": 4,
+          "task_time": 0.0
+        }
+      ],
+      "source_ip": "192.168.123.161"
+    },
+    {
+      "topic": "rt/lf/sportmodestate",
+      "participant_key": "01102018-55dd-5073-eeea-0b4b000001c1",
+      "samples": 240,
+      "first_receipt_s": 0.031266,
+      "last_receipt_s": 15.962864,
+      "values": [
+        {
+          "fsm_id": 0,
+          "fsm_mode": 0,
+          "task_id": 4,
+          "task_time": 0.0
+        }
+      ],
+      "source_ip": "192.168.123.161"
+    }
+  ],
+  "device_motion_firmware": null,
+  "exact_7301_predicate": null,
+  "balance_ready": null,
+  "foot_load_n": null,
+  "cabinet_load_n": null,
+  "research_mode_count": 9,
+  "research_modes_execution_allowed": false,
+  "unknowns_not_replaced": true,
+  "tests": {
+    "python": {
+      "command": ".venv/bin/python -m pytest tests -q",
+      "passed": 267,
+      "warnings": 1
+    },
+    "frontend": {
+      "command": "node --test tests/*.test.mjs",
+      "cwd": "console/web",
+      "passed": 7
+    },
+    "build": {
+      "command": "npm run build",
+      "cwd": "console/web",
+      "passed": true
+    },
+    "known_warnings": [
+      "existing httpx/Starlette deprecation",
+      "existing BodyView chunk size warning"
+    ]
+  },
+  "browser": {
+    "url": "http://127.0.0.1:18765/",
+    "panel_verified": true,
+    "screenshot": "doc/screenshots/g1-humanoid-state-audit-20261021.png",
+    "screenshot_sha256": "dd1d1cc708e7a256dcbb631c92ff286f7623261b4d9abfbd5456d5b6bd1e8f70",
+    "action_buttons_clicked": false
+  },
+  "final_snapshot": {
+    "at_utc": "2026-10-21T14:21:19.443514+00:00",
+    "telemetry_age_ms": 4,
+    "joints": 23,
+    "fsm": 0,
+    "fsm_id": {
+      "data": 0
+    },
+    "fsm_mode": {
+      "data": 0
+    },
+    "check_mode": {
+      "form": "0",
+      "name": "ai"
+    },
+    "getter_diagnostics": {
+      "fsm_id": {
+        "total": {
+          "attempts": 371,
+          "successes": 371,
+          "timeouts": 0,
+          "errors": 0
+        },
+        "window_s": 60,
+        "attempts": 119,
+        "successes": 119,
+        "timeouts": 0,
+        "errors": 0
+      },
+      "fsm_mode": {
+        "total": {
+          "attempts": 63,
+          "successes": 63,
+          "timeouts": 0,
+          "errors": 0
+        },
+        "window_s": 60,
+        "attempts": 20,
+        "successes": 20,
+        "timeouts": 0,
+        "errors": 0
+      },
+      "motion_mode": {
+        "total": {
+          "attempts": 63,
+          "successes": 63,
+          "timeouts": 0,
+          "errors": 0
+        },
+        "window_s": 60,
+        "attempts": 20,
+        "successes": 20,
+        "timeouts": 0,
+        "errors": 0
+      }
+    },
+    "camera": {
+      "backend": "unitree",
+      "status": "live",
+      "error": null,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 943,
+        "total_successes": 943,
+        "total_timeouts": 0
+      },
+      "source": "unitree-videohub-8805762da107",
+      "sequence": 943,
+      "age_ms": 251,
+      "request_started_at": 1792592479.1662812,
+      "received_at": 1792592479.1869242,
+      "width": 960,
+      "height": 540,
+      "source_width": 1920,
+      "source_height": 1080,
+      "request_ms": 21,
+      "timestamp_basis": "request_started_at",
+      "sensor_timestamp": null
+    }
+  },
+  "console": {
+    "read_only": false,
+    "manual_remote_enabled": true,
+    "control_owner": null,
+    "manual_armed": false,
+    "navigation": "idle",
+    "full_remote_equivalence": false,
+    "command_history_count": 0,
+    "current_run_events": {
+      "camera_connected": 1,
+      "connected": 1,
+      "state_observed": 7
+    },
+    "historical_malformed_log_lines": 1
+  },
+  "official_processes_unchanged_from_predeployment_baseline": true,
+  "official_services_restarted": false,
+  "robot_motion_writes": 0,
+  "lease_requests": 0,
+  "quantumult_x_touched": false,
+  "unverified": [
+    "installed motion firmware version",
+    "exact server predicate for 7301",
+    "physical identity behind self-reported DDS metadata",
+    "current floor/cabinet contact and load distribution",
+    "independent standing and slow rise applicability",
+    "hardware emergency stop and loss-of-link behavior",
+    "motion functions and full remote equivalence"
+  ]
+}

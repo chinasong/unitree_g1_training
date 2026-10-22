@@ -1,0 +1,127 @@
+{
+  "checked_at": "2026-10-22T02:47:38.481315+00:00",
+  "method": "historical nc -4 -b en0, TCP 22 only; no authentication",
+  "results": [
+    {
+      "ip": "<LAN_GATEWAY>",
+      "returncode": 1,
+      "result": "nc: connectx to <LAN_GATEWAY> port 22 (tcp) failed: Operation timed out"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "returncode": 1,
+      "result": "nc: connectx to <LAN_HOST> port 22 (tcp) failed: Operation timed out"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "returncode": 1,
+      "result": "nc: connectx to <LAN_HOST> port 22 (tcp) failed: Operation timed out"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "returncode": 1,
+      "result": "nc: connectx to <LAN_HOST> port 22 (tcp) failed: Connection refused"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "returncode": 1,
+      "result": "nc: connectx to <LAN_HOST> port 22 (tcp) failed: Connection refused"
+    },
+    {
+      "ip": "<ORIN_IP>",
+      "returncode": 1,
+      "result": "nc: connectx to <ORIN_IP> port 22 (tcp) failed: Host is down"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "returncode": 1,
+      "result": "nc: connectx to <LAN_HOST> port 22 (tcp) failed: Connection refused"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "returncode": 1,
+      "result": "nc: connectx to <LAN_HOST> port 22 (tcp) failed: Operation timed out"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "returncode": 1,
+      "result": "nc: connectx to <LAN_HOST> port 22 (tcp) failed: Connection refused"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "returncode": 1,
+      "result": "nc: connectx to <LAN_HOST> port 22 (tcp) failed: Connection refused"
+    },
+    {
+      "ip": "<MAC_IP>",
+      "returncode": 0,
+      "result": "Connection to <MAC_IP> port 22 [tcp/ssh] succeeded!"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "returncode": 1,
+      "result": "nc: connectx to <LAN_HOST> port 22 (tcp) failed: Connection refused"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "returncode": 1,
+      "result": "nc: connectx to <LAN_HOST> port 22 (tcp) failed: Operation timed out"
+    },
+    {
+      "ip": "<APP_REPORTED_IP>",
+      "returncode": 1,
+      "result": "nc: connectx to <APP_REPORTED_IP> port 22 (tcp) failed: Connection refused"
+    }
+  ],
+  "network_changed": false,
+  "quantumult_changed": false,
+  "robot_actions_sent": false,
+  "checked_at_beijing": "2026-10-22T10:47:38.481315+08:00",
+  "history_review": {
+    "source": "Current Codex session original JSONL, session 01a15911-d142-7862-a72a-d4d496b461e6",
+    "first_verified_connection": {
+      "date": "2026-10-20",
+      "timezone": "Asia/Shanghai",
+      "arp_at": "22:47:55",
+      "tcp_probe_at": "22:48:34",
+      "verified_connection_report_at": "22:53:51",
+      "source_lines": [
+        2212,
+        2223,
+        2295,
+        2316
+      ],
+      "host": "<ORIN_IP>",
+      "wlan_mac": "78:22:88:af:97:a5",
+      "method": "ARP neighbor discovery; nc TCP 22 bound to en0; SSH socket bound with IP_BOUND_IF; read-only NVIDIA Orin NX identity and eth0 192.168.123.164 verification",
+      "app_host_192_168_1_52": "TCP 22 refused at that time as well"
+    },
+    "yesterday_reboot_recovery": {
+      "date": "2026-10-21",
+      "timezone": "Asia/Shanghai",
+      "ssh_read_result_at": "14:05:11.961",
+      "source_lines": [
+        11318,
+        11323,
+        11327,
+        11332,
+        11342
+      ],
+      "host": "<ORIN_IP>",
+      "boot_id": "b33a7dc5-2617-44cd-b353-041bab1c204f",
+      "ssh_was_reachable": true,
+      "project_console_was_running": false,
+      "recovery": "Started existing project read-only console and restored Mac SSH forwarding",
+      "wifi_or_ssh_boot_configuration_changed": false
+    }
+  },
+  "current_assessment": {
+    "orin_ssh_verified": false,
+    "known_orin_mac_in_direct_en0_arp": false,
+    "positive_control_host": "<MAC_IP>",
+    "positive_control_identity": "This Mac; not Orin",
+    "full_subnet_evidence": "G1_LAN_SSH_ENUMERATION_20261022.json",
+    "system_network_root_cause": "unknown; no authenticated Orin log access",
+    "robot_reboot_recovery_accepted": false
+  }
+}

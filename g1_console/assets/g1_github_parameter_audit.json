@@ -1,0 +1,166 @@
+{
+  "current": false,
+  "checked_at_utc": "2026-10-21T02:15:02.231182+00:00",
+  "conclusion": "在本次宇树官方组织的公开 issue 检索及相关回复中，未找到经核实适用于 G1 EDU 23 自由度的电机配置或标定只读导出协议。未找到不等于不存在，配置读取与标定读取继续保持未知",
+  "authority": "官方仓库中的 issue 可由社区发起和回复；COLLABORATOR 仅保留 GitHub 关联身份，不推定为员工，也不等于对本机参数或协议的确认",
+  "snapshot_source": {
+    "path": "g1_console/assets/github_audit_sources/review_20261021.json",
+    "sha256": "b1705308f2fd8d478e39a7c2159df9c211c62c56b02991dad431034b475dea39"
+  },
+  "search_query_count": 14,
+  "search_result_count": 198,
+  "full_comment_thread_count": 14,
+  "comment_count": 47,
+  "repositories": [
+    {
+      "full_name": "unitreerobotics/unitree_actuator_sdk",
+      "html_url": "https://github.com/unitreerobotics/unitree_actuator_sdk",
+      "has_issues": true,
+      "has_discussions": false
+    },
+    {
+      "full_name": "unitreerobotics/unitree_mujoco",
+      "html_url": "https://github.com/unitreerobotics/unitree_mujoco",
+      "has_issues": true,
+      "has_discussions": false
+    },
+    {
+      "full_name": "unitreerobotics/unitree_rl_gym",
+      "html_url": "https://github.com/unitreerobotics/unitree_rl_gym",
+      "has_issues": true,
+      "has_discussions": false
+    },
+    {
+      "full_name": "unitreerobotics/unitree_ros",
+      "html_url": "https://github.com/unitreerobotics/unitree_ros",
+      "has_issues": true,
+      "has_discussions": false
+    },
+    {
+      "full_name": "unitreerobotics/unitree_ros2",
+      "html_url": "https://github.com/unitreerobotics/unitree_ros2",
+      "has_issues": false,
+      "has_discussions": false
+    },
+    {
+      "full_name": "unitreerobotics/unitree_sdk2",
+      "html_url": "https://github.com/unitreerobotics/unitree_sdk2",
+      "has_issues": false,
+      "has_discussions": false
+    },
+    {
+      "full_name": "unitreerobotics/unitree_sdk2_python",
+      "html_url": "https://github.com/unitreerobotics/unitree_sdk2_python",
+      "has_issues": true,
+      "has_discussions": false
+    },
+    {
+      "full_name": "unitreerobotics/xr_teleoperate",
+      "html_url": "https://github.com/unitreerobotics/xr_teleoperate",
+      "has_issues": true,
+      "has_discussions": false
+    }
+  ],
+  "motor_configuration_read_supported": null,
+  "calibration_read_supported": null,
+  "motor_configuration_values_obtained": 0,
+  "robot_rpc_calls": 0,
+  "command_writes": 0,
+  "confirmed_read_endpoints": [],
+  "limitations": [
+    "仅对检索命中做正文初筛；14 个相关 issue 完整读取评论，不表示完整人工审阅全部命中及其评论",
+    "8 个核心仓库的 Discussions 开关已查，不代表整个组织或私有支持渠道",
+    "GitHub 搜索索引和公开可见范围有限；最初 403 限流的查询和 config 第 2 页已重试成功",
+    "保存来源元数据及正文 SHA256，不复制评论中的控制代码或执行建议；哈希用于标记抓取版本，不等于官方签名"
+  ],
+  "findings": [
+    {
+      "repo": "unitree_rl_lab",
+      "number": 42,
+      "title": "What control limits should I apply on G1?",
+      "url": "https://github.com/unitreerobotics/unitree_rl_lab/issues/42",
+      "reply_url": "https://github.com/unitreerobotics/unitree_rl_lab/issues/42#issuecomment-3415355301",
+      "result": "协作者指向模型限位",
+      "detail": "协作者先指向 IsaacLab 动作缩放，后指向 G1 29 自由度 URDF joint limits；没有读取本机控制器限值、零位或标定的协议。此链接不能替代本机 23 自由度实参。",
+      "collaborator_reply": true,
+      "confirmed_g1_read_protocol": false
+    },
+    {
+      "repo": "unitree_actuator_sdk",
+      "number": 11,
+      "title": "如何置零位？使用过程中发现并不是绝对值编码，每次开机的零位都不一样",
+      "url": "https://github.com/unitreerobotics/unitree_actuator_sdk/issues/11",
+      "reply_url": "https://github.com/unitreerobotics/unitree_actuator_sdk/issues/11#issuecomment-1875126630",
+      "result": "独立电机问题，G1 适用性未核实",
+      "detail": "协作者讨论电机转子端单圈编码器与减速比换算，未说明适用于 G1 机身，更未提供 G1 逐关节零位导出。不能据此推定本机编码器类型、减速比或偏移。",
+      "collaborator_reply": true,
+      "confirmed_g1_read_protocol": false
+    },
+    {
+      "repo": "unitree_actuator_sdk",
+      "number": 23,
+      "title": "关于发送接收接口使用",
+      "url": "https://github.com/unitreerobotics/unitree_actuator_sdk/issues/23",
+      "reply_url": "https://github.com/unitreerobotics/unitree_actuator_sdk/issues/23#issuecomment-2541414842",
+      "result": "sendRecv 含控制命令",
+      "detail": "GO-M8010-6 使用场景；协作者解释发送控制后返回状态。不是本机只读配置获取方法，未执行串口示例或标定模式。",
+      "collaborator_reply": true,
+      "confirmed_g1_read_protocol": false
+    },
+    {
+      "repo": "unitree_actuator_sdk",
+      "number": 26,
+      "title": "go电机怎么设置零位呢？",
+      "url": "https://github.com/unitreerobotics/unitree_actuator_sdk/issues/26",
+      "reply_url": null,
+      "result": "社区置零提问，无 G1 读取协议",
+      "detail": "公开回复未给出 G1 的只读零位查询；不能用其他电机置零操作代替读取本机既有标定。",
+      "collaborator_reply": false,
+      "confirmed_g1_read_protocol": false
+    },
+    {
+      "repo": "dex1_1_service",
+      "number": 4,
+      "title": "Dex1-1 errors on G1-D",
+      "url": "https://github.com/unitreerobotics/dex1_1_service/issues/4",
+      "reply_url": "https://github.com/unitreerobotics/dex1_1_service/issues/4#issuecomment-5693917563",
+      "result": "夹爪标定流程，非机身只读",
+      "detail": "协作者答复涉及人工合拢夹爪再标定；不是配置导出。你的 G1 无手，不执行该流程，也不套用其参数。",
+      "collaborator_reply": true,
+      "confirmed_g1_read_protocol": false
+    },
+    {
+      "repo": "unitree_sdk2_python",
+      "number": 129,
+      "title": "Unitree G1 Motor Overheat when using Inspire FTP Dexterous Hand",
+      "url": "https://github.com/unitreerobotics/unitree_sdk2_python/issues/129",
+      "reply_url": null,
+      "result": "ARM7 加灵巧手的社区增益",
+      "detail": "提问者的 Kp/Kd 和过热描述来自另一配置，公开评论未提供 G1 实机配置导出协议；不写入本机参数。",
+      "collaborator_reply": false,
+      "confirmed_g1_read_protocol": false
+    },
+    {
+      "repo": "unitree_rl_gym",
+      "number": 95,
+      "title": "G1 23-DOF policy: obs format, scaling values, action scale and command range",
+      "url": "https://github.com/unitreerobotics/unitree_rl_gym/issues/95",
+      "reply_url": null,
+      "result": "训练策略缩放，非本机配置",
+      "detail": "23 自由度标题涉及 22 维策略、缩放和 PD 增益提问；没有已核实的实机只读接口，不采用其中数值。",
+      "collaborator_reply": false,
+      "confirmed_g1_read_protocol": false
+    },
+    {
+      "repo": "unitree_sdk2_python",
+      "number": 28,
+      "title": "Unable to Get Low-Level State of G1 Robot with unitree_sdk2_python",
+      "url": "https://github.com/unitreerobotics/unitree_sdk2_python/issues/28",
+      "reply_url": null,
+      "result": "反馈故障讨论，不提供标定",
+      "detail": "社区回复建议切换 motion_switcher 模式并重启，属于会改变系统状态的处理方法；本轮未执行，也不作为参数读取方案。",
+      "collaborator_reply": false,
+      "confirmed_g1_read_protocol": false
+    }
+  ]
+}

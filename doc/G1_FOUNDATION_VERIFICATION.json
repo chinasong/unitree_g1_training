@@ -1,0 +1,195 @@
+{
+  "verified_at": "2026-10-21T00:42:28.132893+08:00",
+  "scope": "G1 EDU 23 DOF / no hands / Orin / read-only foundation deployment",
+  "deployment": {
+    "host": "<ORIN_IP>",
+    "release_id": "62ee551cb984",
+    "manifest_files_verified": 356,
+    "console_pid": 16514,
+    "official_video_pid": 2295,
+    "official_video_process_untouched": true
+  },
+  "foundation": {
+    "foundation_id": "86f649ca82a49e0bd4bded89aadf672e6361f0547596eb56c19e68759503af9a",
+    "matches_local_asset": true,
+    "motors": 23,
+    "feedback_fields": 10,
+    "command_fields": 7,
+    "sources": {
+      "feedback": {
+        "path": "externals/unitree_sdk2_python/unitree_sdk2py/idl/unitree_hg/msg/dds_/_MotorState_.py",
+        "commit": "814556d15970dd2ecf1c9984e845ca02ab07e206",
+        "sha256": "cffb489830dbfb7091454279d031224f0968c066fad0b1204e309426a0d82910",
+        "url": "https://github.com/unitreerobotics/unitree_sdk2_python/blob/814556d15970dd2ecf1c9984e845ca02ab07e206/unitree_sdk2py/idl/unitree_hg/msg/dds_/_MotorState_.py"
+      },
+      "command": {
+        "path": "externals/unitree_sdk2_python/unitree_sdk2py/idl/unitree_hg/msg/dds_/_MotorCmd_.py",
+        "commit": "814556d15970dd2ecf1c9984e845ca02ab07e206",
+        "sha256": "710a8321be4d6731093b6f8328c70ab11606372561ed01a7af9a187143f54c4d",
+        "url": "https://github.com/unitreerobotics/unitree_sdk2_python/blob/814556d15970dd2ecf1c9984e845ca02ab07e206/unitree_sdk2py/idl/unitree_hg/msg/dds_/_MotorCmd_.py"
+      },
+      "lowstate": {
+        "path": "externals/unitree_sdk2_python/unitree_sdk2py/idl/unitree_hg/msg/dds_/_LowState_.py",
+        "commit": "814556d15970dd2ecf1c9984e845ca02ab07e206",
+        "sha256": "97f746a693aff14a8a1c2ea2bbd7790722bb784554e0402173ed491ad9d957f2",
+        "url": "https://github.com/unitreerobotics/unitree_sdk2_python/blob/814556d15970dd2ecf1c9984e845ca02ab07e206/unitree_sdk2py/idl/unitree_hg/msg/dds_/_LowState_.py"
+      },
+      "example": {
+        "path": "externals/unitree_sdk2_python/example/g1/low_level/g1_low_level_example.py",
+        "commit": "814556d15970dd2ecf1c9984e845ca02ab07e206",
+        "sha256": "044dc6f9f132ec4ddcdef7f6eda0fc74118dc21abc50e64de441179a748d1984",
+        "url": "https://github.com/unitreerobotics/unitree_sdk2_python/blob/814556d15970dd2ecf1c9984e845ca02ab07e206/example/g1/low_level/g1_low_level_example.py"
+      },
+      "loco": {
+        "path": "externals/unitree_sdk2_python/unitree_sdk2py/g1/loco/g1_loco_client.py",
+        "commit": "814556d15970dd2ecf1c9984e845ca02ab07e206",
+        "sha256": "5fbc07b30994676cd2f7994a2389b24e9b51e2c13dfde7e565bfd77898300ce2",
+        "url": "https://github.com/unitreerobotics/unitree_sdk2_python/blob/814556d15970dd2ecf1c9984e845ca02ab07e206/unitree_sdk2py/g1/loco/g1_loco_client.py"
+      },
+      "urdf": {
+        "path": "externals/unitree_rl_gym/resources/robots/g1_description/g1_23dof.urdf",
+        "commit": "276801e46c5d433564f24658bac64f254b7d2d4b",
+        "sha256": "7be9fc93e3d253646fd2438e6eece7fd9485d2177d0ac14cb6e983f39fd1485e",
+        "url": "https://github.com/unitreerobotics/unitree_rl_gym/blob/276801e46c5d433564f24658bac64f254b7d2d4b/resources/robots/g1_description/g1_23dof.urdf"
+      },
+      "mujoco": {
+        "path": "externals/unitree_rl_gym/resources/robots/g1_description/g1_23dof.xml",
+        "commit": "276801e46c5d433564f24658bac64f254b7d2d4b",
+        "sha256": "aaca282f79cc4cdd20fafa27656e766e35eb1455edb6f341165e27b137a036b6",
+        "url": "https://github.com/unitreerobotics/unitree_rl_gym/blob/276801e46c5d433564f24658bac64f254b7d2d4b/resources/robots/g1_description/g1_23dof.xml"
+      }
+    },
+    "persistent_asset": "g1_console/assets/g1_motor_knowledge.json"
+  },
+  "state": {
+    "run_id": "dd88dde28b44",
+    "at": 1792514548.1211135,
+    "connected": true,
+    "read_only": true,
+    "control_owner": null,
+    "fsm": 0,
+    "fsm_age_ms": 27,
+    "mode_pr": 0,
+    "mode_machine": 4,
+    "lowstate_version_raw": [
+      0,
+      0
+    ],
+    "summary": "FSM 0：SDK ZeroTorque 对应状态 ID；双膝角度 161.1° / 146.5°；足底接触及主动支撑未确认",
+    "joint_model_range_counts": {
+      "matched": 22,
+      "violated": 1,
+      "unknown": 0
+    },
+    "deviations": [
+      {
+        "index": 10,
+        "label": "右踝俯仰",
+        "position_rad": 0.5243877172470093,
+        "model_range_rad": [
+          -0.87267,
+          0.5236
+        ],
+        "comparable": true,
+        "deviation_rad": 0.000787717247009323,
+        "status": "violated",
+        "detail": "略超模型边界；需核对版本与标定，不能据此判定故障"
+      }
+    ],
+    "checks": [
+      {
+        "name": "身体反馈",
+        "status": "matched",
+        "detail": "23 关节反馈在线",
+        "source": "rt/lowstate + 本项目时效检查"
+      },
+      {
+        "name": "行走状态条件",
+        "status": "violated",
+        "detail": "当前 FSM=0；本项目速度控制要求 FSM=500",
+        "source": "本项目运动门槛；官方 SDK Start→500"
+      },
+      {
+        "name": "稳定站立 / 不摔倒",
+        "status": "unknown",
+        "detail": "单帧关节与 IMU 不能确认接触、支撑和稳定性",
+        "source": "未接入足底接触、载荷与全身位姿"
+      },
+      {
+        "name": "电机健康结论",
+        "status": "unknown",
+        "detail": "保留 mode / motorstate 原始值，尚无本固件故障位表与热阈值",
+        "source": "HG MotorState IDL 仅提供字段类型"
+      }
+    ],
+    "temperature_range_c": [
+      31,
+      46
+    ],
+    "voltage_range_v": [
+      47.0,
+      47.5
+    ],
+    "movement": {
+      "max_abs_dq_rad_s": 0.027426602318882942,
+      "description": "本帧低速；不证明稳定站立",
+      "descriptive_threshold_rad_s": 0.05,
+      "threshold_source": "本项目显示规则，非厂商安全阈值",
+      "window_samples": 231,
+      "window_s": 11.98,
+      "window_max_abs_dq_rad_s": 0.07028067111968994
+    },
+    "firmware_declared_actions": 20,
+    "execution_allowed": false,
+    "camera": {
+      "backend": "unitree",
+      "status": "live",
+      "error": null,
+      "source": "unitree-videohub-46d21aabe175",
+      "sequence": 893,
+      "age_ms": 176,
+      "request_started_at": 1792514547.9447324,
+      "received_at": 1792514547.9920976,
+      "width": 960,
+      "height": 540,
+      "source_width": 1920,
+      "source_height": 1080,
+      "request_ms": 47,
+      "timestamp_basis": "request_started_at",
+      "sensor_timestamp": null
+    }
+  },
+  "codex_observer": {
+    "enabled": true,
+    "worker_online": true,
+    "status": "analyzing",
+    "error": null,
+    "completed": 0,
+    "live_new_foundation_report_verified": false,
+    "note": "Observation input includes foundation and assessment; accepted-report contract verified by tests. Live Codex provider returned rate limit; no successful new-foundation report claimed."
+  },
+  "verification": {
+    "pytest_passed": 52,
+    "pytest_command": "CYCLONEDDS_HOME=\"$PWD/.venv/opt/cyclonedds\" .venv/bin/python -m pytest tests/test_g1_console.py tests/test_g1_camera.py tests/test_g1_insight.py tests/test_g1_foundation.py -q",
+    "frontend_build": "npm run build passed",
+    "browser_verified": [
+      "body current state",
+      "persistent motor model and actual unknowns",
+      "10 feedback fields expanded",
+      "firmware current condition comparisons",
+      "all motion disabled"
+    ],
+    "screenshots": [
+      "doc/screenshots/g1-body-foundation-state.png",
+      "doc/screenshots/g1-motor-foundation.png",
+      "doc/screenshots/g1-capability-conditions.png"
+    ]
+  },
+  "boundaries": {
+    "motion_executed": false,
+    "lowcmd_published": false,
+    "robot_modes_changed": false,
+    "quantumult_x_changed": false,
+    "unavailable_actual_parameters": "Factory/current gains, motor identity, calibration, thermal and current limits remain unknown; reference model and example values are not substituted."
+  }
+}

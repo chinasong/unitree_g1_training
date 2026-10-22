@@ -1,0 +1,333 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-10-22T13:09:20.047901+08:00",
+  "robot_boot_id": "aed898cb-acfd-44a2-8e9c-50f1f00269aa",
+  "purpose": "Independently report observable current body state and validate the software remote using one non-motor TTS request.",
+  "deployments": [
+    {
+      "release": "84967621c9b4",
+      "previous_release": "5e60ab48bcfa",
+      "files_verified": 491,
+      "pid": 12795,
+      "run_id": "9e37cfe004fc",
+      "official_processes_unchanged": true,
+      "official_processes": [
+        {
+          "pid": 1349,
+          "executable": "/unitree/ota/pipe/ota_pipe_service",
+          "start_ticks": 2004
+        },
+        {
+          "pid": 1350,
+          "executable": "/unitree/module/master_service/master_service",
+          "start_ticks": 2004
+        },
+        {
+          "pid": 2777,
+          "executable": "/home/unitree/megaflow_sdk/ws//bin/MegaFlowRuntimeDaemon",
+          "start_ticks": 2975
+        },
+        {
+          "pid": 9659,
+          "executable": "/unitree/module/video_hub_pc4/videohub_pc4",
+          "start_ticks": 437519
+        }
+      ],
+      "verify_only": false,
+      "accessory_test": true,
+      "allowed_write_operations": [
+        "led",
+        "tts"
+      ],
+      "owner": null,
+      "armed": false,
+      "motion_writes": 0,
+      "network_configuration_changes": 0,
+      "boot_id": "aed898cb-acfd-44a2-8e9c-50f1f00269aa"
+    },
+    {
+      "release": "a6f49c6f4c4a",
+      "previous_release": "84967621c9b4",
+      "files_verified": 491,
+      "pid": 13326,
+      "run_id": "131d3525182d",
+      "official_processes_unchanged": true,
+      "official_processes": [
+        {
+          "pid": 1349,
+          "executable": "/unitree/ota/pipe/ota_pipe_service",
+          "start_ticks": 2004
+        },
+        {
+          "pid": 1350,
+          "executable": "/unitree/module/master_service/master_service",
+          "start_ticks": 2004
+        },
+        {
+          "pid": 2777,
+          "executable": "/home/unitree/megaflow_sdk/ws//bin/MegaFlowRuntimeDaemon",
+          "start_ticks": 2975
+        },
+        {
+          "pid": 9659,
+          "executable": "/unitree/module/video_hub_pc4/videohub_pc4",
+          "start_ticks": 437519
+        }
+      ],
+      "verify_only": false,
+      "accessory_test": true,
+      "allowed_write_operations": [
+        "led",
+        "tts"
+      ],
+      "owner": null,
+      "armed": false,
+      "motion_writes": 0,
+      "network_configuration_changes": 0,
+      "boot_id": "aed898cb-acfd-44a2-8e9c-50f1f00269aa"
+    }
+  ],
+  "live_snapshot": {
+    "at": 1792645760.0479014,
+    "at_local": "2026-10-22T13:09:20.047901+08:00",
+    "run_id": "131d3525182d",
+    "mode": "robot",
+    "connected": true,
+    "telemetry_age_ms": 37,
+    "joint_count": 23,
+    "joint_status_raw": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "joint_temperatures_c": [
+      31,
+      45
+    ],
+    "joint_voltages_v": [
+      44.0,
+      44.5
+    ],
+    "posture": {
+      "description": "双膝显著屈曲",
+      "knee_deg": [
+        160.33446970914227,
+        161.29687068395373
+      ],
+      "imu_rpy_deg": [
+        7.935841409834198,
+        0.7323457961351667,
+        -4.272423771607784
+      ],
+      "secondary_imu_rpy_deg": [
+        6.220327982324659,
+        -4.011251851898483,
+        -0.3622323058033091
+      ],
+      "whole_body_pose": "unknown",
+      "support": "unknown",
+      "feet": {
+        "left": {
+          "contact": null,
+          "load_n": null
+        },
+        "right": {
+          "contact": null,
+          "load_n": null
+        }
+      },
+      "detail": "双膝 >90° 仅为形态描述规则；未确定站/坐/卧、身体离地高度或接触对象。三维模型按关节角度显示，不表示世界中的支撑姿势"
+    },
+    "control_mode": {
+      "fsm": 0,
+      "sdk_label": "SDK ZeroTorque 对应状态 ID",
+      "active_capability_id": null,
+      "feedback_consistency": "matched",
+      "activity_verified": false,
+      "detail": "FSM 只表明服务回读的状态 ID；未取得具体能力执行中/完成的可信反馈。ZeroTorque ID 也不证明每个电机实际力矩为零"
+    },
+    "observation_window": {
+      "samples": 215,
+      "seconds": 11.97,
+      "max_abs_dq_rad_s": 0.056567370891571045,
+      "max_joint_span_deg": 0.006174491009691527,
+      "certified_safe": false,
+      "learned_safe_range": null,
+      "detail": "短时被动观察，只描述已观测变化；不把未摔倒样本、最小/最大角度或零速度学习为安全边界"
+    },
+    "standing": {
+      "status": "unknown",
+      "already_standing": null,
+      "execution_allowed": false
+    },
+    "old_human_observation_current": false,
+    "camera": {
+      "backend": "unitree",
+      "status": "live",
+      "error": null,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 580,
+        "total_successes": 580,
+        "total_timeouts": 0
+      },
+      "source": "unitree-videohub-2b74f937a41b",
+      "sequence": 580,
+      "age_ms": 240,
+      "request_started_at": 1792645759.8079598,
+      "received_at": 1792645759.8411474,
+      "width": 960,
+      "height": 540,
+      "source_width": 1920,
+      "source_height": 1080,
+      "request_ms": 33,
+      "timestamp_basis": "request_started_at",
+      "sensor_timestamp": null
+    },
+    "control": {
+      "owner": null,
+      "expires_in": 0,
+      "floor_verified": false
+    },
+    "manual_remote": {
+      "enabled": true,
+      "armed": false,
+      "verify_only": false,
+      "accessory_test": true,
+      "allowed_write_operations": [
+        "led",
+        "tts"
+      ],
+      "preflights": [],
+      "control_scope": "project_console_lease",
+      "robot_authority_verified": false,
+      "owner": null,
+      "expires_in": 0,
+      "observed_at": null,
+      "blocker": {
+        "code": "ACCESSORY_TEST_ONLY",
+        "message": "声光测试仅开放语音和 RGB 灯；身体动作与控制模式切换继续锁定"
+      },
+      "authority": "人工现场确认与官方高层控制；不修改基础模型或授权自主任务",
+      "full_remote_equivalence": false
+    },
+    "command_history": []
+  },
+  "physical_test": {
+    "executed_from": "Mac browser software remote http://127.0.0.1:18766/",
+    "sequence": [
+      "acquire project lease",
+      "click voice connection test once",
+      "observe SDK acknowledgement",
+      "release lease"
+    ],
+    "release": "84967621c9b4",
+    "run_id": "9e37cfe004fc",
+    "command_at_local": "2026-10-22T13:05:59.770716+08:00",
+    "receipt": {
+      "request_id": "9317b3a9-a90f-4f8a-a8dc-bd3deb581c66",
+      "capability": "tts",
+      "label": "机器人语音播报",
+      "at": 1792645559.7707164,
+      "updated_at": 1792645559.7707167,
+      "mode": "robot",
+      "status": "sdk_ack",
+      "message": "官方接口应答成功；动作完成状态尚未确认",
+      "data": null
+    },
+    "text": "软件遥控器连接测试，机器人保持原状。",
+    "speaker_id": 0,
+    "raw_sdk_code_persisted": false,
+    "physical_sound_verified": false,
+    "completion": "unknown",
+    "retry_count": 0,
+    "motor_command_count": 0,
+    "rgb_command_count": 0,
+    "after_test_control": {
+      "owner": null,
+      "expires_in": 0,
+      "floor_verified": false
+    },
+    "history_note": "The subsequent project-service redeploy reset in-memory history. Receipt above is preserved from the prior run; the test was not repeated."
+  },
+  "camera_visual_review": {
+    "image_sha256": "95ddfdfaa3e816d4000c36ab472b0394559d7b0427e1b18047e0baa76828c6c8",
+    "facts": [
+      "Close wastebasket, tiled floor, chair legs/casters and a mat visible."
+    ],
+    "blind_spots": [
+      "G1 feet",
+      "G1 back and external support",
+      "whole-body contact relationships"
+    ],
+    "robot_foot_contact_verified": false,
+    "external_support_verified": false,
+    "saved_image": "doc/screenshots/g1-current-scene-20261022-130635.jpg",
+    "image_timestamp_basis": "Captured during the 13:06:35 local post-test read; no camera exposure timestamp or hardware synchronization proof."
+  },
+  "firmware_followup": {
+    "readonly_audit_started_at_utc": "2026-10-22T04:57:30.010331+00:00",
+    "readonly_audit_completed_at_utc": "2026-10-22T04:57:30.791237+00:00",
+    "backup_scope": "/unitree/ota/backup/module/unitree_patch_pc4/1.0.0.6/module/unitree_patch_pc4/file; recursive text configs .json/.conf/.sh/.txt/.service <= 1 MiB; no symlink traversal",
+    "backup_keyword_matches": [],
+    "log_file_count": 427,
+    "log_read_scope": "first 2 MiB per file; maximum depth 6, maximum 500 files per root",
+    "result": "No validated humanoid build version or exact internal LocoState readiness predicate found in this bounded search. Numeric 7301 substrings in unrelated logs are not sport error evidence.",
+    "actual_humanoid_build": null,
+    "ai_sport_service_advertisement": "8.7.5.212",
+    "advertisement_is_build_proof": false,
+    "7301_exact_predicate": null,
+    "motor_configuration_values_added": 0,
+    "unknown_machine_motor_fields": 253,
+    "related_report": "doc/G1_PUBLISHER_READINESS_20261022.md"
+  },
+  "verification": {
+    "pytest_result": "107 passed, 2.42 seconds",
+    "pytest_files": [
+      "tests/test_g1_accessory_test.py",
+      "tests/test_g1_remote_verification.py",
+      "tests/test_g1_manual_remote.py",
+      "tests/test_g1_reboot_connection.py",
+      "tests/test_g1_remote_operations.py"
+    ],
+    "production_build": "passed; 4582 modules; pre-existing BodyView chunk size warning",
+    "browser_live_state_verified": true,
+    "screenshot": "doc/screenshots/g1-current-posture-accessory-20261022.png",
+    "session_after_service_redeploy": "One click of reconnect was required to restore the browser session; full unattended UI recovery was not verified.",
+    "robot_reboot_test_this_turn": false,
+    "physical_motion_verified": false,
+    "full_remote_equivalence": false,
+    "system_configuration_changes": 0,
+    "quantumult_x_changes": 0
+  },
+  "source_fingerprints": {
+    "g1-posture-final-state.json": "085416b943a5dd9064a2c700a7c148c6f6267ab4a663a7e0b5ec80c701ca5be8",
+    "g1-accessory-after-state.json": "30331842bacecc83eae1e78120e53a0b740feddd875c8ec08f8b9c7594f50268",
+    "g1-current-readonly-audit.json": "a2f06de9285c2ae079fa50d1bd53915250e2b931d2a339cae593511933f05255"
+  }
+}

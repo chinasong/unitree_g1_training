@@ -1,0 +1,613 @@
+{
+  "verified_at_utc": "2026-10-21T04:07:00.838423+00:00",
+  "snapshot_at": 1792555620.3666358,
+  "release": "595a6d41fef2",
+  "manifest_files": 418,
+  "foundation_id": "2d23dc044925c6aa79e76038ecf5e126dedb35ff7d3d15e38bbbf92be0bebda5",
+  "schema_version": 11,
+  "read_only": true,
+  "connected": true,
+  "mode": "robot",
+  "run_id": "1e3c534df0ca",
+  "joints": 23,
+  "indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    15,
+    16,
+    17,
+    18,
+    19,
+    22,
+    23,
+    24,
+    25,
+    26
+  ],
+  "telemetry_age_ms": 9,
+  "owner": null,
+  "navigation": "idle",
+  "command_accepted": 0,
+  "camera": {
+    "backend": "unitree",
+    "status": "retrying",
+    "error": "SDK_3102",
+    "source": null,
+    "sequence": -1,
+    "age_ms": null
+  },
+  "insight": {
+    "enabled": false,
+    "worker_online": true,
+    "model": "gpt-5.6-sol",
+    "error": null,
+    "status": "paused",
+    "report": null,
+    "report_age_s": null,
+    "current": false,
+    "completed": 0,
+    "report_ttl_s": 120
+  },
+  "observer_pid": 34853,
+  "new_motor_configuration_values": 0,
+  "actual_config_unknowns": 253,
+  "state_learning": {
+    "schema_version": 1,
+    "current": true,
+    "evidence_mode": "robot",
+    "control_mode": {
+      "fsm": 0,
+      "sdk_label": "SDK ZeroTorque 对应状态 ID",
+      "active_capability_id": null,
+      "activity_verified": false,
+      "detail": "FSM 只表明服务回读的状态 ID；未取得具体能力执行中/完成的可信反馈。ZeroTorque ID 也不证明每个电机实际力矩为零"
+    },
+    "posture": {
+      "description": "双膝显著屈曲",
+      "knee_deg": [
+        161.0415035712653,
+        160.0468777639497
+      ],
+      "imu_rpy_deg": [
+        7.805685325010435,
+        -3.5125549811601107,
+        -2.274076906323072
+      ],
+      "whole_body_pose": "unknown",
+      "support": "unknown",
+      "detail": "双膝 >90° 仅为形态描述规则；未确定站/坐/卧、身体离地高度或接触对象。三维模型按关节角度显示，不表示世界中的支撑姿势"
+    },
+    "observation_window": {
+      "samples": 224,
+      "seconds": 11.96,
+      "max_abs_dq_rad_s": 0.0634240210056305,
+      "max_joint_span_deg": 0.004808453175688976,
+      "certified_safe": false,
+      "learned_safe_range": null,
+      "detail": "短时被动观察，只描述已观测变化；不把未摔倒样本、最小/最大角度或零速度学习为安全边界"
+    },
+    "safety": {
+      "status": "unverified",
+      "execution_allowed": false,
+      "fall_free_guarantee": false,
+      "validated_action_envelopes": [],
+      "checks": [
+        {
+          "id": "real_feedback",
+          "name": "真实身体反馈",
+          "status": "matched",
+          "detail": "23 个关节位置、速度为新鲜实机反馈",
+          "source": "rt/lowstate + CRC / tick / 时效检查"
+        },
+        {
+          "id": "walking_fsm",
+          "name": "行走模式前提",
+          "status": "violated",
+          "detail": "FSM=0；500 只符合本项目行走前提，不能证明平衡或动作正在执行",
+          "source": "固定版本 SDK Start→500；仅适用于行走候选任务"
+        },
+        {
+          "id": "tilt_guard",
+          "name": "项目姿态拦截线",
+          "status": "matched",
+          "detail": "横滚/俯仰最大绝对值 7.81°；项目拦截线 0.35 rad，未核定为防摔范围",
+          "source": "本项目软件保护；不是厂商安全限值"
+        },
+        {
+          "id": "thermal_guard",
+          "name": "项目电机温度拦截线",
+          "status": "matched",
+          "detail": "最高 47°C；项目拦截线 70°C，实机热保护与降额未知",
+          "source": "本项目软件保护；不是厂商安全工作温度"
+        },
+        {
+          "id": "support",
+          "name": "足底接触与承重",
+          "status": "unknown",
+          "detail": "尚无可信足底接触、载荷、支撑面；不能判断脚是否落地或被外部支撑",
+          "source": "缺少本机与现场验证证据"
+        },
+        {
+          "id": "balance",
+          "name": "动态平衡裕量",
+          "status": "unknown",
+          "detail": "缺少全身位姿/速度、质心与支撑关系；IMU 平稳不证明下一步稳定",
+          "source": "缺少本机与现场验证证据"
+        },
+        {
+          "id": "terrain",
+          "name": "现场地面与净空",
+          "status": "unknown",
+          "detail": "摩擦、坡度、台阶、地面断层和全身净空未核验；图像或二维地图单独不足",
+          "source": "缺少本机与现场验证证据"
+        },
+        {
+          "id": "calibration",
+          "name": "实机电机限值与标定",
+          "status": "unknown",
+          "detail": "逐电机固件限值、零位、增益和转矩转速能力未知；URDF 与示例值不能替代",
+          "source": "缺少本机与现场验证证据"
+        },
+        {
+          "id": "health",
+          "name": "驱动健康与电池余量",
+          "status": "unknown",
+          "detail": "缺本固件故障位表、降额规则和新鲜电池状态；不将原始状态码 0 当作健康证明",
+          "source": "缺少本机与现场验证证据"
+        },
+        {
+          "id": "recovery",
+          "name": "保护与失联处置",
+          "status": "unknown",
+          "detail": "现场防跌落保护、官方平衡控制归属、急停和通信失效行为尚未验证；不自动发送卸力或模式切换",
+          "source": "缺少本机与现场验证证据"
+        },
+        {
+          "id": "action_contract",
+          "name": "具体能力全过程边界",
+          "status": "unknown",
+          "detail": "每项能力的进入条件、执行过程、退出/打断和恢复条件均需单独核定；目录匹配不足以放行",
+          "source": "缺少本机与现场验证证据"
+        }
+      ],
+      "unknown_conditions": [
+        "足底接触与承重",
+        "动态平衡裕量",
+        "现场地面与净空",
+        "实机电机限值与标定",
+        "驱动健康与电池余量",
+        "保护与失联处置",
+        "具体能力全过程边界"
+      ],
+      "violated_conditions": [
+        "行走模式前提"
+      ],
+      "detail": "防摔动作边界尚未核定，真实运动锁定；通过个别拦截检查也不授予权限"
+    },
+    "task_suggestions": [
+      {
+        "title": "继续只读观察和补齐证据",
+        "allowed": true,
+        "kind": "read_only",
+        "detail": "记录状态变化、官方能力条件和缺失反馈；学习任务策略，不试探电机极限或训练新运动模型"
+      },
+      {
+        "title": "暂缓站起、行走、摆臂与姿势切换",
+        "allowed": false,
+        "kind": "motion",
+        "detail": "先核定支撑、健康、现场与该能力完整安全契约；不得由 Agent 或一项人工勾选自动放行"
+      }
+    ]
+  },
+  "state_safety": {
+    "schema_version": 1,
+    "authority": "事实、参考默认值和项目拦截线分别保存；没有核定的防摔动作范围",
+    "sdk_helpers": [
+      {
+        "name": "bad_orientation",
+        "parameter": "limit_angle",
+        "sdk_default": 1.0,
+        "unit": "rad",
+        "source": "terminations",
+        "verified_device_threshold": null,
+        "execution_allowed": false
+      },
+      {
+        "name": "joint_vel_out_of_limit",
+        "parameter": "limit_vel",
+        "sdk_default": 10.0,
+        "unit": "rad/s",
+        "source": "terminations",
+        "verified_device_threshold": null,
+        "execution_allowed": false
+      },
+      {
+        "name": "ang_vel_out_of_limit",
+        "parameter": "limit_vel",
+        "sdk_default": 6.0,
+        "unit": "rad/s",
+        "source": "terminations",
+        "verified_device_threshold": null,
+        "execution_allowed": false
+      },
+      {
+        "name": "motor_winding_overheat",
+        "parameter": "limit_temp",
+        "sdk_default": 120.0,
+        "unit": "°C",
+        "source": "terminations",
+        "verified_device_threshold": null,
+        "execution_allowed": false
+      },
+      {
+        "name": "motor_casing_overheat",
+        "parameter": "limit_temp",
+        "sdk_default": 85.0,
+        "unit": "°C",
+        "source": "terminations",
+        "verified_device_threshold": null,
+        "execution_allowed": false
+      },
+      {
+        "name": "low_battery",
+        "parameter": "limit_soc",
+        "sdk_default": 20.0,
+        "unit": "%",
+        "source": "terminations",
+        "verified_device_threshold": null,
+        "execution_allowed": false
+      },
+      {
+        "name": "lost_connection",
+        "parameter": "timeout_ms",
+        "sdk_default": 1000.0,
+        "unit": "ms",
+        "source": "terminations",
+        "verified_device_threshold": null,
+        "execution_allowed": false
+      }
+    ],
+    "sdk_default_meaning": "可传参覆盖的 SDK 辅助函数默认值，不是本机固件阈值；未执行任何保护动作",
+    "project_guards": {
+      "telemetry_ttl_s": 0.6,
+      "fsm_ttl_s": 1.5,
+      "max_abs_roll_pitch_rad": 0.35,
+      "motor_temperature_stop_c": 70,
+      "max_vx_m_s": 0.3,
+      "max_vy_m_s": 0.2,
+      "max_omega_rad_s": 0.4,
+      "meaning": "项目软件拦截条件；通过也不证明不会摔倒"
+    },
+    "verified_motor_safety_limits": null,
+    "validated_action_envelopes": [],
+    "fall_free_guarantee": false,
+    "learning_policy": {
+      "strategy_learning_only": true,
+      "motion_model_training": false,
+      "passive_samples_can_expand_boundary": false,
+      "missing_or_stale_evidence": "deny_motion",
+      "proposals_only": true
+    },
+    "required_evidence": [
+      "匹配本机固件、坐标与标定的电机限值、健康和降额配置",
+      "可信接触/载荷、全身状态、支撑关系及动态平衡裕量",
+      "现场地面、摩擦、坡度、跌落边缘及全身净空",
+      "每项官方能力完整进入/执行/退出/中断/恢复条件",
+      "现场防跌落保护、官方平衡控制归属及失联/急停行为验证"
+    ],
+    "interpretation_rules": [
+      "GetFsmId 只确认回读模式；GetActionList 只声明能力及部分条件，均不证明具体动作执行中",
+      "关节形态、IMU 与短时低速不能唯一确定站/坐/卧或足底接触",
+      "当前观测窗口不自动变为安全范围；人工勾选地面条件不能替代验证",
+      "当前真实动作范围为空；需另行实现并审查逐动作证据验证器，修改只读开关不放行运动"
+    ]
+  },
+  "package_cache_review": {
+    "source": {
+      "path": "g1_console/assets/service_audit_sources/package_cache_review_20261021.json",
+      "sha256": "970a2824ad9d8fb7d0abefa2e2ae639b4096acd016ed73753a0d71cd1012a7c3"
+    },
+    "receipt": {
+      "sources": [
+        {
+          "path": "g1_console/assets/service_audit_sources/package_cache_inventory_20261021.json",
+          "sha256": "88ee07979a9eb881ea106fd3f666380e08fa28cd1042c9e26025f246d7971d52"
+        },
+        {
+          "path": "g1_console/assets/service_audit_sources/package_cache_review_20261021.json",
+          "sha256": "970a2824ad9d8fb7d0abefa2e2ae639b4096acd016ed73753a0d71cd1012a7c3"
+        }
+      ],
+      "scripts": [
+        {
+          "path": "scripts/audit_g1_package_cache.py",
+          "sha256": "067c16acc75c5edecfb337c8dbade0bcb21332760d5b3889d9f67db9121a9588"
+        },
+        {
+          "path": "scripts/analyze_g1_package_cache.py",
+          "sha256": "b144ebe247e725a4576241ffa60a329f7ca0855e907c8107efe2da751e3e82ae"
+        }
+      ]
+    },
+    "current": false,
+    "checked_at_utc": "2026-10-21T03:54:37.818672+00:00",
+    "read_only": true,
+    "motor_configuration_values_obtained": 0,
+    "payload_decoded": false,
+    "motor_configuration_present": null,
+    "command_writes": 0,
+    "rpc_calls": 0,
+    "vendor_program_executions": 0,
+    "configuration_calls": 0,
+    "calibration_calls": 0,
+    "conclusion": "新增发现目录版本为 1.0.0.6 的补丁包；仍为未解析 UTPK。备份工具与此前文件哈希相同，未找到匹配的 Mixer/Gen 实现或 FMX 格式说明",
+    "files_scanned": 51,
+    "binaries_scanned": 5,
+    "roots": [
+      "/unitree/ota",
+      "/unitree/robot/pkg",
+      "/unitree/var/data",
+      "/opt/ota_package",
+      "/var/cache/apt/archives"
+    ],
+    "master_identity": [
+      {
+        "path": "/unitree/module/master_service/master_service",
+        "bytes": 9083232,
+        "sha256": "380e34de9c2def2692c0bf1b73e969d3167c8270f2ed5f974bb01abd4e96f24e",
+        "unchanged_during_read": true
+      },
+      {
+        "path": "/unitree/module/master_service/master_service.json",
+        "bytes": 468,
+        "sha256": "31eae39936576504c40be767bd93cd34b7489154eca989e5e5c2781b05e3d977",
+        "unchanged_during_read": true
+      }
+    ],
+    "packages": [
+      {
+        "path": "/unitree/ota/update/1.5.3/package_1.5.3.8_G1_Edu+_upk/module/unitree_patch_pc4/1.0.0.6/file/unitree_patch_pc4_1.0.0.6.upk",
+        "bytes": 21731956,
+        "sha256": "f9028b6539963d88076b470e5348005dabfd3589cd0e1616ef4fe91be60bf16e",
+        "format": "UTPK opaque",
+        "payload_decoded": false,
+        "implementation_match_confirmed": false,
+        "version_meaning": "目录版本与已安装补丁清单 1.0.0.6 一致；未证明包内内容匹配 master_service"
+      },
+      {
+        "path": "/unitree/ota/update/module/unitree_patch_pc4/1.0.0.2/g1plus@unitree_patch_pc4_1.0.0.2.upk",
+        "bytes": 21509748,
+        "sha256": "fd20c663d203e526ad13eaff5c2fec780961e69a05d5911e9afafd3544dbc8fe",
+        "format": "UTPK opaque",
+        "payload_decoded": false,
+        "implementation_match_confirmed": false,
+        "version_meaning": "路径/包版本不等于电机固件或标定版本"
+      },
+      {
+        "path": "/unitree/ota/update/module/video_hub_pc4/1.0.1.1/video_hub_pc4_1.0.1.1.upk",
+        "bytes": 75892,
+        "sha256": "ac276e9f575aa2a3b4070ca5a1a2e8103e835cac42e01abf4275fe28d86e61e1",
+        "format": "UTPK opaque",
+        "payload_decoded": false,
+        "implementation_match_confirmed": false,
+        "version_meaning": "路径/包版本不等于电机固件或标定版本"
+      },
+      {
+        "path": "/unitree/var/data/chrony/chrony_3.5-6ubuntu6.2_arm64.deb",
+        "bytes": 212496,
+        "sha256": "5558692a69cfa19ebcfbeb9e266ff401585c10385d0d7bfa61c2a16cb7101c09",
+        "format": "Debian archive",
+        "payload_decoded": false,
+        "implementation_match_confirmed": false,
+        "version_meaning": "路径/包版本不等于电机固件或标定版本"
+      }
+    ],
+    "limitations": [
+      "仅核查所列目录，深度 16、最多 3000 文件、单文件 128 MiB；不覆盖整机所有存储",
+      "APT lock 和 partial 无读取权限；未提权。未发现宇树命名的 dpkg 包记录不能证明未安装宇树软件",
+      "标准 Debian 包是 chrony 时钟同步组件，只列目录；NVIDIA 引导/内核载荷不是已确认的 G1 电机配置",
+      "符号未命中不排除裁剪、加密或运行时加载；UTPK 与 FMX 不能仅凭头部认定算法相同"
+    ],
+    "required_material": "与当前 master_service 哈希绑定的厂商 FMX 格式/可审计导出器，或明确只读且匹配本固件的电机配置与标定读取协议",
+    "errors": [
+      {
+        "path": "/var/cache/apt/archives/lock",
+        "error": "PermissionError"
+      },
+      {
+        "path": "/var/cache/apt/archives/partial",
+        "error": "PermissionError"
+      }
+    ]
+  },
+  "runtime": {
+    "release": "595a6d41fef2",
+    "manifest_files": 418,
+    "console_pid": 17358,
+    "console_cwd": "/home/unitree/workspace/g1-body-console/releases/595a6d41fef2",
+    "console_cmdline": "/home/unitree/workspace/g1-body-console/.venv/bin/python -m g1_console --read-only",
+    "boot_id": "7a6791dc-f512-4b45-aca3-44fbde855e25",
+    "official_processes_unchanged": [
+      {
+        "pid": 1296,
+        "start_ticks": 2242,
+        "argv": [
+          "/unitree/module/master_service/master_service"
+        ]
+      },
+      {
+        "pid": 1298,
+        "start_ticks": 2242,
+        "argv": [
+          "/unitree/ota/pipe/ota_pipe_service"
+        ]
+      },
+      {
+        "pid": 2557,
+        "start_ticks": 2791,
+        "argv": [
+          "/unitree/module/video_hub_pc4/videohub_pc4"
+        ]
+      },
+      {
+        "pid": 2676,
+        "start_ticks": 3210,
+        "argv": [
+          "/home/unitree/megaflow_sdk/ws//bin/MegaFlowRuntimeDaemon",
+          "-c",
+          "/home/unitree/megaflow_sdk/ws//bin/config.bin",
+          "-w",
+          "/home/unitree/megaflow_sdk/ws/",
+          "-d",
+          "127.0.0.1:8899",
+          "-i",
+          "-e",
+          "/home/unitree/megaflow_sdk/ws//dep/",
+          "-l",
+          "0"
+        ]
+      }
+    ],
+    "packages_and_master_reverified": [
+      {
+        "path": "/unitree/module/master_service/master_service",
+        "bytes": 9083232,
+        "sha256": "380e34de9c2def2692c0bf1b73e969d3167c8270f2ed5f974bb01abd4e96f24e",
+        "unchanged_during_read": true
+      },
+      {
+        "path": "/unitree/module/master_service/master_service.json",
+        "bytes": 468,
+        "sha256": "31eae39936576504c40be767bd93cd34b7489154eca989e5e5c2781b05e3d977",
+        "unchanged_during_read": true
+      },
+      {
+        "path": "/unitree/ota/update/1.5.3/package_1.5.3.8_G1_Edu+_upk/module/unitree_patch_pc4/1.0.0.6/file/unitree_patch_pc4_1.0.0.6.upk",
+        "bytes": 21731956,
+        "sha256": "f9028b6539963d88076b470e5348005dabfd3589cd0e1616ef4fe91be60bf16e",
+        "unchanged_during_read": true
+      },
+      {
+        "path": "/unitree/ota/update/module/unitree_patch_pc4/1.0.0.2/g1plus@unitree_patch_pc4_1.0.0.2.upk",
+        "bytes": 21509748,
+        "sha256": "fd20c663d203e526ad13eaff5c2fec780961e69a05d5911e9afafd3544dbc8fe",
+        "unchanged_during_read": true
+      },
+      {
+        "path": "/unitree/ota/update/module/video_hub_pc4/1.0.1.1/video_hub_pc4_1.0.1.1.upk",
+        "bytes": 75892,
+        "sha256": "ac276e9f575aa2a3b4070ca5a1a2e8103e835cac42e01abf4275fe28d86e61e1",
+        "unchanged_during_read": true
+      },
+      {
+        "path": "/unitree/var/data/chrony/chrony_3.5-6ubuntu6.2_arm64.deb",
+        "bytes": 212496,
+        "sha256": "5558692a69cfa19ebcfbeb9e266ff401585c10385d0d7bfa61c2a16cb7101c09",
+        "unchanged_during_read": true
+      }
+    ],
+    "current_run_command_accepted": 0,
+    "current_run_passive_observations": 3,
+    "latest_passive_observation": {
+      "id": "8b3969722bcb467485202c8d7e9204d8",
+      "at": 1792555608.2802362,
+      "run": "1e3c534df0ca",
+      "kind": "state_observed",
+      "message": "只读身体状态已记录；不产生安全范围或动作权限",
+      "level": "info",
+      "current": false,
+      "foundation_id": "2d23dc044925c6aa79e76038ecf5e126dedb35ff7d3d15e38bbbf92be0bebda5",
+      "tick": 8900497,
+      "telemetry_age_ms": 1,
+      "control_mode": {
+        "fsm": 0,
+        "sdk_label": "SDK ZeroTorque 对应状态 ID",
+        "active_capability_id": null,
+        "activity_verified": false,
+        "detail": "FSM 只表明服务回读的状态 ID；未取得具体能力执行中/完成的可信反馈。ZeroTorque ID 也不证明每个电机实际力矩为零"
+      },
+      "posture": {
+        "description": "双膝显著屈曲",
+        "knee_deg": [
+          161.04101179764507,
+          160.04784765081183
+        ],
+        "imu_rpy_deg": [
+          7.821732854465379,
+          -3.533250240901838,
+          -2.123311152565619
+        ],
+        "whole_body_pose": "unknown",
+        "support": "unknown",
+        "detail": "双膝 >90° 仅为形态描述规则；未确定站/坐/卧、身体离地高度或接触对象。三维模型按关节角度显示，不表示世界中的支撑姿势"
+      },
+      "observation_window": {
+        "samples": 230,
+        "seconds": 11.99,
+        "max_abs_dq_rad_s": 0.05999569594860077,
+        "max_joint_span_deg": 0.005371090008568777,
+        "certified_safe": false,
+        "learned_safe_range": null,
+        "detail": "短时被动观察，只描述已观测变化；不把未摔倒样本、最小/最大角度或零速度学习为安全边界"
+      },
+      "safety_status": "unverified",
+      "execution_allowed": false
+    }
+  },
+  "checks": {
+    "pytest": "111 passed; 1 dependency deprecation warning",
+    "frontend": "npm run build passed; existing large 3D chunk warning",
+    "remote_manifest": "418 files SHA256 verified after launch",
+    "pip": "no broken requirements",
+    "remote_foundation_equals_local": true,
+    "motion_boundary_test": "fake SDK adapter; real motion denied even when writable/owned; positive getter and stop controls",
+    "historical_records_grant_authority": false,
+    "network_configuration_changes": false,
+    "quantumult_x_touched": false,
+    "browser": {
+      "status": "passed",
+      "url": "http://127.0.0.1:18765/",
+      "viewport_width_px": 511,
+      "document_scroll_width_px": 505,
+      "horizontal_overflow": false,
+      "visible": [
+        "23 joint live feedback",
+        "FSM 0 and activity unconfirmed",
+        "both knees flexed and support unknown",
+        "12 second passive window",
+        "0 validated action envelopes; real motion locked",
+        "11 safety conditions; 7 unknown",
+        "51 files / 5 ELFs / 4 packages audit"
+      ],
+      "controls": "No robot action controls invoked"
+    }
+  },
+  "notes": [
+    "Passive observations cannot expand safety boundaries. No validated fall-free action envelopes exist.",
+    "FSM identifies a read-back service mode; actual ability activity, support and world pose remain unknown.",
+    "SDK defaults, URDF and project guards do not substitute for actual motor calibration or vendor limits.",
+    "Only this project read-only console restarted; four official processes and paused Mac observer unchanged.",
+    "No real actions, leases, calibration, configuration setters, runtime memory reads, sudo, vendor executions, or network changes."
+  ],
+  "screenshots": [
+    {
+      "path": "doc/screenshots/g1-state-safety-v11.jpg",
+      "sha256": "a4931df01ea2796203c898b06c16f7fbaed833321d71f59b0eaa0bbaf2e15a93"
+    },
+    {
+      "path": "doc/screenshots/g1-safety-conditions-v11.jpg",
+      "sha256": "aae66194d8673852eeb78b6aa692adafaf7d2215e42c2fb35a8da8195568bfaa"
+    }
+  ]
+}

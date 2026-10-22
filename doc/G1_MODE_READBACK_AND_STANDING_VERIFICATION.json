@@ -1,0 +1,382 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-10-21T06:20:58.447169+00:00",
+  "timezone": "Asia/Shanghai",
+  "scope": "G1 EDU 23 DOF Orin read-only console; bounded observation, no action or standing safety validation",
+  "release": {
+    "at_utc": "2026-10-21T06:20:38.181846+00:00",
+    "release": "8c0a84d0fb97",
+    "manifest_file_count": 449,
+    "all_sha256_match": true,
+    "console_pid": 4449,
+    "console_env": {
+      "G1_READ_ONLY": "1",
+      "G1_HOST": "127.0.0.1",
+      "G1_PORT": "8765",
+      "G1_CAMERA_BACKEND": "unitree"
+    },
+    "loopback_only": true,
+    "children": [
+      {
+        "pid": 4739,
+        "argv": [
+          "/home/unitree/workspace/g1-body-console/.venv/bin/python",
+          "-c",
+          "from multiprocessing.resource_tracker import main;main(19)"
+        ],
+        "cwd": "/home/unitree/workspace/g1-body-console/releases/8c0a84d0fb97"
+      },
+      {
+        "pid": 4740,
+        "argv": [
+          "/home/unitree/workspace/g1-body-console/.venv/bin/python",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=20, pipe_handle=22)",
+          "--multiprocessing-fork"
+        ],
+        "cwd": "/home/unitree/workspace/g1-body-console/releases/8c0a84d0fb97"
+      },
+      {
+        "pid": 4743,
+        "argv": [
+          "/home/unitree/workspace/g1-body-console/.venv/bin/python",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=20, pipe_handle=25)",
+          "--multiprocessing-fork"
+        ],
+        "cwd": "/home/unitree/workspace/g1-body-console/releases/8c0a84d0fb97"
+      }
+    ],
+    "foundation_version": 15,
+    "foundation_id": "49e87061527f6f5fbe338279a14c335af300c85206f4a360015b6a3ab2d60a3b",
+    "actual_unknown_count": 253,
+    "boot_id": "b33a7dc5-2617-44cd-b353-041bab1c204f",
+    "official_processes_unchanged": [
+      {
+        "pid": 1170,
+        "argv": [
+          "/unitree/ota/pipe/ota_pipe_service"
+        ],
+        "start_ticks": 2054
+      },
+      {
+        "pid": 1174,
+        "argv": [
+          "/unitree/module/master_service/master_service"
+        ],
+        "start_ticks": 2055
+      },
+      {
+        "pid": 2074,
+        "argv": [
+          "/unitree/module/video_hub_pc4/videohub_pc4"
+        ],
+        "start_ticks": 2356
+      },
+      {
+        "pid": 2749,
+        "argv": [
+          "/home/unitree/megaflow_sdk/ws//bin/MegaFlowRuntimeDaemon",
+          "-c",
+          "/home/unitree/megaflow_sdk/ws//bin/config.bin",
+          "-w",
+          "/home/unitree/megaflow_sdk/ws/",
+          "-d",
+          "127.0.0.1:8899",
+          "-i",
+          "-e",
+          "/home/unitree/megaflow_sdk/ws//dep/",
+          "-l",
+          "0"
+        ],
+        "start_ticks": 3024
+      }
+    ]
+  },
+  "foundation": {
+    "schema_version": 15,
+    "foundation_id": "49e87061527f6f5fbe338279a14c335af300c85206f4a360015b6a3ab2d60a3b",
+    "unknown_actual_motor_config_fields": 253,
+    "safety_sources": 31,
+    "execution_allowed": false,
+    "validated_action_envelopes": []
+  },
+  "validation": {
+    "tests": {
+      "command": ".venv/bin/python -m pytest -q tests",
+      "passed": 134,
+      "warnings": [
+        "Starlette httpx deprecation"
+      ]
+    },
+    "frontend_build": {
+      "command": "npm run build",
+      "passed": true,
+      "warnings": [
+        "existing bundle chunk above 500 kB"
+      ]
+    },
+    "browser": {
+      "url": "http://127.0.0.1:18765/",
+      "live_reload_and_standing_panel_verified": true,
+      "screenshot": {
+        "path": "doc/screenshots/g1-mode-standing-v15.png",
+        "sha256": "1d56f7f14882dfa07168f6acbbe47fbe420a41dccea64ffee9f89b8b79156219"
+      }
+    }
+  },
+  "integrated_soak": {
+    "start_at_utc": "2026-10-21T06:17:32.462128+00:00",
+    "end_at_utc": "2026-10-21T06:20:32.453690+00:00",
+    "summary": {
+      "samples": 181,
+      "live": 181,
+      "mode_current": {
+        "fsm_id": 181,
+        "fsm_mode": 181,
+        "motion_mode": 181
+      },
+      "rpc_delta": {
+        "fsm_id": {
+          "attempts": 355,
+          "successes": 355,
+          "timeouts": 0,
+          "errors": 0
+        },
+        "fsm_mode": {
+          "attempts": 60,
+          "successes": 60,
+          "timeouts": 0,
+          "errors": 0
+        },
+        "motion_mode": {
+          "attempts": 59,
+          "successes": 59,
+          "timeouts": 0,
+          "errors": 0
+        }
+      },
+      "jpeg_success": 37,
+      "jpeg_unique": 37,
+      "max_body_age": 60
+    },
+    "evidence": {
+      "path": ".g1-deploy/research/mode-standing-20261021/isolated-integrated-180s.json",
+      "sha256": "f29c53aae96962a28b63e239f370b85ec30658bb1e15c7af2907685a1adceff0"
+    }
+  },
+  "latest_observation": {
+    "at_utc": "2026-10-21T06:20:32.453690+00:00",
+    "body_feedback_age_ms": 52,
+    "posture": {
+      "description": "双膝显著屈曲",
+      "knee_deg": [
+        160.54442972422845,
+        159.07226441090225
+      ],
+      "imu_rpy_deg": [
+        7.894635732345157,
+        -3.6167653117611107,
+        -2.1444480267258696
+      ],
+      "secondary_imu_rpy_deg": [
+        3.8609881170450255,
+        -6.900430408550339,
+        -0.7356560900050957
+      ],
+      "whole_body_pose": "unknown",
+      "support": "unknown",
+      "feet": {
+        "left": {
+          "contact": null,
+          "load_n": null
+        },
+        "right": {
+          "contact": null,
+          "load_n": null
+        }
+      },
+      "detail": "双膝 >90° 仅为形态描述规则；未确定站/坐/卧、身体离地高度或接触对象。三维模型按关节角度显示，不表示世界中的支撑姿势"
+    },
+    "control_mode": {
+      "fsm": 0,
+      "sdk_label": "SDK ZeroTorque 对应状态 ID",
+      "active_capability_id": null,
+      "feedback_consistency": "matched",
+      "activity_verified": false,
+      "detail": "FSM 只表明服务回读的状态 ID；未取得具体能力执行中/完成的可信反馈。ZeroTorque ID 也不证明每个电机实际力矩为零"
+    },
+    "standing": {
+      "status": "unknown",
+      "already_standing": null,
+      "execution_allowed": false,
+      "title": "尚未证实已经站稳",
+      "selected_transition": null,
+      "current_findings": [
+        "双膝角度 160.54° / 159.07°；仅描述关节形态",
+        "官方 FSM 回读 0；状态编号不证明站稳或具体动作执行"
+      ],
+      "evidence": [
+        {
+          "id": "body",
+          "name": "身体观测",
+          "status": "partial",
+          "detail": "关节与 IMU 可读；世界姿势、传感器外参及地面关系未核定"
+        },
+        {
+          "id": "view",
+          "name": "现场观察",
+          "status": "partial",
+          "detail": "RGB 可读；未建立双脚、外部支撑和地面接触的可信实时验证器"
+        },
+        {
+          "id": "pose",
+          "name": "起始姿势与支撑对象",
+          "status": "unknown",
+          "detail": "需核实站/蹲/坐/卧、足底与座椅/吊带/人员等外部支撑，屈膝角度不唯一确定姿势"
+        },
+        {
+          "id": "load",
+          "name": "双脚接触与承重",
+          "status": "unknown",
+          "detail": "需匹配本机的接触与载荷传感器或经验证的估计器、单位/左右映射/质量与时效；不能由 tau_est 或四路零值替代"
+        },
+        {
+          "id": "balance",
+          "name": "站稳与重心关系",
+          "status": "unknown",
+          "detail": "需经验证的全身状态、支撑面、质心/动量与平衡裕量；允许误差、速度界限和持续时间均未核定"
+        },
+        {
+          "id": "controller",
+          "name": "官方平衡控制与健康",
+          "status": "unknown",
+          "detail": "CheckMode/FSM 一致只证明编号一致；需本机控制归属、驱动与电池健康、动作阶段及保护反馈"
+        },
+        {
+          "id": "transition",
+          "name": "官方转换和现场条件",
+          "status": "unknown",
+          "detail": "需匹配 23 DOF 本机固件的进入/执行/退出/失败恢复契约，以及现场地面、净空和防跌落保护"
+        }
+      ],
+      "slow_stand": {
+        "speed_parameter": null,
+        "duration_s": null,
+        "trajectory": null,
+        "firmware_support_verified": null,
+        "detail": "已核对的起身包装未公开起身时长/速度参数。SetSpeedMode 与 SetStandHeight 不作为已验证的起身减速控制；不生成低层关节插值，不用示例增益。"
+      },
+      "candidates": [
+        {
+          "method": "Squat2StandUp",
+          "sdk": "Python",
+          "fsm_id": 706,
+          "detail": "已确认蹲姿时的文档候选；与 StandUp2Squat 复用 706，不能当作幂等站起命令",
+          "firmware_applicability_verified": null,
+          "execution_allowed": false
+        },
+        {
+          "method": "StandUp2Squat",
+          "sdk": "Python",
+          "fsm_id": 706,
+          "detail": "已确认站姿时的文档候选；与 Squat2StandUp 复用 706",
+          "firmware_applicability_verified": null,
+          "execution_allowed": false
+        },
+        {
+          "method": "Lie2StandUp",
+          "sdk": "Python",
+          "fsm_id": 702,
+          "detail": "已确认卧姿时的文档候选；当前起始姿势未核实",
+          "firmware_applicability_verified": null,
+          "execution_allowed": false
+        },
+        {
+          "method": "Start",
+          "sdk": "Python",
+          "fsm_id": 500,
+          "detail": "官方行走状态入口；不是站稳确认、起身轨迹或安全担保",
+          "firmware_applicability_verified": null,
+          "execution_allowed": false
+        },
+        {
+          "method": "StandUp",
+          "sdk": "C++",
+          "fsm_id": 4,
+          "detail": "另一固定版本 C++ 包装为 4，与 Python 蹲站入口不同；不自动替换或试调用以判断兼容性",
+          "firmware_applicability_verified": null,
+          "execution_allowed": false
+        }
+      ],
+      "learning_steps": [
+        {
+          "name": "识别当前身体",
+          "detail": "结合关节、机体朝向、可见身体和接触对象，先区分站/蹲/坐/卧；不能区分时继续观察。"
+        },
+        {
+          "name": "辨认支撑与承重",
+          "detail": "确认双脚和其他支撑，观察负载如何分配；不把关节力矩当作脚底力。"
+        },
+        {
+          "name": "理解重心转移",
+          "detail": "类比人起身，先理解支撑面和重心迁移的关系；当前没有校准证据，不计算可执行重心目标。"
+        },
+        {
+          "name": "核定官方起身路径",
+          "detail": "依据已确认的起始姿势选择可研究的官方转换；本机适用性、过程与慢速能力未确认时不选择执行路线。"
+        },
+        {
+          "name": "确认站稳或继续观察",
+          "detail": "同时核验姿势、接触承重、平衡控制、速度/裕量和持续时间；长时间静止、画面稳定或模式编号单独不构成站稳证据。"
+        }
+      ],
+      "detail": "先辨认起始姿势和支撑，再核定适用的官方转换，最后核验承重与平衡；目前不选择起身路线，不生成轨迹或发送动作。"
+    },
+    "camera": {
+      "backend": "unitree",
+      "status": "live",
+      "error": null,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 1117,
+        "total_successes": 1117,
+        "total_timeouts": 0
+      },
+      "source": "unitree-videohub-468d0917a08b",
+      "sequence": 1117,
+      "age_ms": 142,
+      "request_started_at": 1792563632.3920088,
+      "received_at": 1792563632.4194236,
+      "width": 960,
+      "height": 540,
+      "source_width": 1920,
+      "source_height": 1080,
+      "request_ms": 27,
+      "timestamp_basis": "request_started_at",
+      "sensor_timestamp": null
+    }
+  },
+  "boundaries": {
+    "read_only": true,
+    "robot_actions": 0,
+    "mode_switches": 0,
+    "lease_requests": 0,
+    "official_processes_same_boot_pid_start_argv": true,
+    "quantumult_x_modified": false,
+    "standing_confirmed": null,
+    "slow_stand_trajectory_or_duration_verified": null,
+    "example_values_as_actual": false
+  },
+  "limits": [
+    "Finite RPC/camera test window cannot prove indefinite availability or motion safety.",
+    "FSM and CheckMode agreement is not proof of actual action execution or physical controller health.",
+    "No verified G1 left/right contact, foot load, world pose or balance margin.",
+    "No current motor calibration/configuration values inferred from examples or unrelated four-channel zero readings."
+  ]
+}

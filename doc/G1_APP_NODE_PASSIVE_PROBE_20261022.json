@@ -1,0 +1,27 @@
+{
+  "observed_at": 1792637674.919202,
+  "host": "<APP_REPORTED_IP>",
+  "read_only": true,
+  "websocket": {
+    "connected": true,
+    "application_messages_sent": 0,
+    "response_headers": {
+      "connection": "upgrade",
+      "upgrade": "websocket",
+      "sec-websocket-accept": "vAqy57fgC0mOoys/B6fSpz7/4fo=",
+      "date": "Thu, 22 Oct 2026 02:54:35 GMT"
+    },
+    "welcome": "none_within_3s"
+  },
+  "signaling": {
+    "http_status": 200,
+    "response_bytes": 816,
+    "sha256": "58de56299a411223c559b0ed96d7568bc937724702068992ccebcfd535aceaf7",
+    "field_types": {
+      "data1": "str",
+      "data2": "int"
+    },
+    "data2": 3,
+    "data1_length": 588
+  }
+}

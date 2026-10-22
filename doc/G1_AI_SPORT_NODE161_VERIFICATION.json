@@ -1,0 +1,223 @@
+{
+  "verified_at_utc": "2026-10-21T13:44:59.415334+00:00",
+  "release": "f1fe93f1017e",
+  "run_id": "4fcae0e4afd7",
+  "foundation_schema": 25,
+  "foundation_id": "3e671cdf03d98de1a0217de2fab6b083ae6e32c81110a67c5ad94497321fc8c4",
+  "actual_unknown_fields": 253,
+  "device_motion_firmware": null,
+  "exact_7301_predicate": null,
+  "balance_ready": null,
+  "execution_allowed": false,
+  "locked_mode_count": 9,
+  "selected_manual_branch": null,
+  "node_sampling_started_at_utc": "2026-10-21T13:33:41.039286+00:00",
+  "node_sampling_completed_at_utc": "2026-10-21T13:34:05.401627+00:00",
+  "paired_dds_queries": 10,
+  "raw_rtps_header_count": 255,
+  "observed_network_sender_ips": [
+    "192.168.123.161"
+  ],
+  "response_participant": {
+    "participant_key": "01102018-14ee-e682-8024-7c60000001c1",
+    "self_reported": {
+      "__Hostname": "Unitree",
+      "__Pid": "3396",
+      "__ProcessName": "humanoid"
+    },
+    "property_names": [
+      "__Hostname",
+      "__NetworkAddresses",
+      "__Pid",
+      "__ProcessName"
+    ],
+    "executable_verified": false,
+    "component_version": null,
+    "version_interface_verified": false,
+    "checked_at_utc": "2026-10-21T13:34:05.343292+00:00",
+    "known_ports": [
+      {
+        "port": 22,
+        "result": "ConnectionRefusedError",
+        "errno": 111,
+        "elapsed_ms": 0.33,
+        "application_bytes_sent": 0
+      },
+      {
+        "port": 1026,
+        "result": "ConnectionRefusedError",
+        "errno": 111,
+        "elapsed_ms": 0.17,
+        "application_bytes_sent": 0
+      }
+    ],
+    "ota_hosts": {
+      "default": "tcp://192.168.123.164:1026"
+    },
+    "peer_ota_queries": 0,
+    "limitation": "Port checks do not enumerate other services or prove the absence of another version interface."
+  },
+  "physical_board_and_executable_identity_verified": false,
+  "raw_query_codes": [
+    {
+      "service": "sport",
+      "api_id": 1,
+      "code": 0
+    },
+    {
+      "service": "sport",
+      "api_id": 7001,
+      "code": 0
+    },
+    {
+      "service": "sport",
+      "api_id": 7002,
+      "code": 0
+    },
+    {
+      "service": "sport",
+      "api_id": 7003,
+      "code": 7301
+    },
+    {
+      "service": "sport",
+      "api_id": 7004,
+      "code": 7301
+    },
+    {
+      "service": "sport",
+      "api_id": 7005,
+      "code": 7301
+    },
+    {
+      "service": "sport",
+      "api_id": 7006,
+      "code": 7301
+    },
+    {
+      "service": "motion_switcher",
+      "api_id": 1001,
+      "code": 0
+    },
+    {
+      "service": "robot_state",
+      "api_id": 1003,
+      "code": 0
+    },
+    {
+      "service": "robot_state",
+      "api_id": 1006,
+      "code": 3203
+    }
+  ],
+  "new_run_queries": 2,
+  "new_run_query_status_counts": {
+    "read_result": 1,
+    "read_unavailable": 1
+  },
+  "new_run_query_sdk_code_counts": {
+    "0": 1,
+    "7301": 1
+  },
+  "new_run_3104_count": 0,
+  "control_owner": null,
+  "manual_armed": false,
+  "navigation_status": "idle",
+  "console_global_read_only": false,
+  "console_manual_remote_enabled": true,
+  "robot_motion_writes_sent": 0,
+  "robot_mode_switches_sent": 0,
+  "robot_service_switches_sent": 0,
+  "robot_report_frequency_writes_sent": 0,
+  "robot_configuration_writes_sent": 0,
+  "robot_control_leases_requested": 0,
+  "peer_ota_queries": 0,
+  "ota_mutations": 0,
+  "quantumult_x_touched": false,
+  "official_services_restarted_by_agent": false,
+  "official_processes_unchanged_during_raw_sampling": true,
+  "official_processes_unchanged_across_entire_turn": false,
+  "predeployment_video_identity_change": {
+    "old_pid": 11061,
+    "fresh_pid": 16752,
+    "cause": null,
+    "first_deployment_guard_aborted_before_stopping_own_console": true,
+    "fresh_baseline_at_utc": "2026-10-21T13:39:37.937424+00:00",
+    "official_processes_unchanged_since_fresh_baseline": true
+  },
+  "manifest_files_verified": 483,
+  "all_release_sha256_match": true,
+  "python_tests": {
+    "command": ".venv/bin/python -m pytest tests -q",
+    "passed": 256
+  },
+  "node_tests": {
+    "cwd": "console/web",
+    "command": "node --test tests/*.test.mjs",
+    "passed": 7
+  },
+  "typescript_vite_build_passed": true,
+  "validation_basis": "Scoped Python and Node suites and build passed after source edits before deployment; GUI and runtime evidence captured after deployment. Documentation and verification summary added afterward; no source changes.",
+  "unscoped_root_pytest": {
+    "passed": false,
+    "stage": "collection",
+    "missing_modules": [
+      "tqdm",
+      "pandas"
+    ],
+    "scope": "Historical training/data scripts outside the console test directory; no packages installed."
+  },
+  "known_warnings": [
+    "Existing httpx deprecation warning",
+    "Existing BodyView chunk size warning",
+    "One historical malformed events.jsonl line preserved"
+  ],
+  "latest_state_at_utc": "2026-10-21T13:41:25.307664+00:00",
+  "body_joints": 23,
+  "fsm": 0,
+  "camera": {
+    "backend": "unitree",
+    "status": "live",
+    "error": null,
+    "diagnostics": {
+      "transport": "official_api_1001_isolated_polled",
+      "window_s": 60,
+      "attempts": 300,
+      "successes": 300,
+      "timeouts": 0,
+      "errors": 0,
+      "total_attempts": 335,
+      "total_successes": 335,
+      "total_timeouts": 0
+    },
+    "source": "unitree-videohub-dd5cd009adcc",
+    "sequence": 335,
+    "age_ms": 145,
+    "request_started_at": 1792590085.129005,
+    "received_at": 1792590085.1527386,
+    "width": 960,
+    "height": 540,
+    "source_width": 1920,
+    "source_height": 1080,
+    "request_ms": 24,
+    "timestamp_basis": "request_started_at",
+    "sensor_timestamp": null
+  },
+  "independent_stability_verified": false,
+  "foot_and_cabinet_loads": null,
+  "gui_screenshot": "doc/screenshots/g1-node161-read-audit-20261021.png",
+  "source_sha256": {
+    "scripts/audit_g1_sport_host.py": "8ff6f37f58757d56a493bc338af509c87d958e1d57edbe9752d6226ca6c054f4",
+    "scripts/g1_sport_evidence.py": "26c9ceb22beee2a7a0f3114fcc7881141b1fd4747aa4bbd4a554af7b94f5b35a",
+    "scripts/build_g1_motor_knowledge.py": "dbc3aa3880aa37ece870bafb92fbfe0805f1e3008e55e3ee24f13522e0612a71",
+    "tests/test_g1_sport_host.py": "941ac157ed36ff3936d5c900c0852781da217ecef8071df654cd8b1a5f180010",
+    "g1_console/assets/safety_evidence_sources/sport_host_20261021_v29.json": "a15ceb26af8612563d5ec8c36fb8b4fed29babc8ea67d29beaed89430fc1801d",
+    "g1_console/assets/g1_motion_control_review.json": "9ed1ffa5a46268a950cb6086df8907688643d53f9873bcc3aadbbe1c13498d02",
+    "g1_console/assets/g1_motor_knowledge.json": "0e547fe95012b426e58f0166b29be71a1cf5173db40b4232b643d011f8e19631",
+    "doc/G1_AI_SPORT_NODE161_PREDEPLOY.json": "49bcb192e64424e4daf14c0be3ba7734a7fa69d8a7b002daf764a86dcba363ee",
+    "doc/G1_AI_SPORT_NODE161_ORIN.json": "31c90b430ad9ba5473d99d07982c079fd67c6b51878ae39efa921223b9344955",
+    "doc/G1_AI_SPORT_NODE161_FINAL_STATE.json": "8e50937b48e8653f5b6f3966155a23de9927e280ffad28d7ff6b98c33388e22f",
+    "doc/G1_AI_SPORT_NODE161_READ_AUDIT.md": "4480c9f2496a5feb8de49020b8c7f8fea1e4f53bb7e7871efee4a08d2d8c15ca",
+    "doc/screenshots/g1-node161-read-audit-20261021.png": "681f127ab0f1d7a7c007fb0ad56dc2b4d3cf0e4cb48200fcdabbaf95b79c4f96"
+  }
+}

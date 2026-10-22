@@ -1,0 +1,968 @@
+{
+  "verified_at": "2026-10-21T00:14:20.419866+08:00",
+  "release_id": "093bd2650496",
+  "files_verified": 354,
+  "console_pid": 15430,
+  "official_video_pid_preserved": 2295,
+  "worker_pid": 8215,
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "xhigh",
+  "sampling_interval_s": 30,
+  "read_only": true,
+  "control_owner": null,
+  "navigation_status": "idle",
+  "command_accepted": 0,
+  "telemetry_samples_checked": 50,
+  "telemetry_age_ms_range": [
+    5,
+    54
+  ],
+  "joints": 23,
+  "camera_backend": "unitree",
+  "camera_source": "unitree-videohub-70e4eb60ca29",
+  "current_result": true,
+  "observations": [
+    {
+      "report": {
+        "summary": "室内瓷砖地面周边存在鞋类、设备及小型圆形物体；当前单帧与遥测不足以确认足部接触、平衡或通路安全，建议继续只读观察并人工核实。",
+        "scene_facts": [
+          {
+            "statement": "画面主体为室内浅色瓷砖地面，可见砖缝。",
+            "evidence": "image",
+            "confidence": "high"
+          },
+          {
+            "statement": "左侧深色垫面放有多件鞋类或外形相近的设备。",
+            "evidence": "image",
+            "confidence": "high"
+          },
+          {
+            "statement": "右侧地面有一个小型圆形金属外观物体。",
+            "evidence": "image",
+            "confidence": "medium"
+          },
+          {
+            "statement": "右上区域可见半透明容器和家具支腿。",
+            "evidence": "image",
+            "confidence": "high"
+          },
+          {
+            "statement": "画面底缘有机器人部件局部进入视野，但完整姿态不可见。",
+            "evidence": "image",
+            "confidence": "medium"
+          },
+          {
+            "statement": "相机状态为 live，本帧序号33、报告年龄43毫秒。",
+            "evidence": "telemetry",
+            "confidence": "high"
+          }
+        ],
+        "body_findings": [
+          {
+            "statement": "收到23个关节反馈，与硬件标注的23自由度一致。",
+            "evidence": "telemetry",
+            "confidence": "high"
+          },
+          {
+            "statement": "本次采样各关节速度绝对值不超过约0.031；仅能说明瞬时变化较小，不能证明静止或稳定。",
+            "evidence": "telemetry",
+            "confidence": "high"
+          },
+          {
+            "statement": "各关节 status=0、mode=1，但未提供数值语义，不能据此判断正常或故障。",
+            "evidence": "telemetry",
+            "confidence": "high"
+          },
+          {
+            "statement": "IMU 的 roll/pitch/yaw 约为0.135、-0.053、0.244弧度，角速度数值较小；不能证明脚接触或平衡稳定。",
+            "evidence": "telemetry",
+            "confidence": "high"
+          },
+          {
+            "statement": "关节温度读数约32–47，IMU温度读数80；缺少单位及厂商阈值，不能判定是否过热。",
+            "evidence": "telemetry",
+            "confidence": "high"
+          },
+          {
+            "statement": "硬件标注 hands=false，且未提供电池状态，不应规划抓取或推断续航。",
+            "evidence": "telemetry",
+            "confidence": "high"
+          }
+        ],
+        "uncertainties": [
+          "单目单帧无法确认物体尺度、距离、地面摩擦或承重。",
+          "机器人完整姿态、足部接触和稳定站立状态未知。",
+          "圆形物体的性质、距离及是否构成障碍未知。",
+          "mode、status、FSM及温度数值缺少对应语义和安全阈值。",
+          "无位姿、无扫描点且电池状态缺失，不能确认地图、定位、通路或可导航性。"
+        ],
+        "suggestions": [
+          {
+            "title": "继续多帧只读观察",
+            "rationale": "单帧不足以区分固定障碍、机器人部件和短时变化。",
+            "requirements": [
+              "获取连续同步图像",
+              "保持遥测时间对齐",
+              "不据此执行运动"
+            ],
+            "capability_ids": []
+          },
+          {
+            "title": "人工核实近场环境",
+            "rationale": "左侧杂物和右侧圆形物体可能影响活动范围，但距离未知。",
+            "requirements": [
+              "现场确认物体位置与地面状况",
+              "确认足部接触及机体支撑状态",
+              "确保人员可接近可靠的停止装置"
+            ],
+            "capability_ids": []
+          },
+          {
+            "title": "补齐状态与空间感知后再评估移动",
+            "rationale": "当前无深度、位姿、扫描和电池信息，也不清楚FSM语义。",
+            "requirements": [
+              "补充深度或扫描与定位",
+              "核实电池及FSM语义",
+              "验证停止机制",
+              "取得人工明确授权"
+            ],
+            "capability_ids": [
+              "get_fsm"
+            ]
+          }
+        ],
+        "change_summary": "首次观察，无先前报告可比较；本报告仅描述本次离散采样，不作连续视频变化判断。"
+      },
+      "evidence": {
+        "captured_at": 1792512774.767413,
+        "run_id": "d64ec94d6142",
+        "camera": {
+          "backend": "unitree",
+          "status": "live",
+          "error": null,
+          "source": "unitree-videohub-70e4eb60ca29",
+          "sequence": 33,
+          "age_ms": 43,
+          "request_started_at": 1792512774.7244987,
+          "received_at": 1792512774.7502918,
+          "width": 960,
+          "height": 540,
+          "source_width": 1920,
+          "source_height": 1080,
+          "request_ms": 26,
+          "timestamp_basis": "request_started_at",
+          "sensor_timestamp": null
+        },
+        "image_sha256": "cdcf6b682fa763563ec377d2915208ecc2c6101287f8429bfebc5b908f265595",
+        "telemetry_age_ms": 9,
+        "tick": 6219914,
+        "joints": 23
+      },
+      "model": "gpt-5.6-sol",
+      "completed_at": 1792512829.4415686,
+      "analysis_ms": 54672
+    },
+    {
+      "report": {
+        "summary": "室内瓷砖近场仍有鞋类、设备及小型圆形物体；机器人完整姿态、足部接触和通路安全均无法确认，暂宜继续只读观察与人工核实。",
+        "scene_facts": [
+          {
+            "statement": "画面主体为浅色瓷砖地面，可见砖缝。",
+            "evidence": "image",
+            "confidence": "high"
+          },
+          {
+            "statement": "左侧深色垫面上有多件鞋类或外形相近设备。",
+            "evidence": "image",
+            "confidence": "high"
+          },
+          {
+            "statement": "右侧地面有一个小型圆形金属外观物体。",
+            "evidence": "image",
+            "confidence": "medium"
+          },
+          {
+            "statement": "右上可见半透明容器及家具支腿。",
+            "evidence": "image",
+            "confidence": "high"
+          },
+          {
+            "statement": "画面底缘仅能看到机器人部件局部，完整姿态不可见。",
+            "evidence": "image",
+            "confidence": "medium"
+          },
+          {
+            "statement": "相机状态为live，本帧序号320、图像年龄216毫秒；遥测年龄4毫秒。",
+            "evidence": "telemetry",
+            "confidence": "high"
+          }
+        ],
+        "body_findings": [
+          {
+            "statement": "收到23个关节反馈，与硬件标注的23自由度一致。",
+            "evidence": "telemetry",
+            "confidence": "high"
+          },
+          {
+            "statement": "本次关节速度绝对值最高约0.029，仅表明采样瞬间变化较小，不证明静止或稳定。",
+            "evidence": "telemetry",
+            "confidence": "high"
+          },
+          {
+            "statement": "各关节status=0、mode=1，但缺少数值语义，不能据此判断正常或故障。",
+            "evidence": "telemetry",
+            "confidence": "high"
+          },
+          {
+            "statement": "IMU的roll、pitch、yaw约为0.134、-0.053、0.243弧度，角速度数值较小；不能证明足部接触或平衡稳定。",
+            "evidence": "telemetry",
+            "confidence": "high"
+          },
+          {
+            "statement": "关节温度读数为32–47，IMU温度读数为80；缺少单位和厂商阈值，不能判定是否过热。",
+            "evidence": "telemetry",
+            "confidence": "high"
+          },
+          {
+            "statement": "硬件标注hands=false，电池状态为空；不可规划抓取或推断续航。",
+            "evidence": "telemetry",
+            "confidence": "high"
+          }
+        ],
+        "uncertainties": [
+          "单帧RGB无法确认物体尺度、距离、深度、地面摩擦或承重。",
+          "机器人完整姿态、足部接触及支撑稳定性未知。",
+          "圆形物体是否位于潜在运动通路及是否构成障碍未知。",
+          "mode、status、FSM和温度读数缺少安全语义或阈值。",
+          "无位姿、无扫描点且无电池状态，不能确认定位、地图、完整通路或可导航性。"
+        ],
+        "suggestions": [
+          {
+            "title": "继续同步多帧观察",
+            "rationale": "当前仅是离散单帧，无法可靠判断障碍和机体状态变化。",
+            "requirements": [
+              "获取连续同步RGB与遥测",
+              "观察近场物体及机体部件变化",
+              "不据此执行运动"
+            ],
+            "capability_ids": []
+          },
+          {
+            "title": "人工核实近场与支撑",
+            "rationale": "鞋类、设备和圆形物体可能影响活动范围，但距离及接触状态未知。",
+            "requirements": [
+              "现场确认物体位置与地面状况",
+              "确认双脚接触和机体支撑状态",
+              "确认可靠停止手段可用"
+            ],
+            "capability_ids": []
+          },
+          {
+            "title": "补齐感知后再评估动作",
+            "rationale": "缺少深度、位姿、扫描、电池信息及FSM语义，尚不具备安全评估条件。",
+            "requirements": [
+              "补充深度或扫描与定位",
+              "读取并人工核实FSM语义",
+              "核实电池状态和停止机制",
+              "任何未来动作须取得人工明确授权"
+            ],
+            "capability_ids": [
+              "get_fsm"
+            ]
+          }
+        ],
+        "change_summary": "与先前离散报告相比，场景布局和IMU倾角近似，关节瞬时最大速度由约0.031降至约0.029；未确认有实质场景变化，不作连续视频判断。"
+      },
+      "evidence": {
+        "captured_at": 1792512832.5024812,
+        "run_id": "d64ec94d6142",
+        "camera": {
+          "backend": "unitree",
+          "status": "live",
+          "error": null,
+          "source": "unitree-videohub-70e4eb60ca29",
+          "sequence": 320,
+          "age_ms": 216,
+          "request_started_at": 1792512832.286202,
+          "received_at": 1792512832.3173707,
+          "width": 960,
+          "height": 540,
+          "source_width": 1920,
+          "source_height": 1080,
+          "request_ms": 31,
+          "timestamp_basis": "request_started_at",
+          "sensor_timestamp": null
+        },
+        "image_sha256": "540b1320b4fe5aac60ba174564211735e128c311c769cbcb694b97510dc9c89f",
+        "telemetry_age_ms": 4,
+        "tick": 6277657,
+        "joints": 23
+      },
+      "model": "gpt-5.6-sol",
+      "completed_at": 1792512859.8789113,
+      "analysis_ms": 27375
+    },
+    {
+      "report": {
+        "summary": "室内瓷砖近场仍有鞋类、设备和圆形小物体；完整机体、足部接触及安全通路不可确认，建议维持只读观察。",
+        "scene_facts": [
+          {
+            "statement": "画面主体为浅色瓷砖地面，可见多条砖缝。",
+            "evidence": "image",
+            "confidence": "high"
+          },
+          {
+            "statement": "左侧深色垫面上有鞋类和黑色设备状物。",
+            "evidence": "image",
+            "confidence": "high"
+          },
+          {
+            "statement": "右侧地面有一个圆形金属外观小物体。",
+            "evidence": "image",
+            "confidence": "medium"
+          },
+          {
+            "statement": "右上可见半透明容器和家具支腿。",
+            "evidence": "image",
+            "confidence": "high"
+          },
+          {
+            "statement": "底缘仅出现若干机体或设备局部，无法确认完整姿态。",
+            "evidence": "image",
+            "confidence": "medium"
+          },
+          {
+            "statement": "相机状态为live，本帧序号1269、图像年龄132毫秒；遥测年龄24毫秒。",
+            "evidence": "telemetry",
+            "confidence": "high"
+          }
+        ],
+        "body_findings": [
+          {
+            "statement": "收到23个关节反馈，与硬件标注的23自由度一致。",
+            "evidence": "telemetry",
+            "confidence": "high"
+          },
+          {
+            "statement": "关节速度绝对值最高约0.023，仅说明采样瞬间变化较小，不证明静止或稳定。",
+            "evidence": "telemetry",
+            "confidence": "high"
+          },
+          {
+            "statement": "各关节status=0、mode=1，但数值语义未提供，不能据此判定正常或故障。",
+            "evidence": "telemetry",
+            "confidence": "high"
+          },
+          {
+            "statement": "IMU横滚、俯仰、偏航约为0.135、-0.054、0.242弧度，角速度绝对值小于0.007；不证明足部接触或平衡稳定。",
+            "evidence": "telemetry",
+            "confidence": "high"
+          },
+          {
+            "statement": "关节温度读数为32–47，IMU温度读数为79；缺少单位及厂商阈值，不能判断是否过热。",
+            "evidence": "telemetry",
+            "confidence": "high"
+          },
+          {
+            "statement": "硬件标注hands=false且电池字段为空，不能规划抓取或推断电量。",
+            "evidence": "telemetry",
+            "confidence": "high"
+          }
+        ],
+        "uncertainties": [
+          "单帧RGB无法确认物体尺度、距离、深度、地面摩擦或承重。",
+          "机器人完整姿态、双脚接触和支撑稳定性未知。",
+          "近场物体是否侵入潜在运动通路未知。",
+          "mode、status、FSM及温度读数缺少安全语义或阈值。",
+          "无位姿和扫描点，不能确认定位、地图、完整通路或可导航性。"
+        ],
+        "suggestions": [
+          {
+            "title": "继续同步多帧观察",
+            "rationale": "离散单帧不足以可靠判断近场物体或机体的变化趋势。",
+            "requirements": [
+              "获取连续同步RGB与遥测",
+              "观察底缘部件和近场物体变化",
+              "保持只读，不执行运动"
+            ],
+            "capability_ids": []
+          },
+          {
+            "title": "人工核实现场与支撑",
+            "rationale": "近场杂物距离、地面状况及足部接触均未知。",
+            "requirements": [
+              "现场确认杂物距离与潜在通路",
+              "确认双脚接触和机体支撑状态",
+              "确认可靠停止手段"
+            ],
+            "capability_ids": []
+          },
+          {
+            "title": "补齐感知后再评估动作",
+            "rationale": "缺少深度、位姿、扫描、电池状态及FSM语义，当前不能完成动作安全评估。",
+            "requirements": [
+              "补充深度或扫描及定位",
+              "读取并人工核实FSM语义",
+              "核实电池状态与停止机制",
+              "任何未来动作须经人工明确授权"
+            ],
+            "capability_ids": [
+              "get_fsm"
+            ]
+          }
+        ],
+        "change_summary": "与先前离散采样相比，画面主要布局无明显变化；关节速度绝对值最高值由约0.026变为约0.023，IMU温度读数由80变为79。仅为离散采样比较，未确认连续趋势。"
+      },
+      "evidence": {
+        "captured_at": 1792513046.124086,
+        "run_id": "d64ec94d6142",
+        "camera": {
+          "backend": "unitree",
+          "status": "live",
+          "error": null,
+          "source": "unitree-videohub-70e4eb60ca29",
+          "sequence": 1269,
+          "age_ms": 132,
+          "request_started_at": 1792513045.9918292,
+          "received_at": 1792513046.0170238,
+          "width": 960,
+          "height": 540,
+          "source_width": 1920,
+          "source_height": 1080,
+          "request_ms": 25,
+          "timestamp_basis": "request_started_at",
+          "sensor_timestamp": null
+        },
+        "image_sha256": "aad9ea421ba2f0898f7682406e5843a0db1d14af4025b3fe91f9c4a5c371e153",
+        "telemetry_age_ms": 24,
+        "tick": 6491260,
+        "joints": 23
+      },
+      "model": "gpt-5.6-sol",
+      "completed_at": 1792513079.5679915,
+      "analysis_ms": 33441
+    },
+    {
+      "report": {
+        "summary": "近距地面视野内有多处杂物，前方中央局部看似空旷，但无法确认完整通路或机器人稳定状态；当前只宜继续观察与人工核实。",
+        "scene_facts": [
+          {
+            "statement": "画面为室内浅色瓷砖地面，视角明显朝下。",
+            "evidence": "image",
+            "confidence": "high"
+          },
+          {
+            "statement": "左侧近处有鞋类及其他物品，占据部分地面区域。",
+            "evidence": "image",
+            "confidence": "high"
+          },
+          {
+            "statement": "右侧有圆形金属状小物或地面构件，右上可见家具腿和容器。",
+            "evidence": "image",
+            "confidence": "medium"
+          },
+          {
+            "statement": "前方中央近距离区域未见明显大型障碍，但视野不足以证明通路完整。",
+            "evidence": "image",
+            "confidence": "medium"
+          },
+          {
+            "statement": "画面底部仅见机器人局部结构，足部接触与全身姿态不可见。",
+            "evidence": "image",
+            "confidence": "medium"
+          }
+        ],
+        "body_findings": [
+          {
+            "statement": "本批次提供23个关节反馈，关节速度绝对值均较小，最大约0.0394。",
+            "evidence": "telemetry",
+            "confidence": "high"
+          },
+          {
+            "statement": "IMU滚转、俯仰、偏航约为0.135、-0.053、0.250弧度，角速度数值较小。",
+            "evidence": "telemetry",
+            "confidence": "high"
+          },
+          {
+            "statement": "小倾角和低角速度不能证明足部接触、平衡稳定或不会摔倒。",
+            "evidence": "telemetry",
+            "confidence": "high"
+          },
+          {
+            "statement": "所有关节原始status为0、mode为1，但缺少语义映射，不能据此判定正常或故障。",
+            "evidence": "telemetry",
+            "confidence": "high"
+          },
+          {
+            "statement": "关节温度读数约32–47，IMU温度为80；缺少厂商阈值，不能判定是否异常。",
+            "evidence": "telemetry",
+            "confidence": "high"
+          },
+          {
+            "statement": "硬件反馈明确未安装手，且未提供电池状态。",
+            "evidence": "telemetry",
+            "confidence": "high"
+          }
+        ],
+        "uncertainties": [
+          "无深度、尺度和地面摩擦信息。",
+          "无位姿与扫描点，未建图且不可确认可导航通路。",
+          "无法确认机器人当前是站立、蹲坐还是受外部支撑。",
+          "无法确认圆形物体的高度、固定方式及碰撞风险。",
+          "FSM、mode_machine及关节模式数值缺少语义说明。"
+        ],
+        "suggestions": [
+          {
+            "title": "继续原地多帧观察",
+            "rationale": "单帧无法判断杂物、机器人姿态及稳定性是否变化。",
+            "requirements": [
+              "保持只读采样",
+              "获取覆盖足部与周边地面的更多视角",
+              "对齐后续图像与遥测时间戳"
+            ],
+            "capability_ids": []
+          },
+          {
+            "title": "人工核实并清理近场",
+            "rationale": "左侧杂物和右侧圆形物可能影响未来移动或肢体动作。",
+            "requirements": [
+              "人工确认机器人受支撑情况和双脚接触",
+              "人工确认物体是否固定及其真实高度",
+              "清出完整安全区域并给予明确授权"
+            ],
+            "capability_ids": []
+          },
+          {
+            "title": "满足条件后再评估移动",
+            "rationale": "当前缺少深度、定位、完整通路和平衡证据，SDK接口存在不代表此刻安全可执行。",
+            "requirements": [
+              "补充深度或可靠定位与扫描",
+              "读取并人工解释当前控制状态",
+              "确认急停与现场监护可用",
+              "获得人工移动授权"
+            ],
+            "capability_ids": [
+              "get_fsm",
+              "start",
+              "velocity",
+              "stop"
+            ]
+          }
+        ],
+        "change_summary": "首次观察，无先前报告可比较；本结论仅针对本次离散图像与同批次遥测。"
+      },
+      "evidence": {
+        "captured_at": 1792513334.6728876,
+        "run_id": "19fbbdd99e2b",
+        "camera": {
+          "backend": "unitree",
+          "status": "live",
+          "error": null,
+          "source": "unitree-videohub-67385f1b5020",
+          "sequence": 30,
+          "age_ms": 149,
+          "request_started_at": 1792513334.524231,
+          "received_at": 1792513334.5499234,
+          "width": 960,
+          "height": 540,
+          "source_width": 1920,
+          "source_height": 1080,
+          "request_ms": 26,
+          "timestamp_basis": "request_started_at",
+          "sensor_timestamp": null
+        },
+        "image_sha256": "95a3d74618fa1f139a1280f7c2c463e4222751b1235129fcdf85aa80020c252b",
+        "telemetry_age_ms": 16,
+        "tick": 6779816,
+        "joints": 23
+      },
+      "model": "gpt-5.6-sol",
+      "completed_at": 1792513365.0388317,
+      "analysis_ms": 30364
+    },
+    {
+      "report": {
+        "summary": "近距朝下视野中，左侧鞋物与右侧圆形物仍邻近机器人；中央局部未见大型障碍，但缺少深度、定位及足部视野，不能确认通路或稳定状态。",
+        "scene_facts": [
+          {
+            "statement": "画面为室内浅色瓷砖地面，视角明显朝下。",
+            "evidence": "image",
+            "confidence": "high"
+          },
+          {
+            "statement": "左侧近处有多双鞋及其他物品，占据部分地面。",
+            "evidence": "image",
+            "confidence": "high"
+          },
+          {
+            "statement": "右侧地面有圆形金属状物，右上可见家具腿和容器。",
+            "evidence": "image",
+            "confidence": "medium"
+          },
+          {
+            "statement": "中央近距离区域未见明显大型障碍，但不能据此确认完整通路。",
+            "evidence": "image",
+            "confidence": "medium"
+          },
+          {
+            "statement": "画面底部可见机器人局部结构，双脚及全身姿态不可见。",
+            "evidence": "image",
+            "confidence": "high"
+          }
+        ],
+        "body_findings": [
+          {
+            "statement": "本批次有23个关节反馈，关节速度绝对值最大约0.0429。",
+            "evidence": "telemetry",
+            "confidence": "high"
+          },
+          {
+            "statement": "IMU滚转、俯仰、偏航约为0.135、-0.053、0.251弧度，角速度绝对值最大约0.0096。",
+            "evidence": "telemetry",
+            "confidence": "high"
+          },
+          {
+            "statement": "小倾角与低角速度不能证明足部接触、平衡稳定或不会摔倒。",
+            "evidence": "telemetry",
+            "confidence": "high"
+          },
+          {
+            "statement": "所有关节原始status为0、mode为1；因缺少语义映射，不能判定正常或故障。",
+            "evidence": "telemetry",
+            "confidence": "high"
+          },
+          {
+            "statement": "关节温度读数为32–47，IMU温度为79；缺少厂商阈值，无法判定是否异常。",
+            "evidence": "telemetry",
+            "confidence": "high"
+          },
+          {
+            "statement": "硬件反馈明确未安装手，且未提供电池状态。",
+            "evidence": "telemetry",
+            "confidence": "high"
+          }
+        ],
+        "uncertainties": [
+          "无深度、尺度和地面摩擦信息。",
+          "无位姿和扫描点，不能确认已建图或存在可导航通路。",
+          "无法确认机器人姿态、双脚接触及是否受外部支撑。",
+          "无法确认右侧圆形物的高度、固定方式和碰撞风险。",
+          "FSM、mode_machine及关节模式数值缺少语义说明。"
+        ],
+        "suggestions": [
+          {
+            "title": "继续原地多帧观察",
+            "rationale": "单帧无法确认杂物、身体姿态及稳定性变化。",
+            "requirements": [
+              "保持只读采样",
+              "补充覆盖双脚与周边地面的视角",
+              "对齐图像和遥测时间戳"
+            ],
+            "capability_ids": []
+          },
+          {
+            "title": "人工核实近场与支撑",
+            "rationale": "左侧鞋物和右侧圆形物可能影响未来移动。",
+            "requirements": [
+              "人工确认双脚接触及身体支撑状态",
+              "确认圆形物是否固定及真实高度",
+              "清出完整安全区域"
+            ],
+            "capability_ids": []
+          },
+          {
+            "title": "满足条件后再评估移动",
+            "rationale": "SDK接口存在不代表当前安全可执行。",
+            "requirements": [
+              "补充深度或可靠定位与扫描",
+              "读取并人工解释控制状态",
+              "确认急停和现场监护可用",
+              "取得明确人工授权"
+            ],
+            "capability_ids": [
+              "get_fsm",
+              "start",
+              "velocity",
+              "stop"
+            ]
+          }
+        ],
+        "change_summary": "与先前离散报告相比，场景布局无明显变化；关节速度绝对值最大值由约0.0394变为0.0429，IMU温度由80变为79。这些离散差异不足以证明持续运动或趋势。"
+      },
+      "evidence": {
+        "captured_at": 1792513399.5305195,
+        "run_id": "19fbbdd99e2b",
+        "camera": {
+          "backend": "unitree",
+          "status": "live",
+          "error": null,
+          "source": "unitree-videohub-67385f1b5020",
+          "sequence": 308,
+          "age_ms": 240,
+          "request_started_at": 1792513399.290361,
+          "received_at": 1792513399.3261516,
+          "width": 960,
+          "height": 540,
+          "source_width": 1920,
+          "source_height": 1080,
+          "request_ms": 36,
+          "timestamp_basis": "request_started_at",
+          "sensor_timestamp": null
+        },
+        "image_sha256": "a2585abdf20382e52c9cabb60c1b7a1177ad5f386e69ce80aeed992f89051e4f",
+        "telemetry_age_ms": 25,
+        "tick": 6844657,
+        "joints": 23
+      },
+      "model": "gpt-5.6-sol",
+      "completed_at": 1792513426.8866563,
+      "analysis_ms": 27354
+    }
+  ],
+  "tests": {
+    "passed": 45,
+    "warning": "existing Starlette TestClient httpx deprecation"
+  },
+  "frontend_build": "TypeScript and Vite passed; existing Three.js chunk size warning",
+  "source_sha256": {
+    "scripts/observe_g1.py": "1050fddebaddda15f6bc294f905b5e23281a5f8846e146f1a8ecde1fea8774fe",
+    "g1_console/insight.py": "223067aad8030859631bcf5c6a7b5b8c88e23b6a2625ec2326376edb2aec8101",
+    "g1_console/app.py": "8989a268797aa4adbebb4a5a28e415ef6c4b64f14c6c9c5c55d45689192107c3",
+    "g1_console/service.py": "821d2811d0e14a5ceb407ace133d0dcee8535c92c89897a44dff9fae815e1b4e",
+    "console/web/src/ObservationView.tsx": "93ca73a5cbfc617f5bc85ba6ac4b555cc4e7841dead2acbb717ca52d84ba1cd2",
+    "console/web/src/CameraView.tsx": "e807bdb0ab643b4f35d9137ccfcd1ce6212231e6090a05583d49b4454325de41",
+    "console/web/src/App.tsx": "36bc49770c06d375d72e927ba06b116676467934c6dd6c1874cffd1473fe02e6",
+    "console/web/src/types.ts": "d29b8332f3663ea6aa7b6f873046a0ffd84ac073c823763bf9897d62ab117841",
+    "console/web/src/style.css": "a19293e4a9b26596dfbc1e59a56d9cf398fb8577e664e2dd1bfe1258990073ae"
+  },
+  "quantumult_x_changed": false,
+  "limits": [
+    "Discrete RGB samples, not continuous video understanding",
+    "No depth, localization, contact or safe-navigation proof",
+    "Model inference uses authenticated Codex service; no model training",
+    "No actions or command requests issued"
+  ],
+  "pause_verified": {
+    "enabled": false,
+    "status": "paused",
+    "current": false,
+    "completed_before": 2,
+    "completed_after": 2,
+    "window_s": 4
+  },
+  "transient_failure_observed": "Some later model requests returned provider 429. The initial worker automatically recovered for three further successful observations before another rate-limit burst. Final version classifies 429 explicitly and uses 60/120/240/300s backoff; existing camera SDK retry also recovered a temporary image timeout. Proxy and official robot services were unchanged.",
+  "resume_verified": {
+    "verified_at": "2026-10-21T00:18:12.292305+08:00",
+    "enabled": true,
+    "status": "error",
+    "current": true,
+    "completed": 5,
+    "sequence": 1269,
+    "report_age_s": 46.2,
+    "read_only": true,
+    "joints": 23,
+    "telemetry_age_ms": 4,
+    "camera_status": "live",
+    "camera_age_ms": 205,
+    "control_owner": null,
+    "navigation_status": "idle",
+    "command_accepted": 0
+  },
+  "initial_release_id": "2535a278ee5e",
+  "final_deployment": {
+    "verified_at": "2026-10-21T00:23:03.879445+08:00",
+    "release_id": "093bd2650496",
+    "files_verified": 354,
+    "console_pid": 15430,
+    "worker_pid": 8215,
+    "official_video_pid_preserved": 2295,
+    "read_only": true,
+    "camera_status": "live",
+    "camera_age_ms": 60,
+    "telemetry_age_ms": 30,
+    "joints": 23,
+    "observer_enabled": true,
+    "worker_online": true,
+    "status": "analyzing",
+    "error": null,
+    "completed": 1,
+    "current": true,
+    "control_owner": null,
+    "navigation_status": "idle",
+    "command_accepted": 0,
+    "observation": {
+      "report": {
+        "summary": "近距地面视野内有多处杂物，前方中央局部看似空旷，但无法确认完整通路或机器人稳定状态；当前只宜继续观察与人工核实。",
+        "scene_facts": [
+          {
+            "statement": "画面为室内浅色瓷砖地面，视角明显朝下。",
+            "evidence": "image",
+            "confidence": "high"
+          },
+          {
+            "statement": "左侧近处有鞋类及其他物品，占据部分地面区域。",
+            "evidence": "image",
+            "confidence": "high"
+          },
+          {
+            "statement": "右侧有圆形金属状小物或地面构件，右上可见家具腿和容器。",
+            "evidence": "image",
+            "confidence": "medium"
+          },
+          {
+            "statement": "前方中央近距离区域未见明显大型障碍，但视野不足以证明通路完整。",
+            "evidence": "image",
+            "confidence": "medium"
+          },
+          {
+            "statement": "画面底部仅见机器人局部结构，足部接触与全身姿态不可见。",
+            "evidence": "image",
+            "confidence": "medium"
+          }
+        ],
+        "body_findings": [
+          {
+            "statement": "本批次提供23个关节反馈，关节速度绝对值均较小，最大约0.0394。",
+            "evidence": "telemetry",
+            "confidence": "high"
+          },
+          {
+            "statement": "IMU滚转、俯仰、偏航约为0.135、-0.053、0.250弧度，角速度数值较小。",
+            "evidence": "telemetry",
+            "confidence": "high"
+          },
+          {
+            "statement": "小倾角和低角速度不能证明足部接触、平衡稳定或不会摔倒。",
+            "evidence": "telemetry",
+            "confidence": "high"
+          },
+          {
+            "statement": "所有关节原始status为0、mode为1，但缺少语义映射，不能据此判定正常或故障。",
+            "evidence": "telemetry",
+            "confidence": "high"
+          },
+          {
+            "statement": "关节温度读数约32–47，IMU温度为80；缺少厂商阈值，不能判定是否异常。",
+            "evidence": "telemetry",
+            "confidence": "high"
+          },
+          {
+            "statement": "硬件反馈明确未安装手，且未提供电池状态。",
+            "evidence": "telemetry",
+            "confidence": "high"
+          }
+        ],
+        "uncertainties": [
+          "无深度、尺度和地面摩擦信息。",
+          "无位姿与扫描点，未建图且不可确认可导航通路。",
+          "无法确认机器人当前是站立、蹲坐还是受外部支撑。",
+          "无法确认圆形物体的高度、固定方式及碰撞风险。",
+          "FSM、mode_machine及关节模式数值缺少语义说明。"
+        ],
+        "suggestions": [
+          {
+            "title": "继续原地多帧观察",
+            "rationale": "单帧无法判断杂物、机器人姿态及稳定性是否变化。",
+            "requirements": [
+              "保持只读采样",
+              "获取覆盖足部与周边地面的更多视角",
+              "对齐后续图像与遥测时间戳"
+            ],
+            "capability_ids": []
+          },
+          {
+            "title": "人工核实并清理近场",
+            "rationale": "左侧杂物和右侧圆形物可能影响未来移动或肢体动作。",
+            "requirements": [
+              "人工确认机器人受支撑情况和双脚接触",
+              "人工确认物体是否固定及其真实高度",
+              "清出完整安全区域并给予明确授权"
+            ],
+            "capability_ids": []
+          },
+          {
+            "title": "满足条件后再评估移动",
+            "rationale": "当前缺少深度、定位、完整通路和平衡证据，SDK接口存在不代表此刻安全可执行。",
+            "requirements": [
+              "补充深度或可靠定位与扫描",
+              "读取并人工解释当前控制状态",
+              "确认急停与现场监护可用",
+              "获得人工移动授权"
+            ],
+            "capability_ids": [
+              "get_fsm",
+              "start",
+              "velocity",
+              "stop"
+            ]
+          }
+        ],
+        "change_summary": "首次观察，无先前报告可比较；本结论仅针对本次离散图像与同批次遥测。"
+      },
+      "evidence": {
+        "captured_at": 1792513334.6728876,
+        "run_id": "19fbbdd99e2b",
+        "camera": {
+          "backend": "unitree",
+          "status": "live",
+          "error": null,
+          "source": "unitree-videohub-67385f1b5020",
+          "sequence": 30,
+          "age_ms": 149,
+          "request_started_at": 1792513334.524231,
+          "received_at": 1792513334.5499234,
+          "width": 960,
+          "height": 540,
+          "source_width": 1920,
+          "source_height": 1080,
+          "request_ms": 26,
+          "timestamp_basis": "request_started_at",
+          "sensor_timestamp": null
+        },
+        "image_sha256": "95a3d74618fa1f139a1280f7c2c463e4222751b1235129fcdf85aa80020c252b",
+        "telemetry_age_ms": 16,
+        "tick": 6779816,
+        "joints": 23
+      },
+      "model": "gpt-5.6-sol",
+      "completed_at": 1792513365.0388317,
+      "analysis_ms": 30364
+    }
+  },
+  "rate_limit_fix": {
+    "confirmed_provider_error": "429 Too Many Requests",
+    "retry_delay_seconds": [
+      60,
+      120,
+      240,
+      300
+    ],
+    "raw_provider_messages_retained": false,
+    "tests_passed": 45,
+    "account_usage_readback": "Ordinary usage allowed; reported overall usage was below the plan limit. No credits or resets were consumed.",
+    "stale_input_rejection_preserves_backoff": true
+  },
+  "final_runtime_check": {
+    "at": "2026-10-21T00:25:19.201398+08:00",
+    "worker_pid": 8215,
+    "model": "gpt-5.6-sol",
+    "enabled": true,
+    "worker_online": true,
+    "status": "waiting_input",
+    "error": "CODEX_RATE_LIMITED",
+    "completed_since_final_server_start": 2,
+    "current": false,
+    "report_age_s": 119.7,
+    "camera_status": "stale",
+    "camera_age_ms": 1214,
+    "telemetry_age_ms": 25,
+    "joints": 23,
+    "read_only": true,
+    "command_accepted": 0
+  },
+  "screenshots": [
+    "doc/screenshots/g1-observation-paused.png",
+    "doc/screenshots/g1-observation-suggestions.png",
+    "doc/screenshots/g1-autonomous-observation.png"
+  ]
+}

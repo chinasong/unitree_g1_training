@@ -1,0 +1,24 @@
+{
+  "received_at_utc": "2026-10-21T02:31:53.231920+00:00",
+  "clock_authority": "Mac 接收时间；Orin 日志时钟存在历史偏差，未改动时钟",
+  "sources": [
+    {
+      "path": "g1_console/assets/service_audit_sources/services_20261021.json",
+      "sha256": "0cabaf079d31ce7d49dba92494ca4a2abbca167ac45afb2b515922d346ce00da"
+    },
+    {
+      "path": "g1_console/assets/service_audit_sources/capability_reads_20261021.json",
+      "sha256": "db539c23896f3b7145c2879f05ac4b391b455c5d27b4816cfc5dc0c60869aa5e"
+    }
+  ],
+  "scripts": [
+    {
+      "path": "scripts/audit_g1_services.py",
+      "sha256": "ca513a94dd9b0ef3894a96f30c563b2ab3d4cfa8492a968b41018a251f07b046"
+    },
+    {
+      "path": "scripts/audit_g1_capability_reads.py",
+      "sha256": "df9d425c8365caf661cea386f985611b5d6544d56ec66bd33d8a765f4a962185"
+    }
+  ]
+}

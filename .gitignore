@@ -75,3 +75,16 @@ Thumbs.db
 # External dependencies (should be installed separately)
 externals/
 
+# Body console local runtime/build state
+node_modules
+*.tsbuildinfo
+.g1-console/
+.g1-deploy/
+.g1-observer/
+.pytest_cache/
+.ruff_cache/
+
+
+# Codex task worktrees and run logs (scripts/dev/codex_task.py)
+.worktrees/
+.codex-runs/

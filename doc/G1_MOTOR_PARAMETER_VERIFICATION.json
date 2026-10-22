@@ -1,0 +1,184 @@
+{
+  "verified_at": "2026-10-21T00:55:49.136512+08:00",
+  "scope": "G1 EDU 23 DOF / no hands / Orin; official motor parameter evidence and read-only configuration audit",
+  "deployment": {
+    "host": "<ORIN_IP>",
+    "release_id": "ea95f361d4f2",
+    "files_verified": 362,
+    "console_pid": 17746,
+    "read_only": true,
+    "camera_backend": "unitree",
+    "official_video_pid": 2295,
+    "official_video_command": "/unitree/module/video_hub_pc4/videohub_pc4",
+    "official_video_process_untouched": true
+  },
+  "foundation": {
+    "schema_version": 2,
+    "foundation_id": "ad2714e34c1967d89ed534eace4988a46083830b1ed533c4b4fc7c18e84aedd8",
+    "matches_local_asset": true,
+    "motors": 23,
+    "documented_hardware": {
+      "mode_machine": 4,
+      "name": "g1_23dof_rev_1_0",
+      "dof": 23,
+      "source": "variants",
+      "model_source": "variant_urdf",
+      "hip_gear_ratios": {
+        "pitch": 14.3,
+        "roll": 22.5
+      },
+      "model_total_mass_kg": 32.10685728000001,
+      "meaning": "官方机型表定义；仅当新鲜机型代码和 23 关节配置匹配时适用，不代表逐电机序号或标定已核验"
+    },
+    "temperature_channels": [
+      {
+        "index": 0,
+        "component": "casing",
+        "label": "外壳",
+        "source": "terminations",
+        "sdk_helper_default_c": 85.0
+      },
+      {
+        "index": 1,
+        "component": "winding",
+        "label": "绕组",
+        "source": "terminations",
+        "sdk_helper_default_c": 120.0
+      }
+    ],
+    "all_actual_config_fields_null": true,
+    "new_official_sources": {
+      "variants": {
+        "path": "g1_console/assets/official_motor_sources/variants.md",
+        "commit": "5994d4faef0a9cadd3287f8de0199a67eeb2a259",
+        "sha256": "0f3d66629ca904b3d01d8b20186b26d17cca513d7217f66649dc68523aa94f43",
+        "url": "https://github.com/unitreerobotics/unitree_ros/blob/5994d4faef0a9cadd3287f8de0199a67eeb2a259/robots/g1_description/README.md"
+      },
+      "variant_urdf": {
+        "path": "g1_console/assets/official_motor_sources/variant_urdf.urdf",
+        "commit": "5994d4faef0a9cadd3287f8de0199a67eeb2a259",
+        "sha256": "7a16cc8fc1cd053ba8ee7b03057585959336c9aee2bad720bb4d2fa980034efb",
+        "url": "https://github.com/unitreerobotics/unitree_ros/blob/5994d4faef0a9cadd3287f8de0199a67eeb2a259/robots/g1_description/g1_23dof_rev_1_0.urdf"
+      },
+      "terminations": {
+        "path": "g1_console/assets/official_motor_sources/terminations.hpp",
+        "commit": "d1abf001220d3e5f59e00a0c4aaa595e00089a4a",
+        "sha256": "ab5ea5b76d3cccef8c6a06ddd28cd163d76007bcc42305a5aed666f6884634f9",
+        "url": "https://github.com/unitreerobotics/unitree_sdk2/blob/d1abf001220d3e5f59e00a0c4aaa595e00089a4a/include/unitree/robot/g1/common/terminations.hpp"
+      },
+      "motor_catalog": {
+        "path": "g1_console/assets/official_motor_sources/motor_catalog.md",
+        "commit": "5994d4faef0a9cadd3287f8de0199a67eeb2a259",
+        "sha256": "dfd34cffa75519f2ca4247e374d90b4004c7226bf0277345451ed49a4e94fdaf",
+        "url": "https://github.com/unitreerobotics/unitree_ros/blob/5994d4faef0a9cadd3287f8de0199a67eeb2a259/robots/g1_description/motor_info.md"
+      }
+    },
+    "rejected_inferences": [
+      {
+        "source": "motor_catalog",
+        "reason": "通用电机表未逐项绑定 mode_machine=4，且髋俯仰减速比与本版本不一致；不据此填写本机电机型号或额定力矩"
+      },
+      {
+        "source": "variant_urdf",
+        "reason": "对应机型 URDF effort 和速度仍是模型限值，不是实机连续/峰值规格或固件限制"
+      },
+      {
+        "source": "terminations",
+        "reason": "辅助函数默认阈值不是从实机读取的热保护配置"
+      }
+    ]
+  },
+  "state": {
+    "at": 1792515280.4427335,
+    "run_id": "c02cbe21c334",
+    "mode": "robot",
+    "connected": true,
+    "read_only": true,
+    "telemetry_age_ms": 3,
+    "control_owner": null,
+    "mode_machine": 4,
+    "mode_pr": 0,
+    "joints": 23,
+    "hardware_variant": {
+      "name": "官方机型文档适用性",
+      "status": "matched",
+      "detail": "官方表对应 g1_23dof_rev_1_0；文档髋俯仰/侧摆减速比 14.3 / 22.5；未逐电机标定核验",
+      "source": "https://github.com/unitreerobotics/unitree_ros/blob/5994d4faef0a9cadd3287f8de0199a67eeb2a259/robots/g1_description/README.md"
+    },
+    "health": {
+      "name": "电机健康结论",
+      "status": "unknown",
+      "detail": "保留 mode / motorstate 原始值，尚无本固件故障位表与热阈值",
+      "source": "HG MotorState IDL 仅提供字段类型"
+    },
+    "navigation": "idle",
+    "camera": {
+      "backend": "unitree",
+      "status": "live",
+      "error": null,
+      "source": "unitree-videohub-2ca2a2b6c700",
+      "sequence": 142,
+      "age_ms": 224,
+      "request_started_at": 1792515280.2190297,
+      "received_at": 1792515280.2744412,
+      "width": 960,
+      "height": 540,
+      "source_width": 1920,
+      "source_height": 1080,
+      "request_ms": 55,
+      "timestamp_basis": "request_started_at",
+      "sensor_timestamp": null
+    },
+    "execution_allowed": false,
+    "all_capabilities_execution_denied": true,
+    "all_firmware_actions_execution_denied": true
+  },
+  "orin_audit": {
+    "asset": "g1_console/assets/g1_device_parameter_audit.json",
+    "sha256": "f12fdb3acaf1fa58b744c5e99723fee0b51e9e79d8395d5f0c55be296a08cf23",
+    "meaning": "Timestamped historical evidence of inspected paths only; no claim that hidden configuration or other boards were exhausted"
+  },
+  "codex_observer": {
+    "previous_pid": 11430,
+    "new_pid": 15046,
+    "updated_prompt_loaded": true,
+    "enabled": true,
+    "worker_online": true,
+    "status": "analyzing",
+    "error": null,
+    "completed": 0,
+    "live_new_foundation_report_verified": false,
+    "note": "Every capture includes the persistent foundation and applicability assessment. No successful AI report for this release is claimed; only input wiring, deterministic state interpretation, and worker restart are verified."
+  },
+  "verification": {
+    "pytest_passed": 58,
+    "pytest_command": "CYCLONEDDS_HOME=\"$PWD/.venv/opt/cyclonedds\" .venv/bin/python -m pytest tests/test_g1_console.py tests/test_g1_camera.py tests/test_g1_insight.py tests/test_g1_foundation.py -q",
+    "frontend_build": "npm run build passed",
+    "browser_verified": [
+      "persistent foundation v2 and new foundation ID",
+      "mode 4 / 23 joint applicability matched",
+      "selected left hip roll documented 22.5:1 and corresponding URDF 139 Nm / 20 rad/s",
+      "legacy RL Gym 88 Nm retained separately",
+      "actual device gains, identity, calibration and thermal limits unknown",
+      "SDK casing/winding temperature semantics",
+      "motion controls disabled"
+    ],
+    "screenshot": "doc/screenshots/g1-motor-parameter-audit.png",
+    "diff_check": "Only existing README.md:183 trailing whitespace; no new tracked diff whitespace errors"
+  },
+  "constraints": {
+    "robot_motion_commands_sent": false,
+    "lowcmd_published": false,
+    "control_acquired": false,
+    "robot_mode_changed": false,
+    "official_control_or_video_process_restarted": false,
+    "quantumult_x_modified": false,
+    "system_network_modified": false
+  },
+  "unverified": [
+    "serial-specific motor hardware and configuration",
+    "firmware thermal thresholds, gain values and calibration",
+    "configuration on other control boards or private binaries",
+    "successful AI report using this new foundation release"
+  ]
+}

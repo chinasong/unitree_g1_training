@@ -1,0 +1,343 @@
+{
+  "schema_version": 1,
+  "current": false,
+  "execution_allowed": false,
+  "robot_action_writes": 0,
+  "robot_lease_requests": 0,
+  "probe": {
+    "release": "56aa09516024",
+    "boot_id": "aed898cb-acfd-44a2-8e9c-50f1f00269aa",
+    "reads": [
+      {
+        "method": "motion_switcher.GetSilent",
+        "api": 1005,
+        "parameter": "",
+        "code": 0,
+        "request_ms": 3,
+        "at": "2026-10-22T04:17:25.892942+00:00",
+        "data": {
+          "silent": false
+        },
+        "schema_valid": true
+      },
+      {
+        "method": "motion_switcher.GetSilent",
+        "api": 1005,
+        "parameter": "",
+        "code": 0,
+        "request_ms": 2,
+        "at": "2026-10-22T04:17:26.394962+00:00",
+        "data": {
+          "silent": false
+        },
+        "schema_valid": true
+      },
+      {
+        "method": "motion_switcher.GetSilent",
+        "api": 1005,
+        "parameter": "",
+        "code": 0,
+        "request_ms": 2,
+        "at": "2026-10-22T04:17:26.897624+00:00",
+        "data": {
+          "silent": false
+        },
+        "schema_valid": true
+      },
+      {
+        "method": "fsm_id",
+        "code": 0,
+        "data": {
+          "data": 0
+        },
+        "request_ms": 1,
+        "at": "2026-10-22T04:17:28.410193+00:00"
+      },
+      {
+        "method": "fsm_mode",
+        "code": 0,
+        "data": {
+          "data": 0
+        },
+        "request_ms": 1,
+        "at": "2026-10-22T04:17:28.411000+00:00"
+      },
+      {
+        "method": "motion_mode",
+        "code": 0,
+        "data": {
+          "form": "0",
+          "name": "ai"
+        },
+        "request_ms": 10,
+        "at": "2026-10-22T04:17:28.420725+00:00"
+      },
+      {
+        "method": "get_balance",
+        "code": 7301,
+        "data": null,
+        "request_ms": 1,
+        "at": "2026-10-22T04:17:28.421469+00:00"
+      },
+      {
+        "method": "get_swing_height",
+        "code": 7301,
+        "data": null,
+        "request_ms": 1,
+        "at": "2026-10-22T04:17:28.422208+00:00"
+      },
+      {
+        "method": "get_stand_height",
+        "code": 7301,
+        "data": null,
+        "request_ms": 1,
+        "at": "2026-10-22T04:17:28.422848+00:00"
+      },
+      {
+        "method": "get_phase",
+        "code": 7301,
+        "data": null,
+        "request_ms": 1,
+        "at": "2026-10-22T04:17:28.423496+00:00"
+      },
+      {
+        "method": "get_versions",
+        "code": 3203,
+        "data": null,
+        "request_ms": 1,
+        "at": "2026-10-22T04:17:28.424347+00:00"
+      },
+      {
+        "method": "get_services",
+        "code": 0,
+        "data": {
+          "data": [
+            {
+              "name": "ai_sport",
+              "status": 0,
+              "protect": 0
+            },
+            {
+              "name": "audio_player_service",
+              "status": 0,
+              "protect": 0
+            },
+            {
+              "name": "auto_test_arm",
+              "status": 1,
+              "protect": 0
+            },
+            {
+              "name": "auto_test_low",
+              "status": 1,
+              "protect": 0
+            },
+            {
+              "name": "bashrunner",
+              "status": 0,
+              "protect": 0
+            },
+            {
+              "name": "basic_service",
+              "status": 0,
+              "protect": 1
+            },
+            {
+              "name": "battery_guard",
+              "status": 0,
+              "protect": 0
+            },
+            {
+              "name": "chat_go",
+              "status": 0,
+              "protect": 0
+            },
+            {
+              "name": "dex3_service_l",
+              "status": 0,
+              "protect": 0
+            },
+            {
+              "name": "dex3_service_r",
+              "status": 0,
+              "protect": 0
+            },
+            {
+              "name": "emergency_stop",
+              "status": 0,
+              "protect": 0
+            },
+            {
+              "name": "g1_arm_example",
+              "status": 0,
+              "protect": 0
+            },
+            {
+              "name": "lidar_driver",
+              "status": 1,
+              "protect": 0
+            },
+            {
+              "name": "log_system",
+              "status": 0,
+              "protect": 0
+            },
+            {
+              "name": "motion_switcher",
+              "status": 0,
+              "protect": 0
+            },
+            {
+              "name": "net_switcher",
+              "status": 0,
+              "protect": 0
+            },
+            {
+              "name": "ota_box",
+              "status": 1,
+              "protect": 0
+            },
+            {
+              "name": "ota_pipe",
+              "status": 0,
+              "protect": 0
+            },
+            {
+              "name": "robot_state",
+              "status": 0,
+              "protect": 1
+            },
+            {
+              "name": "robot_type_service",
+              "status": 0,
+              "protect": 0
+            },
+            {
+              "name": "state_estimator",
+              "status": 0,
+              "protect": 0
+            },
+            {
+              "name": "unistore",
+              "status": 0,
+              "protect": 0
+            },
+            {
+              "name": "unitree_slam",
+              "status": 1,
+              "protect": 0
+            },
+            {
+              "name": "video_hub_pc4",
+              "status": 0,
+              "protect": 0
+            },
+            {
+              "name": "vui_service",
+              "status": 0,
+              "protect": 0
+            },
+            {
+              "name": "webrtc_bridge",
+              "status": 0,
+              "protect": 1
+            },
+            {
+              "name": "webrtc_multicast_responder",
+              "status": 0,
+              "protect": 0
+            },
+            {
+              "name": "webrtc_signal_server",
+              "status": 0,
+              "protect": 1
+            }
+          ]
+        },
+        "request_ms": 3,
+        "at": "2026-10-22T04:17:28.427430+00:00"
+      }
+    ],
+    "robot_action_writes": 0,
+    "robot_lease_requests": 0
+  },
+  "passive_version_capture": {
+    "started_at": "2026-10-22T04:12:55.107675+00:00",
+    "completed_at": "2026-10-22T04:14:55.127033+00:00",
+    "release": "56aa09516024",
+    "boot_id": "aed898cb-acfd-44a2-8e9c-50f1f00269aa",
+    "rows": [],
+    "publications": {
+      "0110ddea-a7e8-98c6-7835-254e00000203": {
+        "participant": "0110ddea-a7e8-98c6-7835-254e000001c1",
+        "topic": "rt/log_system_outbound",
+        "type": "std_msgs::msg::dds_::String_",
+        "handle": 3092318887924468121,
+        "qos": "Qos(Policy.DataRepresentation(use_cdrv0_representation=True, use_xcdrv2_representation=True), Policy.Deadline(deadline=9223372036854775807), Policy.DestinationOrder.ByReceptionTimestamp, Policy.Durability.Volatile, Policy.DurabilityService(cleanup_delay=0, history=Policy.History.KeepLast(depth=1), max_samples=-1, max_instances=-1, max_samples_per_instance=-1), Policy.History.KeepLast(depth=1), Policy.IgnoreLocal.Nothing, Policy.LatencyBudget(budget=0), Policy.Lifespan(lifespan=9223372036854775807), Policy.Liveliness.Automatic(lease_duration=9223372036854775807), Policy.Ownership.Shared, Policy.OwnershipStrength(strength=0), Policy.PresentationAccessScope.Instance(coherent_access=False, ordered_access=False), Policy.Reliability.Reliable(max_blocking_time=100000000), Policy.ResourceLimits(max_samples=-1, max_instances=-1, max_samples_per_instance=-1), Policy.TransportPriority(priority=0), Policy.WriterDataLifecycle(autodispose=True))"
+      },
+      "0110f79d-eb98-80fc-6dea-face00000c03": {
+        "participant": "0110f79d-eb98-80fc-6dea-face000001c1",
+        "topic": "rt/servicestate",
+        "type": "std_msgs::msg::dds_::String_",
+        "handle": 12714482064017734014,
+        "qos": "Qos(Policy.DataRepresentation(use_cdrv0_representation=True, use_xcdrv2_representation=True), Policy.Deadline(deadline=9223372036854775807), Policy.DestinationOrder.ByReceptionTimestamp, Policy.Durability.Volatile, Policy.DurabilityService(cleanup_delay=0, history=Policy.History.KeepLast(depth=1), max_samples=-1, max_instances=-1, max_samples_per_instance=-1), Policy.History.KeepLast(depth=1), Policy.IgnoreLocal.Nothing, Policy.LatencyBudget(budget=0), Policy.Lifespan(lifespan=9223372036854775807), Policy.Liveliness.Automatic(lease_duration=9223372036854775807), Policy.Ownership.Shared, Policy.OwnershipStrength(strength=0), Policy.PresentationAccessScope.Instance(coherent_access=False, ordered_access=False), Policy.Reliability.Reliable(max_blocking_time=100000000), Policy.ResourceLimits(max_samples=-1, max_instances=-1, max_samples_per_instance=-1), Policy.TransportPriority(priority=0), Policy.WriterDataLifecycle(autodispose=True))"
+      },
+      "0110f79d-eb98-80fc-6dea-face00000e03": {
+        "participant": "0110f79d-eb98-80fc-6dea-face000001c1",
+        "topic": "rt/multiplestate",
+        "type": "std_msgs::msg::dds_::String_",
+        "handle": 9881372708529542483,
+        "qos": "Qos(Policy.DataRepresentation(use_cdrv0_representation=True, use_xcdrv2_representation=True), Policy.Deadline(deadline=9223372036854775807), Policy.DestinationOrder.ByReceptionTimestamp, Policy.Durability.Volatile, Policy.DurabilityService(cleanup_delay=0, history=Policy.History.KeepLast(depth=1), max_samples=-1, max_instances=-1, max_samples_per_instance=-1), Policy.History.KeepLast(depth=1), Policy.IgnoreLocal.Nothing, Policy.LatencyBudget(budget=0), Policy.Lifespan(lifespan=9223372036854775807), Policy.Liveliness.Automatic(lease_duration=9223372036854775807), Policy.Ownership.Shared, Policy.OwnershipStrength(strength=0), Policy.PresentationAccessScope.Instance(coherent_access=False, ordered_access=False), Policy.Reliability.Reliable(max_blocking_time=100000000), Policy.ResourceLimits(max_samples=-1, max_instances=-1, max_samples_per_instance=-1), Policy.TransportPriority(priority=0), Policy.WriterDataLifecycle(autodispose=True))"
+      }
+    },
+    "participants": {
+      "0110ddea-a7e8-98c6-7835-254e00000203": {
+        "__Hostname": "Unitree",
+        "__Pid": "2989",
+        "__ProcessName": "LogStreamService"
+      },
+      "0110f79d-eb98-80fc-6dea-face00000c03": {
+        "__Hostname": "Unitree",
+        "__Pid": "3113",
+        "__ProcessName": "robot_state_service"
+      },
+      "0110f79d-eb98-80fc-6dea-face00000e03": {
+        "__Hostname": "Unitree",
+        "__Pid": "3113",
+        "__ProcessName": "robot_state_service"
+      }
+    },
+    "robot_command_writes": 0,
+    "robot_lease_requests": 0,
+    "rpc_calls": 0
+  },
+  "interpretation": {
+    "silent": "三次官方 GetSilent 为 false；同一只读采样期间 LocoState 查询为 7301，不能归因于 silent 当前开启；不证明动作控制权。",
+    "7301": "官方名称 LocoStateNotAvailable；服务端具体状态与就绪判定未公开，未通过动作试探。",
+    "3203": "服务端 API_NOT_IMPL；GetPkgVersion 未实现，非超时，不填默认固件。",
+    "version": "120 秒持续订阅未收到帧；发现 Volatile 发布端不等于收到当前构建版本。",
+    "authority": "官方 G1 LocoClient 和通用 MotionSwitcherClient 初始化 enableLease=False；窗口 mutex 不等于机器人控制权，未请求 SDK 租约。"
+  },
+  "official_contracts": [
+    {
+      "path": "externals/unitree_sdk2_python/unitree_sdk2py/g1/loco/g1_loco_client.py",
+      "meaning": "enableLease=False; fixed API mappings",
+      "sha256": "5fbc07b30994676cd2f7994a2389b24e9b51e2c13dfde7e565bfd77898300ce2"
+    },
+    {
+      "path": "externals/unitree_sdk2_python/unitree_sdk2py/comm/motion_switcher/motion_switcher_api.py",
+      "meaning": "GetSilent=1005",
+      "sha256": "933210a39b46f9303de1991b5647b5780845886d94d491604de0444caaa9c60c"
+    },
+    {
+      "path": "externals/unitree_sdk2_python/unitree_sdk2py/comm/motion_switcher/motion_switcher_client.py",
+      "meaning": "enableLease=False",
+      "sha256": "133d78f6619f6e32d971b40020868618f10db0fd191731085a4b08615448b195"
+    },
+    {
+      "path": ".g1-deploy/research/opaque-20261021/libunitree_sdk2.a",
+      "meaning": "官方机载 SDK 静态库 B2 GetSilent(bool&) 的反汇编：API1005，空参数，成功后解析 silent；本机 G1 按同一只读格式实际成功三次",
+      "sha256": "a084cc0087b6dc1b6361f874aabed8bd525f0574b3b2228f91b4b512e1bf035e"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "sources": [
+    {
+      "path": "g1_console/assets/service_audit_sources/package_cache_inventory_20261021.json",
+      "sha256": "88ee07979a9eb881ea106fd3f666380e08fa28cd1042c9e26025f246d7971d52"
+    },
+    {
+      "path": "g1_console/assets/service_audit_sources/package_cache_review_20261021.json",
+      "sha256": "970a2824ad9d8fb7d0abefa2e2ae639b4096acd016ed73753a0d71cd1012a7c3"
+    }
+  ],
+  "scripts": [
+    {
+      "path": "scripts/audit_g1_package_cache.py",
+      "sha256": "067c16acc75c5edecfb337c8dbade0bcb21332760d5b3889d9f67db9121a9588"
+    },
+    {
+      "path": "scripts/analyze_g1_package_cache.py",
+      "sha256": "b144ebe247e725a4576241ffa60a329f7ca0855e907c8107efe2da751e3e82ae"
+    }
+  ]
+}

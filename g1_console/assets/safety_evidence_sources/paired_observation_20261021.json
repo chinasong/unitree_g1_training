@@ -1,0 +1,173 @@
+{
+  "current": false,
+  "mac_received_at": 1792556832.459405,
+  "image_sha256": "6859e0f520a57c6c4f7460841138174e6008343c29c7e47a869d77b82e44f4b2",
+  "camera": {
+    "backend": "unitree",
+    "status": "live",
+    "error": null,
+    "source": "unitree-videohub-dc9609b107f3",
+    "sequence": 408,
+    "age_ms": 272,
+    "request_started_at": 1792556832.2264674,
+    "received_at": 1792556832.2891986,
+    "width": 960,
+    "height": 540,
+    "source_width": 1920,
+    "source_height": 1080,
+    "request_ms": 63,
+    "timestamp_basis": "request_started_at",
+    "sensor_timestamp": null
+  },
+  "body_run": "1e3c534df0ca",
+  "body_received_at": 1792556832.5278826,
+  "body_tick": 10124696,
+  "body": {
+    "schema_version": 1,
+    "current": true,
+    "evidence_mode": "robot",
+    "control_mode": {
+      "fsm": 0,
+      "sdk_label": "SDK ZeroTorque 对应状态 ID",
+      "active_capability_id": null,
+      "activity_verified": false,
+      "detail": "FSM 只表明服务回读的状态 ID；未取得具体能力执行中/完成的可信反馈。ZeroTorque ID 也不证明每个电机实际力矩为零"
+    },
+    "posture": {
+      "description": "双膝显著屈曲",
+      "knee_deg": [
+        161.02881307978743,
+        160.01416115782536
+      ],
+      "imu_rpy_deg": [
+        7.8356544875411585,
+        -3.458052419460936,
+        -2.518058520551921
+      ],
+      "whole_body_pose": "unknown",
+      "support": "unknown",
+      "detail": "双膝 >90° 仅为形态描述规则；未确定站/坐/卧、身体离地高度或接触对象。三维模型按关节角度显示，不表示世界中的支撑姿势"
+    },
+    "observation_window": {
+      "samples": 225,
+      "seconds": 11.98,
+      "max_abs_dq_rad_s": 0.054853204637765884,
+      "max_joint_span_deg": 0.011672793291551792,
+      "certified_safe": false,
+      "learned_safe_range": null,
+      "detail": "短时被动观察，只描述已观测变化；不把未摔倒样本、最小/最大角度或零速度学习为安全边界"
+    },
+    "safety": {
+      "status": "unverified",
+      "execution_allowed": false,
+      "fall_free_guarantee": false,
+      "validated_action_envelopes": [],
+      "checks": [
+        {
+          "id": "real_feedback",
+          "name": "真实身体反馈",
+          "status": "matched",
+          "detail": "23 个关节位置、速度为新鲜实机反馈",
+          "source": "rt/lowstate + CRC / tick / 时效检查"
+        },
+        {
+          "id": "walking_fsm",
+          "name": "行走模式前提",
+          "status": "violated",
+          "detail": "FSM=0；500 只符合本项目行走前提，不能证明平衡或动作正在执行",
+          "source": "固定版本 SDK Start→500；仅适用于行走候选任务"
+        },
+        {
+          "id": "tilt_guard",
+          "name": "项目姿态拦截线",
+          "status": "matched",
+          "detail": "横滚/俯仰最大绝对值 7.84°；项目拦截线 0.35 rad，未核定为防摔范围",
+          "source": "本项目软件保护；不是厂商安全限值"
+        },
+        {
+          "id": "thermal_guard",
+          "name": "项目电机温度拦截线",
+          "status": "matched",
+          "detail": "最高 47°C；项目拦截线 70°C，实机热保护与降额未知",
+          "source": "本项目软件保护；不是厂商安全工作温度"
+        },
+        {
+          "id": "support",
+          "name": "足底接触与承重",
+          "status": "unknown",
+          "detail": "尚无可信足底接触、载荷、支撑面；不能判断脚是否落地或被外部支撑",
+          "source": "缺少本机与现场验证证据"
+        },
+        {
+          "id": "balance",
+          "name": "动态平衡裕量",
+          "status": "unknown",
+          "detail": "缺少全身位姿/速度、质心与支撑关系；IMU 平稳不证明下一步稳定",
+          "source": "缺少本机与现场验证证据"
+        },
+        {
+          "id": "terrain",
+          "name": "现场地面与净空",
+          "status": "unknown",
+          "detail": "摩擦、坡度、台阶、地面断层和全身净空未核验；图像或二维地图单独不足",
+          "source": "缺少本机与现场验证证据"
+        },
+        {
+          "id": "calibration",
+          "name": "实机电机限值与标定",
+          "status": "unknown",
+          "detail": "逐电机固件限值、零位、增益和转矩转速能力未知；URDF 与示例值不能替代",
+          "source": "缺少本机与现场验证证据"
+        },
+        {
+          "id": "health",
+          "name": "驱动健康与电池余量",
+          "status": "unknown",
+          "detail": "缺本固件故障位表、降额规则和新鲜电池状态；不将原始状态码 0 当作健康证明",
+          "source": "缺少本机与现场验证证据"
+        },
+        {
+          "id": "recovery",
+          "name": "保护与失联处置",
+          "status": "unknown",
+          "detail": "现场防跌落保护、官方平衡控制归属、急停和通信失效行为尚未验证；不自动发送卸力或模式切换",
+          "source": "缺少本机与现场验证证据"
+        },
+        {
+          "id": "action_contract",
+          "name": "具体能力全过程边界",
+          "status": "unknown",
+          "detail": "每项能力的进入条件、执行过程、退出/打断和恢复条件均需单独核定；目录匹配不足以放行",
+          "source": "缺少本机与现场验证证据"
+        }
+      ],
+      "unknown_conditions": [
+        "足底接触与承重",
+        "动态平衡裕量",
+        "现场地面与净空",
+        "实机电机限值与标定",
+        "驱动健康与电池余量",
+        "保护与失联处置",
+        "具体能力全过程边界"
+      ],
+      "violated_conditions": [
+        "行走模式前提"
+      ],
+      "detail": "防摔动作边界尚未核定，真实运动锁定；通过个别拦截检查也不授予权限"
+    },
+    "task_suggestions": [
+      {
+        "title": "继续只读观察和补齐证据",
+        "allowed": true,
+        "kind": "read_only",
+        "detail": "记录状态变化、官方能力条件和缺失反馈；学习任务策略，不试探电机极限或训练新运动模型"
+      },
+      {
+        "title": "暂缓站起、行走、摆臂与姿势切换",
+        "allowed": false,
+        "kind": "motion",
+        "detail": "先核定支撑、健康、现场与该能力完整安全契约；不得由 Agent 或一项人工勾选自动放行"
+      }
+    ]
+  }
+}

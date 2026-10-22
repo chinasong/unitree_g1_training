@@ -1,0 +1,428 @@
+{
+  "release": "7e95a6e5a046",
+  "at_utc": "2026-10-21T11:51:46.317677+00:00",
+  "run_id": "bce70395eb37",
+  "physical_writes_sent": 0,
+  "control_acquired": false,
+  "manual_armed": false,
+  "queries": [
+    {
+      "capability": "get_fsm",
+      "at_utc": "2026-10-21T11:51:44.319492+00:00",
+      "http_status": 200,
+      "response": {
+        "status": "accepted",
+        "data": 0,
+        "event_id": "76c8d6cfffb241a1818edfb5396c4e03",
+        "message": "已读取官方返回值"
+      }
+    },
+    {
+      "capability": "get_fsm_mode",
+      "at_utc": "2026-10-21T11:51:44.349899+00:00",
+      "http_status": 200,
+      "response": {
+        "status": "accepted",
+        "data": 0,
+        "event_id": "b4d1877fdb4440c482cc6548969d86c3",
+        "message": "已读取官方返回值"
+      }
+    },
+    {
+      "capability": "get_balance",
+      "at_utc": "2026-10-21T11:51:44.379307+00:00",
+      "http_status": 504,
+      "response": {
+        "error": {
+          "code": "SDK_TIMEOUT",
+          "message": "官方接口 3104 超时；是否执行未知，未自动重发。请先核对实时状态"
+        },
+        "request_id": "c14d91a3b9f9429a988d0af07c502d79"
+      }
+    },
+    {
+      "capability": "get_swing_height",
+      "at_utc": "2026-10-21T11:51:45.108741+00:00",
+      "http_status": 502,
+      "response": {
+        "error": {
+          "code": "SDK_REJECTED",
+          "message": "官方服务返回 7301；不代表机器人已完成操作"
+        },
+        "request_id": "1348b0f43cff42c79deaa54411112af2"
+      }
+    },
+    {
+      "capability": "get_stand_height",
+      "at_utc": "2026-10-21T11:51:45.222652+00:00",
+      "http_status": 504,
+      "response": {
+        "error": {
+          "code": "SDK_TIMEOUT",
+          "message": "官方接口 3104 超时；是否执行未知，未自动重发。请先核对实时状态"
+        },
+        "request_id": "3f717624c2bd4205bdc40ea0c1293fff"
+      }
+    },
+    {
+      "capability": "get_phase",
+      "at_utc": "2026-10-21T11:51:45.948486+00:00",
+      "http_status": 502,
+      "response": {
+        "error": {
+          "code": "SDK_REJECTED",
+          "message": "官方服务返回 7301；不代表机器人已完成操作"
+        },
+        "request_id": "07e81c757a524cf3852e84da14852e27"
+      }
+    },
+    {
+      "capability": "get_actions",
+      "at_utc": "2026-10-21T11:51:46.045760+00:00",
+      "http_status": 200,
+      "response": {
+        "status": "accepted",
+        "data": [
+          [
+            {
+              "id": 99,
+              "name": "release_arm"
+            },
+            {
+              "fsm": [
+                500,
+                501
+              ],
+              "id": 1,
+              "name": "turn_back_wave"
+            },
+            {
+              "id": 11,
+              "name": "blow_kiss_with_both_hands"
+            },
+            {
+              "id": 12,
+              "name": "blow_kiss_with_left_hand"
+            },
+            {
+              "id": 13,
+              "name": "blow_kiss_with_right_hand"
+            },
+            {
+              "id": 15,
+              "name": "both_hands_up"
+            },
+            {
+              "id": 17,
+              "name": "clamp"
+            },
+            {
+              "id": 18,
+              "name": "high_five"
+            },
+            {
+              "id": 19,
+              "name": "hug"
+            },
+            {
+              "id": 22,
+              "name": "refuse"
+            },
+            {
+              "id": 23,
+              "name": "right_hand_up"
+            },
+            {
+              "id": 24,
+              "name": "ultraman_ray"
+            },
+            {
+              "id": 25,
+              "name": "wave_under_head"
+            },
+            {
+              "id": 26,
+              "name": "wave_above_head"
+            },
+            {
+              "id": 27,
+              "name": "shake_hand"
+            },
+            {
+              "id": 31,
+              "mode_machine": [
+                4
+              ],
+              "name": "extend_right_arm_forward"
+            },
+            {
+              "id": 32,
+              "mode_machine": [
+                4
+              ],
+              "name": "right_hand_on_mouth"
+            },
+            {
+              "id": 33,
+              "name": "right_hand_on_heart"
+            },
+            {
+              "id": 34,
+              "name": "both_hands_up_deviate_right"
+            },
+            {
+              "id": 35,
+              "mode_machine": [
+                4
+              ],
+              "name": "emphasize"
+            }
+          ],
+          [
+            {
+              "name": "Waist_Drum_Dance",
+              "time": 9.5
+            },
+            {
+              "name": "Scratch_head",
+              "time": 8.1
+            },
+            {
+              "name": "Spin_discs",
+              "time": 6.9
+            },
+            {
+              "name": "Throw_money",
+              "time": 8.1
+            }
+          ]
+        ],
+        "event_id": "9340b4d92b6b425398d2519f9b2e8528",
+        "message": "已读取官方返回值"
+      }
+    },
+    {
+      "capability": "get_volume",
+      "at_utc": "2026-10-21T11:51:46.162187+00:00",
+      "http_status": 200,
+      "response": {
+        "status": "accepted",
+        "data": {
+          "volume": 41
+        },
+        "event_id": "a598be8ad67a4218a3d99b736624d589",
+        "message": "已读取官方返回值"
+      }
+    }
+  ],
+  "telemetry_summary": {
+    "fsm": 0,
+    "joints": 23
+  },
+  "command_history": [
+    {
+      "request_id": "24c9dfee5fea40ff8a08751015ec7f00",
+      "capability": "get_volume",
+      "label": "读取音量",
+      "at": 1792583506.2688136,
+      "updated_at": 1792583506.2688136,
+      "mode": "robot",
+      "status": "read_result",
+      "message": "已读取官方返回值",
+      "data": {
+        "volume": 41
+      }
+    },
+    {
+      "request_id": "e7e68c8348e2422f82e47865806c98ab",
+      "capability": "get_actions",
+      "label": "查询固件动作清单",
+      "at": 1792583506.1574848,
+      "updated_at": 1792583506.157485,
+      "mode": "robot",
+      "status": "read_result",
+      "message": "已读取官方返回值",
+      "data": [
+        [
+          {
+            "id": 99,
+            "name": "release_arm"
+          },
+          {
+            "fsm": [
+              500,
+              501
+            ],
+            "id": 1,
+            "name": "turn_back_wave"
+          },
+          {
+            "id": 11,
+            "name": "blow_kiss_with_both_hands"
+          },
+          {
+            "id": 12,
+            "name": "blow_kiss_with_left_hand"
+          },
+          {
+            "id": 13,
+            "name": "blow_kiss_with_right_hand"
+          },
+          {
+            "id": 15,
+            "name": "both_hands_up"
+          },
+          {
+            "id": 17,
+            "name": "clamp"
+          },
+          {
+            "id": 18,
+            "name": "high_five"
+          },
+          {
+            "id": 19,
+            "name": "hug"
+          },
+          {
+            "id": 22,
+            "name": "refuse"
+          },
+          {
+            "id": 23,
+            "name": "right_hand_up"
+          },
+          {
+            "id": 24,
+            "name": "ultraman_ray"
+          },
+          {
+            "id": 25,
+            "name": "wave_under_head"
+          },
+          {
+            "id": 26,
+            "name": "wave_above_head"
+          },
+          {
+            "id": 27,
+            "name": "shake_hand"
+          },
+          {
+            "id": 31,
+            "mode_machine": [
+              4
+            ],
+            "name": "extend_right_arm_forward"
+          },
+          {
+            "id": 32,
+            "mode_machine": [
+              4
+            ],
+            "name": "right_hand_on_mouth"
+          },
+          {
+            "id": 33,
+            "name": "right_hand_on_heart"
+          },
+          {
+            "id": 34,
+            "name": "both_hands_up_deviate_right"
+          },
+          {
+            "id": 35,
+            "mode_machine": [
+              4
+            ],
+            "name": "emphasize"
+          }
+        ],
+        [
+          {
+            "name": "Waist_Drum_Dance",
+            "time": 9.5
+          },
+          {
+            "name": "Scratch_head",
+            "time": 8.1
+          },
+          {
+            "name": "Spin_discs",
+            "time": 6.9
+          },
+          {
+            "name": "Throw_money",
+            "time": 8.1
+          }
+        ]
+      ]
+    },
+    {
+      "request_id": "07419d6ea39447d9a41917f5ce3beb84",
+      "capability": "get_phase",
+      "label": "读取步态相位",
+      "at": 1792583506.0416713,
+      "updated_at": 1792583506.0416715,
+      "mode": "robot",
+      "status": "rejected",
+      "message": "官方服务返回 7301；不代表机器人已完成操作",
+      "error_code": "SDK_REJECTED"
+    },
+    {
+      "request_id": "b7bf8e36ceb44683a0925985062a2365",
+      "capability": "get_stand_height",
+      "label": "读取站立高度",
+      "at": 1792583505.9438183,
+      "updated_at": 1792583505.9438186,
+      "mode": "robot",
+      "status": "outcome_unknown",
+      "message": "官方接口 3104 超时；是否执行未知，未自动重发。请先核对实时状态",
+      "error_code": "SDK_TIMEOUT"
+    },
+    {
+      "request_id": "d5be5dfdb798482b8a5efe2a4724bfdf",
+      "capability": "get_swing_height",
+      "label": "读取摆腿高度",
+      "at": 1792583505.218217,
+      "updated_at": 1792583505.218217,
+      "mode": "robot",
+      "status": "rejected",
+      "message": "官方服务返回 7301；不代表机器人已完成操作",
+      "error_code": "SDK_REJECTED"
+    },
+    {
+      "request_id": "48490863aa4841e0adcec8476bb72211",
+      "capability": "get_balance",
+      "label": "读取平衡模式",
+      "at": 1792583505.103716,
+      "updated_at": 1792583505.1037161,
+      "mode": "robot",
+      "status": "outcome_unknown",
+      "message": "官方接口 3104 超时；是否执行未知，未自动重发。请先核对实时状态",
+      "error_code": "SDK_TIMEOUT"
+    },
+    {
+      "request_id": "e05735a8778c48739bbedfc098c7fdd8",
+      "capability": "get_fsm_mode",
+      "label": "读取控制模式",
+      "at": 1792583504.3740325,
+      "updated_at": 1792583504.3740327,
+      "mode": "robot",
+      "status": "read_result",
+      "message": "已读取官方返回值",
+      "data": 0
+    },
+    {
+      "request_id": "cf013ef300de4940b6475b6869f7a568",
+      "capability": "get_fsm",
+      "label": "读取状态机",
+      "at": 1792583504.3454773,
+      "updated_at": 1792583504.3454776,
+      "mode": "robot",
+      "status": "read_result",
+      "message": "已读取官方返回值",
+      "data": 0
+    }
+  ]
+}

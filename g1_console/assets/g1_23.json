@@ -1,0 +1,1369 @@
+{
+  "robot": "Unitree G1 EDU",
+  "dof": 23,
+  "hands": false,
+  "computer": "Jetson Orin（具体型号待探测）",
+  "source": "externals/unitree_rl_gym/resources/robots/g1_description/g1_23dof.xml",
+  "source_sha256": "aaca282f79cc4cdd20fafa27656e766e35eb1455edb6f341165e27b137a036b6",
+  "source_commit": "276801e46c5d433564f24658bac64f254b7d2d4b",
+  "joints": [
+    {
+      "index": 0,
+      "name": "left_hip_pitch_joint",
+      "label": "左髋俯仰",
+      "group": "left_leg",
+      "range": [
+        -2.5307,
+        2.8798
+      ],
+      "torque_range": [
+        -88.0,
+        88.0
+      ],
+      "axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "link_mass_kg": 1.35,
+      "limits_source": "官方仿真模型标称值；不是实机持续力矩或出厂标定"
+    },
+    {
+      "index": 1,
+      "name": "left_hip_roll_joint",
+      "label": "左髋侧摆",
+      "group": "left_leg",
+      "range": [
+        -0.5236,
+        2.9671
+      ],
+      "torque_range": [
+        -88.0,
+        88.0
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "link_mass_kg": 1.52,
+      "limits_source": "官方仿真模型标称值；不是实机持续力矩或出厂标定"
+    },
+    {
+      "index": 2,
+      "name": "left_hip_yaw_joint",
+      "label": "左髋旋转",
+      "group": "left_leg",
+      "range": [
+        -2.7576,
+        2.7576
+      ],
+      "torque_range": [
+        -88.0,
+        88.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "link_mass_kg": 1.702,
+      "limits_source": "官方仿真模型标称值；不是实机持续力矩或出厂标定"
+    },
+    {
+      "index": 3,
+      "name": "left_knee_joint",
+      "label": "左膝关节",
+      "group": "left_leg",
+      "range": [
+        -0.087267,
+        2.8798
+      ],
+      "torque_range": [
+        -139.0,
+        139.0
+      ],
+      "axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "link_mass_kg": 1.932,
+      "limits_source": "官方仿真模型标称值；不是实机持续力矩或出厂标定"
+    },
+    {
+      "index": 4,
+      "name": "left_ankle_pitch_joint",
+      "label": "左踝俯仰",
+      "group": "left_leg",
+      "range": [
+        -0.87267,
+        0.5236
+      ],
+      "torque_range": [
+        -50.0,
+        50.0
+      ],
+      "axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "link_mass_kg": 0.074,
+      "limits_source": "官方仿真模型标称值；不是实机持续力矩或出厂标定"
+    },
+    {
+      "index": 5,
+      "name": "left_ankle_roll_joint",
+      "label": "左踝侧摆",
+      "group": "left_leg",
+      "range": [
+        -0.2618,
+        0.2618
+      ],
+      "torque_range": [
+        -50.0,
+        50.0
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "link_mass_kg": 0.608,
+      "limits_source": "官方仿真模型标称值；不是实机持续力矩或出厂标定"
+    },
+    {
+      "index": 6,
+      "name": "right_hip_pitch_joint",
+      "label": "右髋俯仰",
+      "group": "right_leg",
+      "range": [
+        -2.5307,
+        2.8798
+      ],
+      "torque_range": [
+        -88.0,
+        88.0
+      ],
+      "axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "link_mass_kg": 1.35,
+      "limits_source": "官方仿真模型标称值；不是实机持续力矩或出厂标定"
+    },
+    {
+      "index": 7,
+      "name": "right_hip_roll_joint",
+      "label": "右髋侧摆",
+      "group": "right_leg",
+      "range": [
+        -2.9671,
+        0.5236
+      ],
+      "torque_range": [
+        -88.0,
+        88.0
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "link_mass_kg": 1.52,
+      "limits_source": "官方仿真模型标称值；不是实机持续力矩或出厂标定"
+    },
+    {
+      "index": 8,
+      "name": "right_hip_yaw_joint",
+      "label": "右髋旋转",
+      "group": "right_leg",
+      "range": [
+        -2.7576,
+        2.7576
+      ],
+      "torque_range": [
+        -88.0,
+        88.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "link_mass_kg": 1.702,
+      "limits_source": "官方仿真模型标称值；不是实机持续力矩或出厂标定"
+    },
+    {
+      "index": 9,
+      "name": "right_knee_joint",
+      "label": "右膝关节",
+      "group": "right_leg",
+      "range": [
+        -0.087267,
+        2.8798
+      ],
+      "torque_range": [
+        -139.0,
+        139.0
+      ],
+      "axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "link_mass_kg": 1.932,
+      "limits_source": "官方仿真模型标称值；不是实机持续力矩或出厂标定"
+    },
+    {
+      "index": 10,
+      "name": "right_ankle_pitch_joint",
+      "label": "右踝俯仰",
+      "group": "right_leg",
+      "range": [
+        -0.87267,
+        0.5236
+      ],
+      "torque_range": [
+        -50.0,
+        50.0
+      ],
+      "axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "link_mass_kg": 0.074,
+      "limits_source": "官方仿真模型标称值；不是实机持续力矩或出厂标定"
+    },
+    {
+      "index": 11,
+      "name": "right_ankle_roll_joint",
+      "label": "右踝侧摆",
+      "group": "right_leg",
+      "range": [
+        -0.2618,
+        0.2618
+      ],
+      "torque_range": [
+        -50.0,
+        50.0
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "link_mass_kg": 0.608,
+      "limits_source": "官方仿真模型标称值；不是实机持续力矩或出厂标定"
+    },
+    {
+      "index": 12,
+      "name": "waist_yaw_joint",
+      "label": "腰旋转",
+      "group": "waist",
+      "range": [
+        -2.618,
+        2.618
+      ],
+      "torque_range": [
+        -88.0,
+        88.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "link_mass_kg": 9.842,
+      "limits_source": "官方仿真模型标称值；不是实机持续力矩或出厂标定"
+    },
+    {
+      "index": 15,
+      "name": "left_shoulder_pitch_joint",
+      "label": "左肩俯仰",
+      "group": "left_arm",
+      "range": [
+        -3.0892,
+        2.6704
+      ],
+      "torque_range": [
+        -25.0,
+        25.0
+      ],
+      "axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "link_mass_kg": 0.718,
+      "limits_source": "官方仿真模型标称值；不是实机持续力矩或出厂标定"
+    },
+    {
+      "index": 16,
+      "name": "left_shoulder_roll_joint",
+      "label": "左肩侧摆",
+      "group": "left_arm",
+      "range": [
+        -1.5882,
+        2.2515
+      ],
+      "torque_range": [
+        -25.0,
+        25.0
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "link_mass_kg": 0.643,
+      "limits_source": "官方仿真模型标称值；不是实机持续力矩或出厂标定"
+    },
+    {
+      "index": 17,
+      "name": "left_shoulder_yaw_joint",
+      "label": "左肩旋转",
+      "group": "left_arm",
+      "range": [
+        -2.618,
+        2.618
+      ],
+      "torque_range": [
+        -25.0,
+        25.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "link_mass_kg": 0.734,
+      "limits_source": "官方仿真模型标称值；不是实机持续力矩或出厂标定"
+    },
+    {
+      "index": 18,
+      "name": "left_elbow_joint",
+      "label": "左肘关节",
+      "group": "left_arm",
+      "range": [
+        -1.0472,
+        2.0944
+      ],
+      "torque_range": [
+        -25.0,
+        25.0
+      ],
+      "axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "link_mass_kg": 0.6,
+      "limits_source": "官方仿真模型标称值；不是实机持续力矩或出厂标定"
+    },
+    {
+      "index": 19,
+      "name": "left_wrist_roll_joint",
+      "label": "左腕旋转",
+      "group": "left_arm",
+      "range": [
+        -1.97222,
+        1.97222
+      ],
+      "torque_range": [
+        -25.0,
+        25.0
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "link_mass_kg": 0.356929,
+      "limits_source": "官方仿真模型标称值；不是实机持续力矩或出厂标定"
+    },
+    {
+      "index": 22,
+      "name": "right_shoulder_pitch_joint",
+      "label": "右肩俯仰",
+      "group": "right_arm",
+      "range": [
+        -3.0892,
+        2.6704
+      ],
+      "torque_range": [
+        -25.0,
+        25.0
+      ],
+      "axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "link_mass_kg": 0.718,
+      "limits_source": "官方仿真模型标称值；不是实机持续力矩或出厂标定"
+    },
+    {
+      "index": 23,
+      "name": "right_shoulder_roll_joint",
+      "label": "右肩侧摆",
+      "group": "right_arm",
+      "range": [
+        -2.2515,
+        1.5882
+      ],
+      "torque_range": [
+        -25.0,
+        25.0
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "link_mass_kg": 0.643,
+      "limits_source": "官方仿真模型标称值；不是实机持续力矩或出厂标定"
+    },
+    {
+      "index": 24,
+      "name": "right_shoulder_yaw_joint",
+      "label": "右肩旋转",
+      "group": "right_arm",
+      "range": [
+        -2.618,
+        2.618
+      ],
+      "torque_range": [
+        -25.0,
+        25.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "link_mass_kg": 0.734,
+      "limits_source": "官方仿真模型标称值；不是实机持续力矩或出厂标定"
+    },
+    {
+      "index": 25,
+      "name": "right_elbow_joint",
+      "label": "右肘关节",
+      "group": "right_arm",
+      "range": [
+        -1.0472,
+        2.0944
+      ],
+      "torque_range": [
+        -25.0,
+        25.0
+      ],
+      "axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "link_mass_kg": 0.6,
+      "limits_source": "官方仿真模型标称值；不是实机持续力矩或出厂标定"
+    },
+    {
+      "index": 26,
+      "name": "right_wrist_roll_joint",
+      "label": "右腕旋转",
+      "group": "right_arm",
+      "range": [
+        -1.97222,
+        1.97222
+      ],
+      "torque_range": [
+        -25.0,
+        25.0
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "link_mass_kg": 0.356929,
+      "limits_source": "官方仿真模型标称值；不是实机持续力矩或出厂标定"
+    }
+  ],
+  "tree": {
+    "name": "pelvis",
+    "position": [
+      0.0,
+      0.0,
+      0.793
+    ],
+    "quaternion": [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "joint_index": null,
+    "axis": [
+      0,
+      0,
+      1
+    ],
+    "meshes": [
+      {
+        "file": "pelvis.STL",
+        "rgba": [
+          0.2,
+          0.2,
+          0.2,
+          1.0
+        ]
+      },
+      {
+        "file": "pelvis_contour_link.STL",
+        "rgba": [
+          0.7,
+          0.7,
+          0.7,
+          1.0
+        ]
+      }
+    ],
+    "children": [
+      {
+        "name": "left_hip_pitch_link",
+        "position": [
+          0.0,
+          0.064452,
+          -0.1027
+        ],
+        "quaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint_index": 0,
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "meshes": [
+          {
+            "file": "left_hip_pitch_link.STL",
+            "rgba": [
+              0.2,
+              0.2,
+              0.2,
+              1.0
+            ]
+          }
+        ],
+        "children": [
+          {
+            "name": "left_hip_roll_link",
+            "position": [
+              0.0,
+              0.052,
+              -0.030465
+            ],
+            "quaternion": [
+              0.996179,
+              0.0,
+              -0.0873386,
+              0.0
+            ],
+            "joint_index": 1,
+            "axis": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "meshes": [
+              {
+                "file": "left_hip_roll_link.STL",
+                "rgba": [
+                  0.7,
+                  0.7,
+                  0.7,
+                  1.0
+                ]
+              }
+            ],
+            "children": [
+              {
+                "name": "left_hip_yaw_link",
+                "position": [
+                  0.025001,
+                  0.0,
+                  -0.12412
+                ],
+                "quaternion": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "joint_index": 2,
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "meshes": [
+                  {
+                    "file": "left_hip_yaw_link.STL",
+                    "rgba": [
+                      0.7,
+                      0.7,
+                      0.7,
+                      1.0
+                    ]
+                  }
+                ],
+                "children": [
+                  {
+                    "name": "left_knee_link",
+                    "position": [
+                      -0.078273,
+                      0.0021489,
+                      -0.17734
+                    ],
+                    "quaternion": [
+                      0.996179,
+                      0.0,
+                      0.0873386,
+                      0.0
+                    ],
+                    "joint_index": 3,
+                    "axis": [
+                      0.0,
+                      1.0,
+                      0.0
+                    ],
+                    "meshes": [
+                      {
+                        "file": "left_knee_link.STL",
+                        "rgba": [
+                          0.7,
+                          0.7,
+                          0.7,
+                          1.0
+                        ]
+                      }
+                    ],
+                    "children": [
+                      {
+                        "name": "left_ankle_pitch_link",
+                        "position": [
+                          0.0,
+                          -9.4445e-05,
+                          -0.30001
+                        ],
+                        "quaternion": [
+                          1.0,
+                          0.0,
+                          0.0,
+                          0.0
+                        ],
+                        "joint_index": 4,
+                        "axis": [
+                          0.0,
+                          1.0,
+                          0.0
+                        ],
+                        "meshes": [
+                          {
+                            "file": "left_ankle_pitch_link.STL",
+                            "rgba": [
+                              0.7,
+                              0.7,
+                              0.7,
+                              1.0
+                            ]
+                          }
+                        ],
+                        "children": [
+                          {
+                            "name": "left_ankle_roll_link",
+                            "position": [
+                              0.0,
+                              0.0,
+                              -0.017558
+                            ],
+                            "quaternion": [
+                              1.0,
+                              0.0,
+                              0.0,
+                              0.0
+                            ],
+                            "joint_index": 5,
+                            "axis": [
+                              1.0,
+                              0.0,
+                              0.0
+                            ],
+                            "meshes": [
+                              {
+                                "file": "left_ankle_roll_link.STL",
+                                "rgba": [
+                                  0.2,
+                                  0.2,
+                                  0.2,
+                                  1.0
+                                ]
+                              }
+                            ],
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "right_hip_pitch_link",
+        "position": [
+          0.0,
+          -0.064452,
+          -0.1027
+        ],
+        "quaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint_index": 6,
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "meshes": [
+          {
+            "file": "right_hip_pitch_link.STL",
+            "rgba": [
+              0.2,
+              0.2,
+              0.2,
+              1.0
+            ]
+          }
+        ],
+        "children": [
+          {
+            "name": "right_hip_roll_link",
+            "position": [
+              0.0,
+              -0.052,
+              -0.030465
+            ],
+            "quaternion": [
+              0.996179,
+              0.0,
+              -0.0873386,
+              0.0
+            ],
+            "joint_index": 7,
+            "axis": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "meshes": [
+              {
+                "file": "right_hip_roll_link.STL",
+                "rgba": [
+                  0.7,
+                  0.7,
+                  0.7,
+                  1.0
+                ]
+              }
+            ],
+            "children": [
+              {
+                "name": "right_hip_yaw_link",
+                "position": [
+                  0.025001,
+                  0.0,
+                  -0.12412
+                ],
+                "quaternion": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "joint_index": 8,
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "meshes": [
+                  {
+                    "file": "right_hip_yaw_link.STL",
+                    "rgba": [
+                      0.7,
+                      0.7,
+                      0.7,
+                      1.0
+                    ]
+                  }
+                ],
+                "children": [
+                  {
+                    "name": "right_knee_link",
+                    "position": [
+                      -0.078273,
+                      -0.0021489,
+                      -0.17734
+                    ],
+                    "quaternion": [
+                      0.996179,
+                      0.0,
+                      0.0873386,
+                      0.0
+                    ],
+                    "joint_index": 9,
+                    "axis": [
+                      0.0,
+                      1.0,
+                      0.0
+                    ],
+                    "meshes": [
+                      {
+                        "file": "right_knee_link.STL",
+                        "rgba": [
+                          0.7,
+                          0.7,
+                          0.7,
+                          1.0
+                        ]
+                      }
+                    ],
+                    "children": [
+                      {
+                        "name": "right_ankle_pitch_link",
+                        "position": [
+                          0.0,
+                          9.4445e-05,
+                          -0.30001
+                        ],
+                        "quaternion": [
+                          1.0,
+                          0.0,
+                          0.0,
+                          0.0
+                        ],
+                        "joint_index": 10,
+                        "axis": [
+                          0.0,
+                          1.0,
+                          0.0
+                        ],
+                        "meshes": [
+                          {
+                            "file": "right_ankle_pitch_link.STL",
+                            "rgba": [
+                              0.7,
+                              0.7,
+                              0.7,
+                              1.0
+                            ]
+                          }
+                        ],
+                        "children": [
+                          {
+                            "name": "right_ankle_roll_link",
+                            "position": [
+                              0.0,
+                              0.0,
+                              -0.017558
+                            ],
+                            "quaternion": [
+                              1.0,
+                              0.0,
+                              0.0,
+                              0.0
+                            ],
+                            "joint_index": 11,
+                            "axis": [
+                              1.0,
+                              0.0,
+                              0.0
+                            ],
+                            "meshes": [
+                              {
+                                "file": "right_ankle_roll_link.STL",
+                                "rgba": [
+                                  0.2,
+                                  0.2,
+                                  0.2,
+                                  1.0
+                                ]
+                              }
+                            ],
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "torso_link",
+        "position": [
+          -0.0039635,
+          0.0,
+          0.054
+        ],
+        "quaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint_index": 12,
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "meshes": [
+          {
+            "file": "torso_link.STL",
+            "rgba": [
+              0.7,
+              0.7,
+              0.7,
+              1.0
+            ]
+          },
+          {
+            "file": "waist_yaw_link.STL",
+            "rgba": [
+              0.7,
+              0.7,
+              0.7,
+              1.0
+            ]
+          },
+          {
+            "file": "logo_link.STL",
+            "rgba": [
+              0.2,
+              0.2,
+              0.2,
+              1.0
+            ]
+          },
+          {
+            "file": "head_link.STL",
+            "rgba": [
+              0.2,
+              0.2,
+              0.2,
+              1.0
+            ]
+          },
+          {
+            "file": "waist_support_link.STL",
+            "rgba": [
+              0.7,
+              0.7,
+              0.7,
+              1.0
+            ]
+          }
+        ],
+        "children": [
+          {
+            "name": "left_shoulder_pitch_link",
+            "position": [
+              0.0039563,
+              0.10022,
+              0.23778
+            ],
+            "quaternion": [
+              0.990264,
+              0.139201,
+              1.38722e-05,
+              -9.86868e-05
+            ],
+            "joint_index": 15,
+            "axis": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "meshes": [
+              {
+                "file": "left_shoulder_pitch_link.STL",
+                "rgba": [
+                  0.7,
+                  0.7,
+                  0.7,
+                  1.0
+                ]
+              }
+            ],
+            "children": [
+              {
+                "name": "left_shoulder_roll_link",
+                "position": [
+                  0.0,
+                  0.038,
+                  -0.013831
+                ],
+                "quaternion": [
+                  0.990268,
+                  -0.139172,
+                  0.0,
+                  0.0
+                ],
+                "joint_index": 16,
+                "axis": [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                "meshes": [
+                  {
+                    "file": "left_shoulder_roll_link.STL",
+                    "rgba": [
+                      0.7,
+                      0.7,
+                      0.7,
+                      1.0
+                    ]
+                  }
+                ],
+                "children": [
+                  {
+                    "name": "left_shoulder_yaw_link",
+                    "position": [
+                      0.0,
+                      0.00624,
+                      -0.1032
+                    ],
+                    "quaternion": [
+                      1.0,
+                      0.0,
+                      0.0,
+                      0.0
+                    ],
+                    "joint_index": 17,
+                    "axis": [
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "meshes": [
+                      {
+                        "file": "left_shoulder_yaw_link.STL",
+                        "rgba": [
+                          0.7,
+                          0.7,
+                          0.7,
+                          1.0
+                        ]
+                      }
+                    ],
+                    "children": [
+                      {
+                        "name": "left_elbow_link",
+                        "position": [
+                          0.015783,
+                          0.0,
+                          -0.080518
+                        ],
+                        "quaternion": [
+                          1.0,
+                          0.0,
+                          0.0,
+                          0.0
+                        ],
+                        "joint_index": 18,
+                        "axis": [
+                          0.0,
+                          1.0,
+                          0.0
+                        ],
+                        "meshes": [
+                          {
+                            "file": "left_elbow_link.STL",
+                            "rgba": [
+                              0.7,
+                              0.7,
+                              0.7,
+                              1.0
+                            ]
+                          }
+                        ],
+                        "children": [
+                          {
+                            "name": "left_wrist_roll_rubber_hand",
+                            "position": [
+                              0.1,
+                              0.00188791,
+                              -0.01
+                            ],
+                            "quaternion": [
+                              1.0,
+                              0.0,
+                              0.0,
+                              0.0
+                            ],
+                            "joint_index": 19,
+                            "axis": [
+                              1.0,
+                              0.0,
+                              0.0
+                            ],
+                            "meshes": [
+                              {
+                                "file": "left_wrist_roll_rubber_hand.STL",
+                                "rgba": [
+                                  0.7,
+                                  0.7,
+                                  0.7,
+                                  1.0
+                                ]
+                              }
+                            ],
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "right_shoulder_pitch_link",
+            "position": [
+              0.0039563,
+              -0.10021,
+              0.23778
+            ],
+            "quaternion": [
+              0.990264,
+              -0.139201,
+              1.38722e-05,
+              9.86868e-05
+            ],
+            "joint_index": 22,
+            "axis": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "meshes": [
+              {
+                "file": "right_shoulder_pitch_link.STL",
+                "rgba": [
+                  0.7,
+                  0.7,
+                  0.7,
+                  1.0
+                ]
+              }
+            ],
+            "children": [
+              {
+                "name": "right_shoulder_roll_link",
+                "position": [
+                  0.0,
+                  -0.038,
+                  -0.013831
+                ],
+                "quaternion": [
+                  0.990268,
+                  0.139172,
+                  0.0,
+                  0.0
+                ],
+                "joint_index": 23,
+                "axis": [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                "meshes": [
+                  {
+                    "file": "right_shoulder_roll_link.STL",
+                    "rgba": [
+                      0.7,
+                      0.7,
+                      0.7,
+                      1.0
+                    ]
+                  }
+                ],
+                "children": [
+                  {
+                    "name": "right_shoulder_yaw_link",
+                    "position": [
+                      0.0,
+                      -0.00624,
+                      -0.1032
+                    ],
+                    "quaternion": [
+                      1.0,
+                      0.0,
+                      0.0,
+                      0.0
+                    ],
+                    "joint_index": 24,
+                    "axis": [
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "meshes": [
+                      {
+                        "file": "right_shoulder_yaw_link.STL",
+                        "rgba": [
+                          0.7,
+                          0.7,
+                          0.7,
+                          1.0
+                        ]
+                      }
+                    ],
+                    "children": [
+                      {
+                        "name": "right_elbow_link",
+                        "position": [
+                          0.015783,
+                          0.0,
+                          -0.080518
+                        ],
+                        "quaternion": [
+                          1.0,
+                          0.0,
+                          0.0,
+                          0.0
+                        ],
+                        "joint_index": 25,
+                        "axis": [
+                          0.0,
+                          1.0,
+                          0.0
+                        ],
+                        "meshes": [
+                          {
+                            "file": "right_elbow_link.STL",
+                            "rgba": [
+                              0.7,
+                              0.7,
+                              0.7,
+                              1.0
+                            ]
+                          }
+                        ],
+                        "children": [
+                          {
+                            "name": "right_wrist_roll_rubber_hand",
+                            "position": [
+                              0.1,
+                              -0.00188791,
+                              -0.01
+                            ],
+                            "quaternion": [
+                              1.0,
+                              0.0,
+                              0.0,
+                              0.0
+                            ],
+                            "joint_index": 26,
+                            "axis": [
+                              1.0,
+                              0.0,
+                              0.0
+                            ],
+                            "meshes": [
+                              {
+                                "file": "right_wrist_roll_rubber_hand.STL",
+                                "rgba": [
+                                  0.7,
+                                  0.7,
+                                  0.7,
+                                  1.0
+                                ]
+                              }
+                            ],
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "absent_indices": [
+    13,
+    14,
+    20,
+    21,
+    27,
+    28
+  ],
+  "unknown_parameters": [
+    "出厂 Kp/Kd",
+    "实机持续力矩",
+    "电流上限",
+    "减速器实机标定",
+    "电池状态（HG LowState 无此字段）"
+  ],
+  "modules": [
+    {
+      "id": "imu",
+      "label": "惯性测量单元",
+      "source": "rt/lowstate.imu_state"
+    },
+    {
+      "id": "camera",
+      "label": "相机",
+      "source": "ROS 2 图像桥接；连接后确认"
+    },
+    {
+      "id": "localization",
+      "label": "定位与障碍物",
+      "source": "同一 map 坐标系定位 / 占用栅格 + base_link 扫描"
+    },
+    {
+      "id": "hands",
+      "label": "灵巧手 / 夹爪",
+      "source": "本机未安装"
+    },
+    {
+      "id": "battery",
+      "label": "电池",
+      "source": "未接入；不估算电量"
+    }
+  ]
+}

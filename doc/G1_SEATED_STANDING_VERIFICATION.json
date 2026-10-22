@@ -1,0 +1,322 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-10-21T06:37:49.141877+00:00",
+  "timezone": "Asia/Shanghai",
+  "scope": "G1 EDU 23 DOF Orin read-only console; human posture confirmation, no action or standing safety validation",
+  "release": {
+    "at_utc": "2026-10-21T06:34:38.735424+00:00",
+    "release": "aaa9d34a65ef",
+    "manifest_file_count": 454,
+    "all_sha256_match": true,
+    "console_pid": 7345,
+    "console_env": {
+      "G1_READ_ONLY": "1",
+      "G1_HOST": "127.0.0.1",
+      "G1_PORT": "8765",
+      "G1_CAMERA_BACKEND": "unitree"
+    },
+    "loopback_only": true,
+    "children": [
+      {
+        "pid": 7389,
+        "argv": [
+          "/home/unitree/workspace/g1-body-console/.venv/bin/python",
+          "-c",
+          "from multiprocessing.resource_tracker import main;main(20)"
+        ],
+        "cwd": "/home/unitree/workspace/g1-body-console/releases/aaa9d34a65ef"
+      },
+      {
+        "pid": 7390,
+        "argv": [
+          "/home/unitree/workspace/g1-body-console/.venv/bin/python",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=21, pipe_handle=23)",
+          "--multiprocessing-fork"
+        ],
+        "cwd": "/home/unitree/workspace/g1-body-console/releases/aaa9d34a65ef"
+      },
+      {
+        "pid": 7393,
+        "argv": [
+          "/home/unitree/workspace/g1-body-console/.venv/bin/python",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=21, pipe_handle=26)",
+          "--multiprocessing-fork"
+        ],
+        "cwd": "/home/unitree/workspace/g1-body-console/releases/aaa9d34a65ef"
+      }
+    ],
+    "foundation_version": 16,
+    "foundation_id": "9a259f8d8edd09841156503cb128437794a25ca87df99cdae81a34cdb999409d",
+    "actual_unknown_count": 253,
+    "boot_id": "b33a7dc5-2617-44cd-b353-041bab1c204f",
+    "official_processes_unchanged": [
+      {
+        "pid": 1170,
+        "argv": [
+          "/unitree/ota/pipe/ota_pipe_service"
+        ],
+        "start_ticks": 2054
+      },
+      {
+        "pid": 1174,
+        "argv": [
+          "/unitree/module/master_service/master_service"
+        ],
+        "start_ticks": 2055
+      },
+      {
+        "pid": 2074,
+        "argv": [
+          "/unitree/module/video_hub_pc4/videohub_pc4"
+        ],
+        "start_ticks": 2356
+      },
+      {
+        "pid": 2749,
+        "argv": [
+          "/home/unitree/megaflow_sdk/ws//bin/MegaFlowRuntimeDaemon",
+          "-c",
+          "/home/unitree/megaflow_sdk/ws//bin/config.bin",
+          "-w",
+          "/home/unitree/megaflow_sdk/ws/",
+          "-d",
+          "127.0.0.1:8899",
+          "-i",
+          "-e",
+          "/home/unitree/megaflow_sdk/ws//dep/",
+          "-l",
+          "0"
+        ],
+        "start_ticks": 3024
+      }
+    ]
+  },
+  "foundation": {
+    "schema_version": 16,
+    "foundation_id": "9a259f8d8edd09841156503cb128437794a25ca87df99cdae81a34cdb999409d",
+    "unknown_actual_motor_config_fields": 253,
+    "execution_allowed": false
+  },
+  "validation": {
+    "tests": {
+      "command": "CYCLONEDDS_HOME=\"$PWD/.venv/opt/cyclonedds\" .venv/bin/python -m pytest tests/test_g1_foundation.py tests/test_g1_state_safety.py tests/test_g1_insight.py tests/test_g1_console.py tests/test_g1_safety_evidence.py tests/test_g1_mode_readback.py tests/test_g1_camera.py tests/test_g1_camera_rpc.py tests/test_g1_camera_process.py -q",
+      "passed": 103,
+      "warnings": [
+        "Existing Starlette httpx deprecation"
+      ]
+    },
+    "frontend_build": {
+      "command": "npm run build",
+      "cwd": "console/web",
+      "passed": true,
+      "warnings": [
+        "Existing BodyView bundle above 500 kB"
+      ]
+    },
+    "browser": {
+      "url": "http://127.0.0.1:18765/",
+      "real_robot_connected": true,
+      "joints": 23,
+      "historical_human_confirmation_visible": true,
+      "read_only_visible": true,
+      "camera_live_visible": true,
+      "conditional_plan_visible": true,
+      "screenshot": {
+        "path": "doc/screenshots/g1-human-posture-confirmation-v16.png",
+        "bytes": 46070,
+        "sha256": "a94857d5190bd98633fd1666df7d71349b5fb25f6aa581479d021b390194be80"
+      }
+    }
+  },
+  "integrated_soak": {
+    "started_at_utc": "2026-10-21T06:35:05.585166+00:00",
+    "completed_at_utc": "2026-10-21T06:35:35.742985+00:00",
+    "duration_s": 30.158,
+    "sample_count": 31,
+    "jpeg_count": 4,
+    "unique_jpeg_count": 4,
+    "max_telemetry_age_ms": 54,
+    "mode_rpc_deltas": {
+      "fsm_id": {
+        "attempts": 60,
+        "successes": 60,
+        "timeouts": 0,
+        "errors": 0
+      },
+      "fsm_mode": {
+        "attempts": 10,
+        "successes": 10,
+        "timeouts": 0,
+        "errors": 0
+      },
+      "motion_mode": {
+        "attempts": 10,
+        "successes": 10,
+        "timeouts": 0,
+        "errors": 0
+      }
+    },
+    "foundation_id": "9a259f8d8edd09841156503cb128437794a25ca87df99cdae81a34cdb999409d",
+    "foundation_version": 16,
+    "read_only": true,
+    "command_writes": 0,
+    "lease_requests": 0,
+    "actual_unknown_count": 253
+  },
+  "latest_bounded_observation": {
+    "at_utc": "2026-10-21T06:35:35.709290+00:00",
+    "posture": {
+      "description": "双膝显著屈曲",
+      "knee_deg": [
+        160.5449214978487,
+        160.5180651940322
+      ],
+      "imu_rpy_deg": [
+        7.895062619168283,
+        -3.653673946488567,
+        -1.947814991370842
+      ],
+      "secondary_imu_rpy_deg": [
+        3.8427924930961113,
+        -6.93074065365274,
+        -0.6739169962411455
+      ],
+      "whole_body_pose": "unknown",
+      "support": "unknown",
+      "feet": {
+        "left": {
+          "contact": null,
+          "load_n": null
+        },
+        "right": {
+          "contact": null,
+          "load_n": null
+        }
+      },
+      "detail": "双膝 >90° 仅为形态描述规则；未确定站/坐/卧、身体离地高度或接触对象。三维模型按关节角度显示，不表示世界中的支撑姿势"
+    },
+    "control_mode": {
+      "fsm": 0,
+      "sdk_label": "SDK ZeroTorque 对应状态 ID",
+      "active_capability_id": null,
+      "feedback_consistency": "matched",
+      "activity_verified": false,
+      "detail": "FSM 只表明服务回读的状态 ID；未取得具体能力执行中/完成的可信反馈。ZeroTorque ID 也不证明每个电机实际力矩为零"
+    },
+    "camera": {
+      "backend": "unitree",
+      "status": "live",
+      "error": null,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 297,
+        "successes": 296,
+        "timeouts": 0,
+        "errors": 1,
+        "total_attempts": 352,
+        "total_successes": 351,
+        "total_timeouts": 0
+      },
+      "source": "unitree-videohub-b721ccc43929",
+      "sequence": 351,
+      "age_ms": 97,
+      "request_started_at": 1792564535.6547508,
+      "received_at": 1792564535.6898553,
+      "width": 960,
+      "height": 540,
+      "source_width": 1920,
+      "source_height": 1080,
+      "request_ms": 35,
+      "timestamp_basis": "request_started_at",
+      "sensor_timestamp": null
+    },
+    "already_standing": null,
+    "selected_transition": null,
+    "execution_allowed": false
+  },
+  "journal": {
+    "checked_at_utc": "2026-10-21T06:37:22.220007+00:00",
+    "run_id": "d0c614d8a7f5",
+    "journal": {
+      "bytes": 333805,
+      "sha256": "42b6143a7255c43676ab1fa69fa9507fd94ef24dd3e834ff91543c4db347d7dd",
+      "ends_with_newline": true,
+      "invalid_lines": [
+        {
+          "line": 223,
+          "bytes": 1851,
+          "error_type": "UnicodeDecodeError",
+          "contains_current_run": false,
+          "sha256": "673a1e8da7ac3e72007abbed5053cb0fec33dfcb995a4361985c49fbdae29922"
+        }
+      ]
+    },
+    "current_run_event_counts": {
+      "connected": 1,
+      "camera_connected": 1,
+      "state_observed": 6
+    },
+    "read_only": true,
+    "control_owner": null,
+    "navigation_status": "idle",
+    "insight_enabled": false,
+    "human_confirmation_is_historical": true,
+    "action_writes_recorded": 0,
+    "lease_requests_recorded": 0,
+    "evidence_limit": "Application journal and current state; not an independent network capture"
+  },
+  "evidence_files": [
+    {
+      "path": ".g1-deploy/research/standing-plan-20261021/release-after.json",
+      "bytes": 1867,
+      "sha256": "e831f9cc972af2eeee6d6a18581adea2f4c957ae6822758ef942222bc269667c"
+    },
+    {
+      "path": ".g1-deploy/research/standing-plan-20261021/postdeploy-soak.json",
+      "bytes": 347344,
+      "sha256": "ab64c5a4ba9b6b8bc0354552c1087123a4018b0c09bea2dfb81ceb99d911d799"
+    },
+    {
+      "path": ".g1-deploy/research/standing-plan-20261021/journal-after.json",
+      "bytes": 793,
+      "sha256": "08d90da413af3dfd0942aba2088b61a30167eab22d89086408931836dafaa216"
+    },
+    {
+      "path": ".g1-deploy/research/standing-plan-20261021/paired-observation.json",
+      "bytes": 3026063,
+      "sha256": "5a248888fb8c4cdbd8e7df40a6a986d86c603e352be5a88b5760dd3b032b98af"
+    },
+    {
+      "path": "g1_console/assets/g1_standing_support_audit.json",
+      "bytes": 2593,
+      "sha256": "72754a382048b22be9218bb14ade9e19eae8dd3957ef8fa2728da0c8152d1a90"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/standing_reads_20261021_v16.json",
+      "bytes": 4350,
+      "sha256": "d39f552f16cf84e75d6f38b609d12b3d96f6e7a0ff4524df3578ddc1a5d798ed"
+    },
+    {
+      "path": "doc/screenshots/g1-human-posture-confirmation-v16.png",
+      "bytes": 46070,
+      "sha256": "a94857d5190bd98633fd1666df7d71349b5fb25f6aa581479d021b390194be80"
+    }
+  ],
+  "limits": [
+    "Human digital pose match is historical confirmation, not foot load measurement, independent balance proof or sensor extrinsic calibration.",
+    "253 actual motor configuration fields remain unknown.",
+    "GetBalanceMode and GetStandHeight returned 7301 with null values; arm API version returned 3103; firmware-compatible transition remains unverified.",
+    "No independent network capture; action and lease absence is based on read-only code scope, application state and current-run application journal.",
+    "Camera cumulative counters include one startup error; the bounded verification does not prove permanent availability.",
+    "Autonomous visual analysis is currently paused; camera and body feedback remain available."
+  ],
+  "constraints": {
+    "robot_motion_executed": false,
+    "control_lease_requested": false,
+    "quantumult_x_changed": false,
+    "official_services_restarted": false
+  }
+}

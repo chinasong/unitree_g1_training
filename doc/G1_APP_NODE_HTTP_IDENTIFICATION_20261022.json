@@ -1,0 +1,37 @@
+[
+  {
+    "host": "<APP_REPORTED_IP>",
+    "port": 8765,
+    "source": [
+      "<MAC_IP>",
+      56075
+    ],
+    "peer": [
+      "<APP_REPORTED_IP>",
+      8765
+    ],
+    "status": 400,
+    "headers": {
+      "content-type": "text/plain; charset=utf-8",
+      "content-length": "43",
+      "connection": "close",
+      "date": "Thu, 22 Oct 2026 02:52:13 GMT"
+    },
+    "body_bytes": 43,
+    "body_sha256": "a9bf0fc3ed0e6294f9a1b4f95a58400de5d96c55fdf3059c61eb05a7b62d68e4",
+    "body_prefix": "Connection header did not include 'upgrade'"
+  },
+  {
+    "host": "<APP_REPORTED_IP>",
+    "port": 9991,
+    "source": [
+      "<MAC_IP>",
+      56076
+    ],
+    "peer": [
+      "<APP_REPORTED_IP>",
+      9991
+    ],
+    "error": "RemoteDisconnected: Remote end closed connection without response"
+  }
+]

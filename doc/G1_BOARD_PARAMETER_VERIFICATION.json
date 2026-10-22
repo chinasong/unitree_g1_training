@@ -1,0 +1,50 @@
+{
+  "verified_at_utc": "2026-10-21T01:50:33.530242+00:00",
+  "release": "7b1e6ba0dcd8",
+  "manifest_files": 365,
+  "foundation_id": "5627182be7253635c638ab701c791077b5593a7f818fcb52028bf08a6b7b9004",
+  "schema_version": 3,
+  "read_only": true,
+  "connected": true,
+  "mode": "robot",
+  "run_id": "737bbec8a432",
+  "joints": 23,
+  "telemetry_age_ms": 4,
+  "mode_machine": 4,
+  "mode_pr": 0,
+  "owner": null,
+  "command_accepted": 0,
+  "camera": {
+    "backend": "unitree",
+    "status": "retrying",
+    "error": "SDK_3102",
+    "source": null,
+    "sequence": -1,
+    "age_ms": null,
+    "device_nodes_observed": [],
+    "official_video_process_observed": {
+      "pid": 2557,
+      "comm": "videohub_pc4",
+      "executable_argument": "/unitree/module/video_hub_pc4/videohub_pc4",
+      "restarted_by_this_task": false
+    }
+  },
+  "board_audit_current": false,
+  "new_motor_configuration_values": 0,
+  "actual_config_unknowns": 253,
+  "checks": {
+    "pytest": "61 passed, 1 pre-existing Starlette/httpx deprecation warning",
+    "frontend": "npm run build passed; existing large 3D chunk warning",
+    "remote_manifest": "365 files SHA256 verified",
+    "pip": "no broken requirements",
+    "network_configuration_changes": false,
+    "quantumult_x_touched": false
+  },
+  "notes": [
+    "Board readings are dated history, not current telemetry or motor calibration.",
+    "PC1 TCP/22 refused; no authentication attempted.",
+    "No robot commands sent; no application DDS writers in the board audit.",
+    "Current startup has no /dev/video* nodes observed; camera SDK_3102. Mac observer waits for a fresh frame and does not create a new environment report."
+  ],
+  "screenshot": "screenshots/g1-board-parameter-audit.png"
+}

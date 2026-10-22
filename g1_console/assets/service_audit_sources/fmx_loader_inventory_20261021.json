@@ -1,0 +1,1571 @@
+{
+  "started_at_utc": "2026-10-21T03:17:25.567744+00:00",
+  "roots": [
+    "/unitree/sbin",
+    "/unitree/bin",
+    "/unitree/etc",
+    "/unitree/ota",
+    "/unitree/robot/pkg",
+    "/unitree/var/data",
+    "/opt/ota_package",
+    "/usr/local/include/unitree",
+    "/usr/local/lib",
+    "/home/unitree/megaflow_sdk/ws/dep"
+  ],
+  "max_depth": 5,
+  "max_files": 5000,
+  "max_binary_bytes": 67108864,
+  "read_only": true,
+  "vendor_program_executions": 0,
+  "rpc_calls": 0,
+  "command_writes": 0,
+  "boot_id": "7a6791dc-f512-4b45-aca3-44fbde855e25",
+  "files_seen": 786,
+  "binaries": [
+    {
+      "path": "/unitree/sbin/mscli",
+      "bytes": 5951720,
+      "sha256": "284aa30350e6afc988285e2efe62e36dc6209006ae14bc6b8d0575cdbbccf8e5",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": false,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "libpthread.so.0",
+        "libstdc++.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "build_ids": [
+        "b613b0cff3ed0f3d7d8e45e22a459152e380284b"
+      ]
+    },
+    {
+      "path": "/unitree/sbin/ota_pipe_cli",
+      "bytes": 6078920,
+      "sha256": "bbaff3c92449f46d4e5a2c1cef6f990eaadaf6e89139967cb5f8f5f59a275c8d",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": false,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "libpthread.so.0",
+        "libstdc++.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "build_ids": [
+        "a180f626a0b83a9e835ebedebd114ede83cdad4d"
+      ]
+    },
+    {
+      "path": "/unitree/sbin/start-stop-daemon",
+      "bytes": 127936,
+      "sha256": "540cfdec2d61f2bdc8018b49a86652a959a060a4d2c1af93089c464166ca8875",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": true,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "libc.so.6"
+      ],
+      "build_ids": [
+        "7128fd800e04f9536250c937d1ce4f3841d4c25a"
+      ]
+    },
+    {
+      "path": "/unitree/bin/json_checker",
+      "bytes": 98192,
+      "sha256": "4adfa6d4d2a0cad90b905c4fa1f3f1b1c31c2490c69b4fcc43f5798419bece0e",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": true,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6"
+      ],
+      "build_ids": [
+        "d21eef8ac7304d489cb13f33b1ec783677241f3e"
+      ]
+    },
+    {
+      "path": "/unitree/ota/pipe/ota_pipe_service",
+      "bytes": 9213664,
+      "sha256": "fcca57b1f2c67af0123235cbbdd17f8f5a444a64d105a928b683cd5074be60e7",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": true,
+      "matches": [
+        "00000000000633a8 T unitree::common::ServiceBase::ParseConfigContent(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)"
+      ],
+      "matches_truncated": false,
+      "needed": [
+        "libpthread.so.0",
+        "libstdc++.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1",
+        "libdl.so.2"
+      ],
+      "build_ids": [
+        "962f602fe40b1ee1503992e2ca3afdf0d2b93177"
+      ]
+    },
+    {
+      "path": "/unitree/var/data/chrony/chrony_3.5-6ubuntu6.2_arm64.deb",
+      "bytes": 212496,
+      "sha256": "5558692a69cfa19ebcfbeb9e266ff401585c10385d0d7bfa61c2a16cb7101c09",
+      "kind": "archive",
+      "nm_returncode": 0,
+      "has_symbols": false,
+      "matches": [],
+      "matches_truncated": false
+    },
+    {
+      "path": "/usr/local/lib/libCppUnitLite.a",
+      "bytes": 73038,
+      "sha256": "ee0c790b095b1dfc0f2c727cffdf3dc8175fe0c30f0986a1cd6fdd87c1d77cf0",
+      "kind": "archive",
+      "nm_returncode": 0,
+      "has_symbols": true,
+      "matches": [],
+      "matches_truncated": false
+    },
+    {
+      "path": "/usr/local/lib/libcrypto.so",
+      "bytes": 2711264,
+      "sha256": "9007706842cfdca68526afe5d7753631a313ca1a30733f99d5e1424733de5aa5",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": false,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "libdl.so.2",
+        "libpthread.so.0",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "build_ids": [
+        "a8066c87a8c5a8c4a6f9dc10f0adba3b4fa080ec"
+      ]
+    },
+    {
+      "path": "/usr/local/lib/libdds_security_ac.so",
+      "bytes": 349584,
+      "sha256": "9c541868bdd34925bee3299d761d36b18e525487bf2a83971c4875957d97ab7a",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": true,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "libddsc.so.0",
+        "libcrypto.so.1.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "build_ids": [
+        "db4fdaba7dbf7c4822e4db3c06bd1dcb9e5231ef"
+      ]
+    },
+    {
+      "path": "/usr/local/lib/libdds_security_auth.so",
+      "bytes": 321008,
+      "sha256": "6147a52f74ba30a67de941d17244209111845d40e13758ae20b8b20586af98d9",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": true,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "libddsc.so.0",
+        "libcrypto.so.1.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "build_ids": [
+        "6444944704b84ba939bc0d78f54d36256f7d672a"
+      ]
+    },
+    {
+      "path": "/usr/local/lib/libdds_security_crypto.so",
+      "bytes": 466744,
+      "sha256": "eb00571fc04acbb6e8f0a7cebfdbe89b92f19a29584adefe3a02883a1ccb2c61",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": true,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "libddsc.so.0",
+        "libcrypto.so.1.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "build_ids": [
+        "a8679fc4c2e478e9dd6abb408dfefca2c5bd457b"
+      ]
+    },
+    {
+      "path": "/usr/local/lib/libfw.a",
+      "bytes": 1576222,
+      "sha256": "41e96aa605ade88671b4841f9b5f085c0d2f73a876016459d5ed6499da46c349",
+      "kind": "archive",
+      "nm_returncode": 0,
+      "has_symbols": true,
+      "matches": [],
+      "matches_truncated": false
+    },
+    {
+      "path": "/usr/local/lib/libglfw3.a",
+      "bytes": 408698,
+      "sha256": "89835d6e47f5bd1ff5acf58838c3dbdd8e9b76c50816175c7c2d97805514436e",
+      "kind": "archive",
+      "nm_returncode": 0,
+      "has_symbols": true,
+      "matches": [],
+      "matches_truncated": false
+    },
+    {
+      "path": "/usr/local/lib/libgtsam.so.4.0.2",
+      "bytes": 4930592,
+      "sha256": "3cb113904cb6902c9ad951817bf1e0a08276a9e3a22bb06647649848c3c0ebfc",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": true,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "libboost_serialization.so.1.71.0",
+        "libboost_filesystem.so.1.71.0",
+        "libboost_timer.so.1.71.0",
+        "libtbb.so.2",
+        "libtbbmalloc.so.2",
+        "libmetis.so",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "build_ids": [
+        "9290ac68e8e8649c55181ad7d650518ac54f3720"
+      ]
+    },
+    {
+      "path": "/usr/local/lib/libgtsam_unstable.so.4.0.2",
+      "bytes": 1635368,
+      "sha256": "c20a9a748983c15902a18bb6662a4feb495ae241d4c6344af6e55a75a77e9a38",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": true,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "libgtsam.so.4",
+        "libtbb.so.2",
+        "libtbbmalloc.so.2",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "build_ids": [
+        "a7d25e746c11fc73e52fcca7ab6b60858076640a"
+      ]
+    },
+    {
+      "path": "/usr/local/lib/liblivox_lidar_sdk_shared.so",
+      "bytes": 4950056,
+      "sha256": "c33e7bd70b6265ce5b5dfa0030a6caeaea0ff3245a16c6ecfe6abce1e8553e00",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": true,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "libstdc++.so.6",
+        "libgcc_s.so.1",
+        "libpthread.so.0",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "build_ids": [
+        "b1d988df038721764e6ab1eb5631dc35726f40f3"
+      ]
+    },
+    {
+      "path": "/usr/local/lib/liblivox_lidar_sdk_static.a",
+      "bytes": 24428434,
+      "sha256": "4a0a42d3c7009e96b762120522ef01c40aceb4e8bf28e6df8ca99a6a78423b3a",
+      "kind": "archive",
+      "nm_returncode": 0,
+      "has_symbols": true,
+      "matches": [],
+      "matches_truncated": false
+    },
+    {
+      "path": "/usr/local/lib/libmetis.so",
+      "bytes": 480376,
+      "sha256": "635736b7b12fbd9bd9e0b576cbdbdfe117a75109440410b98e703dd49058e086",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": true,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "libm.so.6",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "build_ids": [
+        "1fdfd8058e6eecd5089e3474918ee3eeb24af71a"
+      ]
+    },
+    {
+      "path": "/usr/local/lib/librealsense-file.a",
+      "bytes": 12163132,
+      "sha256": "929a415ff36c1c6aef6a4602a9e5ea8a2ca263c78511f583dde2922330679e12",
+      "kind": "archive",
+      "nm_returncode": 0,
+      "has_symbols": true,
+      "matches": [],
+      "matches_truncated": false
+    },
+    {
+      "path": "/usr/local/lib/librealsense2-gl.so.2.50.0",
+      "bytes": 21096720,
+      "sha256": "f399500c791cb581d1991e3ddf31a797da23cd87cafe66c1de3a3f9106b11f71",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": true,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "librealsense2.so.2.50",
+        "libm.so.6",
+        "libdl.so.2",
+        "libX11.so.6",
+        "libstdc++.so.6",
+        "libgcc_s.so.1",
+        "libpthread.so.0",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "build_ids": [
+        "526ce2f0a07edbb4929456a8f9d9e6da13ba876f"
+      ]
+    },
+    {
+      "path": "/usr/local/lib/librealsense2-gl.so.2.55.1",
+      "bytes": 2230208,
+      "sha256": "d1f92843fde3638ed72cf269ad78217d50daf03beb05df61b478c64ea2efb2c8",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": true,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "librealsense2.so.2.55",
+        "libm.so.6",
+        "libdl.so.2",
+        "libX11.so.6",
+        "libstdc++.so.6",
+        "libgcc_s.so.1",
+        "libpthread.so.0",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "build_ids": [
+        "8b5f6438871e707c6754b6d397d1de569f2c1623"
+      ]
+    },
+    {
+      "path": "/usr/local/lib/librealsense2.so.2.55.1",
+      "bytes": 11394152,
+      "sha256": "9a76742e7e209beb14d590076ad74d7b67e6609324bd64c8ad25a09dc843bc28",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": true,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "libudev.so.1",
+        "libusb-1.0.so.0",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libpthread.so.0",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "build_ids": [
+        "2c9cc6ec32245905ddc57168c6716cccffed8ffd"
+      ]
+    },
+    {
+      "path": "/usr/local/lib/librsutils.a",
+      "bytes": 1063554,
+      "sha256": "4dc09cde1e99463839ded0df9a3a1182a1f3effe070ad72bc9096ccce5b23b87",
+      "kind": "archive",
+      "nm_returncode": 0,
+      "has_symbols": true,
+      "matches": [],
+      "matches_truncated": false
+    },
+    {
+      "path": "/usr/local/lib/libssl.so",
+      "bytes": 568960,
+      "sha256": "7b6aee772354a922c9ba426b501b870eb159acb09218a75932eed599bb662416",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": false,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "libcrypto.so.1.1",
+        "libdl.so.2",
+        "libpthread.so.0",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "build_ids": [
+        "36a274bd41c4f56cab63845565458fc6d256284a"
+      ]
+    },
+    {
+      "path": "/usr/local/lib/libtcmalloc.so",
+      "bytes": 309200,
+      "sha256": "2d59dc6ee15ec23a8e7d23b156533f60520d3c3a902856a1010b2d5a359a82b0",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": false,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "libpthread.so.0",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1",
+        "libgcc_s.so.1"
+      ],
+      "build_ids": [
+        "c4ff7f1ca5b08e42f3e47e5329effe2562ee4a03"
+      ]
+    },
+    {
+      "path": "/usr/local/lib/libunitree_go2_idl_cpp.a",
+      "bytes": 2299164,
+      "sha256": "78637150fe0534eb66a2ac98b146382829c5ed08f296fbe5cbe41bb6e8a54d8a",
+      "kind": "archive",
+      "nm_returncode": 0,
+      "has_symbols": true,
+      "matches": [],
+      "matches_truncated": false
+    },
+    {
+      "path": "/usr/local/lib/libunitree_go2_sdk.a",
+      "bytes": 16255178,
+      "sha256": "a6b4514f5da65fe6e7602c7765cdeff248ebaa01f085699a00bc348fb213be08",
+      "kind": "archive",
+      "nm_returncode": 0,
+      "has_symbols": true,
+      "matches": [],
+      "matches_truncated": false
+    },
+    {
+      "path": "/usr/local/lib/libunitree_ros2_idl_cpp.a",
+      "bytes": 3520474,
+      "sha256": "6e3bed84a0e5a1268f2bc76c1d88d9276ceb86ce2b9edcad3da5b3a9f08aea67",
+      "kind": "archive",
+      "nm_returncode": 0,
+      "has_symbols": true,
+      "matches": [],
+      "matches_truncated": false
+    },
+    {
+      "path": "/usr/local/lib/libunitree_sdk2.a",
+      "bytes": 28896164,
+      "sha256": "d8fa3a30dc4c01df0da4c6db388f9a25b9a7d2a68f3211ed7eb638f106f1f719",
+      "kind": "archive",
+      "nm_returncode": 0,
+      "has_symbols": true,
+      "matches": [
+        "0000000000000600 T unitree::common::ServiceBase::ParseConfigContent(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)"
+      ],
+      "matches_truncated": false
+    },
+    {
+      "path": "/usr/local/lib/python3.8/dist-packages/evdev/_ecodes.cpython-38-aarch64-linux-gnu.so",
+      "bytes": 89584,
+      "sha256": "0a2e2c40b8c5cda02489a91b8156065b3f89c90461e3124797ed91bd63221b04",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": true,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [],
+      "build_ids": [
+        "f1ae641c433493f149836f873979d5e2ed906ca2"
+      ]
+    },
+    {
+      "path": "/usr/local/lib/python3.8/dist-packages/evdev/_input.cpython-38-aarch64-linux-gnu.so",
+      "bytes": 63960,
+      "sha256": "b41439a091135ed4e88acc1002015ebe4a92b7ca6d9cf31c34c64022fcabf87f",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": true,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "libpthread.so.0",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "build_ids": [
+        "1450514e87ae3e6d522e1b980dfd89d8481d5db2"
+      ]
+    },
+    {
+      "path": "/usr/local/lib/python3.8/dist-packages/evdev/_uinput.cpython-38-aarch64-linux-gnu.so",
+      "bytes": 52728,
+      "sha256": "1e9b26eaa47b9f9c7caf2ff0e7d158df432c0f666596b4e4888ecbaf5d442ccd",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": true,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "libpthread.so.0",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "build_ids": [
+        "d4775d8aff0b01dc5aa2214ebb68ef2503cc3f04"
+      ]
+    },
+    {
+      "path": "/usr/local/lib/python3.8/dist-packages/pyrealsense2/pyrealsense2.cpython-38-aarch64-linux-gnu.so",
+      "bytes": 10757376,
+      "sha256": "e55b5d2a0e10a6ff83c288a7909e4a465303de996085c7e6bcb59d17a4f5226f",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": false,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "libusb-1.0.so.0",
+        "libudev.so.1",
+        "libpthread.so.0",
+        "librt.so.1",
+        "libdl.so.2",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "build_ids": [
+        "add4a106c1cea64de7b39187713f9eae2d711b00"
+      ]
+    },
+    {
+      "path": "/usr/local/lib/python3.8/dist-packages/pyrealsense2/pyrsutils.cpython-38-aarch64-linux-gnu.so",
+      "bytes": 481416,
+      "sha256": "22dc971e26f99cc5282fbf23cbc7474e57128f13c69f0a4bb8dcd48b46c08bfc",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": false,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "libstdc++.so.6",
+        "libgcc_s.so.1",
+        "libpthread.so.0",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "build_ids": [
+        "2cf40677b3782d5f66c40f99b906c906045b93e4"
+      ]
+    },
+    {
+      "path": "/usr/local/lib/python3.8/dist-packages/pyzmq.libs/libsodium-b4dead5f.so.26.2.0",
+      "bytes": 677361,
+      "sha256": "6fe7c6aa0cd6b6672cee357676b8e27e713f03716fffef0c7024833caf310e54",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": false,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "libpthread.so.0",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "build_ids": [
+        "3506e9663ea732bcd5c797819a2552aafdfe0998"
+      ]
+    },
+    {
+      "path": "/usr/local/lib/python3.8/dist-packages/pyzmq.libs/libzmq-7dd39f55.so.5.2.5",
+      "bytes": 1186337,
+      "sha256": "ff219121cf7e268ddf1f50aea885449832a075b1a19379e24d477fb847bc70b9",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": false,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "libsodium-b4dead5f.so.26.2.0",
+        "librt.so.1",
+        "libpthread.so.0",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1",
+        "libgcc_s.so.1"
+      ],
+      "build_ids": [
+        "b5c04d4b913f659208081f48e77886b2fb136033"
+      ]
+    },
+    {
+      "path": "/usr/local/lib/python3.8/dist-packages/tornado/speedups.abi3.so",
+      "bytes": 74568,
+      "sha256": "e32913b3b70a5a60f12bfb49cd9e4cf6fd38b409df771d47d255beb3f5a64519",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": true,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "libpthread.so.0",
+        "libc.so.6"
+      ],
+      "build_ids": [
+        "b7320bb5bf7748db65b2fd0db6d036a0637fc057"
+      ]
+    },
+    {
+      "path": "/usr/local/lib/python3.8/dist-packages/zmq/backend/cython/_zmq.cpython-38-aarch64-linux-gnu.so",
+      "bytes": 402897,
+      "sha256": "4ecc97333bf706e36f6f9847e5bbd05819f7729f8a77243a2bb3ff507cd1fa6a",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": false,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "libzmq-7dd39f55.so.5.2.5",
+        "libpthread.so.0",
+        "libc.so.6"
+      ],
+      "build_ids": [
+        "a22ac6d3e2044a5a1d09d6391af18cd4d703becc"
+      ]
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/dep/libPocoCrypto.so",
+      "bytes": 226304,
+      "sha256": "4de32eceda2cf47f90f171694240f93edce673949de30dab96c6a6880671f3ff",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": false,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "libPocoFoundation.so.61",
+        "libpthread.so.0",
+        "libdl.so.2",
+        "librt.so.1",
+        "libssl.so.1.1",
+        "libcrypto.so.1.1",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6"
+      ],
+      "build_ids": []
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/dep/libPocoFoundation.so",
+      "bytes": 1970008,
+      "sha256": "fb72d44abe35200e9821ef94efff57cb05e264453981276b28e01e6c1831cdbd",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": false,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "libpthread.so.0",
+        "libdl.so.2",
+        "librt.so.1",
+        "libssl.so.1.1",
+        "libcrypto.so.1.1",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6"
+      ],
+      "build_ids": []
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/dep/libPocoJSON.so",
+      "bytes": 323840,
+      "sha256": "330dd08528942cce880828de606d1712397f13c9f89ed726679a1f01e638d4f1",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": false,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "libPocoFoundation.so.61",
+        "libpthread.so.0",
+        "libdl.so.2",
+        "librt.so.1",
+        "libssl.so.1.1",
+        "libcrypto.so.1.1",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6"
+      ],
+      "build_ids": []
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/dep/libPocoNet.so",
+      "bytes": 1210000,
+      "sha256": "4517fb6b78f76ece0cabd35788f2991085c487a1d7f7b0d56b0a144cf2b0b5a6",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": false,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "libPocoFoundation.so.61",
+        "libpthread.so.0",
+        "libdl.so.2",
+        "librt.so.1",
+        "libssl.so.1.1",
+        "libcrypto.so.1.1",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6"
+      ],
+      "build_ids": []
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/dep/libPocoNetSSL.so",
+      "bytes": 292712,
+      "sha256": "6a59fa303ad577e57473b9e695e3ab9669b79386f24a20d9784f6aa6431df0c4",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": false,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "libPocoNet.so.61",
+        "libPocoCrypto.so.61",
+        "libPocoUtil.so.61",
+        "libPocoFoundation.so.61",
+        "libpthread.so.0",
+        "libdl.so.2",
+        "librt.so.1",
+        "libssl.so.1.1",
+        "libcrypto.so.1.1",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6"
+      ],
+      "build_ids": []
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/dep/libPocoUtil.so",
+      "bytes": 473464,
+      "sha256": "337c1172b4e3766228acea621409416ea9565d7cff0ea85ec5aa5e87af71e88f",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": false,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "libPocoFoundation.so.61",
+        "libPocoXML.so.61",
+        "libPocoJSON.so.61",
+        "libpthread.so.0",
+        "libdl.so.2",
+        "librt.so.1",
+        "libssl.so.1.1",
+        "libcrypto.so.1.1",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6"
+      ],
+      "build_ids": []
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/dep/libPocoXML.so",
+      "bytes": 649976,
+      "sha256": "127358de17f06017aeffb350db50fb80cf0e42783fff1333c714be23a3bbfec1",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": false,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "libPocoFoundation.so.61",
+        "libpthread.so.0",
+        "libdl.so.2",
+        "librt.so.1",
+        "libssl.so.1.1",
+        "libcrypto.so.1.1",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6"
+      ],
+      "build_ids": []
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/dep/libcjson.so",
+      "bytes": 47592,
+      "sha256": "5b1c2d518adc75ad7d62405368b5e64201c2ed2aab136aa011fe68e2c89a490b",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": true,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "libm.so.6",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "build_ids": []
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/dep/libcrypto.so",
+      "bytes": 2922696,
+      "sha256": "8e17bc377080aaa1d03894d90e20bde9e029f5760876a006874287744ffc394a",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": true,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "libdl.so.2",
+        "libpthread.so.0",
+        "libc.so.6"
+      ],
+      "build_ids": []
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/dep/libcurl.so",
+      "bytes": 792128,
+      "sha256": "413e94aadf565f4dc6eb19e0d704cc6f6d143a59e4c1aae3087d87076a3fa79b",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": true,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "libpsl.so.5",
+        "libssl.so.1.1",
+        "libcrypto.so.1.1",
+        "libz.so.1",
+        "libpthread.so.0",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "build_ids": [
+        "d61755bde3bf2ef704a81b2fea757551f38e2bb3"
+      ]
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/dep/libhv.so",
+      "bytes": 938512,
+      "sha256": "b4f7b3a074a2ce6ff6e06bab34d9c6a57e944de4513deec69734c97507e61ed1",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": true,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "libssl.so.1.1",
+        "libcrypto.so.1.1",
+        "libstdc++.so.6",
+        "libpthread.so.0",
+        "libdl.so.2",
+        "librt.so.1",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6"
+      ],
+      "build_ids": []
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/dep/libmegaflow_sdk.so",
+      "bytes": 3475960,
+      "sha256": "1dabb2d9b5840673e6b97a9d8ed5e5fdf676d94f68205c5070211de2defaa5a7",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": true,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "libpthread.so.0",
+        "libssl.so.1.1",
+        "libcrypto.so.1.1",
+        "libmosquitto.so.1",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6"
+      ],
+      "build_ids": []
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/dep/libmosquitto.so",
+      "bytes": 155648,
+      "sha256": "8e0d649ee8f3cf59c3548a0affd098a18a673a55abfc7989587f3e28ac5c69eb",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": true,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "libssl.so.1.1",
+        "libcrypto.so.1.1",
+        "libcjson.so.1",
+        "librt.so.1",
+        "libpthread.so.0",
+        "libc.so.6"
+      ],
+      "build_ids": []
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/dep/libmosquittopp.so",
+      "bytes": 33960,
+      "sha256": "7ce4b0ae89d5332e511d46b8d644d291852ccbac91028b7f6977af08d6208800",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": true,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "libssl.so.1.1",
+        "libcrypto.so.1.1",
+        "libcjson.so.1",
+        "libmosquitto.so.1",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6"
+      ],
+      "build_ids": []
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/dep/libonnxruntime.so.1.16.0",
+      "bytes": 20159952,
+      "sha256": "4cfa681be1096c26292446fb9bc6e914145784fcba6b3a3635b63e1021ef2aeb",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": true,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "libdl.so.2",
+        "libpthread.so.0",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "build_ids": [
+        "883fcb70fce383ac35aa8384735f46bc1a7cd4d8"
+      ]
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/dep/libopencv_calib3d.so",
+      "bytes": 1954528,
+      "sha256": "030e08e1f77f4d86f62ba7452e986981e88cb04299e2031643904be188193bd6",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": true,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "libopencv_features2d.so.4.5",
+        "libopencv_flann.so.4.5",
+        "libopencv_imgproc.so.4.5",
+        "libopencv_core.so.4.5",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6"
+      ],
+      "build_ids": []
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/dep/libopencv_core.so",
+      "bytes": 4144112,
+      "sha256": "f4a95165a47fc7ce805799a7a7abd2b1c9370b81cfe3454de13b1ab78e7f7dbf",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": true,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "libdl.so.2",
+        "libpthread.so.0",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6"
+      ],
+      "build_ids": []
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/dep/libopencv_dnn.so",
+      "bytes": 5526448,
+      "sha256": "4dc3848fc1acd1274ef9b11731724f2fb5275dfe99be78cb14e53ce9e7f65e8b",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": true,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "libopencv_imgproc.so.4.5",
+        "libopencv_core.so.4.5",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libpthread.so.0",
+        "libc.so.6"
+      ],
+      "build_ids": []
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/dep/libopencv_features2d.so",
+      "bytes": 805792,
+      "sha256": "4bdbc94cba74ed637ec6f330fccf5f645dd01fa12837ace1dade373433158c06",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": true,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "libopencv_flann.so.4.5",
+        "libopencv_imgproc.so.4.5",
+        "libopencv_core.so.4.5",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6"
+      ],
+      "build_ids": []
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/dep/libopencv_flann.so",
+      "bytes": 553144,
+      "sha256": "4d5a153a891378e2e45c37daf2ecdbaec1cf1e83771ba335c388e847446e80ce",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": true,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "libopencv_core.so.4.5",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6"
+      ],
+      "build_ids": []
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/dep/libopencv_gapi.so",
+      "bytes": 3982984,
+      "sha256": "ce00e2091fc264a8bc6a70be51db0b6f684f5f0a933f5e27e45a3517d8427158",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": true,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "libopencv_video.so.4.5",
+        "libpthread.so.0",
+        "libopencv_imgproc.so.4.5",
+        "libopencv_core.so.4.5",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6"
+      ],
+      "build_ids": []
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/dep/libopencv_highgui.so",
+      "bytes": 124000,
+      "sha256": "d3976ccd9c09376ca9dfdb15a1bbb642dc5096f56a7e1de63fea4ef3a59a1def",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": true,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "libgtk-3.so.0",
+        "libgdk-3.so.0",
+        "libcairo.so.2",
+        "libgdk_pixbuf-2.0.so.0",
+        "libgobject-2.0.so.0",
+        "libglib-2.0.so.0",
+        "libopencv_imgcodecs.so.4.5",
+        "libopencv_imgproc.so.4.5",
+        "libopencv_core.so.4.5",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "build_ids": [
+        "fafd6f24fc2e77244e70c4f5a3b7c36175a5bc9f"
+      ]
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/dep/libopencv_imgcodecs.so",
+      "bytes": 2294480,
+      "sha256": "e90ee717e8aabcc734d10929801d51abaa7c9f246a8b11f34822f7b5b782cc8d",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": true,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "libopencv_imgproc.so.4.5",
+        "libpthread.so.0",
+        "libopencv_core.so.4.5",
+        "libm.so.6",
+        "libstdc++.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6"
+      ],
+      "build_ids": []
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/dep/libopencv_imgproc.so",
+      "bytes": 4298272,
+      "sha256": "60f75cb915253a90ce282f7011bc42757578f32abe93d14776099f3fdd70ee8a",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": true,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "libopencv_core.so.4.5",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6"
+      ],
+      "build_ids": []
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/dep/libopencv_ml.so",
+      "bytes": 631000,
+      "sha256": "602c8486a129fced93f3dfdf6befe75b5995f09a131d309e573725bf62ccdf4d",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": true,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "libopencv_core.so.4.5",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6"
+      ],
+      "build_ids": []
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/dep/libopencv_objdetect.so",
+      "bytes": 555808,
+      "sha256": "b3bcd291da1d7ce907a642024d147760b5cc3a90e4365bba4d6d1fd97451a03d",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": true,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "libopencv_calib3d.so.4.5",
+        "libpthread.so.0",
+        "libopencv_imgproc.so.4.5",
+        "libopencv_core.so.4.5",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6"
+      ],
+      "build_ids": []
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/dep/libopencv_photo.so",
+      "bytes": 647440,
+      "sha256": "ef81b251d2708b811245b3e2b0d6dd88ade1dbaa56ef8b2bcc351ecdb5449529",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": true,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "libopencv_imgproc.so.4.5",
+        "libopencv_core.so.4.5",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6"
+      ],
+      "build_ids": []
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/dep/libopencv_stitching.so",
+      "bytes": 742344,
+      "sha256": "7da8a5c51d920653513c2566a2e496a1c7a53edba3ff740dc583deb54ab0d2f3",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": true,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "libopencv_calib3d.so.4.5",
+        "libopencv_features2d.so.4.5",
+        "libopencv_flann.so.4.5",
+        "libopencv_imgproc.so.4.5",
+        "libopencv_core.so.4.5",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6"
+      ],
+      "build_ids": []
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/dep/libopencv_video.so",
+      "bytes": 572424,
+      "sha256": "ab7a75d70ea058bdbbd0d41e7bcdeebf9246740144c6b5c3c70dac2b5c61ebce",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": true,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "libopencv_dnn.so.4.5",
+        "libopencv_calib3d.so.4.5",
+        "libopencv_imgproc.so.4.5",
+        "libopencv_core.so.4.5",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6"
+      ],
+      "build_ids": []
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/dep/libopencv_videoio.so",
+      "bytes": 398872,
+      "sha256": "75e94f6f9e7ff6189c39ccbb2e8eb30f74fd91efd9a4a682d26060881f1bea4b",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": true,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "libopencv_imgcodecs.so.4.5",
+        "libdl.so.2",
+        "libpthread.so.0",
+        "libopencv_imgproc.so.4.5",
+        "libopencv_core.so.4.5",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6"
+      ],
+      "build_ids": []
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/dep/libsqlite3.so",
+      "bytes": 5364672,
+      "sha256": "58e0d9fab350bf12fca25548233b59b7f4db883c9ef00ac1386aeb835e481cf3",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": true,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "libpthread.so.0",
+        "libm.so.6",
+        "libdl.so.2",
+        "libc.so.6"
+      ],
+      "build_ids": []
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/dep/libssh2.so",
+      "bytes": 1334616,
+      "sha256": "0994e8ce4ba626d94a683d147bf0b19f2a61189548f3bbd0ee81bcccd9038f5a",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": true,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "libssl.so.1.1",
+        "libcrypto.so.1.1",
+        "libc.so.6"
+      ],
+      "build_ids": []
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/dep/libssl.so",
+      "bytes": 678408,
+      "sha256": "0716c9f293a14004f6dea2ee32c48d8ae9517819e0d14869c28ee66a89a9d857",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": true,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "libcrypto.so.1.1",
+        "libdl.so.2",
+        "libpthread.so.0",
+        "libc.so.6"
+      ],
+      "build_ids": []
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/dep/mosquitto",
+      "bytes": 2101416,
+      "sha256": "c766f4db1c73b25deb0ec60d43d07fdacbdf910e174a587e499f73ec4192641d",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": true,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "libdl.so.2",
+        "libm.so.6",
+        "libssl.so.1.1",
+        "libcrypto.so.1.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "build_ids": [
+        "3d97af8bc495502b555c51bb8a4f15ab889d79ef"
+      ]
+    },
+    {
+      "path": "/home/unitree/megaflow_sdk/ws/dep/mosquitto_dynamic_security.so",
+      "bytes": 184832,
+      "sha256": "0d004594377e50979f7b97e3299d64ae6f7a5a095410acca4ba0a1dd1170c8bb",
+      "kind": "ELF",
+      "nm_returncode": 0,
+      "has_symbols": true,
+      "matches": [],
+      "matches_truncated": false,
+      "needed": [
+        "libssl.so.1.1",
+        "libcrypto.so.1.1",
+        "libcjson.so.1",
+        "libc.so.6"
+      ],
+      "build_ids": []
+    }
+  ],
+  "fmx_files": [],
+  "sources": [
+    {
+      "path": "/usr/local/include/unitree/common/service/base/service_base.hpp",
+      "bytes": 2115,
+      "sha256": "d270b9b51ce078ddfd47a7e5a3ecd1a48d5a6be5356920e94e1e4e7e20660ff4",
+      "tokens": [
+        "ParseConfigContent"
+      ]
+    }
+  ],
+  "packages": [
+    {
+      "path": "/unitree/ota/update/module/unitree_patch_pc4/1.0.0.2/g1plus@unitree_patch_pc4_1.0.0.2.upk",
+      "bytes": 21509748,
+      "magic_hex": "5554504b00010000"
+    },
+    {
+      "path": "/unitree/ota/update/module/video_hub_pc4/1.0.1.1/video_hub_pc4_1.0.1.1.upk",
+      "bytes": 75892,
+      "magic_hex": "5554504b00010000"
+    },
+    {
+      "path": "/unitree/var/data/chrony/chrony_3.5-6ubuntu6.2_arm64.deb",
+      "bytes": 212496,
+      "magic_hex": "213c617263683e0a"
+    },
+    {
+      "path": "/opt/ota_package/t19x/BOOTAA64.efi",
+      "bytes": 73728,
+      "magic_hex": "4d5a000000000000"
+    },
+    {
+      "path": "/opt/ota_package/t19x/TEGRA_BL.Cap",
+      "bytes": 35671250,
+      "magic_hex": "edd5cb6d2de8444c"
+    },
+    {
+      "path": "/opt/ota_package/t19x/bl_only_payload",
+      "bytes": 35668333,
+      "magic_hex": "4e56494449415f5f"
+    },
+    {
+      "path": "/opt/ota_package/t19x/kernel_only_payload",
+      "bytes": 50297634,
+      "magic_hex": "4e56494449415f5f"
+    },
+    {
+      "path": "/opt/ota_package/t23x/BOOTAA64.efi",
+      "bytes": 73728,
+      "magic_hex": "4d5a000000000000"
+    },
+    {
+      "path": "/opt/ota_package/t23x/TEGRA_BL.Cap",
+      "bytes": 59666744,
+      "magic_hex": "edd5cb6d2de8444c"
+    },
+    {
+      "path": "/opt/ota_package/t23x/TEGRA_BL_3701_000.Cap",
+      "bytes": 16512135,
+      "magic_hex": "edd5cb6d2de8444c"
+    },
+    {
+      "path": "/opt/ota_package/t23x/bl_only_payload",
+      "bytes": 59663827,
+      "magic_hex": "4e56494449415f5f"
+    },
+    {
+      "path": "/opt/ota_package/t23x/bl_only_payload_3701_000",
+      "bytes": 16509218,
+      "magic_hex": "4e56494449415f5f"
+    },
+    {
+      "path": "/opt/ota_package/t23x/kernel_only_payload",
+      "bytes": 46305421,
+      "magic_hex": "4e56494449415f5f"
+    },
+    {
+      "path": "/opt/ota_package/t23x/kernel_only_payload_3701_000",
+      "bytes": 43907627,
+      "magic_hex": "4e56494449415f5f"
+    },
+    {
+      "path": "/opt/ota_package/t23x/xusb_t234_prod.bin",
+      "bytes": 156160,
+      "magic_hex": "4e564749ce032400"
+    },
+    {
+      "path": "/usr/local/lib/python3.8/dist-packages/tornado/test/static/sample.xml.gz",
+      "bytes": 264,
+      "magic_hex": "1f8b0808c78cb955"
+    }
+  ],
+  "links": [],
+  "errors": [
+    {
+      "path": "/usr/local/lib/libcryptopp.a",
+      "error": "binary size bound",
+      "bytes": 158103474
+    },
+    {
+      "path": "/usr/local/lib/librealsense2.so.2.50.0",
+      "error": "binary size bound",
+      "bytes": 161735304
+    },
+    {
+      "path": "/proc/1296/maps",
+      "error": "PermissionError"
+    }
+  ],
+  "missing_roots": [],
+  "duplicate_binaries": 50,
+  "mapped_paths": [],
+  "recheck": [
+    {
+      "path": "/unitree/module/master_service/master_service",
+      "bytes": 9083232,
+      "sha256": "380e34de9c2def2692c0bf1b73e969d3167c8270f2ed5f974bb01abd4e96f24e"
+    },
+    {
+      "path": "/unitree/module/master_service/master_service.json",
+      "bytes": 468,
+      "sha256": "31eae39936576504c40be767bd93cd34b7489154eca989e5e5c2781b05e3d977"
+    }
+  ],
+  "processes": [
+    {
+      "pid": 1296,
+      "argv": [
+        "/unitree/module/master_service/master_service"
+      ],
+      "start_ticks": 2242
+    },
+    {
+      "pid": 1298,
+      "argv": [
+        "/unitree/ota/pipe/ota_pipe_service"
+      ],
+      "start_ticks": 2242
+    },
+    {
+      "pid": 2557,
+      "argv": [
+        "/unitree/module/video_hub_pc4/videohub_pc4"
+      ],
+      "start_ticks": 2791
+    },
+    {
+      "pid": 2676,
+      "argv": [
+        "/home/unitree/megaflow_sdk/ws//bin/MegaFlowRuntimeDaemon",
+        "-c",
+        "/home/unitree/megaflow_sdk/ws//bin/config.bin",
+        "-w",
+        "/home/unitree/megaflow_sdk/ws/",
+        "-d",
+        "127.0.0.1:8899",
+        "-i",
+        "-e",
+        "/home/unitree/megaflow_sdk/ws//dep/",
+        "-l",
+        "0"
+      ],
+      "start_ticks": 3210
+    }
+  ],
+  "completed_at_utc": "2026-10-21T03:17:29.812712+00:00",
+  "received_at_utc": "2026-10-21T03:17:29.740817+00:00"
+}

@@ -1,0 +1,54 @@
+{
+  "current": false,
+  "checked_on": "2026-10-21",
+  "source_kind": "official_primary_documentation",
+  "sources": [
+    {
+      "title": "G1 RobotStateClient",
+      "url": "https://support.unitree.com/home/en/G1_developer/robot_state_client_interface",
+      "updated": "2025-11-19 14:49:52"
+    },
+    {
+      "title": "Official G1 Loco error header",
+      "url": "https://github.com/unitreerobotics/unitree_sdk2/blob/main/include/unitree/robot/g1/loco/g1_loco_error.hpp"
+    },
+    {
+      "title": "Cyclone DDS participant discovery",
+      "url": "https://cyclonedds.io/docs/cyclonedds/latest/about_dds/discovery_participants.html"
+    }
+  ],
+  "facts": [
+    {
+      "subject": "ai_sport",
+      "meaning": "官方 G1 文档将其列为主运动控制服务。"
+    },
+    {
+      "subject": "ServiceSwitch 回读状态",
+      "meaning": "G1 官方文档定义 status=0 开启，status=1 关闭；与 swit 输入 1 开启/0 关闭不是同一枚举。"
+    },
+    {
+      "subject": "ServiceList",
+      "meaning": "本机实际 28 项只有 name/status/protect；锁定 SDK 的对应结构亦只有这三项。没有实际运动固件版本。"
+    },
+    {
+      "subject": "7301",
+      "meaning": "官方错误头仅声明 LocoState not available；没有服务端内部判定函数。不能从客户端定义推出何时初始化成功。"
+    },
+    {
+      "subject": "DDS 参与者与 IP",
+      "meaning": "RTPS GUID 对应参与者；通过应答句柄、发现样本、被动报文头可建立本轮应答的发送节点证据，不证明物理控制板或程序文件身份。"
+    }
+  ],
+  "unverified": [
+    "protect 的数字语义",
+    "实际 ai_sport 安装版本",
+    "7301 的充分或必要触发条件",
+    "运动主机服务端实现",
+    "当前足底及柜体载荷",
+    "当前起身和模式切换适用性"
+  ],
+  "command_writes": 0,
+  "service_switches": 0,
+  "report_frequency_writes": 0,
+  "configuration_writes": 0
+}

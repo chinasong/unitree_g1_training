@@ -1,0 +1,321 @@
+{
+  "at": "2026-10-20T23:51:37.294227+08:00",
+  "release_id": "4acbab31645a",
+  "url": "http://127.0.0.1:18765",
+  "read_only": true,
+  "source_interface": "eth0",
+  "camera": {
+    "backend": "unitree",
+    "status": "live",
+    "error": null,
+    "source": "unitree-videohub-ccc0099b67a6",
+    "sequence": 38,
+    "age_ms": 95,
+    "request_started_at": 1792511496.9336846,
+    "received_at": 1792511496.9721785,
+    "width": 960,
+    "height": 540,
+    "source_width": 1920,
+    "source_height": 1080,
+    "request_ms": 38,
+    "timestamp_basis": "request_started_at",
+    "sensor_timestamp": null
+  },
+  "samples": [
+    {
+      "index": 0,
+      "sequence": 1,
+      "sha256": "6b9b07a6d2e27de5c70e4e894b586187c9da02806905f27db375d8e0ad63efbe",
+      "bytes": 33188,
+      "age_ms": 232,
+      "request_ms": 34,
+      "mac_fetch_ms": 77,
+      "tick": 4934900,
+      "joints": 23
+    },
+    {
+      "index": 1,
+      "sequence": 3,
+      "sha256": "bc37cbe6baae5a5a7a57731062676c3501af76ced6397f36731eea7d2859cfc2",
+      "bytes": 31958,
+      "age_ms": 166,
+      "request_ms": 24,
+      "mac_fetch_ms": 74,
+      "tick": 4935276,
+      "joints": 23
+    },
+    {
+      "index": 2,
+      "sequence": 5,
+      "sha256": "d86e71ada0e87b40e4bd085b18d542081a95be6d32277a397b63f7f780fc4063",
+      "bytes": 30463,
+      "age_ms": 71,
+      "request_ms": 25,
+      "mac_fetch_ms": 58,
+      "tick": 4935580,
+      "joints": 23
+    },
+    {
+      "index": 3,
+      "sequence": 6,
+      "sha256": "af9ba09df51933c18ae59d5785406843f2d3815a6b0bb61ec3126a96e71c9e97",
+      "bytes": 30772,
+      "age_ms": 180,
+      "request_ms": 33,
+      "mac_fetch_ms": 61,
+      "tick": 4935889,
+      "joints": 23
+    },
+    {
+      "index": 4,
+      "sequence": 8,
+      "sha256": "8d4ccf5af4f8cb6e8ff790b106b96dab562ba653fbbcf23e549acf04d2555e2c",
+      "bytes": 32130,
+      "age_ms": 94,
+      "request_ms": 28,
+      "mac_fetch_ms": 66,
+      "tick": 4936200,
+      "joints": 23
+    },
+    {
+      "index": 5,
+      "sequence": 9,
+      "sha256": "ac963b051440aadd23ba7b7ad54f3974ced3b199a0ad3aabab4b5da0087fef1e",
+      "bytes": 31793,
+      "age_ms": 212,
+      "request_ms": 26,
+      "mac_fetch_ms": 56,
+      "tick": 4936501,
+      "joints": 23
+    },
+    {
+      "index": 6,
+      "sequence": 11,
+      "sha256": "df358eaa6254436e532d4c0563970fc16e6709b72e4f577c64264f45000b4222",
+      "bytes": 32765,
+      "age_ms": 120,
+      "request_ms": 25,
+      "mac_fetch_ms": 58,
+      "tick": 4936814,
+      "joints": 23
+    },
+    {
+      "index": 7,
+      "sequence": 12,
+      "sha256": "2ffb1a77a367c273d3c868678bd08b38e3e8e51759855704868bbef836c389d9",
+      "bytes": 34069,
+      "age_ms": 235,
+      "request_ms": 27,
+      "mac_fetch_ms": 63,
+      "tick": 4937122,
+      "joints": 23
+    },
+    {
+      "index": 8,
+      "sequence": 14,
+      "sha256": "7d41cd1ad4f017f91eaf117b14f72bb6df68449c0ae5c1cf2c449e281fb68b7a",
+      "bytes": 33658,
+      "age_ms": 151,
+      "request_ms": 28,
+      "mac_fetch_ms": 60,
+      "tick": 4937431,
+      "joints": 23
+    },
+    {
+      "index": 9,
+      "sequence": 16,
+      "sha256": "bd0231d9c1bad4ad66c64338ab5dc5aa21cca0b903d591b6c03913828cca0687",
+      "bytes": 33917,
+      "age_ms": 61,
+      "request_ms": 30,
+      "mac_fetch_ms": 78,
+      "tick": 4937780,
+      "joints": 23
+    },
+    {
+      "index": 10,
+      "sequence": 17,
+      "sha256": "0382c3dd18357cea2745854a21e5be3e9962242221bdd913bf01a1c94fc7393d",
+      "bytes": 34092,
+      "age_ms": 194,
+      "request_ms": 32,
+      "mac_fetch_ms": 89,
+      "tick": 4938096,
+      "joints": 23
+    },
+    {
+      "index": 11,
+      "sequence": 19,
+      "sha256": "c74892165ce73997b71f9759a682c337bb308c1056972b12341dba751f237ea4",
+      "bytes": 34493,
+      "age_ms": 130,
+      "request_ms": 32,
+      "mac_fetch_ms": 52,
+      "tick": 4938412,
+      "joints": 23
+    },
+    {
+      "index": 12,
+      "sequence": 20,
+      "sha256": "ae4f5d4b4207e0fc1c664c22befc44b7f626b71aa0d9ad92e230e5681496d201",
+      "bytes": 34268,
+      "age_ms": 234,
+      "request_ms": 24,
+      "mac_fetch_ms": 60,
+      "tick": 4938718,
+      "joints": 23
+    },
+    {
+      "index": 13,
+      "sequence": 22,
+      "sha256": "4e49f0a4120b60d94eaf9c7292541dc5dc18f76fb326793e83009441115cc617",
+      "bytes": 33588,
+      "age_ms": 163,
+      "request_ms": 26,
+      "mac_fetch_ms": 80,
+      "tick": 4939074,
+      "joints": 23
+    },
+    {
+      "index": 14,
+      "sequence": 24,
+      "sha256": "f627704ffa2c931dc483a8f2ab27fb4284a122ec624ad4a045bb6a59995c3dda",
+      "bytes": 33747,
+      "age_ms": 80,
+      "request_ms": 40,
+      "mac_fetch_ms": 58,
+      "tick": 4939377,
+      "joints": 23
+    },
+    {
+      "index": 15,
+      "sequence": 25,
+      "sha256": "c46e2231a18c324a043f2b1b726db62d27d93937ecf8c31f6b5f4759fd089115",
+      "bytes": 33714,
+      "age_ms": 190,
+      "request_ms": 26,
+      "mac_fetch_ms": 57,
+      "tick": 4939698,
+      "joints": 23
+    },
+    {
+      "index": 16,
+      "sequence": 27,
+      "sha256": "9ce5ea9ef20fc71b5f5fb4d52ecd0d6ef3a3ce6274d795ab214a7e59aec17fe6",
+      "bytes": 33717,
+      "age_ms": 100,
+      "request_ms": 25,
+      "mac_fetch_ms": 54,
+      "tick": 4940003,
+      "joints": 23
+    },
+    {
+      "index": 17,
+      "sequence": 28,
+      "sha256": "9b8ea169c46442f4c49fd87f963f77d3a2268ece0d583ae78e13259ee708d549",
+      "bytes": 33787,
+      "age_ms": 209,
+      "request_ms": 25,
+      "mac_fetch_ms": 59,
+      "tick": 4940309,
+      "joints": 23
+    },
+    {
+      "index": 18,
+      "sequence": 30,
+      "sha256": "aba99632bfc194ed0c9eac8a56935525a6bb12bc0447924927f39db21ddd2191",
+      "bytes": 34171,
+      "age_ms": 118,
+      "request_ms": 26,
+      "mac_fetch_ms": 68,
+      "tick": 4940621,
+      "joints": 23
+    },
+    {
+      "index": 19,
+      "sequence": 32,
+      "sha256": "ab1fce214240f7baa1ac5a13c3e34756c0a99daacf1a03e6426fa1cc023f5696",
+      "bytes": 34464,
+      "age_ms": 46,
+      "request_ms": 25,
+      "mac_fetch_ms": 64,
+      "tick": 4940934,
+      "joints": 23
+    },
+    {
+      "index": 20,
+      "sequence": 33,
+      "sha256": "55ad3b01d838d706c12bc1bbf902cf776cd2a6d0a50666e37658eddfd300f272",
+      "bytes": 34502,
+      "age_ms": 158,
+      "request_ms": 23,
+      "mac_fetch_ms": 61,
+      "tick": 4941242,
+      "joints": 23
+    },
+    {
+      "index": 21,
+      "sequence": 35,
+      "sha256": "598c598ee5d0b67018059212ea87ae4ae408fd61a507d17db1969d198412c170",
+      "bytes": 34423,
+      "age_ms": 74,
+      "request_ms": 23,
+      "mac_fetch_ms": 63,
+      "tick": 4941601,
+      "joints": 23
+    },
+    {
+      "index": 22,
+      "sequence": 36,
+      "sha256": "41b1a045360b67511a577f05d2a9a23ab9927834509eb28cd049759381c14d99",
+      "bytes": 34418,
+      "age_ms": 189,
+      "request_ms": 32,
+      "mac_fetch_ms": 53,
+      "tick": 4941897,
+      "joints": 23
+    },
+    {
+      "index": 23,
+      "sequence": 38,
+      "sha256": "3e03dd78741474ccca4ff8b1a365dac92694d9fd32c995a4a78dd8066f34d88e",
+      "bytes": 34375,
+      "age_ms": 95,
+      "request_ms": 38,
+      "mac_fetch_ms": 62,
+      "tick": 4942221,
+      "joints": 23
+    }
+  ],
+  "unique_sequences": 24,
+  "unique_jpegs": 24,
+  "body": {
+    "connected": true,
+    "bad_packets": 0,
+    "joints": 23
+  },
+  "control_owner": null,
+  "navigation_status": "idle",
+  "command_accepted_events": 0,
+  "sensor_timestamp_available": false,
+  "final_consumer": {
+    "browser": {
+      "url": "http://127.0.0.1:18765/",
+      "page": "环境观察",
+      "status": "实时画面",
+      "screenshot": "screenshots/g1-real-camera.png"
+    },
+    "codex_snapshot": {
+      "sequence": 600,
+      "width": 960,
+      "height": 540,
+      "source_width": 1920,
+      "source_height": 1080,
+      "mac_received_at": 1792511621.767346,
+      "mac_age_upper_bound_ms": 256,
+      "sha256": "ab5b82e85e2ba9697e63aeeff7f77e90b0861eff4567c61fec73d90dee941b78",
+      "bytes": 32975
+    },
+    "codex_visual_inspected": true
+  }
+}

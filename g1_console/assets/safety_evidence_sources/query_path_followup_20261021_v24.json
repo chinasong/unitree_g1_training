@@ -1,0 +1,93 @@
+{
+  "release": "ea0d141c214a",
+  "started_at_utc": "2026-10-21T12:13:43.138756+00:00",
+  "at_utc": "2026-10-21T12:13:46.374180+00:00",
+  "run_id": "309b99849388",
+  "boot_id": "8d9a0e09-97e1-45fa-81d3-18822a3c760a",
+  "physical_writes_sent": 0,
+  "control_acquired": false,
+  "manual_armed": false,
+  "total_queries": 40,
+  "summary": {
+    "get_fsm": {
+      "attempts": 1,
+      "outcomes": {
+        "0": 1
+      }
+    },
+    "get_fsm_mode": {
+      "attempts": 1,
+      "outcomes": {
+        "0": 1
+      }
+    },
+    "get_balance": {
+      "attempts": 6,
+      "outcomes": {
+        "7301": 6
+      }
+    },
+    "get_swing_height": {
+      "attempts": 6,
+      "outcomes": {
+        "7301": 6
+      }
+    },
+    "get_stand_height": {
+      "attempts": 6,
+      "outcomes": {
+        "7301": 6
+      }
+    },
+    "get_phase": {
+      "attempts": 6,
+      "outcomes": {
+        "7301": 6
+      }
+    },
+    "get_actions": {
+      "attempts": 1,
+      "outcomes": {
+        "0": 1
+      }
+    },
+    "get_volume": {
+      "attempts": 1,
+      "outcomes": {
+        "3104": 1
+      }
+    },
+    "get_services": {
+      "attempts": 6,
+      "outcomes": {
+        "0": 6
+      }
+    },
+    "get_versions": {
+      "attempts": 6,
+      "outcomes": {
+        "3203": 6
+      }
+    }
+  },
+  "volume_observation": {
+    "trial": 1,
+    "capability": "get_volume",
+    "request_id": "fb27a2ffb50942049f9f841a6a8b9b88",
+    "at_utc": "2026-10-21T12:13:43.729522+00:00",
+    "request_ms": 746.61,
+    "http_status": 504,
+    "response": {
+      "error": {
+        "code": "SDK_TIMEOUT",
+        "message": "官方只读查询 3104 接收超时；未取得有效值，保持未知，未自动重试",
+        "sdk_code": 3104
+      },
+      "request_id": "cf80d8107bff43f9be9c33dc960f776e"
+    }
+  },
+  "limits": [
+    "音量旧路径仅观测一次 3104，未做被动应答配对，不能把它归为已证明的假超时。",
+    "这是历史查询诊断，不是当前身体状态或运动授权。"
+  ]
+}

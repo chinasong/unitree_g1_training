@@ -1,0 +1,138 @@
+{
+  "schema_version": 3,
+  "current": false,
+  "execution_allowed": false,
+  "checked_at_utc": "2026-10-21T07:14:02.238249+00:00",
+  "command_writes": 0,
+  "lease_requests": 0,
+  "motor_configuration_values_obtained": 0,
+  "sources": [
+    {
+      "path": "g1_console/assets/safety_evidence_sources/human_posture_20261021_v16.json",
+      "sha256": "51496501c3c1f36bdaa86143f89b173fd15256d5b8f37cceb1c7000c05e9119d"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/standing_observation_20261021_v16.json",
+      "sha256": "3de9d9a8859dbc1f52335b858375edf4b4a1fa26b4da0d999861d8bfec78ef98"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/standing_reads_20261021_v16.json",
+      "sha256": "d39f552f16cf84e75d6f38b609d12b3d96f6e7a0ff4524df3578ddc1a5d798ed"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/standing_manual_review_20261021_v16.json",
+      "sha256": "04f434d7a40b920ca6bcf7f1bd499d75c77029ec42e421566e47b23f8280880c"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/g1_loco_client.hpp",
+      "sha256": "d9aabe78918312c2ec60c5df94653e81319eb6730cc1479372a09849d99cd361"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/g1_loco_error.hpp",
+      "sha256": "8b33d73f9857d1581c11b362d2705f031020a084db12b00cadfaac0255f46579"
+    },
+    {
+      "path": "g1_console/assets/capability_sources/g1_loco_api.hpp",
+      "sha256": "db7f771fad9ab8d40b3f3bf3651df28ee9cde1a937ae21dcdae2f4165f37e0ce"
+    },
+    {
+      "path": "scripts/audit_g1_standing_reads.py",
+      "sha256": "66e60455b176a892978a3c1b8433dde849be97c3ea795c4124e060d46ef27799"
+    },
+    {
+      "path": "externals/unitree_sdk2_python/unitree_sdk2py/g1/loco/g1_loco_client.py",
+      "sha256": "5fbc07b30994676cd2f7994a2389b24e9b51e2c13dfde7e565bfd77898300ce2"
+    },
+    {
+      "path": "externals/unitree_sdk2_python/unitree_sdk2py/rpc/internal.py",
+      "sha256": "38896942088a7b0d03e3d9e5fa06ef3aee81e8ec6d52e0a9a640e35aaf955343"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/human_posture_20261021_v17.json",
+      "sha256": "3e3cfd8049b9d1386db9a2b7aa8a3312378bcbaa7e04557e54765d914480a2ae"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/standing_observation_20261021_v17.json",
+      "sha256": "388241090253176893df268c9bf20216cab8d067b15da4e768a7be6af94a031a"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/firmware_support_review_20261021_v17.json",
+      "sha256": "45dbf99231ce98a815b657a9d4d21ddcdb881a973f4bc3fe8640cf8c3a04a9c8"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/firmware_support_orin-inventory_20261021_v17.json",
+      "sha256": "64f1132de997fdc333100fcf7a17d7ecee9c01c6d58c02383c873f0ab9f0d9cc"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/firmware_support_passive_20261021_v17.json",
+      "sha256": "526140f97e00e8f1534b8200c3009e9306d7d765b92b1bf731b61b5204a06627"
+    },
+    {
+      "path": "scripts/audit_g1_installed_versions.py",
+      "sha256": "1a99ceef3860292952c30c1d65aa4359bb5764351d1244e035ecae6b051636cc"
+    },
+    {
+      "path": "scripts/audit_g1_firmware_support.py",
+      "sha256": "095594bc20ab156771d3c2e3b655109f608c7d818fbf0c8120a2ec356d2eeab0"
+    },
+    {
+      "path": "externals/unitree_sdk2_python/unitree_sdk2py/idl/unitree_hg/msg/dds_/_LowState_.py",
+      "sha256": "97f746a693aff14a8a1c2ea2bbd7790722bb784554e0402173ed491ad9d957f2"
+    },
+    {
+      "path": "externals/unitree_sdk2_python/unitree_sdk2py/idl/unitree_hg/msg/dds_/_MainBoardState_.py",
+      "sha256": "6c181057c869c9bef8daa53ab2e396c2f48226e9a8be4e7e6da2b88747d122fd"
+    },
+    {
+      "path": "externals/unitree_sdk2_python/unitree_sdk2py/idl/unitree_go/msg/dds_/_SportModeState_.py",
+      "sha256": "8f05eea51a6822727a14572e656bb59a84a899ac264c96c8c7104d2acccf5909"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/cabinet_orin-inventory_20261021_v18.json",
+      "sha256": "585256664c642a4c4692f061f2d42f8e9fd38f8d991af279b23187a4d1527012"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/cabinet_passive_20261021_v18.json",
+      "sha256": "a0a613e0d3fc232665a11ac15df5e480ee787e4f48db465674f81a32434947be"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/cabinet_passive-status_20261021_v18.json",
+      "sha256": "a014b2c878cb40c4e33df4b2ad1920ad062dd17aae9d018355ee0f8eafc28b8d"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/cabinet_ota-version-context_20261021_v18.json",
+      "sha256": "ea12595847fa4e2da88148795999062bbc1862c2f4f7a39eb757938142a16d93"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/cabinet_cached-manifest_20261021_v18.json",
+      "sha256": "6e61ab12f23fbd847b15e08219b35dfd7f88ec3889f47fed639461545801014d"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/standing_reads_20261021_v18.json",
+      "sha256": "4479c71f38fb0c43bdaea0eee43cfc71b80d194b5bf471f51b032cd61b288fc2"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/standing_observation_20261021_v18.json",
+      "sha256": "b0aa8e301445261b0275bb85bdc2f28eb95762780ff937c3a4126c85b75f8167"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/firmware_support_review_20261021_v18.json",
+      "sha256": "7cf81626b036fbed2d64b1692cd2b39e8f1ea71269de80543b6fde3b7ee6c9a9"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/standing_applicability_20261021_v18.json",
+      "sha256": "97e7164089b46da7fa18ca29e27a9c202cd92da740fc324f0c58eb0ad1e803f1"
+    },
+    {
+      "path": "scripts/audit_g1_passive_status.py",
+      "sha256": "9f441963bad1acb5842f961e6141034cf055d7e3318ef1f7e5ba2b9074ba4b53"
+    }
+  ],
+  "human_source": "g1_console/assets/safety_evidence_sources/human_posture_20261021_v17.json",
+  "observation_source": "g1_console/assets/safety_evidence_sources/standing_observation_20261021_v18.json",
+  "readings_source": "g1_console/assets/safety_evidence_sources/standing_reads_20261021_v18.json",
+  "manual_source": "g1_console/assets/safety_evidence_sources/standing_manual_review_20261021_v16.json",
+  "conclusion": "未确认任何官方起身入口适用于当前靠柜坐地；姿态保持和主动平衡的本机交接条件尚未核定。尚无可执行的缓慢起身路线。",
+  "firmware_source": "g1_console/assets/safety_evidence_sources/firmware_support_review_20261021_v18.json",
+  "applicability_source": "g1_console/assets/safety_evidence_sources/standing_applicability_20261021_v18.json"
+}

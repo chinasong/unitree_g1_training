@@ -1,0 +1,392 @@
+{
+  "checked_at_utc": "2026-10-21T08:18:10.321968+00:00",
+  "scope": "Read-only firmware and mode-contract research; no robot actions or mode changes",
+  "full_remote_equivalence": false,
+  "pre_deployment": {
+    "run_id": "e89e012b0c5e",
+    "current_run_events": {
+      "camera_connected": 1,
+      "connected": 1,
+      "state_observed": 29
+    },
+    "historical_malformed_lines": 1,
+    "control_owner": null,
+    "manual_armed": false,
+    "at_utc": "2026-10-21T08:13:03.682180+00:00",
+    "release": "abf56408cb6d",
+    "manifest_file_count": 468,
+    "all_sha256_match": true,
+    "console_pid": 13804,
+    "console_env": {
+      "G1_READ_ONLY": "0",
+      "G1_MANUAL_REMOTE": "1",
+      "G1_HOST": "127.0.0.1",
+      "G1_PORT": "8765",
+      "G1_CAMERA_BACKEND": "unitree"
+    },
+    "loopback_only": true,
+    "children": [
+      {
+        "pid": 13834,
+        "argv": [
+          "/home/unitree/workspace/g1-body-console/.venv/bin/python",
+          "-c",
+          "from multiprocessing.resource_tracker import main;main(19)"
+        ],
+        "cwd": "/home/unitree/workspace/g1-body-console/releases/abf56408cb6d"
+      },
+      {
+        "pid": 13835,
+        "argv": [
+          "/home/unitree/workspace/g1-body-console/.venv/bin/python",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=20, pipe_handle=22)",
+          "--multiprocessing-fork"
+        ],
+        "cwd": "/home/unitree/workspace/g1-body-console/releases/abf56408cb6d"
+      },
+      {
+        "pid": 13838,
+        "argv": [
+          "/home/unitree/workspace/g1-body-console/.venv/bin/python",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=20, pipe_handle=25)",
+          "--multiprocessing-fork"
+        ],
+        "cwd": "/home/unitree/workspace/g1-body-console/releases/abf56408cb6d"
+      }
+    ],
+    "foundation_version": 18,
+    "foundation_id": "d73f93dde11db5a70e598f31b161c73675f4d92836260527546f38e671c5350d",
+    "actual_unknown_count": 253,
+    "boot_id": "b33a7dc5-2617-44cd-b353-041bab1c204f",
+    "official_processes_unchanged": [
+      {
+        "pid": 1170,
+        "argv": [
+          "/unitree/ota/pipe/ota_pipe_service"
+        ],
+        "start_ticks": 2054
+      },
+      {
+        "pid": 1174,
+        "argv": [
+          "/unitree/module/master_service/master_service"
+        ],
+        "start_ticks": 2055
+      },
+      {
+        "pid": 2749,
+        "argv": [
+          "/home/unitree/megaflow_sdk/ws//bin/MegaFlowRuntimeDaemon",
+          "-c",
+          "/home/unitree/megaflow_sdk/ws//bin/config.bin",
+          "-w",
+          "/home/unitree/megaflow_sdk/ws/",
+          "-d",
+          "127.0.0.1:8899",
+          "-i",
+          "-e",
+          "/home/unitree/megaflow_sdk/ws//dep/",
+          "-l",
+          "0"
+        ],
+        "start_ticks": 3024
+      },
+      {
+        "pid": 10836,
+        "argv": [
+          "/unitree/module/video_hub_pc4/videohub_pc4"
+        ],
+        "start_ticks": 437881
+      }
+    ]
+  },
+  "deployment": {
+    "run_id": "3f40092f09a6",
+    "current_run_events": {
+      "camera_connected": 1,
+      "connected": 1,
+      "state_observed": 3
+    },
+    "historical_malformed_lines": 1,
+    "control_owner": null,
+    "manual_armed": false,
+    "at_utc": "2026-10-21T08:17:38.128827+00:00",
+    "release": "f0c4128a5c3e",
+    "manifest_file_count": 471,
+    "all_sha256_match": true,
+    "console_pid": 15109,
+    "console_env": {
+      "G1_READ_ONLY": "0",
+      "G1_MANUAL_REMOTE": "1",
+      "G1_HOST": "127.0.0.1",
+      "G1_PORT": "8765",
+      "G1_CAMERA_BACKEND": "unitree"
+    },
+    "loopback_only": true,
+    "children": [
+      {
+        "pid": 15143,
+        "argv": [
+          "/home/unitree/workspace/g1-body-console/.venv/bin/python",
+          "-c",
+          "from multiprocessing.resource_tracker import main;main(19)"
+        ],
+        "cwd": "/home/unitree/workspace/g1-body-console/releases/f0c4128a5c3e"
+      },
+      {
+        "pid": 15144,
+        "argv": [
+          "/home/unitree/workspace/g1-body-console/.venv/bin/python",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=20, pipe_handle=22)",
+          "--multiprocessing-fork"
+        ],
+        "cwd": "/home/unitree/workspace/g1-body-console/releases/f0c4128a5c3e"
+      },
+      {
+        "pid": 15147,
+        "argv": [
+          "/home/unitree/workspace/g1-body-console/.venv/bin/python",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=20, pipe_handle=25)",
+          "--multiprocessing-fork"
+        ],
+        "cwd": "/home/unitree/workspace/g1-body-console/releases/f0c4128a5c3e"
+      }
+    ],
+    "foundation_version": 19,
+    "foundation_id": "6b244b5f348eaa83d41d49d03d71f24a91b23b65778752f0c46f5c11e3027b56",
+    "actual_unknown_count": 253,
+    "boot_id": "b33a7dc5-2617-44cd-b353-041bab1c204f",
+    "official_processes_unchanged": [
+      {
+        "pid": 1170,
+        "argv": [
+          "/unitree/ota/pipe/ota_pipe_service"
+        ],
+        "start_ticks": 2054
+      },
+      {
+        "pid": 1174,
+        "argv": [
+          "/unitree/module/master_service/master_service"
+        ],
+        "start_ticks": 2055
+      },
+      {
+        "pid": 2749,
+        "argv": [
+          "/home/unitree/megaflow_sdk/ws//bin/MegaFlowRuntimeDaemon",
+          "-c",
+          "/home/unitree/megaflow_sdk/ws//bin/config.bin",
+          "-w",
+          "/home/unitree/megaflow_sdk/ws/",
+          "-d",
+          "127.0.0.1:8899",
+          "-i",
+          "-e",
+          "/home/unitree/megaflow_sdk/ws//dep/",
+          "-l",
+          "0"
+        ],
+        "start_ticks": 3024
+      },
+      {
+        "pid": 10836,
+        "argv": [
+          "/unitree/module/video_hub_pc4/videohub_pc4"
+        ],
+        "start_ticks": 437881
+      }
+    ]
+  },
+  "live_state": {
+    "run_id": "3f40092f09a6",
+    "mode": "robot",
+    "connected": true,
+    "service_read_only_flag": false,
+    "authority": "Existing manual-remote service retained; this turn did not acquire control or arm motion",
+    "telemetry_age_ms": 23,
+    "joint_count": 23,
+    "fsm": 0,
+    "control": {
+      "owner": null,
+      "expires_in": 0,
+      "floor_verified": false
+    },
+    "manual_remote": {
+      "enabled": true,
+      "armed": false,
+      "owner": null,
+      "expires_in": 0,
+      "observed_at": null,
+      "blocker": {
+        "code": "NOT_WALKING_MODE",
+        "message": "请先进入行走控制，并等待 GetFsmId 返回 500"
+      },
+      "authority": "人工现场确认与官方高层控制；不修改基础模型或授权自主任务",
+      "full_remote_equivalence": false
+    },
+    "camera": {
+      "backend": "unitree",
+      "status": "live",
+      "error": null,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 422,
+        "total_successes": 422,
+        "total_timeouts": 0
+      },
+      "source": "unitree-videohub-b199ff70a509",
+      "sequence": 422,
+      "age_ms": 187,
+      "request_started_at": 1792570661.2406816,
+      "received_at": 1792570661.2641022,
+      "width": 960,
+      "height": 540,
+      "source_width": 1920,
+      "source_height": 1080,
+      "request_ms": 23,
+      "timestamp_basis": "request_started_at",
+      "sensor_timestamp": null
+    },
+    "official_mode_readbacks": {
+      "fsm_id": {
+        "current": true,
+        "age_ms": 278,
+        "raw": {
+          "data": 0
+        },
+        "code": 0,
+        "diagnostics": {
+          "total": {
+            "attempts": 167,
+            "successes": 167,
+            "timeouts": 0,
+            "errors": 0
+          },
+          "window_s": 60,
+          "attempts": 119,
+          "successes": 119,
+          "timeouts": 0,
+          "errors": 0
+        }
+      },
+      "fsm_mode": {
+        "current": true,
+        "age_ms": 115,
+        "raw": {
+          "data": 0
+        },
+        "code": 0,
+        "diagnostics": {
+          "total": {
+            "attempts": 29,
+            "successes": 29,
+            "timeouts": 0,
+            "errors": 0
+          },
+          "window_s": 60,
+          "attempts": 20,
+          "successes": 20,
+          "timeouts": 0,
+          "errors": 0
+        }
+      },
+      "motion_mode": {
+        "current": true,
+        "age_ms": 2720,
+        "raw": {
+          "form": "0",
+          "name": "ai"
+        },
+        "code": 0,
+        "diagnostics": {
+          "total": {
+            "attempts": 28,
+            "successes": 28,
+            "timeouts": 0,
+            "errors": 0
+          },
+          "window_s": 60,
+          "attempts": 20,
+          "successes": 20,
+          "timeouts": 0,
+          "errors": 0
+        }
+      }
+    }
+  },
+  "firmware": {
+    "motion_firmware_version": null,
+    "ota_endpoint": "tcp://192.168.123.164:1026",
+    "documented_list_query_returncode": 104,
+    "returncode_meaning": null,
+    "endpoint_physical_identity": null,
+    "versions_not_conflated": [
+      "SDK API version",
+      "Orin module manifest",
+      "HG raw version",
+      "OTA cached package label"
+    ]
+  },
+  "mode_review": {
+    "count": 8,
+    "all_device_applicable_unknown": true,
+    "all_execution_locked": true
+  },
+  "tests": {
+    "python_full_passed": 165,
+    "python_after_evidence_metadata_change_targeted_passed": 24,
+    "node_deadman_passed": 5,
+    "typescript_and_vite_build": "passed",
+    "build_warning": "Existing BodyView chunk exceeds 500 kB",
+    "browser": "Actual robot console reloaded; version and 8-mode disclosures inspected, three stop cards visually checked; only disclosure and scroll interactions"
+  },
+  "screenshot": {
+    "path": "doc/screenshots/g1-motion-mode-review-20261021.png",
+    "sha256": "da1125dc2560980c9cb3b21e9d2f82ea79f9ddacd62d9ebbd066a442fff6f7f1"
+  },
+  "source_sha256": {
+    "g1_console/assets/g1_motion_control_review.json": "908b8a0305a6e9af014d93a5806031d8f96bb622fc050c5db1c0b288f38e3a7b",
+    "g1_console/assets/g1_motor_knowledge.json": "8351029e09641249b32dd907c0f7e9dbd87b29aad2870446ef1c07e552509853",
+    "scripts/audit_g1_ota_versions.py": "601d03e13df6626a1f476ef5c5cf8558787cc5473054f26e88fbe3bd8196d6d7",
+    "scripts/build_g1_motor_knowledge.py": "051d05bf2a529d4597fb576e5231ca64153153ad8c5b81af73e455e6dac80080",
+    "tests/test_g1_motion_control_review.py": "638178f82d7ba8a87df6fa574968096d7e6b419c100ec6b05b1e8735d5a7f826",
+    "console/web/src/MotionModeReview.tsx": "5a9814d17207c2f462cdac2e97a565fb7cc8e2f5005d1796c3257be7b33d4329",
+    "console/web/src/RemoteView.tsx": "1608df595193c532c0d2d2b6d7c21d9346a99db88851a6820169bad1f7fc212a",
+    "console/web/src/types.ts": "26f40f35a7280856369dc4c783ef0782fbdacb924582a8d9928a9b3c3a5ee794",
+    "console/web/src/App.tsx": "b89a3371c89b6f01ee43bb5fefb3a8b6d906995a59f59f73d38513095356954c",
+    "console/web/src/style.css": "58a72075d65ae6435c80bbb63b3963ae35bf6012d9eadff66b52f769b0b53e15"
+  },
+  "remaining": {
+    "motion_firmware_version": null,
+    "current_posture": "Human-reported seated on floor, feet on floor, leaning cabinet; not a load measurement",
+    "left_foot_load": null,
+    "right_foot_load": null,
+    "cabinet_load": null,
+    "seated_support_load": null,
+    "independent_standing": null,
+    "seated_cabinet_getup_applicability": null,
+    "getup_speed_and_duration": null,
+    "hardware_powercut_estop": null,
+    "physical_motion_validation": false
+  },
+  "constraints": {
+    "quantumult_x_touched": false,
+    "official_services_restarted": false,
+    "actual_unknowns_replaced_with_defaults": false,
+    "actual_motor_config_unknowns": 253,
+    "physical_actions_executed": false,
+    "mode_writes": 0,
+    "ota_mutations": 0
+  },
+  "audit_limit": "Current-console-run events and process identities are evidence of our service actions, not an independent capture of all robot bus traffic; one preexisting historical malformed event line was preserved."
+}

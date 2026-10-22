@@ -1,0 +1,335 @@
+{
+  "schema_version": 1,
+  "current": false,
+  "offline_only": true,
+  "checked_at_utc": "2026-10-21T02:59:29.275144+00:00",
+  "payload_decoded": false,
+  "motor_configuration_present": null,
+  "motor_configuration_values_obtained": 0,
+  "command_writes": 0,
+  "rpc_calls": 0,
+  "configuration_calls": 0,
+  "calibration_calls": 0,
+  "vendor_program_executions": 0,
+  "files": [
+    {
+      "name": "master_service.json",
+      "bytes": 468,
+      "sha256": "31eae39936576504c40be767bd93cd34b7489154eca989e5e5c2781b05e3d977"
+    },
+    {
+      "name": "master_service",
+      "bytes": 9083232,
+      "sha256": "380e34de9c2def2692c0bf1b73e969d3167c8270f2ed5f974bb01abd4e96f24e"
+    }
+  ],
+  "structure": {
+    "file_bytes": 468,
+    "magic_hex": "464d5801",
+    "offset8_u32_le": 448,
+    "bytes_after_20": 448,
+    "bytes_after_32": 436,
+    "block8_remainder_after_20": 0,
+    "block8_remainder_after_32": 4,
+    "header_size_verified": null,
+    "seed_semantics_verified": false,
+    "conclusion": "偏移 8 的数值等于总长减 20；32 字节后不满足 8 字节分组对齐。仅为结构事实，不能确定头长或算法"
+  },
+  "loader_stubs": [
+    {
+      "name": "LoadFile",
+      "entry": "0x4beb80",
+      "shared_helper": "0x1e61e8",
+      "target": "0xa3ee2c",
+      "section": ".bss",
+      "section_type": "SHT_NOBITS",
+      "file_backed": false
+    },
+    {
+      "name": "Load",
+      "entry": "0x1eaa08",
+      "shared_helper": "0x1e61e8",
+      "target": "0xa3f4a8",
+      "section": ".bss",
+      "section_type": "SHT_NOBITS",
+      "file_backed": false
+    },
+    {
+      "name": "Gen",
+      "entry": "0x95a68",
+      "shared_helper": "0x1e61e8",
+      "target": "0xa3fc78",
+      "section": ".bss",
+      "section_type": "SHT_NOBITS",
+      "file_backed": false
+    },
+    {
+      "name": "MixerC1",
+      "entry": "0x4c1e58",
+      "shared_helper": "0x1e61e8",
+      "target": "0xa3fc58",
+      "section": ".bss",
+      "section_type": "SHT_NOBITS",
+      "file_backed": false
+    },
+    {
+      "name": "MixerC2",
+      "entry": "0x4c7b70",
+      "shared_helper": "0x1e61e8",
+      "target": "0xa3fc58",
+      "section": ".bss",
+      "section_type": "SHT_NOBITS",
+      "file_backed": false
+    }
+  ],
+  "research_hypotheses": {
+    "source_url": "https://cybersecurityrobotics.com/research/humanoids-as-attack-vectors/",
+    "authority": "独立研究，非宇树格式规范；仅作离线假设",
+    "candidate_key_material_found_verbatim": false,
+    "candidate_key_material_found_word_reversed": false,
+    "candidate_key_material_found_ascii": false,
+    "results": [
+      {
+        "candidate_header_bytes": 12,
+        "blowfish_byte_order": "standard",
+        "lcg_output_shift": 16,
+        "layer_order": "blowfish_then_lcg",
+        "complete_json": false
+      },
+      {
+        "candidate_header_bytes": 12,
+        "blowfish_byte_order": "standard",
+        "lcg_output_shift": 16,
+        "layer_order": "lcg_then_blowfish",
+        "complete_json": false
+      },
+      {
+        "candidate_header_bytes": 12,
+        "blowfish_byte_order": "standard",
+        "lcg_output_shift": 24,
+        "layer_order": "blowfish_then_lcg",
+        "complete_json": false
+      },
+      {
+        "candidate_header_bytes": 12,
+        "blowfish_byte_order": "standard",
+        "lcg_output_shift": 24,
+        "layer_order": "lcg_then_blowfish",
+        "complete_json": false
+      },
+      {
+        "candidate_header_bytes": 12,
+        "blowfish_byte_order": "u32_little",
+        "lcg_output_shift": 16,
+        "layer_order": "blowfish_then_lcg",
+        "complete_json": false
+      },
+      {
+        "candidate_header_bytes": 12,
+        "blowfish_byte_order": "u32_little",
+        "lcg_output_shift": 16,
+        "layer_order": "lcg_then_blowfish",
+        "complete_json": false
+      },
+      {
+        "candidate_header_bytes": 12,
+        "blowfish_byte_order": "u32_little",
+        "lcg_output_shift": 24,
+        "layer_order": "blowfish_then_lcg",
+        "complete_json": false
+      },
+      {
+        "candidate_header_bytes": 12,
+        "blowfish_byte_order": "u32_little",
+        "lcg_output_shift": 24,
+        "layer_order": "lcg_then_blowfish",
+        "complete_json": false
+      },
+      {
+        "candidate_header_bytes": 20,
+        "blowfish_byte_order": "standard",
+        "lcg_output_shift": 16,
+        "layer_order": "blowfish_then_lcg",
+        "complete_json": false
+      },
+      {
+        "candidate_header_bytes": 20,
+        "blowfish_byte_order": "standard",
+        "lcg_output_shift": 16,
+        "layer_order": "lcg_then_blowfish",
+        "complete_json": false
+      },
+      {
+        "candidate_header_bytes": 20,
+        "blowfish_byte_order": "standard",
+        "lcg_output_shift": 24,
+        "layer_order": "blowfish_then_lcg",
+        "complete_json": false
+      },
+      {
+        "candidate_header_bytes": 20,
+        "blowfish_byte_order": "standard",
+        "lcg_output_shift": 24,
+        "layer_order": "lcg_then_blowfish",
+        "complete_json": false
+      },
+      {
+        "candidate_header_bytes": 20,
+        "blowfish_byte_order": "u32_little",
+        "lcg_output_shift": 16,
+        "layer_order": "blowfish_then_lcg",
+        "complete_json": false
+      },
+      {
+        "candidate_header_bytes": 20,
+        "blowfish_byte_order": "u32_little",
+        "lcg_output_shift": 16,
+        "layer_order": "lcg_then_blowfish",
+        "complete_json": false
+      },
+      {
+        "candidate_header_bytes": 20,
+        "blowfish_byte_order": "u32_little",
+        "lcg_output_shift": 24,
+        "layer_order": "blowfish_then_lcg",
+        "complete_json": false
+      },
+      {
+        "candidate_header_bytes": 20,
+        "blowfish_byte_order": "u32_little",
+        "lcg_output_shift": 24,
+        "layer_order": "lcg_then_blowfish",
+        "complete_json": false
+      }
+    ],
+    "hypotheses_tested": 16,
+    "complete_json_count": 0,
+    "applicable_to_installed_loader_verified": false,
+    "outer_layer_decode_verified": false,
+    "payload_decoded": false,
+    "motor_configuration_values_obtained": 0,
+    "limitation": "无完整 JSON 不足以否定外层解码；即使偶然能解析，也不能证明格式、校验、种子或实机生效参数已核定。未补齐、截断、暴力搜索或枚举设备标识"
+  },
+  "local_loader_search": {
+    "roots": [
+      "/unitree/module",
+      "/unitree/ota",
+      "/unitree/lib",
+      "/unitree/robot/pkg/module",
+      "/home/unitree/megaflow_sdk/ws/bin",
+      "/home/unitree/megaflow_sdk/ws/lib"
+    ],
+    "maximum_depth": 4,
+    "maximum_elf_files": 96,
+    "maximum_elf_bytes": 67108864,
+    "symlinks_followed": false,
+    "inventory_sha256": "850e90b649b74e4b2c8b636f396fbdf6ca6af0f5e7e2b597148e7e479cf283f3",
+    "elf_count": 7,
+    "inspected": [
+      {
+        "path": "/unitree/module/master_service/master_service",
+        "bytes": 9083232,
+        "has_symbols": true,
+        "mixer_symbol_count": 15
+      },
+      {
+        "path": "/unitree/module/video_hub_pc4/videohub_pc4",
+        "bytes": 63592,
+        "has_symbols": true,
+        "mixer_symbol_count": 0
+      },
+      {
+        "path": "/unitree/ota/pipe/ota_pipe_service",
+        "bytes": 9213664,
+        "has_symbols": true,
+        "mixer_symbol_count": 0
+      },
+      {
+        "path": "/home/unitree/megaflow_sdk/ws/bin/FlexFlowInvoker",
+        "bytes": 20112544,
+        "has_symbols": true,
+        "mixer_symbol_count": 0
+      },
+      {
+        "path": "/home/unitree/megaflow_sdk/ws/bin/MegaFlowRuntimeCli",
+        "bytes": 33526032,
+        "has_symbols": true,
+        "mixer_symbol_count": 0
+      },
+      {
+        "path": "/home/unitree/megaflow_sdk/ws/bin/MegaFlowRuntimeDaemon",
+        "bytes": 21448952,
+        "has_symbols": true,
+        "mixer_symbol_count": 0
+      },
+      {
+        "path": "/home/unitree/megaflow_sdk/ws/bin/MegaFlowRuntimeSpawner",
+        "bytes": 182760,
+        "has_symbols": true,
+        "mixer_symbol_count": 0
+      }
+    ],
+    "alternative_mixer_implementation_found": false,
+    "scope": "仅指定目录中实际存在且满足大小和深度限制的普通 ELF；不代表所有磁盘、运动主机或无符号实现"
+  },
+  "robot_recheck": {
+    "boot_id": "7a6791dc-f512-4b45-aca3-44fbde855e25",
+    "processes": [
+      {
+        "pid": 1296,
+        "argv": [
+          "/unitree/module/master_service/master_service"
+        ],
+        "start_ticks": 2242
+      },
+      {
+        "pid": 1298,
+        "argv": [
+          "/unitree/ota/pipe/ota_pipe_service"
+        ],
+        "start_ticks": 2242
+      },
+      {
+        "pid": 2557,
+        "argv": [
+          "/unitree/module/video_hub_pc4/videohub_pc4"
+        ],
+        "start_ticks": 2791
+      },
+      {
+        "pid": 2676,
+        "argv": [
+          "/home/unitree/megaflow_sdk/ws//bin/MegaFlowRuntimeDaemon",
+          "-c",
+          "/home/unitree/megaflow_sdk/ws//bin/config.bin",
+          "-w",
+          "/home/unitree/megaflow_sdk/ws/",
+          "-d",
+          "127.0.0.1:8899",
+          "-i",
+          "-e",
+          "/home/unitree/megaflow_sdk/ws//dep/",
+          "-l",
+          "0"
+        ],
+        "start_ticks": 3210
+      }
+    ],
+    "files": [
+      {
+        "path": "/unitree/module/master_service/master_service",
+        "bytes": 9083232,
+        "sha256": "380e34de9c2def2692c0bf1b73e969d3167c8270f2ed5f974bb01abd4e96f24e"
+      },
+      {
+        "path": "/unitree/module/master_service/master_service.json",
+        "bytes": 468,
+        "sha256": "31eae39936576504c40be767bd93cd34b7489154eca989e5e5c2781b05e3d977"
+      }
+    ],
+    "completed_at_utc": "2026-10-21T02:59:29.343858+00:00"
+  },
+  "conclusion": "FMX 完整载荷仍未核定；已核验文件结构和 5 个加载/生成入口，并记录 7 个本机 ELF 的有界搜索。新增电机实参 0 项",
+  "required_material": "与本机程序指纹匹配的可分析 Mixer/Gen 实现或宇树正式格式及读取说明；取得明文后仍须确认字段单位、控制器和生效版本",
+  "analyzed_at_utc": "2026-10-21T03:02:47.902747+00:00"
+}

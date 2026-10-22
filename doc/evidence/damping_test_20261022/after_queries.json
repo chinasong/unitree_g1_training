@@ -1,0 +1,46 @@
+[
+  {
+    "at": 1792646771.819227,
+    "operation": "get_fsm",
+    "result": {
+      "status": "accepted",
+      "data": 1,
+      "event_id": "9f7e254b8e3a40d193e4306cf4f683da",
+      "message": "已读取官方返回值"
+    }
+  },
+  {
+    "at": 1792646772.0439181,
+    "operation": "get_fsm_mode",
+    "result": {
+      "status": "accepted",
+      "data": 0,
+      "event_id": "7fee23dc364340389462425aa4df8daf",
+      "message": "已读取官方返回值"
+    }
+  },
+  {
+    "at": 1792646772.177869,
+    "operation": "get_balance",
+    "result": {
+      "error": {
+        "code": "SDK_REJECTED",
+        "message": "官方服务返回 7301：LocoState 不可用；模式/高度/相位保持未知，忽略返回中的占位零值。不会自动切换模式",
+        "sdk_code": 7301
+      },
+      "request_id": "0bf2720ccd4744439789908591b4df42"
+    }
+  },
+  {
+    "at": 1792646772.322561,
+    "operation": "get_stand_height",
+    "result": {
+      "error": {
+        "code": "SDK_REJECTED",
+        "message": "官方服务返回 7301：LocoState 不可用；模式/高度/相位保持未知，忽略返回中的占位零值。不会自动切换模式",
+        "sdk_code": 7301
+      },
+      "request_id": "bd76644ad5404c4ea25d12797e3609f8"
+    }
+  }
+]

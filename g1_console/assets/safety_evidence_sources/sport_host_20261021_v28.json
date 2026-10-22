@@ -1,0 +1,789 @@
+{
+  "current": false,
+  "checked_at_utc": "2026-10-21T13:08:47.363357+00:00",
+  "completed_at_utc": "2026-10-21T13:09:11.709223+00:00",
+  "release": "861f842d8d59",
+  "boot_id": "8d9a0e09-97e1-45fa-81d3-18822a3c760a",
+  "before": {
+    "owner": null,
+    "armed": false,
+    "fsm": 0
+  },
+  "after": {
+    "owner": null,
+    "armed": false,
+    "fsm": 0
+  },
+  "official_processes_before": [
+    {
+      "pid": 1366,
+      "exe": "/unitree/module/master_service/master_service",
+      "comm": "master_service",
+      "start_ticks": 2168
+    },
+    {
+      "pid": 1438,
+      "exe": "/unitree/ota/pipe/ota_pipe_service",
+      "comm": "ota_pipe_servic",
+      "start_ticks": 2202
+    },
+    {
+      "pid": 2760,
+      "exe": "/home/unitree/megaflow_sdk/ws//bin/MegaFlowRuntimeDaemon",
+      "comm": "MegaFlowRuntime",
+      "start_ticks": 3139
+    },
+    {
+      "pid": 11061,
+      "exe": "/unitree/module/video_hub_pc4/videohub_pc4",
+      "comm": "videohub_pc4",
+      "start_ticks": 438066
+    }
+  ],
+  "official_processes_after": [
+    {
+      "pid": 1366,
+      "exe": "/unitree/module/master_service/master_service",
+      "comm": "master_service",
+      "start_ticks": 2168
+    },
+    {
+      "pid": 1438,
+      "exe": "/unitree/ota/pipe/ota_pipe_service",
+      "comm": "ota_pipe_servic",
+      "start_ticks": 2202
+    },
+    {
+      "pid": 2760,
+      "exe": "/home/unitree/megaflow_sdk/ws//bin/MegaFlowRuntimeDaemon",
+      "comm": "MegaFlowRuntime",
+      "start_ticks": 3139
+    },
+    {
+      "pid": 11061,
+      "exe": "/unitree/module/video_hub_pc4/videohub_pc4",
+      "comm": "videohub_pc4",
+      "start_ticks": 438066
+    }
+  ],
+  "official_processes_unchanged": true,
+  "local_sport_process_matches": [],
+  "network": {
+    "interfaces": {
+      "code": 0,
+      "output": "lo               UNKNOWN        127.0.0.1/8 \neth0             UP             192.168.123.164/24 \nwlan0            UP             <ORIN_IP>/24 \ndocker0          DOWN           172.17.0.1/16"
+    },
+    "neighbors": {
+      "code": 0,
+      "output": "192.168.123.1  FAILED\n192.168.123.161 lladdr 7e:1d:75:60:f5:89 REACHABLE"
+    }
+  },
+  "passive_rtps": {
+    "multicast": "239.255.0.1:7400",
+    "interface": "eth0",
+    "duration_s": 24,
+    "payloads_retained": false,
+    "errors": [],
+    "senders": [
+      {
+        "guid_prefix": "0110e7de35c7f5d525771f32",
+        "protocol": [
+          2,
+          1
+        ],
+        "vendor_id": "0110",
+        "source_ip": "192.168.123.164",
+        "packets": 19,
+        "source_ports": [
+          36897
+        ]
+      },
+      {
+        "guid_prefix": "011030a2bc2f661916924669",
+        "protocol": [
+          2,
+          1
+        ],
+        "vendor_id": "0110",
+        "source_ip": "192.168.123.164",
+        "packets": 23,
+        "source_ports": [
+          59261
+        ]
+      },
+      {
+        "guid_prefix": "01103b1a78cff2ebe13829f4",
+        "protocol": [
+          2,
+          1
+        ],
+        "vendor_id": "0110",
+        "source_ip": "192.168.123.164",
+        "packets": 8,
+        "source_ports": [
+          40188
+        ]
+      },
+      {
+        "guid_prefix": "011039fcf6ad57dae3c246ad",
+        "protocol": [
+          2,
+          1
+        ],
+        "vendor_id": "0110",
+        "source_ip": "192.168.123.164",
+        "packets": 7,
+        "source_ports": [
+          54329
+        ]
+      },
+      {
+        "guid_prefix": "011086a801fe23cc3dade876",
+        "protocol": [
+          2,
+          1
+        ],
+        "vendor_id": "0110",
+        "source_ip": "192.168.123.161",
+        "packets": 7,
+        "source_ports": [
+          58323
+        ]
+      },
+      {
+        "guid_prefix": "0110018d77a71abf5da2d2bf",
+        "protocol": [
+          2,
+          1
+        ],
+        "vendor_id": "0110",
+        "source_ip": "192.168.123.164",
+        "packets": 8,
+        "source_ports": [
+          52003
+        ]
+      },
+      {
+        "guid_prefix": "01103bee998ed1fd0cbee67b",
+        "protocol": [
+          2,
+          1
+        ],
+        "vendor_id": "0110",
+        "source_ip": "192.168.123.161",
+        "packets": 7,
+        "source_ports": [
+          51546
+        ]
+      },
+      {
+        "guid_prefix": "0110f53ee81cd47039961db1",
+        "protocol": [
+          2,
+          1
+        ],
+        "vendor_id": "0110",
+        "source_ip": "192.168.123.161",
+        "packets": 7,
+        "source_ports": [
+          54710
+        ]
+      },
+      {
+        "guid_prefix": "0110201814eee68280247c60",
+        "protocol": [
+          2,
+          1
+        ],
+        "vendor_id": "0110",
+        "source_ip": "192.168.123.161",
+        "packets": 8,
+        "source_ports": [
+          59559
+        ]
+      },
+      {
+        "guid_prefix": "01109bf0cc7decda28ee5a65",
+        "protocol": [
+          2,
+          1
+        ],
+        "vendor_id": "0110",
+        "source_ip": "192.168.123.161",
+        "packets": 7,
+        "source_ports": [
+          36649
+        ]
+      },
+      {
+        "guid_prefix": "0110fddcc7e1ef16d57ae17a",
+        "protocol": [
+          2,
+          1
+        ],
+        "vendor_id": "0110",
+        "source_ip": "192.168.123.161",
+        "packets": 7,
+        "source_ports": [
+          55751
+        ]
+      },
+      {
+        "guid_prefix": "01101dc58a35642adb01528d",
+        "protocol": [
+          2,
+          1
+        ],
+        "vendor_id": "0110",
+        "source_ip": "192.168.123.161",
+        "packets": 9,
+        "source_ports": [
+          45775
+        ]
+      },
+      {
+        "guid_prefix": "0110d98f825883e7cb51c06c",
+        "protocol": [
+          2,
+          1
+        ],
+        "vendor_id": "0110",
+        "source_ip": "192.168.123.161",
+        "packets": 7,
+        "source_ports": [
+          46906
+        ]
+      },
+      {
+        "guid_prefix": "0110557cf4b9c28194dabcb9",
+        "protocol": [
+          2,
+          1
+        ],
+        "vendor_id": "0110",
+        "source_ip": "192.168.123.161",
+        "packets": 7,
+        "source_ports": [
+          49157
+        ]
+      },
+      {
+        "guid_prefix": "011021ec790e68b3ae79203d",
+        "protocol": [
+          2,
+          1
+        ],
+        "vendor_id": "0110",
+        "source_ip": "192.168.123.161",
+        "packets": 8,
+        "source_ports": [
+          48917
+        ]
+      },
+      {
+        "guid_prefix": "0110b7c4e39cfca63ad97660",
+        "protocol": [
+          2,
+          1
+        ],
+        "vendor_id": "0110",
+        "source_ip": "192.168.123.161",
+        "packets": 7,
+        "source_ports": [
+          39201
+        ]
+      },
+      {
+        "guid_prefix": "01105e60dba3853e79e85adc",
+        "protocol": [
+          2,
+          1
+        ],
+        "vendor_id": "0110",
+        "source_ip": "192.168.123.161",
+        "packets": 7,
+        "source_ports": [
+          56317
+        ]
+      },
+      {
+        "guid_prefix": "01104abfd1575f225e41a07e",
+        "protocol": [
+          2,
+          1
+        ],
+        "vendor_id": "0110",
+        "source_ip": "192.168.123.161",
+        "packets": 7,
+        "source_ports": [
+          53582
+        ]
+      },
+      {
+        "guid_prefix": "0110ff7a7caa33e9f13e7f8e",
+        "protocol": [
+          2,
+          1
+        ],
+        "vendor_id": "0110",
+        "source_ip": "192.168.123.161",
+        "packets": 7,
+        "source_ports": [
+          52395
+        ]
+      },
+      {
+        "guid_prefix": "01106d34fe70efd9a539788e",
+        "protocol": [
+          2,
+          1
+        ],
+        "vendor_id": "0110",
+        "source_ip": "192.168.123.161",
+        "packets": 7,
+        "source_ports": [
+          38917
+        ]
+      },
+      {
+        "guid_prefix": "0110d09b3a90b1daf9fcfeba",
+        "protocol": [
+          2,
+          1
+        ],
+        "vendor_id": "0110",
+        "source_ip": "192.168.123.161",
+        "packets": 7,
+        "source_ports": [
+          33212
+        ]
+      },
+      {
+        "guid_prefix": "01101dc59cd505dbd62a4ffd",
+        "protocol": [
+          2,
+          1
+        ],
+        "vendor_id": "0110",
+        "source_ip": "192.168.123.161",
+        "packets": 7,
+        "source_ports": [
+          45775
+        ]
+      },
+      {
+        "guid_prefix": "011019757456656c59ef486f",
+        "protocol": [
+          2,
+          1
+        ],
+        "vendor_id": "0110",
+        "source_ip": "192.168.123.161",
+        "packets": 7,
+        "source_ports": [
+          37994
+        ]
+      },
+      {
+        "guid_prefix": "011052c911e92315739709ca",
+        "protocol": [
+          2,
+          1
+        ],
+        "vendor_id": "0110",
+        "source_ip": "192.168.123.161",
+        "packets": 7,
+        "source_ports": [
+          59025
+        ]
+      },
+      {
+        "guid_prefix": "0110dda8e7c0b762fbe96def",
+        "protocol": [
+          2,
+          1
+        ],
+        "vendor_id": "0110",
+        "source_ip": "192.168.123.161",
+        "packets": 7,
+        "source_ports": [
+          42060
+        ]
+      },
+      {
+        "guid_prefix": "01106eb172bb711d12f41286",
+        "protocol": [
+          2,
+          1
+        ],
+        "vendor_id": "0110",
+        "source_ip": "192.168.123.161",
+        "packets": 7,
+        "source_ports": [
+          42732
+        ]
+      },
+      {
+        "guid_prefix": "011091589d088b3b47517b81",
+        "protocol": [
+          2,
+          1
+        ],
+        "vendor_id": "0110",
+        "source_ip": "192.168.123.161",
+        "packets": 6,
+        "source_ports": [
+          33231
+        ]
+      },
+      {
+        "guid_prefix": "0110d7889f84fa35d6c1aade",
+        "protocol": [
+          2,
+          1
+        ],
+        "vendor_id": "0110",
+        "source_ip": "192.168.123.164",
+        "packets": 6,
+        "source_ports": [
+          34914
+        ]
+      },
+      {
+        "guid_prefix": "011071e698f4a3c47f335480",
+        "protocol": [
+          2,
+          1
+        ],
+        "vendor_id": "0110",
+        "source_ip": "192.168.123.161",
+        "packets": 6,
+        "source_ports": [
+          51201
+        ]
+      },
+      {
+        "guid_prefix": "0110201855dd5073eeea0b4b",
+        "protocol": [
+          2,
+          1
+        ],
+        "vendor_id": "0110",
+        "source_ip": "192.168.123.161",
+        "packets": 6,
+        "source_ports": [
+          59559
+        ]
+      }
+    ]
+  },
+  "queries": [
+    {
+      "service": "sport",
+      "api_id": 1,
+      "request_id": 7387213154492,
+      "replies": [
+        {
+          "api_id": 1,
+          "code": 0,
+          "raw": "1.0.0.0",
+          "publication_handle": 17670753159205059078,
+          "elapsed_ms": 5.55,
+          "matching_publications": [
+            {
+              "key": "01102018-14ee-e682-8024-7c6000001303",
+              "topic": "rt/api/sport/response",
+              "participant_key": "01102018-14ee-e682-8024-7c60000001c1",
+              "instance_handle": 17670753159205059078,
+              "observed_rtps_source_ips": [
+                "192.168.123.161"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "service": "sport",
+      "api_id": 7001,
+      "request_id": 7388276222307,
+      "replies": [
+        {
+          "api_id": 7001,
+          "code": 0,
+          "raw": "{\"data\":0}",
+          "publication_handle": 17670753159205059078,
+          "elapsed_ms": 5.46,
+          "matching_publications": [
+            {
+              "key": "01102018-14ee-e682-8024-7c6000001303",
+              "topic": "rt/api/sport/response",
+              "participant_key": "01102018-14ee-e682-8024-7c60000001c1",
+              "instance_handle": 17670753159205059078,
+              "observed_rtps_source_ips": [
+                "192.168.123.161"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "service": "sport",
+      "api_id": 7002,
+      "request_id": 7389350022198,
+      "replies": [
+        {
+          "api_id": 7002,
+          "code": 0,
+          "raw": "{\"data\":0}",
+          "publication_handle": 17670753159205059078,
+          "elapsed_ms": 5.45,
+          "matching_publications": [
+            {
+              "key": "01102018-14ee-e682-8024-7c6000001303",
+              "topic": "rt/api/sport/response",
+              "participant_key": "01102018-14ee-e682-8024-7c60000001c1",
+              "instance_handle": 17670753159205059078,
+              "observed_rtps_source_ips": [
+                "192.168.123.161"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "service": "sport",
+      "api_id": 7003,
+      "request_id": 7390426446255,
+      "replies": [
+        {
+          "api_id": 7003,
+          "code": 7301,
+          "raw": null,
+          "publication_handle": 17670753159205059078,
+          "elapsed_ms": 5.97,
+          "matching_publications": [
+            {
+              "key": "01102018-14ee-e682-8024-7c6000001303",
+              "topic": "rt/api/sport/response",
+              "participant_key": "01102018-14ee-e682-8024-7c60000001c1",
+              "instance_handle": 17670753159205059078,
+              "observed_rtps_source_ips": [
+                "192.168.123.161"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "service": "sport",
+      "api_id": 7004,
+      "request_id": 7391516035242,
+      "replies": [
+        {
+          "api_id": 7004,
+          "code": 7301,
+          "raw": null,
+          "publication_handle": 17670753159205059078,
+          "elapsed_ms": 5.76,
+          "matching_publications": [
+            {
+              "key": "01102018-14ee-e682-8024-7c6000001303",
+              "topic": "rt/api/sport/response",
+              "participant_key": "01102018-14ee-e682-8024-7c60000001c1",
+              "instance_handle": 17670753159205059078,
+              "observed_rtps_source_ips": [
+                "192.168.123.161"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "service": "sport",
+      "api_id": 7005,
+      "request_id": 7392607881405,
+      "replies": [
+        {
+          "api_id": 7005,
+          "code": 7301,
+          "raw": null,
+          "publication_handle": 17670753159205059078,
+          "elapsed_ms": 5.49,
+          "matching_publications": [
+            {
+              "key": "01102018-14ee-e682-8024-7c6000001303",
+              "topic": "rt/api/sport/response",
+              "participant_key": "01102018-14ee-e682-8024-7c60000001c1",
+              "instance_handle": 17670753159205059078,
+              "observed_rtps_source_ips": [
+                "192.168.123.161"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "service": "sport",
+      "api_id": 7006,
+      "request_id": 7393683204651,
+      "replies": [
+        {
+          "api_id": 7006,
+          "code": 7301,
+          "raw": null,
+          "publication_handle": 17670753159205059078,
+          "elapsed_ms": 5.44,
+          "matching_publications": [
+            {
+              "key": "01102018-14ee-e682-8024-7c6000001303",
+              "topic": "rt/api/sport/response",
+              "participant_key": "01102018-14ee-e682-8024-7c60000001c1",
+              "instance_handle": 17670753159205059078,
+              "observed_rtps_source_ips": [
+                "192.168.123.161"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "service": "motion_switcher",
+      "api_id": 1001,
+      "request_id": 7394871748505,
+      "replies": [
+        {
+          "api_id": 1001,
+          "code": 0,
+          "raw": "{\"form\":\"0\",\"name\":\"ai\"}",
+          "publication_handle": 11102758518627551392,
+          "elapsed_ms": 15.8,
+          "matching_publications": [
+            {
+              "key": "01106d34-fe70-efd9-a539-788e00000403",
+              "topic": "rt/api/motion_switcher/response",
+              "participant_key": "01106d34-fe70-efd9-a539-788e000001c1",
+              "instance_handle": 11102758518627551392,
+              "observed_rtps_source_ips": [
+                "192.168.123.161"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "service": "robot_state",
+      "api_id": 1003,
+      "request_id": 7395940248541,
+      "replies": [
+        {
+          "api_id": 1003,
+          "code": 0,
+          "raw": "[{\"name\":\"ai_sport\",\"protect\":0,\"status\":0},{\"name\":\"audio_player_service\",\"protect\":0,\"status\":0},{\"name\":\"auto_test_arm\",\"protect\":0,\"status\":1},{\"name\":\"auto_test_low\",\"protect\":0,\"status\":1},{\"name\":\"bashrunner\",\"protect\":0,\"status\":0},{\"name\":\"basic_service\",\"protect\":1,\"status\":0},{\"name\":\"battery_guard\",\"protect\":0,\"status\":0},{\"name\":\"chat_go\",\"protect\":0,\"status\":0},{\"name\":\"dex3_service_l\",\"protect\":0,\"status\":0},{\"name\":\"dex3_service_r\",\"protect\":0,\"status\":0},{\"name\":\"emergency_stop\",\"protect\":0,\"status\":0},{\"name\":\"g1_arm_example\",\"protect\":0,\"status\":0},{\"name\":\"lidar_driver\",\"protect\":0,\"status\":1},{\"name\":\"log_system\",\"protect\":0,\"status\":0},{\"name\":\"motion_switcher\",\"protect\":0,\"status\":0},{\"name\":\"net_switcher\",\"protect\":0,\"status\":0},{\"name\":\"ota_box\",\"protect\":0,\"status\":1},{\"name\":\"ota_pipe\",\"protect\":0,\"status\":0},{\"name\":\"robot_state\",\"protect\":1,\"status\":0},{\"name\":\"robot_type_service\",\"protect\":0,\"status\":0},{\"name\":\"state_estimator\",\"protect\":0,\"status\":0},{\"name\":\"unistore\",\"protect\":0,\"status\":0},{\"name\":\"unitree_slam\",\"protect\":0,\"status\":1},{\"name\":\"video_hub_pc4\",\"protect\":0,\"status\":0},{\"name\":\"vui_service\",\"protect\":0,\"status\":0},{\"name\":\"webrtc_bridge\",\"protect\":1,\"status\":0},{\"name\":\"webrtc_multicast_responder\",\"protect\":0,\"status\":0},{\"name\":\"webrtc_signal_server\",\"protect\":1,\"status\":0}]",
+          "publication_handle": 6959322834337255640,
+          "elapsed_ms": 5.53,
+          "matching_publications": [
+            {
+              "key": "0110d09b-3a90-b1da-f9fc-feba00000803",
+              "topic": "rt/api/robot_state/response",
+              "participant_key": "0110d09b-3a90-b1da-f9fc-feba000001c1",
+              "instance_handle": 6959322834337255640,
+              "observed_rtps_source_ips": [
+                "192.168.123.161"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "service": "robot_state",
+      "api_id": 1006,
+      "request_id": 7397021371726,
+      "replies": [
+        {
+          "api_id": 1006,
+          "code": 3203,
+          "raw": null,
+          "publication_handle": 6959322834337255640,
+          "elapsed_ms": 5.44,
+          "matching_publications": [
+            {
+              "key": "0110d09b-3a90-b1da-f9fc-feba00000803",
+              "topic": "rt/api/robot_state/response",
+              "participant_key": "0110d09b-3a90-b1da-f9fc-feba000001c1",
+              "instance_handle": 6959322834337255640,
+              "observed_rtps_source_ips": [
+                "192.168.123.161"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "response_publishers": [
+    {
+      "key": "01106d34-fe70-efd9-a539-788e00000403",
+      "topic": "rt/api/motion_switcher/response",
+      "participant_key": "01106d34-fe70-efd9-a539-788e000001c1",
+      "instance_handle": 11102758518627551392,
+      "observed_rtps_source_ips": [
+        "192.168.123.161"
+      ]
+    },
+    {
+      "key": "0110d09b-3a90-b1da-f9fc-feba00000803",
+      "topic": "rt/api/robot_state/response",
+      "participant_key": "0110d09b-3a90-b1da-f9fc-feba000001c1",
+      "instance_handle": 6959322834337255640,
+      "observed_rtps_source_ips": [
+        "192.168.123.161"
+      ]
+    },
+    {
+      "key": "01104abf-d157-5f22-5e41-a07e00000803",
+      "topic": "rt/api/sport/response",
+      "participant_key": "01104abf-d157-5f22-5e41-a07e000001c1",
+      "instance_handle": 205428136248474946,
+      "observed_rtps_source_ips": [
+        "192.168.123.161"
+      ]
+    },
+    {
+      "key": "01103bee-998e-d1fd-0cbe-e67b00000803",
+      "topic": "rt/api/sport/response",
+      "participant_key": "01103bee-998e-d1fd-0cbe-e67b000001c1",
+      "instance_handle": 15796083921843397621,
+      "observed_rtps_source_ips": [
+        "192.168.123.161"
+      ]
+    },
+    {
+      "key": "01102018-14ee-e682-8024-7c6000001303",
+      "topic": "rt/api/sport/response",
+      "participant_key": "01102018-14ee-e682-8024-7c60000001c1",
+      "instance_handle": 17670753159205059078,
+      "observed_rtps_source_ips": [
+        "192.168.123.161"
+      ]
+    }
+  ],
+  "device_motion_firmware": null,
+  "command_writes": 0,
+  "lease_requests": 0,
+  "limitations": [
+    "RTPS source IP identifies an observed network sender, not a verified physical board or executable.",
+    "Service status 0 means on in the official G1 documentation, not LocoState readiness or balance safety.",
+    "Absence from bounded local process enumeration does not exclude renamed or inaccessible processes.",
+    "Only successful payloads are retained; error placeholders are not readings.",
+    "No mode changes were used to investigate the internal 7301 predicate."
+  ]
+}

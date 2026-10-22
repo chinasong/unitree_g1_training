@@ -1,0 +1,36 @@
+{
+  "passive_read": {
+    "path": "g1_console/assets/board_audit_sources/passive_read_20261021.json",
+    "sha256": "770d01aca57989a42a8bb10e3a7a909baf8ff42689f0f10f8d639a07cd3a0d11"
+  },
+  "installed_model": {
+    "path": "g1_console/assets/board_audit_sources/g1_23dof_rev_1_0.xml",
+    "sha256": "8ca62fcccdca91a431ca04f1a42f9c2fda241fdd5e13411168dc82de00f978de",
+    "device_path": "/home/unitree/megaflow_sdk/ws/plugin/g1edu_motion/res/models/g1_description/g1_23dof_rev_1_0.xml"
+  },
+  "context": {
+    "orin_ssh_address": "<ORIN_IP>",
+    "orin_ssh_host_fingerprint": "<ORIN_HOST_FINGERPRINT>",
+    "topology_source": "https://github.com/unitreerobotics/xr_teleoperate/wiki/CycloneDDS-and-UnitreeSDK-%28en%29",
+    "configuration_inventory": {
+      "root": "/home/unitree/megaflow_sdk/ws",
+      "max_depth": 6,
+      "excluded_directories": [
+        "env",
+        "venv",
+        ".venv",
+        "node_modules",
+        ".git",
+        "logs",
+        "log",
+        "cache",
+        "__pycache__",
+        "site-packages",
+        "RoboJuDo"
+      ],
+      "examined_filenames": 350,
+      "config_candidates": 12,
+      "result": "11 XML model/scene files and bin/cos_config.json; credential config contents not copied; no motor calibration obtained"
+    }
+  }
+}

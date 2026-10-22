@@ -1,0 +1,1286 @@
+{
+  "checked_at": "2026-10-22T02:44:56.439354+00:00",
+  "interface": "en0",
+  "network": "<LAN_NET>/24",
+  "own_ip": "<MAC_IP>",
+  "timeout_seconds": 3,
+  "hosts_checked": 254,
+  "duration_seconds": 3.01,
+  "results": [
+    {
+      "ip": "<LAN_GATEWAY>",
+      "tcp22": "closed_or_unreachable",
+      "error": "timed out"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "timed out"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "timed out"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 61] Connection refused"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 61] Connection refused"
+    },
+    {
+      "ip": "<ORIN_IP>",
+      "tcp22": "closed_or_unreachable",
+      "error": "timed out"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 61] Connection refused"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "timed out"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 61] Connection refused"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 61] Connection refused"
+    },
+    {
+      "ip": "<MAC_IP>",
+      "tcp22": "open",
+      "ssh_fingerprint": "<SSH_HOST_FINGERPRINT>",
+      "expected_orin": false
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 61] Connection refused"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "timed out"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<APP_REPORTED_IP>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 61] Connection refused"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    },
+    {
+      "ip": "<LAN_HOST>",
+      "tcp22": "closed_or_unreachable",
+      "error": "[Errno 65] No route to host"
+    }
+  ],
+  "authenticated": false,
+  "network_changed": false,
+  "quantumult_changed": false,
+  "robot_actions_sent": false
+}

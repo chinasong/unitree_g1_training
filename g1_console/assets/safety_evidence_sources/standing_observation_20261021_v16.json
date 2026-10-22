@@ -1,0 +1,298 @@
+{
+  "current": false,
+  "started_at_utc": "2026-10-21T06:24:45.191762+00:00",
+  "completed_at_utc": "2026-10-21T06:25:46.116290+00:00",
+  "samples": 61,
+  "images": [
+    {
+      "at_utc": "2026-10-21T06:24:45.191762+00:00",
+      "path": ".g1-deploy/research/standing-plan-20261021/frame-00.jpg",
+      "sha256": "edfbad02298f0f51885afacd078f288656daef41803b955ceb14e2899cbcf262",
+      "age_ms": 173,
+      "metadata": {
+        "backend": "unitree",
+        "status": "live",
+        "error": null,
+        "diagnostics": {
+          "transport": "official_api_1001_isolated_polled",
+          "window_s": 60,
+          "attempts": 300,
+          "successes": 300,
+          "timeouts": 0,
+          "errors": 0,
+          "total_attempts": 2380,
+          "total_successes": 2380,
+          "total_timeouts": 0
+        },
+        "source": "unitree-videohub-468d0917a08b",
+        "sequence": 2380,
+        "age_ms": 173,
+        "request_started_at": 1792563885.1614504,
+        "received_at": 1792563885.1985667,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 37,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      },
+      "state_sample": 0
+    },
+    {
+      "at_utc": "2026-10-21T06:25:00.178050+00:00",
+      "path": ".g1-deploy/research/standing-plan-20261021/frame-15.jpg",
+      "sha256": "97fb91417363c554f418e407d6b41187cf9dc1b670ee9404910e43bd77c08ad5",
+      "age_ms": 148,
+      "metadata": {
+        "backend": "unitree",
+        "status": "live",
+        "error": null,
+        "diagnostics": {
+          "transport": "official_api_1001_isolated_polled",
+          "window_s": 60,
+          "attempts": 300,
+          "successes": 300,
+          "timeouts": 0,
+          "errors": 0,
+          "total_attempts": 2455,
+          "total_successes": 2455,
+          "total_timeouts": 0
+        },
+        "source": "unitree-videohub-468d0917a08b",
+        "sequence": 2455,
+        "age_ms": 148,
+        "request_started_at": 1792563900.171807,
+        "received_at": 1792563900.2100458,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 38,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      },
+      "state_sample": 15
+    },
+    {
+      "at_utc": "2026-10-21T06:25:15.186480+00:00",
+      "path": ".g1-deploy/research/standing-plan-20261021/frame-30.jpg",
+      "sha256": "3772ff4813cb08cb7ce738fd695f6b8648856be4b3fb1abb206486f6bd9bd004",
+      "age_ms": 142,
+      "metadata": {
+        "backend": "unitree",
+        "status": "live",
+        "error": null,
+        "diagnostics": {
+          "transport": "official_api_1001_isolated_polled",
+          "window_s": 60,
+          "attempts": 300,
+          "successes": 300,
+          "timeouts": 0,
+          "errors": 0,
+          "total_attempts": 2530,
+          "total_successes": 2530,
+          "total_timeouts": 0
+        },
+        "source": "unitree-videohub-468d0917a08b",
+        "sequence": 2530,
+        "age_ms": 142,
+        "request_started_at": 1792563915.1819725,
+        "received_at": 1792563915.2025006,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 21,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      },
+      "state_sample": 30
+    },
+    {
+      "at_utc": "2026-10-21T06:25:30.199322+00:00",
+      "path": ".g1-deploy/research/standing-plan-20261021/frame-45.jpg",
+      "sha256": "79cfaf69ee82cbc276d75119226bf267f132bb03f144bef5459895b04896c76c",
+      "age_ms": 143,
+      "metadata": {
+        "backend": "unitree",
+        "status": "live",
+        "error": null,
+        "diagnostics": {
+          "transport": "official_api_1001_isolated_polled",
+          "window_s": 60,
+          "attempts": 300,
+          "successes": 300,
+          "timeouts": 0,
+          "errors": 0,
+          "total_attempts": 2605,
+          "total_successes": 2605,
+          "total_timeouts": 0
+        },
+        "source": "unitree-videohub-468d0917a08b",
+        "sequence": 2605,
+        "age_ms": 143,
+        "request_started_at": 1792563930.1931353,
+        "received_at": 1792563930.232241,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 39,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      },
+      "state_sample": 45
+    },
+    {
+      "at_utc": "2026-10-21T06:25:45.196252+00:00",
+      "path": ".g1-deploy/research/standing-plan-20261021/frame-60.jpg",
+      "sha256": "1c02c29e5b13b4f3a72b3f5c72d0448a98a72bb4f8054869edecea8f00e1f2c4",
+      "age_ms": 132,
+      "metadata": {
+        "backend": "unitree",
+        "status": "live",
+        "error": null,
+        "diagnostics": {
+          "transport": "official_api_1001_isolated_polled",
+          "window_s": 60,
+          "attempts": 300,
+          "successes": 300,
+          "timeouts": 0,
+          "errors": 0,
+          "total_attempts": 2680,
+          "total_successes": 2680,
+          "total_timeouts": 0
+        },
+        "source": "unitree-videohub-468d0917a08b",
+        "sequence": 2680,
+        "age_ms": 132,
+        "request_started_at": 1792563945.2027776,
+        "received_at": 1792563945.2440114,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 41,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      },
+      "state_sample": 60
+    }
+  ],
+  "max_telemetry_age_ms": 56,
+  "first_mode": {
+    "fsm": 0,
+    "sdk_label": "SDK ZeroTorque 对应状态 ID",
+    "active_capability_id": null,
+    "feedback_consistency": "matched",
+    "activity_verified": false,
+    "detail": "FSM 只表明服务回读的状态 ID；未取得具体能力执行中/完成的可信反馈。ZeroTorque ID 也不证明每个电机实际力矩为零"
+  },
+  "last_mode": {
+    "fsm": 0,
+    "sdk_label": "SDK ZeroTorque 对应状态 ID",
+    "active_capability_id": null,
+    "feedback_consistency": "matched",
+    "activity_verified": false,
+    "detail": "FSM 只表明服务回读的状态 ID；未取得具体能力执行中/完成的可信反馈。ZeroTorque ID 也不证明每个电机实际力矩为零"
+  },
+  "last_posture": {
+    "description": "双膝显著屈曲",
+    "knee_deg": [
+      160.5415064032637,
+      159.071772637282
+    ],
+    "imu_rpy_deg": [
+      7.890792043389732,
+      -3.6247165057286517,
+      -2.2093213769060625
+    ],
+    "secondary_imu_rpy_deg": [
+      3.8317314286220987,
+      -6.959319445800543,
+      -0.779987166008799
+    ],
+    "whole_body_pose": "unknown",
+    "support": "unknown",
+    "feet": {
+      "left": {
+        "contact": null,
+        "load_n": null
+      },
+      "right": {
+        "contact": null,
+        "load_n": null
+      }
+    },
+    "detail": "双膝 >90° 仅为形态描述规则；未确定站/坐/卧、身体离地高度或接触对象。三维模型按关节角度显示，不表示世界中的支撑姿势"
+  },
+  "paired_observation_sha256": "5a248888fb8c4cdbd8e7df40a6a986d86c603e352be5a88b5760dd3b032b98af",
+  "command_writes": 0,
+  "lease_requests": 0,
+  "mode_rpc_counter_deltas": {
+    "fsm_id": {
+      "attempts": 118,
+      "successes": 118,
+      "timeouts": 0,
+      "errors": 0
+    },
+    "fsm_mode": {
+      "attempts": 20,
+      "successes": 20,
+      "timeouts": 0,
+      "errors": 0
+    },
+    "motion_mode": {
+      "attempts": 20,
+      "successes": 20,
+      "timeouts": 0,
+      "errors": 0
+    }
+  },
+  "visual_review": {
+    "reviewer": "Codex image inspection",
+    "reviewed_image": {
+      "at_utc": "2026-10-21T06:24:45.191762+00:00",
+      "path": ".g1-deploy/research/standing-plan-20261021/frame-00.jpg",
+      "sha256": "edfbad02298f0f51885afacd078f288656daef41803b955ceb14e2899cbcf262",
+      "age_ms": 173,
+      "metadata": {
+        "backend": "unitree",
+        "status": "live",
+        "error": null,
+        "diagnostics": {
+          "transport": "official_api_1001_isolated_polled",
+          "window_s": 60,
+          "attempts": 300,
+          "successes": 300,
+          "timeouts": 0,
+          "errors": 0,
+          "total_attempts": 2380,
+          "total_successes": 2380,
+          "total_timeouts": 0
+        },
+        "source": "unitree-videohub-468d0917a08b",
+        "sequence": 2380,
+        "age_ms": 173,
+        "request_started_at": 1792563885.1614504,
+        "received_at": 1792563885.1985667,
+        "width": 960,
+        "height": 540,
+        "source_width": 1920,
+        "source_height": 1080,
+        "request_ms": 37,
+        "timestamp_basis": "request_started_at",
+        "sensor_timestamp": null
+      },
+      "state_sample": 0
+    },
+    "scene_facts": [
+      "画面主要为近处瓷砖地面及家具底部"
+    ],
+    "limitations": [
+      "脚底、全身和托举接触点不在可核验视野内",
+      "不能据此确认脚底载荷或独立平衡"
+    ]
+  }
+}

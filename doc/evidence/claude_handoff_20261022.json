@@ -1,0 +1,579 @@
+{
+  "schema_version": 1,
+  "current": false,
+  "generated_at": "2026-10-22T16:47:02.758925+08:00",
+  "timezone": "Asia/Shanghai",
+  "purpose": "Claude Code 项目与机器人工作台交接；历史快照，接手时重新只读核验",
+  "workspace": {
+    "path": ".",
+    "branch": "master",
+    "head": "e2f688b1bc2cb8327e4b89f2c3a36602a7bdcaed",
+    "origin": "https://github.com/chinasong/unitree_g1_training.git",
+    "head_represents_working_tree": false,
+    "untracked_implementation_present": true,
+    "preserve_dirty_tree": true
+  },
+  "robot": {
+    "configuration_source": "user_report_and_official_app_screenshots",
+    "type": "G1 EDU / App G1 EDU+",
+    "dof": 23,
+    "hands": false,
+    "compute": "Jetson Orin",
+    "app_software": "v1.5.6",
+    "app_hardware": "v1.0",
+    "device_motion_firmware": null
+  },
+  "connection": {
+    "ssh_host": "<ORIN_IP>",
+    "ssh_user": "unitree",
+    "ssh_port": 22,
+    "host_key_sha256": "<ORIN_HOST_FINGERPRINT>",
+    "mac_interface": "en0",
+    "mac_ui_url": "http://127.0.0.1:18766/",
+    "mac_ssh_bridge_url": "http://127.0.0.1:18765/",
+    "orin_http_bind": "127.0.0.1:8765",
+    "orin_dds_interface": "eth0",
+    "dds_domain": 0,
+    "internal_orin_ip": "192.168.123.164",
+    "humanoid_node_clue": "192.168.123.161",
+    "app_wlan0_report": "<APP_REPORTED_IP>",
+    "app_wlan0_is_confirmed_orin_ssh": false,
+    "quantumult_x_changed": false
+  },
+  "orin_process_snapshot": {
+    "checked_at": "2026-10-22T16:31:28.920093+08:00",
+    "boot_id": "fc0c327a-b381-400a-b20d-6307f4f43e2e",
+    "release": "da5d189707fa",
+    "processes": [
+      {
+        "pid": 6251,
+        "uid": 1000,
+        "cwd": "/home/unitree/workspace/g1-body-console/releases/da5d189707fa",
+        "argv": [
+          "/home/unitree/workspace/g1-body-console/.venv/bin/python",
+          "-m",
+          "g1_console",
+          "--manual-remote",
+          "--damping-test"
+        ],
+        "start_ticks": 249464
+      }
+    ],
+    "run_id": "a55319b05192",
+    "mode": "robot",
+    "connected": true,
+    "owner": null,
+    "armed": false,
+    "fsm": 0,
+    "damping_test": true,
+    "allowed_writes": [
+      "damp"
+    ],
+    "receipt_sha256": "bc14c8abee96581486e38cd1c4c16a52b5a464aa39de58afad62c0eae38bbd60",
+    "damping_receipt_spent": true,
+    "motion_authority_verified": false,
+    "snapshot_history": [
+      {
+        "request_id": "f0054021-50a3-49ad-9104-46acde307a28",
+        "capability": "get_phase",
+        "label": "读取步态相位",
+        "at": 1792657535.3357782,
+        "updated_at": 1792657535.3357785,
+        "mode": "robot",
+        "status": "read_unavailable",
+        "message": "官方服务返回 7301：LocoState 不可用；模式/高度/相位保持未知，忽略返回中的占位零值。不会自动切换模式",
+        "error_code": "SDK_REJECTED",
+        "sdk_code": 7301
+      },
+      {
+        "request_id": "64bec954-8fcd-4e85-951e-34a1a1888c18",
+        "capability": "get_stand_height",
+        "label": "读取站立高度",
+        "at": 1792657535.2551427,
+        "updated_at": 1792657535.255143,
+        "mode": "robot",
+        "status": "read_unavailable",
+        "message": "官方服务返回 7301：LocoState 不可用；模式/高度/相位保持未知，忽略返回中的占位零值。不会自动切换模式",
+        "error_code": "SDK_REJECTED",
+        "sdk_code": 7301
+      },
+      {
+        "request_id": "82de3ba7-dea0-46db-acdc-ad828bb58b8d",
+        "capability": "get_swing_height",
+        "label": "读取摆腿高度",
+        "at": 1792657535.1470394,
+        "updated_at": 1792657535.1470397,
+        "mode": "robot",
+        "status": "read_unavailable",
+        "message": "官方服务返回 7301：LocoState 不可用；模式/高度/相位保持未知，忽略返回中的占位零值。不会自动切换模式",
+        "error_code": "SDK_REJECTED",
+        "sdk_code": 7301
+      },
+      {
+        "request_id": "f9b6989c-3353-4540-b297-fed45cf0f9f6",
+        "capability": "get_balance",
+        "label": "读取平衡模式",
+        "at": 1792657535.0887587,
+        "updated_at": 1792657535.0887592,
+        "mode": "robot",
+        "status": "read_unavailable",
+        "message": "官方服务返回 7301：LocoState 不可用；模式/高度/相位保持未知，忽略返回中的占位零值。不会自动切换模式",
+        "error_code": "SDK_REJECTED",
+        "sdk_code": 7301
+      }
+    ],
+    "snapshot_preflights": []
+  },
+  "deployment_verification": {
+    "checked_at": "2026-10-22T16:43:52.947671+08:00",
+    "boot_id": "fc0c327a-b381-400a-b20d-6307f4f43e2e",
+    "active_release": "da5d189707fa",
+    "manifest_sha256": "da5d189707fa29fd9938331df477a63d75013a269a132f227032bdc1188cbc43",
+    "files_verified": 495,
+    "mismatches": [],
+    "local_package_release": "03034ef80b29",
+    "local_package_files": 495,
+    "local_manifest_mismatches": [],
+    "local_archive_matches_local_manifest": true,
+    "local_package_is_active": false,
+    "local_vs_deployed_changes": [
+      {
+        "path": "g1_console/adapters.py",
+        "local_sha256": "7d404e1120da62b70d4ada57372ddb0fb4f6272b78f9b97e15edcc3481cd8142",
+        "deployed_sha256": "35c9cbf857d05b2cbef935fbd355ff755296ccdcff4920d65cf277b4da630496"
+      },
+      {
+        "path": "g1_console/capabilities.py",
+        "local_sha256": "56392d9b20cd3a86d81e4ec92c34468bf13c2be75f2ef934ded990754ddaca25",
+        "deployed_sha256": "943ce12160311d854c37ca88914a6234c6964f170cbf616e64624207f2584212"
+      },
+      {
+        "path": "g1_console/config.py",
+        "local_sha256": "25e65d58de2cb8f4b6082a510167750eb39fe47704a1696e5241106396f944af",
+        "deployed_sha256": "28d6a16aaebca58d007ad6d7b5f50cfcdf27d330926984eaa6a0ba0e0c5cec01"
+      },
+      {
+        "path": "g1_console/contracts.py",
+        "local_sha256": "b14a0493a79681e441322e6a66b4074d806836d43a8ddbb5240adaa087dd1b40",
+        "deployed_sha256": "39dc02ea716fd5ca3cdc779615fdf9e94e3d2b649539604a635f0f81652b6e63"
+      },
+      {
+        "path": "g1_console/service.py",
+        "local_sha256": "794e46e84a65bff98436b8190eb5bd81211c648fd902211a7cf433235be75e81",
+        "deployed_sha256": "a641ec549879d13359b0c579763423fdea0c707049731ae3105bfb60dac75370"
+      }
+    ],
+    "change_summary": "本地门控规则统一和速度常量归并尚未部署，禁止与 Orin 当前执行路径混淆"
+  },
+  "mac_http_get_verification": [
+    {
+      "checked_at": "2026-10-22T16:35:31.141178+08:00",
+      "port": 18765,
+      "at": 1792658131.1411781,
+      "http_status": 200,
+      "html_bytes": 410,
+      "run_id": "a55319b05192",
+      "mode": "robot",
+      "connected": true,
+      "fsm": 0,
+      "owner": null,
+      "armed": false,
+      "damping_test": true,
+      "allowed_writes": [
+        "damp"
+      ],
+      "camera_status": "live",
+      "camera_sequence": 3106,
+      "camera_diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 3106,
+        "total_successes": 3106,
+        "total_timeouts": 0
+      }
+    },
+    {
+      "checked_at": "2026-10-22T16:35:31.332097+08:00",
+      "port": 18766,
+      "at": 1792658131.332097,
+      "http_status": 200,
+      "html_bytes": 410,
+      "run_id": "a55319b05192",
+      "mode": "robot",
+      "connected": true,
+      "fsm": 0,
+      "owner": null,
+      "armed": false,
+      "damping_test": true,
+      "allowed_writes": [
+        "damp"
+      ],
+      "camera_status": "live",
+      "camera_sequence": 3108,
+      "camera_diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 3108,
+        "total_successes": 3108,
+        "total_timeouts": 0
+      }
+    }
+  ],
+  "body_observation": {
+    "at": "2026-10-22T16:31:08.957970+08:00",
+    "current": false,
+    "foundation_id": "941c6089be4c2c503845e79de069995893616446dd2e4e0fb651628fa653d31c",
+    "control_mode": {
+      "fsm": 0,
+      "sdk_label": "SDK ZeroTorque 对应状态 ID",
+      "active_capability_id": null,
+      "feedback_consistency": "matched",
+      "activity_verified": false,
+      "detail": "FSM 只表明服务回读的状态 ID；未取得具体能力执行中/完成的可信反馈。ZeroTorque ID 也不证明每个电机实际力矩为零"
+    },
+    "posture": {
+      "description": "双膝显著屈曲",
+      "knee_deg": [
+        160.70702920760976,
+        158.52490671119577
+      ],
+      "imu_rpy_deg": [
+        8.01756206193246,
+        -1.7547763430665335,
+        -7.906328162430572
+      ],
+      "secondary_imu_rpy_deg": [
+        4.986794537559887,
+        -5.6965220555368505,
+        -0.5732203710812938
+      ],
+      "whole_body_pose": "unknown",
+      "support": "unknown",
+      "feet": {
+        "left": {
+          "contact": null,
+          "load_n": null
+        },
+        "right": {
+          "contact": null,
+          "load_n": null
+        }
+      },
+      "detail": "双膝 >90° 仅为形态描述规则；未确定站/坐/卧、身体离地高度或接触对象。三维模型按关节角度显示，不表示世界中的支撑姿势"
+    },
+    "observation_window": {
+      "samples": 210,
+      "seconds": 11.97,
+      "max_abs_dq_rad_s": 0.054853204637765884,
+      "max_joint_span_deg": 0.006905321250882892,
+      "certified_safe": false,
+      "learned_safe_range": null,
+      "detail": "短时被动观察，只描述已观测变化；不把未摔倒样本、最小/最大角度或零速度学习为安全边界"
+    },
+    "execution_allowed": false,
+    "historical_user_support_report": "坐地、双脚贴地、背靠柜体；重启后未重新确认，不能当作当前事实"
+  },
+  "service_version_advertisement": {
+    "topic": "rt/servicestate",
+    "listening": true,
+    "status": "advertisement_received",
+    "started_at": 1792657508.5125303,
+    "received_at": 1792657600.089896,
+    "age_ms": 288792,
+    "frames": 1,
+    "rows": [
+      {
+        "name": "ai_sport",
+        "version": "8.7.5.212",
+        "path": "$[0]",
+        "binding": "object_fields"
+      },
+      {
+        "name": "bashrunner",
+        "version": "1.1.1.2",
+        "path": "$[4]",
+        "binding": "object_fields"
+      },
+      {
+        "name": "basic_service",
+        "version": "3.0.0.18",
+        "path": "$[5]",
+        "binding": "object_fields"
+      },
+      {
+        "name": "battery_guard",
+        "version": "1.0.0.9",
+        "path": "$[6]",
+        "binding": "object_fields"
+      },
+      {
+        "name": "chat_go",
+        "version": "1.9.5.26",
+        "path": "$[7]",
+        "binding": "object_fields"
+      },
+      {
+        "name": "emergency_stop",
+        "version": "1.0.0.4",
+        "path": "$[10]",
+        "binding": "object_fields"
+      },
+      {
+        "name": "g1_arm_example",
+        "version": "2.0.2.5",
+        "path": "$[11]",
+        "binding": "object_fields"
+      },
+      {
+        "name": "lidar_driver",
+        "version": "1.0.0.12",
+        "path": "$[12]",
+        "binding": "object_fields"
+      },
+      {
+        "name": "log_system",
+        "version": "2.0.0.11",
+        "path": "$[13]",
+        "binding": "object_fields"
+      },
+      {
+        "name": "motion_switcher",
+        "version": "1.0.0.1",
+        "path": "$[14]",
+        "binding": "object_fields"
+      },
+      {
+        "name": "net_switcher",
+        "version": "1.0.2.1",
+        "path": "$[15]",
+        "binding": "object_fields"
+      },
+      {
+        "name": "robot_state",
+        "version": "3.0.0.8",
+        "path": "$[18]",
+        "binding": "object_fields"
+      },
+      {
+        "name": "robot_type_service",
+        "version": "1.0.2.4",
+        "path": "$[19]",
+        "binding": "object_fields"
+      },
+      {
+        "name": "state_estimator",
+        "version": "2.0.0.25",
+        "path": "$[20]",
+        "binding": "object_fields"
+      },
+      {
+        "name": "unistore",
+        "version": "1.0.1.20",
+        "path": "$[21]",
+        "binding": "object_fields"
+      },
+      {
+        "name": "unitree_slam",
+        "version": "1.0.2.9",
+        "path": "$[22]",
+        "binding": "object_fields"
+      },
+      {
+        "name": "video_hub_pc4",
+        "version": "1.0.1.1",
+        "path": "$[23]",
+        "binding": "object_fields"
+      },
+      {
+        "name": "vui_service",
+        "version": "2.1.0.47",
+        "path": "$[24]",
+        "binding": "object_fields"
+      },
+      {
+        "name": "webrtc_bridge",
+        "version": "1.1.2.2",
+        "path": "$[25]",
+        "binding": "object_fields"
+      }
+    ],
+    "sha256": "c31dde1408172e046585859481d0ff67c2a874bacbb461f2c7ebbd813245b4c6",
+    "current": false,
+    "physical_publisher_verified": false,
+    "running_build_verified": false,
+    "device_motion_firmware": null,
+    "execution_allowed": false,
+    "timestamp_basis": "local_receive_time",
+    "retention": "current_console_connection"
+  },
+  "installed_loco_audit": {
+    "checked_at_utc": "2026-10-22T08:12:12.706012+00:00",
+    "completed_at_utc": "2026-10-22T08:12:30.925593+00:00",
+    "constructor_rpc_requests": 0,
+    "init_rpc_requests": 0,
+    "command_writes": 0,
+    "lease_requests": 0,
+    "device_motion_firmware": null,
+    "motion_authority_verified": false,
+    "exact_7301_predicate": null,
+    "summary": "实机官方 SDK 构造与 Init 均无 RPC；7 项固定只读查询经独立 DDS 接收器按请求 ID 和 API 关联，四项 7003–7006 均返回 7301。公开里程计仍更新，未证明服务私有 LocoState 就绪。",
+    "limits": [
+      "Only fixed official read APIs 1 and 7001-7006 were sent.",
+      "Public odometry does not establish private server LocoState availability.",
+      "Four generic foot_force slots are not validated G1 bilateral load readings.",
+      "Init registration of setters is local and does not execute them.",
+      "No mode transition was attempted to probe server readiness."
+    ]
+  },
+  "loco_readback_summary": {
+    "protocol_api_1": "1.0.0.0",
+    "protocol_is_motion_firmware": false,
+    "api_7001_fsm": 0,
+    "api_7002_mode": 0,
+    "api_7003_7006_sdk_code": 7301,
+    "values": null,
+    "error_definition": "LOCO_STATE_NOT_AVAILABLE",
+    "private_server_ready_predicate": null,
+    "api_1006_robot_state_version_historical_code": 3203,
+    "api_1006_error_definition": "API_NOT_IMPLEMENT",
+    "installed_init_sends_network_rpc": false,
+    "public_sport_or_odom_proves_private_loco_ready": false
+  },
+  "testing": {
+    "scope": "当前本地源码定向测试；无实机调用",
+    "command": ".venv/bin/python -m pytest -q tests/test_g1_mode_readback.py tests/test_g1_motion_control_review.py tests/test_g1_manual_remote.py tests/test_g1_damping_test.py",
+    "exit_code": 0,
+    "passed": 139,
+    "warnings": 1,
+    "elapsed_seconds": 0.92,
+    "warning": "Starlette TestClient 使用 httpx 已弃用",
+    "local_package_fingerprint": "03034ef80b29",
+    "test_source_files": [
+      {
+        "path": "tests/test_g1_mode_readback.py",
+        "bytes": 14662,
+        "sha256": "d88d01269a42530fa3125eef0a11a1c679a5f0eea6eafd335c122a21b143be05"
+      },
+      {
+        "path": "tests/test_g1_motion_control_review.py",
+        "bytes": 10625,
+        "sha256": "b6834d5db6a5162bfb384ba4ca928e6f07ebf15a457799b92346bb9efc12c8f9"
+      },
+      {
+        "path": "tests/test_g1_manual_remote.py",
+        "bytes": 11818,
+        "sha256": "a02a649d29b88229fd8d5b2a05de5c48d5e9e30b4359bed987b00e0dfadc0f5f"
+      },
+      {
+        "path": "tests/test_g1_damping_test.py",
+        "bytes": 11982,
+        "sha256": "1dc5abdb4a4077e774b91847fc9b04a35f152eef253ee2e81b7b43234fa5d98e"
+      }
+    ],
+    "full_suite_rerun": false,
+    "frontend_rebuilt_this_handoff": false,
+    "physical_motion_tested_this_handoff": false,
+    "deployed_this_handoff": false
+  },
+  "historical_motor_test": {
+    "at": "2026-10-22T13:26:06+08:00",
+    "operation": "SetFsmId(1)",
+    "api_id": 7101,
+    "writes": 1,
+    "sdk_code": 3104,
+    "original_outcome": "outcome_unknown",
+    "fsm_observed_change": [
+      0,
+      1
+    ],
+    "loco_7301_before_and_after": true,
+    "observation_samples": 792,
+    "observation_seconds": 89.97,
+    "left_elbow_max_span_deg": 23.4,
+    "peak_joint_dq_rad_s": 1.285476,
+    "motion_cause": null,
+    "repeat_permitted_by_current_receipt": false
+  },
+  "unknowns": [
+    "实际 humanoid 运行固件构建",
+    "7301 精确创建/有效性/就绪条件",
+    "完整官方控制权",
+    "起身、姿态保持、独立平衡与行走的实机可用性",
+    "双脚与外部支撑承重",
+    "253 个实机电机配置字段",
+    "FMX 内容及匹配 Mixer/Gen 实现",
+    "无线命令失败首因和长期重启恢复",
+    "现场地图/定位/扫描及自主移动闭环"
+  ],
+  "constraints": {
+    "no_new_motion_for_handoff": true,
+    "quantumult_x": "不关闭、不重启、不改配置",
+    "orin_network": "用户选择暂不修改，保持只读",
+    "system_changes": "sudo、官方服务、系统网络、权限和认证材料先确认",
+    "unknown_parameters": "null；参考模型、示例和默认值不充当实机配置",
+    "damping_receipt": "已使用，跨重启和发布保留，不删除、不重置、不重发",
+    "agent_observer": "现有 worker 要求 read_only；当前 manual+damping 不符合，不放宽门控以启动"
+  },
+  "source_evidence": [
+    {
+      "path": ".g1-deploy/research/claude-handoff-live-20261022.json",
+      "bytes": 35806,
+      "sha256": "9698723a137407a6de281bb4ad7620c329439f8cd33dd078bd0e4952fc477df8"
+    },
+    {
+      "path": ".g1-deploy/research/claude-handoff-mac-http-20261022.json",
+      "bytes": 1294,
+      "sha256": "2b9a11aa34329837f65b2253917954cd1093503b129ff337b7a6fb723410e955"
+    },
+    {
+      "path": ".g1-deploy/research/claude-handoff-remote-manifest-20261022.json",
+      "bytes": 71596,
+      "sha256": "d575667de729d9a3c8c9003c2ab91c1d80ea2c6e12c5c8347dd929d1b64167fe"
+    },
+    {
+      "path": ".g1-deploy/research/claude-handoff-local-unreleased-20261022.diff",
+      "bytes": 5994,
+      "sha256": "2e581340bdb6d93a09a8ac30ea47a8e509fc8d9d60d6e17865ea0d2283a95266"
+    },
+    {
+      "path": ".g1-deploy/research/deploy-v36.json",
+      "bytes": 392,
+      "sha256": "99819b07a5865d107876aef7226232ca06450c7b2748c5f5c0f96f77ddca950f"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/installed_loco_sdk_20261022_v36.json",
+      "bytes": 10317,
+      "sha256": "326ac510f1c6783177be1eb9986ff97c5f39ebf1136739fe6a3ce1d68ed68391"
+    },
+    {
+      "path": "doc/G1_WIFI_DRIVER_READONLY_DIAGNOSIS_20261022.json",
+      "bytes": 9170,
+      "sha256": "7aff97f17f1b8dfec071ae2a8e740a712999c1fc2880cb189720ca373089e466"
+    },
+    {
+      "path": "doc/G1_ROTATED_LOG_RPC_AUDIT_20261022.json",
+      "bytes": 21237,
+      "sha256": "b902436527309ea0eec63a811ebfb811652a9999dab67f7ba90dec339d47886d"
+    },
+    {
+      "path": "doc/official/G1_REMOTE_CONTROL_23DOF_20260407.pdf",
+      "bytes": 566412,
+      "sha256": "b50e7a6382f7069461c047825771d99a58ca387113f9b17667172427fc44d569"
+    },
+    {
+      "path": "unitree-deps.lock.json",
+      "bytes": 468,
+      "sha256": "0688e3730d7047b912912cae1a0eb416c947a5c84121d1458536f2e79f145837"
+    }
+  ],
+  "inventory_path": "doc/evidence/claude_handoff_inventory_20261022.json",
+  "privacy": "仅摘要、路径、状态与哈希；无密码、cookie、私钥、会话 token 或实时图像"
+}

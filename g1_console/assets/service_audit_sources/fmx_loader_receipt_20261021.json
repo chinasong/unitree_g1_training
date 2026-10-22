@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "received_at_utc": "2026-10-21T03:23:03.978515+00:00",
+  "clock_authority": "Mac UTC 接收时间；Orin 起止时间单列；均为历史证据",
+  "sources": [
+    {
+      "path": "g1_console/assets/service_audit_sources/fmx_loader_review_20261021.json",
+      "bytes": 11553,
+      "sha256": "ce405d3a7ddc20e01ec110aba913721d0457966ab95cb60c3a92a5dc1cb68e47"
+    },
+    {
+      "path": "g1_console/assets/service_audit_sources/fmx_loader_inventory_20261021.json",
+      "bytes": 43457,
+      "sha256": "40e9e345f5d6283055cf20580b51e7cba93bc772533f83f57092d07a7dbbe188"
+    },
+    {
+      "path": "g1_console/assets/service_audit_sources/fmx_official_code_search_20261021.json",
+      "bytes": 1222,
+      "sha256": "0b2029b307bc0d5204e59263f770584a447dbbeae599701554355fb7f8a1e05c"
+    },
+    {
+      "path": "g1_console/assets/service_audit_sources/fmx_module_recheck_20261021.json",
+      "bytes": 1096,
+      "sha256": "7699587c3e8f397b3a81a934a530c0f574895c4b3ab093e6f8ac87688ae84fbf"
+    }
+  ],
+  "scripts": [
+    {
+      "path": "scripts/analyze_g1_fmx_loader_search.py",
+      "bytes": 10384,
+      "sha256": "42e03fb8f11e99b9c79b82acfe4c9af499e7f06f3b19d9b3560f17d409ead78b"
+    }
+  ],
+  "private_materials_included": false
+}

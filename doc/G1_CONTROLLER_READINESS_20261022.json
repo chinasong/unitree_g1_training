@@ -1,0 +1,714 @@
+{
+  "schema_version": 1,
+  "execution_allowed": false,
+  "scope": "Manual remote verification only; no physical motion validation",
+  "snapshot_at_utc": "2026-10-22T04:31:42.784403+00:00",
+  "snapshot_at_beijing": "2026-10-22T12:31:42.784403+08:00",
+  "console_url": "http://127.0.0.1:18766/",
+  "deployment": {
+    "release": "480895668ddf",
+    "previous_release": "57ec2fb35096",
+    "files_verified": 489,
+    "pid": 10119,
+    "run_id": "209b14b0ca2b",
+    "official_processes_unchanged": true,
+    "official_processes": [
+      {
+        "pid": 1349,
+        "executable": "/unitree/ota/pipe/ota_pipe_service",
+        "start_ticks": 2004
+      },
+      {
+        "pid": 1350,
+        "executable": "/unitree/module/master_service/master_service",
+        "start_ticks": 2004
+      },
+      {
+        "pid": 2777,
+        "executable": "/home/unitree/megaflow_sdk/ws//bin/MegaFlowRuntimeDaemon",
+        "start_ticks": 2975
+      },
+      {
+        "pid": 9659,
+        "executable": "/unitree/module/video_hub_pc4/videohub_pc4",
+        "start_ticks": 437519
+      }
+    ],
+    "verify_only": true,
+    "owner": null,
+    "armed": false,
+    "motion_writes": 0,
+    "network_configuration_changes": 0,
+    "boot_id": "aed898cb-acfd-44a2-8e9c-50f1f00269aa"
+  },
+  "catalog": {
+    "total": 61,
+    "read_operations": 14,
+    "definition_is_not_firmware_acceptance": true
+  },
+  "version_evidence": {
+    "schema_version": 1,
+    "current": false,
+    "execution_allowed": false,
+    "boot_id": "aed898cb-acfd-44a2-8e9c-50f1f00269aa",
+    "release": "57ec2fb35096",
+    "run_id": "3ea9bcdeed01",
+    "topic": "rt/servicestate",
+    "received_at_utc": "2026-10-22T04:25:35.964949+00:00",
+    "timestamp_basis": "local_receive_time",
+    "frames": 1,
+    "raw_frame_sha256": "c31dde1408172e046585859481d0ff67c2a874bacbb461f2c7ebbd813245b4c6",
+    "raw_frame_retained": false,
+    "extraction": "strict JSON explicit name/version object fields; original JSON field path retained",
+    "rows": [
+      {
+        "name": "ai_sport",
+        "version": "8.7.5.212",
+        "path": "$[0]",
+        "binding": "object_fields"
+      },
+      {
+        "name": "bashrunner",
+        "version": "1.1.1.2",
+        "path": "$[4]",
+        "binding": "object_fields"
+      },
+      {
+        "name": "basic_service",
+        "version": "3.0.0.18",
+        "path": "$[5]",
+        "binding": "object_fields"
+      },
+      {
+        "name": "battery_guard",
+        "version": "1.0.0.9",
+        "path": "$[6]",
+        "binding": "object_fields"
+      },
+      {
+        "name": "chat_go",
+        "version": "1.9.5.26",
+        "path": "$[7]",
+        "binding": "object_fields"
+      },
+      {
+        "name": "emergency_stop",
+        "version": "1.0.0.4",
+        "path": "$[10]",
+        "binding": "object_fields"
+      },
+      {
+        "name": "g1_arm_example",
+        "version": "2.0.2.5",
+        "path": "$[11]",
+        "binding": "object_fields"
+      },
+      {
+        "name": "lidar_driver",
+        "version": "1.0.0.12",
+        "path": "$[12]",
+        "binding": "object_fields"
+      },
+      {
+        "name": "log_system",
+        "version": "2.0.0.11",
+        "path": "$[13]",
+        "binding": "object_fields"
+      },
+      {
+        "name": "motion_switcher",
+        "version": "1.0.0.1",
+        "path": "$[14]",
+        "binding": "object_fields"
+      },
+      {
+        "name": "net_switcher",
+        "version": "1.0.2.1",
+        "path": "$[15]",
+        "binding": "object_fields"
+      },
+      {
+        "name": "robot_state",
+        "version": "3.0.0.8",
+        "path": "$[18]",
+        "binding": "object_fields"
+      },
+      {
+        "name": "robot_type_service",
+        "version": "1.0.2.4",
+        "path": "$[19]",
+        "binding": "object_fields"
+      },
+      {
+        "name": "state_estimator",
+        "version": "2.0.0.25",
+        "path": "$[20]",
+        "binding": "object_fields"
+      },
+      {
+        "name": "unistore",
+        "version": "1.0.1.20",
+        "path": "$[21]",
+        "binding": "object_fields"
+      },
+      {
+        "name": "unitree_slam",
+        "version": "1.0.2.9",
+        "path": "$[22]",
+        "binding": "object_fields"
+      },
+      {
+        "name": "video_hub_pc4",
+        "version": "1.0.1.1",
+        "path": "$[23]",
+        "binding": "object_fields"
+      },
+      {
+        "name": "vui_service",
+        "version": "2.1.0.47",
+        "path": "$[24]",
+        "binding": "object_fields"
+      },
+      {
+        "name": "webrtc_bridge",
+        "version": "1.1.2.2",
+        "path": "$[25]",
+        "binding": "object_fields"
+      }
+    ],
+    "physical_publisher_verified": false,
+    "running_build_verified": false,
+    "device_motion_firmware": null,
+    "exact_7301_predicate": null,
+    "motion_writes": 0,
+    "lease_requests": 0,
+    "manual_branch_candidate": "23_gt_8_6",
+    "manual_branch_selected": null,
+    "conclusion": "本次实际收到的服务公告明确绑定 ai_sport=8.7.5.212。它大于8.6.0.0，可作为23自由度新版手册候选；未核验公告与正在应答的 humanoid 可执行文件、当前运行构建及标定的对应关系，不能填作已核定运动固件或解锁动作。",
+    "limitations": [
+      "接收时间不是安装时间，也不是传感器时间。",
+      "先前120秒窗口为0帧，本条来自其后的控制台持续监听，不改写先前采样结果。",
+      "控制台未保存该帧的 publication_handle；先前发现的 robot_state_service 发布者不能自动归属于该帧。",
+      "原始载荷不落盘，只存严格提取的名称、版本、路径及载荷SHA256；不能从此证据重建完整载荷。"
+    ],
+    "source_file": "g1_console/assets/safety_evidence_sources/service_advertisement_20261022_v32.json",
+    "source_file_sha256": "5caa020daec5529e00580372e5f4ea6362b27a7e8c1d275f31dd8b3e3843ff0a"
+  },
+  "final_ui_reads": [
+    {
+      "request_id": "4feb479d-58a6-49d6-bf63-615db0109218",
+      "capability": "get_balance",
+      "label": "读取平衡模式",
+      "at": 1792643459.10693,
+      "updated_at": 1792643459.10693,
+      "mode": "robot",
+      "status": "read_unavailable",
+      "message": "官方服务返回 7301：LocoState 不可用；模式/高度/相位保持未知，忽略返回中的占位零值。不会自动切换模式",
+      "error_code": "SDK_REJECTED",
+      "sdk_code": 7301,
+      "at_utc": "2026-10-22T04:30:59.106930+00:00",
+      "at_beijing": "2026-10-22T12:30:59.106930+08:00"
+    },
+    {
+      "request_id": "f6a2b9cf-2052-4c59-a2f1-b14855b52500",
+      "capability": "get_versions",
+      "label": "读取官方包版本",
+      "at": 1792643455.7191975,
+      "updated_at": 1792643455.7191978,
+      "mode": "robot",
+      "status": "read_unavailable",
+      "message": "官方服务返回 3203：不支持此 API；未取得有效值",
+      "error_code": "SDK_REJECTED",
+      "sdk_code": 3203,
+      "at_utc": "2026-10-22T04:30:55.719198+00:00",
+      "at_beijing": "2026-10-22T12:30:55.719198+08:00"
+    },
+    {
+      "request_id": "fa5932ae-e0c2-4931-9395-1eb9795c047e",
+      "capability": "get_silent",
+      "label": "读取模式服务 silent 标志",
+      "at": 1792643455.4161985,
+      "updated_at": 1792643455.4161987,
+      "mode": "robot",
+      "status": "read_result",
+      "message": "已读取官方返回值",
+      "data": {
+        "silent": false
+      },
+      "at_utc": "2026-10-22T04:30:55.416198+00:00",
+      "at_beijing": "2026-10-22T12:30:55.416198+08:00"
+    }
+  ],
+  "preflight_verification": {
+    "meaning": "Local request mapping validation only; no SDK write dispatched",
+    "previous_release": {
+      "release": "57ec2fb35096",
+      "run_id": "3ea9bcdeed01",
+      "preflights": [
+        {
+          "capability": "balance",
+          "label": "平衡模式",
+          "at": 1792643070.8540876,
+          "run_id": "3ea9bcdeed01",
+          "dispatched": false,
+          "params_valid": true,
+          "request": {
+            "service": "sport",
+            "method": "SetBalanceMode",
+            "api_id": 7102,
+            "parameter": {
+              "data": 0
+            },
+            "sdk_commit": "814556d15970dd2ecf1c9984e845ca02ab07e206"
+          },
+          "telemetry_tick": 4466511,
+          "current_fsm": 0,
+          "execution_gate": {
+            "allowed": false,
+            "code": "VERIFICATION_ONLY",
+            "message": "人工遥控接口验证阶段：可取得控制权和核对参数，禁止全部实机动作、声光和模式切换"
+          },
+          "firmware_acceptance": "unknown",
+          "physical_result": "not_tested",
+          "conditions": [
+            "SDK 请求映射已核对，不代表本机固件接受该写接口",
+            "最近人工报告坐地靠柜，未经本次传感器独立确认；足底与柜体承重数值未知",
+            "起身、姿态保持和平衡切换的本机姿势前提与运动固件版本仍待确认"
+          ],
+          "at_utc": "2026-10-22T04:24:30.854088+00:00",
+          "at_beijing": "2026-10-22T12:24:30.854088+08:00"
+        },
+        {
+          "capability": "prepare",
+          "label": "站立预备 / 姿态保持",
+          "at": 1792643064.6389449,
+          "run_id": "3ea9bcdeed01",
+          "dispatched": false,
+          "params_valid": true,
+          "request": {
+            "service": "sport",
+            "method": "SetFsmId",
+            "api_id": 7101,
+            "parameter": {
+              "data": 4
+            },
+            "sdk_commit": "814556d15970dd2ecf1c9984e845ca02ab07e206"
+          },
+          "telemetry_tick": 4460293,
+          "current_fsm": 0,
+          "execution_gate": {
+            "allowed": false,
+            "code": "VERIFICATION_ONLY",
+            "message": "人工遥控接口验证阶段：可取得控制权和核对参数，禁止全部实机动作、声光和模式切换"
+          },
+          "firmware_acceptance": "unknown",
+          "physical_result": "not_tested",
+          "conditions": [
+            "SDK 请求映射已核对，不代表本机固件接受该写接口",
+            "最近人工报告坐地靠柜，未经本次传感器独立确认；足底与柜体承重数值未知",
+            "起身、姿态保持和平衡切换的本机姿势前提与运动固件版本仍待确认"
+          ],
+          "at_utc": "2026-10-22T04:24:24.638945+00:00",
+          "at_beijing": "2026-10-22T12:24:24.638945+08:00"
+        },
+        {
+          "capability": "squat_to_stand",
+          "label": "蹲姿起立",
+          "at": 1792643057.3374596,
+          "run_id": "3ea9bcdeed01",
+          "dispatched": false,
+          "params_valid": true,
+          "request": {
+            "service": "sport",
+            "method": "SetFsmId",
+            "api_id": 7101,
+            "parameter": {
+              "data": 706
+            },
+            "sdk_commit": "814556d15970dd2ecf1c9984e845ca02ab07e206"
+          },
+          "telemetry_tick": 4453002,
+          "current_fsm": 0,
+          "execution_gate": {
+            "allowed": false,
+            "code": "VERIFICATION_ONLY",
+            "message": "人工遥控接口验证阶段：可取得控制权和核对参数，禁止全部实机动作、声光和模式切换"
+          },
+          "firmware_acceptance": "unknown",
+          "physical_result": "not_tested",
+          "conditions": [
+            "SDK 请求映射已核对，不代表本机固件接受该写接口",
+            "最近人工报告坐地靠柜，未经本次传感器独立确认；足底与柜体承重数值未知",
+            "起身、姿态保持和平衡切换的本机姿势前提与运动固件版本仍待确认"
+          ],
+          "at_utc": "2026-10-22T04:24:17.337460+00:00",
+          "at_beijing": "2026-10-22T12:24:17.337460+08:00"
+        }
+      ]
+    },
+    "final_release": {
+      "release": "480895668ddf",
+      "run_id": "209b14b0ca2b",
+      "preflights": [
+        {
+          "capability": "prepare",
+          "label": "站立预备 / 姿态保持",
+          "at": 1792643489.8780036,
+          "run_id": "209b14b0ca2b",
+          "dispatched": false,
+          "params_valid": true,
+          "request": {
+            "service": "sport",
+            "method": "SetFsmId",
+            "api_id": 7101,
+            "parameter": {
+              "data": 4
+            },
+            "sdk_commit": "814556d15970dd2ecf1c9984e845ca02ab07e206"
+          },
+          "telemetry_tick": 4885509,
+          "current_fsm": 0,
+          "execution_gate": {
+            "allowed": false,
+            "code": "VERIFICATION_ONLY",
+            "message": "人工遥控接口验证阶段：可取得控制权和核对参数，禁止全部实机动作、声光和模式切换"
+          },
+          "firmware_acceptance": "unknown",
+          "physical_result": "not_tested",
+          "conditions": [
+            "SDK 请求映射已核对，不代表本机固件接受该写接口",
+            "最近人工报告坐地靠柜，未经本次传感器独立确认；足底与柜体承重数值未知",
+            "起身、姿态保持和平衡切换的本机姿势前提与运动固件版本仍待确认"
+          ],
+          "at_utc": "2026-10-22T04:31:29.878004+00:00",
+          "at_beijing": "2026-10-22T12:31:29.878004+08:00"
+        }
+      ]
+    }
+  },
+  "final_state": {
+    "run_id": "209b14b0ca2b",
+    "connected": true,
+    "mode": "robot",
+    "manual_remote": true,
+    "verify_only": true,
+    "armed": false,
+    "window_control": {
+      "owner": null,
+      "expires_in": 0,
+      "floor_verified": false
+    },
+    "robot_authority_verified": false,
+    "full_remote_equivalence": false,
+    "navigation_status": "idle",
+    "joint_count": 23,
+    "maximum_reported_motor_temperature_c": 46,
+    "fsm": 0,
+    "official_readbacks": {
+      "fsm_id": {
+        "source": "sport / 7001",
+        "raw": {
+          "data": 0
+        },
+        "code": 0,
+        "current": true,
+        "age_ms": 431,
+        "diagnostics": {
+          "total": {
+            "attempts": 106,
+            "successes": 106,
+            "timeouts": 0,
+            "errors": 0
+          },
+          "window_s": 60,
+          "attempts": 106,
+          "successes": 106,
+          "timeouts": 0,
+          "errors": 0
+        }
+      },
+      "fsm_mode": {
+        "source": "sport / 7002",
+        "raw": {
+          "data": 0
+        },
+        "code": 0,
+        "current": true,
+        "age_ms": 2533,
+        "diagnostics": {
+          "total": {
+            "attempts": 18,
+            "successes": 18,
+            "timeouts": 0,
+            "errors": 0
+          },
+          "window_s": 60,
+          "attempts": 18,
+          "successes": 18,
+          "timeouts": 0,
+          "errors": 0
+        }
+      },
+      "motion_mode": {
+        "source": "motion_switcher / 1001",
+        "raw": {
+          "form": "0",
+          "name": "ai"
+        },
+        "code": 0,
+        "current": true,
+        "age_ms": 2397,
+        "diagnostics": {
+          "total": {
+            "attempts": 18,
+            "successes": 18,
+            "timeouts": 0,
+            "errors": 0
+          },
+          "window_s": 60,
+          "attempts": 18,
+          "successes": 18,
+          "timeouts": 0,
+          "errors": 0
+        }
+      },
+      "sport": {
+        "source": "rt/lf/sportmodestate",
+        "raw": {
+          "fsm_id": 0,
+          "fsm_mode": 0,
+          "task_id": 4,
+          "task_time": 0.0
+        },
+        "code": 0,
+        "current": true,
+        "age_ms": 226,
+        "diagnostics": null
+      }
+    },
+    "camera": {
+      "backend": "unitree",
+      "status": "live",
+      "error": null,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 54.7,
+        "attempts": 272,
+        "successes": 272,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 272,
+        "total_successes": 272,
+        "total_timeouts": 0
+      },
+      "sequence": 272,
+      "age_ms": 146,
+      "width": 960,
+      "height": 540
+    },
+    "service_versions_current_connection": {
+      "topic": "rt/servicestate",
+      "listening": true,
+      "status": "waiting",
+      "started_at": 1792643447.509224,
+      "received_at": null,
+      "age_ms": null,
+      "frames": 0,
+      "rows": [],
+      "sha256": null,
+      "current": false,
+      "physical_publisher_verified": false,
+      "running_build_verified": false,
+      "device_motion_firmware": null,
+      "execution_allowed": false,
+      "timestamp_basis": "local_receive_time",
+      "retention": "current_console_connection"
+    }
+  },
+  "interpretation": {
+    "7301": {
+      "official_name": "LocoStateNotAvailable",
+      "exact_internal_predicate": null,
+      "fsm_0_proven_cause": false,
+      "not_a_transport_timeout_in_recorded_samples": true
+    },
+    "3203": {
+      "official_name": "API_NOT_IMPL",
+      "query": "robot_state/1006 GetPkgVersion",
+      "valid_package_version_obtained": false
+    },
+    "silent": {
+      "observed": false,
+      "proves_motion_authority": false
+    },
+    "authority": {
+      "project_window_mutex_ui_acquire_heartbeat_release_verified": true,
+      "sdk_lease_requests": 0,
+      "project_mutex_is_sdk_lease": false,
+      "physical_motion_authority": null
+    }
+  },
+  "official_modes": [
+    {
+      "id": "prepare",
+      "name": "站立预备 / 姿态保持",
+      "documented_entry": "C++ StandUp → SetFsmId(4)",
+      "entry_conditions": "官方椅坐启动路线要求相应预备姿态；预备转运动有人辅助扶正。当前靠柜坐地不等于椅坐。",
+      "feedback": "GetFsmId / GetFsmMode 加实际姿态和外部支撑反馈；单个编号不能证明站稳。",
+      "remaining_unknown": "FSM 4 与遥控“锁定站立”的本机映射、进入/退出、保持力矩与保护条件未核定。",
+      "device_applicable": null,
+      "execution_allowed": false
+    },
+    {
+      "id": "squat_mode",
+      "name": "蹲姿模式",
+      "documented_entry": "C++ Squat → SetFsmId(2)",
+      "entry_conditions": "需相应固件认可的蹲姿路线和支撑条件；蹲姿没有平衡控制，坐地靠柜不能等同于蹲姿。",
+      "feedback": "GetFsmId / GetFsmMode 和全身姿态；编号不能证明承重或独立站稳。",
+      "remaining_unknown": "本机固件对 FSM 2 的接受、退出与安全支撑条件未核定；不能与 Python 的双向 706 混用。",
+      "device_applicable": null,
+      "execution_allowed": false
+    },
+    {
+      "id": "lie",
+      "name": "躺卧起身",
+      "documented_entry": "Python Lie2StandUp → SetFsmId(702)",
+      "entry_conditions": "官方要求平整坚硬地面和规定躺卧起点；当前坐地靠柜不满足已核对的起点描述。",
+      "feedback": "需要阶段、失败及完成反馈，并核验支撑与站稳；没有已验证完成判据。",
+      "remaining_unknown": ">8.6.0.0 手册改用“自适应起身”，尚未核定与 FSM 702 的映射；本机固件、净空、柜体接触、失败恢复和慢速参数未知。",
+      "device_applicable": null,
+      "execution_allowed": false
+    },
+    {
+      "id": "squat",
+      "name": "蹲站双向转换",
+      "documented_entry": "Python Squat2StandUp / StandUp2Squat → SetFsmId(706)",
+      "entry_conditions": "双向共用入口；需核实当前是其允许的蹲姿或站姿。坐地不能直接当蹲姿。",
+      "feedback": "回读 FSM 和实际转换方向；应答成功不能证明完成。",
+      "remaining_unknown": "本机方向判定、触发条件、执行时长及退出/恢复未确认。",
+      "device_applicable": null,
+      "execution_allowed": false
+    },
+    {
+      "id": "start",
+      "name": "进入行走控制",
+      "documented_entry": "Start → SetFsmId(500)",
+      "entry_conditions": "先满足本机规定的预备与支撑条件；Start 不是从任意坐姿起身。",
+      "feedback": "需要新鲜 FSM、控制归属、身体反馈和独立站稳证据。",
+      "remaining_unknown": "从预备到原生运动控制的本机交接契约未核定。",
+      "device_applicable": null,
+      "execution_allowed": false
+    },
+    {
+      "id": "balance",
+      "name": "站立平衡模式",
+      "documented_entry": "C++ BalanceStand → SetBalanceMode(0) · API 7102",
+      "entry_conditions": "需先核定直立和原生运动控制适用状态；不是关节位置锁死，也不是坐地起身入口。",
+      "feedback": "GetBalanceMode · API 7003；先前本机返回 7301，没有有效模式值。",
+      "remaining_unknown": "本机支持与退出条件、承重、平衡裕量未核定。",
+      "device_applicable": null,
+      "execution_allowed": false
+    },
+    {
+      "id": "gait",
+      "name": "持续踏步 / 返回站立",
+      "documented_entry": "C++ ContinuousGait(true/false) → SetBalanceMode(1/0)",
+      "entry_conditions": "仅在适用运动状态研究；持续踏步可能主动迈步，不是固定双脚。",
+      "feedback": "需有效 GetBalanceMode 及步态、脚接触与负载反馈。",
+      "remaining_unknown": "本机版本映射、当前能否接受及安全转换条件未知。",
+      "device_applicable": null,
+      "execution_allowed": false
+    },
+    {
+      "id": "damp",
+      "name": "阻尼保护",
+      "documented_entry": "Damp → SetFsmId(1)",
+      "entry_conditions": "官方定义为停止主动运动、关节移动有阻力；不能由此推导主动站立平衡。",
+      "feedback": "FSM 回读与身体响应；网络应答不能保证转换完成或不会下沉。",
+      "remaining_unknown": "当前靠柜姿势切换后的支撑变化与保护响应未知。",
+      "device_applicable": null,
+      "execution_allowed": false
+    },
+    {
+      "id": "zero",
+      "name": "零力矩",
+      "documented_entry": "ZeroTorque → SetFsmId(0)",
+      "entry_conditions": "官方定义无主动驱动、移动关节无阻尼；不能用于让身体有力站稳。",
+      "feedback": "新鲜 FSM 与身体反馈；FSM 0 不测量全部电机实际力矩。",
+      "remaining_unknown": "退出路线与本机支撑条件未核定。",
+      "device_applicable": null,
+      "execution_allowed": false
+    }
+  ],
+  "posture_support": {
+    "latest_human_report": "Floor sitting, both soles touching floor, leaning against a cabinet",
+    "human_report_is_force_measurement": false,
+    "left_foot_load_n": null,
+    "right_foot_load_n": null,
+    "cabinet_load_n": null,
+    "seated_support_load_n": null,
+    "standing_verified": false
+  },
+  "motor_configuration": {
+    "unknown_actual_config_fields": 253,
+    "example_values_used_as_actual": false
+  },
+  "guardrails": {
+    "robot_action_writes": 0,
+    "sdk_lease_requests": 0,
+    "scope_of_zero_write_claim": "This project verification and deployment path only; does not assert no external operator actions",
+    "quantumult_x_modified": false,
+    "system_network_configuration_modified": false,
+    "official_services_restarted_by_this_work": false,
+    "own_console_restart_only": true,
+    "official_process_identity_comparison_scope": "Across final deployment only; an earlier video process transition is separately recorded"
+  },
+  "validation": {
+    "python_targeted_passed": 154,
+    "node_passed": 14,
+    "related_console_foundation_regression_passed": 63,
+    "final_archive_foundation_review_passed": 28,
+    "python_sets_overlap_do_not_sum": true,
+    "typescript_vite_build": "passed",
+    "existing_3d_chunk_size_warning": true,
+    "browser_ui_verified": true,
+    "physical_actions_tested": false,
+    "git_diff_check": "Existing README.md:191 trailing whitespace remains; unrelated tracked changes preserved"
+  },
+  "remaining_blockers": [
+    "No verified link between the received ai_sport 8.7.5.212 advertisement and current .161 humanoid executable build",
+    "Closed-source LocoState initialization, accepted FSM, ownership and validity conditions for 7301 remain unknown",
+    "Current floor-sitting cabinet-supported posture is not confirmed as an allowed starting posture",
+    "Real get-up, posture hold, balance transition and stop effects have not been tested"
+  ],
+  "evidence_files": [
+    {
+      "path": "doc/G1_CONTROLLER_READINESS_20261022.md",
+      "sha256": "d256be668048b01c2134bb17b0238097df36c9460badee5151c3994525e9134d"
+    },
+    {
+      "path": "doc/G1_SILENT_AND_VERSION_READONLY_20261022.json",
+      "sha256": "f487e96a525c0b5eb9a71d6a96472d8b54522b8f0c6c4d2dc8591ac702c15246"
+    },
+    {
+      "path": "g1_console/assets/safety_evidence_sources/service_advertisement_20261022_v32.json",
+      "sha256": "5caa020daec5529e00580372e5f4ea6362b27a7e8c1d275f31dd8b3e3843ff0a"
+    },
+    {
+      "path": "g1_console/assets/g1_motion_control_review.json",
+      "sha256": "7d290b048b1273e6ee5ddc49d7d35c8f2d8c61def03083b8d686dc2893aa70b1"
+    },
+    {
+      "path": "g1_console/assets/g1_motor_knowledge.json",
+      "sha256": "3d52879c834ed7cbf6fc0052e4ee8fa945c4f6d34be1841a95f7f7f71b1152f5"
+    },
+    {
+      "path": "doc/screenshots/g1-controller-readiness-20261022.png",
+      "sha256": "be9f9445ca3e8de346a4a68fc8fadfebe70ddfb906ca4cd646249bc4471178d2"
+    },
+    {
+      "path": "doc/screenshots/g1-readiness-balance-preflight-20261022.png",
+      "sha256": "b6397457382046e60db2f3805e8815544dbf291f848235926855de01a15c4e3b"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "variants": {
+    "path": "g1_console/assets/official_motor_sources/variants.md",
+    "commit": "5994d4faef0a9cadd3287f8de0199a67eeb2a259",
+    "sha256": "0f3d66629ca904b3d01d8b20186b26d17cca513d7217f66649dc68523aa94f43",
+    "url": "https://github.com/unitreerobotics/unitree_ros/blob/5994d4faef0a9cadd3287f8de0199a67eeb2a259/robots/g1_description/README.md"
+  },
+  "motor_catalog": {
+    "path": "g1_console/assets/official_motor_sources/motor_catalog.md",
+    "commit": "5994d4faef0a9cadd3287f8de0199a67eeb2a259",
+    "sha256": "dfd34cffa75519f2ca4247e374d90b4004c7226bf0277345451ed49a4e94fdaf",
+    "url": "https://github.com/unitreerobotics/unitree_ros/blob/5994d4faef0a9cadd3287f8de0199a67eeb2a259/robots/g1_description/motor_info.md"
+  },
+  "variant_urdf": {
+    "path": "g1_console/assets/official_motor_sources/variant_urdf.urdf",
+    "commit": "5994d4faef0a9cadd3287f8de0199a67eeb2a259",
+    "sha256": "7a16cc8fc1cd053ba8ee7b03057585959336c9aee2bad720bb4d2fa980034efb",
+    "url": "https://github.com/unitreerobotics/unitree_ros/blob/5994d4faef0a9cadd3287f8de0199a67eeb2a259/robots/g1_description/g1_23dof_rev_1_0.urdf"
+  },
+  "terminations": {
+    "path": "g1_console/assets/official_motor_sources/terminations.hpp",
+    "commit": "d1abf001220d3e5f59e00a0c4aaa595e00089a4a",
+    "sha256": "ab5ea5b76d3cccef8c6a06ddd28cd163d76007bcc42305a5aed666f6884634f9",
+    "url": "https://github.com/unitreerobotics/unitree_sdk2/blob/d1abf001220d3e5f59e00a0c4aaa595e00089a4a/include/unitree/robot/g1/common/terminations.hpp"
+  }
+}

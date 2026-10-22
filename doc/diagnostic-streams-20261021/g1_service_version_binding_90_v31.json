@@ -1,0 +1,182 @@
+{
+  "current": false,
+  "checked_at_utc": "2026-10-21T14:32:26.474023+00:00",
+  "completed_at_utc": "2026-10-21T14:33:56.680562+00:00",
+  "release": "953b51275852",
+  "boot_id": "8d9a0e09-97e1-45fa-81d3-18822a3c760a",
+  "before": {
+    "run_id": "03174dd00ad5",
+    "owner": null,
+    "armed": false,
+    "navigation": "idle",
+    "command_history_count": 0
+  },
+  "after": {
+    "run_id": "03174dd00ad5",
+    "owner": null,
+    "armed": false,
+    "navigation": "idle",
+    "command_history_count": 0
+  },
+  "duration_s": 90.110576,
+  "subscribed_topics": [
+    "rt/log_system_outbound",
+    "rt/servicestate",
+    "rt/multiplestate"
+  ],
+  "streams": [],
+  "reader_qos": "BestEffort / Volatile / KeepLast(20)",
+  "discovered_publications": [
+    {
+      "key": "0110ff7a-7caa-33e9-f13e-7f8e00000203",
+      "participant_key": "0110ff7a-7caa-33e9-f13e-7f8e000001c1",
+      "topic": "rt/log_system_outbound",
+      "type": "std_msgs::msg::dds_::String_",
+      "transport_qos": [
+        "Policy.DurabilityService(cleanup_delay=0, history=Policy.History.KeepLast(depth=1), max_samples=-1, max_instances=-1, max_samples_per_instance=-1)",
+        "Policy.Reliability.Reliable(max_blocking_time=100000000)"
+      ],
+      "participant_self_report": {
+        "__Hostname": "Unitree",
+        "__Pid": "3030",
+        "__ProcessName": "LogStreamService"
+      },
+      "observed_rtps_source_ips": [
+        "192.168.123.161"
+      ]
+    },
+    {
+      "key": "0110d09b-3a90-b1da-f9fc-feba00000e03",
+      "participant_key": "0110d09b-3a90-b1da-f9fc-feba000001c1",
+      "topic": "rt/multiplestate",
+      "type": "std_msgs::msg::dds_::String_",
+      "transport_qos": [
+        "Policy.DurabilityService(cleanup_delay=0, history=Policy.History.KeepLast(depth=1), max_samples=-1, max_instances=-1, max_samples_per_instance=-1)",
+        "Policy.Reliability.Reliable(max_blocking_time=100000000)"
+      ],
+      "participant_self_report": {
+        "__Hostname": "Unitree",
+        "__Pid": "3155",
+        "__ProcessName": "robot_state_service"
+      },
+      "observed_rtps_source_ips": [
+        "192.168.123.161"
+      ]
+    },
+    {
+      "key": "0110d09b-3a90-b1da-f9fc-feba00000c03",
+      "participant_key": "0110d09b-3a90-b1da-f9fc-feba000001c1",
+      "topic": "rt/servicestate",
+      "type": "std_msgs::msg::dds_::String_",
+      "transport_qos": [
+        "Policy.DurabilityService(cleanup_delay=0, history=Policy.History.KeepLast(depth=1), max_samples=-1, max_instances=-1, max_samples_per_instance=-1)",
+        "Policy.Reliability.Reliable(max_blocking_time=100000000)"
+      ],
+      "participant_self_report": {
+        "__Hostname": "Unitree",
+        "__Pid": "3155",
+        "__ProcessName": "robot_state_service"
+      },
+      "observed_rtps_source_ips": [
+        "192.168.123.161"
+      ]
+    }
+  ],
+  "official_processes_before": [
+    {
+      "pid": 1366,
+      "argv": [
+        "/unitree/module/master_service/master_service"
+      ],
+      "start_ticks": 2168
+    },
+    {
+      "pid": 1438,
+      "argv": [
+        "/unitree/ota/pipe/ota_pipe_service"
+      ],
+      "start_ticks": 2202
+    },
+    {
+      "pid": 2760,
+      "argv": [
+        "/home/unitree/megaflow_sdk/ws//bin/MegaFlowRuntimeDaemon",
+        "-c",
+        "/home/unitree/megaflow_sdk/ws//bin/config.bin",
+        "-w",
+        "/home/unitree/megaflow_sdk/ws/",
+        "-d",
+        "127.0.0.1:8899",
+        "-i",
+        "-e",
+        "/home/unitree/megaflow_sdk/ws//dep/",
+        "-l",
+        "0"
+      ],
+      "start_ticks": 3139
+    },
+    {
+      "pid": 16752,
+      "argv": [
+        "/unitree/module/video_hub_pc4/videohub_pc4"
+      ],
+      "start_ticks": 874123
+    }
+  ],
+  "official_processes_after": [
+    {
+      "pid": 1366,
+      "argv": [
+        "/unitree/module/master_service/master_service"
+      ],
+      "start_ticks": 2168
+    },
+    {
+      "pid": 1438,
+      "argv": [
+        "/unitree/ota/pipe/ota_pipe_service"
+      ],
+      "start_ticks": 2202
+    },
+    {
+      "pid": 2760,
+      "argv": [
+        "/home/unitree/megaflow_sdk/ws//bin/MegaFlowRuntimeDaemon",
+        "-c",
+        "/home/unitree/megaflow_sdk/ws//bin/config.bin",
+        "-w",
+        "/home/unitree/megaflow_sdk/ws/",
+        "-d",
+        "127.0.0.1:8899",
+        "-i",
+        "-e",
+        "/home/unitree/megaflow_sdk/ws//dep/",
+        "-l",
+        "0"
+      ],
+      "start_ticks": 3139
+    },
+    {
+      "pid": 16752,
+      "argv": [
+        "/unitree/module/video_hub_pc4/videohub_pc4"
+      ],
+      "start_ticks": 874123
+    }
+  ],
+  "official_processes_unchanged": true,
+  "rpc_calls": 0,
+  "command_writes": 0,
+  "inbound_publications": 0,
+  "lease_requests": 0,
+  "raw_payloads_retained": false,
+  "packet_headers_only": true,
+  "errors": [],
+  "device_motion_firmware": null,
+  "exact_7301_predicate": null,
+  "limitations": [
+    "90-second passive window; no activation request or log retrieval command.",
+    "Numeric candidates are not accepted firmware values.",
+    "Endpoint discovery without samples does not prove a running data stream or absence of internal logs."
+  ]
+}

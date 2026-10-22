@@ -1,0 +1,448 @@
+{
+  "captured_at": "2026-10-22T12:06:26+0800",
+  "release": "56aa09516024",
+  "run_id": "845409fcccec",
+  "checks": {
+    "acquire_status": 200,
+    "second_owner_rejected": "CONTROL_BUSY",
+    "heartbeat_kept_lease_beyond_ttl": true,
+    "invalid_params_rejected": 422,
+    "release_status": 200,
+    "expired_lease_rejected": "NO_CONTROL_LEASE"
+  },
+  "heartbeat_successes": 6,
+  "preflights": [
+    {
+      "capability": "squat_to_stand",
+      "label": "蹲姿起立",
+      "at": 1792641980.4476502,
+      "run_id": "845409fcccec",
+      "dispatched": false,
+      "params_valid": true,
+      "request": {
+        "service": "sport",
+        "method": "SetFsmId",
+        "api_id": 7101,
+        "parameter": {
+          "data": 706
+        },
+        "sdk_commit": "814556d15970dd2ecf1c9984e845ca02ab07e206"
+      },
+      "telemetry_tick": 3376081,
+      "current_fsm": 0,
+      "execution_gate": {
+        "allowed": false,
+        "code": "VERIFICATION_ONLY",
+        "message": "人工遥控接口验证阶段：可取得控制权和核对参数，禁止全部实机动作、声光和模式切换"
+      },
+      "firmware_acceptance": "unknown",
+      "physical_result": "not_tested",
+      "conditions": [
+        "SDK 请求映射已核对，不代表本机固件接受该写接口",
+        "最近人工报告坐地靠柜，未经本次传感器独立确认；足底与柜体承重数值未知",
+        "起身、姿态保持和平衡切换的本机姿势前提与运动固件版本仍待确认"
+      ]
+    },
+    {
+      "capability": "lie_to_stand",
+      "label": "仰卧起身",
+      "at": 1792641980.484461,
+      "run_id": "845409fcccec",
+      "dispatched": false,
+      "params_valid": true,
+      "request": {
+        "service": "sport",
+        "method": "SetFsmId",
+        "api_id": 7101,
+        "parameter": {
+          "data": 702
+        },
+        "sdk_commit": "814556d15970dd2ecf1c9984e845ca02ab07e206"
+      },
+      "telemetry_tick": 3376130,
+      "current_fsm": 0,
+      "execution_gate": {
+        "allowed": false,
+        "code": "VERIFICATION_ONLY",
+        "message": "人工遥控接口验证阶段：可取得控制权和核对参数，禁止全部实机动作、声光和模式切换"
+      },
+      "firmware_acceptance": "unknown",
+      "physical_result": "not_tested",
+      "conditions": [
+        "SDK 请求映射已核对，不代表本机固件接受该写接口",
+        "最近人工报告坐地靠柜，未经本次传感器独立确认；足底与柜体承重数值未知",
+        "起身、姿态保持和平衡切换的本机姿势前提与运动固件版本仍待确认"
+      ]
+    },
+    {
+      "capability": "prepare",
+      "label": "站立预备 / 姿态保持",
+      "at": 1792641980.5229576,
+      "run_id": "845409fcccec",
+      "dispatched": false,
+      "params_valid": true,
+      "request": {
+        "service": "sport",
+        "method": "SetFsmId",
+        "api_id": 7101,
+        "parameter": {
+          "data": 4
+        },
+        "sdk_commit": "814556d15970dd2ecf1c9984e845ca02ab07e206"
+      },
+      "telemetry_tick": 3376190,
+      "current_fsm": 0,
+      "execution_gate": {
+        "allowed": false,
+        "code": "VERIFICATION_ONLY",
+        "message": "人工遥控接口验证阶段：可取得控制权和核对参数，禁止全部实机动作、声光和模式切换"
+      },
+      "firmware_acceptance": "unknown",
+      "physical_result": "not_tested",
+      "conditions": [
+        "SDK 请求映射已核对，不代表本机固件接受该写接口",
+        "最近人工报告坐地靠柜，未经本次传感器独立确认；足底与柜体承重数值未知",
+        "起身、姿态保持和平衡切换的本机姿势前提与运动固件版本仍待确认"
+      ]
+    },
+    {
+      "capability": "stand_height",
+      "label": "站立高度参数",
+      "at": 1792641980.5701334,
+      "run_id": "845409fcccec",
+      "dispatched": false,
+      "params_valid": true,
+      "request": {
+        "service": "sport",
+        "method": "SetStandHeight",
+        "api_id": 7104,
+        "parameter": {
+          "data": 0.5
+        },
+        "sdk_commit": "814556d15970dd2ecf1c9984e845ca02ab07e206"
+      },
+      "telemetry_tick": 3376257,
+      "current_fsm": 0,
+      "execution_gate": {
+        "allowed": false,
+        "code": "VERIFICATION_ONLY",
+        "message": "人工遥控接口验证阶段：可取得控制权和核对参数，禁止全部实机动作、声光和模式切换"
+      },
+      "firmware_acceptance": "unknown",
+      "physical_result": "not_tested",
+      "conditions": [
+        "SDK 请求映射已核对，不代表本机固件接受该写接口",
+        "最近人工报告坐地靠柜，未经本次传感器独立确认；足底与柜体承重数值未知",
+        "起身、姿态保持和平衡切换的本机姿势前提与运动固件版本仍待确认"
+      ]
+    },
+    {
+      "capability": "balance",
+      "label": "平衡模式",
+      "at": 1792641980.6144578,
+      "run_id": "845409fcccec",
+      "dispatched": false,
+      "params_valid": true,
+      "request": {
+        "service": "sport",
+        "method": "SetBalanceMode",
+        "api_id": 7102,
+        "parameter": {
+          "data": 0
+        },
+        "sdk_commit": "814556d15970dd2ecf1c9984e845ca02ab07e206"
+      },
+      "telemetry_tick": 3376257,
+      "current_fsm": 0,
+      "execution_gate": {
+        "allowed": false,
+        "code": "VERIFICATION_ONLY",
+        "message": "人工遥控接口验证阶段：可取得控制权和核对参数，禁止全部实机动作、声光和模式切换"
+      },
+      "firmware_acceptance": "unknown",
+      "physical_result": "not_tested",
+      "conditions": [
+        "SDK 请求映射已核对，不代表本机固件接受该写接口",
+        "最近人工报告坐地靠柜，未经本次传感器独立确认；足底与柜体承重数值未知",
+        "起身、姿态保持和平衡切换的本机姿势前提与运动固件版本仍待确认"
+      ]
+    },
+    {
+      "capability": "balance",
+      "label": "平衡模式",
+      "at": 1792641980.6482735,
+      "run_id": "845409fcccec",
+      "dispatched": false,
+      "params_valid": true,
+      "request": {
+        "service": "sport",
+        "method": "SetBalanceMode",
+        "api_id": 7102,
+        "parameter": {
+          "data": 1
+        },
+        "sdk_commit": "814556d15970dd2ecf1c9984e845ca02ab07e206"
+      },
+      "telemetry_tick": 3376310,
+      "current_fsm": 0,
+      "execution_gate": {
+        "allowed": false,
+        "code": "VERIFICATION_ONLY",
+        "message": "人工遥控接口验证阶段：可取得控制权和核对参数，禁止全部实机动作、声光和模式切换"
+      },
+      "firmware_acceptance": "unknown",
+      "physical_result": "not_tested",
+      "conditions": [
+        "SDK 请求映射已核对，不代表本机固件接受该写接口",
+        "最近人工报告坐地靠柜，未经本次传感器独立确认；足底与柜体承重数值未知",
+        "起身、姿态保持和平衡切换的本机姿势前提与运动固件版本仍待确认"
+      ]
+    },
+    {
+      "capability": "start",
+      "label": "进入行走控制",
+      "at": 1792641980.6830783,
+      "run_id": "845409fcccec",
+      "dispatched": false,
+      "params_valid": true,
+      "request": {
+        "service": "sport",
+        "method": "SetFsmId",
+        "api_id": 7101,
+        "parameter": {
+          "data": 500
+        },
+        "sdk_commit": "814556d15970dd2ecf1c9984e845ca02ab07e206"
+      },
+      "telemetry_tick": 3376378,
+      "current_fsm": 0,
+      "execution_gate": {
+        "allowed": false,
+        "code": "VERIFICATION_ONLY",
+        "message": "人工遥控接口验证阶段：可取得控制权和核对参数，禁止全部实机动作、声光和模式切换"
+      },
+      "firmware_acceptance": "unknown",
+      "physical_result": "not_tested",
+      "conditions": [
+        "SDK 请求映射已核对，不代表本机固件接受该写接口",
+        "最近人工报告坐地靠柜，未经本次传感器独立确认；足底与柜体承重数值未知",
+        "起身、姿态保持和平衡切换的本机姿势前提与运动固件版本仍待确认"
+      ]
+    }
+  ],
+  "physical_write_endpoints_called": [],
+  "mode": "robot",
+  "connected": true,
+  "read_only": false,
+  "verify_only": true,
+  "owner": null,
+  "armed": false,
+  "navigation": "idle",
+  "fsm": 0,
+  "fsm_age_ms": 436,
+  "joint_count": 23,
+  "camera": {
+    "backend": "unitree",
+    "status": "live",
+    "error": null,
+    "diagnostics": {
+      "transport": "official_api_1001_isolated_polled",
+      "window_s": 50.7,
+      "attempts": 252,
+      "successes": 252,
+      "timeouts": 0,
+      "errors": 0,
+      "total_attempts": 252,
+      "total_successes": 252,
+      "total_timeouts": 0
+    },
+    "source": "unitree-videohub-f215fcc268d9",
+    "sequence": 252,
+    "age_ms": 63,
+    "request_started_at": 1792641985.9945812,
+    "received_at": 1792641986.0204182,
+    "width": 960,
+    "height": 540,
+    "source_width": 1920,
+    "source_height": 1080,
+    "request_ms": 26,
+    "timestamp_basis": "request_started_at",
+    "sensor_timestamp": null
+  },
+  "robot_authority_verified": false,
+  "firmware_acceptance": "unknown",
+  "physical_result": "not_tested",
+  "browser": {
+    "url": "http://127.0.0.1:18766/",
+    "acquire_and_release_clicked": true,
+    "final_owner": null,
+    "preflights": [
+      {
+        "capability": "balance",
+        "label": "平衡模式",
+        "at": 1792642024.988624,
+        "run_id": "845409fcccec",
+        "dispatched": false,
+        "params_valid": true,
+        "request": {
+          "service": "sport",
+          "method": "SetBalanceMode",
+          "api_id": 7102,
+          "parameter": {
+            "data": 0
+          },
+          "sdk_commit": "814556d15970dd2ecf1c9984e845ca02ab07e206"
+        },
+        "telemetry_tick": 3420631,
+        "current_fsm": 0,
+        "execution_gate": {
+          "allowed": false,
+          "code": "VERIFICATION_ONLY",
+          "message": "人工遥控接口验证阶段：可取得控制权和核对参数，禁止全部实机动作、声光和模式切换"
+        },
+        "firmware_acceptance": "unknown",
+        "physical_result": "not_tested",
+        "conditions": [
+          "SDK 请求映射已核对，不代表本机固件接受该写接口",
+          "最近人工报告坐地靠柜，未经本次传感器独立确认；足底与柜体承重数值未知",
+          "起身、姿态保持和平衡切换的本机姿势前提与运动固件版本仍待确认"
+        ]
+      },
+      {
+        "capability": "prepare",
+        "label": "站立预备 / 姿态保持",
+        "at": 1792642018.778421,
+        "run_id": "845409fcccec",
+        "dispatched": false,
+        "params_valid": true,
+        "request": {
+          "service": "sport",
+          "method": "SetFsmId",
+          "api_id": 7101,
+          "parameter": {
+            "data": 4
+          },
+          "sdk_commit": "814556d15970dd2ecf1c9984e845ca02ab07e206"
+        },
+        "telemetry_tick": 3414483,
+        "current_fsm": 0,
+        "execution_gate": {
+          "allowed": false,
+          "code": "VERIFICATION_ONLY",
+          "message": "人工遥控接口验证阶段：可取得控制权和核对参数，禁止全部实机动作、声光和模式切换"
+        },
+        "firmware_acceptance": "unknown",
+        "physical_result": "not_tested",
+        "conditions": [
+          "SDK 请求映射已核对，不代表本机固件接受该写接口",
+          "最近人工报告坐地靠柜，未经本次传感器独立确认；足底与柜体承重数值未知",
+          "起身、姿态保持和平衡切换的本机姿势前提与运动固件版本仍待确认"
+        ]
+      },
+      {
+        "capability": "squat_to_stand",
+        "label": "蹲姿起立",
+        "at": 1792642001.1203573,
+        "run_id": "845409fcccec",
+        "dispatched": false,
+        "params_valid": true,
+        "request": {
+          "service": "sport",
+          "method": "SetFsmId",
+          "api_id": 7101,
+          "parameter": {
+            "data": 706
+          },
+          "sdk_commit": "814556d15970dd2ecf1c9984e845ca02ab07e206"
+        },
+        "telemetry_tick": 3396784,
+        "current_fsm": 0,
+        "execution_gate": {
+          "allowed": false,
+          "code": "VERIFICATION_ONLY",
+          "message": "人工遥控接口验证阶段：可取得控制权和核对参数，禁止全部实机动作、声光和模式切换"
+        },
+        "firmware_acceptance": "unknown",
+        "physical_result": "not_tested",
+        "conditions": [
+          "SDK 请求映射已核对，不代表本机固件接受该写接口",
+          "最近人工报告坐地靠柜，未经本次传感器独立确认；足底与柜体承重数值未知",
+          "起身、姿态保持和平衡切换的本机姿势前提与运动固件版本仍待确认"
+        ]
+      }
+    ],
+    "screenshot": "screenshots/g1-manual-remote-verification-20261022.png",
+    "result_screenshots": [
+      "screenshots/g1-manual-rise-preflight-20261022.png",
+      "screenshots/g1-manual-balance-preflight-20261022.png"
+    ]
+  },
+  "final_check": {
+    "captured_at": "2026-10-22T12:09:31+08:00",
+    "connected": true,
+    "read_only": false,
+    "verify_only": true,
+    "owner": null,
+    "armed": false,
+    "robot_authority_verified": false,
+    "navigation": "idle",
+    "fsm": 0,
+    "fsm_age_ms": 40,
+    "joint_count": 23,
+    "camera": {
+      "backend": "unitree",
+      "status": "live",
+      "error": null,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 60,
+        "attempts": 300,
+        "successes": 300,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 1180,
+        "total_successes": 1180,
+        "total_timeouts": 0
+      },
+      "source": "unitree-videohub-f215fcc268d9",
+      "sequence": 1180,
+      "age_ms": 180,
+      "request_started_at": 1792642171.7254398,
+      "received_at": 1792642171.7619202,
+      "width": 960,
+      "height": 540,
+      "source_width": 1920,
+      "source_height": 1080,
+      "request_ms": 36,
+      "timestamp_basis": "request_started_at",
+      "sensor_timestamp": null
+    }
+  },
+  "deployment": {
+    "started": true,
+    "release": "56aa09516024",
+    "pid": 7737,
+    "previous_release": "953b51275852",
+    "backup": "/home/unitree/workspace/g1-body-console/deploy-backups/20261022-120530-readonly",
+    "verified_files": 487,
+    "boot_id": "aed898cb-acfd-44a2-8e9c-50f1f00269aa",
+    "official_processes_before": {
+      "1350": {
+        "name": "master_service",
+        "start": "2004"
+      }
+    },
+    "official_processes_after": {
+      "1350": {
+        "name": "master_service",
+        "start": "2004"
+      }
+    }
+  },
+  "verification_input_note": "stand_height 0.5 是不下发的序列化验证输入，不是本机实测高度、推荐值或安全边界。",
+  "tests": {
+    "python_targeted_passed": 100,
+    "node_passed": 14,
+    "typescript_vite_build": "passed"
+  }
+}

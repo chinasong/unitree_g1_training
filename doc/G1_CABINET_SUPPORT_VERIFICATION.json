@@ -1,0 +1,230 @@
+{
+  "verified_at_utc": "2026-10-21T07:01:26.522246+00:00",
+  "schema_version": 1,
+  "foundation_version": 17,
+  "latest_user_report": "现在不是人员托住，现在是靠在一个柜子",
+  "current_external_support": "cabinet",
+  "person_support_reported": false,
+  "claim_scope": "Seated pose, feet touching floor and digital pose match retain their earlier human report timestamp; not reconfirmed by latest correction.",
+  "robot_motion_executed": false,
+  "quantumult_changed": false,
+  "unknowns": {
+    "motion_host_firmware": null,
+    "left_foot_load_n": null,
+    "right_foot_load_n": null,
+    "cabinet_load_n": null,
+    "independent_standing": null,
+    "selected_transition": null,
+    "slow_standing_speed": null,
+    "slow_standing_duration_s": null,
+    "actual_motor_config_fields": 253
+  },
+  "local_validation": {
+    "pytest_passed": 104,
+    "pytest_warning": "Existing Starlette/httpx deprecation warning",
+    "frontend_build_passed": true,
+    "frontend_warning": "Existing Three.js chunk above 500 kB"
+  },
+  "release_verification": {
+    "at_utc": "2026-10-21T07:00:21.152665+00:00",
+    "release": "6c940dd20def",
+    "manifest_file_count": 459,
+    "all_sha256_match": true,
+    "console_pid": 9194,
+    "console_env": {
+      "G1_READ_ONLY": "1",
+      "G1_HOST": "127.0.0.1",
+      "G1_PORT": "8765",
+      "G1_CAMERA_BACKEND": "unitree"
+    },
+    "loopback_only": true,
+    "children": [
+      {
+        "pid": 9297,
+        "argv": [
+          "/home/unitree/workspace/g1-body-console/.venv/bin/python",
+          "-c",
+          "from multiprocessing.resource_tracker import main;main(20)"
+        ],
+        "cwd": "/home/unitree/workspace/g1-body-console/releases/6c940dd20def"
+      },
+      {
+        "pid": 9298,
+        "argv": [
+          "/home/unitree/workspace/g1-body-console/.venv/bin/python",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=21, pipe_handle=23)",
+          "--multiprocessing-fork"
+        ],
+        "cwd": "/home/unitree/workspace/g1-body-console/releases/6c940dd20def"
+      },
+      {
+        "pid": 9301,
+        "argv": [
+          "/home/unitree/workspace/g1-body-console/.venv/bin/python",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=21, pipe_handle=26)",
+          "--multiprocessing-fork"
+        ],
+        "cwd": "/home/unitree/workspace/g1-body-console/releases/6c940dd20def"
+      }
+    ],
+    "foundation_version": 17,
+    "foundation_id": "afe6af39ea3e9d35c76cb4fe1c08164cc31d26a712b3682a5fecb68b53229d2d",
+    "actual_unknown_count": 253,
+    "boot_id": "b33a7dc5-2617-44cd-b353-041bab1c204f",
+    "official_processes_unchanged": [
+      {
+        "pid": 1170,
+        "argv": [
+          "/unitree/ota/pipe/ota_pipe_service"
+        ],
+        "start_ticks": 2054
+      },
+      {
+        "pid": 1174,
+        "argv": [
+          "/unitree/module/master_service/master_service"
+        ],
+        "start_ticks": 2055
+      },
+      {
+        "pid": 2074,
+        "argv": [
+          "/unitree/module/video_hub_pc4/videohub_pc4"
+        ],
+        "start_ticks": 2356
+      },
+      {
+        "pid": 2749,
+        "argv": [
+          "/home/unitree/megaflow_sdk/ws//bin/MegaFlowRuntimeDaemon",
+          "-c",
+          "/home/unitree/megaflow_sdk/ws//bin/config.bin",
+          "-w",
+          "/home/unitree/megaflow_sdk/ws/",
+          "-d",
+          "127.0.0.1:8899",
+          "-i",
+          "-e",
+          "/home/unitree/megaflow_sdk/ws//dep/",
+          "-l",
+          "0"
+        ],
+        "start_ticks": 3024
+      }
+    ]
+  },
+  "read_only_soak": {
+    "started_at_utc": "2026-10-21T07:00:16.218568+00:00",
+    "completed_at_utc": "2026-10-21T07:00:46.435755+00:00",
+    "duration_s": 30.217,
+    "sample_count": 31,
+    "jpeg_count": 4,
+    "unique_jpeg_count": 4,
+    "max_telemetry_age_ms": 54,
+    "mode_rpc_deltas": {
+      "fsm_id": {
+        "attempts": 60,
+        "successes": 60,
+        "timeouts": 0,
+        "errors": 0
+      },
+      "fsm_mode": {
+        "attempts": 10,
+        "successes": 10,
+        "timeouts": 0,
+        "errors": 0
+      },
+      "motion_mode": {
+        "attempts": 10,
+        "successes": 10,
+        "timeouts": 0,
+        "errors": 0
+      }
+    },
+    "foundation_id": "afe6af39ea3e9d35c76cb4fe1c08164cc31d26a712b3682a5fecb68b53229d2d",
+    "foundation_version": 17,
+    "read_only": true,
+    "command_writes": 0,
+    "lease_requests": 0,
+    "actual_unknown_count": 253
+  },
+  "journal_verification": {
+    "checked_at_utc": "2026-10-21T07:00:49.212569+00:00",
+    "run_id": "cf6244c59155",
+    "journal": {
+      "bytes": 413479,
+      "sha256": "3d1954ce3019d028db1ea8b1e6c47fce6d8f0927802c46436d533d3901439729",
+      "ends_with_newline": true,
+      "invalid_lines": [
+        {
+          "line": 223,
+          "bytes": 1851,
+          "error_type": "UnicodeDecodeError",
+          "contains_current_run": false,
+          "sha256": "673a1e8da7ac3e72007abbed5053cb0fec33dfcb995a4361985c49fbdae29922"
+        }
+      ]
+    },
+    "current_run_event_counts": {
+      "connected": 1,
+      "camera_connected": 1,
+      "state_observed": 2
+    },
+    "read_only": true,
+    "control_owner": null,
+    "navigation_status": "idle",
+    "insight_enabled": false,
+    "human_confirmation_is_historical": true,
+    "action_writes_recorded": 0,
+    "lease_requests_recorded": 0,
+    "evidence_limit": "Application journal and current state; not an independent network capture"
+  },
+  "startup_sequence": "Initial checks before readonly connection failed because the new console was disconnected and had no reader children. Reconnected through the readonly UI on eth0; subsequent release verification and all 31 live samples passed.",
+  "browser_verification": {
+    "url": "http://127.0.0.1:18765/",
+    "headline": "最近人工记录 · 坐地 / 双脚贴地 / 靠柜支撑",
+    "support_text": "用户最新更正：靠在柜子上，当前没有人员托住。柜体接触位置、固定情况与承重未知。",
+    "telemetry": "23 / 23 joints live; FSM 0; camera RGB live; readonly locked",
+    "screenshot": "doc/screenshots/g1-cabinet-support-v17.png"
+  },
+  "evidence_limit": "Human support correction is not a force measurement. Finite readonly sampling and application journal are not independent network capture or a future stability guarantee.",
+  "source_fingerprints": [
+    {
+      "path": ".g1-deploy/research/firmware-support-20261021/orin-inventory.json",
+      "bytes": 4060,
+      "sha256": "64f1132de997fdc333100fcf7a17d7ecee9c01c6d58c02383c873f0ab9f0d9cc"
+    },
+    {
+      "path": ".g1-deploy/research/firmware-support-20261021/passive.json",
+      "bytes": 4113,
+      "sha256": "526140f97e00e8f1534b8200c3009e9306d7d765b92b1bf731b61b5204a06627"
+    },
+    {
+      "path": ".g1-deploy/research/firmware-support-20261021/paired-observation.json",
+      "bytes": 1241930,
+      "sha256": "8339e6a3bd2d0cc4363dd052a2a760583aabba3c671828719f2be6c60756d7cf"
+    },
+    {
+      "path": ".g1-deploy/research/firmware-support-20261021/postdeploy-release.json",
+      "bytes": 1867,
+      "sha256": "43c03ea21b0812cf213cc7467651b0a93b905f225d8b7ffa88bad2b95aa16599"
+    },
+    {
+      "path": ".g1-deploy/research/firmware-support-20261021/postdeploy-soak.json",
+      "bytes": 350460,
+      "sha256": "9e95b147c62cffd71f26e6365a07924291f60cfc6ba2672bf78d484f4c41fbad"
+    },
+    {
+      "path": ".g1-deploy/research/firmware-support-20261021/postdeploy-journal.json",
+      "bytes": 793,
+      "sha256": "cfeb8c67d749a5cd37a5da291f7be449225989f62a82e2a57486ff53895e3ba6"
+    },
+    {
+      "path": "doc/screenshots/g1-cabinet-support-v17.png",
+      "bytes": 53196,
+      "sha256": "b1e2e8f35c4eb0a5dec6f98737a6141d3218ceabe7dd87b3ec2d1eea143d41f7"
+    }
+  ]
+}

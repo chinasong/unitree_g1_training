@@ -1,0 +1,32 @@
+{
+  "backend": "unitree",
+  "status": "live",
+  "error": null,
+  "diagnostics": {
+    "transport": "official_api_1001_isolated_polled",
+    "window_s": 60,
+    "attempts": 300,
+    "successes": 300,
+    "timeouts": 0,
+    "errors": 0,
+    "total_attempts": 626,
+    "total_successes": 626,
+    "total_timeouts": 0
+  },
+  "source": "unitree-videohub-52bce6acff61",
+  "sequence": 626,
+  "age_ms": 68,
+  "request_started_at": 1792646708.4998522,
+  "received_at": 1792646708.5364187,
+  "width": 960,
+  "height": 540,
+  "source_width": 1920,
+  "source_height": 1080,
+  "request_ms": 37,
+  "timestamp_basis": "request_started_at",
+  "sensor_timestamp": null,
+  "mac_received_at": 1792646708.4808471,
+  "mac_age_upper_bound_ms": 132,
+  "sha256": "fd767bf6eed94af16fb19c5679d328d53699d0e42cc6626df8513d2c824bb56d",
+  "bytes": 40584
+}

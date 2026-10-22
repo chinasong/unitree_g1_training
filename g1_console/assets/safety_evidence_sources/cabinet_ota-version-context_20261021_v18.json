@@ -1,0 +1,87 @@
+{
+  "at_utc": "2026-10-21T07:10:14.521129+00:00",
+  "source_path": "/unitree/var/log/ota_pipe/ota_pipe_service.LOG",
+  "tail_sha256": "1a8f1d3a73e65d4f486c6f08907faaab922cedd9e06d52c27ff9a1e7cf448594",
+  "matches": [
+    {
+      "line_sha256": "7fd53f6aed7b530f3eb0bba999527389961887e4397e0e953004d6d25df38b88",
+      "line_bytes": 240,
+      "sanitized_context": "[2026-10-20 22:15:05.344] [INFO] [1261] [2598] ota pipe add module package data start. package:/unitree/ota/update/1.5.3/package_1.5.3.8_G1_Edu+_upk/module/unitree_patch_pc4/1.0.0.6/file/unitree_patch_pc4_1.0.0.6.upk, offset:0, size:2097152",
+      "json": []
+    },
+    {
+      "line_sha256": "faa51dc8714fe9e8de81c6326d98ce94db818db364873300a94d73258aeff3df",
+      "line_bytes": 246,
+      "sanitized_context": "[2026-10-20 22:15:05.383] [INFO] [1261] [2598] ota pipe add module package data start. package:/unitree/ota/update/1.5.3/package_1.5.3.8_G1_Edu+_upk/module/unitree_patch_pc4/1.0.0.6/file/unitree_patch_pc4_1.0.0.6.upk, offset:2097152, size:2097152",
+      "json": []
+    },
+    {
+      "line_sha256": "5794133950a38c5570849a692ca17d862e28a944d9c67b9aa5cc08872c448a21",
+      "line_bytes": 246,
+      "sanitized_context": "[2026-10-20 22:15:05.461] [INFO] [1261] [2598] ota pipe add module package data start. package:/unitree/ota/update/1.5.3/package_1.5.3.8_G1_Edu+_upk/module/unitree_patch_pc4/1.0.0.6/file/unitree_patch_pc4_1.0.0.6.upk, offset:4194304, size:2097152",
+      "json": []
+    },
+    {
+      "line_sha256": "cae13982886bd7eb9e24d33de7d42804c916e1e2019a53fad85bdb86379faa54",
+      "line_bytes": 246,
+      "sanitized_context": "[2026-10-20 22:15:05.545] [INFO] [1261] [2598] ota pipe add module package data start. package:/unitree/ota/update/1.5.3/package_1.5.3.8_G1_Edu+_upk/module/unitree_patch_pc4/1.0.0.6/file/unitree_patch_pc4_1.0.0.6.upk, offset:6291456, size:2097152",
+      "json": []
+    },
+    {
+      "line_sha256": "cd1d4e62eb47a843e0172b9179fbcc1abef643f4e5c45b5fd33764234295f00e",
+      "line_bytes": 246,
+      "sanitized_context": "[2026-10-20 22:15:05.627] [INFO] [1261] [2598] ota pipe add module package data start. package:/unitree/ota/update/1.5.3/package_1.5.3.8_G1_Edu+_upk/module/unitree_patch_pc4/1.0.0.6/file/unitree_patch_pc4_1.0.0.6.upk, offset:8388608, size:2097152",
+      "json": []
+    },
+    {
+      "line_sha256": "7dca58e48a3a04ae9d9fc5d79afdb2e32fe75a0d21b1e218f37c741d0747e0aa",
+      "line_bytes": 247,
+      "sanitized_context": "[2026-10-20 22:15:05.710] [INFO] [1261] [2598] ota pipe add module package data start. package:/unitree/ota/update/1.5.3/package_1.5.3.8_G1_Edu+_upk/module/unitree_patch_pc4/1.0.0.6/file/unitree_patch_pc4_1.0.0.6.upk, offset:10485760, size:2097152",
+      "json": []
+    },
+    {
+      "line_sha256": "23c7218424aa664b3e8ce856eee0224c0b25d1460a4cdb82635aa8ea8efb7739",
+      "line_bytes": 247,
+      "sanitized_context": "[2026-10-20 22:15:05.794] [INFO] [1261] [2598] ota pipe add module package data start. package:/unitree/ota/update/1.5.3/package_1.5.3.8_G1_Edu+_upk/module/unitree_patch_pc4/1.0.0.6/file/unitree_patch_pc4_1.0.0.6.upk, offset:12582912, size:2097152",
+      "json": []
+    },
+    {
+      "line_sha256": "8fbbff55733eabfe91acc0840c9c15efa7f5858d428fe88b248a7b438b48c77a",
+      "line_bytes": 247,
+      "sanitized_context": "[2026-10-20 22:15:05.874] [INFO] [1261] [2598] ota pipe add module package data start. package:/unitree/ota/update/1.5.3/package_1.5.3.8_G1_Edu+_upk/module/unitree_patch_pc4/1.0.0.6/file/unitree_patch_pc4_1.0.0.6.upk, offset:14680064, size:2097152",
+      "json": []
+    },
+    {
+      "line_sha256": "066e8da65546d3a1a310d16dd359e5eec74d3ca2bead8c39c1587508fe64b0e4",
+      "line_bytes": 247,
+      "sanitized_context": "[2026-10-20 22:15:05.961] [INFO] [1261] [2598] ota pipe add module package data start. package:/unitree/ota/update/1.5.3/package_1.5.3.8_G1_Edu+_upk/module/unitree_patch_pc4/1.0.0.6/file/unitree_patch_pc4_1.0.0.6.upk, offset:16777216, size:2097152",
+      "json": []
+    },
+    {
+      "line_sha256": "8d20c8d5dd568156dad1eb319573a1fc969a254d1925be0bd8fcd0da44d32dd0",
+      "line_bytes": 247,
+      "sanitized_context": "[2026-10-20 22:15:06.044] [INFO] [1261] [2598] ota pipe add module package data start. package:/unitree/ota/update/1.5.3/package_1.5.3.8_G1_Edu+_upk/module/unitree_patch_pc4/1.0.0.6/file/unitree_patch_pc4_1.0.0.6.upk, offset:18874368, size:2097152",
+      "json": []
+    },
+    {
+      "line_sha256": "39e2c2cc2c7d26dd9eced3e19cddbb797cb55a4510b39b16db8f57fb655082b9",
+      "line_bytes": 246,
+      "sanitized_context": "[2026-10-20 22:15:06.113] [INFO] [1261] [2598] ota pipe add module package data start. package:/unitree/ota/update/1.5.3/package_1.5.3.8_G1_Edu+_upk/module/unitree_patch_pc4/1.0.0.6/file/unitree_patch_pc4_1.0.0.6.upk, offset:20971520, size:760436",
+      "json": []
+    },
+    {
+      "line_sha256": "17cb62104810394e593f117501eeb07d800b50d7794908a8d24f8c8bd36a8350",
+      "line_bytes": 427,
+      "sanitized_context": "[2026-10-20 22:15:06.174] [INFO] [1261] [2600] begin module update task. name:unitree_patch_pc4, version:1.0.0.6, pakage filename:/unitree/ota/update/1.5.3/package_1.5.3.8_G1_Edu+_upk/module/unitree_patch_pc4/1.0.0.6/file/unitree_patch_pc4_1.0.0.6.upk, taskupdatedir:/unitree/ota/update/module/unitree_patch_pc4/1.0.0.6, taskbackupdir:/unitree/ota/backup/module/unitree_patch_pc4/1.0.0.6, token:[removed]",
+      "json": []
+    },
+    {
+      "line_sha256": "c9478475acfaff6f97b329120b3b445800019c0ad0d5015184572b2966b71348",
+      "line_bytes": 237,
+      "sanitized_context": "[2026-10-20 22:15:06.456] [INFO] [1261] [2600] verify file success. fileName:/unitree/ota/update/1.5.3/package_1.5.3.8_G1_Edu+_upk/module/unitree_patch_pc4/1.0.0.6/file/unitree_patch_pc4_1.0.0.6.upk, sign:70ce1d6f66975256f83f0a3eb61b2ead",
+      "json": []
+    }
+  ],
+  "command_writes": 0,
+  "rpc_calls": 0
+}

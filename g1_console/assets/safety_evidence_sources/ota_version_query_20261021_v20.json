@@ -1,0 +1,22 @@
+{
+  "current": false,
+  "checked_at_utc": "2026-10-21T08:10:07.629611+00:00",
+  "argv": [
+    "/unitree/sbin/ota_pipe_cli",
+    "-a",
+    "default",
+    "-c",
+    "listmoduleversion",
+    "-T",
+    "3"
+  ],
+  "binary_sha256": "bbaff3c92449f46d4e5a2c1cef6f990eaadaf6e89139967cb5f8f5f59a275c8d",
+  "action": "documented list command only",
+  "motion_writes": 0,
+  "ota_mutations": 0,
+  "version_result_authority": "CLI query targeted configured OTA endpoint; returncode does not prove a server response or physical motion-host identity",
+  "returncode": 104,
+  "output": "alias:default, address:tcp://192.168.123.164:1026, timeout:3\nrun command listmoduleversion, code:104\n",
+  "stderr": "",
+  "elapsed_s": 0.008
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "received_at_utc": "2026-10-21T02:59:29.275144+00:00",
+  "clock_authority": "Mac 接收时间 UTC；Orin 探查时间另存，历史证据非实时状态",
+  "sources": [
+    {
+      "path": "g1_console/assets/service_audit_sources/fmx_analysis_20261021.json",
+      "bytes": 10154,
+      "sha256": "2d5714cd21690df14de350fe6844fa6ed0649bf023b40cd0e91c50914d8314eb"
+    },
+    {
+      "path": "g1_console/assets/service_audit_sources/fmx_inventory_20261021.json",
+      "bytes": 7484,
+      "sha256": "850e90b649b74e4b2c8b636f396fbdf6ca6af0f5e7e2b597148e7e479cf283f3"
+    }
+  ],
+  "scripts": [
+    {
+      "path": "scripts/analyze_g1_fmx.py",
+      "bytes": 8987,
+      "sha256": "c5df38738a62e79684c9b7885cd688ccd7b1f9e7f4ce55f17fd6fbdb797e8ebf"
+    }
+  ],
+  "private_materials_included": false
+}

@@ -1,0 +1,36 @@
+{
+  "read_only": true,
+  "command_writes": 0,
+  "rpc_calls": 0,
+  "files": [
+    {
+      "path": "/unitree/var/data/ota_update/ota_pipe/ota_pipe_service",
+      "status": "FileNotFoundError"
+    },
+    {
+      "path": "/unitree/robot/pkg/module/master_service_pc4/module.json",
+      "status": "read",
+      "bytes": 2194,
+      "sha256": "ecfa15fd170078b6bf89cc02f2becf4672b8c6f3566607bdfbe2717424857771"
+    },
+    {
+      "path": "/unitree/robot/pkg/module/unitree_patch_pc4/module.json",
+      "status": "read",
+      "bytes": 2880,
+      "sha256": "df22b0309ebae1b78380473a297eca6d21fd1311d725a1a1c529e7d5df0572a0"
+    },
+    {
+      "path": "/unitree/robot/pkg/module/video_hub_pc4/module.json",
+      "status": "read",
+      "bytes": 1913,
+      "sha256": "e59171ecf2b3a3ce4101cc934fbe7ee775583874a2938cdbd38b32e304f35844"
+    },
+    {
+      "path": "/unitree/robot/pkg/version/version.json",
+      "status": "read",
+      "bytes": 160,
+      "sha256": "b5d64c6e23e1a701172010a90ee8b17c83107c6560e9abb459db246b5f85842c"
+    }
+  ],
+  "received_at_utc": "2026-10-21T03:22:43.221882+00:00"
+}

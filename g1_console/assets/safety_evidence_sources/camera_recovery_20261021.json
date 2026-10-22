@@ -1,0 +1,142 @@
+{
+  "current": false,
+  "boot_id": "7a6791dc-f512-4b45-aca3-44fbde855e25",
+  "before": {
+    "observed_at": 1792556567.2880352,
+    "usb": [
+      {
+        "path": "1-2",
+        "idVendor": "0bda",
+        "idProduct": "5411",
+        "product": "4-Port USB 2.0 Hub",
+        "manufacturer": "Generic",
+        "bDeviceClass": "09",
+        "authorized": "1"
+      },
+      {
+        "path": "1-2.4",
+        "idVendor": "0bda",
+        "idProduct": "a85b",
+        "product": "802.11ax WLAN Adapter",
+        "manufacturer": "Realtek",
+        "bDeviceClass": "ef",
+        "authorized": "1"
+      },
+      {
+        "path": "2-2",
+        "idVendor": "0bda",
+        "idProduct": "0411",
+        "product": "4-Port USB 3.0 Hub",
+        "manufacturer": "Generic",
+        "bDeviceClass": "09",
+        "authorized": "1"
+      },
+      {
+        "path": "usb1",
+        "idVendor": "1d6b",
+        "idProduct": "0002",
+        "product": "xHCI Host Controller",
+        "manufacturer": "Linux 5.10.104-tegra xhci-hcd",
+        "bDeviceClass": "09",
+        "authorized": "1"
+      },
+      {
+        "path": "usb2",
+        "idVendor": "1d6b",
+        "idProduct": "0003",
+        "product": "xHCI Host Controller",
+        "manufacturer": "Linux 5.10.104-tegra xhci-hcd",
+        "bDeviceClass": "09",
+        "authorized": "1"
+      }
+    ],
+    "video_nodes": []
+  },
+  "after": {
+    "observed_at": 1792556736.4409094,
+    "usb": [
+      {
+        "path": "1-2",
+        "idVendor": "0bda",
+        "idProduct": "5411",
+        "product": "4-Port USB 2.0 Hub",
+        "manufacturer": "Generic",
+        "bDeviceClass": "09",
+        "authorized": "1"
+      },
+      {
+        "path": "1-2.4",
+        "idVendor": "0bda",
+        "idProduct": "a85b",
+        "product": "802.11ax WLAN Adapter",
+        "manufacturer": "Realtek",
+        "bDeviceClass": "ef",
+        "authorized": "1"
+      },
+      {
+        "path": "2-2",
+        "idVendor": "0bda",
+        "idProduct": "0411",
+        "product": "4-Port USB 3.0 Hub",
+        "manufacturer": "Generic",
+        "bDeviceClass": "09",
+        "authorized": "1"
+      },
+      {
+        "path": "2-2.3",
+        "idVendor": "8086",
+        "idProduct": "0b3a",
+        "product": "Intel(R) RealSense(TM) Depth Camera 435i",
+        "manufacturer": "Intel(R) RealSense(TM) Depth Camera 435i",
+        "bDeviceClass": "ef",
+        "authorized": "1"
+      },
+      {
+        "path": "usb1",
+        "idVendor": "1d6b",
+        "idProduct": "0002",
+        "product": "xHCI Host Controller",
+        "manufacturer": "Linux 5.10.104-tegra xhci-hcd",
+        "bDeviceClass": "09",
+        "authorized": "1"
+      },
+      {
+        "path": "usb2",
+        "idVendor": "1d6b",
+        "idProduct": "0003",
+        "product": "xHCI Host Controller",
+        "manufacturer": "Linux 5.10.104-tegra xhci-hcd",
+        "bDeviceClass": "09",
+        "authorized": "1"
+      }
+    ],
+    "video_nodes": [
+      "/dev/video0",
+      "/dev/video1",
+      "/dev/video2",
+      "/dev/video3",
+      "/dev/video4",
+      "/dev/video5"
+    ]
+  },
+  "user_confirmed": "用户报告刚插上摄像头 Type-C 接口",
+  "camera": {
+    "backend": "unitree",
+    "status": "live",
+    "error": null,
+    "source": "unitree-videohub-dc9609b107f3",
+    "sequence": 408,
+    "age_ms": 272,
+    "request_started_at": 1792556832.2264674,
+    "received_at": 1792556832.2891986,
+    "width": 960,
+    "height": 540,
+    "source_width": 1920,
+    "source_height": 1080,
+    "request_ms": 63,
+    "timestamp_basis": "request_started_at",
+    "sensor_timestamp": null
+  },
+  "software_restarts": 0,
+  "device_reconfiguration": 0
+}

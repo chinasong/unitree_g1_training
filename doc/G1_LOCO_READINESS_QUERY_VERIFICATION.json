@@ -1,0 +1,2762 @@
+{
+  "release": "861f842d8d59",
+  "started_at_utc": "2026-10-21T12:42:51.751906+00:00",
+  "at_utc": "2026-10-21T12:42:53.889569+00:00",
+  "run_id": "cb9ab226b9cf",
+  "boot_id": "8d9a0e09-97e1-45fa-81d3-18822a3c760a",
+  "physical_writes_sent": 0,
+  "control_acquired": false,
+  "manual_armed": false,
+  "total_queries": 39,
+  "summary": {
+    "get_fsm": {
+      "attempts": 3,
+      "outcomes": {
+        "0": 3
+      }
+    },
+    "get_fsm_mode": {
+      "attempts": 3,
+      "outcomes": {
+        "0": 3
+      }
+    },
+    "get_balance": {
+      "attempts": 3,
+      "outcomes": {
+        "7301": 3
+      }
+    },
+    "get_swing_height": {
+      "attempts": 3,
+      "outcomes": {
+        "7301": 3
+      }
+    },
+    "get_stand_height": {
+      "attempts": 3,
+      "outcomes": {
+        "7301": 3
+      }
+    },
+    "get_phase": {
+      "attempts": 3,
+      "outcomes": {
+        "7301": 3
+      }
+    },
+    "get_actions": {
+      "attempts": 3,
+      "outcomes": {
+        "0": 3
+      }
+    },
+    "get_volume": {
+      "attempts": 3,
+      "outcomes": {
+        "0": 3
+      }
+    },
+    "get_services": {
+      "attempts": 3,
+      "outcomes": {
+        "0": 3
+      }
+    },
+    "get_versions": {
+      "attempts": 3,
+      "outcomes": {
+        "3203": 3
+      }
+    },
+    "get_loco_api_version": {
+      "attempts": 3,
+      "outcomes": {
+        "0": 3
+      }
+    },
+    "get_motion_api_version": {
+      "attempts": 3,
+      "outcomes": {
+        "0": 3
+      }
+    },
+    "get_state_api_version": {
+      "attempts": 3,
+      "outcomes": {
+        "0": 3
+      }
+    }
+  },
+  "queries": [
+    {
+      "trial": 1,
+      "capability": "get_fsm",
+      "request_id": "39f83442e25f4dc1a952d62a2d8c3dd5",
+      "at_utc": "2026-10-21T12:42:51.752135+00:00",
+      "request_ms": 28.76,
+      "http_status": 200,
+      "response": {
+        "status": "accepted",
+        "data": 0,
+        "event_id": "0344a0470c6949f68daa42ff801e6e47",
+        "message": "已读取官方返回值"
+      }
+    },
+    {
+      "trial": 1,
+      "capability": "get_fsm_mode",
+      "request_id": "7632d49ce67f4271b5264a6043747dd2",
+      "at_utc": "2026-10-21T12:42:51.781162+00:00",
+      "request_ms": 33.78,
+      "http_status": 200,
+      "response": {
+        "status": "accepted",
+        "data": 0,
+        "event_id": "e41658de38f0442b897fa7c941ee2e4d",
+        "message": "已读取官方返回值"
+      }
+    },
+    {
+      "trial": 1,
+      "capability": "get_balance",
+      "request_id": "cc9a0154903f4187bf55fb29e2e69779",
+      "at_utc": "2026-10-21T12:42:51.815143+00:00",
+      "request_ms": 47.13,
+      "http_status": 502,
+      "response": {
+        "error": {
+          "code": "SDK_REJECTED",
+          "message": "官方服务返回 7301：LocoState 不可用；模式/高度/相位保持未知，忽略返回中的占位零值。不会自动切换模式",
+          "sdk_code": 7301
+        },
+        "request_id": "120d3d9cfc83403e9a335b6133a04849"
+      }
+    },
+    {
+      "trial": 1,
+      "capability": "get_swing_height",
+      "request_id": "59d662a2003f4d7898d147e0342c24d5",
+      "at_utc": "2026-10-21T12:42:51.862517+00:00",
+      "request_ms": 43.02,
+      "http_status": 502,
+      "response": {
+        "error": {
+          "code": "SDK_REJECTED",
+          "message": "官方服务返回 7301：LocoState 不可用；模式/高度/相位保持未知，忽略返回中的占位零值。不会自动切换模式",
+          "sdk_code": 7301
+        },
+        "request_id": "8f0156cc4e4947769760c777e2aa40e9"
+      }
+    },
+    {
+      "trial": 1,
+      "capability": "get_stand_height",
+      "request_id": "7d0ccdc2a797402f81bc80cd46d92d71",
+      "at_utc": "2026-10-21T12:42:51.905736+00:00",
+      "request_ms": 64.72,
+      "http_status": 502,
+      "response": {
+        "error": {
+          "code": "SDK_REJECTED",
+          "message": "官方服务返回 7301：LocoState 不可用；模式/高度/相位保持未知，忽略返回中的占位零值。不会自动切换模式",
+          "sdk_code": 7301
+        },
+        "request_id": "70b01f9de9484d5f9e84df7d0eb99c60"
+      }
+    },
+    {
+      "trial": 1,
+      "capability": "get_phase",
+      "request_id": "10a0a573d8304439acc9dc13a93477e4",
+      "at_utc": "2026-10-21T12:42:51.970684+00:00",
+      "request_ms": 68.95,
+      "http_status": 502,
+      "response": {
+        "error": {
+          "code": "SDK_REJECTED",
+          "message": "官方服务返回 7301：LocoState 不可用；模式/高度/相位保持未知，忽略返回中的占位零值。不会自动切换模式",
+          "sdk_code": 7301
+        },
+        "request_id": "5592d581ad9f47c8a72194306ccc8910"
+      }
+    },
+    {
+      "trial": 1,
+      "capability": "get_actions",
+      "request_id": "1fa926a905d143408ae617a1251c2709",
+      "at_utc": "2026-10-21T12:42:52.039839+00:00",
+      "request_ms": 46.33,
+      "http_status": 200,
+      "response": {
+        "status": "accepted",
+        "data": [
+          [
+            {
+              "id": 99,
+              "name": "release_arm"
+            },
+            {
+              "fsm": [
+                500,
+                501
+              ],
+              "id": 1,
+              "name": "turn_back_wave"
+            },
+            {
+              "id": 11,
+              "name": "blow_kiss_with_both_hands"
+            },
+            {
+              "id": 12,
+              "name": "blow_kiss_with_left_hand"
+            },
+            {
+              "id": 13,
+              "name": "blow_kiss_with_right_hand"
+            },
+            {
+              "id": 15,
+              "name": "both_hands_up"
+            },
+            {
+              "id": 17,
+              "name": "clamp"
+            },
+            {
+              "id": 18,
+              "name": "high_five"
+            },
+            {
+              "id": 19,
+              "name": "hug"
+            },
+            {
+              "id": 22,
+              "name": "refuse"
+            },
+            {
+              "id": 23,
+              "name": "right_hand_up"
+            },
+            {
+              "id": 24,
+              "name": "ultraman_ray"
+            },
+            {
+              "id": 25,
+              "name": "wave_under_head"
+            },
+            {
+              "id": 26,
+              "name": "wave_above_head"
+            },
+            {
+              "id": 27,
+              "name": "shake_hand"
+            },
+            {
+              "id": 31,
+              "mode_machine": [
+                4
+              ],
+              "name": "extend_right_arm_forward"
+            },
+            {
+              "id": 32,
+              "mode_machine": [
+                4
+              ],
+              "name": "right_hand_on_mouth"
+            },
+            {
+              "id": 33,
+              "name": "right_hand_on_heart"
+            },
+            {
+              "id": 34,
+              "name": "both_hands_up_deviate_right"
+            },
+            {
+              "id": 35,
+              "mode_machine": [
+                4
+              ],
+              "name": "emphasize"
+            }
+          ],
+          [
+            {
+              "name": "Waist_Drum_Dance",
+              "time": 9.5
+            },
+            {
+              "name": "Scratch_head",
+              "time": 8.1
+            },
+            {
+              "name": "Spin_discs",
+              "time": 6.9
+            },
+            {
+              "name": "Throw_money",
+              "time": 8.1
+            }
+          ]
+        ],
+        "event_id": "f3736babdef6429a9fdc8b1fb71e0ea0",
+        "message": "已读取官方返回值"
+      }
+    },
+    {
+      "trial": 1,
+      "capability": "get_volume",
+      "request_id": "2bcaa3a4e99b4baeb00f94e2ed1ec5d5",
+      "at_utc": "2026-10-21T12:42:52.086373+00:00",
+      "request_ms": 37.58,
+      "http_status": 200,
+      "response": {
+        "status": "accepted",
+        "data": {
+          "volume": 41
+        },
+        "event_id": "d61af416823d438cba3d0c1bddc26efe",
+        "message": "已读取官方返回值"
+      }
+    },
+    {
+      "trial": 1,
+      "capability": "get_services",
+      "request_id": "a1985fb1fa3643108018047526669462",
+      "at_utc": "2026-10-21T12:42:52.124155+00:00",
+      "request_ms": 66.31,
+      "http_status": 200,
+      "response": {
+        "status": "accepted",
+        "data": [
+          {
+            "name": "ai_sport",
+            "status": 0,
+            "protect": 0
+          },
+          {
+            "name": "audio_player_service",
+            "status": 0,
+            "protect": 0
+          },
+          {
+            "name": "auto_test_arm",
+            "status": 1,
+            "protect": 0
+          },
+          {
+            "name": "auto_test_low",
+            "status": 1,
+            "protect": 0
+          },
+          {
+            "name": "bashrunner",
+            "status": 0,
+            "protect": 0
+          },
+          {
+            "name": "basic_service",
+            "status": 0,
+            "protect": 1
+          },
+          {
+            "name": "battery_guard",
+            "status": 0,
+            "protect": 0
+          },
+          {
+            "name": "chat_go",
+            "status": 0,
+            "protect": 0
+          },
+          {
+            "name": "dex3_service_l",
+            "status": 0,
+            "protect": 0
+          },
+          {
+            "name": "dex3_service_r",
+            "status": 0,
+            "protect": 0
+          },
+          {
+            "name": "emergency_stop",
+            "status": 0,
+            "protect": 0
+          },
+          {
+            "name": "g1_arm_example",
+            "status": 0,
+            "protect": 0
+          },
+          {
+            "name": "lidar_driver",
+            "status": 1,
+            "protect": 0
+          },
+          {
+            "name": "log_system",
+            "status": 0,
+            "protect": 0
+          },
+          {
+            "name": "motion_switcher",
+            "status": 0,
+            "protect": 0
+          },
+          {
+            "name": "net_switcher",
+            "status": 0,
+            "protect": 0
+          },
+          {
+            "name": "ota_box",
+            "status": 1,
+            "protect": 0
+          },
+          {
+            "name": "ota_pipe",
+            "status": 0,
+            "protect": 0
+          },
+          {
+            "name": "robot_state",
+            "status": 0,
+            "protect": 1
+          },
+          {
+            "name": "robot_type_service",
+            "status": 0,
+            "protect": 0
+          },
+          {
+            "name": "state_estimator",
+            "status": 0,
+            "protect": 0
+          },
+          {
+            "name": "unistore",
+            "status": 0,
+            "protect": 0
+          },
+          {
+            "name": "unitree_slam",
+            "status": 1,
+            "protect": 0
+          },
+          {
+            "name": "video_hub_pc4",
+            "status": 0,
+            "protect": 0
+          },
+          {
+            "name": "vui_service",
+            "status": 0,
+            "protect": 0
+          },
+          {
+            "name": "webrtc_bridge",
+            "status": 0,
+            "protect": 1
+          },
+          {
+            "name": "webrtc_multicast_responder",
+            "status": 0,
+            "protect": 0
+          },
+          {
+            "name": "webrtc_signal_server",
+            "status": 0,
+            "protect": 1
+          }
+        ],
+        "event_id": "c98cff218ba84d2c876ead90890dcc18",
+        "message": "已读取官方返回值"
+      }
+    },
+    {
+      "trial": 1,
+      "capability": "get_versions",
+      "request_id": "56420a9b475d40ec8bbde25e495ae534",
+      "at_utc": "2026-10-21T12:42:52.190666+00:00",
+      "request_ms": 39.43,
+      "http_status": 502,
+      "response": {
+        "error": {
+          "code": "SDK_REJECTED",
+          "message": "官方服务返回 3203：不支持此 API；未取得有效值",
+          "sdk_code": 3203
+        },
+        "request_id": "2fed43b27f1c41a4b5dd46fbb1367709"
+      }
+    },
+    {
+      "trial": 1,
+      "capability": "get_loco_api_version",
+      "request_id": "9323ddb84a7a46de8500709ac8965912",
+      "at_utc": "2026-10-21T12:42:52.230286+00:00",
+      "request_ms": 48.73,
+      "http_status": 200,
+      "response": {
+        "status": "accepted",
+        "data": {
+          "service": "sport",
+          "api_version": "1.0.0.0",
+          "firmware_version": null
+        },
+        "event_id": "92f3768eba7b45bb93e5464993d62fee",
+        "message": "已读取官方返回值"
+      }
+    },
+    {
+      "trial": 1,
+      "capability": "get_motion_api_version",
+      "request_id": "dbf869a04ffe43aeb9a379f4e2e53de8",
+      "at_utc": "2026-10-21T12:42:52.279285+00:00",
+      "request_ms": 60.89,
+      "http_status": 200,
+      "response": {
+        "status": "accepted",
+        "data": {
+          "service": "motion_switcher",
+          "api_version": "1.0.0.1",
+          "firmware_version": null
+        },
+        "event_id": "3eec64f96a83466a94d9d31798324fbc",
+        "message": "已读取官方返回值"
+      }
+    },
+    {
+      "trial": 1,
+      "capability": "get_state_api_version",
+      "request_id": "bf87aa2ea4bc451cbbf688b02429e989",
+      "at_utc": "2026-10-21T12:42:52.340505+00:00",
+      "request_ms": 74.58,
+      "http_status": 200,
+      "response": {
+        "status": "accepted",
+        "data": {
+          "service": "robot_state",
+          "api_version": "1.0.0.2",
+          "firmware_version": null
+        },
+        "event_id": "2aa72f381dff4adbbedff164f77eb668",
+        "message": "已读取官方返回值"
+      }
+    },
+    {
+      "trial": 2,
+      "capability": "get_fsm",
+      "request_id": "027ec1f4323d432e9fb6552f86814bd9",
+      "at_utc": "2026-10-21T12:42:52.415408+00:00",
+      "request_ms": 29.85,
+      "http_status": 200,
+      "response": {
+        "status": "accepted",
+        "data": 0,
+        "event_id": "4a8a2099fd8a4a0ea16a8f27b513463d",
+        "message": "已读取官方返回值"
+      }
+    },
+    {
+      "trial": 2,
+      "capability": "get_fsm_mode",
+      "request_id": "6c4a8025e1e544d198bd16695d52f796",
+      "at_utc": "2026-10-21T12:42:52.445477+00:00",
+      "request_ms": 26.41,
+      "http_status": 200,
+      "response": {
+        "status": "accepted",
+        "data": 0,
+        "event_id": "0d74dd49c3664d6d84c654484bff7c1d",
+        "message": "已读取官方返回值"
+      }
+    },
+    {
+      "trial": 2,
+      "capability": "get_balance",
+      "request_id": "b465f80dea4e41608b1304426ed225e3",
+      "at_utc": "2026-10-21T12:42:52.472105+00:00",
+      "request_ms": 53.42,
+      "http_status": 502,
+      "response": {
+        "error": {
+          "code": "SDK_REJECTED",
+          "message": "官方服务返回 7301：LocoState 不可用；模式/高度/相位保持未知，忽略返回中的占位零值。不会自动切换模式",
+          "sdk_code": 7301
+        },
+        "request_id": "248f827a850a4861859dde674b98ba12"
+      }
+    },
+    {
+      "trial": 2,
+      "capability": "get_swing_height",
+      "request_id": "b10adbe5e082411dade516ad60bac5eb",
+      "at_utc": "2026-10-21T12:42:52.525714+00:00",
+      "request_ms": 92.03,
+      "http_status": 502,
+      "response": {
+        "error": {
+          "code": "SDK_REJECTED",
+          "message": "官方服务返回 7301：LocoState 不可用；模式/高度/相位保持未知，忽略返回中的占位零值。不会自动切换模式",
+          "sdk_code": 7301
+        },
+        "request_id": "6c67ef307f2c471bb566f6c6a9ae341e"
+      }
+    },
+    {
+      "trial": 2,
+      "capability": "get_stand_height",
+      "request_id": "4c264904f1a845069904df61eec82da8",
+      "at_utc": "2026-10-21T12:42:52.617996+00:00",
+      "request_ms": 57.41,
+      "http_status": 502,
+      "response": {
+        "error": {
+          "code": "SDK_REJECTED",
+          "message": "官方服务返回 7301：LocoState 不可用；模式/高度/相位保持未知，忽略返回中的占位零值。不会自动切换模式",
+          "sdk_code": 7301
+        },
+        "request_id": "ec3600a27dbc49f4bf9500eb1f6b06c6"
+      }
+    },
+    {
+      "trial": 2,
+      "capability": "get_phase",
+      "request_id": "403a278433ba4d64bf188366da372c02",
+      "at_utc": "2026-10-21T12:42:52.675697+00:00",
+      "request_ms": 44.29,
+      "http_status": 502,
+      "response": {
+        "error": {
+          "code": "SDK_REJECTED",
+          "message": "官方服务返回 7301：LocoState 不可用；模式/高度/相位保持未知，忽略返回中的占位零值。不会自动切换模式",
+          "sdk_code": 7301
+        },
+        "request_id": "15a7634978d445a585412bc1b332969c"
+      }
+    },
+    {
+      "trial": 2,
+      "capability": "get_actions",
+      "request_id": "3ea9055dd7484d438b30f1f71e3de591",
+      "at_utc": "2026-10-21T12:42:52.720265+00:00",
+      "request_ms": 65.47,
+      "http_status": 200,
+      "response": {
+        "status": "accepted",
+        "data": [
+          [
+            {
+              "id": 99,
+              "name": "release_arm"
+            },
+            {
+              "fsm": [
+                500,
+                501
+              ],
+              "id": 1,
+              "name": "turn_back_wave"
+            },
+            {
+              "id": 11,
+              "name": "blow_kiss_with_both_hands"
+            },
+            {
+              "id": 12,
+              "name": "blow_kiss_with_left_hand"
+            },
+            {
+              "id": 13,
+              "name": "blow_kiss_with_right_hand"
+            },
+            {
+              "id": 15,
+              "name": "both_hands_up"
+            },
+            {
+              "id": 17,
+              "name": "clamp"
+            },
+            {
+              "id": 18,
+              "name": "high_five"
+            },
+            {
+              "id": 19,
+              "name": "hug"
+            },
+            {
+              "id": 22,
+              "name": "refuse"
+            },
+            {
+              "id": 23,
+              "name": "right_hand_up"
+            },
+            {
+              "id": 24,
+              "name": "ultraman_ray"
+            },
+            {
+              "id": 25,
+              "name": "wave_under_head"
+            },
+            {
+              "id": 26,
+              "name": "wave_above_head"
+            },
+            {
+              "id": 27,
+              "name": "shake_hand"
+            },
+            {
+              "id": 31,
+              "mode_machine": [
+                4
+              ],
+              "name": "extend_right_arm_forward"
+            },
+            {
+              "id": 32,
+              "mode_machine": [
+                4
+              ],
+              "name": "right_hand_on_mouth"
+            },
+            {
+              "id": 33,
+              "name": "right_hand_on_heart"
+            },
+            {
+              "id": 34,
+              "name": "both_hands_up_deviate_right"
+            },
+            {
+              "id": 35,
+              "mode_machine": [
+                4
+              ],
+              "name": "emphasize"
+            }
+          ],
+          [
+            {
+              "name": "Waist_Drum_Dance",
+              "time": 9.5
+            },
+            {
+              "name": "Scratch_head",
+              "time": 8.1
+            },
+            {
+              "name": "Spin_discs",
+              "time": 6.9
+            },
+            {
+              "name": "Throw_money",
+              "time": 8.1
+            }
+          ]
+        ],
+        "event_id": "5daefb896e134d7eb77c5889850952be",
+        "message": "已读取官方返回值"
+      }
+    },
+    {
+      "trial": 2,
+      "capability": "get_volume",
+      "request_id": "696e78ad38444827af20ace680c91926",
+      "at_utc": "2026-10-21T12:42:52.786025+00:00",
+      "request_ms": 53.8,
+      "http_status": 200,
+      "response": {
+        "status": "accepted",
+        "data": {
+          "volume": 41
+        },
+        "event_id": "ec617d342ba1462d8791929010215e95",
+        "message": "已读取官方返回值"
+      }
+    },
+    {
+      "trial": 2,
+      "capability": "get_services",
+      "request_id": "86aa2eacb6984b39b9b5cb097287066a",
+      "at_utc": "2026-10-21T12:42:52.840258+00:00",
+      "request_ms": 49.18,
+      "http_status": 200,
+      "response": {
+        "status": "accepted",
+        "data": [
+          {
+            "name": "ai_sport",
+            "status": 0,
+            "protect": 0
+          },
+          {
+            "name": "audio_player_service",
+            "status": 0,
+            "protect": 0
+          },
+          {
+            "name": "auto_test_arm",
+            "status": 1,
+            "protect": 0
+          },
+          {
+            "name": "auto_test_low",
+            "status": 1,
+            "protect": 0
+          },
+          {
+            "name": "bashrunner",
+            "status": 0,
+            "protect": 0
+          },
+          {
+            "name": "basic_service",
+            "status": 0,
+            "protect": 1
+          },
+          {
+            "name": "battery_guard",
+            "status": 0,
+            "protect": 0
+          },
+          {
+            "name": "chat_go",
+            "status": 0,
+            "protect": 0
+          },
+          {
+            "name": "dex3_service_l",
+            "status": 0,
+            "protect": 0
+          },
+          {
+            "name": "dex3_service_r",
+            "status": 0,
+            "protect": 0
+          },
+          {
+            "name": "emergency_stop",
+            "status": 0,
+            "protect": 0
+          },
+          {
+            "name": "g1_arm_example",
+            "status": 0,
+            "protect": 0
+          },
+          {
+            "name": "lidar_driver",
+            "status": 1,
+            "protect": 0
+          },
+          {
+            "name": "log_system",
+            "status": 0,
+            "protect": 0
+          },
+          {
+            "name": "motion_switcher",
+            "status": 0,
+            "protect": 0
+          },
+          {
+            "name": "net_switcher",
+            "status": 0,
+            "protect": 0
+          },
+          {
+            "name": "ota_box",
+            "status": 1,
+            "protect": 0
+          },
+          {
+            "name": "ota_pipe",
+            "status": 0,
+            "protect": 0
+          },
+          {
+            "name": "robot_state",
+            "status": 0,
+            "protect": 1
+          },
+          {
+            "name": "robot_type_service",
+            "status": 0,
+            "protect": 0
+          },
+          {
+            "name": "state_estimator",
+            "status": 0,
+            "protect": 0
+          },
+          {
+            "name": "unistore",
+            "status": 0,
+            "protect": 0
+          },
+          {
+            "name": "unitree_slam",
+            "status": 1,
+            "protect": 0
+          },
+          {
+            "name": "video_hub_pc4",
+            "status": 0,
+            "protect": 0
+          },
+          {
+            "name": "vui_service",
+            "status": 0,
+            "protect": 0
+          },
+          {
+            "name": "webrtc_bridge",
+            "status": 0,
+            "protect": 1
+          },
+          {
+            "name": "webrtc_multicast_responder",
+            "status": 0,
+            "protect": 0
+          },
+          {
+            "name": "webrtc_signal_server",
+            "status": 0,
+            "protect": 1
+          }
+        ],
+        "event_id": "64b010de27ce4d339104b650847e706d",
+        "message": "已读取官方返回值"
+      }
+    },
+    {
+      "trial": 2,
+      "capability": "get_versions",
+      "request_id": "84eea9d1908c4f44a5002d0f54dc4628",
+      "at_utc": "2026-10-21T12:42:52.889780+00:00",
+      "request_ms": 45.21,
+      "http_status": 502,
+      "response": {
+        "error": {
+          "code": "SDK_REJECTED",
+          "message": "官方服务返回 3203：不支持此 API；未取得有效值",
+          "sdk_code": 3203
+        },
+        "request_id": "00ad8c955faf4d6a8641e65b2c60e742"
+      }
+    },
+    {
+      "trial": 2,
+      "capability": "get_loco_api_version",
+      "request_id": "3978b8b4f8924c9b8f4f9cdd7b68e9eb",
+      "at_utc": "2026-10-21T12:42:52.935264+00:00",
+      "request_ms": 59.48,
+      "http_status": 200,
+      "response": {
+        "status": "accepted",
+        "data": {
+          "service": "sport",
+          "api_version": "1.0.0.0",
+          "firmware_version": null
+        },
+        "event_id": "e1107df1cd67474293cb22a3aea385fc",
+        "message": "已读取官方返回值"
+      }
+    },
+    {
+      "trial": 2,
+      "capability": "get_motion_api_version",
+      "request_id": "1e72a20a77994a6999bd733c507582f9",
+      "at_utc": "2026-10-21T12:42:52.994985+00:00",
+      "request_ms": 71.79,
+      "http_status": 200,
+      "response": {
+        "status": "accepted",
+        "data": {
+          "service": "motion_switcher",
+          "api_version": "1.0.0.1",
+          "firmware_version": null
+        },
+        "event_id": "cb75b4bea81d4490802e3358ba77f05e",
+        "message": "已读取官方返回值"
+      }
+    },
+    {
+      "trial": 2,
+      "capability": "get_state_api_version",
+      "request_id": "e155baad528e4509afaa2f8af4da93bd",
+      "at_utc": "2026-10-21T12:42:53.067006+00:00",
+      "request_ms": 60.86,
+      "http_status": 200,
+      "response": {
+        "status": "accepted",
+        "data": {
+          "service": "robot_state",
+          "api_version": "1.0.0.2",
+          "firmware_version": null
+        },
+        "event_id": "ed1311cf3f1a410c911d9cf0d0f8a762",
+        "message": "已读取官方返回值"
+      }
+    },
+    {
+      "trial": 3,
+      "capability": "get_fsm",
+      "request_id": "d7fa2b9143724593aba053beed3646af",
+      "at_utc": "2026-10-21T12:42:53.128091+00:00",
+      "request_ms": 34.44,
+      "http_status": 200,
+      "response": {
+        "status": "accepted",
+        "data": 0,
+        "event_id": "db4dd09888af49c2a75327d4c70f7547",
+        "message": "已读取官方返回值"
+      }
+    },
+    {
+      "trial": 3,
+      "capability": "get_fsm_mode",
+      "request_id": "e4087edfba6140c1aac0e807389e3c6e",
+      "at_utc": "2026-10-21T12:42:53.162769+00:00",
+      "request_ms": 43.43,
+      "http_status": 200,
+      "response": {
+        "status": "accepted",
+        "data": 0,
+        "event_id": "8c914169bffd436a8f99182b7420009f",
+        "message": "已读取官方返回值"
+      }
+    },
+    {
+      "trial": 3,
+      "capability": "get_balance",
+      "request_id": "8c47a8965c484de68014c78c79440559",
+      "at_utc": "2026-10-21T12:42:53.206447+00:00",
+      "request_ms": 71.16,
+      "http_status": 502,
+      "response": {
+        "error": {
+          "code": "SDK_REJECTED",
+          "message": "官方服务返回 7301：LocoState 不可用；模式/高度/相位保持未知，忽略返回中的占位零值。不会自动切换模式",
+          "sdk_code": 7301
+        },
+        "request_id": "97c234742c7949b2a5cd66bcf61b08e9"
+      }
+    },
+    {
+      "trial": 3,
+      "capability": "get_swing_height",
+      "request_id": "b11e719794fa4fbba822b1ed361e5454",
+      "at_utc": "2026-10-21T12:42:53.277877+00:00",
+      "request_ms": 47.54,
+      "http_status": 502,
+      "response": {
+        "error": {
+          "code": "SDK_REJECTED",
+          "message": "官方服务返回 7301：LocoState 不可用；模式/高度/相位保持未知，忽略返回中的占位零值。不会自动切换模式",
+          "sdk_code": 7301
+        },
+        "request_id": "91c22e1997bd4715b124f8675ecb55bb"
+      }
+    },
+    {
+      "trial": 3,
+      "capability": "get_stand_height",
+      "request_id": "ea5f3fde453a41009c77ea7af3f9b406",
+      "at_utc": "2026-10-21T12:42:53.325687+00:00",
+      "request_ms": 43.33,
+      "http_status": 502,
+      "response": {
+        "error": {
+          "code": "SDK_REJECTED",
+          "message": "官方服务返回 7301：LocoState 不可用；模式/高度/相位保持未知，忽略返回中的占位零值。不会自动切换模式",
+          "sdk_code": 7301
+        },
+        "request_id": "27cda5f5961e49d8b1fb66b1a457cd9c"
+      }
+    },
+    {
+      "trial": 3,
+      "capability": "get_phase",
+      "request_id": "0cd17883b05241e399b729b3b18473ac",
+      "at_utc": "2026-10-21T12:42:53.369265+00:00",
+      "request_ms": 56.23,
+      "http_status": 502,
+      "response": {
+        "error": {
+          "code": "SDK_REJECTED",
+          "message": "官方服务返回 7301：LocoState 不可用；模式/高度/相位保持未知，忽略返回中的占位零值。不会自动切换模式",
+          "sdk_code": 7301
+        },
+        "request_id": "5c67d27d85dd4a79ba123cedd2f8e845"
+      }
+    },
+    {
+      "trial": 3,
+      "capability": "get_actions",
+      "request_id": "f053ee90a82847fc86a36d6bb88ed9cb",
+      "at_utc": "2026-10-21T12:42:53.425725+00:00",
+      "request_ms": 66.86,
+      "http_status": 200,
+      "response": {
+        "status": "accepted",
+        "data": [
+          [
+            {
+              "id": 99,
+              "name": "release_arm"
+            },
+            {
+              "fsm": [
+                500,
+                501
+              ],
+              "id": 1,
+              "name": "turn_back_wave"
+            },
+            {
+              "id": 11,
+              "name": "blow_kiss_with_both_hands"
+            },
+            {
+              "id": 12,
+              "name": "blow_kiss_with_left_hand"
+            },
+            {
+              "id": 13,
+              "name": "blow_kiss_with_right_hand"
+            },
+            {
+              "id": 15,
+              "name": "both_hands_up"
+            },
+            {
+              "id": 17,
+              "name": "clamp"
+            },
+            {
+              "id": 18,
+              "name": "high_five"
+            },
+            {
+              "id": 19,
+              "name": "hug"
+            },
+            {
+              "id": 22,
+              "name": "refuse"
+            },
+            {
+              "id": 23,
+              "name": "right_hand_up"
+            },
+            {
+              "id": 24,
+              "name": "ultraman_ray"
+            },
+            {
+              "id": 25,
+              "name": "wave_under_head"
+            },
+            {
+              "id": 26,
+              "name": "wave_above_head"
+            },
+            {
+              "id": 27,
+              "name": "shake_hand"
+            },
+            {
+              "id": 31,
+              "mode_machine": [
+                4
+              ],
+              "name": "extend_right_arm_forward"
+            },
+            {
+              "id": 32,
+              "mode_machine": [
+                4
+              ],
+              "name": "right_hand_on_mouth"
+            },
+            {
+              "id": 33,
+              "name": "right_hand_on_heart"
+            },
+            {
+              "id": 34,
+              "name": "both_hands_up_deviate_right"
+            },
+            {
+              "id": 35,
+              "mode_machine": [
+                4
+              ],
+              "name": "emphasize"
+            }
+          ],
+          [
+            {
+              "name": "Waist_Drum_Dance",
+              "time": 9.5
+            },
+            {
+              "name": "Scratch_head",
+              "time": 8.1
+            },
+            {
+              "name": "Spin_discs",
+              "time": 6.9
+            },
+            {
+              "name": "Throw_money",
+              "time": 8.1
+            }
+          ]
+        ],
+        "event_id": "8f1a4db73f67418d8c3f6913e7034b98",
+        "message": "已读取官方返回值"
+      }
+    },
+    {
+      "trial": 3,
+      "capability": "get_volume",
+      "request_id": "5ea382c700aa42b7b4251532544d08ec",
+      "at_utc": "2026-10-21T12:42:53.492931+00:00",
+      "request_ms": 65.97,
+      "http_status": 200,
+      "response": {
+        "status": "accepted",
+        "data": {
+          "volume": 41
+        },
+        "event_id": "c0fcf92cc9a54cdcb85ff02da2cc68d6",
+        "message": "已读取官方返回值"
+      }
+    },
+    {
+      "trial": 3,
+      "capability": "get_services",
+      "request_id": "500534d987254554ae7f84e0451ad5b8",
+      "at_utc": "2026-10-21T12:42:53.559154+00:00",
+      "request_ms": 62.44,
+      "http_status": 200,
+      "response": {
+        "status": "accepted",
+        "data": [
+          {
+            "name": "ai_sport",
+            "status": 0,
+            "protect": 0
+          },
+          {
+            "name": "audio_player_service",
+            "status": 0,
+            "protect": 0
+          },
+          {
+            "name": "auto_test_arm",
+            "status": 1,
+            "protect": 0
+          },
+          {
+            "name": "auto_test_low",
+            "status": 1,
+            "protect": 0
+          },
+          {
+            "name": "bashrunner",
+            "status": 0,
+            "protect": 0
+          },
+          {
+            "name": "basic_service",
+            "status": 0,
+            "protect": 1
+          },
+          {
+            "name": "battery_guard",
+            "status": 0,
+            "protect": 0
+          },
+          {
+            "name": "chat_go",
+            "status": 0,
+            "protect": 0
+          },
+          {
+            "name": "dex3_service_l",
+            "status": 0,
+            "protect": 0
+          },
+          {
+            "name": "dex3_service_r",
+            "status": 0,
+            "protect": 0
+          },
+          {
+            "name": "emergency_stop",
+            "status": 0,
+            "protect": 0
+          },
+          {
+            "name": "g1_arm_example",
+            "status": 0,
+            "protect": 0
+          },
+          {
+            "name": "lidar_driver",
+            "status": 1,
+            "protect": 0
+          },
+          {
+            "name": "log_system",
+            "status": 0,
+            "protect": 0
+          },
+          {
+            "name": "motion_switcher",
+            "status": 0,
+            "protect": 0
+          },
+          {
+            "name": "net_switcher",
+            "status": 0,
+            "protect": 0
+          },
+          {
+            "name": "ota_box",
+            "status": 1,
+            "protect": 0
+          },
+          {
+            "name": "ota_pipe",
+            "status": 0,
+            "protect": 0
+          },
+          {
+            "name": "robot_state",
+            "status": 0,
+            "protect": 1
+          },
+          {
+            "name": "robot_type_service",
+            "status": 0,
+            "protect": 0
+          },
+          {
+            "name": "state_estimator",
+            "status": 0,
+            "protect": 0
+          },
+          {
+            "name": "unistore",
+            "status": 0,
+            "protect": 0
+          },
+          {
+            "name": "unitree_slam",
+            "status": 1,
+            "protect": 0
+          },
+          {
+            "name": "video_hub_pc4",
+            "status": 0,
+            "protect": 0
+          },
+          {
+            "name": "vui_service",
+            "status": 0,
+            "protect": 0
+          },
+          {
+            "name": "webrtc_bridge",
+            "status": 0,
+            "protect": 1
+          },
+          {
+            "name": "webrtc_multicast_responder",
+            "status": 0,
+            "protect": 0
+          },
+          {
+            "name": "webrtc_signal_server",
+            "status": 0,
+            "protect": 1
+          }
+        ],
+        "event_id": "9b86635beaaf487da1e38c3c60e6b75e",
+        "message": "已读取官方返回值"
+      }
+    },
+    {
+      "trial": 3,
+      "capability": "get_versions",
+      "request_id": "026bc8b3dd6f477c9d8ef79804f65800",
+      "at_utc": "2026-10-21T12:42:53.621830+00:00",
+      "request_ms": 57.68,
+      "http_status": 502,
+      "response": {
+        "error": {
+          "code": "SDK_REJECTED",
+          "message": "官方服务返回 3203：不支持此 API；未取得有效值",
+          "sdk_code": 3203
+        },
+        "request_id": "39b44915ede34f87b85d76c20be1296c"
+      }
+    },
+    {
+      "trial": 3,
+      "capability": "get_loco_api_version",
+      "request_id": "4dbffd02762d41909f4fee9193e7dff3",
+      "at_utc": "2026-10-21T12:42:53.679761+00:00",
+      "request_ms": 44.58,
+      "http_status": 200,
+      "response": {
+        "status": "accepted",
+        "data": {
+          "service": "sport",
+          "api_version": "1.0.0.0",
+          "firmware_version": null
+        },
+        "event_id": "af21cab4ad6b43a8bbb4d296c0cd93f6",
+        "message": "已读取官方返回值"
+      }
+    },
+    {
+      "trial": 3,
+      "capability": "get_motion_api_version",
+      "request_id": "d45976fb56ba472387b96cd8f62a2bed",
+      "at_utc": "2026-10-21T12:42:53.724621+00:00",
+      "request_ms": 54.32,
+      "http_status": 200,
+      "response": {
+        "status": "accepted",
+        "data": {
+          "service": "motion_switcher",
+          "api_version": "1.0.0.1",
+          "firmware_version": null
+        },
+        "event_id": "62e146adfbb74cda936ec90ac74c4c1d",
+        "message": "已读取官方返回值"
+      }
+    },
+    {
+      "trial": 3,
+      "capability": "get_state_api_version",
+      "request_id": "9353b802140f48fb99a36da2b37e24fa",
+      "at_utc": "2026-10-21T12:42:53.779179+00:00",
+      "request_ms": 48.1,
+      "http_status": 200,
+      "response": {
+        "status": "accepted",
+        "data": {
+          "service": "robot_state",
+          "api_version": "1.0.0.2",
+          "firmware_version": null
+        },
+        "event_id": "c3fafbf69f5844c7a6e9c40e1515ce39",
+        "message": "已读取官方返回值"
+      }
+    }
+  ],
+  "telemetry_summary": {
+    "fsm": 0,
+    "joints": 23,
+    "mode_readback": null,
+    "camera": {
+      "backend": "unitree",
+      "status": "live",
+      "error": null,
+      "diagnostics": {
+        "transport": "official_api_1001_isolated_polled",
+        "window_s": 17.9,
+        "attempts": 88,
+        "successes": 88,
+        "timeouts": 0,
+        "errors": 0,
+        "total_attempts": 88,
+        "total_successes": 88,
+        "total_timeouts": 0
+      },
+      "source": "unitree-videohub-b1731075ebc8",
+      "sequence": 88,
+      "age_ms": 90,
+      "request_started_at": 1792586573.761158,
+      "received_at": 1792586573.7956405,
+      "width": 960,
+      "height": 540,
+      "source_width": 1920,
+      "source_height": 1080,
+      "request_ms": 34,
+      "timestamp_basis": "request_started_at",
+      "sensor_timestamp": null
+    }
+  },
+  "command_history": [
+    {
+      "request_id": "9353b802140f48fb99a36da2b37e24fa",
+      "capability": "get_state_api_version",
+      "label": "读取状态服务协议版本",
+      "at": 1792586573.8242104,
+      "updated_at": 1792586573.8242104,
+      "mode": "robot",
+      "status": "read_result",
+      "message": "已读取官方返回值",
+      "data": {
+        "service": "robot_state",
+        "api_version": "1.0.0.2",
+        "firmware_version": null
+      }
+    },
+    {
+      "request_id": "d45976fb56ba472387b96cd8f62a2bed",
+      "capability": "get_motion_api_version",
+      "label": "读取模式服务协议版本",
+      "at": 1792586573.7762723,
+      "updated_at": 1792586573.7762723,
+      "mode": "robot",
+      "status": "read_result",
+      "message": "已读取官方返回值",
+      "data": {
+        "service": "motion_switcher",
+        "api_version": "1.0.0.1",
+        "firmware_version": null
+      }
+    },
+    {
+      "request_id": "4dbffd02762d41909f4fee9193e7dff3",
+      "capability": "get_loco_api_version",
+      "label": "读取运动服务协议版本",
+      "at": 1792586573.7210236,
+      "updated_at": 1792586573.7210238,
+      "mode": "robot",
+      "status": "read_result",
+      "message": "已读取官方返回值",
+      "data": {
+        "service": "sport",
+        "api_version": "1.0.0.0",
+        "firmware_version": null
+      }
+    },
+    {
+      "request_id": "026bc8b3dd6f477c9d8ef79804f65800",
+      "capability": "get_versions",
+      "label": "读取官方包版本",
+      "at": 1792586573.6758034,
+      "updated_at": 1792586573.6758037,
+      "mode": "robot",
+      "status": "read_unavailable",
+      "message": "官方服务返回 3203：不支持此 API；未取得有效值",
+      "error_code": "SDK_REJECTED",
+      "sdk_code": 3203
+    },
+    {
+      "request_id": "500534d987254554ae7f84e0451ad5b8",
+      "capability": "get_services",
+      "label": "读取官方服务清单",
+      "at": 1792586573.615549,
+      "updated_at": 1792586573.6155493,
+      "mode": "robot",
+      "status": "read_result",
+      "message": "已读取官方返回值",
+      "data": [
+        {
+          "name": "ai_sport",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "audio_player_service",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "auto_test_arm",
+          "status": 1,
+          "protect": 0
+        },
+        {
+          "name": "auto_test_low",
+          "status": 1,
+          "protect": 0
+        },
+        {
+          "name": "bashrunner",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "basic_service",
+          "status": 0,
+          "protect": 1
+        },
+        {
+          "name": "battery_guard",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "chat_go",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "dex3_service_l",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "dex3_service_r",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "emergency_stop",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "g1_arm_example",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "lidar_driver",
+          "status": 1,
+          "protect": 0
+        },
+        {
+          "name": "log_system",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "motion_switcher",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "net_switcher",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "ota_box",
+          "status": 1,
+          "protect": 0
+        },
+        {
+          "name": "ota_pipe",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "robot_state",
+          "status": 0,
+          "protect": 1
+        },
+        {
+          "name": "robot_type_service",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "state_estimator",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "unistore",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "unitree_slam",
+          "status": 1,
+          "protect": 0
+        },
+        {
+          "name": "video_hub_pc4",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "vui_service",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "webrtc_bridge",
+          "status": 0,
+          "protect": 1
+        },
+        {
+          "name": "webrtc_multicast_responder",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "webrtc_signal_server",
+          "status": 0,
+          "protect": 1
+        }
+      ]
+    },
+    {
+      "request_id": "5ea382c700aa42b7b4251532544d08ec",
+      "capability": "get_volume",
+      "label": "读取音量",
+      "at": 1792586573.5524507,
+      "updated_at": 1792586573.552451,
+      "mode": "robot",
+      "status": "read_result",
+      "message": "已读取官方返回值",
+      "data": {
+        "volume": 41
+      }
+    },
+    {
+      "request_id": "f053ee90a82847fc86a36d6bb88ed9cb",
+      "capability": "get_actions",
+      "label": "查询固件动作清单",
+      "at": 1792586573.4651875,
+      "updated_at": 1792586573.4651878,
+      "mode": "robot",
+      "status": "read_result",
+      "message": "已读取官方返回值",
+      "data": [
+        [
+          {
+            "id": 99,
+            "name": "release_arm"
+          },
+          {
+            "fsm": [
+              500,
+              501
+            ],
+            "id": 1,
+            "name": "turn_back_wave"
+          },
+          {
+            "id": 11,
+            "name": "blow_kiss_with_both_hands"
+          },
+          {
+            "id": 12,
+            "name": "blow_kiss_with_left_hand"
+          },
+          {
+            "id": 13,
+            "name": "blow_kiss_with_right_hand"
+          },
+          {
+            "id": 15,
+            "name": "both_hands_up"
+          },
+          {
+            "id": 17,
+            "name": "clamp"
+          },
+          {
+            "id": 18,
+            "name": "high_five"
+          },
+          {
+            "id": 19,
+            "name": "hug"
+          },
+          {
+            "id": 22,
+            "name": "refuse"
+          },
+          {
+            "id": 23,
+            "name": "right_hand_up"
+          },
+          {
+            "id": 24,
+            "name": "ultraman_ray"
+          },
+          {
+            "id": 25,
+            "name": "wave_under_head"
+          },
+          {
+            "id": 26,
+            "name": "wave_above_head"
+          },
+          {
+            "id": 27,
+            "name": "shake_hand"
+          },
+          {
+            "id": 31,
+            "mode_machine": [
+              4
+            ],
+            "name": "extend_right_arm_forward"
+          },
+          {
+            "id": 32,
+            "mode_machine": [
+              4
+            ],
+            "name": "right_hand_on_mouth"
+          },
+          {
+            "id": 33,
+            "name": "right_hand_on_heart"
+          },
+          {
+            "id": 34,
+            "name": "both_hands_up_deviate_right"
+          },
+          {
+            "id": 35,
+            "mode_machine": [
+              4
+            ],
+            "name": "emphasize"
+          }
+        ],
+        [
+          {
+            "name": "Waist_Drum_Dance",
+            "time": 9.5
+          },
+          {
+            "name": "Scratch_head",
+            "time": 8.1
+          },
+          {
+            "name": "Spin_discs",
+            "time": 6.9
+          },
+          {
+            "name": "Throw_money",
+            "time": 8.1
+          }
+        ]
+      ]
+    },
+    {
+      "request_id": "0cd17883b05241e399b729b3b18473ac",
+      "capability": "get_phase",
+      "label": "读取步态相位",
+      "at": 1792586573.4213078,
+      "updated_at": 1792586573.4213078,
+      "mode": "robot",
+      "status": "read_unavailable",
+      "message": "官方服务返回 7301：LocoState 不可用；模式/高度/相位保持未知，忽略返回中的占位零值。不会自动切换模式",
+      "error_code": "SDK_REJECTED",
+      "sdk_code": 7301
+    },
+    {
+      "request_id": "ea5f3fde453a41009c77ea7af3f9b406",
+      "capability": "get_stand_height",
+      "label": "读取站立高度",
+      "at": 1792586573.3642735,
+      "updated_at": 1792586573.364274,
+      "mode": "robot",
+      "status": "read_unavailable",
+      "message": "官方服务返回 7301：LocoState 不可用；模式/高度/相位保持未知，忽略返回中的占位零值。不会自动切换模式",
+      "error_code": "SDK_REJECTED",
+      "sdk_code": 7301
+    },
+    {
+      "request_id": "b11e719794fa4fbba822b1ed361e5454",
+      "capability": "get_swing_height",
+      "label": "读取摆腿高度",
+      "at": 1792586573.321252,
+      "updated_at": 1792586573.3212523,
+      "mode": "robot",
+      "status": "read_unavailable",
+      "message": "官方服务返回 7301：LocoState 不可用；模式/高度/相位保持未知，忽略返回中的占位零值。不会自动切换模式",
+      "error_code": "SDK_REJECTED",
+      "sdk_code": 7301
+    },
+    {
+      "request_id": "8c47a8965c484de68014c78c79440559",
+      "capability": "get_balance",
+      "label": "读取平衡模式",
+      "at": 1792586573.2721815,
+      "updated_at": 1792586573.2721817,
+      "mode": "robot",
+      "status": "read_unavailable",
+      "message": "官方服务返回 7301：LocoState 不可用；模式/高度/相位保持未知，忽略返回中的占位零值。不会自动切换模式",
+      "error_code": "SDK_REJECTED",
+      "sdk_code": 7301
+    },
+    {
+      "request_id": "e4087edfba6140c1aac0e807389e3c6e",
+      "capability": "get_fsm_mode",
+      "label": "读取控制模式",
+      "at": 1792586573.2014508,
+      "updated_at": 1792586573.201451,
+      "mode": "robot",
+      "status": "read_result",
+      "message": "已读取官方返回值",
+      "data": 0
+    },
+    {
+      "request_id": "d7fa2b9143724593aba053beed3646af",
+      "capability": "get_fsm",
+      "label": "读取状态机",
+      "at": 1792586573.158773,
+      "updated_at": 1792586573.158773,
+      "mode": "robot",
+      "status": "read_result",
+      "message": "已读取官方返回值",
+      "data": 0
+    },
+    {
+      "request_id": "e155baad528e4509afaa2f8af4da93bd",
+      "capability": "get_state_api_version",
+      "label": "读取状态服务协议版本",
+      "at": 1792586573.1199148,
+      "updated_at": 1792586573.119915,
+      "mode": "robot",
+      "status": "read_result",
+      "message": "已读取官方返回值",
+      "data": {
+        "service": "robot_state",
+        "api_version": "1.0.0.2",
+        "firmware_version": null
+      }
+    },
+    {
+      "request_id": "1e72a20a77994a6999bd733c507582f9",
+      "capability": "get_motion_api_version",
+      "label": "读取模式服务协议版本",
+      "at": 1792586573.0589845,
+      "updated_at": 1792586573.0589848,
+      "mode": "robot",
+      "status": "read_result",
+      "message": "已读取官方返回值",
+      "data": {
+        "service": "motion_switcher",
+        "api_version": "1.0.0.1",
+        "firmware_version": null
+      }
+    },
+    {
+      "request_id": "3978b8b4f8924c9b8f4f9cdd7b68e9eb",
+      "capability": "get_loco_api_version",
+      "label": "读取运动服务协议版本",
+      "at": 1792586572.9890473,
+      "updated_at": 1792586572.9890475,
+      "mode": "robot",
+      "status": "read_result",
+      "message": "已读取官方返回值",
+      "data": {
+        "service": "sport",
+        "api_version": "1.0.0.0",
+        "firmware_version": null
+      }
+    },
+    {
+      "request_id": "84eea9d1908c4f44a5002d0f54dc4628",
+      "capability": "get_versions",
+      "label": "读取官方包版本",
+      "at": 1792586572.9286747,
+      "updated_at": 1792586572.9286754,
+      "mode": "robot",
+      "status": "read_unavailable",
+      "message": "官方服务返回 3203：不支持此 API；未取得有效值",
+      "error_code": "SDK_REJECTED",
+      "sdk_code": 3203
+    },
+    {
+      "request_id": "86aa2eacb6984b39b9b5cb097287066a",
+      "capability": "get_services",
+      "label": "读取官方服务清单",
+      "at": 1792586572.882936,
+      "updated_at": 1792586572.882936,
+      "mode": "robot",
+      "status": "read_result",
+      "message": "已读取官方返回值",
+      "data": [
+        {
+          "name": "ai_sport",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "audio_player_service",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "auto_test_arm",
+          "status": 1,
+          "protect": 0
+        },
+        {
+          "name": "auto_test_low",
+          "status": 1,
+          "protect": 0
+        },
+        {
+          "name": "bashrunner",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "basic_service",
+          "status": 0,
+          "protect": 1
+        },
+        {
+          "name": "battery_guard",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "chat_go",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "dex3_service_l",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "dex3_service_r",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "emergency_stop",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "g1_arm_example",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "lidar_driver",
+          "status": 1,
+          "protect": 0
+        },
+        {
+          "name": "log_system",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "motion_switcher",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "net_switcher",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "ota_box",
+          "status": 1,
+          "protect": 0
+        },
+        {
+          "name": "ota_pipe",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "robot_state",
+          "status": 0,
+          "protect": 1
+        },
+        {
+          "name": "robot_type_service",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "state_estimator",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "unistore",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "unitree_slam",
+          "status": 1,
+          "protect": 0
+        },
+        {
+          "name": "video_hub_pc4",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "vui_service",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "webrtc_bridge",
+          "status": 0,
+          "protect": 1
+        },
+        {
+          "name": "webrtc_multicast_responder",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "webrtc_signal_server",
+          "status": 0,
+          "protect": 1
+        }
+      ]
+    },
+    {
+      "request_id": "696e78ad38444827af20ace680c91926",
+      "capability": "get_volume",
+      "label": "读取音量",
+      "at": 1792586572.8311877,
+      "updated_at": 1792586572.8311877,
+      "mode": "robot",
+      "status": "read_result",
+      "message": "已读取官方返回值",
+      "data": {
+        "volume": 41
+      }
+    },
+    {
+      "request_id": "3ea9055dd7484d438b30f1f71e3de591",
+      "capability": "get_actions",
+      "label": "查询固件动作清单",
+      "at": 1792586572.779636,
+      "updated_at": 1792586572.7796361,
+      "mode": "robot",
+      "status": "read_result",
+      "message": "已读取官方返回值",
+      "data": [
+        [
+          {
+            "id": 99,
+            "name": "release_arm"
+          },
+          {
+            "fsm": [
+              500,
+              501
+            ],
+            "id": 1,
+            "name": "turn_back_wave"
+          },
+          {
+            "id": 11,
+            "name": "blow_kiss_with_both_hands"
+          },
+          {
+            "id": 12,
+            "name": "blow_kiss_with_left_hand"
+          },
+          {
+            "id": 13,
+            "name": "blow_kiss_with_right_hand"
+          },
+          {
+            "id": 15,
+            "name": "both_hands_up"
+          },
+          {
+            "id": 17,
+            "name": "clamp"
+          },
+          {
+            "id": 18,
+            "name": "high_five"
+          },
+          {
+            "id": 19,
+            "name": "hug"
+          },
+          {
+            "id": 22,
+            "name": "refuse"
+          },
+          {
+            "id": 23,
+            "name": "right_hand_up"
+          },
+          {
+            "id": 24,
+            "name": "ultraman_ray"
+          },
+          {
+            "id": 25,
+            "name": "wave_under_head"
+          },
+          {
+            "id": 26,
+            "name": "wave_above_head"
+          },
+          {
+            "id": 27,
+            "name": "shake_hand"
+          },
+          {
+            "id": 31,
+            "mode_machine": [
+              4
+            ],
+            "name": "extend_right_arm_forward"
+          },
+          {
+            "id": 32,
+            "mode_machine": [
+              4
+            ],
+            "name": "right_hand_on_mouth"
+          },
+          {
+            "id": 33,
+            "name": "right_hand_on_heart"
+          },
+          {
+            "id": 34,
+            "name": "both_hands_up_deviate_right"
+          },
+          {
+            "id": 35,
+            "mode_machine": [
+              4
+            ],
+            "name": "emphasize"
+          }
+        ],
+        [
+          {
+            "name": "Waist_Drum_Dance",
+            "time": 9.5
+          },
+          {
+            "name": "Scratch_head",
+            "time": 8.1
+          },
+          {
+            "name": "Spin_discs",
+            "time": 6.9
+          },
+          {
+            "name": "Throw_money",
+            "time": 8.1
+          }
+        ]
+      ]
+    },
+    {
+      "request_id": "403a278433ba4d64bf188366da372c02",
+      "capability": "get_phase",
+      "label": "读取步态相位",
+      "at": 1792586572.7147608,
+      "updated_at": 1792586572.714761,
+      "mode": "robot",
+      "status": "read_unavailable",
+      "message": "官方服务返回 7301：LocoState 不可用；模式/高度/相位保持未知，忽略返回中的占位零值。不会自动切换模式",
+      "error_code": "SDK_REJECTED",
+      "sdk_code": 7301
+    },
+    {
+      "request_id": "4c264904f1a845069904df61eec82da8",
+      "capability": "get_stand_height",
+      "label": "读取站立高度",
+      "at": 1792586572.6693907,
+      "updated_at": 1792586572.669391,
+      "mode": "robot",
+      "status": "read_unavailable",
+      "message": "官方服务返回 7301：LocoState 不可用；模式/高度/相位保持未知，忽略返回中的占位零值。不会自动切换模式",
+      "error_code": "SDK_REJECTED",
+      "sdk_code": 7301
+    },
+    {
+      "request_id": "b10adbe5e082411dade516ad60bac5eb",
+      "capability": "get_swing_height",
+      "label": "读取摆腿高度",
+      "at": 1792586572.6120203,
+      "updated_at": 1792586572.6120205,
+      "mode": "robot",
+      "status": "read_unavailable",
+      "message": "官方服务返回 7301：LocoState 不可用；模式/高度/相位保持未知，忽略返回中的占位零值。不会自动切换模式",
+      "error_code": "SDK_REJECTED",
+      "sdk_code": 7301
+    },
+    {
+      "request_id": "b465f80dea4e41608b1304426ed225e3",
+      "capability": "get_balance",
+      "label": "读取平衡模式",
+      "at": 1792586572.5181682,
+      "updated_at": 1792586572.5181687,
+      "mode": "robot",
+      "status": "read_unavailable",
+      "message": "官方服务返回 7301：LocoState 不可用；模式/高度/相位保持未知，忽略返回中的占位零值。不会自动切换模式",
+      "error_code": "SDK_REJECTED",
+      "sdk_code": 7301
+    },
+    {
+      "request_id": "6c4a8025e1e544d198bd16695d52f796",
+      "capability": "get_fsm_mode",
+      "label": "读取控制模式",
+      "at": 1792586572.4680912,
+      "updated_at": 1792586572.4680915,
+      "mode": "robot",
+      "status": "read_result",
+      "message": "已读取官方返回值",
+      "data": 0
+    },
+    {
+      "request_id": "027ec1f4323d432e9fb6552f86814bd9",
+      "capability": "get_fsm",
+      "label": "读取状态机",
+      "at": 1792586572.4421096,
+      "updated_at": 1792586572.44211,
+      "mode": "robot",
+      "status": "read_result",
+      "message": "已读取官方返回值",
+      "data": 0
+    },
+    {
+      "request_id": "bf87aa2ea4bc451cbbf688b02429e989",
+      "capability": "get_state_api_version",
+      "label": "读取状态服务协议版本",
+      "at": 1792586572.412045,
+      "updated_at": 1792586572.412045,
+      "mode": "robot",
+      "status": "read_result",
+      "message": "已读取官方返回值",
+      "data": {
+        "service": "robot_state",
+        "api_version": "1.0.0.2",
+        "firmware_version": null
+      }
+    },
+    {
+      "request_id": "dbf869a04ffe43aeb9a379f4e2e53de8",
+      "capability": "get_motion_api_version",
+      "label": "读取模式服务协议版本",
+      "at": 1792586572.3313677,
+      "updated_at": 1792586572.331368,
+      "mode": "robot",
+      "status": "read_result",
+      "message": "已读取官方返回值",
+      "data": {
+        "service": "motion_switcher",
+        "api_version": "1.0.0.1",
+        "firmware_version": null
+      }
+    },
+    {
+      "request_id": "9323ddb84a7a46de8500709ac8965912",
+      "capability": "get_loco_api_version",
+      "label": "读取运动服务协议版本",
+      "at": 1792586572.2685916,
+      "updated_at": 1792586572.268592,
+      "mode": "robot",
+      "status": "read_result",
+      "message": "已读取官方返回值",
+      "data": {
+        "service": "sport",
+        "api_version": "1.0.0.0",
+        "firmware_version": null
+      }
+    },
+    {
+      "request_id": "56420a9b475d40ec8bbde25e495ae534",
+      "capability": "get_versions",
+      "label": "读取官方包版本",
+      "at": 1792586572.226873,
+      "updated_at": 1792586572.2268732,
+      "mode": "robot",
+      "status": "read_unavailable",
+      "message": "官方服务返回 3203：不支持此 API；未取得有效值",
+      "error_code": "SDK_REJECTED",
+      "sdk_code": 3203
+    },
+    {
+      "request_id": "a1985fb1fa3643108018047526669462",
+      "capability": "get_services",
+      "label": "读取官方服务清单",
+      "at": 1792586572.1865053,
+      "updated_at": 1792586572.1865056,
+      "mode": "robot",
+      "status": "read_result",
+      "message": "已读取官方返回值",
+      "data": [
+        {
+          "name": "ai_sport",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "audio_player_service",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "auto_test_arm",
+          "status": 1,
+          "protect": 0
+        },
+        {
+          "name": "auto_test_low",
+          "status": 1,
+          "protect": 0
+        },
+        {
+          "name": "bashrunner",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "basic_service",
+          "status": 0,
+          "protect": 1
+        },
+        {
+          "name": "battery_guard",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "chat_go",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "dex3_service_l",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "dex3_service_r",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "emergency_stop",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "g1_arm_example",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "lidar_driver",
+          "status": 1,
+          "protect": 0
+        },
+        {
+          "name": "log_system",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "motion_switcher",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "net_switcher",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "ota_box",
+          "status": 1,
+          "protect": 0
+        },
+        {
+          "name": "ota_pipe",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "robot_state",
+          "status": 0,
+          "protect": 1
+        },
+        {
+          "name": "robot_type_service",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "state_estimator",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "unistore",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "unitree_slam",
+          "status": 1,
+          "protect": 0
+        },
+        {
+          "name": "video_hub_pc4",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "vui_service",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "webrtc_bridge",
+          "status": 0,
+          "protect": 1
+        },
+        {
+          "name": "webrtc_multicast_responder",
+          "status": 0,
+          "protect": 0
+        },
+        {
+          "name": "webrtc_signal_server",
+          "status": 0,
+          "protect": 1
+        }
+      ]
+    },
+    {
+      "request_id": "2bcaa3a4e99b4baeb00f94e2ed1ec5d5",
+      "capability": "get_volume",
+      "label": "读取音量",
+      "at": 1792586572.119622,
+      "updated_at": 1792586572.1196225,
+      "mode": "robot",
+      "status": "read_result",
+      "message": "已读取官方返回值",
+      "data": {
+        "volume": 41
+      }
+    },
+    {
+      "request_id": "1fa926a905d143408ae617a1251c2709",
+      "capability": "get_actions",
+      "label": "查询固件动作清单",
+      "at": 1792586572.0816038,
+      "updated_at": 1792586572.081604,
+      "mode": "robot",
+      "status": "read_result",
+      "message": "已读取官方返回值",
+      "data": [
+        [
+          {
+            "id": 99,
+            "name": "release_arm"
+          },
+          {
+            "fsm": [
+              500,
+              501
+            ],
+            "id": 1,
+            "name": "turn_back_wave"
+          },
+          {
+            "id": 11,
+            "name": "blow_kiss_with_both_hands"
+          },
+          {
+            "id": 12,
+            "name": "blow_kiss_with_left_hand"
+          },
+          {
+            "id": 13,
+            "name": "blow_kiss_with_right_hand"
+          },
+          {
+            "id": 15,
+            "name": "both_hands_up"
+          },
+          {
+            "id": 17,
+            "name": "clamp"
+          },
+          {
+            "id": 18,
+            "name": "high_five"
+          },
+          {
+            "id": 19,
+            "name": "hug"
+          },
+          {
+            "id": 22,
+            "name": "refuse"
+          },
+          {
+            "id": 23,
+            "name": "right_hand_up"
+          },
+          {
+            "id": 24,
+            "name": "ultraman_ray"
+          },
+          {
+            "id": 25,
+            "name": "wave_under_head"
+          },
+          {
+            "id": 26,
+            "name": "wave_above_head"
+          },
+          {
+            "id": 27,
+            "name": "shake_hand"
+          },
+          {
+            "id": 31,
+            "mode_machine": [
+              4
+            ],
+            "name": "extend_right_arm_forward"
+          },
+          {
+            "id": 32,
+            "mode_machine": [
+              4
+            ],
+            "name": "right_hand_on_mouth"
+          },
+          {
+            "id": 33,
+            "name": "right_hand_on_heart"
+          },
+          {
+            "id": 34,
+            "name": "both_hands_up_deviate_right"
+          },
+          {
+            "id": 35,
+            "mode_machine": [
+              4
+            ],
+            "name": "emphasize"
+          }
+        ],
+        [
+          {
+            "name": "Waist_Drum_Dance",
+            "time": 9.5
+          },
+          {
+            "name": "Scratch_head",
+            "time": 8.1
+          },
+          {
+            "name": "Spin_discs",
+            "time": 6.9
+          },
+          {
+            "name": "Throw_money",
+            "time": 8.1
+          }
+        ]
+      ]
+    },
+    {
+      "request_id": "10a0a573d8304439acc9dc13a93477e4",
+      "capability": "get_phase",
+      "label": "读取步态相位",
+      "at": 1792586572.0342445,
+      "updated_at": 1792586572.0342448,
+      "mode": "robot",
+      "status": "read_unavailable",
+      "message": "官方服务返回 7301：LocoState 不可用；模式/高度/相位保持未知，忽略返回中的占位零值。不会自动切换模式",
+      "error_code": "SDK_REJECTED",
+      "sdk_code": 7301
+    },
+    {
+      "request_id": "7d0ccdc2a797402f81bc80cd46d92d71",
+      "capability": "get_stand_height",
+      "label": "读取站立高度",
+      "at": 1792586571.9661489,
+      "updated_at": 1792586571.966149,
+      "mode": "robot",
+      "status": "read_unavailable",
+      "message": "官方服务返回 7301：LocoState 不可用；模式/高度/相位保持未知，忽略返回中的占位零值。不会自动切换模式",
+      "error_code": "SDK_REJECTED",
+      "sdk_code": 7301
+    },
+    {
+      "request_id": "59d662a2003f4d7898d147e0342c24d5",
+      "capability": "get_swing_height",
+      "label": "读取摆腿高度",
+      "at": 1792586571.9023836,
+      "updated_at": 1792586571.9023836,
+      "mode": "robot",
+      "status": "read_unavailable",
+      "message": "官方服务返回 7301：LocoState 不可用；模式/高度/相位保持未知，忽略返回中的占位零值。不会自动切换模式",
+      "error_code": "SDK_REJECTED",
+      "sdk_code": 7301
+    },
+    {
+      "request_id": "cc9a0154903f4187bf55fb29e2e69779",
+      "capability": "get_balance",
+      "label": "读取平衡模式",
+      "at": 1792586571.8563166,
+      "updated_at": 1792586571.856317,
+      "mode": "robot",
+      "status": "read_unavailable",
+      "message": "官方服务返回 7301：LocoState 不可用；模式/高度/相位保持未知，忽略返回中的占位零值。不会自动切换模式",
+      "error_code": "SDK_REJECTED",
+      "sdk_code": 7301
+    },
+    {
+      "request_id": "7632d49ce67f4271b5264a6043747dd2",
+      "capability": "get_fsm_mode",
+      "label": "读取控制模式",
+      "at": 1792586571.8104663,
+      "updated_at": 1792586571.8104665,
+      "mode": "robot",
+      "status": "read_result",
+      "message": "已读取官方返回值",
+      "data": 0
+    },
+    {
+      "request_id": "39f83442e25f4dc1a952d62a2d8c3dd5",
+      "capability": "get_fsm",
+      "label": "读取状态机",
+      "at": 1792586571.7770321,
+      "updated_at": 1792586571.7770324,
+      "mode": "robot",
+      "status": "read_result",
+      "message": "已读取官方返回值",
+      "data": 0
+    }
+  ]
+}

@@ -1,0 +1,951 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-10-21T05:07:47.341550+00:00",
+  "timezone": "Asia/Shanghai (UTC+08:00)",
+  "current": false,
+  "scope": "本次只读部署与有界采样回执，不替代之后实时状态、不构成动作安全认证",
+  "deployment": {
+    "at_utc": "2026-10-21T05:04:56.632855+00:00",
+    "release": "4f0c4a2b492b",
+    "manifest_file_count": 442,
+    "all_sha256_match": true,
+    "console_pid": 22475,
+    "console_env": {
+      "G1_READ_ONLY": "1",
+      "G1_HOST": "127.0.0.1",
+      "G1_PORT": "8765",
+      "G1_CAMERA_BACKEND": "unitree"
+    },
+    "loopback_only": true,
+    "children": [
+      {
+        "pid": 22567,
+        "argv": [
+          "/home/unitree/workspace/g1-body-console/.venv/bin/python",
+          "-c",
+          "from multiprocessing.resource_tracker import main;main(12)"
+        ],
+        "cwd": "/home/unitree/workspace/g1-body-console/releases/4f0c4a2b492b"
+      },
+      {
+        "pid": 22568,
+        "argv": [
+          "/home/unitree/workspace/g1-body-console/.venv/bin/python",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=13, pipe_handle=23)",
+          "--multiprocessing-fork"
+        ],
+        "cwd": "/home/unitree/workspace/g1-body-console/releases/4f0c4a2b492b"
+      }
+    ],
+    "foundation_version": 14,
+    "foundation_id": "a7befbcdb87daab0f6790561fa2c7d20d360f4617ff0383812876a3a6564e17e",
+    "actual_unknown_count": 253,
+    "boot_id": "7a6791dc-f512-4b45-aca3-44fbde855e25",
+    "official_processes_unchanged": [
+      {
+        "pid": 1296,
+        "ppid": 1,
+        "start_ticks": 2242,
+        "argv": [
+          "/unitree/module/master_service/master_service"
+        ],
+        "cgroup": [
+          "11:pids:/system.slice/master_service.service",
+          "10:cpuset:/",
+          "9:cpu,cpuacct:/system.slice/master_service.service",
+          "8:blkio:/system.slice/master_service.service",
+          "7:perf_event:/",
+          "6:net_cls,net_prio:/",
+          "5:freezer:/",
+          "4:memory:/system.slice/master_service.service",
+          "3:hugetlb:/",
+          "2:devices:/system.slice/master_service.service",
+          "1:name=systemd:/system.slice/master_service.service",
+          "0::/system.slice/master_service.service"
+        ],
+        "links": {
+          "exe": "PermissionError",
+          "cwd": "PermissionError",
+          "fd/1": "PermissionError",
+          "fd/2": "PermissionError"
+        }
+      },
+      {
+        "pid": 1298,
+        "ppid": 1,
+        "start_ticks": 2242,
+        "argv": [
+          "/unitree/ota/pipe/ota_pipe_service"
+        ],
+        "cgroup": [
+          "11:pids:/system.slice/ota_pipe.service",
+          "10:cpuset:/",
+          "9:cpu,cpuacct:/system.slice/ota_pipe.service",
+          "8:blkio:/system.slice/ota_pipe.service",
+          "7:perf_event:/",
+          "6:net_cls,net_prio:/",
+          "5:freezer:/",
+          "4:memory:/system.slice/ota_pipe.service",
+          "3:hugetlb:/",
+          "2:devices:/system.slice/ota_pipe.service",
+          "1:name=systemd:/system.slice/ota_pipe.service",
+          "0::/system.slice/ota_pipe.service"
+        ],
+        "links": {
+          "exe": "PermissionError",
+          "cwd": "PermissionError",
+          "fd/1": "PermissionError",
+          "fd/2": "PermissionError"
+        }
+      },
+      {
+        "pid": 2557,
+        "ppid": 1,
+        "start_ticks": 2791,
+        "argv": [
+          "/unitree/module/video_hub_pc4/videohub_pc4"
+        ],
+        "cgroup": [
+          "11:pids:/system.slice/master_service.service",
+          "10:cpuset:/",
+          "9:cpu,cpuacct:/system.slice/master_service.service",
+          "8:blkio:/system.slice/master_service.service",
+          "7:perf_event:/",
+          "6:net_cls,net_prio:/",
+          "5:freezer:/",
+          "4:memory:/system.slice/master_service.service",
+          "3:hugetlb:/",
+          "2:devices:/system.slice/master_service.service",
+          "1:name=systemd:/system.slice/master_service.service",
+          "0::/system.slice/master_service.service"
+        ],
+        "links": {
+          "exe": "PermissionError",
+          "cwd": "PermissionError",
+          "fd/1": "PermissionError",
+          "fd/2": "PermissionError"
+        }
+      },
+      {
+        "pid": 2676,
+        "ppid": 2674,
+        "start_ticks": 3210,
+        "argv": [
+          "/home/unitree/megaflow_sdk/ws//bin/MegaFlowRuntimeDaemon",
+          "-c",
+          "/home/unitree/megaflow_sdk/ws//bin/config.bin",
+          "-w",
+          "/home/unitree/megaflow_sdk/ws/",
+          "-d",
+          "127.0.0.1:8899",
+          "-i",
+          "-e",
+          "/home/unitree/megaflow_sdk/ws//dep/",
+          "-l",
+          "0"
+        ],
+        "cgroup": [
+          "11:pids:/system.slice/megaflowruntime.service",
+          "10:cpuset:/",
+          "9:cpu,cpuacct:/system.slice/megaflowruntime.service",
+          "8:blkio:/system.slice/megaflowruntime.service",
+          "7:perf_event:/",
+          "6:net_cls,net_prio:/",
+          "5:freezer:/",
+          "4:memory:/system.slice/megaflowruntime.service",
+          "3:hugetlb:/",
+          "2:devices:/system.slice/megaflowruntime.service",
+          "1:name=systemd:/system.slice/megaflowruntime.service",
+          "0::/system.slice/megaflowruntime.service"
+        ],
+        "links": {
+          "exe": "PermissionError",
+          "cwd": "PermissionError",
+          "fd/1": "PermissionError",
+          "fd/2": "PermissionError"
+        }
+      }
+    ]
+  },
+  "camera_window": {
+    "start_at_utc": "2026-10-21T05:05:34.382179+00:00",
+    "end_at_utc": "2026-10-21T05:06:34.375505+00:00",
+    "duration_s": 60.002,
+    "snapshots": 61,
+    "live_snapshots": 61,
+    "rpc_counter_delta": {
+      "attempts": 300,
+      "successes": 300,
+      "timeouts": 0
+    },
+    "jpeg_count": 13,
+    "unique_jpeg_sha256": 13,
+    "image_errors": 0,
+    "max_camera_state_age_ms": 171,
+    "max_jpeg_response_age_ms": 205,
+    "max_body_age_ms": 71,
+    "timestamp_basis": "local request/receive; sensor exposure time unavailable; no hardware synchronization"
+  },
+  "feedback_snapshot_counts": {
+    "sport": {
+      "current_snapshot_count": 61,
+      "snapshots": 61,
+      "code_snapshot_counts": {
+        "0": 61
+      },
+      "last": {
+        "source": "rt/lf/sportmodestate",
+        "type": "unitree_hg::msg::dds_::SportModeState_",
+        "current": true,
+        "age_ms": 40,
+        "ttl_ms": 1500,
+        "received_at": 1792559194.3539233,
+        "samples": 979,
+        "raw": {
+          "fsm_id": 0,
+          "fsm_mode": 0,
+          "task_id": 4,
+          "task_time": 0.0
+        },
+        "code": 0,
+        "physical_publisher_verified": false,
+        "hardware_health_verified": false,
+        "timestamp_basis": "local_receive_time",
+        "sensor_timestamp": null
+      }
+    },
+    "bms": {
+      "current_snapshot_count": 61,
+      "snapshots": 61,
+      "code_snapshot_counts": {
+        "0": 61
+      },
+      "last": {
+        "source": "rt/lf/bmsstate",
+        "type": "unitree_hg::msg::dds_::BmsState_",
+        "current": true,
+        "age_ms": 5,
+        "ttl_ms": 1500,
+        "received_at": 1792559194.3889186,
+        "samples": 1380,
+        "raw": {
+          "version_high": 1,
+          "version_low": 3,
+          "fn": 5,
+          "cell_vol": [
+            3308,
+            3306,
+            3306,
+            3308,
+            3305,
+            3310,
+            3305,
+            3309,
+            3308,
+            3303,
+            3304,
+            3303,
+            3306,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "bmsvoltage": [
+            42980,
+            42980,
+            0
+          ],
+          "current": -1772,
+          "soc": 15,
+          "soh": 92,
+          "temperature": [
+            36,
+            35,
+            33,
+            38,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cycle": 10,
+          "manufacturer_date": 22939,
+          "bmsstate": [
+            8,
+            8,
+            262144,
+            7,
+            0
+          ],
+          "reserve": [
+            0,
+            0,
+            0
+          ]
+        },
+        "code": 0,
+        "physical_publisher_verified": false,
+        "hardware_health_verified": false,
+        "timestamp_basis": "local_receive_time",
+        "sensor_timestamp": null
+      }
+    },
+    "mainboard": {
+      "current_snapshot_count": 61,
+      "snapshots": 61,
+      "code_snapshot_counts": {
+        "0": 61
+      },
+      "last": {
+        "source": "rt/lf/mainboardstate",
+        "type": "unitree_hg::msg::dds_::MainBoardState_",
+        "current": true,
+        "age_ms": 5,
+        "ttl_ms": 1500,
+        "received_at": 1792559194.389254,
+        "samples": 1354,
+        "raw": {
+          "fan_state": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "temperature": [
+            48,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "value": [
+            42.81654739379883,
+            42.93258285522461,
+            1.25,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "state": [
+            32,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "code": 0,
+        "physical_publisher_verified": false,
+        "hardware_health_verified": false,
+        "timestamp_basis": "local_receive_time",
+        "sensor_timestamp": null
+      }
+    },
+    "arm_state": {
+      "current_snapshot_count": 0,
+      "snapshots": 61,
+      "code_snapshot_counts": {
+        "None": 61
+      },
+      "last": {
+        "source": "rt/arm/action/state",
+        "type": "std_msgs::msg::dds_::String_",
+        "current": false,
+        "age_ms": null,
+        "ttl_ms": 1500,
+        "received_at": null,
+        "samples": 0,
+        "raw": null,
+        "code": null,
+        "physical_publisher_verified": false,
+        "hardware_health_verified": false,
+        "timestamp_basis": "local_receive_time",
+        "sensor_timestamp": null
+      }
+    },
+    "selftest": {
+      "current_snapshot_count": 0,
+      "snapshots": 61,
+      "code_snapshot_counts": {
+        "None": 61
+      },
+      "last": {
+        "source": "rt/selftest",
+        "type": "std_msgs::msg::dds_::String_",
+        "current": false,
+        "age_ms": null,
+        "ttl_ms": 1500,
+        "received_at": null,
+        "samples": 0,
+        "raw": null,
+        "code": null,
+        "physical_publisher_verified": false,
+        "hardware_health_verified": false,
+        "timestamp_basis": "local_receive_time",
+        "sensor_timestamp": null
+      }
+    },
+    "secondary_imu": {
+      "current_snapshot_count": 61,
+      "snapshots": 61,
+      "code_snapshot_counts": {
+        "0": 61
+      },
+      "last": {
+        "source": "rt/secondary_imu",
+        "type": "unitree_hg::msg::dds_::IMUState_",
+        "current": true,
+        "age_ms": 1,
+        "ttl_ms": 1500,
+        "received_at": 1792559194.3932495,
+        "samples": 82129,
+        "raw": {
+          "quaternion": [
+            0.9971476793289185,
+            0.030199360102415085,
+            -0.06133698672056198,
+            0.031973667442798615
+          ],
+          "gyroscope": [
+            0.0,
+            0.008522114716470242,
+            0.0
+          ],
+          "accelerometer": [
+            1.3736732006072998,
+            0.30705636739730835,
+            9.711779594421387
+          ],
+          "rpy": [
+            0.05677435174584389,
+            -0.12457720935344696,
+            0.06056637316942215
+          ],
+          "temperature": 80
+        },
+        "code": 0,
+        "physical_publisher_verified": false,
+        "hardware_health_verified": false,
+        "timestamp_basis": "local_receive_time",
+        "sensor_timestamp": null
+      }
+    },
+    "pelvis_odom": {
+      "current_snapshot_count": 61,
+      "snapshots": 61,
+      "code_snapshot_counts": {
+        "0": 61
+      },
+      "last": {
+        "source": "rt/state_estimator/odom_pelvis",
+        "type": "nav_msgs::msg::dds_::Odometry_",
+        "current": true,
+        "age_ms": 11,
+        "ttl_ms": 1500,
+        "received_at": 1792559194.3824365,
+        "samples": 3520,
+        "raw": {
+          "header": {
+            "stamp": {
+              "sec": 1792559194,
+              "nanosec": 98041534
+            },
+            "frame_id": "odom"
+          },
+          "child_frame_id": "pelvis",
+          "pose": {
+            "pose": {
+              "position": {
+                "x": -0.21351458132266998,
+                "y": -1.192984700202942,
+                "z": 0.3141842782497406
+              },
+              "orientation": {
+                "x": -0.06763727962970734,
+                "y": 0.03231985121965408,
+                "z": 0.024661492556333542,
+                "w": -0.996881365776062
+              }
+            },
+            "covariance": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "twist": {
+            "twist": {
+              "linear": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "angular": {
+                "x": 0.0021305286791175604,
+                "y": 0.008522114716470242,
+                "z": -0.0010652643395587802
+              }
+            },
+            "covariance": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "code": 0,
+        "physical_publisher_verified": false,
+        "hardware_health_verified": false,
+        "timestamp_basis": "local_receive_time",
+        "sensor_timestamp": null
+      }
+    },
+    "torso_odom": {
+      "current_snapshot_count": 61,
+      "snapshots": 61,
+      "code_snapshot_counts": {
+        "0": 61
+      },
+      "last": {
+        "source": "rt/state_estimator/odom_torso",
+        "type": "nav_msgs::msg::dds_::Odometry_",
+        "current": true,
+        "age_ms": 10,
+        "ttl_ms": 1500,
+        "received_at": 1792559194.3837702,
+        "samples": 3422,
+        "raw": {
+          "header": {
+            "stamp": {
+              "sec": 1792559194,
+              "nanosec": 98041534
+            },
+            "frame_id": "odom"
+          },
+          "child_frame_id": "torso",
+          "pose": {
+            "pose": {
+              "position": {
+                "x": -0.22013652324676514,
+                "y": -1.2027560472488403,
+                "z": 0.36702725291252136
+              },
+              "orientation": {
+                "x": -0.05057458579540253,
+                "y": 0.05533158406615257,
+                "z": -0.3510850965976715,
+                "w": -0.9333379864692688
+              }
+            },
+            "covariance": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "twist": {
+            "twist": {
+              "linear": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "angular": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            },
+            "covariance": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "code": 0,
+        "physical_publisher_verified": false,
+        "hardware_health_verified": false,
+        "timestamp_basis": "local_receive_time",
+        "sensor_timestamp": null
+      }
+    },
+    "motion_mode": {
+      "current_snapshot_count": 51,
+      "snapshots": 61,
+      "code_snapshot_counts": {
+        "0": 51,
+        "3104": 10
+      },
+      "last": {
+        "source": "motion_switcher.CheckMode / 1001",
+        "type": "official JSON response",
+        "current": false,
+        "age_ms": 1333,
+        "ttl_ms": 6000,
+        "received_at": 1792559193.06069,
+        "samples": 21,
+        "raw": null,
+        "code": 3104,
+        "physical_publisher_verified": false,
+        "hardware_health_verified": false,
+        "timestamp_basis": "local_receive_time",
+        "sensor_timestamp": null
+      }
+    },
+    "fsm_mode": {
+      "current_snapshot_count": 31,
+      "snapshots": 61,
+      "code_snapshot_counts": {
+        "0": 31,
+        "3104": 30
+      },
+      "last": {
+        "source": "sport.GetFsmMode / 7002",
+        "type": "official JSON response",
+        "current": false,
+        "age_ms": 632,
+        "ttl_ms": 6000,
+        "received_at": 1792559193.7621062,
+        "samples": 15,
+        "raw": null,
+        "code": 3104,
+        "physical_publisher_verified": false,
+        "hardware_health_verified": false,
+        "timestamp_basis": "local_receive_time",
+        "sensor_timestamp": null
+      }
+    }
+  },
+  "feedback_count_limitation": "同一回读结果可进入多次状态采样；这些计数不是 RPC 请求次数、失败次数或发布频率",
+  "last_observation": {
+    "at_utc": "2026-10-21T05:06:34.375505+00:00",
+    "body_tick": 12486515,
+    "fsm_fresh": true,
+    "control_mode": {
+      "fsm": 0,
+      "sdk_label": "SDK ZeroTorque 对应状态 ID",
+      "active_capability_id": null,
+      "activity_verified": false,
+      "detail": "FSM 只表明服务回读的状态 ID；未取得具体能力执行中/完成的可信反馈。ZeroTorque ID 也不证明每个电机实际力矩为零"
+    },
+    "posture": {
+      "description": "双膝显著屈曲",
+      "knee_deg": [
+        161.03124462713194,
+        160.0146529314456
+      ],
+      "imu_rpy_deg": [
+        7.855007828554389,
+        -3.5116651355773048,
+        -3.0608724369130518
+      ],
+      "secondary_imu_rpy_deg": [
+        3.252930739628052,
+        -7.137748319470194,
+        3.4701975630222766
+      ],
+      "whole_body_pose": "unknown",
+      "support": "unknown",
+      "feet": {
+        "left": {
+          "contact": null,
+          "load_n": null
+        },
+        "right": {
+          "contact": null,
+          "load_n": null
+        }
+      },
+      "detail": "双膝 >90° 仅为形态描述规则；未确定站/坐/卧、身体离地高度或接触对象。三维模型按关节角度显示，不表示世界中的支撑姿势"
+    },
+    "sport_raw": {
+      "fsm_id": 0,
+      "fsm_mode": 0,
+      "task_id": 4,
+      "task_time": 0.0
+    },
+    "check_mode_current": false,
+    "fsm_mode_current": false,
+    "image_sha256": "792d8689ad68e3c21a80c0399c2034358e64d9199e6af8304cc3f3510353a8aa",
+    "visible": "地砖、带轮椅脚和画面下沿局部部件；机器人足底及所有承重点未完整可见"
+  },
+  "safety": {
+    "execution_allowed": false,
+    "validated_action_envelopes": [],
+    "unknown_conditions": [
+      "足底接触与承重",
+      "动态平衡裕量",
+      "现场地面与净空",
+      "实机电机限值与标定",
+      "驱动健康与电池余量",
+      "保护与失联处置",
+      "具体能力全过程边界"
+    ],
+    "actual_config_unknown_fields": 253,
+    "new_motor_configuration_values": 0,
+    "control_owner": null,
+    "navigation": "idle",
+    "observer": "paused"
+  },
+  "initialization_window": {
+    "excluded": true,
+    "path": ".g1-deploy/research/camera-stability-20261021/posture-v14-final.json",
+    "reason": "首次测量先于只读重新连接，含 waiting 和 null body age；旧统计脚本 None 比较失败，原始数据保留；连接就绪后另起独立 60 秒窗口"
+  },
+  "validation": {
+    "pytest_command": ".venv/bin/python -m pytest tests/test_g1_*.py -q",
+    "passed": 122,
+    "warnings": [
+      "Starlette/httpx deprecation"
+    ],
+    "web_build": "npm run build passed",
+    "web_build_warnings": [
+      "Existing 3D bundle size warning"
+    ],
+    "browser_verified": true,
+    "viewport_width_px": 620,
+    "source_sha256_count": 26,
+    "source_sha256_all_match": true
+  },
+  "limits": [
+    "CheckMode 和 GetFsmMode 间歇 3104 根因未确认，失败立即撤回",
+    "左右脚接触和载荷、全身站坐卧、具体能力执行未知",
+    "里程计原点/地面关系、协方差有效性、IMU 外参和物理发布者未核定",
+    "60 秒成功窗口不保证未来长期稳定或不摔倒"
+  ],
+  "operations": {
+    "robot_actions": 0,
+    "lowcmd_publications": 0,
+    "control_lease_requests": 0,
+    "official_service_changes": 0,
+    "quantumult_x_changes": 0
+  },
+  "files": [
+    {
+      "path": "g1_console/assets/g1_motor_knowledge.json",
+      "sha256": "f9013a2961abe41f328af11cfdd0715ea4d6f61cb230d8c675eca8644f74717a"
+    },
+    {
+      "path": "g1_console/assets/g1_safety_evidence_audit.json",
+      "sha256": "d3312d0dbb87760b663655fe87b7e50503ab2f7926fe5c4f79bf039db3a31a9d"
+    },
+    {
+      "path": ".g1-deploy/research/camera-stability-20261021/posture-v14-live-60s.json",
+      "sha256": "725ba74ba2eff6b0a8601995c9a81379b0db08b6dfb5e2b9b2b75e471bcc41e7"
+    },
+    {
+      "path": ".g1-deploy/research/posture-support-20261021/deployment-verified.json",
+      "sha256": "e22bed513c4d5e07e794ff53622584bdea474254c061556a04fa8905b231424c"
+    },
+    {
+      "path": ".g1-deploy/research/posture-support-20261021/final-live-paired.json",
+      "sha256": "1f3e5c77e56bcdeaed8bf2acfb41d8d4f62fa67a594086c0b3b4bb94b39acc2b"
+    },
+    {
+      "path": "doc/screenshots/g1-posture-live-v14.jpg",
+      "sha256": "792d8689ad68e3c21a80c0399c2034358e64d9199e6af8304cc3f3510353a8aa"
+    },
+    {
+      "path": "doc/screenshots/g1-posture-support-v14.png",
+      "sha256": "ffec4975d10ca4a7a662f8a3098957ea532fb94673b13f0f6aa475255399604a"
+    },
+    {
+      "path": "doc/screenshots/g1-posture-support-v14-feet.png",
+      "sha256": "57eaf1f629ae3c954328581f10807a2bbad369579b257e3e00417c043f2cd5ae"
+    },
+    {
+      "path": "g1_console/safety_feedback.py",
+      "sha256": "170694684fc0ccea8e9490f4d93d5107dff734a17bd1f9a7474b3fb9b90d0429"
+    },
+    {
+      "path": "g1_console/adapters.py",
+      "sha256": "8534ac88ad7204d7883e7d3902b0fb63578bf7a57db4e45f40bb6fc1e18ad2b3"
+    },
+    {
+      "path": "g1_console/state_learning.py",
+      "sha256": "c36a8b2a2b341501fa4820afd1bcbb3fa8f0a38ba688806975e14b41dbac692f"
+    },
+    {
+      "path": "console/web/src/types.ts",
+      "sha256": "f32e0219d607637326499b375f94665c184c5e1d6ebf554d1618c85c43822d60"
+    },
+    {
+      "path": "console/web/src/StateLearningView.tsx",
+      "sha256": "50e51b70715750dabd034a5eedaff25379b0afd97922f3fe85263c8c2138ccdb"
+    },
+    {
+      "path": "scripts/build_g1_motor_knowledge.py",
+      "sha256": "9913b9476862e85ccf3cb7b853cd1bfef4e6d42cfe62345e9cbbee7dd79faa84"
+    },
+    {
+      "path": "tests/test_g1_safety_evidence.py",
+      "sha256": "ee24d5da3acbfd19af09e6c9633bd1255b181b51711f07dfb17a6ccd829fe5c8"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "run_id": "bce70395eb37",
+  "current_run_events": {
+    "camera_connected": 1,
+    "connected": 1,
+    "query_result": 4,
+    "sdk_rejected": 2,
+    "sdk_timeout": 2,
+    "state_observed": 2
+  },
+  "historical_malformed_lines": 1,
+  "control_owner": null,
+  "manual_armed": false,
+  "at_utc": "2026-10-21T11:52:11.527697+00:00",
+  "release": "7e95a6e5a046",
+  "manifest_file_count": 474,
+  "all_sha256_match": true,
+  "console_pid": 7992,
+  "console_env": {
+    "G1_READ_ONLY": "0",
+    "G1_MANUAL_REMOTE": "1",
+    "G1_HOST": "127.0.0.1",
+    "G1_PORT": "8765",
+    "G1_CAMERA_BACKEND": "unitree"
+  },
+  "loopback_only": true,
+  "children": [
+    {
+      "pid": 8238,
+      "argv": [
+        "/home/unitree/workspace/g1-body-console/.venv/bin/python",
+        "-c",
+        "from multiprocessing.resource_tracker import main;main(19)"
+      ],
+      "cwd": "/home/unitree/workspace/g1-body-console/releases/7e95a6e5a046"
+    },
+    {
+      "pid": 8239,
+      "argv": [
+        "/home/unitree/workspace/g1-body-console/.venv/bin/python",
+        "-c",
+        "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=20, pipe_handle=22)",
+        "--multiprocessing-fork"
+      ],
+      "cwd": "/home/unitree/workspace/g1-body-console/releases/7e95a6e5a046"
+    },
+    {
+      "pid": 8242,
+      "argv": [
+        "/home/unitree/workspace/g1-body-console/.venv/bin/python",
+        "-c",
+        "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=20, pipe_handle=25)",
+        "--multiprocessing-fork"
+      ],
+      "cwd": "/home/unitree/workspace/g1-body-console/releases/7e95a6e5a046"
+    }
+  ],
+  "foundation_version": 21,
+  "foundation_id": "29d041ca18247da791cd284c9a73fb90c2f0656c1a87b15bb16ef090dc9db44d",
+  "actual_unknown_count": 253,
+  "boot_id": "8d9a0e09-97e1-45fa-81d3-18822a3c760a",
+  "official_processes_unchanged": [
+    {
+      "pid": 1366,
+      "argv": [
+        "/unitree/module/master_service/master_service"
+      ],
+      "start_ticks": 2168
+    },
+    {
+      "pid": 1438,
+      "argv": [
+        "/unitree/ota/pipe/ota_pipe_service"
+      ],
+      "start_ticks": 2202
+    },
+    {
+      "pid": 2349,
+      "argv": [
+        "/unitree/module/video_hub_pc4/videohub_pc4"
+      ],
+      "start_ticks": 2480
+    },
+    {
+      "pid": 2760,
+      "argv": [
+        "/home/unitree/megaflow_sdk/ws//bin/MegaFlowRuntimeDaemon",
+        "-c",
+        "/home/unitree/megaflow_sdk/ws//bin/config.bin",
+        "-w",
+        "/home/unitree/megaflow_sdk/ws/",
+        "-d",
+        "127.0.0.1:8899",
+        "-i",
+        "-e",
+        "/home/unitree/megaflow_sdk/ws//dep/",
+        "-l",
+        "0"
+      ],
+      "start_ticks": 3139
+    }
+  ]
+}

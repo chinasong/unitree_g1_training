@@ -1,0 +1,617 @@
+{
+  "current": false,
+  "checked_at_utc": "2026-10-22T04:38:55.318059+00:00",
+  "completed_at_utc": "2026-10-22T04:44:25.631571+00:00",
+  "release": "480895668ddf",
+  "boot_id": "aed898cb-acfd-44a2-8e9c-50f1f00269aa",
+  "boot_unchanged": true,
+  "before": {
+    "run_id": "209b14b0ca2b",
+    "owner": null,
+    "armed": false,
+    "navigation": "idle"
+  },
+  "after": {
+    "run_id": "209b14b0ca2b",
+    "owner": null,
+    "armed": false,
+    "navigation": "idle"
+  },
+  "official_processes_before": [
+    {
+      "pid": 1349,
+      "argv": [
+        "/unitree/ota/pipe/ota_pipe_service"
+      ],
+      "start_ticks": 2004
+    },
+    {
+      "pid": 1350,
+      "argv": [
+        "/unitree/module/master_service/master_service"
+      ],
+      "start_ticks": 2004
+    },
+    {
+      "pid": 2777,
+      "argv": [
+        "/home/unitree/megaflow_sdk/ws//bin/MegaFlowRuntimeDaemon",
+        "-c",
+        "/home/unitree/megaflow_sdk/ws//bin/config.bin",
+        "-w",
+        "/home/unitree/megaflow_sdk/ws/",
+        "-d",
+        "127.0.0.1:8899",
+        "-i",
+        "-e",
+        "/home/unitree/megaflow_sdk/ws//dep/",
+        "-l",
+        "0"
+      ],
+      "start_ticks": 2975
+    },
+    {
+      "pid": 9659,
+      "argv": [
+        "/unitree/module/video_hub_pc4/videohub_pc4"
+      ],
+      "start_ticks": 437519
+    }
+  ],
+  "official_processes_after": [
+    {
+      "pid": 1349,
+      "argv": [
+        "/unitree/ota/pipe/ota_pipe_service"
+      ],
+      "start_ticks": 2004
+    },
+    {
+      "pid": 1350,
+      "argv": [
+        "/unitree/module/master_service/master_service"
+      ],
+      "start_ticks": 2004
+    },
+    {
+      "pid": 2777,
+      "argv": [
+        "/home/unitree/megaflow_sdk/ws//bin/MegaFlowRuntimeDaemon",
+        "-c",
+        "/home/unitree/megaflow_sdk/ws//bin/config.bin",
+        "-w",
+        "/home/unitree/megaflow_sdk/ws/",
+        "-d",
+        "127.0.0.1:8899",
+        "-i",
+        "-e",
+        "/home/unitree/megaflow_sdk/ws//dep/",
+        "-l",
+        "0"
+      ],
+      "start_ticks": 2975
+    },
+    {
+      "pid": 9659,
+      "argv": [
+        "/unitree/module/video_hub_pc4/videohub_pc4"
+      ],
+      "start_ticks": 437519
+    }
+  ],
+  "official_processes_unchanged": true,
+  "duration_s": 330.213,
+  "frames": [
+    {
+      "received_at_utc": "2026-10-22T04:40:35.826277+00:00",
+      "elapsed_s": 100.407501,
+      "rows": [
+        {
+          "name": "ai_sport",
+          "version": "8.7.5.212",
+          "path": "$[0]",
+          "binding": "object_fields"
+        },
+        {
+          "name": "bashrunner",
+          "version": "1.1.1.2",
+          "path": "$[4]",
+          "binding": "object_fields"
+        },
+        {
+          "name": "basic_service",
+          "version": "3.0.0.18",
+          "path": "$[5]",
+          "binding": "object_fields"
+        },
+        {
+          "name": "battery_guard",
+          "version": "1.0.0.9",
+          "path": "$[6]",
+          "binding": "object_fields"
+        },
+        {
+          "name": "chat_go",
+          "version": "1.9.5.26",
+          "path": "$[7]",
+          "binding": "object_fields"
+        },
+        {
+          "name": "emergency_stop",
+          "version": "1.0.0.4",
+          "path": "$[10]",
+          "binding": "object_fields"
+        },
+        {
+          "name": "g1_arm_example",
+          "version": "2.0.2.5",
+          "path": "$[11]",
+          "binding": "object_fields"
+        },
+        {
+          "name": "lidar_driver",
+          "version": "1.0.0.12",
+          "path": "$[12]",
+          "binding": "object_fields"
+        },
+        {
+          "name": "log_system",
+          "version": "2.0.0.11",
+          "path": "$[13]",
+          "binding": "object_fields"
+        },
+        {
+          "name": "motion_switcher",
+          "version": "1.0.0.1",
+          "path": "$[14]",
+          "binding": "object_fields"
+        },
+        {
+          "name": "net_switcher",
+          "version": "1.0.2.1",
+          "path": "$[15]",
+          "binding": "object_fields"
+        },
+        {
+          "name": "robot_state",
+          "version": "3.0.0.8",
+          "path": "$[18]",
+          "binding": "object_fields"
+        },
+        {
+          "name": "robot_type_service",
+          "version": "1.0.2.4",
+          "path": "$[19]",
+          "binding": "object_fields"
+        },
+        {
+          "name": "state_estimator",
+          "version": "2.0.0.25",
+          "path": "$[20]",
+          "binding": "object_fields"
+        },
+        {
+          "name": "unistore",
+          "version": "1.0.1.20",
+          "path": "$[21]",
+          "binding": "object_fields"
+        },
+        {
+          "name": "unitree_slam",
+          "version": "1.0.2.9",
+          "path": "$[22]",
+          "binding": "object_fields"
+        },
+        {
+          "name": "video_hub_pc4",
+          "version": "1.0.1.1",
+          "path": "$[23]",
+          "binding": "object_fields"
+        },
+        {
+          "name": "vui_service",
+          "version": "2.1.0.47",
+          "path": "$[24]",
+          "binding": "object_fields"
+        },
+        {
+          "name": "webrtc_bridge",
+          "version": "1.1.2.2",
+          "path": "$[25]",
+          "binding": "object_fields"
+        }
+      ],
+      "sha256": "c31dde1408172e046585859481d0ff67c2a874bacbb461f2c7ebbd813245b4c6",
+      "publication_handle": 8657048201441014277,
+      "matching_publications": [
+        {
+          "key": "0110f79d-eb98-80fc-6dea-face00000c03",
+          "participant_key": "0110f79d-eb98-80fc-6dea-face000001c1",
+          "topic": "rt/servicestate",
+          "type": "std_msgs::msg::dds_::String_",
+          "instance_handle": 8657048201441014277
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "phase": "initial",
+      "service": "sport",
+      "api_id": 7001,
+      "request_id": 5310557208540,
+      "parameter": "",
+      "lease_id": 0,
+      "sent_at_utc": "2026-10-22T04:38:56.524668+00:00",
+      "replies": [
+        {
+          "code": 0,
+          "data": "{\"data\":0}",
+          "publication_handle": 3472430296579066234,
+          "elapsed_ms": 22.128,
+          "matching_publications": [
+            {
+              "key": "0110652f-d08a-5632-cfa3-319f00001303",
+              "participant_key": "0110652f-d08a-5632-cfa3-319f000001c1",
+              "topic": "rt/api/sport/response",
+              "type": "unitree_api::msg::dds_::Response_",
+              "instance_handle": 3472430296579066234
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "initial",
+      "service": "sport",
+      "api_id": 7002,
+      "request_id": 5311687365108,
+      "parameter": "",
+      "lease_id": 0,
+      "sent_at_utc": "2026-10-22T04:38:57.654835+00:00",
+      "replies": [
+        {
+          "code": 0,
+          "data": "{\"data\":0}",
+          "publication_handle": 3472430296579066234,
+          "elapsed_ms": 6.054,
+          "matching_publications": [
+            {
+              "key": "0110652f-d08a-5632-cfa3-319f00001303",
+              "participant_key": "0110652f-d08a-5632-cfa3-319f000001c1",
+              "topic": "rt/api/sport/response",
+              "type": "unitree_api::msg::dds_::Response_",
+              "instance_handle": 3472430296579066234
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "initial",
+      "service": "sport",
+      "api_id": 7003,
+      "request_id": 5312775327585,
+      "parameter": "",
+      "lease_id": 0,
+      "sent_at_utc": "2026-10-22T04:38:58.742790+00:00",
+      "replies": [
+        {
+          "code": 7301,
+          "data": null,
+          "publication_handle": 3472430296579066234,
+          "elapsed_ms": 6.744,
+          "matching_publications": [
+            {
+              "key": "0110652f-d08a-5632-cfa3-319f00001303",
+              "participant_key": "0110652f-d08a-5632-cfa3-319f000001c1",
+              "topic": "rt/api/sport/response",
+              "type": "unitree_api::msg::dds_::Response_",
+              "instance_handle": 3472430296579066234
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "initial",
+      "service": "sport",
+      "api_id": 7005,
+      "request_id": 5313858334864,
+      "parameter": "",
+      "lease_id": 0,
+      "sent_at_utc": "2026-10-22T04:38:59.825787+00:00",
+      "replies": [
+        {
+          "code": 7301,
+          "data": null,
+          "publication_handle": 3472430296579066234,
+          "elapsed_ms": 5.607,
+          "matching_publications": [
+            {
+              "key": "0110652f-d08a-5632-cfa3-319f00001303",
+              "participant_key": "0110652f-d08a-5632-cfa3-319f000001c1",
+              "topic": "rt/api/sport/response",
+              "type": "unitree_api::msg::dds_::Response_",
+              "instance_handle": 3472430296579066234
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "initial",
+      "service": "motion_switcher",
+      "api_id": 1005,
+      "request_id": 5314932138688,
+      "parameter": "",
+      "lease_id": 0,
+      "sent_at_utc": "2026-10-22T04:39:00.899591+00:00",
+      "replies": [
+        {
+          "code": 0,
+          "data": "{\"silent\":false}",
+          "publication_handle": 10210960249223458120,
+          "elapsed_ms": 5.67,
+          "matching_publications": [
+            {
+              "key": "0110d259-4b8f-09f8-3fdd-858600000403",
+              "participant_key": "0110d259-4b8f-09f8-3fdd-8586000001c1",
+              "topic": "rt/api/motion_switcher/response",
+              "type": "unitree_api::msg::dds_::Response_",
+              "instance_handle": 10210960249223458120
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "after_service_advertisement",
+      "service": "sport",
+      "api_id": 7001,
+      "request_id": 5409961469426,
+      "parameter": "",
+      "lease_id": 0,
+      "sent_at_utc": "2026-10-22T04:40:35.928927+00:00",
+      "replies": [
+        {
+          "code": 0,
+          "data": "{\"data\":0}",
+          "publication_handle": 3472430296579066234,
+          "elapsed_ms": 6.466,
+          "matching_publications": [
+            {
+              "key": "0110652f-d08a-5632-cfa3-319f00001303",
+              "participant_key": "0110652f-d08a-5632-cfa3-319f000001c1",
+              "topic": "rt/api/sport/response",
+              "type": "unitree_api::msg::dds_::Response_",
+              "instance_handle": 3472430296579066234
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "after_service_advertisement",
+      "service": "sport",
+      "api_id": 7002,
+      "request_id": 5411038890072,
+      "parameter": "",
+      "lease_id": 0,
+      "sent_at_utc": "2026-10-22T04:40:37.006343+00:00",
+      "replies": [
+        {
+          "code": 0,
+          "data": "{\"data\":0}",
+          "publication_handle": 3472430296579066234,
+          "elapsed_ms": 5.638,
+          "matching_publications": [
+            {
+              "key": "0110652f-d08a-5632-cfa3-319f00001303",
+              "participant_key": "0110652f-d08a-5632-cfa3-319f000001c1",
+              "topic": "rt/api/sport/response",
+              "type": "unitree_api::msg::dds_::Response_",
+              "instance_handle": 3472430296579066234
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "after_service_advertisement",
+      "service": "sport",
+      "api_id": 7003,
+      "request_id": 5412123978244,
+      "parameter": "",
+      "lease_id": 0,
+      "sent_at_utc": "2026-10-22T04:40:38.091431+00:00",
+      "replies": [
+        {
+          "code": 7301,
+          "data": null,
+          "publication_handle": 3472430296579066234,
+          "elapsed_ms": 5.727,
+          "matching_publications": [
+            {
+              "key": "0110652f-d08a-5632-cfa3-319f00001303",
+              "participant_key": "0110652f-d08a-5632-cfa3-319f000001c1",
+              "topic": "rt/api/sport/response",
+              "type": "unitree_api::msg::dds_::Response_",
+              "instance_handle": 3472430296579066234
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "after_service_advertisement",
+      "service": "sport",
+      "api_id": 7005,
+      "request_id": 5413219694167,
+      "parameter": "",
+      "lease_id": 0,
+      "sent_at_utc": "2026-10-22T04:40:39.187147+00:00",
+      "replies": [
+        {
+          "code": 7301,
+          "data": null,
+          "publication_handle": 3472430296579066234,
+          "elapsed_ms": 5.63,
+          "matching_publications": [
+            {
+              "key": "0110652f-d08a-5632-cfa3-319f00001303",
+              "participant_key": "0110652f-d08a-5632-cfa3-319f000001c1",
+              "topic": "rt/api/sport/response",
+              "type": "unitree_api::msg::dds_::Response_",
+              "instance_handle": 3472430296579066234
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "after_service_advertisement",
+      "service": "motion_switcher",
+      "api_id": 1005,
+      "request_id": 5414337735153,
+      "parameter": "",
+      "lease_id": 0,
+      "sent_at_utc": "2026-10-22T04:40:40.305187+00:00",
+      "replies": [
+        {
+          "code": 0,
+          "data": "{\"silent\":false}",
+          "publication_handle": 10210960249223458120,
+          "elapsed_ms": 5.663,
+          "matching_publications": [
+            {
+              "key": "0110d259-4b8f-09f8-3fdd-858600000403",
+              "participant_key": "0110d259-4b8f-09f8-3fdd-8586000001c1",
+              "topic": "rt/api/motion_switcher/response",
+              "type": "unitree_api::msg::dds_::Response_",
+              "instance_handle": 10210960249223458120
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "hg_state": [
+    {
+      "publication_handle": 7461724637772500156,
+      "samples": 4930,
+      "first": {
+        "fsm_id": 0,
+        "fsm_mode": 0,
+        "task_id": 4,
+        "task_time": 0.0
+      },
+      "last": {
+        "fsm_id": 0,
+        "fsm_mode": 0,
+        "task_id": 4,
+        "task_time": 0.0
+      },
+      "distinct_values": [
+        {
+          "fsm_id": 0,
+          "fsm_mode": 0,
+          "task_id": 4,
+          "task_time": 0.0
+        }
+      ],
+      "matching_publications": [
+        {
+          "key": "0110652f-1c41-3ebe-17ac-093900001803",
+          "participant_key": "0110652f-1c41-3ebe-17ac-0939000001c1",
+          "topic": "rt/lf/sportmodestate",
+          "type": "unitree_hg::msg::dds_::SportModeState_",
+          "instance_handle": 7461724637772500156
+        }
+      ]
+    }
+  ],
+  "participants": [
+    {
+      "key": "0110652f-1c41-3ebe-17ac-0939000001c1",
+      "self_report": {
+        "__Hostname": "Unitree",
+        "__Pid": "3359",
+        "__ProcessName": "humanoid"
+      },
+      "observed_rtps_source_ips": [
+        "192.168.123.161"
+      ]
+    },
+    {
+      "key": "0110652f-d08a-5632-cfa3-319f000001c1",
+      "self_report": {
+        "__Hostname": "Unitree",
+        "__Pid": "3359",
+        "__ProcessName": "humanoid"
+      },
+      "observed_rtps_source_ips": [
+        "192.168.123.161"
+      ]
+    },
+    {
+      "key": "0110d259-4b8f-09f8-3fdd-8586000001c1",
+      "self_report": {
+        "__Hostname": "Unitree",
+        "__Pid": "3009",
+        "__ProcessName": "motion_switcher_service"
+      },
+      "observed_rtps_source_ips": [
+        "192.168.123.161"
+      ]
+    },
+    {
+      "key": "0110f79d-eb98-80fc-6dea-face000001c1",
+      "self_report": {
+        "__Hostname": "Unitree",
+        "__Pid": "3113",
+        "__ProcessName": "robot_state_service"
+      },
+      "observed_rtps_source_ips": [
+        "192.168.123.161"
+      ]
+    }
+  ],
+  "passive_rtps": {
+    "headers_only": true,
+    "raw_payloads_retained": false,
+    "senders": [
+      {
+        "guid_prefix": "0110652f1c413ebe17ac0939",
+        "source_ip": "192.168.123.161",
+        "packets": 86
+      },
+      {
+        "guid_prefix": "0110d2594b8f09f83fdd8586",
+        "source_ip": "192.168.123.161",
+        "packets": 83
+      },
+      {
+        "guid_prefix": "0110f79deb9880fc6deaface",
+        "source_ip": "192.168.123.161",
+        "packets": 83
+      },
+      {
+        "guid_prefix": "0110652fd08a5632cfa3319f",
+        "source_ip": "192.168.123.161",
+        "packets": 84
+      }
+    ]
+  },
+  "errors": [],
+  "command_writes": 0,
+  "lease_requests": 0,
+  "device_motion_firmware": null,
+  "exact_7301_predicate": null,
+  "motion_authority_verified": false,
+  "limitations": [
+    "DDS self-reports and source IP pairing are evidence of publisher provenance only.",
+    "Advertisement versions do not prove the humanoid executable build.",
+    "No action or motion lease was requested; accepting getters does not prove motion authority."
+  ]
+}

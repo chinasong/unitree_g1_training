@@ -1,0 +1,598 @@
+{
+  "schema_version": 1,
+  "current": false,
+  "checked_at_utc": "2026-10-22T03:42:26.840733+00:00",
+  "completed_at_utc": "2026-10-22T03:45:33.100659+00:00",
+  "boot_id": "aed898cb-acfd-44a2-8e9c-50f1f00269aa",
+  "authority": "Historical read-only observations; missing facts remain null.",
+  "robot_configuration_writes": 0,
+  "motion_writes": 0,
+  "lease_requests": 0,
+  "raw_mac_error_code": null,
+  "exact_wifi_trigger": null,
+  "device_motion_firmware": null,
+  "exact_7301_predicate": null,
+  "retained_log_scan": {
+    "patterns": {
+      "bb_offload": "\\[BB\\].*IO offload fail",
+      "rf_warning": "\\[WARNING\\]\\[RF\\]",
+      "rf_write": "halrf_wrf return fail",
+      "tx_power_control": "Error Enable Power Control",
+      "h2c_class": "Error H2C CLASS=",
+      "mac_original_status": "rtw_hal_mac_add_cmd_ofld\\(\\): fault, status\\s*=",
+      "mac_busy": "mac_(?:add_)?cmd_ofld(?:_v1)?: IO offload is busy",
+      "mac_offload_detail": "(?:chk_cmd_ofld_(?:reg|pkt)|proc_cmd_ofld|ofld_incompatible_full_cmd):|\\[ERR\\]\\[CMD_OFLD",
+      "mac_platform_tx": "\\[ERR\\]platform tx",
+      "wifi_firmware_error": "(?:8852|RTW|rtw|MAC|BB|RF).*?(?:firmware.*(?:fail|error)|FW.*(?:assert|exception))",
+      "usb_fault": "usb\\s+1-2(?:\\.4)?(?::|\\s).*?(?:disconnect|reset|error|over-current)"
+    },
+    "files": [
+      {
+        "path": "/var/log/dmesg",
+        "stored_bytes": 101719,
+        "read_bytes": 101719,
+        "lines": 1364,
+        "oversized_lines": 0,
+        "complete": true,
+        "counts": {
+          "bb_offload": 0,
+          "rf_warning": 0,
+          "rf_write": 0,
+          "tx_power_control": 0,
+          "h2c_class": 0,
+          "mac_original_status": 0,
+          "mac_busy": 0,
+          "mac_offload_detail": 0,
+          "mac_platform_tx": 0,
+          "wifi_firmware_error": 0,
+          "usb_fault": 0
+        },
+        "read_sha256": "72b53550c2a7fbf106ada48ea619651dee538a58a58e01f17fcd4a8c616cc356",
+        "unchanged_during_read": true,
+        "latest_boot_segment_counts": {}
+      },
+      {
+        "path": "/var/log/dmesg.0",
+        "stored_bytes": 81950,
+        "read_bytes": 81950,
+        "lines": 1044,
+        "oversized_lines": 0,
+        "complete": true,
+        "counts": {
+          "bb_offload": 0,
+          "rf_warning": 0,
+          "rf_write": 0,
+          "tx_power_control": 0,
+          "h2c_class": 0,
+          "mac_original_status": 0,
+          "mac_busy": 0,
+          "mac_offload_detail": 0,
+          "mac_platform_tx": 0,
+          "wifi_firmware_error": 0,
+          "usb_fault": 0
+        },
+        "read_sha256": "732ad9fd46d286e36b60d3cdf6dad2e484cc3d42b911f8ff234a15faea7ba715",
+        "unchanged_during_read": true,
+        "latest_boot_segment_counts": {}
+      },
+      {
+        "path": "/var/log/dmesg.1.gz",
+        "stored_bytes": 24270,
+        "read_bytes": 102034,
+        "lines": 1368,
+        "oversized_lines": 0,
+        "complete": true,
+        "counts": {
+          "bb_offload": 0,
+          "rf_warning": 0,
+          "rf_write": 0,
+          "tx_power_control": 0,
+          "h2c_class": 0,
+          "mac_original_status": 0,
+          "mac_busy": 0,
+          "mac_offload_detail": 0,
+          "mac_platform_tx": 0,
+          "wifi_firmware_error": 0,
+          "usb_fault": 0
+        },
+        "read_sha256": "87c7a114786ecc0012c4e53168211509388d0e16a37885896ff75081cc3115e3",
+        "unchanged_during_read": true,
+        "latest_boot_segment_counts": {}
+      },
+      {
+        "path": "/var/log/dmesg.2.gz",
+        "stored_bytes": 24047,
+        "read_bytes": 101065,
+        "lines": 1358,
+        "oversized_lines": 0,
+        "complete": true,
+        "counts": {
+          "bb_offload": 0,
+          "rf_warning": 0,
+          "rf_write": 0,
+          "tx_power_control": 0,
+          "h2c_class": 0,
+          "mac_original_status": 0,
+          "mac_busy": 0,
+          "mac_offload_detail": 0,
+          "mac_platform_tx": 0,
+          "wifi_firmware_error": 0,
+          "usb_fault": 0
+        },
+        "read_sha256": "3ba1cce8fa4bf5ee39ee8b3e1ad1e810cb99324a7a0480c5ae3d9189250799dc",
+        "unchanged_during_read": true,
+        "latest_boot_segment_counts": {}
+      },
+      {
+        "path": "/var/log/dmesg.3.gz",
+        "stored_bytes": 23909,
+        "read_bytes": 100744,
+        "lines": 1355,
+        "oversized_lines": 0,
+        "complete": true,
+        "counts": {
+          "bb_offload": 0,
+          "rf_warning": 0,
+          "rf_write": 0,
+          "tx_power_control": 0,
+          "h2c_class": 0,
+          "mac_original_status": 0,
+          "mac_busy": 0,
+          "mac_offload_detail": 0,
+          "mac_platform_tx": 0,
+          "wifi_firmware_error": 0,
+          "usb_fault": 0
+        },
+        "read_sha256": "d06b2d42e80f769b6ef6f4dee651f173e470cd55c596fc261c1cbc59debb0b1b",
+        "unchanged_during_read": true,
+        "latest_boot_segment_counts": {}
+      },
+      {
+        "path": "/var/log/dmesg.4.gz",
+        "stored_bytes": 23829,
+        "read_bytes": 100554,
+        "lines": 1353,
+        "oversized_lines": 0,
+        "complete": true,
+        "counts": {
+          "bb_offload": 0,
+          "rf_warning": 0,
+          "rf_write": 0,
+          "tx_power_control": 0,
+          "h2c_class": 0,
+          "mac_original_status": 0,
+          "mac_busy": 0,
+          "mac_offload_detail": 0,
+          "mac_platform_tx": 0,
+          "wifi_firmware_error": 0,
+          "usb_fault": 0
+        },
+        "read_sha256": "bc8e1fee127d35eb31c946cf198096e6ed731919ae38c960e6978b454f752668",
+        "unchanged_during_read": true,
+        "latest_boot_segment_counts": {}
+      },
+      {
+        "path": "/var/log/kern.log",
+        "stored_bytes": 57462298,
+        "read_bytes": 57462298,
+        "lines": 579983,
+        "oversized_lines": 0,
+        "complete": true,
+        "counts": {
+          "bb_offload": 148756,
+          "rf_warning": 38941,
+          "rf_write": 8480,
+          "tx_power_control": 1243,
+          "h2c_class": 1189,
+          "mac_original_status": 0,
+          "mac_busy": 0,
+          "mac_offload_detail": 0,
+          "mac_platform_tx": 0,
+          "wifi_firmware_error": 0,
+          "usb_fault": 0
+        },
+        "read_sha256": "82343dacdc3a6cfac1d6b8c9a8d44bf8a596dd2796f33e80ed3d12ef833eee54",
+        "unchanged_during_read": true,
+        "latest_boot_segment_counts": {}
+      },
+      {
+        "path": "/var/log/syslog",
+        "stored_bytes": 203342126,
+        "read_bytes": 203345852,
+        "lines": 1836262,
+        "oversized_lines": 0,
+        "complete": true,
+        "counts": {
+          "bb_offload": 148756,
+          "rf_warning": 38941,
+          "rf_write": 8480,
+          "tx_power_control": 1243,
+          "h2c_class": 1189,
+          "mac_original_status": 0,
+          "mac_busy": 0,
+          "mac_offload_detail": 0,
+          "mac_platform_tx": 0,
+          "wifi_firmware_error": 0,
+          "usb_fault": 0
+        },
+        "read_sha256": "ff6e9594a7e63f10e2330bdaab5d8d4980aee12164f3ef516552e8d7f275ed5e",
+        "unchanged_during_read": false,
+        "latest_boot_segment_counts": {}
+      }
+    ],
+    "errors": [],
+    "completed_at_utc": "2026-10-22T03:42:46.622752+00:00",
+    "limitation": "Per-file counts overlap across logs; zero matches do not rule out unlogged faults."
+  },
+  "driver": {
+    "checked_at_utc": "2026-10-22T03:44:54.504446+00:00",
+    "module": {
+      "path": "/lib/modules/5.10.104-tegra/updates/dkms/8852bu.ko",
+      "size": 6581080,
+      "sha256": "4a5c04932df776166e9af87bf0528c1b858a74f134824a2566b0a6946f918f47",
+      "strings": {
+        "fault, status = %d": {
+          "count": 1,
+          "sample": "%s fault, status = %d.\n"
+        },
+        "IO offload is busy": {
+          "count": 1,
+          "sample": "%s: IO offload is busy\n"
+        },
+        "check IO offload fail": {
+          "count": 1,
+          "sample": "%s: check IO offload fail\n"
+        },
+        "chk_cmd_ofld_pkt: polling timeout": {
+          "count": 0,
+          "sample": null
+        },
+        "[ERR]platform tx": {
+          "count": 10,
+          "sample": "[ERR]platform tx\n"
+        },
+        "IO offload fail": {
+          "count": 5,
+          "sample": "%s: IO offload fail!!!\n"
+        },
+        "Error H2C CLASS=": {
+          "count": 3,
+          "sample": "%s%s[WARNING][BB]Error H2C CLASS=%d, ID=%d, Rt_v = %d\n"
+        },
+        "Error Enable Power Control": {
+          "count": 1,
+          "sample": "%s%s[WARNING][BB]Error Enable Power Control for API return fail!!\n"
+        }
+      }
+    },
+    "exact_format_presence": {
+      "%s(): fault, status = %d.\n": 0,
+      "%s: IO offload is busy\n": 1,
+      "%s: polling timeout\n": 2,
+      "rtw_hal_mac_add_cmd_ofld": 1
+    },
+    "wrapper_disassembly": {
+      "code": 0,
+      "stdout": "\n/lib/modules/5.10.104-tegra/updates/dkms/8852bu.ko:     file format elf64-littleaarch64\n\n\nDisassembly of section .text:\n\n00000000000fdca8 <rtw_hal_mac_add_cmd_ofld>:\n   fdca8:\ta9be7bfd \tstp\tx29, x30, [sp, #-32]!\n   fdcac:\t910003fd \tmov\tx29, sp\n   fdcb0:\ta90153f3 \tstp\tx19, x20, [sp, #16]\n   fdcb4:\taa0003f3 \tmov\tx19, x0\n   fdcb8:\taa0103f4 \tmov\tx20, x1\n   fdcbc:\td50320ff \txpaclri\n   fdcc0:\taa1e03e0 \tmov\tx0, x30\n   fdcc4:\t94000000 \tbl\t0 <_mcount>\n   fdcc8:\tf943c660 \tldr\tx0, [x19, #1928]\n   fdccc:\tf9409800 \tldr\tx0, [x0, #304]\n   fdcd0:\tb4000140 \tcbz\tx0, fdcf8 <rtw_hal_mac_add_cmd_ofld+0x50>\n   fdcd4:\tf9400001 \tldr\tx1, [x0]\n   fdcd8:\tf944b022 \tldr\tx2, [x1, #2400]\n   fdcdc:\taa1403e1 \tmov\tx1, x20\n   fdce0:\td63f0040 \tblr\tx2\n   fdce4:\t7100001f \tcmp\tw0, #0x0\n   fdce8:\t1a9f07e0 \tcset\tw0, ne  // ne = any\n   fdcec:\ta94153f3 \tldp\tx19, x20, [sp, #16]\n   fdcf0:\ta8c27bfd \tldp\tx29, x30, [sp], #32\n   fdcf4:\td65f03c0 \tret\n   fdcf8:\t52800020 \tmov\tw0, #0x1                   \t// #1\n   fdcfc:\t17fffffc \tb\tfdcec <rtw_hal_mac_add_cmd_ofld+0x44>\n\nDisassembly of section .init.text:\n\nDisassembly of section .exit.text:\n",
+      "stderr": ""
+    },
+    "conclusion": "Compiled wrapper converts every nonzero lower MAC return to 1. Its raw-status logging branch is absent. Generic 1 cannot identify the original MAC status or Linux errno. Other MAC diagnostic strings are present, so this is not proof that all lower-level diagnostics were compiled out.",
+    "unconfirmed_candidates": [
+      "firmware not ready",
+      "command offload state busy",
+      "address alignment",
+      "buffer allocation or encoding",
+      "H2C send or completion"
+    ]
+  },
+  "rpc": {
+    "checked_at_utc": "2026-10-22T03:45:08.663935+00:00",
+    "completed_at_utc": "2026-10-22T03:45:33.100659+00:00",
+    "release": "953b51275852",
+    "before": {
+      "owner": null,
+      "armed": false,
+      "fsm": 0
+    },
+    "after": {
+      "owner": null,
+      "armed": false,
+      "fsm": 0
+    },
+    "official_processes_unchanged": true,
+    "queries": [
+      {
+        "service": "sport",
+        "api_id": 1,
+        "reply_count": 1,
+        "replies": [
+          {
+            "code": 0,
+            "raw": "1.0.0.0",
+            "elapsed_ms": 5.63,
+            "matching_publications": [
+              {
+                "key": "0110652f-d08a-5632-cfa3-319f00001303",
+                "topic": "rt/api/sport/response",
+                "participant_key": "0110652f-d08a-5632-cfa3-319f000001c1",
+                "instance_handle": 11866531160456481659,
+                "observed_rtps_source_ips": [
+                  "192.168.123.161"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "service": "sport",
+        "api_id": 7001,
+        "reply_count": 1,
+        "replies": [
+          {
+            "code": 0,
+            "raw": "{\"data\":0}",
+            "elapsed_ms": 5.48,
+            "matching_publications": [
+              {
+                "key": "0110652f-d08a-5632-cfa3-319f00001303",
+                "topic": "rt/api/sport/response",
+                "participant_key": "0110652f-d08a-5632-cfa3-319f000001c1",
+                "instance_handle": 11866531160456481659,
+                "observed_rtps_source_ips": [
+                  "192.168.123.161"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "service": "sport",
+        "api_id": 7002,
+        "reply_count": 1,
+        "replies": [
+          {
+            "code": 0,
+            "raw": "{\"data\":0}",
+            "elapsed_ms": 6.08,
+            "matching_publications": [
+              {
+                "key": "0110652f-d08a-5632-cfa3-319f00001303",
+                "topic": "rt/api/sport/response",
+                "participant_key": "0110652f-d08a-5632-cfa3-319f000001c1",
+                "instance_handle": 11866531160456481659,
+                "observed_rtps_source_ips": [
+                  "192.168.123.161"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "service": "sport",
+        "api_id": 7003,
+        "reply_count": 1,
+        "replies": [
+          {
+            "code": 7301,
+            "raw": null,
+            "elapsed_ms": 5.47,
+            "matching_publications": [
+              {
+                "key": "0110652f-d08a-5632-cfa3-319f00001303",
+                "topic": "rt/api/sport/response",
+                "participant_key": "0110652f-d08a-5632-cfa3-319f000001c1",
+                "instance_handle": 11866531160456481659,
+                "observed_rtps_source_ips": [
+                  "192.168.123.161"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "service": "sport",
+        "api_id": 7004,
+        "reply_count": 1,
+        "replies": [
+          {
+            "code": 7301,
+            "raw": null,
+            "elapsed_ms": 5.65,
+            "matching_publications": [
+              {
+                "key": "0110652f-d08a-5632-cfa3-319f00001303",
+                "topic": "rt/api/sport/response",
+                "participant_key": "0110652f-d08a-5632-cfa3-319f000001c1",
+                "instance_handle": 11866531160456481659,
+                "observed_rtps_source_ips": [
+                  "192.168.123.161"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "service": "sport",
+        "api_id": 7005,
+        "reply_count": 1,
+        "replies": [
+          {
+            "code": 7301,
+            "raw": null,
+            "elapsed_ms": 5.49,
+            "matching_publications": [
+              {
+                "key": "0110652f-d08a-5632-cfa3-319f00001303",
+                "topic": "rt/api/sport/response",
+                "participant_key": "0110652f-d08a-5632-cfa3-319f000001c1",
+                "instance_handle": 11866531160456481659,
+                "observed_rtps_source_ips": [
+                  "192.168.123.161"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "service": "sport",
+        "api_id": 7006,
+        "reply_count": 1,
+        "replies": [
+          {
+            "code": 7301,
+            "raw": null,
+            "elapsed_ms": 5.56,
+            "matching_publications": [
+              {
+                "key": "0110652f-d08a-5632-cfa3-319f00001303",
+                "topic": "rt/api/sport/response",
+                "participant_key": "0110652f-d08a-5632-cfa3-319f000001c1",
+                "instance_handle": 11866531160456481659,
+                "observed_rtps_source_ips": [
+                  "192.168.123.161"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "service": "motion_switcher",
+        "api_id": 1001,
+        "reply_count": 1,
+        "replies": [
+          {
+            "code": 0,
+            "raw": "{\"form\":\"0\",\"name\":\"ai\"}",
+            "elapsed_ms": 10.64,
+            "matching_publications": [
+              {
+                "key": "0110d259-4b8f-09f8-3fdd-858600000403",
+                "topic": "rt/api/motion_switcher/response",
+                "participant_key": "0110d259-4b8f-09f8-3fdd-8586000001c1",
+                "instance_handle": 10694732318533613237,
+                "observed_rtps_source_ips": [
+                  "192.168.123.161"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "service": "robot_state",
+        "api_id": 1003,
+        "reply_count": 1,
+        "replies": [
+          {
+            "code": 0,
+            "raw": "[{\"name\":\"ai_sport\",\"protect\":0,\"status\":0},{\"name\":\"audio_player_service\",\"protect\":0,\"status\":0},{\"name\":\"auto_test_arm\",\"protect\":0,\"status\":1},{\"name\":\"auto_test_low\",\"protect\":0,\"status\":1},{\"name\":\"bashrunner\",\"protect\":0,\"status\":0},{\"name\":\"basic_service\",\"protect\":1,\"status\":0},{\"name\":\"battery_guard\",\"protect\":0,\"status\":0},{\"name\":\"chat_go\",\"protect\":0,\"status\":0},{\"name\":\"dex3_service_l\",\"protect\":0,\"status\":0},{\"name\":\"dex3_service_r\",\"protect\":0,\"status\":0},{\"name\":\"emergency_stop\",\"protect\":0,\"status\":0},{\"name\":\"g1_arm_example\",\"protect\":0,\"status\":0},{\"name\":\"lidar_driver\",\"protect\":0,\"status\":1},{\"name\":\"log_system\",\"protect\":0,\"status\":0},{\"name\":\"motion_switcher\",\"protect\":0,\"status\":0},{\"name\":\"net_switcher\",\"protect\":0,\"status\":0},{\"name\":\"ota_box\",\"protect\":0,\"status\":1},{\"name\":\"ota_pipe\",\"protect\":0,\"status\":0},{\"name\":\"robot_state\",\"protect\":1,\"status\":0},{\"name\":\"robot_type_service\",\"protect\":0,\"status\":0},{\"name\":\"state_estimator\",\"protect\":0,\"status\":0},{\"name\":\"unistore\",\"protect\":0,\"status\":0},{\"name\":\"unitree_slam\",\"protect\":0,\"status\":1},{\"name\":\"video_hub_pc4\",\"protect\":0,\"status\":0},{\"name\":\"vui_service\",\"protect\":0,\"status\":0},{\"name\":\"webrtc_bridge\",\"protect\":1,\"status\":0},{\"name\":\"webrtc_multicast_responder\",\"protect\":0,\"status\":0},{\"name\":\"webrtc_signal_server\",\"protect\":1,\"status\":0}]",
+            "elapsed_ms": 5.48,
+            "matching_publications": [
+              {
+                "key": "0110f79d-eb98-80fc-6dea-face00000803",
+                "topic": "rt/api/robot_state/response",
+                "participant_key": "0110f79d-eb98-80fc-6dea-face000001c1",
+                "instance_handle": 5117662409804131420,
+                "observed_rtps_source_ips": [
+                  "192.168.123.161"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "service": "robot_state",
+        "api_id": 1006,
+        "reply_count": 1,
+        "replies": [
+          {
+            "code": 3203,
+            "raw": null,
+            "elapsed_ms": 5.48,
+            "matching_publications": [
+              {
+                "key": "0110f79d-eb98-80fc-6dea-face00000803",
+                "topic": "rt/api/robot_state/response",
+                "participant_key": "0110f79d-eb98-80fc-6dea-face000001c1",
+                "instance_handle": 5117662409804131420,
+                "observed_rtps_source_ips": [
+                  "192.168.123.161"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "known_read_paths": {
+      "target": "192.168.123.161",
+      "checked_at_utc": "2026-10-22T03:45:32.997766+00:00",
+      "known_ports": [
+        {
+          "port": 22,
+          "result": "ConnectionRefusedError",
+          "errno": 111,
+          "elapsed_ms": 0.36,
+          "application_bytes_sent": 0
+        },
+        {
+          "port": 1026,
+          "result": "ConnectionRefusedError",
+          "errno": 111,
+          "elapsed_ms": 0.2,
+          "application_bytes_sent": 0
+        }
+      ],
+      "ota_hosts": {
+        "default": "tcp://192.168.123.164:1026"
+      },
+      "ota_binary_sha256": "bbaff3c92449f46d4e5a2c1cef6f990eaadaf6e89139967cb5f8f5f59a275c8d",
+      "peer_ota_queries": 0,
+      "ota_mutations": 0,
+      "configuration_writes": 0,
+      "limitation": "Port checks do not enumerate other services or prove the absence of another version interface."
+    },
+    "evidence_source": "g1_console/assets/safety_evidence_sources/sport_host_20261022_v31.json",
+    "evidence_source_sha256": "6828f768e4c8964ea04299fbea76d75543d61ebb69e203fba5a4071959ef43f9"
+  },
+  "software_verification": {
+    "mac_preview_url": "http://127.0.0.1:18766/",
+    "orin_release_unchanged": "953b51275852",
+    "foundation_updated_locally_only": true,
+    "python_tests_passed": 51,
+    "frontend_tests_passed": 14,
+    "frontend_build_passed": true,
+    "browser_queries": [
+      {
+        "at": "2026-10-22T11:52:13+08:00",
+        "capability": "get_fsm",
+        "code": 0,
+        "raw": 0
+      },
+      {
+        "at": "2026-10-22T11:52:19+08:00",
+        "capability": "get_balance",
+        "code": 7301,
+        "value": null
+      },
+      {
+        "at": "2026-10-22T11:52:22+08:00",
+        "capability": "get_pkg_version",
+        "code": 3203,
+        "value": null
+      }
+    ],
+    "screenshots": [
+      "doc/screenshots/g1-query-readback-20261022.png",
+      "doc/screenshots/g1-query-package-3203-20261022.png"
+    ]
+  }
+}

@@ -1,0 +1,2432 @@
+{
+  "started_at": 1792558804.867068,
+  "boot_id": "7a6791dc-f512-4b45-aca3-44fbde855e25",
+  "interface": "eth0",
+  "domain": 0,
+  "command_writes": 0,
+  "rpc_calls": 0,
+  "endpoints": {
+    "publications": [
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300003803",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/api/action_store/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "0110a7ac-adec-9e72-69c3-54f800000403",
+        "participant": "0110a7ac-adec-9e72-69c3-54f8000001c1",
+        "topic": "rt/api/action_store/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "01101a31-6285-3983-e6da-b24600000603",
+        "participant": "01101a31-6285-3983-e6da-b246000001c1",
+        "topic": "rt/api/arm/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "0110e634-a851-ff0a-53f0-f00f00001603",
+        "participant": "0110e634-a851-ff0a-53f0-f00f000001c1",
+        "topic": "rt/api/arm/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300002e03",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/api/arm/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "01104417-efaf-1c39-1b54-db9000000e03",
+        "participant": "01104417-efaf-1c39-1b54-db90000001c1",
+        "topic": "rt/api/arm/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "0110d6fc-177a-8893-da9e-58dd00001003",
+        "participant": "0110d6fc-177a-8893-da9e-58dd000001c1",
+        "topic": "rt/api/arm/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300002803",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/api/audiohub/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "01107232-de81-e0ab-c0b7-ab0a00000403",
+        "participant": "01107232-de81-e0ab-c0b7-ab0a000001c1",
+        "topic": "rt/api/audiohub/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300002003",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/api/bashrunner/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "0110d6af-f6b3-5eea-177a-d4c700000203",
+        "participant": "0110d6af-f6b3-5eea-177a-d4c7000001c1",
+        "topic": "rt/api/bashrunner/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "0110e634-a851-ff0a-53f0-f00f00000203",
+        "participant": "0110e634-a851-ff0a-53f0-f00f000001c1",
+        "topic": "rt/api/basic_clearoip/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "01105dac-e3fc-d0ff-e1c5-9a1900003b03",
+        "participant": "01105dac-e3fc-d0ff-e1c5-9a19000001c1",
+        "topic": "rt/api/basic_clearoip/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "01105dac-e3fc-d0ff-e1c5-9a1900003703",
+        "participant": "01105dac-e3fc-d0ff-e1c5-9a19000001c1",
+        "topic": "rt/api/basic_clearoip_lease/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300003603",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/api/basic_demarcate/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "01108ca2-3fa3-f812-f765-bb6b00000403",
+        "participant": "01108ca2-3fa3-f812-f765-bb6b000001c1",
+        "topic": "rt/api/basic_demarcate/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "0110442a-2b66-cd31-e291-f68d00002103",
+        "participant": "0110442a-2b66-cd31-e291-f68d000001c1",
+        "topic": "rt/api/basic_demarcate/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "01105dac-e3fc-d0ff-e1c5-9a1900002303",
+        "participant": "01105dac-e3fc-d0ff-e1c5-9a19000001c1",
+        "topic": "rt/api/basic_demarcate/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "01105dac-e3fc-d0ff-e1c5-9a1900001f03",
+        "participant": "01105dac-e3fc-d0ff-e1c5-9a19000001c1",
+        "topic": "rt/api/basic_demarcate_lease/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "0110e634-a851-ff0a-53f0-f00f00000603",
+        "participant": "0110e634-a851-ff0a-53f0-f00f000001c1",
+        "topic": "rt/api/basic_softlimit/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "01105dac-e3fc-d0ff-e1c5-9a1900002b03",
+        "participant": "01105dac-e3fc-d0ff-e1c5-9a19000001c1",
+        "topic": "rt/api/basic_softlimit/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "01105dac-e3fc-d0ff-e1c5-9a1900002703",
+        "participant": "01105dac-e3fc-d0ff-e1c5-9a19000001c1",
+        "topic": "rt/api/basic_softlimit_lease/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "01105dac-e3fc-d0ff-e1c5-9a1900003303",
+        "participant": "01105dac-e3fc-d0ff-e1c5-9a19000001c1",
+        "topic": "rt/api/basic_taumax/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "01105dac-e3fc-d0ff-e1c5-9a1900002f03",
+        "participant": "01105dac-e3fc-d0ff-e1c5-9a19000001c1",
+        "topic": "rt/api/basic_taumax_lease/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "01105dac-e3fc-d0ff-e1c5-9a1900001003",
+        "participant": "01105dac-e3fc-d0ff-e1c5-9a19000001c1",
+        "topic": "rt/api/config/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "01105dac-e3fc-d0ff-e1c5-9a1900001503",
+        "participant": "01105dac-e3fc-d0ff-e1c5-9a19000001c1",
+        "topic": "rt/api/config/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "01105dac-e3fc-d0ff-e1c5-9a1900001803",
+        "participant": "01105dac-e3fc-d0ff-e1c5-9a19000001c1",
+        "topic": "rt/api/config/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "01105dac-e3fc-d0ff-e1c5-9a1900001b03",
+        "participant": "01105dac-e3fc-d0ff-e1c5-9a19000001c1",
+        "topic": "rt/api/config/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300002a03",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/api/config/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "0110442a-2b66-cd31-e291-f68d00002503",
+        "participant": "0110442a-2b66-cd31-e291-f68d000001c1",
+        "topic": "rt/api/config/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "01103209-2ad6-440c-cfe0-9cb100000403",
+        "participant": "01103209-2ad6-440c-cfe0-9cb1000001c1",
+        "topic": "rt/api/config/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300003203",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/api/dex3_msg_controller/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "0110e786-b9d1-8dc1-0d87-014d00000803",
+        "participant": "0110e786-b9d1-8dc1-0d87-014d000001c1",
+        "topic": "rt/api/dex3_msg_controller/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "01102892-22e3-9fa8-1eb7-f5e300000803",
+        "participant": "01102892-22e3-9fa8-1eb7-f5e3000001c1",
+        "topic": "rt/api/dex3_msg_controller/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "01104417-efaf-1c39-1b54-db9000003403",
+        "participant": "01104417-efaf-1c39-1b54-db90000001c1",
+        "topic": "rt/api/gesture/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300002203",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/api/gpt/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "0110442a-2b66-cd31-e291-f68d00000403",
+        "participant": "0110442a-2b66-cd31-e291-f68d000001c1",
+        "topic": "rt/api/gpt/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "01104417-efaf-1c39-1b54-db9000000603",
+        "participant": "01104417-efaf-1c39-1b54-db90000001c1",
+        "topic": "rt/api/gpt/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "01101a31-6285-3983-e6da-b24600000e03",
+        "participant": "01101a31-6285-3983-e6da-b246000001c1",
+        "topic": "rt/api/motion_switcher/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300002c03",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/api/motion_switcher/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "01103367-d8aa-c614-77f6-097f00000403",
+        "participant": "01103367-d8aa-c614-77f6-097f000001c1",
+        "topic": "rt/api/motion_switcher/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300001803",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/api/rm_con/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300002603",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/api/robot_state/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "0110442a-2b66-cd31-e291-f68d00002903",
+        "participant": "0110442a-2b66-cd31-e291-f68d000001c1",
+        "topic": "rt/api/robot_state/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "01103209-2ad6-440c-cfe0-9cb100000803",
+        "participant": "01103209-2ad6-440c-cfe0-9cb1000001c1",
+        "topic": "rt/api/robot_state/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300003003",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/api/robot_type_service/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "0110e3a2-9a63-39f0-aff0-c5ca00000203",
+        "participant": "0110e3a2-9a63-39f0-aff0-c5ca000001c1",
+        "topic": "rt/api/robot_type_service/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300003a03",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/api/slam_operate/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "01104417-efaf-1c39-1b54-db9000003603",
+        "participant": "01104417-efaf-1c39-1b54-db90000001c1",
+        "topic": "rt/api/slam_operate/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "01101a31-6285-3983-e6da-b24600000203",
+        "participant": "01101a31-6285-3983-e6da-b246000001c1",
+        "topic": "rt/api/sport/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "0110e634-a851-ff0a-53f0-f00f00001003",
+        "participant": "0110e634-a851-ff0a-53f0-f00f000001c1",
+        "topic": "rt/api/sport/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "01106ab3-d698-19ff-4918-e6cf00000203",
+        "participant": "01106ab3-d698-19ff-4918-e6cf000001c1",
+        "topic": "rt/api/sport/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "01109b5e-fa1a-5de5-653e-6cde00000603",
+        "participant": "01109b5e-fa1a-5de5-653e-6cde000001c1",
+        "topic": "rt/api/sport/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "0110d6fc-177a-8893-da9e-58dd00000603",
+        "participant": "0110d6fc-177a-8893-da9e-58dd000001c1",
+        "topic": "rt/api/sport/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300002403",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/api/sport/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "01108ca2-3fa3-f812-f765-bb6b00000803",
+        "participant": "01108ca2-3fa3-f812-f765-bb6b000001c1",
+        "topic": "rt/api/sport/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "0110442a-2b66-cd31-e291-f68d00001b03",
+        "participant": "0110442a-2b66-cd31-e291-f68d000001c1",
+        "topic": "rt/api/sport/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "01104641-3091-1b01-60b1-a1f700000603",
+        "participant": "01104641-3091-1b01-60b1-a1f7000001c1",
+        "topic": "rt/api/sport/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "01104417-efaf-1c39-1b54-db9000000a03",
+        "participant": "01104417-efaf-1c39-1b54-db90000001c1",
+        "topic": "rt/api/sport/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "0110e634-a851-ff0a-53f0-f00f00001303",
+        "participant": "0110e634-a851-ff0a-53f0-f00f000001c1",
+        "topic": "rt/api/sport/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "01109b5e-fa1a-5de5-653e-6cde00000803",
+        "participant": "01109b5e-fa1a-5de5-653e-6cde000001c1",
+        "topic": "rt/api/sport/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "01104641-3091-1b01-60b1-a1f700000803",
+        "participant": "01104641-3091-1b01-60b1-a1f7000001c1",
+        "topic": "rt/api/sport/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "0110e045-61fe-5668-cd12-897f00000403",
+        "participant": "0110e045-61fe-5668-cd12-897f000001c1",
+        "topic": "rt/api/videohub/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300001e03",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/api/videohub/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "01104417-efaf-1c39-1b54-db9000001e03",
+        "participant": "01104417-efaf-1c39-1b54-db90000001c1",
+        "topic": "rt/api/videohub/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "0110be8f-5272-103a-c0c1-b9f800000203",
+        "participant": "0110be8f-5272-103a-c0c1-b9f8000001c1",
+        "topic": "rt/api/videohub/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "01104417-efaf-1c39-1b54-db9000001803",
+        "participant": "01104417-efaf-1c39-1b54-db90000001c1",
+        "topic": "rt/api/vla/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "01101a31-6285-3983-e6da-b24600000a03",
+        "participant": "01101a31-6285-3983-e6da-b246000001c1",
+        "topic": "rt/api/voice/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "011055cb-43e6-7ec8-d236-a59700000203",
+        "participant": "011055cb-43e6-7ec8-d236-a597000001c1",
+        "topic": "rt/api/voice/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "0110e634-a851-ff0a-53f0-f00f00000a03",
+        "participant": "0110e634-a851-ff0a-53f0-f00f000001c1",
+        "topic": "rt/api/voice/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "01107232-de81-e0ab-c0b7-ab0a00000603",
+        "participant": "01107232-de81-e0ab-c0b7-ab0a000001c1",
+        "topic": "rt/api/voice/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300003403",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/api/voice/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "01104417-efaf-1c39-1b54-db9000002c03",
+        "participant": "01104417-efaf-1c39-1b54-db90000001c1",
+        "topic": "rt/api/voice/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "0110442a-2b66-cd31-e291-f68d00000d03",
+        "participant": "0110442a-2b66-cd31-e291-f68d000001c1",
+        "topic": "rt/api/voice/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "01104417-efaf-1c39-1b54-db9000002a03",
+        "participant": "01104417-efaf-1c39-1b54-db90000001c1",
+        "topic": "rt/api/vui/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "0110442a-2b66-cd31-e291-f68d00001103",
+        "participant": "0110442a-2b66-cd31-e291-f68d000001c1",
+        "topic": "rt/api/vui/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300003c03",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/api/waist_pitch_demarcate/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "0110e634-ff7a-e1af-ff9a-b3d800001a03",
+        "participant": "0110e634-ff7a-e1af-ff9a-b3d8000001c1",
+        "topic": "rt/arm/action/state",
+        "type": "std_msgs::msg::dds_::String_"
+      },
+      {
+        "key": "0110d6fc-177a-8893-da9e-58dd00000e03",
+        "participant": "0110d6fc-177a-8893-da9e-58dd000001c1",
+        "topic": "rt/arm/action/state",
+        "type": "std_msgs::msg::dds_::String_"
+      },
+      {
+        "key": "011055cb-43e6-7ec8-d236-a59700000803",
+        "participant": "011055cb-43e6-7ec8-d236-a597000001c1",
+        "topic": "rt/arm_sdk",
+        "type": "unitree_hg::msg::dds_::LowCmd_"
+      },
+      {
+        "key": "0110d6fc-177a-8893-da9e-58dd00000403",
+        "participant": "0110d6fc-177a-8893-da9e-58dd000001c1",
+        "topic": "rt/arm_sdk",
+        "type": "unitree_hg::msg::dds_::LowCmd_"
+      },
+      {
+        "key": "01104417-efaf-1c39-1b54-db9000001203",
+        "participant": "01104417-efaf-1c39-1b54-db90000001c1",
+        "topic": "rt/arm_sdk",
+        "type": "unitree_hg::msg::dds_::LowCmd_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300001c03",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/arm_service_inbound",
+        "type": "std_msgs::msg::dds_::String_"
+      },
+      {
+        "key": "0110d6fc-177a-8893-da9e-58dd00001603",
+        "participant": "0110d6fc-177a-8893-da9e-58dd000001c1",
+        "topic": "rt/arm_service_outbound",
+        "type": "std_msgs::msg::dds_::String_"
+      },
+      {
+        "key": "0110442a-2b66-cd31-e291-f68d00001703",
+        "participant": "0110442a-2b66-cd31-e291-f68d000001c1",
+        "topic": "rt/audio_msg",
+        "type": "std_msgs::msg::dds_::String_"
+      },
+      {
+        "key": "01107232-de81-e0ab-c0b7-ab0a00000c03",
+        "participant": "01107232-de81-e0ab-c0b7-ab0a000001c1",
+        "topic": "rt/audio_msg/filter",
+        "type": "std_msgs::msg::dds_::String_"
+      },
+      {
+        "key": "01103209-2ad6-440c-cfe0-9cb100000203",
+        "participant": "01103209-2ad6-440c-cfe0-9cb1000001c1",
+        "topic": "rt/config_change_status",
+        "type": "unitree_go::msg::dds_::ConfigChangeStatus_"
+      },
+      {
+        "key": "0110e786-b9d1-8dc1-0d87-014d00000203",
+        "participant": "0110e786-b9d1-8dc1-0d87-014d000001c1",
+        "topic": "rt/dex3/left/state",
+        "type": "unitree_hg::msg::dds_::HandState_"
+      },
+      {
+        "key": "01102892-22e3-9fa8-1eb7-f5e300000203",
+        "participant": "01102892-22e3-9fa8-1eb7-f5e3000001c1",
+        "topic": "rt/dex3/right/state",
+        "type": "unitree_hg::msg::dds_::HandState_"
+      },
+      {
+        "key": "01109b5e-fa1a-5de5-653e-6cde00000a03",
+        "participant": "01109b5e-fa1a-5de5-653e-6cde000001c1",
+        "topic": "rt/event/action_store",
+        "type": "std_msgs::msg::dds_::String_"
+      },
+      {
+        "key": "0110a7ac-adec-9e72-69c3-54f800000203",
+        "participant": "0110a7ac-adec-9e72-69c3-54f8000001c1",
+        "topic": "rt/event/action_store",
+        "type": "std_msgs::msg::dds_::String_"
+      },
+      {
+        "key": "01104641-3091-1b01-60b1-a1f700000a03",
+        "participant": "01104641-3091-1b01-60b1-a1f7000001c1",
+        "topic": "rt/event/action_store",
+        "type": "std_msgs::msg::dds_::String_"
+      },
+      {
+        "key": "0110be8f-5272-103a-c0c1-b9f800000103",
+        "participant": "0110be8f-5272-103a-c0c1-b9f8000001c1",
+        "topic": "rt/frontvideostream",
+        "type": "unitree_go::msg::dds_::Go2FrontVideoData_"
+      },
+      {
+        "key": "01104417-efaf-1c39-1b54-db9000002603",
+        "participant": "01104417-efaf-1c39-1b54-db90000001c1",
+        "topic": "rt/gpt_cmd",
+        "type": "std_msgs::msg::dds_::String_"
+      },
+      {
+        "key": "01104417-efaf-1c39-1b54-db9000002803",
+        "participant": "01104417-efaf-1c39-1b54-db90000001c1",
+        "topic": "rt/gpt_msg",
+        "type": "std_msgs::msg::dds_::String_"
+      },
+      {
+        "key": "01104417-efaf-1c39-1b54-db9000003003",
+        "participant": "01104417-efaf-1c39-1b54-db90000001c1",
+        "topic": "rt/gpt_state",
+        "type": "std_msgs::msg::dds_::String_"
+      },
+      {
+        "key": "01104417-efaf-1c39-1b54-db9000000803",
+        "participant": "01104417-efaf-1c39-1b54-db90000001c1",
+        "topic": "rt/gptflowfeedback",
+        "type": "std_msgs::msg::dds_::String_"
+      },
+      {
+        "key": "01106ab3-d698-19ff-4918-e6cf00000603",
+        "participant": "01106ab3-d698-19ff-4918-e6cf000001c1",
+        "topic": "rt/lf/battery_alarm",
+        "type": "std_msgs::msg::dds_::String_"
+      },
+      {
+        "key": "01105dac-e3fc-d0ff-e1c5-9a1900000603",
+        "participant": "01105dac-e3fc-d0ff-e1c5-9a19000001c1",
+        "topic": "rt/lf/bmsstate",
+        "type": "unitree_hg::msg::dds_::BmsState_"
+      },
+      {
+        "key": "0110e786-b9d1-8dc1-0d87-014d00000403",
+        "participant": "0110e786-b9d1-8dc1-0d87-014d000001c1",
+        "topic": "rt/lf/dex3/left/state",
+        "type": "unitree_hg::msg::dds_::HandState_"
+      },
+      {
+        "key": "01102892-22e3-9fa8-1eb7-f5e300000403",
+        "participant": "01102892-22e3-9fa8-1eb7-f5e3000001c1",
+        "topic": "rt/lf/dex3/right/state",
+        "type": "unitree_hg::msg::dds_::HandState_"
+      },
+      {
+        "key": "01108ca2-3fa3-f812-f765-bb6b00000c03",
+        "participant": "01108ca2-3fa3-f812-f765-bb6b000001c1",
+        "topic": "rt/lf/emergency_stop",
+        "type": "unitree_go::msg::dds_::Error_"
+      },
+      {
+        "key": "01105dac-e3fc-d0ff-e1c5-9a1900000403",
+        "participant": "01105dac-e3fc-d0ff-e1c5-9a19000001c1",
+        "topic": "rt/lf/lowstate",
+        "type": "unitree_hg::msg::dds_::LowState_"
+      },
+      {
+        "key": "01105dac-e3fc-d0ff-e1c5-9a1900000803",
+        "participant": "01105dac-e3fc-d0ff-e1c5-9a19000001c1",
+        "topic": "rt/lf/mainboardstate",
+        "type": "unitree_hg::msg::dds_::MainBoardState_"
+      },
+      {
+        "key": "01105dac-e3fc-d0ff-e1c5-9a1900000e03",
+        "participant": "01105dac-e3fc-d0ff-e1c5-9a19000001c1",
+        "topic": "rt/lf/secondary_imu",
+        "type": "unitree_hg::msg::dds_::IMUState_"
+      },
+      {
+        "key": "0110e634-ff7a-e1af-ff9a-b3d800001803",
+        "participant": "0110e634-ff7a-e1af-ff9a-b3d8000001c1",
+        "topic": "rt/lf/sportmodestate",
+        "type": "unitree_hg::msg::dds_::SportModeState_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300001a03",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/log_system_inbound",
+        "type": "std_msgs::msg::dds_::String_"
+      },
+      {
+        "key": "01101280-5c46-e39d-36d3-e69b00000203",
+        "participant": "01101280-5c46-e39d-36d3-e69b000001c1",
+        "topic": "rt/log_system_outbound",
+        "type": "std_msgs::msg::dds_::String_"
+      },
+      {
+        "key": "0110e634-ff7a-e1af-ff9a-b3d800001403",
+        "participant": "0110e634-ff7a-e1af-ff9a-b3d8000001c1",
+        "topic": "rt/lowcmd",
+        "type": "unitree_hg::msg::dds_::LowCmd_"
+      },
+      {
+        "key": "01108ca2-3fa3-f812-f765-bb6b00000e03",
+        "participant": "01108ca2-3fa3-f812-f765-bb6b000001c1",
+        "topic": "rt/lowcmd",
+        "type": "unitree_hg::msg::dds_::LowCmd_"
+      },
+      {
+        "key": "01105dac-e3fc-d0ff-e1c5-9a1900000203",
+        "participant": "01105dac-e3fc-d0ff-e1c5-9a19000001c1",
+        "topic": "rt/lowstate",
+        "type": "unitree_hg::msg::dds_::LowState_"
+      },
+      {
+        "key": "01109b5e-fa1a-5de5-653e-6cde00000203",
+        "participant": "01109b5e-fa1a-5de5-653e-6cde000001c1",
+        "topic": "rt/lowstate",
+        "type": "unitree_hg::msg::dds_::LowState_"
+      },
+      {
+        "key": "01104641-3091-1b01-60b1-a1f700000203",
+        "participant": "01104641-3091-1b01-60b1-a1f7000001c1",
+        "topic": "rt/lowstate",
+        "type": "unitree_hg::msg::dds_::LowState_"
+      },
+      {
+        "key": "01103209-2ad6-440c-cfe0-9cb100000e03",
+        "participant": "01103209-2ad6-440c-cfe0-9cb1000001c1",
+        "topic": "rt/multiplestate",
+        "type": "std_msgs::msg::dds_::String_"
+      },
+      {
+        "key": "0110a8dd-8ec3-0012-e421-702100000403",
+        "participant": "0110a8dd-8ec3-0012-e421-7021000001c1",
+        "topic": "rt/odommodestate",
+        "type": "unitree_go::msg::dds_::SportModeState_"
+      },
+      {
+        "key": "011076c7-827a-ef7e-c449-723600000203",
+        "participant": "011076c7-827a-ef7e-c449-7236000001c1",
+        "topic": "rt/public_network_status",
+        "type": "std_msgs::msg::dds_::String_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300001603",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/rtc/state",
+        "type": "std_msgs::msg::dds_::String_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300001203",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/rtc_status",
+        "type": "std_msgs::msg::dds_::String_"
+      },
+      {
+        "key": "01105dac-e3fc-d0ff-e1c5-9a1900000c03",
+        "participant": "01105dac-e3fc-d0ff-e1c5-9a19000001c1",
+        "topic": "rt/secondary_imu",
+        "type": "unitree_hg::msg::dds_::IMUState_"
+      },
+      {
+        "key": "0110d6af-f6b3-5eea-177a-d4c700000403",
+        "participant": "0110d6af-f6b3-5eea-177a-d4c7000001c1",
+        "topic": "rt/selftest",
+        "type": "std_msgs::msg::dds_::String_"
+      },
+      {
+        "key": "01103209-2ad6-440c-cfe0-9cb100000c03",
+        "participant": "01103209-2ad6-440c-cfe0-9cb1000001c1",
+        "topic": "rt/servicestate",
+        "type": "std_msgs::msg::dds_::String_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300000e03",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/servicestateactivate",
+        "type": "std_msgs::msg::dds_::String_"
+      },
+      {
+        "key": "0110e634-ff7a-e1af-ff9a-b3d800001603",
+        "participant": "0110e634-ff7a-e1af-ff9a-b3d8000001c1",
+        "topic": "rt/sportmodestate",
+        "type": "unitree_hg::msg::dds_::SportModeState_"
+      },
+      {
+        "key": "0110a8dd-8ec3-0012-e421-702100000c03",
+        "participant": "0110a8dd-8ec3-0012-e421-7021000001c1",
+        "topic": "rt/state_estimator/fusion_odom",
+        "type": "nav_msgs::msg::dds_::Odometry_"
+      },
+      {
+        "key": "0110a8dd-8ec3-0012-e421-702100000e03",
+        "participant": "0110a8dd-8ec3-0012-e421-7021000001c1",
+        "topic": "rt/state_estimator/fusion_odom_torso",
+        "type": "nav_msgs::msg::dds_::Odometry_"
+      },
+      {
+        "key": "0110a8dd-8ec3-0012-e421-702100000603",
+        "participant": "0110a8dd-8ec3-0012-e421-7021000001c1",
+        "topic": "rt/state_estimator/odom_pelvis",
+        "type": "nav_msgs::msg::dds_::Odometry_"
+      },
+      {
+        "key": "0110a8dd-8ec3-0012-e421-702100000803",
+        "participant": "0110a8dd-8ec3-0012-e421-7021000001c1",
+        "topic": "rt/state_estimator/odom_torso",
+        "type": "nav_msgs::msg::dds_::Odometry_"
+      },
+      {
+        "key": "01109b5e-fa1a-5de5-653e-6cde00000403",
+        "participant": "01109b5e-fa1a-5de5-653e-6cde000001c1",
+        "topic": "rt/user_lowcmd",
+        "type": "unitree_hg::msg::dds_::LowCmd_"
+      },
+      {
+        "key": "01104641-3091-1b01-60b1-a1f700000403",
+        "participant": "01104641-3091-1b01-60b1-a1f7000001c1",
+        "topic": "rt/user_lowcmd",
+        "type": "unitree_hg::msg::dds_::LowCmd_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300001403",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/videohub/inner",
+        "type": "std_msgs::msg::dds_::String_"
+      },
+      {
+        "key": "01103209-2ad6-440c-cfe0-9cb100001203",
+        "participant": "01103209-2ad6-440c-cfe0-9cb1000001c1",
+        "topic": "rt/webrtcreq",
+        "type": "std_msgs::msg::dds_::String_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300000203",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/webrtcres",
+        "type": "std_msgs::msg::dds_::String_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300001003",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/wirelesscontroller",
+        "type": "unitree_go::msg::dds_::WirelessController_"
+      },
+      {
+        "key": "0110442a-2b66-cd31-e291-f68d00000903",
+        "participant": "0110442a-2b66-cd31-e291-f68d000001c1",
+        "topic": "rt/wirelesscontroller",
+        "type": "unitree_go::msg::dds_::WirelessController_"
+      },
+      {
+        "key": "01105e2b-0537-81f8-50a3-9a7e00000203",
+        "participant": "01105e2b-0537-81f8-50a3-9a7e000001c1",
+        "topic": "rt/xfk_webrtcreq",
+        "type": "std_msgs::msg::dds_::String_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300000403",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/xfk_webrtcres",
+        "type": "std_msgs::msg::dds_::String_"
+      }
+    ],
+    "subscriptions": [
+      {
+        "key": "0110a98b-915f-b251-c953-852600000107",
+        "participant": "0110a98b-915f-b251-c953-8526000001c1",
+        "topic": "DCPSPublication",
+        "type": "org::eclipse::cyclonedds::builtin::DCPSPublication"
+      },
+      {
+        "key": "0110a98b-915f-b251-c953-852600000207",
+        "participant": "0110a98b-915f-b251-c953-8526000001c1",
+        "topic": "DCPSSubscription",
+        "type": "org::eclipse::cyclonedds::builtin::DCPSSubscription"
+      },
+      {
+        "key": "0110e634-ff7a-e1af-ff9a-b3d800000e04",
+        "participant": "0110e634-ff7a-e1af-ff9a-b3d8000001c1",
+        "topic": "hight_map",
+        "type": "unitree_go::msg::dds_::HeightMap_"
+      },
+      {
+        "key": "0110a7ac-adec-9e72-69c3-54f800000604",
+        "participant": "0110a7ac-adec-9e72-69c3-54f8000001c1",
+        "topic": "rt/api/action_store/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300007804",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/api/action_store/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "0110d6fc-177a-8893-da9e-58dd00001204",
+        "participant": "0110d6fc-177a-8893-da9e-58dd000001c1",
+        "topic": "rt/api/arm/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "01101a31-6285-3983-e6da-b24600000804",
+        "participant": "01101a31-6285-3983-e6da-b246000001c1",
+        "topic": "rt/api/arm/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "0110e634-a851-ff0a-53f0-f00f00001804",
+        "participant": "0110e634-a851-ff0a-53f0-f00f000001c1",
+        "topic": "rt/api/arm/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300006c04",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/api/arm/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "01107232-de81-e0ab-c0b7-ab0a00000204",
+        "participant": "01107232-de81-e0ab-c0b7-ab0a000001c1",
+        "topic": "rt/api/audiohub/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300006604",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/api/audiohub/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "0110d6af-f6b3-5eea-177a-d4c700000604",
+        "participant": "0110d6af-f6b3-5eea-177a-d4c7000001c1",
+        "topic": "rt/api/bashrunner/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300005e04",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/api/bashrunner/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "01105dac-e3fc-d0ff-e1c5-9a1900003d04",
+        "participant": "01105dac-e3fc-d0ff-e1c5-9a19000001c1",
+        "topic": "rt/api/basic_clearoip/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "0110e634-a851-ff0a-53f0-f00f00000404",
+        "participant": "0110e634-a851-ff0a-53f0-f00f000001c1",
+        "topic": "rt/api/basic_clearoip/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "01105dac-e3fc-d0ff-e1c5-9a1900003904",
+        "participant": "01105dac-e3fc-d0ff-e1c5-9a19000001c1",
+        "topic": "rt/api/basic_clearoip_lease/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "01105dac-e3fc-d0ff-e1c5-9a1900002504",
+        "participant": "01105dac-e3fc-d0ff-e1c5-9a19000001c1",
+        "topic": "rt/api/basic_demarcate/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300007604",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/api/basic_demarcate/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "01108ca2-3fa3-f812-f765-bb6b00000604",
+        "participant": "01108ca2-3fa3-f812-f765-bb6b000001c1",
+        "topic": "rt/api/basic_demarcate/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "0110442a-2b66-cd31-e291-f68d00002304",
+        "participant": "0110442a-2b66-cd31-e291-f68d000001c1",
+        "topic": "rt/api/basic_demarcate/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "01105dac-e3fc-d0ff-e1c5-9a1900002104",
+        "participant": "01105dac-e3fc-d0ff-e1c5-9a19000001c1",
+        "topic": "rt/api/basic_demarcate_lease/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "01105dac-e3fc-d0ff-e1c5-9a1900002d04",
+        "participant": "01105dac-e3fc-d0ff-e1c5-9a19000001c1",
+        "topic": "rt/api/basic_softlimit/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "0110e634-a851-ff0a-53f0-f00f00000804",
+        "participant": "0110e634-a851-ff0a-53f0-f00f000001c1",
+        "topic": "rt/api/basic_softlimit/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "01105dac-e3fc-d0ff-e1c5-9a1900002904",
+        "participant": "01105dac-e3fc-d0ff-e1c5-9a19000001c1",
+        "topic": "rt/api/basic_softlimit_lease/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "01105dac-e3fc-d0ff-e1c5-9a1900003504",
+        "participant": "01105dac-e3fc-d0ff-e1c5-9a19000001c1",
+        "topic": "rt/api/basic_taumax/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "01105dac-e3fc-d0ff-e1c5-9a1900003104",
+        "participant": "01105dac-e3fc-d0ff-e1c5-9a19000001c1",
+        "topic": "rt/api/basic_taumax_lease/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "01103209-2ad6-440c-cfe0-9cb100000604",
+        "participant": "01103209-2ad6-440c-cfe0-9cb1000001c1",
+        "topic": "rt/api/config/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "01105dac-e3fc-d0ff-e1c5-9a1900001204",
+        "participant": "01105dac-e3fc-d0ff-e1c5-9a19000001c1",
+        "topic": "rt/api/config/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "01105dac-e3fc-d0ff-e1c5-9a1900001604",
+        "participant": "01105dac-e3fc-d0ff-e1c5-9a19000001c1",
+        "topic": "rt/api/config/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "01105dac-e3fc-d0ff-e1c5-9a1900001904",
+        "participant": "01105dac-e3fc-d0ff-e1c5-9a19000001c1",
+        "topic": "rt/api/config/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "01105dac-e3fc-d0ff-e1c5-9a1900001c04",
+        "participant": "01105dac-e3fc-d0ff-e1c5-9a19000001c1",
+        "topic": "rt/api/config/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300006804",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/api/config/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "0110442a-2b66-cd31-e291-f68d00002704",
+        "participant": "0110442a-2b66-cd31-e291-f68d000001c1",
+        "topic": "rt/api/config/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "0110e786-b9d1-8dc1-0d87-014d00000a04",
+        "participant": "0110e786-b9d1-8dc1-0d87-014d000001c1",
+        "topic": "rt/api/dex3_msg_controller/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "01102892-22e3-9fa8-1eb7-f5e300000a04",
+        "participant": "01102892-22e3-9fa8-1eb7-f5e3000001c1",
+        "topic": "rt/api/dex3_msg_controller/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300007204",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/api/dex3_msg_controller/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "01104417-efaf-1c39-1b54-db9000000404",
+        "participant": "01104417-efaf-1c39-1b54-db90000001c1",
+        "topic": "rt/api/gpt/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300006004",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/api/gpt/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "0110442a-2b66-cd31-e291-f68d00000204",
+        "participant": "0110442a-2b66-cd31-e291-f68d000001c1",
+        "topic": "rt/api/gpt/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "01103367-d8aa-c614-77f6-097f00000604",
+        "participant": "01103367-d8aa-c614-77f6-097f000001c1",
+        "topic": "rt/api/motion_switcher/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "01101a31-6285-3983-e6da-b24600001004",
+        "participant": "01101a31-6285-3983-e6da-b246000001c1",
+        "topic": "rt/api/motion_switcher/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300006a04",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/api/motion_switcher/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "01103209-2ad6-440c-cfe0-9cb100000a04",
+        "participant": "01103209-2ad6-440c-cfe0-9cb1000001c1",
+        "topic": "rt/api/robot_state/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300006404",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/api/robot_state/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "0110442a-2b66-cd31-e291-f68d00002b04",
+        "participant": "0110442a-2b66-cd31-e291-f68d000001c1",
+        "topic": "rt/api/robot_state/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "0110e3a2-9a63-39f0-aff0-c5ca00000404",
+        "participant": "0110e3a2-9a63-39f0-aff0-c5ca000001c1",
+        "topic": "rt/api/robot_type_service/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300007004",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/api/robot_type_service/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "0110a8dd-8ec3-0012-e421-702100001004",
+        "participant": "0110a8dd-8ec3-0012-e421-7021000001c1",
+        "topic": "rt/api/slam_operate/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300008204",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/api/slam_operate/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "01104417-efaf-1c39-1b54-db9000003804",
+        "participant": "01104417-efaf-1c39-1b54-db90000001c1",
+        "topic": "rt/api/slam_operate/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "0110e634-a851-ff0a-53f0-f00f00001404",
+        "participant": "0110e634-a851-ff0a-53f0-f00f000001c1",
+        "topic": "rt/api/sport/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "01101a31-6285-3983-e6da-b24600000404",
+        "participant": "01101a31-6285-3983-e6da-b246000001c1",
+        "topic": "rt/api/sport/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "0110e634-a851-ff0a-53f0-f00f00001204",
+        "participant": "0110e634-a851-ff0a-53f0-f00f000001c1",
+        "topic": "rt/api/sport/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "01106ab3-d698-19ff-4918-e6cf00000404",
+        "participant": "01106ab3-d698-19ff-4918-e6cf000001c1",
+        "topic": "rt/api/sport/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "01109b5e-fa1a-5de5-653e-6cde00000c04",
+        "participant": "01109b5e-fa1a-5de5-653e-6cde000001c1",
+        "topic": "rt/api/sport/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "0110d6fc-177a-8893-da9e-58dd00000804",
+        "participant": "0110d6fc-177a-8893-da9e-58dd000001c1",
+        "topic": "rt/api/sport/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300006204",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/api/sport/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "01108ca2-3fa3-f812-f765-bb6b00000a04",
+        "participant": "01108ca2-3fa3-f812-f765-bb6b000001c1",
+        "topic": "rt/api/sport/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "0110442a-2b66-cd31-e291-f68d00001904",
+        "participant": "0110442a-2b66-cd31-e291-f68d000001c1",
+        "topic": "rt/api/sport/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "01104641-3091-1b01-60b1-a1f700000c04",
+        "participant": "01104641-3091-1b01-60b1-a1f7000001c1",
+        "topic": "rt/api/sport/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "01104417-efaf-1c39-1b54-db9000000c04",
+        "participant": "01104417-efaf-1c39-1b54-db90000001c1",
+        "topic": "rt/api/sport/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "0110be8f-5272-103a-c0c1-b9f800000304",
+        "participant": "0110be8f-5272-103a-c0c1-b9f8000001c1",
+        "topic": "rt/api/videohub/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "0110e045-61fe-5668-cd12-897f00000304",
+        "participant": "0110e045-61fe-5668-cd12-897f000001c1",
+        "topic": "rt/api/videohub/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300005c04",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/api/videohub/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "01104417-efaf-1c39-1b54-db9000002004",
+        "participant": "01104417-efaf-1c39-1b54-db90000001c1",
+        "topic": "rt/api/videohub/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "01104417-efaf-1c39-1b54-db9000001a04",
+        "participant": "01104417-efaf-1c39-1b54-db90000001c1",
+        "topic": "rt/api/vla/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "0110442a-2b66-cd31-e291-f68d00000b04",
+        "participant": "0110442a-2b66-cd31-e291-f68d000001c1",
+        "topic": "rt/api/voice/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "01101a31-6285-3983-e6da-b24600000c04",
+        "participant": "01101a31-6285-3983-e6da-b246000001c1",
+        "topic": "rt/api/voice/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "011055cb-43e6-7ec8-d236-a59700000404",
+        "participant": "011055cb-43e6-7ec8-d236-a597000001c1",
+        "topic": "rt/api/voice/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "0110e634-a851-ff0a-53f0-f00f00000c04",
+        "participant": "0110e634-a851-ff0a-53f0-f00f000001c1",
+        "topic": "rt/api/voice/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "01107232-de81-e0ab-c0b7-ab0a00000804",
+        "participant": "01107232-de81-e0ab-c0b7-ab0a000001c1",
+        "topic": "rt/api/voice/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300007404",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/api/voice/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "01104417-efaf-1c39-1b54-db9000002e04",
+        "participant": "01104417-efaf-1c39-1b54-db90000001c1",
+        "topic": "rt/api/voice/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "0110442a-2b66-cd31-e291-f68d00000f04",
+        "participant": "0110442a-2b66-cd31-e291-f68d000001c1",
+        "topic": "rt/api/vui/request",
+        "type": "unitree_api::msg::dds_::Request_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300009004",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/api/waist_pitch_demarcate/response",
+        "type": "unitree_api::msg::dds_::Response_"
+      },
+      {
+        "key": "01101a31-6285-3983-e6da-b24600001804",
+        "participant": "01101a31-6285-3983-e6da-b246000001c1",
+        "topic": "rt/arm/action/state",
+        "type": "std_msgs::msg::dds_::String_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300006e04",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/arm/action/state",
+        "type": "std_msgs::msg::dds_::String_"
+      },
+      {
+        "key": "01104417-efaf-1c39-1b54-db9000001004",
+        "participant": "01104417-efaf-1c39-1b54-db90000001c1",
+        "topic": "rt/arm/action/state",
+        "type": "std_msgs::msg::dds_::String_"
+      },
+      {
+        "key": "0110e634-ff7a-e1af-ff9a-b3d800000a04",
+        "participant": "0110e634-ff7a-e1af-ff9a-b3d8000001c1",
+        "topic": "rt/arm_sdk",
+        "type": "unitree_hg::msg::dds_::LowCmd_"
+      },
+      {
+        "key": "0110d6fc-177a-8893-da9e-58dd00001804",
+        "participant": "0110d6fc-177a-8893-da9e-58dd000001c1",
+        "topic": "rt/arm_service_inbound",
+        "type": "std_msgs::msg::dds_::String_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300004604",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/arm_service_outbound",
+        "type": "std_msgs::msg::dds_::String_"
+      },
+      {
+        "key": "0110d6fc-177a-8893-da9e-58dd00001404",
+        "participant": "0110d6fc-177a-8893-da9e-58dd000001c1",
+        "topic": "rt/armsdk",
+        "type": "unitree_hg::msg::dds_::LowCmd_"
+      },
+      {
+        "key": "01107232-de81-e0ab-c0b7-ab0a00000a04",
+        "participant": "01107232-de81-e0ab-c0b7-ab0a000001c1",
+        "topic": "rt/audio_msg",
+        "type": "std_msgs::msg::dds_::String_"
+      },
+      {
+        "key": "01104417-efaf-1c39-1b54-db9000003e04",
+        "participant": "01104417-efaf-1c39-1b54-db90000001c1",
+        "topic": "rt/audio_msg",
+        "type": "std_msgs::msg::dds_::String_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300004804",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/audio_msg/filter",
+        "type": "std_msgs::msg::dds_::String_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300000c04",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/audiosender",
+        "type": "unitree_go::msg::dds_::AudioData_"
+      },
+      {
+        "key": "01105dac-e3fc-d0ff-e1c5-9a1900001404",
+        "participant": "01105dac-e3fc-d0ff-e1c5-9a19000001c1",
+        "topic": "rt/config_change_status",
+        "type": "unitree_go::msg::dds_::ConfigChangeStatus_"
+      },
+      {
+        "key": "01105dac-e3fc-d0ff-e1c5-9a1900001704",
+        "participant": "01105dac-e3fc-d0ff-e1c5-9a19000001c1",
+        "topic": "rt/config_change_status",
+        "type": "unitree_go::msg::dds_::ConfigChangeStatus_"
+      },
+      {
+        "key": "01105dac-e3fc-d0ff-e1c5-9a1900001a04",
+        "participant": "01105dac-e3fc-d0ff-e1c5-9a19000001c1",
+        "topic": "rt/config_change_status",
+        "type": "unitree_go::msg::dds_::ConfigChangeStatus_"
+      },
+      {
+        "key": "01105dac-e3fc-d0ff-e1c5-9a1900001d04",
+        "participant": "01105dac-e3fc-d0ff-e1c5-9a19000001c1",
+        "topic": "rt/config_change_status",
+        "type": "unitree_go::msg::dds_::ConfigChangeStatus_"
+      },
+      {
+        "key": "0110e786-b9d1-8dc1-0d87-014d00000604",
+        "participant": "0110e786-b9d1-8dc1-0d87-014d000001c1",
+        "topic": "rt/dex3/left/cmd",
+        "type": "unitree_hg::msg::dds_::HandCmd_"
+      },
+      {
+        "key": "01102892-22e3-9fa8-1eb7-f5e300000604",
+        "participant": "01102892-22e3-9fa8-1eb7-f5e3000001c1",
+        "topic": "rt/dex3/right/cmd",
+        "type": "unitree_hg::msg::dds_::HandCmd_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300007a04",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/event/action_store",
+        "type": "std_msgs::msg::dds_::String_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300000a04",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/frontvideostream",
+        "type": "unitree_go::msg::dds_::Go2FrontVideoData_"
+      },
+      {
+        "key": "01104417-efaf-1c39-1b54-db9000003204",
+        "participant": "01104417-efaf-1c39-1b54-db90000001c1",
+        "topic": "rt/gesture/result",
+        "type": "std_msgs::msg::dds_::String_"
+      },
+      {
+        "key": "0110442a-2b66-cd31-e291-f68d00000604",
+        "participant": "0110442a-2b66-cd31-e291-f68d000001c1",
+        "topic": "rt/gpt_state",
+        "type": "std_msgs::msg::dds_::String_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300004004",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/gptflowfeedback",
+        "type": "std_msgs::msg::dds_::String_"
+      },
+      {
+        "key": "0110e634-a851-ff0a-53f0-f00f00000e04",
+        "participant": "0110e634-a851-ff0a-53f0-f00f000001c1",
+        "topic": "rt/hand_sdk",
+        "type": "unitree_go::msg::dds_::MotorCmds_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300007e04",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/lf/agvalarmstate",
+        "type": "unitree_go::msg::dds_::Error_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300007c04",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/lf/agvbmsstate",
+        "type": "unitree_hg::msg::dds_::AgvBmsState_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300004a04",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/lf/battery_alarm",
+        "type": "std_msgs::msg::dds_::String_"
+      },
+      {
+        "key": "0110442a-2b66-cd31-e291-f68d00001504",
+        "participant": "0110442a-2b66-cd31-e291-f68d000001c1",
+        "topic": "rt/lf/battery_alarm",
+        "type": "std_msgs::msg::dds_::String_"
+      },
+      {
+        "key": "01101a31-6285-3983-e6da-b24600001404",
+        "participant": "01101a31-6285-3983-e6da-b246000001c1",
+        "topic": "rt/lf/bmsstate",
+        "type": "unitree_hg::msg::dds_::BmsState_"
+      },
+      {
+        "key": "0110e634-ff7a-e1af-ff9a-b3d800001004",
+        "participant": "0110e634-ff7a-e1af-ff9a-b3d8000001c1",
+        "topic": "rt/lf/bmsstate",
+        "type": "unitree_hg::msg::dds_::BmsState_"
+      },
+      {
+        "key": "01106ab3-d698-19ff-4918-e6cf00000804",
+        "participant": "01106ab3-d698-19ff-4918-e6cf000001c1",
+        "topic": "rt/lf/bmsstate",
+        "type": "unitree_hg::msg::dds_::BmsState_"
+      },
+      {
+        "key": "0110d6fc-177a-8893-da9e-58dd00000c04",
+        "participant": "0110d6fc-177a-8893-da9e-58dd000001c1",
+        "topic": "rt/lf/bmsstate",
+        "type": "unitree_hg::msg::dds_::BmsState_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300005004",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/lf/bmsstate",
+        "type": "unitree_hg::msg::dds_::BmsState_"
+      },
+      {
+        "key": "0110442a-2b66-cd31-e291-f68d00001304",
+        "participant": "0110442a-2b66-cd31-e291-f68d000001c1",
+        "topic": "rt/lf/bmsstate",
+        "type": "unitree_hg::msg::dds_::BmsState_"
+      },
+      {
+        "key": "01104417-efaf-1c39-1b54-db9000001c04",
+        "participant": "01104417-efaf-1c39-1b54-db90000001c1",
+        "topic": "rt/lf/bmsstate",
+        "type": "unitree_hg::msg::dds_::BmsState_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300005204",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/lf/dex3/left/state",
+        "type": "unitree_hg::msg::dds_::HandState_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300005404",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/lf/dex3/right/state",
+        "type": "unitree_hg::msg::dds_::HandState_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300008004",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/lf/emergency_stop",
+        "type": "unitree_go::msg::dds_::Error_"
+      },
+      {
+        "key": "0110442a-2b66-cd31-e291-f68d00001f04",
+        "participant": "0110442a-2b66-cd31-e291-f68d000001c1",
+        "topic": "rt/lf/emergency_stop",
+        "type": "unitree_go::msg::dds_::Error_"
+      },
+      {
+        "key": "01103367-d8aa-c614-77f6-097f00000204",
+        "participant": "01103367-d8aa-c614-77f6-097f000001c1",
+        "topic": "rt/lf/lowstate",
+        "type": "unitree_hg::msg::dds_::LowState_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300004c04",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/lf/lowstate",
+        "type": "unitree_hg::msg::dds_::LowState_"
+      },
+      {
+        "key": "01104417-efaf-1c39-1b54-db9000001604",
+        "participant": "01104417-efaf-1c39-1b54-db90000001c1",
+        "topic": "rt/lf/lowstate",
+        "type": "unitree_hg::msg::dds_::LowState_"
+      },
+      {
+        "key": "01101a31-6285-3983-e6da-b24600001604",
+        "participant": "01101a31-6285-3983-e6da-b246000001c1",
+        "topic": "rt/lf/mainboardstate",
+        "type": "unitree_hg::msg::dds_::MainBoardState_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300004e04",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/lf/mainboardstate",
+        "type": "unitree_hg::msg::dds_::MainBoardState_"
+      },
+      {
+        "key": "0110442a-2b66-cd31-e291-f68d00001d04",
+        "participant": "0110442a-2b66-cd31-e291-f68d000001c1",
+        "topic": "rt/lf/mainboardstate",
+        "type": "unitree_hg::msg::dds_::MainBoardState_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300005604",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/lf/secondary_imu",
+        "type": "unitree_hg::msg::dds_::IMUState_"
+      },
+      {
+        "key": "01101a31-6285-3983-e6da-b24600001204",
+        "participant": "01101a31-6285-3983-e6da-b246000001c1",
+        "topic": "rt/lf/sportmodestate",
+        "type": "unitree_hg::msg::dds_::SportModeState_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300005804",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/lf/sportmodestate",
+        "type": "unitree_hg::msg::dds_::SportModeState_"
+      },
+      {
+        "key": "01104417-efaf-1c39-1b54-db9000002404",
+        "participant": "01104417-efaf-1c39-1b54-db90000001c1",
+        "topic": "rt/lf/sportmodestate",
+        "type": "unitree_go::msg::dds_::SportModeState_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300009204",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/lf/waistpitchstate",
+        "type": "unitree_hg::msg::dds_::MotorState_"
+      },
+      {
+        "key": "0110e634-ff7a-e1af-ff9a-b3d800000804",
+        "participant": "0110e634-ff7a-e1af-ff9a-b3d8000001c1",
+        "topic": "rt/loco_sdk",
+        "type": "unitree_hg::msg::dds_::LowState_"
+      },
+      {
+        "key": "01101280-5c46-e39d-36d3-e69b00000404",
+        "participant": "01101280-5c46-e39d-36d3-e69b000001c1",
+        "topic": "rt/log_system_inbound",
+        "type": "std_msgs::msg::dds_::String_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300004404",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/log_system_outbound",
+        "type": "std_msgs::msg::dds_::String_"
+      },
+      {
+        "key": "01105dac-e3fc-d0ff-e1c5-9a1900000a04",
+        "participant": "01105dac-e3fc-d0ff-e1c5-9a19000001c1",
+        "topic": "rt/lowcmd",
+        "type": "unitree_hg::msg::dds_::LowCmd_"
+      },
+      {
+        "key": "011055cb-43e6-7ec8-d236-a59700000604",
+        "participant": "011055cb-43e6-7ec8-d236-a597000001c1",
+        "topic": "rt/lowstate",
+        "type": "unitree_hg::msg::dds_::LowState_"
+      },
+      {
+        "key": "01101a31-6285-3983-e6da-b24600001c04",
+        "participant": "01101a31-6285-3983-e6da-b246000001c1",
+        "topic": "rt/lowstate",
+        "type": "unitree_hg::msg::dds_::LowState_"
+      },
+      {
+        "key": "0110e634-ff7a-e1af-ff9a-b3d800000204",
+        "participant": "0110e634-ff7a-e1af-ff9a-b3d8000001c1",
+        "topic": "rt/lowstate",
+        "type": "unitree_hg::msg::dds_::LowState_"
+      },
+      {
+        "key": "0110a8dd-8ec3-0012-e421-702100000204",
+        "participant": "0110a8dd-8ec3-0012-e421-7021000001c1",
+        "topic": "rt/lowstate",
+        "type": "unitree_hg::msg::dds_::LowState_"
+      },
+      {
+        "key": "01109b5e-fa1a-5de5-653e-6cde00000b04",
+        "participant": "01109b5e-fa1a-5de5-653e-6cde000001c1",
+        "topic": "rt/lowstate",
+        "type": "unitree_hg::msg::dds_::LowState_"
+      },
+      {
+        "key": "0110d6fc-177a-8893-da9e-58dd00000204",
+        "participant": "0110d6fc-177a-8893-da9e-58dd000001c1",
+        "topic": "rt/lowstate",
+        "type": "unitree_hg::msg::dds_::LowState_"
+      },
+      {
+        "key": "01108ca2-3fa3-f812-f765-bb6b00000204",
+        "participant": "01108ca2-3fa3-f812-f765-bb6b000001c1",
+        "topic": "rt/lowstate",
+        "type": "unitree_hg::msg::dds_::LowState_"
+      },
+      {
+        "key": "01104641-3091-1b01-60b1-a1f700000b04",
+        "participant": "01104641-3091-1b01-60b1-a1f7000001c1",
+        "topic": "rt/lowstate",
+        "type": "unitree_hg::msg::dds_::LowState_"
+      },
+      {
+        "key": "01104417-efaf-1c39-1b54-db9000001404",
+        "participant": "01104417-efaf-1c39-1b54-db90000001c1",
+        "topic": "rt/lowstate",
+        "type": "unitree_hg::msg::dds_::LowState_"
+      },
+      {
+        "key": "01104417-efaf-1c39-1b54-db9000003f04",
+        "participant": "01104417-efaf-1c39-1b54-db90000001c1",
+        "topic": "rt/lowstate",
+        "type": "unitree_hg::msg::dds_::LowState_"
+      },
+      {
+        "key": "0110e634-ff7a-e1af-ff9a-b3d800000604",
+        "participant": "0110e634-ff7a-e1af-ff9a-b3d8000001c1",
+        "topic": "rt/lowstate_doubleimu",
+        "type": "unitree_hg_doubleimu::msg::dds_::doubleIMUState_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300005a04",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/public_network_status",
+        "type": "std_msgs::msg::dds_::String_"
+      },
+      {
+        "key": "01103209-2ad6-440c-cfe0-9cb100001004",
+        "participant": "01103209-2ad6-440c-cfe0-9cb1000001c1",
+        "topic": "rt/public_network_status",
+        "type": "std_msgs::msg::dds_::String_"
+      },
+      {
+        "key": "01101a31-6285-3983-e6da-b24600001a04",
+        "participant": "01101a31-6285-3983-e6da-b246000001c1",
+        "topic": "rt/selftest",
+        "type": "std_msgs::msg::dds_::String_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300003e04",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/selftest",
+        "type": "std_msgs::msg::dds_::String_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300004204",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/servicestate",
+        "type": "std_msgs::msg::dds_::String_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300008404",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/slam_info",
+        "type": "std_msgs::msg::dds_::String_"
+      },
+      {
+        "key": "01104417-efaf-1c39-1b54-db9000003c04",
+        "participant": "01104417-efaf-1c39-1b54-db90000001c1",
+        "topic": "rt/slam_info",
+        "type": "std_msgs::msg::dds_::String_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300008604",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/slam_key_info",
+        "type": "std_msgs::msg::dds_::String_"
+      },
+      {
+        "key": "01104417-efaf-1c39-1b54-db9000003a04",
+        "participant": "01104417-efaf-1c39-1b54-db90000001c1",
+        "topic": "rt/slam_key_info",
+        "type": "std_msgs::msg::dds_::String_"
+      },
+      {
+        "key": "0110d6fc-177a-8893-da9e-58dd00000a04",
+        "participant": "0110d6fc-177a-8893-da9e-58dd000001c1",
+        "topic": "rt/sportmodestate",
+        "type": "unitree_hg::msg::dds_::SportModeState_"
+      },
+      {
+        "key": "0110e634-ff7a-e1af-ff9a-b3d800001204",
+        "participant": "0110e634-ff7a-e1af-ff9a-b3d8000001c1",
+        "topic": "rt/state_estimator/fusion_odom",
+        "type": "nav_msgs::msg::dds_::Odometry_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300008a04",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/unitree/slam_mapping/odom",
+        "type": "nav_msgs::msg::dds_::Odometry_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300008804",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/unitree/slam_mapping/points",
+        "type": "sensor_msgs::msg::dds_::PointCloud2_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300008e04",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/unitree/slam_relocation/odom",
+        "type": "nav_msgs::msg::dds_::Odometry_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300008c04",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/unitree/slam_relocation/points",
+        "type": "sensor_msgs::msg::dds_::PointCloud2_"
+      },
+      {
+        "key": "0110a8dd-8ec3-0012-e421-702100000a04",
+        "participant": "0110a8dd-8ec3-0012-e421-7021000001c1",
+        "topic": "rt/unitree_slam/high_rate_odometry",
+        "type": "nav_msgs::msg::dds_::Odometry_"
+      },
+      {
+        "key": "0110e634-ff7a-e1af-ff9a-b3d800000404",
+        "participant": "0110e634-ff7a-e1af-ff9a-b3d8000001c1",
+        "topic": "rt/user_lowcmd",
+        "type": "unitree_hg::msg::dds_::LowCmd_"
+      },
+      {
+        "key": "01104417-efaf-1c39-1b54-db9000002204",
+        "participant": "01104417-efaf-1c39-1b54-db90000001c1",
+        "topic": "rt/utlidar/range_info",
+        "type": "geometry_msgs::msg::dds_::PointStamped_"
+      },
+      {
+        "key": "0110be8f-5272-103a-c0c1-b9f800000404",
+        "participant": "0110be8f-5272-103a-c0c1-b9f8000001c1",
+        "topic": "rt/videohub/inner",
+        "type": "std_msgs::msg::dds_::String_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300000604",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/webrtcreq",
+        "type": "std_msgs::msg::dds_::String_"
+      },
+      {
+        "key": "01103209-2ad6-440c-cfe0-9cb100001404",
+        "participant": "01103209-2ad6-440c-cfe0-9cb1000001c1",
+        "topic": "rt/webrtcres",
+        "type": "std_msgs::msg::dds_::String_"
+      },
+      {
+        "key": "0110e634-ff7a-e1af-ff9a-b3d800000c04",
+        "participant": "0110e634-ff7a-e1af-ff9a-b3d8000001c1",
+        "topic": "rt/wirelesscontroller",
+        "type": "unitree_go::msg::dds_::WirelessController_"
+      },
+      {
+        "key": "0110442a-2b66-cd31-e291-f68d00000804",
+        "participant": "0110442a-2b66-cd31-e291-f68d000001c1",
+        "topic": "rt/wirelesscontroller",
+        "type": "unitree_go::msg::dds_::WirelessController_"
+      },
+      {
+        "key": "01104417-efaf-1c39-1b54-db9000000204",
+        "participant": "01104417-efaf-1c39-1b54-db90000001c1",
+        "topic": "rt/wirelesscontroller",
+        "type": "unitree_go::msg::dds_::WirelessController_"
+      },
+      {
+        "key": "0110ee5f-848a-2b8a-50c4-b16300000804",
+        "participant": "0110ee5f-848a-2b8a-50c4-b163000001c1",
+        "topic": "rt/xfk_webrtcreq",
+        "type": "std_msgs::msg::dds_::String_"
+      },
+      {
+        "key": "01105e2b-0537-81f8-50a3-9a7e00000404",
+        "participant": "01105e2b-0537-81f8-50a3-9a7e000001c1",
+        "topic": "rt/xfk_webrtcres",
+        "type": "std_msgs::msg::dds_::String_"
+      }
+    ]
+  },
+  "passive_samples": {
+    "rt/state_estimator/odom_pelvis": {
+      "count": 384,
+      "matching_type": true,
+      "received_at": 1792558834.9599125,
+      "last": {
+        "header": {
+          "stamp": {
+            "sec": 1792558834,
+            "nanosec": 943799734
+          },
+          "frame_id": "odom"
+        },
+        "child_frame_id": "pelvis",
+        "pose": {
+          "pose": {
+            "position": {
+              "x": -0.21351458132266998,
+              "y": -1.192984700202942,
+              "z": 0.3141842782497406
+            },
+            "orientation": {
+              "x": -0.06714816391468048,
+              "y": 0.031783562153577805,
+              "z": 0.0216890349984169,
+              "w": -0.9970007538795471
+            }
+          },
+          "covariance": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "twist": {
+          "twist": {
+            "linear": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "angular": {
+              "x": 0.0021305286791175604,
+              "y": 0.019174758344888687,
+              "z": -0.0
+            }
+          },
+          "covariance": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "rt/state_estimator/odom_torso": {
+      "count": 384,
+      "matching_type": true,
+      "received_at": 1792558834.9601796,
+      "last": {
+        "header": {
+          "stamp": {
+            "sec": 1792558834,
+            "nanosec": 943799734
+          },
+          "frame_id": "odom"
+        },
+        "child_frame_id": "torso",
+        "pose": {
+          "pose": {
+            "position": {
+              "x": -0.22002974152565002,
+              "y": -1.2027469873428345,
+              "z": 0.3670421838760376
+            },
+            "orientation": {
+              "x": -0.05020294710993767,
+              "y": 0.054760705679655075,
+              "z": -0.35591962933540344,
+              "w": -0.9315590262413025
+            }
+          },
+          "covariance": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "twist": {
+          "twist": {
+            "linear": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "angular": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          },
+          "covariance": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "rt/state_estimator/fusion_odom": {
+      "count": 0,
+      "matching_type": true
+    },
+    "rt/state_estimator/fusion_odom_torso": {
+      "count": 0,
+      "matching_type": true
+    },
+    "rt/odommodestate": {
+      "count": 383,
+      "matching_type": true,
+      "received_at": 1792558834.9604864,
+      "last": {
+        "stamp": {
+          "sec": 1792558834,
+          "nanosec": 943799734
+        },
+        "error_code": 0,
+        "imu_state": {
+          "quaternion": [
+            -0.9970007538795471,
+            -0.06714816391468048,
+            0.031783562153577805,
+            0.0216890349984169
+          ],
+          "gyroscope": [
+            0.0021305286791175604,
+            0.019174758344888687,
+            -0.0
+          ],
+          "accelerometer": [
+            0.36810851097106934,
+            1.1240776777267456,
+            9.679458618164062
+          ],
+          "rpy": [
+            0.13593848049640656,
+            -0.060500618070364,
+            -0.0476214773952961
+          ],
+          "temperature": 79
+        },
+        "mode": 0,
+        "progress": 0.0,
+        "gait_type": 0,
+        "foot_raise_height": 0.0,
+        "position": [
+          -0.21351458132266998,
+          -1.192984700202942,
+          0.3141842782497406
+        ],
+        "body_height": 0.2384127676486969,
+        "velocity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "yaw_speed": -0.0,
+        "range_obstacle": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "foot_force": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "foot_position_body": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "foot_speed_body": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "path_point": [
+          {
+            "t_from_start": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "yaw": 0.0,
+            "vx": 0.0,
+            "vy": 0.0,
+            "vyaw": 0.0
+          },
+          {
+            "t_from_start": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "yaw": 0.0,
+            "vx": 0.0,
+            "vy": 0.0,
+            "vyaw": 0.0
+          },
+          {
+            "t_from_start": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "yaw": 0.0,
+            "vx": 0.0,
+            "vy": 0.0,
+            "vyaw": 0.0
+          },
+          {
+            "t_from_start": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "yaw": 0.0,
+            "vx": 0.0,
+            "vy": 0.0,
+            "vyaw": 0.0
+          },
+          {
+            "t_from_start": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "yaw": 0.0,
+            "vx": 0.0,
+            "vy": 0.0,
+            "vyaw": 0.0
+          },
+          {
+            "t_from_start": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "yaw": 0.0,
+            "vx": 0.0,
+            "vy": 0.0,
+            "vyaw": 0.0
+          },
+          {
+            "t_from_start": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "yaw": 0.0,
+            "vx": 0.0,
+            "vy": 0.0,
+            "vyaw": 0.0
+          },
+          {
+            "t_from_start": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "yaw": 0.0,
+            "vx": 0.0,
+            "vy": 0.0,
+            "vyaw": 0.0
+          },
+          {
+            "t_from_start": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "yaw": 0.0,
+            "vx": 0.0,
+            "vy": 0.0,
+            "vyaw": 0.0
+          },
+          {
+            "t_from_start": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "yaw": 0.0,
+            "vx": 0.0,
+            "vy": 0.0,
+            "vyaw": 0.0
+          }
+        ]
+      }
+    },
+    "rt/secondary_imu": {
+      "count": 384,
+      "matching_type": true,
+      "received_at": 1792558834.9607427,
+      "last": {
+        "quaternion": [
+          0.9970672726631165,
+          0.029941556975245476,
+          -0.06180305778980255,
+          0.033773865550756454
+        ],
+        "gyroscope": [
+          0.0,
+          0.010652642697095871,
+          -0.004261057358235121
+        ],
+        "accelerometer": [
+          0.9624691009521484,
+          0.3214215636253357,
+          9.64803409576416
+        ],
+        "rpy": [
+          0.05600300803780556,
+          -0.1255960464477539,
+          0.0641980990767479
+        ],
+        "temperature": 78
+      }
+    },
+    "rt/lf/mainboardstate": {
+      "count": 383,
+      "matching_type": true,
+      "received_at": 1792558834.960806,
+      "last": {
+        "fan_state": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "temperature": [
+          48,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "value": [
+          43.31936264038086,
+          43.435394287109375,
+          1.25,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "state": [
+          32,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "rt/lf/bmsstate": {
+      "count": 383,
+      "matching_type": true,
+      "received_at": 1792558834.9608908,
+      "last": {
+        "version_high": 1,
+        "version_low": 3,
+        "fn": 5,
+        "cell_vol": [
+          3349,
+          3347,
+          3347,
+          3349,
+          3347,
+          3351,
+          3346,
+          3350,
+          3349,
+          3344,
+          3345,
+          3344,
+          3347,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "bmsvoltage": [
+          43522,
+          43530,
+          0
+        ],
+        "current": -1745,
+        "soc": 17,
+        "soh": 92,
+        "temperature": [
+          36,
+          35,
+          32,
+          37,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "cycle": 10,
+        "manufacturer_date": 22939,
+        "bmsstate": [
+          8,
+          8,
+          262144,
+          7,
+          0
+        ],
+        "reserve": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "rt/selftest": {
+      "count": 0,
+      "matching_type": true
+    },
+    "rt/lf/sportmodestate": {
+      "count": 300,
+      "matching_type": true,
+      "received_at": 1792558834.961018,
+      "last": {
+        "fsm_id": 0,
+        "fsm_mode": 0,
+        "task_id": 4,
+        "task_time": 0.0
+      }
+    },
+    "rt/arm/action/state": {
+      "count": 0,
+      "matching_type": true
+    }
+  },
+  "completed_at": 1792558835.011125,
+  "current": false,
+  "execution_allowed": false
+}

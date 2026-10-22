@@ -1,0 +1,161 @@
+{
+  "current": false,
+  "checked_at_utc": "2026-10-21T12:34:37.852399+00:00",
+  "completed_at_utc": "2026-10-21T12:34:54.637691+00:00",
+  "boot_id": "8d9a0e09-97e1-45fa-81d3-18822a3c760a",
+  "queries": [
+    {
+      "api_id": 1,
+      "request_id": 5337686811402,
+      "sent": true,
+      "replies": [
+        {
+          "api_id": 1,
+          "code": 0,
+          "raw": "1.0.0.0",
+          "publication_handle": 2891969662422232951,
+          "elapsed_ms": 0.95
+        }
+      ]
+    },
+    {
+      "api_id": 7001,
+      "request_id": 5338746240327,
+      "sent": true,
+      "replies": [
+        {
+          "api_id": 7001,
+          "code": 0,
+          "raw": "{\"data\":0}",
+          "publication_handle": 2891969662422232951,
+          "elapsed_ms": 1.19
+        }
+      ]
+    },
+    {
+      "api_id": 7002,
+      "request_id": 5339817748124,
+      "sent": true,
+      "replies": [
+        {
+          "api_id": 7002,
+          "code": 0,
+          "raw": "{\"data\":0}",
+          "publication_handle": 2891969662422232951,
+          "elapsed_ms": 1.11
+        }
+      ]
+    },
+    {
+      "api_id": 7003,
+      "request_id": 5340877624299,
+      "sent": true,
+      "replies": [
+        {
+          "api_id": 7003,
+          "code": 7301,
+          "raw": null,
+          "publication_handle": 2891969662422232951,
+          "elapsed_ms": 1.11
+        }
+      ]
+    },
+    {
+      "api_id": 7004,
+      "request_id": 5341968606553,
+      "sent": true,
+      "replies": [
+        {
+          "api_id": 7004,
+          "code": 7301,
+          "raw": null,
+          "publication_handle": 2891969662422232951,
+          "elapsed_ms": 0.86
+        }
+      ]
+    },
+    {
+      "api_id": 7005,
+      "request_id": 5343033608848,
+      "sent": true,
+      "replies": [
+        {
+          "api_id": 7005,
+          "code": 7301,
+          "raw": null,
+          "publication_handle": 2891969662422232951,
+          "elapsed_ms": 1.1
+        }
+      ]
+    },
+    {
+      "api_id": 7006,
+      "request_id": 5344094976410,
+      "sent": true,
+      "replies": [
+        {
+          "api_id": 7006,
+          "code": 7301,
+          "raw": null,
+          "publication_handle": 2891969662422232951,
+          "elapsed_ms": 1.35
+        }
+      ]
+    }
+  ],
+  "string_states": {
+    "rt/servicestate": {
+      "samples": 0,
+      "values": []
+    },
+    "rt/multiplestate": {
+      "samples": 0,
+      "values": []
+    },
+    "rt/servicestateactivate": {
+      "samples": 0,
+      "values": []
+    }
+  },
+  "response_publishers": [
+    {
+      "topic": "rt/api/sport/response",
+      "type": "unitree_api::msg::dds_::Response_",
+      "participant_key": "01102018-14ee-e682-8024-7c60000001c1",
+      "instance_handle": 2891969662422232951
+    },
+    {
+      "topic": "rt/api/sport/response",
+      "type": "unitree_api::msg::dds_::Response_",
+      "participant_key": "01103bee-998e-d1fd-0cbe-e67b000001c1",
+      "instance_handle": 3994614770883113356
+    },
+    {
+      "topic": "rt/api/sport/response",
+      "type": "unitree_api::msg::dds_::Response_",
+      "participant_key": "01104abf-d157-5f22-5e41-a07e000001c1",
+      "instance_handle": 15430903572019789562
+    }
+  ],
+  "command_writes": 0,
+  "lease_requests": 0,
+  "device_motion_firmware": null,
+  "reader_diagnostics": {
+    "prefix": [
+      "[Reader] take sample error",
+      "[Reader] take sample error",
+      "[Reader] take sample error",
+      "[Reader] take sample error",
+      "[Reader] take sample error",
+      "[Reader] take sample error",
+      "[Reader] take sample error"
+    ],
+    "meaning": "SDK prints after bounded reader waits; each correlated reply is separately recorded. No service state sample was received; this does not prove topic absence."
+  },
+  "raw_capture_sha256": "b39c53bb156f785246da67be9410168b55761efbc424dd82edf800dbeeba3ee7",
+  "limits": [
+    "Publication handle matching is local to this reader session; it does not locate a physical host.",
+    "One bounded response window per fixed query; does not establish every possible responder.",
+    "No string-state samples in this window; motion firmware remains unknown."
+  ]
+}

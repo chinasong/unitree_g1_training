@@ -1,0 +1,63 @@
+{
+  "started_at": 1792558743.5602531,
+  "boot_id": "7a6791dc-f512-4b45-aca3-44fbde855e25",
+  "command_writes": 0,
+  "lease_requests": 0,
+  "configuration_calls": 0,
+  "calibration_calls": 0,
+  "readings": [
+    {
+      "method": "GetFsmId",
+      "api_id": 7001,
+      "code": 0,
+      "payload": {
+        "data": 0
+      },
+      "received_at": 1792558744.3000731
+    },
+    {
+      "method": "GetFsmMode",
+      "api_id": 7002,
+      "code": 0,
+      "payload": {
+        "data": 0
+      },
+      "received_at": 1792558744.300826
+    },
+    {
+      "method": "GetBalanceMode",
+      "api_id": 7003,
+      "code": 7301,
+      "payload": null,
+      "received_at": 1792558744.3014674
+    },
+    {
+      "method": "GetSwingHeight",
+      "api_id": 7004,
+      "code": 7301,
+      "payload": null,
+      "received_at": 1792558744.302081
+    },
+    {
+      "method": "GetStandHeight",
+      "api_id": 7005,
+      "code": 7301,
+      "payload": null,
+      "received_at": 1792558744.3027868
+    },
+    {
+      "method": "CheckMode",
+      "api_id": 1001,
+      "service": "motion_switcher",
+      "code": 0,
+      "payload": {
+        "form": "0",
+        "name": "ai"
+      },
+      "received_at": 1792558745.0158062
+    }
+  ],
+  "completed_at": 1792558745.01581,
+  "current": false,
+  "execution_allowed": false
+}

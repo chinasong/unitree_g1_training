@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "current": false,
+  "received_at_utc": "2026-10-21T11:28:57+00:00",
+  "captured_at_utc": null,
+  "source_kind": "user_supplied_official_app_screenshots",
+  "authority": "用户提供的官方 App 截图；只证明画面所示字段，拍摄时间未知，不覆盖实时遥测或动作权限。",
+  "device_binding": {
+    "user_reported_same_robot": true,
+    "independently_verified": false,
+    "meaning": "用户作为当前 G1 的资料提交；未独立核对 App 序列号与运动主机身份。"
+  },
+  "device": {
+    "model": "G1 EDU+",
+    "software_version": "v1.5.6",
+    "software_version_label": "软件版本",
+    "hardware_version": "v1.0",
+    "motion_firmware": null,
+    "dof_from_screenshot": null,
+    "version_meaning": "App 关于设备页的原始字段；尚无证据证明 v1.5.6 等于运动控制固件，也不换算为 8.x 版本。",
+    "update_label": "已是最新版本",
+    "update_meaning": "仅记录截图时的页面提示；不证明目前全局最新版本或运动固件版本。"
+  },
+  "imu_snapshot": [
+    {
+      "label": "机身 imu",
+      "temperature_c": 80,
+      "roll_deg": 4.5,
+      "pitch_deg": -6.25
+    },
+    {
+      "label": "胯部 imu",
+      "temperature_c": 79,
+      "roll_deg": 7.91,
+      "pitch_deg": -3.01
+    }
+  ],
+  "imu_meaning": "两处 IMU 的截图读数；不是电机壳体/绕组温度，不填本机热保护阈值，也不单凭小倾角判断站稳。",
+  "motor_snapshot": {
+    "selected_metric": "通信质量",
+    "visible_value": "100.0%",
+    "all_23_motors_covered": null,
+    "available_metric_labels": [
+      "通信质量",
+      "累计丢包",
+      "位置",
+      "壳体温度",
+      "绕组温度",
+      "错误标志"
+    ],
+    "calibration_values": null,
+    "meaning": "截图可见通道显示 100.0%；关节索引与全身覆盖未核验，不代表全部电机健康、标定完成或当前姿态。"
+  },
+  "menu_evidence": [
+    {
+      "group": "机器人",
+      "entries": [
+        "全身标定",
+        "单肢体标定",
+        "偏移配置",
+        "IMU标定",
+        "IMU偏移配置"
+      ],
+      "kind": "calibration_or_configuration",
+      "meaning": "可能写入标定或配置；只记录菜单，不点击、不调用。"
+    },
+    {
+      "group": "外设配置",
+      "entries": [
+        "遥控器绑定/修改",
+        "遥控器检测",
+        "电池检测",
+        "灵巧手配置"
+      ],
+      "kind": "configuration_or_test_scope_unverified",
+      "meaning": "菜单存在不证明公开只读 SDK、测试无副作用或已安装灵巧手；不修改绑定或配置。"
+    }
+  ],
+  "limitations": [
+    "截图没有单列“运动控制版本”；官方 23 DOF 手册分支仍未匹配。",
+    "23 DOF、无手、Orin 沿用用户配置与已有证据，不由 App 的 EDU+ 标签推断为 29 DOF。",
+    "未提供足底/柜体载荷、零位偏移、编码器标定、驱动固件或实际 Kp/Kd。",
+    "静态机身示意图不作为实时姿态或接触证据。",
+    "原始图片在本机忽略目录私存；公开基础档案不复制完整 SN 或遥控器绑定 ID。"
+  ],
+  "images": [
+    {
+      "page": "IMU 数据状态",
+      "private_local_path": ".g1-deploy/private/app-evidence-20261021/imu.png",
+      "sha256": "e958f14a3c7e5bd64a779f19ce716486b85146078a657923f9f8142ed1166969"
+    },
+    {
+      "page": "电机信息 / 通信质量",
+      "private_local_path": ".g1-deploy/private/app-evidence-20261021/motors.png",
+      "sha256": "06b53fec4394e45467ebe24359c451ea1c05af0eb0c5ebc9ed8f02d6cd04ea2f"
+    },
+    {
+      "page": "外设配置",
+      "private_local_path": ".g1-deploy/private/app-evidence-20261021/peripherals.png",
+      "sha256": "c4f5cc90b4c946491fa2b3b2ccfa2ad2355ad577c30e73ef482474c7d1f01e64"
+    },
+    {
+      "page": "关于设备",
+      "private_local_path": ".g1-deploy/private/app-evidence-20261021/about.png",
+      "sha256": "4888a7a846c1f1714e8d7e3637f21b792d8a759bd328409f5e40d1a5b7562caf"
+    }
+  ],
+  "motion_writes": 0,
+  "motor_configuration_values_obtained": 0,
+  "execution_allowed": false
+}
